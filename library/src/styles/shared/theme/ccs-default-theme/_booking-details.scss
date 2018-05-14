@@ -45,5 +45,16 @@
 
 }
 
+.lbl{
+
+  &.lbl__vat{
+    background-color:$lbl-vat--color;
+    border-radius:(3px);
+    font-size: 12px;
+    padding: 2px;
+    line-height: 1.2px;
+  }
+
+}
 
 
