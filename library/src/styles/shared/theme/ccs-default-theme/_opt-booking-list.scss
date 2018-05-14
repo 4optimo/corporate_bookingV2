@@ -1,0 +1,30 @@
+.circle{
+  @include circle-icon(40px, #f2705b, #f2705b);
+  padding-top: 2px;
+  line-height: 12px;
+  .date{
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+  }
+  .month_year{
+    font-size: 9px;
+    color: white;
+    font-weight: normal;
+  }
+}
+.width-define{
+  width: 60px;
+}
+.width-calc{
+  position: absolute;
+  left: 80px;
+  width: calc(100% - 60px);
+  padding: 5px;
+  text-align: left;
+}
+
+
+//mat-accordion{
+//  base-title-size : (x-small);
+//}
