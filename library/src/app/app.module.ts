@@ -9,11 +9,13 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatInputModule} from '@angular/material/input';
 import {MatButtonModule, MatCheckboxModule} from '@angular/material';
+import { OptBookingSummaryComponent } from './opt-booking-summary/opt-booking-summary.component';
 @NgModule({
   declarations: [
     AppComponent,
     ExpansionPanelComponent,
-    OptBookingListComponent
+    OptBookingListComponent,
+    OptBookingSummaryComponent
   ],
   imports: [
     BrowserModule,
