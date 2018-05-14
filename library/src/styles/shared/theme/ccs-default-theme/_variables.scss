@@ -9,9 +9,11 @@ $font-family-rubik: 'Rubik', sans-serif;
 
 
 $prefix :'opt_';
-$ci-bg--color:red;
-$ci-col-hover:green;
-$primary:blue;
+$ci-bg--color:red !default;
+$ci-col-hover:green !default;
+$primary:blue !default;
+
+$lbl-vat--color:#eee !default;
 
 //state colors..............
 $no-color--state: $red-700 !default;
