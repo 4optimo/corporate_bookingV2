@@ -1,4 +1,4 @@
-<div class="booking-summary">
+<div class="booking-summary __unavailable">
   <div class="flex-row">
     <div class="col">
       <div class="profile">
@@ -21,32 +21,36 @@
               <a class="link __default">Coalfield Cricket Club</a>
             </div>
           </div>
-          <div class="field telephone-field">
-            <div class="field-icon">
+          <div class="opt_flex--container telephone-field">
+            <div class="opt_flex__item--inherit">
               <i class="material-icons small">phone</i>
             </div>
-            <div class="field-detail">
-              <span class="font-style-02">+44 (0) 1234846230</span>
-            </div>
-            <div class="field-options">
-              <button class="btn btn-icon"><i class="material-icons small">keyboard_arrow_down</i></button>
+            <div class="opt_flex__item">
+                <mat-select [(value)]="selected" panelClass="opt-booking-summary-select">
+                  <mat-option value="option1">+94 (0) 5618284652</mat-option>
+                  <mat-option value="option2">+44 (0) 1234846230</mat-option>
+                  <mat-option value="option3">+44 (0) 5654684687</mat-option>
+                </mat-select>
             </div>
           </div>
-          <div class="field email-field">
-            <div class="field-icon">
+          <div class="opt_flex--container email-field">
+            <div class="opt_flex__item--inherit">
               <i class="material-icons small">email</i>
             </div>
-            <div class="field-detail">
-              <span class="font-style-02">peter@ccclub.co.uk</span>
-            </div>
-            <div class="field-options">
-              <button class="btn btn-icon"><i class="material-icons small">keyboard_arrow_down</i></button>
+            <div class="opt_flex__item">
+              <mat-select [(value)]="selected" panelClass="opt-booking-summary-select">
+                <mat-option value="option1">peter@gmail.co.uk</mat-option>
+                <mat-option value="option2">peter@ccclub.co.uk</mat-option>
+                <mat-option value="option3">peter@outlook.co.uk</mat-option>
+              </mat-select>
             </div>
           </div>
-          <div class="field address-field">
-            <div class="field-detail">
-              <span class="font-style-03">Aglr House, 1 Postley Road, Kempston, Bedfordshire, MK42 7BU,
-              UK</span>
+          <div class="opt_flex--container address-field">
+            <div class="opt_flex__item--inherit">
+              <i class="material-icons small">location_on</i>
+            </div>
+            <div class="opt_flex__item">
+              <span class="font-style-06">London, United Kingdom</span>
             </div>
           </div>
         </div>
@@ -95,7 +99,7 @@
               <a class="link __default __no-ul">Coalfield Cricket Club</a>
             </div>
             <div class="field-options">
-              <button class="btn btn-icon"><i class="material-icons">keyboard_arrow_down</i></button>
+              <button class="btn btn-icon"><i class="material-icons small">keyboard_arrow_down</i></button>
             </div>
           </div>
         </div>
@@ -110,7 +114,7 @@
               <div>&pound; 0.00</div>
             </div>
             <div class="field-inner text-right">
-              <div>&pound; 6,595.86</div>
+              <div><span class="font-style-01 __success">&pound; 6,595.86</span></div>
               <div>$ 550.00</div>
             </div>
           </div>

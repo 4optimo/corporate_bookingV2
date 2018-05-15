@@ -8,6 +8,7 @@ import { OptBookingListComponent } from './opt-booking-list/opt-booking-list.com
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatInputModule} from '@angular/material/input';
+import {MatSelectModule} from '@angular/material/select';
 import {MatButtonModule, MatCheckboxModule} from '@angular/material';
 import { OptBookingSummaryComponent } from './opt-booking-summary/opt-booking-summary.component';
 
@@ -25,7 +26,8 @@ import { OptBookingSummaryComponent } from './opt-booking-summary/opt-booking-su
     MatCheckboxModule,
     MatExpansionModule,
     MatButtonModule,
-    MatInputModule
+    MatInputModule,
+    MatSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]

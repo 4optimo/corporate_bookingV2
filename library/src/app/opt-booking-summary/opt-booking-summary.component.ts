@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./opt-booking-summary.component.scss']
 })
 export class OptBookingSummaryComponent implements OnInit {
-
+  selected = 'option2';
   constructor() { }
 
   ngOnInit() {

@@ -1,3 +1,7 @@
+/* Font Families */
+$rub: 'Rubik', sans-serif;
+$mont: 'Montserrat', sans-serif;
+
 .booking-summary {
   border-bottom: 1px solid #d3d6d9;
   .flex-row {
@@ -16,6 +20,23 @@
           background-color: #b1554e;
         }
       }
+    }
+    .field-icon{
+      color: #fff;
+    }
+    .details .field .field-icon{
+      color: #fff;
+    }
+    .font-style-01, .font-style-02, .font-style-03, .font-style-04, .font-style-05, .font-style-06, .font-style-07, .font-style-08{
+      color: #fff;
+    }
+
+    .link.__default{
+      color: #fff;
+    }
+
+    .btn.btn-icon{
+      color: #fff;
     }
   }
 
@@ -120,7 +141,7 @@
     flex-grow: 1;
     flex-basis: 0;
     padding: 15px;
-    border-right: 1px solid #d3d6d9;
+    //border-right: 1px solid #d3d6d9;
     border-collapse: collapse;
 
     &:last-child {
@@ -134,14 +155,18 @@
 }
 
 .font-style-01 {
-  font-family: 'Rubik', sans-serif;
+  font-family: $rub;
   font-size: 18px;
   font-weight: 500;
   color: #3a424d;
 }
 
+.font-style-01.__success {
+  color: #4bb3fa;
+}
+
 .font-style-02 {
-  font-family: 'Rubik', sans-serif;
+  font-family: $rub;
   font-size: 11px;
   font-weight: 400;
   color: #3a424d;
@@ -240,4 +265,13 @@ i {
     text-transform: uppercase;
   }
 }
+
+.opt-booking-summary-select .mat-select-trigger .mat-select-value{
+  font-size: 12px;
+}
+
+//.opt-booking-summary-select .mat-select-content{
+//  font-size: 12px;
+//  background-color: red;
+//}
 
