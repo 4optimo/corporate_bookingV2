@@ -31,6 +31,8 @@
   i {
     //float: right;
     margin-top: 15px;
+    //margin-top: 7px;
+    line-height: 1px;
 
     &.material-icons {
       transform: rotate(0.03deg);
@@ -77,6 +79,8 @@
     //margin-top: 15px;
   }
   .btn {
+
+
     &:active, &:focus, &:visited, &:active:focus {
       outline: none;
     }
@@ -85,6 +89,7 @@
       padding: 0;
       color: #f5766c;
       align-items: center;
+      border: 1px solid #b7b7b7;
     }
   }
 

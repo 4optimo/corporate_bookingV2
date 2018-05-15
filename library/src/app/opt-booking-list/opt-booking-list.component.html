@@ -11,7 +11,7 @@
         <mat-panel-title class="opt_flex--container">
           <div class="opt_flex__item--inherit">
             <div class="width-define">
-              <div class="circle">
+              <div class="circle red">
                 <div class="date">7
                   <div class="month_year">  FEB <br>2018</div>
                 </div>
@@ -30,15 +30,15 @@
         <mat-panel-description class="opt_flex--container">
           <div>
             <div class="opt_flex__item opt-txt__body2">5-JAN-18 | Personal Training Bookings</div>
-            <div class="opt-txt__body2">Corporate | Confirmed</div>
+            <div class="opt-txt__body2"><span>Corporate </span>| <span class="text-cancelled">Cancelled</span></div>
           </div>
         </mat-panel-description>
       </div>
       <div class="col-sm-3">
-        <mat-panel-description class="opt_flex--container">
+        <mat-panel-description class="opt_flex--container price-section">
           <div class="opt_flex__item">toltip</div>
-          <div class=" opt_flex__item opt-txt__caption">£300.00</div>
-          <div class="opt_flex__item opt-txt__body2 btn btn-select">Select</div>{{panelOpenState ? 'open' : 'closed'}}
+          <div class=" opt_flex__item opt-typo-subhead-2">£300.00</div>
+          <div class="opt_flex__item opt-txt__body2 btn btn-select">Select</div>
         </mat-panel-description>
       </div>
     </mat-expansion-panel-header>

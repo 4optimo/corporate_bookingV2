@@ -9,14 +9,17 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatInputModule} from '@angular/material/input';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
-import {MatButtonModule, MatCheckboxModule} from '@angular/material';
+import {MatButtonModule, MatCheckboxModule, MatOptionModule, MatSelectModule} from '@angular/material';
 import { OptBookingDetailsComponent } from './opt-booking-details/opt-booking-details.component';
+import { AdditionalInformationComponent } from './additional-information/additional-information.component';
+import {FormsModule} from "@angular/forms";
 @NgModule({
   declarations: [
     AppComponent,
     ExpansionPanelComponent,
     OptBookingListComponent,
-    OptBookingDetailsComponent
+    OptBookingDetailsComponent,
+    AdditionalInformationComponent
   ],
   imports: [
     BrowserModule,
@@ -25,7 +28,10 @@ import { OptBookingDetailsComponent } from './opt-booking-details/opt-booking-de
     MatExpansionModule,
     MatButtonModule,
     MatProgressBarModule,
-    MatInputModule
+    MatInputModule,
+    MatSelectModule,
+    MatOptionModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
