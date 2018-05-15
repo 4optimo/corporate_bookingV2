@@ -20,10 +20,25 @@
   position: absolute;
   left: 80px;
   width: calc(100% - 60px);
-  padding: 5px;
+  //padding: 5px;
   text-align: left;
 }
+.btn {
+  outline: 1px;
+  outline-color: #455a64;
 
+  &:active, &:focus, &:visited, &:active:focus {
+    outline: 1px;
+    outline-color: #455a64;
+  }
+  //&.btn-icon {
+  //  background-color: transparent;
+  //  padding: 0;
+  //  color: #d3d6d9;
+  //  align-items: center;
+  //  box-shadow: none;
+  //}
+}
 
 //mat-accordion{
 //  base-title-size : (x-small);

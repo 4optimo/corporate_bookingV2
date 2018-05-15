@@ -4,7 +4,8 @@
 <!--<mat-checkbox>Check me!</mat-checkbox>-->
 
 <mat-accordion xmlns="http://www.w3.org/1999/html">
-  <mat-expansion-panel>
+  <mat-expansion-panel (opened)="panelOpenState = true"
+    (closed)="panelOpenState = false">
     <mat-expansion-panel-header>
       <div class="col-sm-4">
         <mat-panel-title class="opt_flex--container">
@@ -19,8 +20,8 @@
           </div>
           <div class="opt_flex__item--inherit">
               <div class="width-calc">
-                <div><span class="base-title-size: small">PB3456</span><span class="base-title-size:  x-small"> - Mr.Jone Albert</span></div>
-                <div class="base-title-size: small">Pandarix</div>
+                <div><span class="opt-txt__caption">PB3456</span><span class="opt-txt__body2"> - Mr.Jone Albert</span></div>
+                <div class="opt-txt__body2">Pandarix</div>
               </div>
           </div>
         </mat-panel-title>
@@ -28,27 +29,27 @@
       <div class="col-sm-5">
         <mat-panel-description class="opt_flex--container">
           <div>
-            <div class="opt_flex__item base-title-size: x-small">5-JAN-18 | Personal Training Bookings</div>
-            <div class="base-title-size: x-small">Corporate | Confirmed</div>
+            <div class="opt_flex__item opt-txt__body2">5-JAN-18 | Personal Training Bookings</div>
+            <div class="opt-txt__body2">Corporate | Confirmed</div>
           </div>
         </mat-panel-description>
       </div>
       <div class="col-sm-3">
         <mat-panel-description class="opt_flex--container">
           <div class="opt_flex__item">toltip</div>
-          <div class=" opt_flex__item">£300.00</div>
-          <div class="opt_flex__item">Select</div>
+          <div class=" opt_flex__item opt-txt__caption">£300.00</div>
+          <div class="opt_flex__item opt-txt__body2 btn">Select</div>{{panelOpenState ? 'open' : 'closed'}}
         </mat-panel-description>
       </div>
     </mat-expansion-panel-header>
 
-    <!--<mat-form-field>-->
-      <!--<input matInput placeholder="First name">-->
-    <!--</mat-form-field>-->
+    <mat-form-field>
+      <input matInput placeholder="First name">
+    </mat-form-field>
 
-    <!--<mat-form-field>-->
-      <!--<input matInput placeholder="Age">-->
-    <!--</mat-form-field>-->
+    <mat-form-field>
+      <input matInput placeholder="Age">
+    </mat-form-field>
   </mat-expansion-panel>
   <!--<mat-expansion-panel (opened)="panelOpenState = true"-->
                        <!--(closed)="panelOpenState = false">-->
@@ -63,3 +64,5 @@
     <!--<p>I'm visible because I am open</p>-->
   <!--</mat-expansion-panel>-->
 </mat-accordion>
+
+
