@@ -273,6 +273,18 @@ p {
   @include typo-body-1;
   @extend %tc-ellipsis;
   //margin-bottom: 10px;
+
+
+  &.__link{
+    @include typo-body-1();
+    font-style: normal;
+    line-height: 1.5;
+    text-decoration: underline;
+    &:hover{
+      color: #0d47a1;
+    }
+
+  }
 }
 
 .opt-txt__body1-large{

@@ -7,7 +7,6 @@
   }
 
 }
-
 // flex grid ........................
 .opt_flex{
       &--container{
@@ -16,18 +15,14 @@
          &.space-between{
            justify-content: space-between !important;
          }
-
-
-
       }
       &__item{
         @include align-self(auto);
         @include  flex(1 1 auto);
 
-        &-inherit{
+        &--inherit{
           flex-grow: inherit;
         }
-
 
         &.p25{
           width: 25%;
@@ -68,8 +63,6 @@
 
     height: 100%;
   }
-
-
 }
 
 
@@ -106,7 +99,6 @@
     @include align-content(stretch);
     @include align-items(flex-start);
     }
-
   // Add one of the following classes to any html element to achieve a desired depth of the shadow
 
 
@@ -139,4 +131,8 @@
 
 .icn-opt__small{
   font-size: 20px;
+}
+
+.icon__cage{
+  padding-right: 5px;
 }
