@@ -26,15 +26,15 @@ $accent:#2196F3 !default;
 $central-brand-primary :red;
 $white-color:#fff;
 $lbl-vat--color:#eee;
-
+$package-color--product: #27bfc2;
 //Product  colors
-$hotel-color--product: $purple !default;
-$insurance-color--product: $yellow-700 !default;
-$car-color--product: $light-blue-700 !default;
-$package-color--product: $brown-700 !default;
-$flight-color--product: $blue-700 !default;
-$generic-color--product: $orange-700 !default;
-$transfer-color--product: $green-700 !default;
+//$hotel-color--product: $purple !default;
+//$insurance-color--product: $yellow-700 !default;
+//$car-color--product: $light-blue-700 !default;
+$package-color--product: $package-color--product !default;
+//$flight-color--product: $blue-700 !default;
+//$generic-color--product: $orange-700 !default;
+//$transfer-color--product: $green-700 !default;
 $tour-color--product: $red-700 !default;
 
 
