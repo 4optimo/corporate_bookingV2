@@ -141,12 +141,11 @@
   @include respond-to('x-small') {
     font-size: 13px;
     font-weight: 500;
-
   }
+
   @include respond-to('small') {
     font-size: 13px;
     font-weight: 500;
-
   }
 
   @include respond-to('medium') {

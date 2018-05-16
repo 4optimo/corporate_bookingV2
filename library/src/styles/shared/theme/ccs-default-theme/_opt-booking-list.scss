@@ -24,12 +24,15 @@
   text-align: left;
 }
 .btn {
-  outline: 1px;
-  outline-color: #455a64;
+  &.btn-select{
+    border: 1px solid #b7b7b7;
+    //outline-color: #0000;
+    border-radius: 4px;
+  }
 
   &:active, &:focus, &:visited, &:active:focus {
-    outline: 1px;
-    outline-color: #455a64;
+    //outline: 1px;
+    //outline-color: #455a64;
   }
   //&.btn-icon {
   //  background-color: transparent;
@@ -43,3 +46,15 @@
 //mat-accordion{
 //  base-title-size : (x-small);
 //}
+.text-cancelled{
+  color: #f2705b;
+}
+
+div{
+  .price-section{
+    display:flex;
+    align-items:center;
+
+  }
+}
+
