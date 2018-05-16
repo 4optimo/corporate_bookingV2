@@ -16,7 +16,6 @@ export class OptBookingDetailsComponent implements OnInit {
       this.matIcon = data ? 'keyboard_arrow_up' : 'keyboard_arrow_down';
     });
   }
-
   expandPannel() {
     this.myPanel.expanded = !this.myPanel.expanded;
   }
