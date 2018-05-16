@@ -10,110 +10,183 @@
       box-shadow: none !important;
       color: white;
 
-      &:hover{
-         color: #454545;
+      &:hover {
+        color: #454545;
       }
+
+    }
+    input.mat-input-element {
+      text-align: center !important;
+    }
+
+  }
+
+
+  &_counter__item {
+
+    width: 45px;
+
+  }
+
+  &_expand--container {
+    width: 100%;
+
+    .mat-form-field-wrapper {
+      margin-left: 1px;
+      margin-right: 1px;
+    }
+
+    .mat-form-field-infix {
+      width: 30px;
+      text-align: center;
 
     }
   }
 
-  &_expand--container{
-    width: 100%;
-  }
   &_booking__detail {
 
-
-    mat-accordion{
+    mat-accordion {
       .mat-expansion-panel-header[aria-disabled=true] {
         color: inherit;
       }
-      .mat-expansion-panel-header{
-        padding:  0px;
+      .mat-expansion-panel-header {
+        padding: 0px;
       }
 
     }
 
-    .icon__cage{
+    .icon__cage {
       width: 50px;
 
-
-      .mat-checkbox-layout{
+      .mat-checkbox-layout {
         margin-left: 15px;
       }
 
     }
 
-    .mat-input-element{
+    .mat-input-element {
       text-align: right;
     }
 
-
     .mat-input-wrapper {
-      &.mat-form-field-wrapper{
+      &.mat-form-field-wrapper {
         padding-bottom: 0px !important;
       }
 
     }
-    .mat-input-infix{
-      .mat-form-field-infix{
+    .mat-input-infix {
+      .mat-form-field-infix {
         padding: 0px !important;
         border-top: 1px solid transparent !important;
       }
     }
 
     .mat-form-field-infix {
-      padding: 1px  !important;
-      border-top: 1px  !important;
+      padding: 1px !important;
+      border-top: 1px !important;
     }
 
     .mat-form-field-underline {
       bottom: 0px !important;
     }
 
-    &-checkbox{
+    &-checkbox {
       width: 50px;
 
     }
-    &-checkbox_details{
+    &-checkbox_details {
       width: calc(100% - 50px)
 
     }
 
-    .price--values{
+    .price--values {
       padding-left: 15px;
+
+      .price--value__icon {
+        width: 15px;
+        padding-left: 5px;
+      }
+
+      .opt__type{
+        margin-right: 40px;
+      }
+
+      .price--value__input {
+        width: 100px;
+        font-weight: 500;
+
+        .mat-form-field {
+          width: 100%;
+
+          .mat-input-element {
+            font-weight: 500;
+            font-size: 18px;
+          }
+        }
+
+      }
     }
 
   }
 
-  &_expand__header{
+  &_expand__header {
 
     padding-left: 0px !important;
 
-    .row{
+    .row {
       width: auto;
     }
 
   }
 
+
+
 }
+.action__button{
+  flex: 1;
+}
+.lbl {
 
-.lbl{
-
-  &.lbl__vat{
-    background-color:$lbl-vat--color;
-    border-radius:(3px);
+  &.lbl__vat {
+    background-color: $lbl-vat--color;
+    border-radius: (3px);
     font-size: 12px;
-    padding: 2px;
+    padding: 2px 5px;
     line-height: 1.2px;
+    font-weight: 500;
   }
-
 }
-.loadding--cage{
+
+.loadding--cage {
   margin-left: -15px;
   margin-right: -15px;
 }
 
+.mat-expansion-panel-body{
 
+
+  .expansion-panel_body{
+
+    .__data{
+
+      min-height: 55px;
+
+      >.row{
+        height: 55px;
+
+      }
+
+      &.separator__line--dotted{
+        border-top: 1px dashed #dad7d7;
+      }
+
+
+    }
+
+  }
+
+
+}
 
 
 

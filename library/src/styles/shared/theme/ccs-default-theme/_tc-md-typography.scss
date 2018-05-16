@@ -165,6 +165,15 @@ text-overflow: ellipsis;
    text-align: right;
   }
 
+  &__right{
+        text-align: right;
+  }
+
+  &__left{
+    text-align: left;
+  }
+
+
 }
 
 fieldset.demo{
