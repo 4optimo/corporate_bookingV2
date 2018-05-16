@@ -13,6 +13,10 @@ import {MatButtonModule, MatCheckboxModule, MatOptionModule, MatSelectModule} fr
 import { OptBookingDetailsComponent } from './opt-booking-details/opt-booking-details.component';
 import { AdditionalInformationComponent } from './additional-information/additional-information.component';
 import {FormsModule} from "@angular/forms";
+import {MatButtonModule, MatCheckboxModule} from '@angular/material';
+import { OptBookingSummaryComponent } from './opt-booking-summary/opt-booking-summary.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,6 +24,7 @@ import {FormsModule} from "@angular/forms";
     OptBookingListComponent,
     OptBookingDetailsComponent,
     AdditionalInformationComponent
+    OptBookingSummaryComponent
   ],
   imports: [
     BrowserModule,
@@ -32,6 +37,7 @@ import {FormsModule} from "@angular/forms";
     MatSelectModule,
     MatOptionModule,
     FormsModule
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
