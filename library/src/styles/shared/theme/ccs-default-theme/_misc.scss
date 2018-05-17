@@ -126,8 +126,48 @@
 
 
 .icon-icn-package:before {
+  content: "\e901";
+}
+
+.icon-coin-of-dollar:before {
   content: "\e900";
 }
+
+.icon-icn-item:before {
+  content: "\e902";
+}
+
+.icon-icn-invoice:before {
+  content: "\e907";
+}
+
+.icon-icn-file:before {
+  content: "\e906";
+}
+
+.icon-icn-file-fill:before {
+  content: "\e905";
+}
+
+.icon-icn-settings-work-tool:before {
+  content: "\e904";
+}
+
+.icon-icn-office-big-chair:before {
+  content: "\e903";
+}
+
+.icon-icn-table:before {
+  content: "\e908";
+}
+
+.icon-icn-clipboard:before {
+  content: "\e909";
+}
+
+
+
+
 
 .icn-opt__small{
   font-size: 20px;
@@ -135,4 +175,12 @@
 
 .icon__cage{
   padding-right: 5px;
+
+  &.--right{
+    padding-right: 55px;
+  }
+}
+
+[class^='icon-icn-']{
+  font-size: 17px;
 }
