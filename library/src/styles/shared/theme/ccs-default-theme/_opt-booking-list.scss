@@ -24,11 +24,30 @@
   text-align: left;
 }
 .btn {
-  &.btn-select{
+  &.btn__selected {
     border: 1px solid #b7b7b7;
     //outline-color: #0000;
-    border-radius: 4px;
+    //border-radius: 4px;
+    background-color: $btn-active-color;
+
+    i {
+      color: #fff;
+    }
   }
+    &.btn__frozen {
+      border: 1px solid #b7b7b7;
+      //outline-color: #0000;
+      //border-radius: 4px;
+      background-color: $btn-frozen-color;
+
+      i {
+        color: #fff;
+      }
+    }
+
+
+
+
 
   &:active, &:focus, &:visited, &:active:focus {
     //outline: 1px;

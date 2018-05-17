@@ -45,12 +45,58 @@
 
   &_booking__detail {
 
+
+
+    .mat-accordion{
+
+      >.mat-expansion-panel{
+        border-left: 4px solid #fff;
+
+      }
+
+
+      .mat-expansion-panel{
+
+        //border-left: 4px solid red;
+
+        &.mat-expanded{
+          border-left: 4px solid #4bb3fa;
+        }
+
+
+        .mat-expansion-panel-body{
+          padding: 0px;
+
+          .__multi-buttons{
+            padding-left: 50px;
+          }
+
+          .__include-package_line{
+                  border-top:1px solid #d9d9d9;
+                }
+
+          .__new-items_line{
+            border-top:1px dashed #4bb3fa;
+          }
+
+
+
+
+        }
+      }
+    }
+
+
+
+
     mat-accordion {
       .mat-expansion-panel-header[aria-disabled=true] {
         color: inherit;
       }
       .mat-expansion-panel-header {
         padding: 0px;
+        margin-left: 4px;
+        margin-right: 4px;
       }
 
     }
@@ -104,7 +150,7 @@
 
       .price--value__icon {
         width: 15px;
-        padding-left: 5px;
+        padding-left: 10px;
       }
 
       .opt__type{
@@ -120,7 +166,7 @@
 
           .mat-input-element {
             font-weight: 500;
-            font-size: 18px;
+            font-size: 16px;
           }
         }
 
@@ -132,6 +178,7 @@
   &_expand__header {
 
     padding-left: 0px !important;
+    min-height: 55px;
 
     .row {
       width: auto;
@@ -165,7 +212,13 @@
 .mat-expansion-panel-body{
 
 
+  &.__inner_body{
+    padding: 0px;
+  }
+
   .expansion-panel_body{
+
+
 
     .__data{
 
@@ -177,7 +230,7 @@
       }
 
       &.separator__line--dotted{
-        border-top: 1px dashed #dad7d7;
+        border-top: 1px dashed #d9d9d9;
       }
 
 
