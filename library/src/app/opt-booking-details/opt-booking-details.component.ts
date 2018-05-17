@@ -1,4 +1,4 @@
-import {Component, OnInit, ViewChild} from '@angular/core';
+import {Component, OnInit, ViewChild, ViewChildren} from '@angular/core';
 import {MatExpansionPanel} from "@angular/material";
 
 @Component({
@@ -9,6 +9,7 @@ import {MatExpansionPanel} from "@angular/material";
 export class OptBookingDetailsComponent implements OnInit {
 
   @ViewChild('myPanel') myPanel: MatExpansionPanel;
+
   matIcon = 'keyboard_arrow_down' || 'keyboard_arrow_up';
 
   ngOnInit() {
@@ -18,6 +19,13 @@ export class OptBookingDetailsComponent implements OnInit {
   }
   expandPannel() {
     this.myPanel.expanded = !this.myPanel.expanded;
+  }
+
+  @ViewChildren('myPanel2') myPanel2: MatExpansionPanel;
+  expandPannel2() {
+    this.myPanel2.expanded = !this.myPanel2.expanded;
+   // alert('ddddd');
+
   }
 
 }
