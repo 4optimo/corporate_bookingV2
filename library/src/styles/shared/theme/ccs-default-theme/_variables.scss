@@ -14,7 +14,7 @@ $ci-col-hover:green;
 $primary:blue;
 
 //state colors..............
-$no-color--state: $red-700 !default;
+$no-color--state: #f4493c !default;
 $active-color--state: $green-700 !default;
 $mute-color--state: $grey-700 !default;
 $firm-color--state: $blue-700 !default;
@@ -22,19 +22,33 @@ $alert-color--state: $yellow-700 !default;
 $definite-color--state: $blue-grey-700 !default;
 $quote-color--state: $brown-700 !default;
 
+
+
+
+
+
 $accent:#2196F3 !default;
 $central-brand-primary :red;
 $white-color:#fff;
 $lbl-vat--color:#eee;
+$package-color--product: #27bfc2;
+$package-color--type: #f5c70e;
+
+
+//button colors----------------------
+$btn-active-color:$active-color--state;
+$btn-frozen-color:$no-color--state;
+
+
 
 //Product  colors
-$hotel-color--product: $purple !default;
-$insurance-color--product: $yellow-700 !default;
-$car-color--product: $light-blue-700 !default;
-$package-color--product: $brown-700 !default;
-$flight-color--product: $blue-700 !default;
-$generic-color--product: $orange-700 !default;
-$transfer-color--product: $green-700 !default;
+//$hotel-color--product: $purple !default;
+//$insurance-color--product: $yellow-700 !default;
+//$car-color--product: $light-blue-700 !default;
+$package-color--product: $package-color--product !default;
+//$flight-color--product: $blue-700 !default;
+//$generic-color--product: $orange-700 !default;
+//$transfer-color--product: $green-700 !default;
 $tour-color--product: $red-700 !default;
 
 

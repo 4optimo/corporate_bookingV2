@@ -119,6 +119,13 @@ $background-item:#fff;
   }
 }
 
+.package-color--product{
+  color: $package-color--product;
+}
+.package-color--item{
+  color: $package-color--type;
+
+}
 
 
 
@@ -159,6 +166,15 @@ text-overflow: ellipsis;
   &__align-right {
    text-align: right;
   }
+
+  &__right{
+        text-align: right;
+  }
+
+  &__left{
+    text-align: left;
+  }
+
 
 }
 
@@ -280,6 +296,11 @@ p {
     font-style: normal;
     line-height: 1.5;
     text-decoration: underline;
+
+    &.__bold{
+      font-weight: 500;
+    }
+
     &:hover{
       color: #0d47a1;
     }
