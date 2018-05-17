@@ -1,12 +1,12 @@
 <div>
 
   <div class="opt_booking__detail">
-    <mat-accordion     >
+    <mat-accordion>
 
       <mat-expansion-panel #myPanel [disabled]="true">
 
 
-        <mat-expansion-panel-header class="opt_expand__header" collapsedHeight="auto"  >
+        <mat-expansion-panel-header class="opt_expand__header" collapsedHeight=".collapsedHeight" expandedHeight=".expandedHeight">
 
 
           <div class="opt_expand--container">
@@ -19,13 +19,11 @@
                   </div>
 
                   <div class="opt_flex__item">
-
-
                     <div class="opt-txt__body2">BTX16L4 - Primier Dinner & Eye</div>
                     <div class="opt_flex--container tc-flex-item__center">
                       <div class="opt_flex__item--inherit icon__cage"><span
                         class="icon-icn-package  package-color--product"> </span><span
-                        class="icon-icn-package package-color--product"></span>
+                        class="icon-bag package-color--item"></span>
                       </div>
                       <div class="opt_flex__item opt-txt__caption ">
                         <span class="opt-txt__light"> 20-Jan-2018 </span> |<span
@@ -91,17 +89,7 @@
                         </form>
                       </div>
                       <div class="opt_flex__item  price--value__icon">
-
-
-
-
-                          <i class="material-icons">
-                            monetization_on
-                          </i>
-
-
-
-
+                        <span class="icon-coin-of-dollar"></span>
                       </div>
                     </div>
                     <div class="opt_flex--container tc-flex-item__center">
@@ -109,15 +97,11 @@
                         <span class="opt-txt__body1 __link">GST</span>
                       </div>
                     </div>
-
-
                   </div>
 
                   <div class="opt_flex__item action__button ">
                     <button mat-icon-button color="primary" (click)="expandPannel()" [disableRipple]="true">
-
                       <mat-icon>{{matIcon}}</mat-icon>
-
                     </button>
                   </div>
 
@@ -127,50 +111,321 @@
               </div>
             </div>
 
-            <div class="loadding--cage"> <mat-progress-bar mode="query"></mat-progress-bar></div>
-
+            <div class="loadding--cage">
+              <mat-progress-bar mode="query"></mat-progress-bar>
+            </div>
 
           </div>
 
         </mat-expansion-panel-header>
 
-       <div class="expansion-panel_body">
+        <div class="expansion-panel_body __inner_body ">
 
-        <div class="__data separator__line--dotted">
-          <div class="row">
-            <div class="col-sm-6 ">
+          <div class="__data separator__line--dotted">
+            <div class="row">
+              <div class="col-sm-6 ">
 
-              <div class="opt_flex--container tc-flex-item__center __data">
-                <div class="opt_flex__item icon__cage">
-                  <span  class="icon-icn-package  package-color--product"> </span>
-                  <span  class="icon-icn-package package-color--product"></span>
-                  <span  class="icon-icn-package  package-color--product"> </span>
-                  <span  class="icon-icn-package package-color--product"></span>
+                <div class="opt_flex--container tc-flex-item__center __data">
+                  <div class="opt_flex__item icon__cage __multi-buttons">
+
+                    <button mat-icon-button>
+                      <span class="icon-icn-package  "> </span>
+                    </button>
+
+                    <button mat-icon-button>
+                      <span class="icon-icn-package  "> </span>
+                    </button>
+
+                    <button mat-icon-button>
+                      <span class="icon-icn-package  "> </span>
+                    </button>
+
+                    <button mat-icon-button>
+                      <span class="icon-icn-package  "> </span>
+                    </button>
+
+                  </div>
                 </div>
+
+
               </div>
+              <div class="col-sm-6">
 
+                <div class="opt_flex--container tc-flex-item__center __data">
+                  <div class="opt_flex__item icon__cage __multi-buttons">
 
-            </div>
-            <div class="col-sm-6">
+                    <button mat-icon-button>
+                      <span class="icon-icn-package  "> </span>
+                    </button>
 
-              <div class="opt_flex--container tc-flex-item__center __data">
-                <div class="opt_flex__item icon__cage">
-                  <span  class="icon-icn-package  package-color--product"> </span>
-                  <span  class="icon-icn-package package-color--product"></span>
-                  <span  class="icon-icn-package  package-color--product"> </span>
-                  <span  class="icon-icn-package package-color--product"></span>
+                    <button mat-icon-button>
+                      <span class="icon-icn-package  "> </span>
+                    </button>
+
+                    <button mat-icon-button>
+                      <span class="icon-icn-package  "> </span>
+                    </button>
+
+                    <button mat-icon-button>
+                      <span class="icon-icn-package  "> </span>
+                    </button>
+
+                  </div>
                 </div>
+
+
               </div>
-
-
             </div>
+
           </div>
 
+
+          <!--/// sub packages details ..................................-->
+
+          <mat-expansion-panel #myPanel2 [disabled]="true">
+
+            <mat-expansion-panel-header class="opt_expand__header __include-package_line" >
+
+              <div class="opt_expand--container ">
+                <div class="row">
+                  <div class="col-sm-4">
+
+                    <div class="opt_flex--container tc-flex-item__center">
+                      <div class="opt_flex__item--inherit icon__cage ">
+                        <mat-checkbox></mat-checkbox>
+                      </div>
+
+                      <div class="opt_flex__item">
+                        <div class="opt-txt__body2">BTX16L4 - Primier Dinner & Eye</div>
+                        <div class="opt_flex--container tc-flex-item__center">
+                          <div class="opt_flex__item--inherit icon__cage"><span
+                            class="icon-icn-package  package-color--product"> </span>
+                          </div>
+                          <div class="opt_flex__item opt-txt__caption ">
+                            <span class="opt-txt__light"> 20-Jan-2018 </span> |<span
+                            class="opt-txt__light"> Event Name </span>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="opt_flex--container tc-flex-item__center">
+                      <div class="opt_flex__item">
+                        <div class="opt-txt__body1"><span class="opt-txt__body1 __link"> Covers</span> [4hrs]</div>
+                        <div class="opt-txt__body2"> 6</div>
+                      </div>
+                      <div class="opt_flex__item">
+                        <div class="opt-txt__body1 __link"> 1.00 PM - 5.00 PM</div>
+                        <div class="opt-txt__body1 __link"> 20-Jan-2018</div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="col-sm-5">
+
+                    <div class="opt_flex--container tc-flex-item__center">
+                      <div class="opt_flex__item">
+                        <div class="opt-txt__body1 __link">£ 92.19</div>
+                      </div>
+                      <div class="opt_flex__item opt_counter__item">
+                        <div class="opt_counter">
+                          <div class="opt_flex--container ">
+                            <div class="opt_flex__item--inherit">
+                              <button mat-raised-button>+</button>
+                            </div>
+                            <div class="opt_flex__item--inherit  tc-flex-item__center">
+                              <form class="example-form">
+                                <mat-form-field class="">
+                                  <input matInput value="1">
+                                </mat-form-field>
+                              </form>
+                            </div>
+                            <div class="opt_flex__item--inherit">
+                              <button mat-raised-button>-</button>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                      <div class="opt_flex__item price--values">
+                        <div class="opt_flex--container tc-flex-item__center">
+                          <div class="opt_flex__item"><span class="lbl lbl__vat">inc Vat</span>
+                          </div>
+                          <div class="opt_flex__item--inherit price--value__input">
+                            <form class="example-form">
+                              <mat-form-field class="">
+                                <input matInput value="£19875.89">
+                              </mat-form-field>
+                            </form>
+                          </div>
+                          <div class="opt_flex__item  price--value__icon">
+                            <span class="icon-coin-of-dollar"></span>
+                          </div>
+                        </div>
+                        <div class="opt_flex--container tc-flex-item__center">
+                          <div class="opt_flex__item opt-txt__right opt__type">
+                            <span class="opt-txt__body1 __link">GST</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="opt_flex__item action__button ">
+                        <button mat-icon-button color="primary" (click)="expandPannel2()" [disableRipple]="true">
+                          <mat-icon>{{matIcon}}</mat-icon>
+                        </button>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+                <!--<div class="loadding&#45;&#45;cage">-->
+                  <!--<mat-progress-bar mode="query"></mat-progress-bar>-->
+                <!--</div>-->
+
+              </div>
+
+
+            </mat-expansion-panel-header>
+
+
+            <mat-panel-description>
+              This is a summary of the content
+            </mat-panel-description>
+
+
+          </mat-expansion-panel>
+
+
+          <!--// end sub packages ...........................................-->
+
+
+
+          <!--/// sub packages details ..................................-->
+
+          <mat-expansion-panel #myPanel2 [disabled]="true">
+
+            <mat-expansion-panel-header class="opt_expand__header __new-items_line" >
+
+              <div class="opt_expand--container ">
+                <div class="row">
+                  <div class="col-sm-4">
+
+                    <div class="opt_flex--container tc-flex-item__center">
+                      <div class="opt_flex__item--inherit icon__cage ">
+                        <mat-checkbox></mat-checkbox>
+                      </div>
+
+                      <div class="opt_flex__item">
+                        <div class="opt-txt__body2">BTX16L4 - Primier Dinner & Eye</div>
+                        <div class="opt_flex--container tc-flex-item__center">
+                          <div class="opt_flex__item--inherit icon__cage"><span
+                            class="icon-icn-package  package-color--product"> </span><span
+                            class="icon-icn-item package-color--item"></span>
+                          </div>
+                          <div class="opt_flex__item opt-txt__caption ">
+                            <span class="opt-txt__light"> 20-Jan-2018 </span> |<span
+                            class="opt-txt__light"> Event Name </span>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="opt_flex--container tc-flex-item__center">
+                      <div class="opt_flex__item">
+                        <div class="opt-txt__body1"><span class="opt-txt__body1 __link"> Covers</span> [4hrs]</div>
+                        <div class="opt-txt__body2"> 6</div>
+                      </div>
+                      <div class="opt_flex__item">
+                        <div class="opt-txt__body1 __link"> 1.00 PM - 5.00 PM</div>
+                        <div class="opt-txt__body1 __link"> 20-Jan-2018</div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="col-sm-5">
+
+                    <div class="opt_flex--container tc-flex-item__center">
+                      <div class="opt_flex__item">
+                        <div class="opt-txt__body1 __link">£ 92.19</div>
+                      </div>
+                      <div class="opt_flex__item opt_counter__item">
+                        <div class="opt_counter">
+                          <div class="opt_flex--container ">
+                            <div class="opt_flex__item--inherit">
+                              <button mat-raised-button>+</button>
+                            </div>
+                            <div class="opt_flex__item--inherit  tc-flex-item__center">
+                              <form class="example-form">
+                                <mat-form-field class="">
+                                  <input matInput value="1">
+                                </mat-form-field>
+                              </form>
+                            </div>
+                            <div class="opt_flex__item--inherit">
+                              <button mat-raised-button>-</button>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                      <div class="opt_flex__item price--values">
+                        <div class="opt_flex--container tc-flex-item__center">
+                          <div class="opt_flex__item"><span class="lbl lbl__vat">inc Vat</span>
+                          </div>
+                          <div class="opt_flex__item--inherit price--value__input">
+                            <form class="example-form">
+                              <mat-form-field class="">
+                                <input matInput value="£19875.89">
+                              </mat-form-field>
+                            </form>
+                          </div>
+                          <div class="opt_flex__item  price--value__icon">
+                            <span class="icon-coin-of-dollar"></span>
+                          </div>
+                        </div>
+                        <div class="opt_flex--container tc-flex-item__center">
+                          <div class="opt_flex__item opt-txt__right opt__type">
+                            <span class="opt-txt__body1 __link">GST</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="opt_flex__item action__button ">
+                        <button mat-icon-button color="primary" (click)="expandPannel2()" [disableRipple]="true">
+                          <mat-icon>{{matIcon}}</mat-icon>
+                        </button>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="loadding--cage">
+                  <mat-progress-bar mode="query"></mat-progress-bar>
+                </div>
+
+              </div>
+
+
+            </mat-expansion-panel-header>
+
+
+            <mat-panel-description>
+              This is a summary of the content
+            </mat-panel-description>
+
+
+          </mat-expansion-panel>
+
+
+          <!--// end sub packages ...........................................-->
+
+
+
         </div>
-
-
-
-       </div>
 
 
       </mat-expansion-panel>
@@ -179,3 +434,7 @@
     </mat-accordion>
   </div>
 </div>
+
+
+
+
