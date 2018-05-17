@@ -4,8 +4,6 @@
     <mat-accordion>
 
       <mat-expansion-panel #myPanel [disabled]="true">
-
-
         <mat-expansion-panel-header class="opt_expand__header" collapsedHeight=".collapsedHeight" expandedHeight=".expandedHeight">
 
 
@@ -182,6 +180,7 @@
 
           <!--/// sub packages details ..................................-->
 
+          <mat-accordion>
           <mat-expansion-panel #myPanel2 [disabled]="true">
 
             <mat-expansion-panel-header class="opt_expand__header __include-package_line" >
@@ -296,15 +295,15 @@
 
 
           </mat-expansion-panel>
-
+          </mat-accordion>
 
           <!--// end sub packages ...........................................-->
 
 
 
           <!--/// sub packages details ..................................-->
-
-          <mat-expansion-panel #myPanel2 [disabled]="true">
+      <mat-accordion>
+          <mat-expansion-panel #myPanel3 [disabled]="true">
 
             <mat-expansion-panel-header class="opt_expand__header __new-items_line" >
 
@@ -394,7 +393,7 @@
                         </div>
                       </div>
                       <div class="opt_flex__item action__button ">
-                        <button mat-icon-button color="primary" (click)="expandPannel2()" [disableRipple]="true">
+                        <button mat-icon-button color="primary" (click)="expandPannel3()" [disableRipple]="true">
                           <mat-icon>{{matIcon}}</mat-icon>
                         </button>
                       </div>
@@ -420,7 +419,7 @@
 
           </mat-expansion-panel>
 
-
+      </mat-accordion>
           <!--// end sub packages ...........................................-->
 
 
