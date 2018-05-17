@@ -30,9 +30,9 @@
 
   i {
     //float: right;
-    margin-top: 15px;
-    //margin-top: 7px;
-    line-height: 1px;
+    //margin-top: 10px;
+    ////margin-top: 7px;
+    //line-height: 2px;
 
     &.material-icons {
       transform: rotate(0.03deg);
@@ -51,6 +51,10 @@
       }
       &.color {
         color: #8d8d8d;
+        &.active {
+          color: white;
+          @include box_shadow (3);
+        }
       }
     }
   }
@@ -76,25 +80,32 @@
     //flex: 10%;
     align-self: auto;
     float: right;
-    //margin-top: 15px;
+    padding: 2px;
   }
   .btn {
+    padding: 5px;
 
-
-    &:active, &:focus, &:visited, &:active:focus {
+    &:active,&:focus, &:visited, &:active:focus {
       outline: none;
     }
+
+    .active{
+      background-color: #4bb3fa;
+      &:btn-icon {
+        color: white;
+      }
+    }
     &.btn-icon {
+      margin-top: 10px;
+      line-height: 2px;
+
       background-color: transparent;
       padding: 0;
       color: #f5766c;
       align-items: center;
       border: 1px solid #b7b7b7;
+
     }
   }
-
-hr{
-  border-top: 3px solid #dce0e1;
-}
 
 
