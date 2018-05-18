@@ -1,9 +1,10 @@
 <div>
 
   <div class="opt_booking__detail">
+
     <mat-accordion>
 
-      <mat-expansion-panel #myPanel [disabled]="true">
+      <mat-expansion-panel #myPanel [disabled]="true" class="opt-expand--line">
         <mat-expansion-panel-header class="opt_expand__header" collapsedHeight=".collapsedHeight" expandedHeight=".expandedHeight">
 
 
@@ -19,7 +20,7 @@
                   <div class="opt_flex__item">
                     <div class="opt-txt__body2">BTX16L4 - Primier Dinner & Eye</div>
                     <div class="opt_flex--container tc-flex-item__center">
-                      <div class="opt_flex__item--inherit icon__cage"><span
+                      <div class="opt_flex__item--inherit icon__cage __min"><span
                         class="icon-icn-package  package-color--product"> </span><span
                         class="icon-bag package-color--item"></span>
                       </div>
@@ -126,23 +127,23 @@
                 <div class="opt_flex--container tc-flex-item__center __data">
                   <div class="opt_flex__item icon__cage __multi-buttons">
 
-                    <button mat-icon-button>
+                    <button mat-icon-button  class="btn-color-default">
                       <span class="icon-icn-office-big-chair  "> </span>
                     </button>
 
-                    <button mat-icon-button>
+                    <button mat-icon-button class="btn-color-default">
                     <span class="icon-icn-table"> </span>
                   </button>
 
-                    <button mat-icon-button>
+                    <button mat-icon-button class="btn-color-default">
                       <span class="icon-icn-settings-work-tool  "> </span>
                     </button>
 
-                    <button mat-icon-button>
+                    <button mat-icon-button class="btn-color-default">
                       <span class="icon-icn-file-fill  "> </span>
                     </button>
 
-                    <button mat-icon-button>
+                    <button mat-icon-button class="btn-color-default">
                       <span class="icon-icn-invoice  "> </span>
                     </button>
 
@@ -156,13 +157,13 @@
                 <div class="opt_flex--container tc-flex-item__center __data">
                   <div class="opt_flex__item icon__cage --right __multi-buttons opt-txt__right ">
 
-                    <button mat-icon-button class="btn btn__frozen" >
+                    <button mat-icon-button class="btn btn__frozen"  >
                       <i class="material-icons">
                         recent_actors
                       </i>
                     </button>
 
-                    <button mat-icon-button>
+                    <button mat-icon-button class="btn-color-default" >
                       <span class="icon-icn-clipboard  "> </span>
                     </button>
 
@@ -195,14 +196,15 @@
                       </div>
 
                       <div class="opt_flex__item">
-                        <div class="opt-txt__body2">BTX16L4 - Primier Dinner & Eye</div>
+                        <div class="opt-txt__body2">BTW17L3 - Sunday Lunch ADVC</div>
                         <div class="opt_flex--container tc-flex-item__center">
-                          <div class="opt_flex__item--inherit icon__cage"><span
-                            class="icon-icn-package  package-color--product"> </span>
+                          <div class="opt_flex__item--inherit icon__cage __min"><span
+                            class="icon-icn-item package-color--item"> </span>
                           </div>
                           <div class="opt_flex__item opt-txt__caption ">
-                            <span class="opt-txt__light"> 20-Jan-2018 </span> |<span
-                            class="opt-txt__light"> Event Name </span>
+                            <!--<span class="opt-txt__light"> 20-Jan-2018 </span> |-->
+                            <span
+                            class="opt-txt__light"> Windsor Sunday Lunch </span>
                           </div>
                         </div>
                       </div>
@@ -289,9 +291,76 @@
             </mat-expansion-panel-header>
 
 
-            <mat-panel-description>
-              This is a summary of the content
-            </mat-panel-description>
+            <!--<mat-panel-description>-->
+
+
+              <!--This is a summary of the content1-->
+
+              <div class="expansion-panel_body __inner_body ">
+                <div class="__data separator__line--dotted">
+                  <div class="row">
+                    <div class="col-sm-4 ">
+
+                      <div class="opt_flex--container tc-flex-item__center __data">
+                        <div class="opt_flex__item icon__cage __multi-buttons">
+
+                          <button mat-icon-button class="btn-color-default">
+                            <span class="icon-icn-office-big-chair  "> </span>
+                          </button>
+
+                          <button mat-icon-button  class="btn-color-default" >
+                            <span class="icon-icn-table"> </span>
+                          </button>
+
+                          <button mat-icon-button class="btn-color-default">
+                            <span class="icon-icn-settings-work-tool  "> </span>
+                          </button>
+
+                          <button mat-icon-button class="btn-color-default">
+                            <span class="icon-icn-file-fill  "> </span>
+                          </button>
+
+                          <button mat-icon-button class="btn-color-default">
+                            <span class="icon-icn-invoice  "> </span>
+                          </button>
+
+                        </div>
+                      </div>
+
+
+                    </div>
+                    <div class="col-sm-8">
+
+                      <!--<div class="opt_flex&#45;&#45;container tc-flex-item__center __data">-->
+                        <!--<div class="opt_flex__item icon__cage &#45;&#45;right __multi-buttons opt-txt__right ">-->
+
+                          <!--<button mat-icon-button class="btn btn__frozen" >-->
+                            <!--<i class="material-icons">-->
+                              <!--recent_actors-->
+                            <!--</i>-->
+                          <!--</button>-->
+
+                          <!--<button mat-icon-button>-->
+                            <!--<span class="icon-icn-clipboard  "> </span>-->
+                          <!--</button>-->
+
+
+
+                        <!--</div>-->
+                      <!--</div>-->
+                      <div class="opt_flex--container tc-flex-item__center __data">
+                      <div class="opt_flex__item ">
+                      <span class="opt-txt__caption opt-txt__light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque pretium, justo et tempor congue, libero eros elementum felis, eget laoreet nulla metus non est. Quisque v</span>
+                      </div>
+                      </div>
+
+                    </div>
+                  </div>
+
+                </div>
+                </div>
+
+            <!--</mat-panel-description>-->
 
 
           </mat-expansion-panel>
@@ -317,15 +386,18 @@
                       </div>
 
                       <div class="opt_flex__item">
-                        <div class="opt-txt__body2">BTX16L4 - Primier Dinner & Eye</div>
+                        <div class="opt-txt__body2">CFS18 - Le Jasmin - Friday</div>
                         <div class="opt_flex--container tc-flex-item__center">
-                          <div class="opt_flex__item--inherit icon__cage"><span
-                            class="icon-icn-package  package-color--product"> </span><span
+                          <div class="opt_flex__item--inherit icon__cage __min">
+                            <!--<span-->
+                            <!--class="icon-icn-package  package-color&#45;&#45;product"> </span>-->
+                            <span
                             class="icon-icn-item package-color--item"></span>
                           </div>
                           <div class="opt_flex__item opt-txt__caption ">
-                            <span class="opt-txt__light"> 20-Jan-2018 </span> |<span
-                            class="opt-txt__light"> Event Name </span>
+                            <!--<span class="opt-txt__light"> 20-Jan-2018 </span> |-->
+                            <span
+                            class="opt-txt__light"> Bo Drink </span>
                           </div>
                         </div>
                       </div>
@@ -383,7 +455,9 @@
                             </form>
                           </div>
                           <div class="opt_flex__item  price--value__icon">
-                            <span class="icon-coin-of-dollar"></span>
+
+                          <a class=""><span class="icon-coin-of-dollar"></span></a>
+
                           </div>
                         </div>
                         <div class="opt_flex--container tc-flex-item__center">
@@ -402,9 +476,9 @@
                   </div>
                 </div>
 
-                <div class="loadding--cage">
-                  <mat-progress-bar mode="query"></mat-progress-bar>
-                </div>
+                <!--<div class="loadding&#45;&#45;cage">-->
+                  <!--<mat-progress-bar mode="query"></mat-progress-bar>-->
+                <!--</div>-->
 
               </div>
 
@@ -412,9 +486,78 @@
             </mat-expansion-panel-header>
 
 
-            <mat-panel-description>
-              This is a summary of the content
-            </mat-panel-description>
+            <!--<mat-panel-description>-->
+              <!--This is a summary of the content-->
+            <!--</mat-panel-description>-->
+
+
+
+            <!--body of item-->
+            <div class="expansion-panel_body __inner_body ">
+
+              <div class="__data separator__line--dotted">
+                <div class="row">
+                  <div class="col-sm-4 ">
+
+                    <div class="opt_flex--container tc-flex-item__center __data">
+                      <div class="opt_flex__item icon__cage __multi-buttons">
+
+                        <button mat-icon-button class="btn-color-default">
+                          <span class="icon-icn-office-big-chair    "> </span>
+                        </button>
+
+                        <button mat-icon-button class="btn-color-default">
+                          <span class="icon-icn-table"> </span>
+                        </button>
+
+                        <button mat-icon-button class="btn-color-default">
+                          <span class="icon-icn-settings-work-tool  "> </span>
+                        </button>
+
+                        <button mat-icon-button class="btn-color-default">
+                          <span class="icon-icn-file-fill  "> </span>
+                        </button>
+
+                        <button mat-icon-button class="btn-color-default">
+                          <span class="icon-icn-invoice  "> </span>
+                        </button>
+
+                      </div>
+                    </div>
+
+
+                  </div>
+                  <div class="col-sm-8">
+
+                    <!--<div class="opt_flex&#45;&#45;container tc-flex-item__center __data">-->
+                    <!--<div class="opt_flex__item icon__cage &#45;&#45;right __multi-buttons opt-txt__right ">-->
+
+                    <!--<button mat-icon-button class="btn btn__frozen" >-->
+                    <!--<i class="material-icons">-->
+                    <!--recent_actors-->
+                    <!--</i>-->
+                    <!--</button>-->
+
+                    <!--<button mat-icon-button>-->
+                    <!--<span class="icon-icn-clipboard  "> </span>-->
+                    <!--</button>-->
+
+
+
+                    <!--</div>-->
+                    <!--</div>-->
+                    <div class="opt_flex--container tc-flex-item__center __data">
+                      <div class="opt_flex__item ">
+                        <span class="opt-txt__caption opt-txt__light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque pretium, justo et tempor congue, libero eros elementum felis, eget laoreet nulla metus non est. Quisque v</span>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <!--end of body item-->
 
 
           </mat-expansion-panel>
@@ -431,6 +574,10 @@
 
 
     </mat-accordion>
+
+
+
+
   </div>
 </div>
 

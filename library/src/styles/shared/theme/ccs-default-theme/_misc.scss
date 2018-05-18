@@ -45,6 +45,15 @@
 }
 
 
+.__icn--button_small{
+  [class^='icon-icn-'] {
+    font-size: 17px;
+    color: #a7b3bd;
+  }
+  &:hover{
+
+  }
+}
 
 .opt_flex__row{
   display: flex;
