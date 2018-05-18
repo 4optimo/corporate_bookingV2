@@ -1,18 +1,21 @@
-<div class="booking-summary __unavailable">
+<div class="booking-summary">
   <div class="flex-row">
     <div class="col">
       <div class="profile">
         <div class="profile__image">
           <img src="http://www.newsshare.in/wp-content/uploads/2017/04/Miniclip-8-Ball-Pool-Avatar-15.png" height="65"
                width="65" class="img-circle" alt="profile_image">
-          <!--<i class="material-icons">person</i>-->
-          <!--<div class="img-caption">Add Client</div>-->
         </div>
         <div class="profile__details">
           <div class="field name-field">
-            <div class="field-detail font-style-01">Mr. Peter Worth</div>
+            <div class="field-detail font-style-01">
+              <mat-select [(value)]="selected" class="opt-booking-summary-select-lg">
+                <mat-option value="option1">Mr. Joshua Colinsky</mat-option>
+                <mat-option value="option2">Mr. Peter Worth</mat-option>
+                <mat-option value="option3">Mr. Vitor Belfort</mat-option>
+              </mat-select>
+            </div>
             <div class="field-options">
-              <button class="btn btn-icon"><i class="material-icons small">keyboard_arrow_down</i></button>
               <button class="btn btn-icon"><i class="material-icons small">close</i></button>
             </div>
           </div>
@@ -23,10 +26,10 @@
           </div>
           <div class="opt_flex--container telephone-field">
             <div class="opt_flex__item--inherit">
-              <i class="material-icons small">phone</i>
+              <div class="label-icon"><i class="material-icons small">phone</i></div>
             </div>
             <div class="opt_flex__item">
-                <mat-select [(value)]="selected" panelClass="opt-booking-summary-select">
+                <mat-select [(value)]="selected" class="opt-booking-summary-select-sm">
                   <mat-option value="option1">+94 (0) 5618284652</mat-option>
                   <mat-option value="option2">+44 (0) 1234846230</mat-option>
                   <mat-option value="option3">+44 (0) 5654684687</mat-option>
@@ -35,10 +38,10 @@
           </div>
           <div class="opt_flex--container email-field">
             <div class="opt_flex__item--inherit">
-              <i class="material-icons small">email</i>
+              <div class="label-icon"><i class="material-icons small">email</i></div>
             </div>
             <div class="opt_flex__item">
-              <mat-select [(value)]="selected" panelClass="opt-booking-summary-select">
+              <mat-select [(value)]="selected" class="opt-booking-summary-select-sm">
                 <mat-option value="option1">peter@gmail.co.uk</mat-option>
                 <mat-option value="option2">peter@ccclub.co.uk</mat-option>
                 <mat-option value="option3">peter@outlook.co.uk</mat-option>
@@ -47,7 +50,7 @@
           </div>
           <div class="opt_flex--container address-field">
             <div class="opt_flex__item--inherit">
-              <i class="material-icons small">location_on</i>
+              <div class="label-icon"><i class="material-icons small">location_on</i></div>
             </div>
             <div class="opt_flex__item">
               <span class="font-style-06">London, United Kingdom</span>
@@ -82,56 +85,112 @@
         </div>
         <div class="flex-horizontal border-line"></div>
         <div class="flex-horizontal">
-          <div class="field">
-            <div class="field-icon">
-              <i class="material-icons">person</i>
+          <div class="opt_flex--container">
+            <div class="opt_flex__item--inherit">
+              <div class="label-icon"><i class="material-icons">person</i></div>
             </div>
-            <div class="field-detail font-style-07">
-              Mr. Peter Worth
+            <div class="opt_flex__item">
+              <mat-select [(value)]="selected" class="opt-booking-summary-select-sm themed emphd">
+                <mat-option value="option1">Coalfield National Park</mat-option>
+                <mat-option value="option2">Coalfield Cricket Club</mat-option>
+                <mat-option value="option3">Silverstone Racing Track</mat-option>
+              </mat-select>
+              <div class="typo sz-12">Referrer</div>
+              <mat-select [(value)]="selected" class="opt-booking-summary-select-sm emphd">
+                <mat-option value="option1">Mr. Vitor Belfort</mat-option>
+                <mat-option value="option2">Mr. Peter Worth</mat-option>
+                <mat-option value="option3">Mr. Joshua Colinsky</mat-option>
+              </mat-select>
             </div>
-            <div class="field-options">
-              <button class="btn btn-icon"><i class="material-icons small">keyboard_arrow_down</i></button>
+            <div class="opt_flex__item--inherit">
               <button class="btn btn-icon"><i class="material-icons small">close</i></button>
             </div>
           </div>
-          <div class="field">
-            <div class="field-detail">
-              <a class="link __default __no-ul">Coalfield Cricket Club</a>
-            </div>
-            <div class="field-options">
-              <button class="btn btn-icon"><i class="material-icons small">keyboard_arrow_down</i></button>
-            </div>
-          </div>
+          <!--<div class="field">-->
+            <!--<div class="field-icon">-->
+              <!--<div class="label-icon"><i class="material-icons">person</i></div>-->
+            <!--</div>-->
+            <!--<div class="field-detail font-style-07">-->
+              <!--Mr. Peter Worth-->
+            <!--</div>-->
+            <!--<div class="field-options">-->
+              <!--<button class="btn btn-icon"><i class="material-icons small">keyboard_arrow_down</i></button>-->
+              <!--<button class="btn btn-icon"><i class="material-icons small">close</i></button>-->
+            <!--</div>-->
+          <!--</div>-->
+          <!--<div class="field">-->
+            <!--<div class="field-detail">-->
+              <!--<a class="link __default __no-ul">Coalfield Cricket Club</a>-->
+            <!--</div>-->
+            <!--<div class="field-options">-->
+              <!--<button class="btn btn-icon"><i class="material-icons small">keyboard_arrow_down</i></button>-->
+            <!--</div>-->
+          <!--</div>-->
         </div>
       </div>
     </div>
     <div class="col">
       <div class="valuation">
-        <div class="flex-horizontal">
-          <div class="field">
-            <div class="field-inner">
-              <div>Net</div>
-              <div>&pound; 0.00</div>
-            </div>
-            <div class="field-inner text-right">
-              <div><span class="font-style-01 __success">&pound; 6,595.86</span></div>
-              <div>$ 550.00</div>
-            </div>
+        <div class="opt_flex--container">
+          <div class="opt_flex__item">
+            <div class="badge __grey __uppercase">$ 550.00</div>
+          </div>
+          <div class="opt_flex__item">
+            <div class="font-style-01 __success">&pound; 6,595.86</div>
+        </div>
+        </div>
+        <div class="opt_flex--container shaded parent-width">
+          <div class="opt_flex__item">
+            <div class="typo sz-12">Paid Amount</div>
+          </div>
+          <div class="opt_flex__item">
+            <div class="typo sz-13 medium">&pound; 900.00</div>
           </div>
         </div>
-        <div class="flex-horizontal">
-          <div class="field">
-            <div class="field-inner">
-              <div>Tax</div>
-              <div>&pound; 0.00</div>
-            </div>
-            <div class="field-inner text-right">
-              <div>&pound; 100.86</div>
-              <div><div class="badge __danger __uppercase">Outstanding</div></div>
-            </div>
+        <div class="opt_flex--container shaded parent-width">
+          <div class="opt_flex__item">
+            <div class="typo sz-12">Invoiced</div>
+          </div>
+          <div class="opt_flex__item">
+            <div class="typo sz-13 medium">&pound; 795.80</div>
           </div>
         </div>
+        <div class="opt_flex--container">
+          <div class="opt_flex__item">
+            <div><span class="typo sz-12 right-spacer-padding">Tax</span><span class="typo sz-12 right-spacer-padding">:</span><span class="typo sz-12 medium">&pound; 0.00</span></div>
+            <div><span class="typo sz-12 right-spacer-padding">Net</span><span class="typo sz-12 right-spacer-padding">:</span><span class="typo sz-12 medium">&pound; 0.00</span></div>
+          </div>
+          <div class="opt_flex__item">
+            <div class="typo sz-14 medium">&pound; 100.06</div>
+            <div class="badge __danger __uppercase">Outstanding</div>
+          </div>
+        </div>
+        <!--<div class="flex-horizontal">-->
+          <!--<div class="field">-->
+            <!--<div class="field-inner">-->
+              <!--<div class="badge __grey __uppercase">$ 550.00</div>-->
+              <!--<div>&pound; 0.00</div>-->
+            <!--</div>-->
+            <!--<div class="field-inner text-right">-->
+              <!--<div><span class="font-style-01 __success">&pound; 6,595.86</span></div>-->
+              <!--<div>$ 550.00</div>-->
+            <!--</div>-->
+          <!--</div>-->
+        <!--</div>-->
+        <!--<div class="flex-horizontal">-->
+          <!--<div class="field">-->
+            <!--<div class="field-inner">-->
+              <!--<div>Tax</div>-->
+              <!--<div>&pound; 0.00</div>-->
+            <!--</div>-->
+            <!--<div class="field-inner text-right">-->
+              <!--<div>&pound; 100.86</div>-->
+              <!--<div><div class="badge __danger __uppercase">Outstanding</div></div>-->
+            <!--</div>-->
+          <!--</div>-->
+        <!--</div>-->
       </div>
     </div>
   </div>
 </div>
+
