@@ -31,6 +31,20 @@
   &_expand--container {
     width: 100%;
 
+    >.row{
+
+
+      >[class^='col-']{
+
+        min-height: 55px;
+        @include flexbox();
+        .opt_flex--container{
+          width: 100%;
+        }
+
+      }
+    }
+
     .mat-form-field-wrapper {
       margin-left: 1px;
       margin-right: 1px;
@@ -59,7 +73,7 @@
 
         //border-left: 4px solid red;
 
-        &.mat-expanded{
+        &.opt-expand--line.mat-expanded{
           border-left: 4px solid #4bb3fa;
         }
 
@@ -102,7 +116,14 @@
     }
 
     .icon__cage {
-      width: 50px;
+      width: 55px;
+
+
+      &.__min{
+        width: auto;
+        height: auto;
+        min-width: 25px;
+      }
 
       .mat-checkbox-layout {
         margin-left: 15px;
@@ -150,7 +171,7 @@
 
       .price--value__icon {
         width: 15px;
-        padding-left: 10px;
+        padding-left: 5px;
       }
 
       .opt__type{
