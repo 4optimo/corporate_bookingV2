@@ -8,6 +8,10 @@ import {MatExpansionPanel} from "@angular/material";
 })
 export class OptBookingDetailsComponent implements OnInit {
 
+
+
+
+
   @ViewChild('myPanel') myPanel: MatExpansionPanel;
   matIcon = 'keyboard_arrow_down' || 'keyboard_arrow_up';
 
@@ -58,6 +62,24 @@ export class OptBookingDetailsComponent implements OnInit {
   //   this.myPanel4.expanded = !this.myPanel4.expanded;
   //   // alert("4");
   // }
+
+  PackageName: any[] = [
+    {
+      "name": "BTX16L4 - Premier Dinner & Eye"
+    },
+    {
+      "name": "BTX16L4 - Premier Dinner 1 & Eye"
+    },
+    {
+      "name": "BTX16L4 - Premier Dinner 2 & Eye"
+    },
+    {
+      "name": "BTX16L4 - Premier Dinner 3 & Eye"
+    },
+    {
+      "name": "BTX16L4 - Premier Dinner 4 & Eye"
+    }
+  ];
 
 
 }
