@@ -1,3 +1,4 @@
+
 .circle{
   @include circle-icon(40px, #f2705b, #f2705b);
   padding-top: 2px;
@@ -62,9 +63,11 @@
   //}
 }
 
-//mat-accordion{
-//  base-title-size : (x-small);
-//}
+mat-accordion{
+ // base-title-size : (x-small);
+  padding: 0;
+
+}
 .text-cancelled{
   color: #f2705b;
 }
@@ -73,7 +76,95 @@ div{
   .price-section{
     display:flex;
     align-items:center;
+    padding-right: 0;
+    text-align: right;
 
   }
 }
 
+.action__button{
+  flex: 1;
+}
+//.price--values {
+//  padding-left: 15px;
+//
+//  .price--value__icon {
+//    width: 15px;
+//    padding-left: 5px;
+//  }
+//
+//  .opt__type{
+//    margin-right: 40px;
+//  }
+//
+//  .price--value__input {
+//    width: 100px;
+//    font-weight: 500;
+//
+//    .mat-form-field {
+//      width: 100%;
+//
+//      .mat-input-element {
+//        font-weight: 500;
+//        font-size: 16px;
+//      }
+//    }
+//
+//  }
+//}
+
+.expand-header {
+  background-color: #f4f4f4;
+  height: 40px;
+  margin-left: -25px;
+  margin-right: -25px;
+
+  .expand-icon{
+    text-align: right;
+    vertical-align: middle;
+    i{
+      color: #909cac;
+      padding: 5px;
+      font-size: medium;
+    }
+  }
+}
+.latest-note{
+  border: 1px solid #909cac;
+  height: 70px;
+  align-items: center;
+
+  .item1{
+    text-align: inherit;
+    //padding-left: 5px;
+    background-color: #909cac;
+    //line-height: 5px;
+    .note-icon{
+      color: white;
+      line-height: 70px;
+    }
+  }
+  .item2{
+
+  }
+  .item3{
+    align-items: right;
+    padding-right: 5px;
+  }
+}
+.dispatch-status{
+  border: 1px solid #27bfc2;
+  height: 40px;
+  align-items: center;
+  .item1{
+    background-color: #27bfc2;
+    .dispatch-icon{
+      color: white;
+      line-height: 40px;
+    }
+    line-height: 3px;
+  }
+  .item2{
+    color: #27bfc2;
+  }
+}
