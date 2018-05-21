@@ -210,8 +210,17 @@
 
 
 }
-.action__button{
+.action__button {
   flex: 1;
+
+  @include respond-to('x-small') {
+    text-align: right;
+  }
+
+
+
+
+
 }
 .lbl {
 

@@ -1,5 +1,9 @@
 //Theming the mat-radio-btn
 
+mat-expansion-panel{
+  border-bottom: 1px solid #eee;
+}
+
 button{
   &.mat-icon-button{
     &.btn-color-default{

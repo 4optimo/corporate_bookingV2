@@ -4,13 +4,15 @@
 
     <mat-accordion>
 
-      <mat-expansion-panel #myPanel [disabled]="true" class="opt-expand--line">
+
+
+      <mat-expansion-panel #myPanel [disabled]="true" class="opt-expand--line" *ngFor="let PackageName of PackageName ; let i = index" >
         <mat-expansion-panel-header class="opt_expand__header" collapsedHeight=".collapsedHeight" expandedHeight=".expandedHeight">
 
 
           <div class="opt_expand--container">
             <div class="row">
-              <div class="col-sm-4">
+              <div class="col-sm-6  	col-md-4	col-lg-4	col-xl-4">
 
                 <div class="opt_flex--container tc-flex-item__center">
                   <div class="opt_flex__item--inherit icon__cage ">
@@ -18,7 +20,7 @@
                   </div>
 
                   <div class="opt_flex__item">
-                    <div class="opt-txt__body2">BTX16L4 - Primier Dinner & Eye</div>
+                    <div class="opt-txt__body2"> {{ PackageName.name }}-{{ i + 1 }} </div>
                     <div class="opt_flex--container tc-flex-item__center">
                       <div class="opt_flex__item--inherit icon__cage __min"><span
                         class="icon-icn-package  package-color--product"> </span><span
@@ -30,12 +32,10 @@
                       </div>
                     </div>
                   </div>
-
                 </div>
-
-
               </div>
-              <div class="col-sm-3">
+
+              <div class="col-sm-6  	col-md-3	col-lg-3	col-xl-3">
                 <div class="opt_flex--container tc-flex-item__center">
                   <div class="opt_flex__item">
                     <div class="opt-txt__body1"><span class="opt-txt__body1 __link"> Covers</span> [4hrs]</div>
@@ -48,11 +48,11 @@
                 </div>
 
               </div>
-              <div class="col-sm-5">
+              <div class=" col-sm-12	col-md-5	col-lg-5	col-xl-5">
 
                 <div class="opt_flex--container tc-flex-item__center">
                   <div class="opt_flex__item">
-                    <div class="opt-txt__body1 __link __bold">£ 92.19</div>
+                    <div class="opt-txt__body1 __link __bold __item--value">£ 92.19</div>
                   </div>
                   <div class="opt_flex__item opt_counter__item">
 
@@ -110,9 +110,9 @@
               </div>
             </div>
 
-            <div class="loadding--cage">
-              <mat-progress-bar mode="query"></mat-progress-bar>
-            </div>
+            <!--<div class="loadding&#45;&#45;cage">-->
+              <!--<mat-progress-bar mode="query"></mat-progress-bar>-->
+            <!--</div>-->
 
           </div>
 
@@ -122,7 +122,7 @@
 
           <div class="__data separator__line--dotted">
             <div class="row">
-              <div class="col-sm-6 ">
+              <div class="col-sm-6	col-md-6 col-lg-6	col-xl-6">
 
                 <div class="opt_flex--container tc-flex-item__center __data">
                   <div class="opt_flex__item icon__cage __multi-buttons">
@@ -152,7 +152,7 @@
 
 
               </div>
-              <div class="col-sm-6">
+              <div class="col-sm-6	col-md-6	col-lg-6	col-xl-6">
 
                 <div class="opt_flex--container tc-flex-item__center __data">
                   <div class="opt_flex__item icon__cage --right __multi-buttons opt-txt__right ">
@@ -188,7 +188,7 @@
 
               <div class="opt_expand--container ">
                 <div class="row">
-                  <div class="col-sm-4">
+                  <div class="col-sm-12	col-md-4	col-lg-4	col-xl-4">
 
                     <div class="opt_flex--container tc-flex-item__center">
                       <div class="opt_flex__item--inherit icon__cage ">
@@ -211,7 +211,7 @@
 
                     </div>
                   </div>
-                  <div class="col-sm-3">
+                  <div class="col-sm-12	col-md-3	col-lg-3	col-xl-3 ">
                     <div class="opt_flex--container tc-flex-item__center">
                       <div class="opt_flex__item">
                         <div class="opt-txt__body1"><span class="opt-txt__body1 __link"> Covers</span> [4hrs]</div>
@@ -224,7 +224,7 @@
                     </div>
 
                   </div>
-                  <div class="col-sm-5">
+                  <div class="col-sm-12	col-md-5	col-lg-5	col-xl-5">
 
                     <div class="opt_flex--container tc-flex-item__center">
                       <div class="opt_flex__item">
@@ -299,7 +299,7 @@
               <div class="expansion-panel_body __inner_body ">
                 <div class="__data separator__line--dotted">
                   <div class="row">
-                    <div class="col-sm-4 ">
+                    <div class=" col-sm-12	col-md-4	col-lg-4	col-xl-4 ">
 
                       <div class="opt_flex--container tc-flex-item__center __data">
                         <div class="opt_flex__item icon__cage __multi-buttons">
@@ -329,7 +329,7 @@
 
 
                     </div>
-                    <div class="col-sm-8">
+                    <div class="col-sm-12	col-md-8	col-lg-8	col-xl-8">
 
                       <!--<div class="opt_flex&#45;&#45;container tc-flex-item__center __data">-->
                         <!--<div class="opt_flex__item icon__cage &#45;&#45;right __multi-buttons opt-txt__right ">-->
@@ -378,7 +378,7 @@
 
               <div class="opt_expand--container ">
                 <div class="row">
-                  <div class="col-sm-4">
+                  <div class="col-sm-12	col-md-4	col-lg-4	col-xl-4">
 
                     <div class="opt_flex--container tc-flex-item__center">
                       <div class="opt_flex__item--inherit icon__cage ">
@@ -404,7 +404,7 @@
 
                     </div>
                   </div>
-                  <div class="col-sm-3">
+                  <div class="col-sm-12	col-md-3	col-lg-3	col-xl-3">
                     <div class="opt_flex--container tc-flex-item__center">
                       <div class="opt_flex__item">
                         <div class="opt-txt__body1"><span class="opt-txt__body1 __link"> Covers</span> [4hrs]</div>
@@ -417,7 +417,7 @@
                     </div>
 
                   </div>
-                  <div class="col-sm-5">
+                  <div class="col-sm-12	col-md-5	col-lg-5	col-xl-5">
 
                     <div class="opt_flex--container tc-flex-item__center">
                       <div class="opt_flex__item">
@@ -497,7 +497,7 @@
 
               <div class="__data separator__line--dotted">
                 <div class="row">
-                  <div class="col-sm-4 ">
+                  <div class="col-sm-12	col-md-4	col-lg-4	col-xl-4">
 
                     <div class="opt_flex--container tc-flex-item__center __data">
                       <div class="opt_flex__item icon__cage __multi-buttons">
@@ -527,7 +527,7 @@
 
 
                   </div>
-                  <div class="col-sm-8">
+                  <div class="col-sm-12	col-md-8	col-lg-8	col-xl-8">
 
                     <!--<div class="opt_flex&#45;&#45;container tc-flex-item__center __data">-->
                     <!--<div class="opt_flex__item icon__cage &#45;&#45;right __multi-buttons opt-txt__right ">-->
@@ -571,6 +571,32 @@
 
 
       </mat-expansion-panel>
+
+
+
+
+
+
+
+
+
+     <!-- 2nd recode  data   -->
+
+
+
+      <!-- 2nd recode  data   -->
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     </mat-accordion>
