@@ -60,6 +60,22 @@
   &_booking__detail {
 
 
+.__date--cage{
+
+  padding-left: 15px;
+
+  @include respond-to('small') {
+    padding-left: 15px;
+  }
+
+  @include respond-to('medium') {
+    padding-left: 0px;
+  }
+  @include respond-to('large') {
+    padding-left: 0px;
+  }
+
+}
 
     .mat-accordion{
 
@@ -101,7 +117,31 @@
     }
 
 
+    .__time--cage{
 
+
+
+
+      @include respond-to('small') {
+        padding-right: 40px;
+        text-align: right;
+
+      }
+
+      @include respond-to('medium') {
+        padding-right: 0px;
+        text-align: right;
+
+      }
+      @include respond-to('large') {
+
+        padding-right: 0px;
+        text-align: left;
+      }
+
+
+
+    }
 
     mat-accordion {
       .mat-expansion-panel-header[aria-disabled=true] {
@@ -111,8 +151,45 @@
         padding: 0px;
         margin-left: 4px;
         margin-right: 4px;
-      }
 
+
+
+
+
+
+        @include respond-to('small') {
+          min-height: 110px;
+          height: 110px !important;
+
+        }
+
+        @include respond-to('medium') {
+          min-height: 110px;
+          height: 110px !important;
+
+        }
+        @include respond-to('large') {
+
+          min-height: 55px;
+          height: 55px !important;
+        }
+
+
+
+        > .row {
+
+          > [class^='col-'] {
+
+            min-height: 55px;
+            @include flexbox();
+            .opt_flex--container {
+              width: 100%;
+            }
+
+          }
+
+        }
+      }
     }
 
     .icon__cage {
@@ -165,17 +242,73 @@
       width: calc(100% - 50px)
 
     }
+    .__item--value{
+
+      @include respond-to('small') {
+
+        padding-left: 15px;
+       // background-color: #00acc1;
+      }
+
+      @include respond-to('medium') {
+        padding-left: 5px;
+       // background-color: #00bfa5;
+      }
+      @include respond-to('large') {
+        padding-left: 5px;
+       // background-color: rebeccapurple;
+      }
+
+    }
 
     .price--values {
-      padding-left: 15px;
+
+
+      @include respond-to('small') {
+        padding-left: 15px;
+
+      }
+
+      @include respond-to('medium') {
+        padding-left: 25px;
+
+      }
+      @include respond-to('large') {
+        padding-left: 15px;
+
+      }
+
 
       .price--value__icon {
         width: 15px;
         padding-left: 5px;
+        @include respond-to('x-small') {
+          flex: initial;
+          width: 23px;
+        }
+        @include respond-to('medium') {
+        }
+        @include respond-to('large') {
+        }
+
+
+
       }
 
       .opt__type{
-        margin-right: 40px;
+
+
+        @include respond-to('small') {
+          margin-right: 23px;
+        }
+
+        @include respond-to('medium') {
+          margin-right: 23px;
+        }
+        @include respond-to('large') {
+          margin-right: 23px;
+        }
+
       }
 
       .price--value__input {
@@ -213,15 +346,23 @@
 .action__button {
   flex: 1;
 
+
   @include respond-to('x-small') {
-    text-align: right;
-  }
+    flex: 0 1 auto;
+    }
+  @include respond-to('large') {
+    flex: 0 1 auto;
+    }
 
-
-
-
+  @include respond-to('xx-large') {
+         text-align: right;
+       }
 
 }
+
+
+
+
 .lbl {
 
   &.lbl__vat {
