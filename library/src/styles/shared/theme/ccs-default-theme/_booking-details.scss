@@ -81,6 +81,7 @@
 
       >.mat-expansion-panel{
         border-left: 4px solid #fff;
+        box-shadow: none;
 
       }
 
@@ -91,6 +92,9 @@
 
         &.opt-expand--line.mat-expanded{
           border-left: 4px solid #4bb3fa;
+
+          @include box_shadow(3);
+
         }
 
 
@@ -435,7 +439,63 @@
   border-bottom: 2px solid #e1e1e1 ;
   padding-bottom: 10px;
 
+  >.opt_flex--container {
+
+    @include respond-to('small') {
+      flex-direction: column;
+      //border: 1px solid red;
+    }
+
+    @include respond-to('medium') {
+
+
+
+
+      flex-direction: row;
+      //border: 1px solid green;
+    }
+
+    @include respond-to('xx-large') {
+      flex-direction: row;
+      //border: 1px solid orange;
+    }
+
+    >.opt_flex__item{
+
+    }
+
+
+    //@include respond-to('x-small') {
+    //
+    //  @include flex-direction(column);
+    //
+    //  .price__details--row{
+    //    &:last-child {
+    //      //border-bottom: 1px solid #e1e1e1;
+    //    }
+    //  }
+    //
+    //
+    //  >.opt_flex__item{
+    //    &.__right-line{
+    //      border-right: none !important;
+    //    }
+    //  }
+    //
+    //}
+    //
+    //@include respond-to('large') {
+    //  @include flex-direction(row);
+    //}
+    //
+    //@include respond-to('xx-large') {
+    //  @include flex-direction(row);
+    //}
+
+  }
+
   .opt_flex--container{
+
     >.opt_flex__item{
 
       &.__right-line{
@@ -512,6 +572,7 @@
 
 
 }
+
 
 
 

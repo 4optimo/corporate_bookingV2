@@ -13,6 +13,7 @@ $bootstrap-sass-asset-helper: false;
 
 @import "./shared/theme/ccs-default-theme/variables";
 @import "shared/theme/ccs-default-theme/bootstrap/stylesheets/bootstrap";
+@import "./shared/theme/ccs-default-theme/icon-fonts";
 @import "./shared/theme/ccs-default-theme/reset";
 @import "./shared/theme/ccs-default-theme/mixins/mixins";
 @import "./shared/theme/ccs-default-theme/mixins/flexbox";
