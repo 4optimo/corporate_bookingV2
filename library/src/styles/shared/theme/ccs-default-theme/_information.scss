@@ -59,6 +59,14 @@
     }
   }
 
+//div{
+//.mat-select-arrow{
+//
+//  background: url('./shared/images/baseline-keyboard_arrow_down-24px.svg');
+//  content : '<i class="material-icons">keyboard_arrow_down</i>';
+//
+//}
+//}
   .flex-container {
     display: flex;
     flex-direction: row;
@@ -67,7 +75,7 @@
     align-content: stretch;
     align-items: flex-start;
     }
-  }
+
 
   .input {
     order: 0;
@@ -85,11 +93,11 @@
   .btn {
     padding: 5px;
 
-    &:active,&:focus, &:visited, &:active:focus {
+    &:active, &:focus, &:visited, &:active:focus {
       outline: none;
     }
 
-    .active{
+    .active {
       background-color: #4bb3fa;
       &:btn-icon {
         color: white;
@@ -106,5 +114,7 @@
       border: 1px solid #b7b7b7;
 
     }
+
   }
 
+}
