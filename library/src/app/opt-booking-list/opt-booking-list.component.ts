@@ -18,8 +18,6 @@ export class OptBookingListComponent implements OnInit {
   @ViewChild('myPanel3') myPanel3: MatExpansionPanel;
   matIcon3 = 'keyboard_arrow_down' || 'keyboard_arrow_up';
 
-  // @ViewChild('myPanel4') myPanel4: MatExpansionPanel;
-  // matIcon4 = 'keyboard_arrow_down' || 'keyboard_arrow_up';
 
   constructor() { }
 
@@ -43,18 +41,18 @@ export class OptBookingListComponent implements OnInit {
 
 
   }
-  expandPannel() {
-    this.myPanel.expanded = !this.myPanel.expanded;
-    // alert("1");
-  }
-  expandPannel2() {
-    this.myPanel2.expanded = !this.myPanel2.expanded;
-     // alert("2");
-  }
-  expandPannel3() {
-    this.myPanel3.expanded = !this.myPanel3.expanded;
-    // alert("3");
-  }
+  // expandPannel() {
+  //   this.myPanel.expanded = !this.myPanel.expanded;
+  //   // alert("1");
+  // }
+  // expandPannel2() {
+  //   this.myPanel2.expanded = !this.myPanel2.expanded;
+  //    // alert("2");
+  // }
+  // expandPannel3() {
+  //   this.myPanel3.expanded = !this.myPanel3.expanded;
+  //   // alert("3");
+  // }
   // expandPannel4() {
   //   this.myPanel4.expanded = !this.myPanel4.expanded;
   //   // alert("4");
