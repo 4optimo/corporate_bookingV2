@@ -60,22 +60,22 @@
   &_booking__detail {
 
 
-.__date--cage{
+    .__date--cage{
 
-  padding-left: 15px;
+      padding-left: 15px;
 
-  @include respond-to('small') {
-    padding-left: 15px;
-  }
+      @include respond-to('small') {
+        padding-left: 15px;
+      }
 
-  @include respond-to('medium') {
-    padding-left: 0px;
-  }
-  @include respond-to('large') {
-    padding-left: 0px;
-  }
+      @include respond-to('medium') {
+        padding-left: 0px;
+      }
+      @include respond-to('large') {
+        padding-left: 0px;
+      }
 
-}
+    }
 
     .mat-accordion{
 
@@ -106,8 +106,8 @@
           }
 
           .__include-package_line{
-                  border-top:1px solid #d9d9d9;
-                }
+            border-top:1px solid #d9d9d9;
+          }
 
           .__new-items_line{
             border-top:1px dashed #4bb3fa;
@@ -248,16 +248,16 @@
       @include respond-to('small') {
 
         padding-left: 15px;
-       // background-color: #00acc1;
+        // background-color: #00acc1;
       }
 
       @include respond-to('medium') {
         padding-left: 5px;
-       // background-color: #00bfa5;
+        // background-color: #00bfa5;
       }
       @include respond-to('large') {
         padding-left: 5px;
-       // background-color: rebeccapurple;
+        // background-color: rebeccapurple;
       }
 
     }
@@ -350,14 +350,14 @@
 
   @include respond-to('x-small') {
     flex: 0 1 auto;
-    }
+  }
   @include respond-to('large') {
     flex: 0 1 auto;
-    }
+  }
 
   @include respond-to('xx-large') {
-         text-align: right;
-       }
+    text-align: right;
+  }
 
 }
 
@@ -373,9 +373,9 @@
   font-weight: 500;
 
   &.lbl__vat {
-     background-color: $lbl-vat--color;
+    background-color: $lbl-vat--color;
 
-   }
+  }
   &.lbl__price-details {
     background-color: $lbl__price-details;
     color: #fff;
@@ -507,54 +507,54 @@
   }
 
 
-.margin-cage{
-  width: 100%;
-  border: 1px solid #e3e3e3;
-  margin-top: 20px;
-  height: 40px;
+  .margin-cage{
+    width: 100%;
+    border: 1px solid #e3e3e3;
+    margin-top: 20px;
+    height: 40px;
 
-  &.status__1 {
-    background-color: $opt_color__secondary;
+    &.status__1 {
+      background-color: $opt_color__secondary;
 
-    .txt__lbl{
-      background-color: #fff;
-      text-align: center;
-      font-size: 16px;
-      font-weight: 500;
-      color: $opt_color__secondary;
+      .txt__lbl{
+        background-color: #fff;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 500;
+        color: $opt_color__secondary;
 
-    }
+      }
 
-    .txt__val {
-      text-align: center;
-      font-size: 16px;
-      font-weight: 500;
-      color: #fff;
-      position: relative;
+      .txt__val {
+        text-align: center;
+        font-size: 16px;
+        font-weight: 500;
+        color: #fff;
+        position: relative;
 
-      &:after{
-        content: '';
-        position: absolute;
-        left: 0px;
-        top: 9px;
-        width: 0;
-        height: 0;
-        border-top: 10px solid transparent;
-        border-right: 10px solid transparent;
-        border-left: 10px solid #ffffff;
-        clear: both;
-        border-bottom: 10px solid transparent;
-        z-index: 1000;
+        &:after{
+          content: '';
+          position: absolute;
+          left: 0px;
+          top: 9px;
+          width: 0;
+          height: 0;
+          border-top: 10px solid transparent;
+          border-right: 10px solid transparent;
+          border-left: 10px solid #ffffff;
+          clear: both;
+          border-bottom: 10px solid transparent;
+          z-index: 1000;
+        }
+
       }
 
     }
 
+
+
+
   }
-
-
-
-
-}
 
 
 
@@ -564,8 +564,8 @@
     margin-left: 15px;
     margin-right: 15px;
 
-   &:last-child {
-     border-bottom: none;
+    &:last-child {
+      border-bottom: none;
     }
 
   }
