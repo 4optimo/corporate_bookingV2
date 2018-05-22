@@ -53,6 +53,7 @@ import { OptBookingListComponent } from './opt-booking-list/opt-booking-list.com
 import { OptBookingSummaryComponent } from './opt-booking-summary/opt-booking-summary.component';
 import { OptBookingDetailsComponent } from './opt-booking-details/opt-booking-details.component';
 import { AdditionalInformationComponent} from "./additional-information/additional-information.component";
+import { OptSectionHeadingComponent } from './opt-section-heading/opt-section-heading.component';
 
 
 @NgModule({
@@ -90,7 +91,8 @@ import { AdditionalInformationComponent} from "./additional-information/addition
     MatTabsModule,
     MatToolbarModule,
     MatTooltipModule,
-  ]
+  ],
+
 })
 export class DemoMaterialModule {}
 
@@ -102,6 +104,7 @@ export class DemoMaterialModule {}
     OptBookingListComponent,
     OptBookingDetailsComponent,
     AdditionalInformationComponent,
+    OptSectionHeadingComponent,
     OptBookingSummaryComponent
   ],
   imports: [
