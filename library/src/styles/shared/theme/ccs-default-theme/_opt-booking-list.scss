@@ -1,123 +1,82 @@
 
-.circle{
-  @include circle-icon(40px, #f2705b, #f2705b);
-  padding-top: 2px;
-  line-height: 12px;
-  .date{
-    font-size: 14px;
-    font-weight: bold;
-    color: white;
-  }
-  .month_year{
-    font-size: 9px;
-    color: white;
-    font-weight: normal;
-  }
-}
-.width-define{
-  width: 60px;
-}
-.width-calc{
-  position: absolute;
-  left: 80px;
-  width: calc(100% - 60px);
-  //padding: 5px;
-  text-align: left;
-}
-.btn {
-  &.btn__selected {
-    border: 1px solid #b7b7b7;
-    //outline-color: #0000;
-    //border-radius: 4px;
-    background-color: $btn-active-color;
+.opt_booking__list{
 
-    i {
-      color: #fff;
+
+  .opt{
+    &_opt_width-define{
+      min-height: 55px;
     }
-  }
-    &.btn__frozen {
-      border: 1px solid #b7b7b7;
-      //outline-color: #0000;
-      //border-radius: 4px;
-      background-color: $btn-frozen-color;
 
-      i {
-        color: #fff;
+    &_expand--container {
+      width: 100%;
+      color: black;
+
+      >.row{
+
+
+        >[class^='col-']{
+
+          min-height: 55px;
+          @include flexbox();
+          .opt_flex--container{
+            width: 100%;
+          }
+
+        }
+      }
+
+    }
+
+    &_circle{
+      @include circle-icon(40px, #f2705b, #f2705b);
+      padding-top: 2px;
+      line-height: 12px;
+      .date{
+        font-size: 14px;
+        font-weight: bold;
+        color: white;
+      }
+      .month_year{
+        font-size: 9px;
+        color: white;
+        font-weight: normal;
       }
     }
 
 
+    &_width-calc{
+      //position: absolute;
+      //left: 80px;
+      width: calc(100% - 60px);
+      //padding: 5px;
+      //text-align: left;
+    }
+    .btn {
+      &.btn__selected {
+        border: 1px solid #b7b7b7;
+        //outline-color: #0000;
+        //border-radius: 4px;
+        background-color: $btn-active-color;
 
+        i {
+          color: #fff;
+        }
+      }
+      &.btn__frozen {
+        border: 1px solid #b7b7b7;
+        //outline-color: #0000;
+        //border-radius: 4px;
+        background-color: $btn-frozen-color;
 
+        i {
+          color: #fff;
+        }
+      }
+    }
+    &_expand-header {
+      background-color: #f4f4f4;
+      height: 55px;
 
-  &:active, &:focus, &:visited, &:active:focus {
-    //outline: 1px;
-    //outline-color: #455a64;
-  }
-  //&.btn-icon {
-  //  background-color: transparent;
-  //  padding: 0;
-  //  color: #d3d6d9;
-  //  align-items: center;
-  //  box-shadow: none;
-  //}
-}
-
-mat-accordion{
- // base-title-size : (x-small);
-  padding: 0;
-
-}
-.text-cancelled{
-  color: #f2705b;
-}
-
-div{
-  .price-section{
-    display:flex;
-    align-items:center;
-    padding-right: 0;
-    text-align: right;
-
-  }
-}
-
-.action__button{
-  flex: 1;
-}
-//.price--values {
-//  padding-left: 15px;
-//
-//  .price--value__icon {
-//    width: 15px;
-//    padding-left: 5px;
-//  }
-//
-//  .opt__type{
-//    margin-right: 40px;
-//  }
-//
-//  .price--value__input {
-//    width: 100px;
-//    font-weight: 500;
-//
-//    .mat-form-field {
-//      width: 100%;
-//
-//      .mat-input-element {
-//        font-weight: 500;
-//        font-size: 16px;
-//      }
-//    }
-//
-//  }
-//}
-
-.expand-header {
-  background-color: #f4f4f4;
-  height: 40px;
-  margin-left: -25px;
-  margin-right: -25px;
 
       .expand-icon{
         text-align: right;
@@ -139,7 +98,7 @@ div{
       align-items: center;
       margin: 15px;
       display: flex;
-      align-items: stretch;
+      //align-items: stretch;
       height: 100%;
       width: 100%;
       padding-right: 5px;
@@ -178,7 +137,7 @@ div{
       align-items: center;
       margin: 15px;
       display: flex;
-      align-items: stretch;
+      //align-items: stretch;
       height: 100%;
       width: 100%;
       min-width: 50px;
@@ -211,13 +170,13 @@ div{
 
 
   .opt_price-section{
-    padding-right: 0px;
+    padding-right: 0;
     text-align: right;
   }
 
 
   .mat-expansion-panel-body{
-    padding: 0px;
+    padding: 0;
 
     .__multi-buttons{
       padding-left: 50px;
@@ -234,7 +193,7 @@ div{
 
   .mat-expansion-panel-header-description, .mat-expansion-panel-header-title {
 
-    margin-right: 0px;
+    margin-right: 0;
   }
 
   mat-accordion {
@@ -242,7 +201,7 @@ div{
       color: inherit;
     }
     .mat-expansion-panel-header {
-      padding: 0px;
+      padding: 0;
       margin-left: 4px;
       margin-right: 4px;
 
@@ -282,11 +241,29 @@ div{
 
   .booking-summary {
     .flex-row {
-      &:nth-child(2) {
-        background-color: white;
+      .col {
+        &:nth-child(2) {
+          background-color: white;
+          border-right: 1px #909cac solid;
+          border-left: 1px #909cac solid;
+        }
+        &:nth-child(1){
+          .img-circle {
+            display: none;
+          }
+        }
+        .btn.btn-icon{
+
+            display: none;
+
+        }
+        .mat-select-arrow-wrapper{
+          visibility: hidden    ;
+        }
+
       }
+
     }
   }
 
-
-
+}
