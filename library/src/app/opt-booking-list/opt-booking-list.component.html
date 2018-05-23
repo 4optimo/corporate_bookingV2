@@ -1,65 +1,68 @@
 <div class="opt_booking__list">
 <mat-accordion>
   <mat-expansion-panel #myPanel [disabled]="true">
-    <mat-expansion-panel-header>
-      <div class="col-sm-4">
-        <mat-panel-title class="opt_flex--container">
-          <div class="opt_flex__item--inherit">
-            <div class="width-define">
-              <div class="circle red">
-                <div class="date">7
-                  <div class="month_year">  FEB <br>2018</div>
+    <mat-expansion-panel-header class="opt_width-define">
+      <div class="opt_expand--container">
+        <div class="col-sm-4 col-md-4	col-lg-4	col-xl-4">
+          <mat-panel-title class="opt_flex--container tc-flex-item__center">
+            <div class="opt_flex__item--inherit ">
+              <div class="">
+                <div class="opt_circle">
+                  <div class="date">7
+                    <div class="month_year">  FEB <br>2018</div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="opt_flex__item--inherit">
-              <div class="width-calc">
+            <div class="opt_flex__item--inherit">
+              <div class="opt_width-calc">
                 <div><span class="opt-txt__body2">PB3456</span><span class="opt-txt__body2"> - Mr.Jone Albert</span></div>
-                <div class="opt-txt__body2">Pandarix</div>
+                <div><span class="opt-txt__body2">Pandarix</span></div>
               </div>
-          </div>
-        </mat-panel-title>
-      </div>
-      <div class="col-sm-4">
-        <mat-panel-description class="opt_flex--container">
-          <div>
-            <div class="opt_flex__item opt-txt__body1">5-JAN-18 | <span class="opt-txt__body2"> Personal Training Bookings</span></div>
-            <div class="opt-txt__body1"><span>Corporate </span>| <span class="text-cancelled">Cancelled</span></div>
-          </div>
-        </mat-panel-description>
-      </div>
-      <div class="col-sm-4  price-section">
+            </div>
+          </mat-panel-title>
+        </div>
+        <div class="col-sm-4 col-md-4	col-lg-4	col-xl-4">
+          <mat-panel-description class="opt_flex--container">
+            <div>
+              <div class="opt_flex__item tc-flex-item__center opt-txt__body1">5-JAN-18 | <span class="opt-txt__body2"> Personal Training Bookings</span></div>
+              <div class="opt-txt__body1"><span>Corporate </span>| <span class="text-cancelled">Cancelled</span></div>
+            </div>
+          </mat-panel-description>
+        </div>
+        <div class="col-sm-4  col-md-4	col-lg-4	col-xl-4  opt_price-section">
         <mat-panel-description class="opt_flex--container">
           <div class="opt_flex__item"><span class="lbl lbl__vat">inc Vat</span></div>
           <div class=" opt_flex__item opt-typo-subhead-2 ">£300.00</div>
           <div class="opt_flex__item opt-txt__light btn btn-select">Select</div>
           <div class="opt_flex__item action__button">
-          <button mat-icon-button color="primary" (click)="expandPannel()" [disableRipple]="true" >
-
-          <mat-icon>{{matIcon}}</mat-icon>
-
-          </button>
+           <button mat-icon-button color="primary" (click)="expandPannel()" [disableRipple]="true" >
+            <mat-icon>{{matIcon}}</mat-icon>
+            </button>
           </div>
+
         </mat-panel-description>
+
+      </div>
 
       </div>
     </mat-expansion-panel-header>
 
-    <div class="row expand-header">
+
+    <div class="row opt_expand-header">
       <div class="col-sm-10 opt_flex__item"></div>
       <div class="col-sm-2 opt_flex__item expand-icon">
-          <i class=" material-icons color medium">monetization_on</i>
-          <i class="material-icons color medium">file_copy</i>
-          <i class="material-icons color medium">launch</i>
+          <i class=" material-icons color attach_money-icon">attach_money</i>
+          <i class="material-icons color file_copy-icon">file_copy</i>
+          <i class="material-icons color launch-icon">launch</i>
       </div>
     </div>
-    <app-opt-booking-summary></app-opt-booking-summary>
+    <!--<app-opt-booking-summary></app-opt-booking-summary>-->
     <app-opt-booking-details></app-opt-booking-details>
 
     <!--labels-->
     <div class="row">
-      <div class="opt_flex--container latest-note">
+      <div class="opt_flex--container opt_latest-note">
       <div class="opt_flex__item item1 col-sm-1">
         <span>
           <i class="material-icons note-icon">insert_drive_file</i>
@@ -75,7 +78,7 @@
     </div>
     </div>
     <br><br>
-    <div class="opt_flex--container dispatch-status row">
+    <div class="opt_flex--container opt_dispatch-status row">
       <div class="opt_flex__item item1 col-sm-1">
         <span>
           <i class="material-icons dispatch-icon">call_made</i>
