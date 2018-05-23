@@ -24,7 +24,7 @@
                     <div class="opt_flex--container tc-flex-item__center">
                       <div class="opt_flex__item--inherit icon__cage __min"><span
                         class="icon-icn-package  package-color--product"> </span><span
-                        class="icon-bag package-color--item"></span>
+                        class="icon-icn-item package-color--item"></span>
                       </div>
                       <div class="opt_flex__item opt-txt__caption ">
                         <span class="opt-txt__light"> 20-Jan-2018 </span> |<span
@@ -93,7 +93,7 @@
                     </div>
                     <div class="opt_flex--container tc-flex-item__center">
                       <div class="opt_flex__item opt-txt__right opt__type">
-                        <span class="opt-txt__body1 __link __bold">GST</span>
+                        <span class="opt-txt__body1 __link __bold opt-txt__light">GST</span>
                       </div>
                     </div>
                   </div>
@@ -110,9 +110,9 @@
               </div>
             </div>
 
-            <!--<div class="loadding&#45;&#45;cage">-->
-              <!--<mat-progress-bar mode="query"></mat-progress-bar>-->
-            <!--</div>-->
+            <div class="loadding--cage" *ngIf=" i == 0 ;" >
+              <mat-progress-bar mode="query"></mat-progress-bar>
+            </div>
 
           </div>
 
@@ -127,23 +127,24 @@
                 <div class="opt_flex--container tc-flex-item__center __data">
                   <div class="opt_flex__item icon__cage __multi-buttons">
 
-                    <button mat-icon-button  class="btn-color-default">
+                    <button mat-icon-button  class="btn-color-default"  matTooltip="Seat Allocation"
+                            >
                       <span class="icon-icn-office-big-chair  "> </span>
                     </button>
 
-                    <button mat-icon-button class="btn-color-default">
+                    <button mat-icon-button class="btn-color-default"  matTooltip="Table Allocation" >
                     <span class="icon-icn-table"> </span>
                   </button>
 
-                    <button mat-icon-button class="btn-color-default">
+                    <button mat-icon-button class="btn-color-default" matTooltip="Configuration" >
                       <span class="icon-icn-settings-work-tool  "> </span>
                     </button>
 
                     <button mat-icon-button class="btn-color-default">
-                      <span class="icon-icn-file-fill  "> </span>
+                      <span class="icon-icn-file-fill  " matTooltip="Document" > </span>
                     </button>
 
-                    <button mat-icon-button class="btn-color-default">
+                    <button mat-icon-button class="btn-color-default"  matTooltip="Invoice">
                       <span class="icon-icn-invoice  "> </span>
                     </button>
 
@@ -157,7 +158,7 @@
                 <div class="opt_flex--container tc-flex-item__center __data">
                   <div class="opt_flex__item icon__cage --right __multi-buttons opt-txt__right ">
 
-                    <button mat-icon-button class="btn btn__frozen"  >
+                    <button mat-icon-button class="btn btn__frozen"   matTooltip="Frozen Status" >
                       <i class="material-icons">
                         recent_actors
                       </i>
@@ -622,18 +623,18 @@
           <div class="opt_flex__item price__details--row __price opt-txt__right "><span class="opt-txt__body2 ">£92.19</span></div>
         </div>
         <div class="opt_flex--container price__details--row">
-          <div class="opt_flex__item "><span class="opt-txt__body2 opt-txt__light">Total Invoiced</span></div>
-          <div class="opt_flex__item opt_flex__item opt-txt__center"><span class="lbl lbl__price-details">80%</span></div>
+          <div class="opt_flex__item "><span class="opt-txt__body2 opt-txt__light">Total Paid</span></div>
+          <div class="opt_flex__item opt_flex__item opt-txt__center"> <!-- <span class="lbl lbl__price-details">80%</span> --> </div>
           <div class="opt_flex__item price__details--row __price opt-txt__right"><span class="opt-txt__body2 ">£92.19</span></div>
         </div>
             <div class="opt_flex--container price__details--row">
-          <div class="opt_flex__item "><span class="opt-txt__body2 opt-txt__light">Total Invoiced</span></div>
+          <div class="opt_flex__item "><span class="opt-txt__body2 opt-txt__light">Invoice Balance</span></div>
               <div class="opt_flex__item opt_flex__item opt-txt__center"><span class="lbl lbl__price-details">80%</span></div>
           <div class="opt_flex__item price__details--row __price opt-txt__right"><span class="opt-txt__body2 ">£92.19</span></div>
         </div>
         <div class="opt_flex--container price__details--row">
-          <div class="opt_flex__item "><span class="opt-txt__body2 opt-txt__light">Total Invoiced</span></div>
-          <div class="opt_flex__item opt_flex__item opt-txt__center"><span class="lbl lbl__price-details">80%</span></div>
+          <div class="opt_flex__item "><span class="opt-txt__body2 opt-txt__light">Booking Balance</span></div>
+          <div class="opt_flex__item opt_flex__item opt-txt__center"><!-- <span class="lbl lbl__price-details">80%</span> --> </div>
           <div class="opt_flex__item price__details--row __price opt-txt__right"><span class="opt-txt__body2 ">£92.19</span></div>
         </div>
 
@@ -643,23 +644,23 @@
       <div class="opt_flex__item __right-line">
 
         <div class="opt_flex--container price__details--row">
-          <div class="opt_flex__item "><span class="opt-txt__body2 opt-txt__light">Total Invoiced</span></div>
-          <div class="opt_flex__item opt_flex__item opt-txt__center"><span class="lbl lbl__price-details">80%</span></div>
+          <div class="opt_flex__item "><span class="opt-txt__body2 opt-txt__light">Gross</span></div>
+          <div class="opt_flex__item opt_flex__item opt-txt__center"><!-- <span class="lbl lbl__price-details">80%</span> --> </div>
           <div class="opt_flex__item price__details--row __price opt-txt__right"><span class="opt-txt__body2 ">£92.19</span></div>
         </div>
         <div class="opt_flex--container price__details--row">
-          <div class="opt_flex__item "><span class="opt-txt__body2 opt-txt__light">Total Invoiced</span></div>
-          <div class="opt_flex__item opt_flex__item opt-txt__center"><span class="lbl lbl__price-details">80%</span></div>
+          <div class="opt_flex__item "><span class="opt-txt__body2 opt-txt__light">Discount</span></div>
+          <div class="opt_flex__item opt_flex__item opt-txt__center"><!-- <span class="lbl lbl__price-details">80%</span> --> </div>
           <div class="opt_flex__item price__details--row __price opt-txt__right"><span class="opt-txt__body2 ">£92.19</span></div>
         </div>
         <div class="opt_flex--container price__details--row">
-          <div class="opt_flex__item "><span class="opt-txt__body2 opt-txt__light">Total Invoiced</span></div>
-          <div class="opt_flex__item opt_flex__item opt-txt__center"><span class="lbl lbl__price-details">80%</span></div>
+          <div class="opt_flex__item "><span class="opt-txt__body2 opt-txt__light">Delivery Charges</span></div>
+          <div class="opt_flex__item opt_flex__item opt-txt__center"><!-- <span class="lbl lbl__price-details">80%</span> --> </div>
           <div class="opt_flex__item price__details--row __price opt-txt__right"><span class="opt-txt__body2 ">£92.19</span></div>
         </div>
         <div class="opt_flex--container price__details--row">
-          <div class="opt_flex__item "><span class="opt-txt__body2 opt-txt__light">Total Invoiced</span></div>
-          <div class="opt_flex__item opt_flex__item opt-txt__center"><span class="lbl lbl__price-details">80%</span></div>
+          <div class="opt_flex__item "><span class="opt-txt__body2 opt-txt__light">Net</span></div>
+          <div class="opt_flex__item opt_flex__item opt-txt__center"><!-- <span class="lbl lbl__price-details">80%</span> --> </div>
           <div class="opt_flex__item price__details--row __price opt-txt__right"><span class="opt-txt__body2 ">£92.19</span></div>
         </div>
 
@@ -673,7 +674,7 @@
           <div class="opt_flex__item price__details--row opt-price opt-price__large opt-txt__right "><span>£92456.19</span></div>
         </div>
         <div class="opt_flex--container price__details--row">
-          <div class="opt_flex__item "><span class="opt-txt__body2 opt-txt__light">Total Invoiced</span></div>
+          <div class="opt_flex__item "><span class="opt-txt__body2 opt-txt__light">Tax</span></div>
 
           <div class="opt_flex__item price__details--row __price opt-txt__right"><span class="opt-txt__body2 ">£92.19</span></div>
         </div>
