@@ -98,7 +98,7 @@
       align-items: center;
       margin: 15px;
       display: flex;
-      align-items: stretch;
+      //align-items: stretch;
       height: 100%;
       width: 100%;
       padding-right: 5px;
@@ -137,7 +137,7 @@
       align-items: center;
       margin: 15px;
       display: flex;
-      align-items: stretch;
+      //align-items: stretch;
       height: 100%;
       width: 100%;
       min-width: 50px;
@@ -170,13 +170,13 @@
 
 
   .opt_price-section{
-    padding-right: 0px;
+    padding-right: 0;
     text-align: right;
   }
 
 
   .mat-expansion-panel-body{
-    padding: 0px;
+    padding: 0;
 
     .__multi-buttons{
       padding-left: 50px;
@@ -193,7 +193,7 @@
 
   .mat-expansion-panel-header-description, .mat-expansion-panel-header-title {
 
-    margin-right: 0px;
+    margin-right: 0;
   }
 
   mat-accordion {
@@ -201,7 +201,7 @@
       color: inherit;
     }
     .mat-expansion-panel-header {
-      padding: 0px;
+      padding: 0;
       margin-left: 4px;
       margin-right: 4px;
 
@@ -241,9 +241,29 @@
 
   .booking-summary {
     .flex-row {
-      &:nth-child(2) {
-        background-color: white;
+      .col {
+        &:nth-child(2) {
+          background-color: white;
+          border-right: 1px #909cac solid;
+          border-left: 1px #909cac solid;
+        }
+        &:nth-child(1){
+          .img-circle {
+            display: none;
+          }
+        }
+        .btn.btn-icon{
+
+            display: none;
+
+        }
+        .mat-select-arrow-wrapper{
+          visibility: hidden    ;
+        }
+
       }
+
     }
   }
+
 }
