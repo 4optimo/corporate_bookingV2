@@ -2,7 +2,7 @@
 .opt_booking__list{
 
 
-   .opt{
+  .opt{
     &_opt_width-define{
       min-height: 55px;
     }
@@ -94,7 +94,7 @@
     }
     &_latest-note{
       border: 1px solid #909cac;
-     /// height: 70px;
+      /// height: 70px;
       align-items: center;
       margin: 15px;
       display: flex;
@@ -112,6 +112,7 @@
         //padding-left: 5px;
         background-color: #909cac;
         //line-height: 5px;
+        padding: 10px;
 
 
         .note-icon{
@@ -123,7 +124,7 @@
         }
       }
       .item2{
-
+        padding-left: 25px;
       }
       .item3{
         align-items: right;
@@ -148,6 +149,8 @@
 
       .item1{
         background-color: #27bfc2;
+        padding-right: 10px;
+        padding-left: 10px;
         .dispatch-icon{
           color: white;
           //line-height: 40px;
@@ -158,6 +161,7 @@
       }
       .item2{
         color: #27bfc2;
+        padding-left: 25px;
       }
     }
 
@@ -167,6 +171,7 @@
 
   .opt_price-section{
     padding-right: 0px;
+    text-align: right;
   }
 
 
@@ -234,5 +239,11 @@
     }
   }
 
-
+  .booking-summary {
+    .flex-row {
+      &:nth-child(2) {
+        background-color: white;
+      }
+    }
+  }
 }
