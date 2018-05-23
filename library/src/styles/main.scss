@@ -13,6 +13,7 @@ $bootstrap-sass-asset-helper: false;
 
 @import "./shared/theme/ccs-default-theme/variables";
 @import "shared/theme/ccs-default-theme/bootstrap/stylesheets/bootstrap";
+@import "./shared/theme/ccs-default-theme/icon-fonts";
 @import "./shared/theme/ccs-default-theme/reset";
 @import "./shared/theme/ccs-default-theme/mixins/mixins";
 @import "./shared/theme/ccs-default-theme/mixins/flexbox";
@@ -24,10 +25,13 @@ $bootstrap-sass-asset-helper: false;
 //@import "./shared/theme/ccs-default-theme/price-popup";
 //@import "./shared/theme/ccs-default-theme/document-select";
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+@import "./shared/theme/ccs-default-theme/themeChange";
+@import "./shared/theme/ccs-default-theme/theming-material-components";
+
 //@import "./shared/theme/ccs-default-theme/card";
-//@import "./shared/theme/ccs-default-theme/information";
+@import "./shared/theme/ccs-default-theme/information";
 //@import "./shared/theme/ccs-default-theme/pop-up";
-//@import "./shared/theme/ccs-default-theme/booking-details";
+@import "./shared/theme/ccs-default-theme/booking-details";
 
-
-
+@import "./shared/theme/ccs-default-theme/opt-section__heading";

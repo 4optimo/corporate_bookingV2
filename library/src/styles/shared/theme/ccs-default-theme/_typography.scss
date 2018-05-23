@@ -1,6 +1,8 @@
-html * {
+html *,body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: $opt-text-color;
+  font-family: 'Rubik', sans-serif;
 }
 
 
@@ -11,6 +13,7 @@ $chip-font-size : $base-font-size;
 
 $base-title-size: (
   x-small : 12px,
+  small : 13px,
   medium  : 16px,
   large   : 21px,
   x-large : 24px,
@@ -30,7 +33,7 @@ $base-title-size: (
         + "Please make sure it is defined in `$breakpoints` map.";
   }
 }
-//
+
 //.dashboard-header {
 //  min-height: 194px;
 //  margin-top: 0px;
@@ -47,7 +50,7 @@ $base-title-size: (
 //  @include respond-to('medium') {
 //    padding: 45px 25px 40px 25px;
 //  }
-//  @include respond-to('small') {
+//  @include respond-to('xx-large') {
 //    padding: 45px 25px 40px 25px;
 //  }
 //

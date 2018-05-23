@@ -1,0 +1,57 @@
+.theme-component-wrapper {
+  padding-left: 0px;
+  li.adjustments-line{
+    display: initial !important;
+    float: inherit !important;
+    div{
+      .card{
+        .card-header {
+          text-align: center;
+          margin-top: 15px;
+          h4.popup-title{
+            font-size: 14px;
+            font-weight: 400;
+            color: #888888;
+            text-align: center;
+          }
+        }
+        .card-content {
+          text-align: center;
+          margin-top: 10px;
+          margin-bottom: 25px;
+          .theme-changer {
+            .active a {
+              border: 2px solid $green;
+            }
+            .theme {
+              a {
+                width: 25px;
+                height: 25px;
+                display: inline-block;
+                border-radius: 50%;
+                margin: 0px 7px;
+              }
+            }
+          }
+          .theme-changer {
+            .default a {
+              background: #9928ae !important;
+            }
+
+            .snow a {
+              background: #1e88e5 !important;
+            }
+
+            .central a {
+              background: #303f9f !important;
+            }
+
+            .ccs a {
+              background: #d6092a !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -4,7 +4,7 @@
 // Typography
 $font-family-sans-serif: 'Roboto', 'Helvetica', 'Arial', sans-serif !default;
 $font-family-serif: 'Roboto Slab', 'Times New Roman', serif !default;
-$font-family-rubik: 'Rubik', sans-serif;
+$font-family-rubik:  'Rubik', sans-serif;
 
 
 
@@ -13,8 +13,28 @@ $ci-bg--color:red;
 $ci-col-hover:green;
 $primary:blue;
 
+
+
+
+//optimo brand and color codes .....................
+
+$opt_color__primary :#4bb3fa;
+$opt_color__secondary :#27bfc2;
+$opt_color__tertiary :#f5c70e;
+
+$opt-line-height-base: 18px;
+$opt-line-height-paragraph: 16px;
+
+$opt-text-color: #1a1a1a;
+$opt-line-color: #91a0ad;
+
+
+//button colors..............
+$opt-btn-color-default : #91a0ad;
+
+
 //state colors..............
-$no-color--state: $red-700 !default;
+$no-color--state: #f4493c !default;
 $active-color--state: $green-700 !default;
 $mute-color--state: $grey-700 !default;
 $firm-color--state: $blue-700 !default;
@@ -22,19 +42,50 @@ $alert-color--state: $yellow-700 !default;
 $definite-color--state: $blue-grey-700 !default;
 $quote-color--state: $brown-700 !default;
 
+
+
+
+
+
 $accent:#2196F3 !default;
 $central-brand-primary :red;
 $white-color:#fff;
 
+$lbl-vat--color:#eee;
+$lbl__price-details:#90a4ae;
+
+
+$package-color--product: #27bfc2;
+$package-color--type: #f5c70e;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//button colors----------------------
+$btn-active-color:$active-color--state;
+$btn-frozen-color:$no-color--state;
+
+
 
 //Product  colors
-$hotel-color--product: $purple !default;
-$insurance-color--product: $yellow-700 !default;
-$car-color--product: $light-blue-700 !default;
-$package-color--product: $brown-700 !default;
-$flight-color--product: $blue-700 !default;
-$generic-color--product: $orange-700 !default;
-$transfer-color--product: $green-700 !default;
+//$hotel-color--product: $purple !default;
+//$insurance-color--product: $yellow-700 !default;
+//$car-color--product: $light-blue-700 !default;
+$package-color--product: $package-color--product !default;
+//$flight-color--product: $blue-700 !default;
+//$generic-color--product: $orange-700 !default;
+//$transfer-color--product: $green-700 !default;
 $tour-color--product: $red-700 !default;
 
 
