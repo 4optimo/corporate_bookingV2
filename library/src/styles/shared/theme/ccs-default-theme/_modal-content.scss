@@ -1,0 +1,58 @@
+.opt_modal-content {
+  .opt_modal-header {
+
+    @include shadow-2dp();
+    .test-wrapper {
+      height: 100%;
+      min-height: 60px;
+
+    }
+
+    .test-inner {
+      background-color: #f9d632;
+      display: flex;
+      .inner-icon{
+        align-self: center;
+        padding-left: 25px;
+        padding-right: 25px;
+
+      }
+    }
+
+    .test-inner-expand {
+      display: flex;
+      .title{
+        padding-left: 20px;
+        align-self: center;
+      }
+    }
+
+    .test-inner-2 {
+      display: flex;
+      .inner-action{
+        align-self: center;
+        padding-right: 24px;
+        .icon1{
+          padding-right: 5px;
+        }
+      }
+    }
+
+  }
+  .opt_modal-body{
+    padding: 24px;
+  }
+}
+
+.custom-dialog-container .mat-dialog-container {
+  padding: 0;
+  .mat-dialog-content{
+    margin: 0;
+    padding: 0;
+  }
+  .mat-dialog-title{
+    margin: 0;
+  }
+}
+
+
