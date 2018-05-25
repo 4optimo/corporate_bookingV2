@@ -54,6 +54,8 @@ import { OptBookingSummaryComponent } from './opt-booking-summary/opt-booking-su
 import { OptBookingDetailsComponent } from './opt-booking-details/opt-booking-details.component';
 import { AdditionalInformationComponent} from "./additional-information/additional-information.component";
 import { OptSectionHeadingComponent } from './opt-section-heading/opt-section-heading.component';
+import { ModalWindowComponent } from './modal-window/modal-window.component';
+import { ModalContentComponent } from './modal-content/modal-content.component';
 
 
 @NgModule({
@@ -90,8 +92,11 @@ import { OptSectionHeadingComponent } from './opt-section-heading/opt-section-he
     MatTableModule,
     MatTabsModule,
     MatToolbarModule,
-    MatTooltipModule,
+    MatTooltipModule
+
   ],
+
+
 
 })
 export class DemoMaterialModule {}
@@ -105,6 +110,8 @@ export class DemoMaterialModule {}
     OptBookingDetailsComponent,
     AdditionalInformationComponent,
     OptSectionHeadingComponent,
+    ModalWindowComponent,
+    ModalContentComponent,
     OptBookingSummaryComponent
   ],
   imports: [
@@ -128,8 +135,8 @@ export class DemoMaterialModule {}
     MatInputModule
   ],
 
-  entryComponents:[OptBookingDetailsComponent],
-
+ // entryComponents:[OptBookingDetailsComponent],
+  entryComponents:[ModalContentComponent,ModalWindowComponent],
 
   providers: [],
   bootstrap: [AppComponent]
