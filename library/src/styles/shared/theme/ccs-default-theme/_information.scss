@@ -1,4 +1,4 @@
-.opt_additional-info{
+.opt--additional-info{
   padding: 30px 30px 30px 30px;
 
   .example-form {
@@ -59,14 +59,6 @@
     }
   }
 
-//div{
-//.mat-select-arrow{
-//
-//  background: url('./shared/images/baseline-keyboard_arrow_down-24px.svg');
-//  content : '<i class="material-icons">keyboard_arrow_down</i>';
-//
-//}
-//}
   .flex-container {
     display: flex;
     flex-direction: row;
@@ -75,7 +67,7 @@
     align-content: stretch;
     align-items: flex-start;
     }
-
+  }
 
   .input {
     order: 0;
@@ -90,31 +82,29 @@
     float: right;
     padding: 2px;
   }
-  .btn {
-    padding: 5px;
+  //.btn {
+  //  padding: 5px;
+  //
+  //  &:active,&:focus, &:visited, &:active:focus {
+  //    outline: none;
+  //  }
+  //
+  //  .active{
+  //    background-color: #4bb3fa;
+  //    &:btn-icon {
+  //      color: white;
+  //    }
+  //  }
+  //  &.btn-icon {
+  //    margin-top: 10px;
+  //    line-height: 2px;
+  //
+  //    background-color: transparent;
+  //    padding: 0;
+  //    color: #f5766c;
+  //    align-items: center;
+  //    border: 1px solid #b7b7b7;
+  //
+  //  }
+  //}
 
-    &:active, &:focus, &:visited, &:active:focus {
-      outline: none;
-    }
-
-    .active {
-      background-color: #4bb3fa;
-      &:btn-icon {
-        color: white;
-      }
-    }
-    &.btn-icon {
-      margin-top: 10px;
-      line-height: 2px;
-
-      background-color: transparent;
-      padding: 0;
-      color: #f5766c;
-      align-items: center;
-      border: 1px solid #b7b7b7;
-
-    }
-
-  }
-
-}

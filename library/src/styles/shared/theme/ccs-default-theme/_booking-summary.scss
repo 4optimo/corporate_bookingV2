@@ -45,9 +45,25 @@ $rub: 'Rubik', sans-serif;
         background-color: #b1554e;
       }
       &.__danger{
-        background-color: #fff;
-        color: #b1554e;
+         background-color: #fff;
+         color: #b1554e;
+       }
+      &.__success{
+          background-color: #f5766c;
+          color: #fff;
       }
+    }
+
+    .valuation{
+      .opt_flex--container{
+        &.shaded{
+          background-color: #b1554e;
+        }
+      }
+    }
+
+    .mat-select *{
+      color: #fff;
     }
   }
 
@@ -99,6 +115,10 @@ $rub: 'Rubik', sans-serif;
         height: 100%;
         flex-grow: 1;
       }
+    }
+
+    >.opt_flex--container{
+      margin-bottom: 3px;
     }
   }
 }
@@ -304,6 +324,33 @@ i {
     align-items: center;
     box-shadow: none;
   }
+
+  &.btn-taptoadd{
+    border: 1px dashed #d0d4db;
+    background-color: transparent;
+    border-radius: 50%;
+    padding: 10px;
+    i.material-icons{
+      font-size: 45px;
+    }
+  }
+}
+
+.tap-to-add-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  p{
+    font-weight: 400;
+    margin: 10px 0 0 0;
+  }
+}
+
+.vertical-divider{
+  width: 1px;
+  background-color: #d3d6d9;
+  height: 100%;
 }
 
 .badge {
@@ -313,6 +360,12 @@ i {
   -moz-border-radius: 3px;
   border-radius: 3px;
   padding: 5px 15px;
+
+  &.mini{
+    padding: 2px;
+    font-size: 12px;
+  }
+
   &.__success {
     background-color: #27bfc2;
   }
@@ -328,6 +381,10 @@ i {
   &.__uppercase {
     text-transform: uppercase;
   }
+}
+
+.mt3{
+  margin-top: 3px;
 }
 
 .valuation{
@@ -368,14 +425,21 @@ i {
 }
 
 .opt-booking-summary-select-lg{
-
+  font-family: $rub;
   .mat-select-value{
     font-size: 18px;
     font-weight: 500;
   }
+  .mat-option{
+    font-family: $rub;
+    .mat-option-text{
+      font-family: $rub;
+    }
+  }
 }
 
 .opt-booking-summary-select-sm {
+  font-family: $rub;
   &.themed{
     .mat-select-value{
       color: #27bfc2;
@@ -389,5 +453,11 @@ i {
   .mat-select-value{
   font-size: 12px;
   font-weight: 400;
+  }
+  .mat-option{
+    font-family: $rub;
+    .mat-option-text{
+      font-family: $rub;
+    }
   }
 }
