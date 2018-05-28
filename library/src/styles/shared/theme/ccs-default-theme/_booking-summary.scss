@@ -127,6 +127,7 @@ $rub: 'Rubik', sans-serif;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+  height: 100%;
   .profile__image, .profile__details {
 
   }
@@ -140,6 +141,12 @@ $rub: 'Rubik', sans-serif;
       margin-top: 5px;
     }
   }
+}
+
+.vh-center{
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 
 .field {
@@ -333,6 +340,13 @@ i {
     i.material-icons{
       font-size: 45px;
     }
+
+    &.mini{
+      padding: 6px 7px;
+      i.material-icons{
+        font-size: 18px;
+      }
+    }
   }
 }
 
@@ -344,6 +358,12 @@ i {
   p{
     font-weight: 400;
     margin: 10px 0 0 0;
+  }
+  &.mini{
+    p{
+      font-size: 12px;
+      margin: 0;
+    }
   }
 }
 
