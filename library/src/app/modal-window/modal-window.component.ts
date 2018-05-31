@@ -16,7 +16,11 @@ export class ModalWindowComponent implements OnInit {
 
 
   public  openModal(){
-    this.dialog.open(ModalContentComponent,{data: {name:'mohan test component'}});
+    this.dialog.open(ModalContentComponent,{
+      data: {name:'sass test component'},
+      panelClass:'custom-dialog-container'
+
+    });
 
   }
 
