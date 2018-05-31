@@ -1,6 +1,17 @@
 /* Font Families */
 $rub: 'Rubik', sans-serif;
 
+/* Variables */
+
+
+//badge colors...
+$badge-danger-bg : #f5766c;
+$badge-success-bg : #27bfc2;
+$badge-default-bg : #fff;
+$badge-undefined-bg : #909cac;
+$badge-font-color : #fff;
+$badge-font-color_danger : #b6605a;
+
 .booking-summary {
   border-bottom: 1px solid #d3d6d9;
   color: #3b414d;
@@ -18,7 +29,7 @@ $rub: 'Rubik', sans-serif;
       .col {
         background-color: #f5766c;
         &:nth-child(2) {
-          background-color: #b1554e;
+          background-color: darken(desaturate(#f5766c, 48.44), 19.22);
         }
       }
     }
@@ -190,7 +201,7 @@ $rub: 'Rubik', sans-serif;
     }
 
     .__colored {
-      background-color: #f5f5f5;
+      background-color: darken(desaturate(#f5766c, 48.44), 19.22);
     }
   }
 }
@@ -337,7 +348,9 @@ i {
     background-color: transparent;
     border-radius: 50%;
     padding: 10px;
+
     i.material-icons{
+      color: #d0d4db;
       font-size: 45px;
     }
 
@@ -347,6 +360,13 @@ i {
         font-size: 18px;
       }
     }
+    &.themed{
+      border-color: #f9d630;
+      i.material-icons{
+        color: #f9d630;
+      }
+    }
+
   }
 }
 
@@ -356,6 +376,7 @@ i {
   align-items: center;
   flex-direction: column;
   p{
+    color: #909cac;
     font-weight: 400;
     margin: 10px 0 0 0;
   }
@@ -363,6 +384,11 @@ i {
     p{
       font-size: 12px;
       margin: 0;
+    }
+  }
+  &.themed{
+    p{
+      color: #f9d630;
     }
   }
 }
@@ -384,6 +410,13 @@ i {
   &.mini{
     padding: 2px;
     font-size: 12px;
+  }
+
+  &.mini-badge{
+    width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 4px 6px;
   }
 
   &.__success {
@@ -478,6 +511,14 @@ i {
     font-family: $rub;
     .mat-option-text{
       font-family: $rub;
+    }
+  }
+}
+
+@media (max-width: 991px){
+  .flex-row{
+    .col{
+      flex-basis: 100%;
     }
   }
 }
