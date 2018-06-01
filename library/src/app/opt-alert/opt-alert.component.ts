@@ -12,4 +12,7 @@ export class OptAlertComponent implements OnInit {
   ngOnInit() {
   }
 
+  public close(){
+    this.close();
+  }
 }

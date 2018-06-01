@@ -1,5 +1,5 @@
 
-.opt_booking__list{
+.opt_booking__list_expand{
 
 
   .opt{
@@ -53,119 +53,14 @@
       //padding: 5px;
       //text-align: left;
       padding-left: 20px;
-      .ref_no{
-        font-weight: 600;
-      }
+
     }
 
 
-    &_expand-header {
-      background-color: #f4f4f4;
-      height: 55px;
-
-
-      .expand-icon{
-        text-align: right;
-        vertical-align: middle;
-
-        //padding-right: 23px;
-        .attach_money-icon,.file_copy-icon,.launch-icon{
-          color: #909cac;
-          padding: 5px;
-          font-size: 25px;
-          padding-top: 10px;
-        }
-
-      }
     }
 
-    .test-wrapper{
-      height: 100%;
-    }
-    &_latest-note{
-      border: 1px solid #909cac;
-      align-items: center;
-      display: flex;
-      min-height: 60px;
-      width: 100%;
-      vertical-align: middle;
-      margin-top: 15px;
 
 
-      .item1{
-        text-align: inherit;
-        padding-left: 10px;
-        padding-right: 10px;
-        background-color: #909cac;
-        height: 100%;
-        align-items: center;
-        display: flex;
-        min-height: 40px;
-        vertical-align: middle;
-
-        .note-icon{
-          color: white;
-          font-size: 30px;
-          vertical-align: middle;
-        }
-      }
-      .item2{
-        padding: 10px;
-        height: 100%;
-        display: flex;
-        .text1{
-          align-self: center;
-        }
-      }
-      .item3{
-        align-items: right;
-        padding: 10px;
-        height: 100%;
-        display: flex;
-        .text2{
-          align-self: flex-end;
-        }
-      }
-    }
-    &_dispatch-status{
-      align-items: center;
-      min-height: 40px;
-      vertical-align: middle;
-      margin-top: 15px;
-      border: 1px solid #27bfc2;
-      display: flex;
-      width: 100%;
-      text-align: inherit;
-      color: white;
-      //line-height: 70px;
-      font-size: 30px;
-      //padding-left: 15px;
-      .item1{
-        text-align: inherit;
-        align-items: center;
-        display: flex;
-        vertical-align: middle;
-        background-color: #27bfc2;
-        padding-right: 10px;
-        padding-left: 10px;
-        height: 100%;
-        .dispatch-icon{
-          color: white;
-          font-size: 30px ;
-          vertical-align: middle;
-        }
-      }
-      .item2{
-        padding: 10px;
-        color: #27bfc2;
-        //padding-left: 25px;
-        height: 100%;
-        align-self: center;
-
-      }
-    }
-
-  }
 
 
 
@@ -173,14 +68,9 @@
     padding-right: 0;
     text-align: right;
 
-    .opt_flex__item{
-      align-self: center;
-    }
-
     .price{
       text-align: left;
       padding-left: 15px;
-      font-weight: 600;
     }
   }
 
@@ -206,13 +96,8 @@
     margin-right: 0;
 
     .btn {
-      padding-bottom: 2px;
-      padding-top: 2px;
-      font-size: 12px;
-
       &.btn-select {
         border: 1px solid #b7b7b7;
-
         //outline-color: #0000;
         //border-radius: 4px;
         //background-color: $btn-active-color;
@@ -297,7 +182,7 @@
         }
         .btn.btn-icon{
 
-            display: none;
+          display: none;
 
         }
         .mat-select-arrow-wrapper{

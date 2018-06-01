@@ -32,8 +32,19 @@
       .inner-action{
         align-self: center;
         padding-right: 24px;
+        color: #909cac;
+
+        button{
+          -webkit-appearance: none;
+          background-color: transparent;
+          box-shadow: none;
+          border: none;
+          &:active, &:focus, &:visited, &:active:focus {
+            outline: none;
+          }
+        }
         .icon1{
-          padding-right: 5px;
+          padding-right: 7px;
         }
       }
     }

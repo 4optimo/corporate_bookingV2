@@ -42,6 +42,7 @@ import {
   MatToolbarModule,
   MatTooltipModule,
   MatOptionModule,
+  MatDialogTitle,
 } from '@angular/material';
 
 import {BrowserModule} from '@angular/platform-browser';
@@ -56,8 +57,38 @@ import { AdditionalInformationComponent} from "./additional-information/addition
 import { OptSectionHeadingComponent } from './opt-section-heading/opt-section-heading.component';
 import { ModalWindowComponent } from './modal-window/modal-window.component';
 import { ModalContentComponent } from './modal-content/modal-content.component';
+import { OptPopupModalComponent } from './opt-popup-modal/opt-popup-modal.component';
+import { OptPopupWindowComponent } from './opt-popup-window/opt-popup-window.component';
+import { OptTabPanelComponent } from './opt-tab-panel/opt-tab-panel.component';
+import { RoutingProjectComponent } from './routing-project/routing-project.component';
+
+import { RouterModule, Routes} from "@angular/router";
+import {APP_BASE_HREF} from '@angular/common';
+
+import {OptAlertComponent} from "./opt-alert/opt-alert.component";
+import { OptBookingListExpandComponent } from './opt-booking-list-expand/opt-booking-list-expand.component';
+import { OptCorporateClientTabsComponent } from './opt-corporate-client-tabs/opt-corporate-client-tabs.component';
 
 
+
+const appRoutes: Routes = [
+  { path: 'opt-booking-list', component: OptBookingListComponent},
+  { path: 'opt-booking-details', component: OptBookingDetailsComponent},
+  { path: 'opt-booking-summary', component: OptBookingSummaryComponent},
+  { path: 'additional-information', component: AdditionalInformationComponent},
+  { path: 'opt-section-heading', component: OptSectionHeadingComponent},
+  { path: 'opt-section-heading', component: OptSectionHeadingComponent},
+  { path: 'opt-popup-window', component: OptPopupWindowComponent},
+  { path: 'expansion-panel', component: ExpansionPanelComponent},
+  { path: 'opt-tab-panel', component: OptTabPanelComponent},
+  { path: 'opt-alert', component: OptAlertComponent},
+  { path: 'opt-booking-list-expand', component: OptBookingListExpandComponent},
+
+
+  { path: '', redirectTo:'/opt-booking-summary', pathMatch:'full'},
+  { path: '**', redirectTo:'/opt-booking-summary', pathMatch: 'full'}
+
+]
 @NgModule({
   exports: [
     CdkTableModule,
@@ -95,6 +126,7 @@ import { ModalContentComponent } from './modal-content/modal-content.component';
     MatTooltipModule
 
   ],
+  declarations: [OptCorporateClientTabsComponent],
 
 
 
@@ -112,7 +144,13 @@ export class DemoMaterialModule {}
     OptSectionHeadingComponent,
     ModalWindowComponent,
     ModalContentComponent,
-    OptBookingSummaryComponent
+    OptBookingSummaryComponent,
+    OptPopupModalComponent,
+    OptPopupWindowComponent,
+    OptTabPanelComponent,
+    OptAlertComponent,
+    OptBookingListExpandComponent,
+    RoutingProjectComponent
   ],
   imports: [
     BrowserModule,
@@ -132,13 +170,13 @@ export class DemoMaterialModule {}
     HttpClientModule,
     MatNativeDateModule,
     DemoMaterialModule,
-    MatInputModule
+    MatInputModule,
+    RouterModule.forRoot(appRoutes)
   ],
 
- // entryComponents:[OptBookingDetailsComponent],
-  entryComponents:[ModalContentComponent,ModalWindowComponent],
+  entryComponents:[OptPopupModalComponent, OptPopupWindowComponent],
+  providers: [{provide: APP_BASE_HREF, useValue : '/' }],
 
-  providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule { }
