@@ -1,31 +1,8 @@
 /* Font Families */
 $rub: 'Rubik', sans-serif;
 
-/* Variables */
-
-
-//badge colors...
-$badge-danger-bg : #f5766c;
-$badge-success-bg : #27bfc2;
-$badge-default-bg : #fff;
-$badge-undefined-bg : #909cac;
-$badge-font-color : #fff;
-$badge-font-color_danger : #b6605a;
-
-$unavailable-state-bg : #f5766c;
-$unavailable-state-dark-bg : #b1554e;
-
-$default-state-bg : #fff;
-$default-state-dark-bg : #f5f5f5;
-
-$separator-border-color: #d3d6d9;
-
-//themed fonts
-$primary-theme-font : #4bb3fa;
-$secondary-theme-font : $opt_color__secondary;
-
 .booking-summary {
-  border-bottom: 1px solid #d3d6d9;
+  border-bottom: 1px solid $separator-border-color;
   color: #3b414d;
   .flex-row {
     .col {
@@ -41,7 +18,7 @@ $secondary-theme-font : $opt_color__secondary;
       .col {
         background-color: $badge-danger-bg;
         &:nth-child(2) {
-          background-color: #b1554e;
+          background-color: $unavailable-state-dark-bg;
         }
       }
     }
@@ -65,11 +42,11 @@ $secondary-theme-font : $opt_color__secondary;
 
     .badge{
       &.__grey{
-        background-color: #b1554e;
+        background-color: $unavailable-state-dark-bg;
       }
       &.__danger{
          background-color: #fff;
-         color: #b1554e;
+         color: $unavailable-state-dark-bg;
        }
       &.__success{
           background-color: #f5766c;
@@ -80,7 +57,7 @@ $secondary-theme-font : $opt_color__secondary;
     .valuation{
       .opt_flex--container{
         &.shaded{
-          background-color: #b1554e;
+          background-color: $unavailable-state-dark-bg;
         }
       }
     }
@@ -205,7 +182,7 @@ $secondary-theme-font : $opt_color__secondary;
     flex-grow: 1;
     flex-basis: 0;
     padding: 15px;
-    //border-right: 1px solid #d3d6d9;
+    //border-right: 1px solid $separator-border-color;
     border-collapse: collapse;
 
     &:last-child {
@@ -213,7 +190,7 @@ $secondary-theme-font : $opt_color__secondary;
     }
 
     .__colored {
-      background-color: #b1554e;
+      background-color: $unavailable-state-dark-bg;
     }
   }
 }
@@ -432,7 +409,7 @@ i {
   }
 
   &.__success {
-    background-color: #27bfc2;
+    background-color: $badge-success-bg;
   }
 
   &.__danger {
@@ -440,7 +417,7 @@ i {
   }
 
   &.__grey {
-    background-color: #909cac;
+    background-color: $badge-undefined-bg;
   }
 
   &.__uppercase {

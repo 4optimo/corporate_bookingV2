@@ -2,11 +2,11 @@
   <div class="flex-row">
     <div class="col">
       <div class="profile">
-        <div class="profile__image" style="display: none;">
+        <div class="profile__image">
           <img src="http://www.newsshare.in/wp-content/uploads/2017/04/Miniclip-8-Ball-Pool-Avatar-15.png" height="65"
                width="65" class="img-circle" alt="profile_image">
         </div>
-        <div class="profile__details" style="display: none;">
+        <div class="profile__details">
           <div class="field name-field">
             <div class="field-detail font-style-01">
               <mat-select [(value)]="selected" class="opt-booking-summary-select-lg">
@@ -57,16 +57,16 @@
             </div>
           </div>
         </div>
-          <div class="opt_flex__item vh-center">
+          <div class="opt_flex__item vh-center" style="display: none;">
             <div class="tap-to-add-wrapper themed">
               <button class="btn btn-taptoadd themed"><i class="material-icons">people</i></button>
               <p>Select Client</p>
             </div>
           </div>
-          <div class="opt_flex__item--inherit">
+          <div class="opt_flex__item--inherit" style="display: none;">
             <div class="vertical-divider"></div>
           </div>
-          <div class="opt_flex__item vh-center">
+          <div class="opt_flex__item vh-center" style="display: none;">
             <div class="tap-to-add-wrapper">
               <button class="btn btn-taptoadd"><i class="material-icons">person_add</i></button>
               <p>Add Client</p>
@@ -101,31 +101,31 @@
         <div class="flex-horizontal border-line"></div>
         <div class="flex-horizontal">
           <div class="opt_flex--container">
-            <!--<div class="opt_flex__item&#45;&#45;inherit">-->
-              <!--<div class="label-icon"><i class="material-icons">person</i></div>-->
-            <!--</div>-->
-            <div class="opt_flex__item--inherit vh-center">
+            <div class="opt_flex__item--inherit">
+              <div class="label-icon"><i class="material-icons">person</i></div>
+            </div>
+            <div class="opt_flex__item--inherit vh-center" style="display: none;">
               <div class="tap-to-add-wrapper mini">
                 <button class="btn btn-taptoadd mini"><i class="material-icons">people</i></button>
                 <p>Referer</p>
               </div>
             </div>
-            <!--<div class="opt_flex__item">-->
-              <!--<mat-select [(value)]="selected" class="opt-booking-summary-select-sm themed emphd">-->
-                <!--<mat-option value="option1">Coalfield National Park</mat-option>-->
-                <!--<mat-option value="option2">Coalfield Cricket Club</mat-option>-->
-                <!--<mat-option value="option3">Silverstone Racing Track</mat-option>-->
-              <!--</mat-select>-->
-              <!--<div class="typo sz-12">Referrer</div>-->
-              <!--<mat-select [(value)]="selected" class="opt-booking-summary-select-sm emphd">-->
-                <!--<mat-option value="option1">Mr. Vitor Belfort</mat-option>-->
-                <!--<mat-option value="option2">Mr. Peter Worth</mat-option>-->
-                <!--<mat-option value="option3">Mr. Joshua Colinsky</mat-option>-->
-              <!--</mat-select>-->
-            <!--</div>-->
-            <!--<div class="opt_flex__item&#45;&#45;inherit">-->
-              <!--<button class="btn btn-icon"><i class="material-icons small">close</i></button>-->
-            <!--</div>-->
+            <div class="opt_flex__item">
+              <mat-select [(value)]="selected" class="opt-booking-summary-select-sm themed emphd">
+                <mat-option value="option1">Coalfield National Park</mat-option>
+                <mat-option value="option2">Coalfield Cricket Club</mat-option>
+                <mat-option value="option3">Silverstone Racing Track</mat-option>
+              </mat-select>
+              <div class="typo sz-12">Referrer</div>
+              <mat-select [(value)]="selected" class="opt-booking-summary-select-sm emphd">
+                <mat-option value="option1">Mr. Vitor Belfort</mat-option>
+                <mat-option value="option2">Mr. Peter Worth</mat-option>
+                <mat-option value="option3">Mr. Joshua Colinsky</mat-option>
+              </mat-select>
+            </div>
+            <div class="opt_flex__item--inherit">
+              <button class="btn btn-icon"><i class="material-icons small">close</i></button>
+            </div>
           </div>
           <!--<div class="field">-->
             <!--<div class="field-icon">-->
