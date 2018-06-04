@@ -20,7 +20,7 @@ $bootstrap-sass-asset-helper: false;
 
 @import "./shared/theme/ccs-default-theme/misc";
 @import "./shared/theme/ccs-default-theme/tc-md-typography";
-//@import "./shared/theme/ccs-default-theme/alerts";
+@import "./shared/theme/ccs-default-theme/alerts";
 @import "./shared/theme/ccs-default-theme/booking-summary";
 //@import "./shared/theme/ccs-default-theme/price-popup";
 //@import "./shared/theme/ccs-default-theme/document-select";
@@ -33,5 +33,8 @@ $bootstrap-sass-asset-helper: false;
 @import "./shared/theme/ccs-default-theme/information";
 //@import "./shared/theme/ccs-default-theme/pop-up";
 @import "./shared/theme/ccs-default-theme/booking-details";
-
+@import "./shared/theme/ccs-default-theme/opt-booking-list";
 @import "./shared/theme/ccs-default-theme/opt-section__heading";
+@import "./shared/theme/ccs-default-theme/popup-modal";
+@import "./shared/theme/ccs-default-theme/booking-list-expand";
+
