@@ -83,6 +83,7 @@ const appRoutes: Routes = [
   { path: 'opt-tab-panel', component: OptTabPanelComponent},
   { path: 'opt-alert', component: OptAlertComponent},
   { path: 'opt-booking-list-expand', component: OptBookingListExpandComponent},
+  { path: 'opt-corporate-client-tabs', component: OptCorporateClientTabsComponent},
 
 
   { path: '', redirectTo:'/opt-booking-summary', pathMatch:'full'},
@@ -126,7 +127,7 @@ const appRoutes: Routes = [
     MatTooltipModule
 
   ],
-  declarations: [OptCorporateClientTabsComponent],
+  declarations: [],
 
 
 
@@ -150,6 +151,7 @@ export class DemoMaterialModule {}
     OptTabPanelComponent,
     OptAlertComponent,
     OptBookingListExpandComponent,
+    OptCorporateClientTabsComponent,
     RoutingProjectComponent
   ],
   imports: [

@@ -8,8 +8,8 @@
             <div class="opt_flex__item--inherit ">
               <div class="icon__cage">
                 <div class="opt_circle">
-                  <div class="date">7
-                    <div class="month_year">  FEB <br>2018</div>
+                  <div class="date">{{date}}
+                    <div class="month_year">  {{month}} <br>{{year}}</div>
                   </div>
                 </div>
               </div>
@@ -60,9 +60,28 @@
     <div class="opt_expanded-view">
       <app-opt-booking-summary></app-opt-booking-summary>
       <br>
-      <app-opt-section-heading>
-        <!--<app-opt-booking-details></app-opt-booking-details>-->
-      </app-opt-section-heading>
+      <!--Need to add selection heading component-->
+
+        <section class="opt-section__heading">
+          <mat-accordion>
+
+            <mat-expansion-panel #myPanel2 class="section-heading __main">
+              <mat-expansion-panel-header class="__title" >
+                <h1>Booking Details</h1>
+
+
+              </mat-expansion-panel-header>
+
+              <app-opt-booking-details></app-opt-booking-details>
+
+
+            </mat-expansion-panel>
+
+          </mat-accordion>
+
+        </section>
+
+
       <!--labels-->
 
 
