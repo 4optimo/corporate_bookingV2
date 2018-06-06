@@ -8,6 +8,10 @@ import {MatExpansionPanel} from "@angular/material";
 })
 export class OptBookingListExpandComponent implements OnInit {
 
+  date: number = 7;
+  month: string = 'FEB';
+  year: number =2018;
+
   @ViewChild('myPanel1') myPanel1: MatExpansionPanel;
   matIcon1 = 'keyboard_arrow_down' || 'keyboard_arrow_up';
 
