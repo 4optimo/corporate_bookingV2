@@ -282,19 +282,19 @@
 
   .booking-summary {
     .flex-row {
-      margin-bottom: 15px;
+      //margin-bottom: 15px;
 
       .col {
-        &:nth-child(2) {
-          background-color: white;
-          border-right: 1px #909cac solid;
-          border-left: 1px #909cac solid;
-        }
-        &:nth-child(1){
-          .img-circle {
-            display: none;
-          }
-        }
+        //&:nth-child(2) {
+        //  background-color: white;
+        //  border-right: 1px #909cac solid;
+        //  border-left: 1px #909cac solid;
+        //}
+        //&:nth-child(1){
+        //  .img-circle {
+        //    display: none;
+        //  }
+        //}
         .btn.btn-icon{
 
             display: none;
