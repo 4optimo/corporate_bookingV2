@@ -200,7 +200,9 @@
       border-top:1px dashed #4bb3fa;
     }
   }
-
+  .btn-color-default{
+    color: #909cac;
+  }
   .mat-expansion-panel-header-description, .mat-expansion-panel-header-title {
     flex-grow: 0;
     margin-right: 0;
@@ -225,7 +227,7 @@
         border: 1px solid #b7b7b7;
         //outline-color: #0000;
         //border-radius: 4px;
-        background-color: $btn-frozen-color;
+        //background-color: $btn-frozen-color;
 
         i {
           color: #fff;
