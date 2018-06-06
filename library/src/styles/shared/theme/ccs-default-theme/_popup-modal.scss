@@ -1,4 +1,6 @@
 .opt_modal-content {
+  $popup_heading_color : #f9d632;
+  $icon_color : #909cac;
   .opt_modal-header {
 
     @include shadow-2dp();
@@ -9,7 +11,7 @@
     }
 
     .test-inner {
-      background-color: #f9d632;
+      background-color: $popup_heading_color;
       display: flex;
       .inner-icon{
         align-self: center;
@@ -32,7 +34,7 @@
       .inner-action{
         align-self: center;
         padding-right: 24px;
-        color: #909cac;
+        color: $icon_color;
 
         button{
           -webkit-appearance: none;
