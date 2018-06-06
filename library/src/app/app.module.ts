@@ -7,7 +7,6 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {HttpModule} from '@angular/http';
 
 
-
 import {
   MatAutocompleteModule,
   MatButtonModule,
@@ -68,6 +67,9 @@ import {APP_BASE_HREF} from '@angular/common';
 import {OptAlertComponent} from "./opt-alert/opt-alert.component";
 import { OptBookingListExpandComponent } from './opt-booking-list-expand/opt-booking-list-expand.component';
 import { OptCorporateClientTabsComponent } from './opt-corporate-client-tabs/opt-corporate-client-tabs.component';
+// import { OptDocumentSelectComponent } from './opt-document-select/opt-document-select.component';
+// import { OptEventLog } from './opt-document-select/opt-document-select.component';
+// import { OptUpload } from './opt-document-select/opt-document-select.component';
 
 
 
@@ -84,7 +86,7 @@ const appRoutes: Routes = [
   { path: 'opt-alert', component: OptAlertComponent},
   { path: 'opt-booking-list-expand', component: OptBookingListExpandComponent},
   { path: 'opt-corporate-client-tabs', component: OptCorporateClientTabsComponent},
-
+  // { path: 'opt-document-select', component: OptDocumentSelectComponent},
 
   { path: '', redirectTo:'/opt-booking-summary', pathMatch:'full'},
   { path: '**', redirectTo:'/opt-booking-summary', pathMatch: 'full'}
@@ -152,6 +154,8 @@ export class DemoMaterialModule {}
     OptAlertComponent,
     OptBookingListExpandComponent,
     OptCorporateClientTabsComponent,
+    // OptDocumentSelectComponent,
+
     RoutingProjectComponent
   ],
   imports: [
