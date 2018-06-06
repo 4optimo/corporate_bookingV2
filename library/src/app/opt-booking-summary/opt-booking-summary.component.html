@@ -1,4 +1,4 @@
-<div class="booking-summary">
+<div class="booking-summary __unavailable">
   <div class="flex-row">
     <div class="col">
       <div class="profile">
@@ -57,6 +57,21 @@
             </div>
           </div>
         </div>
+          <div class="opt_flex__item vh-center" style="display: none;">
+            <div class="tap-to-add-wrapper themed">
+              <button class="btn btn-taptoadd themed"><i class="material-icons">people</i></button>
+              <p>Select Client</p>
+            </div>
+          </div>
+          <div class="opt_flex__item--inherit" style="display: none;">
+            <div class="vertical-divider"></div>
+          </div>
+          <div class="opt_flex__item vh-center" style="display: none;">
+            <div class="tap-to-add-wrapper">
+              <button class="btn btn-taptoadd"><i class="material-icons">person_add</i></button>
+              <p>Add Client</p>
+            </div>
+          </div>
       </div>
     </div>
     <div class="col __colored">
@@ -76,7 +91,7 @@
           <div class="field">
             <div class="field-inner font-style-06">10:00 PM | 20-Jan-2018</div>
             <div class="field-inner">
-              <div class="badge __success __uppercase">Confirmed Booking</div>
+              <div class="badge __success __uppercase mini-badge">Confirmed Booking</div>
             </div>
             <div class="field-options">
               <button class="btn btn-icon"><i class="material-icons small">more_vert</i></button>
@@ -88,6 +103,12 @@
           <div class="opt_flex--container">
             <div class="opt_flex__item--inherit">
               <div class="label-icon"><i class="material-icons">person</i></div>
+            </div>
+            <div class="opt_flex__item--inherit vh-center" style="display: none;">
+              <div class="tap-to-add-wrapper mini">
+                <button class="btn btn-taptoadd mini"><i class="material-icons">people</i></button>
+                <p>Referer</p>
+              </div>
             </div>
             <div class="opt_flex__item">
               <mat-select [(value)]="selected" class="opt-booking-summary-select-sm themed emphd">
@@ -133,7 +154,7 @@
       <div class="valuation">
         <div class="opt_flex--container">
           <div class="opt_flex__item">
-            <div class="badge __grey __uppercase">$ 550.00</div>
+            <div class="badge mini __grey __uppercase">$ 550.00</div>
           </div>
           <div class="opt_flex__item">
             <div class="font-style-01 __success">&pound; 6,595.86</div>
@@ -141,7 +162,7 @@
         </div>
         <div class="opt_flex--container shaded parent-width">
           <div class="opt_flex__item">
-            <div class="typo sz-12">Paid Amount</div>
+            <div class="typo sz-12">Invoiced Amount</div>
           </div>
           <div class="opt_flex__item">
             <div class="typo sz-13 medium">&pound; 900.00</div>
@@ -149,7 +170,7 @@
         </div>
         <div class="opt_flex--container shaded parent-width">
           <div class="opt_flex__item">
-            <div class="typo sz-12">Invoiced</div>
+            <div class="typo sz-12">Paid</div>
           </div>
           <div class="opt_flex__item">
             <div class="typo sz-13 medium">&pound; 795.80</div>
@@ -161,8 +182,8 @@
             <div><span class="typo sz-12 right-spacer-padding">Net</span><span class="typo sz-12 right-spacer-padding">:</span><span class="typo sz-12 medium">&pound; 0.00</span></div>
           </div>
           <div class="opt_flex__item">
-            <div class="typo sz-14 medium">&pound; 100.06</div>
-            <div class="badge __danger __uppercase">Outstanding</div>
+            <div class="typo sz-14 medium mt3">&pound; 100.06</div>
+            <div class="badge __danger __uppercase mt3">Outstanding</div>
           </div>
         </div>
         <!--<div class="flex-horizontal">-->
