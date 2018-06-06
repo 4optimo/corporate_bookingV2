@@ -1,4 +1,8 @@
 .opt_additional-info{
+  $icon_color : #909cac;
+  $plain_color : white;
+  $icon_hover: #4bb3fa;
+
   padding: 30px 30px 30px 30px;
 
 
@@ -56,8 +60,8 @@
       align-items: center;
       //border: 1px solid #b7b7b7;
       &:hover{
-        background-color: #4bb3fa;
-        color: white;
+        background-color: $icon_hover;
+        color: $plain_color;
       }
 
     }
@@ -87,13 +91,13 @@
         font-size: 50px;
       }
       &.color {
-        color: #8d8d8d;
+        color: $icon_color;
         &.active {
-          color: white;
+          color: $plain_color;
           @include box_shadow (3);
         }
         &:hover{
-          color:white;
+          color: $plain_color;
         }
       }
     }
