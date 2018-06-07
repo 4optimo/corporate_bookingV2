@@ -79,14 +79,14 @@ $rub: 'Rubik', sans-serif;
       order: 0;
       flex: 1 1 auto;
       align-self: stretch;
-      height: 49.5%;
+      height: 50%;
 
       .half{
 
       }
 
       &.border-line{
-        height: 1%;
+        height: 1px;
         background-color: $separator-border-color;
       }
 
@@ -330,6 +330,12 @@ i {
     color: #d3d6d9;
     align-items: center;
     box-shadow: none;
+
+    &.mat-icon-button{
+      width: auto;
+      height: auto;
+      line-height: 1.42857143;
+    }
   }
 
   &.btn-taptoadd{
