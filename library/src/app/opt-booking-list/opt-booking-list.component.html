@@ -34,7 +34,8 @@
         <mat-panel-description class="opt_flex--container">
           <div class="opt_flex__item"><span class="lbl lbl__vat">inc Vat</span></div>
           <div class=" opt_flex__item opt-typo-subhead-2 price">£300.00</div>
-          <div class="opt_flex__item opt-txt__light btn btn-select">Select</div>
+          <!--<div class="opt_flex__item opt-txt__light btn btn-select">Select</div>-->
+          <div mat-raised-button class="btn-color-default opt_flex__item opt-txt__light btn btn-select">Select</div>
           <div class="opt_flex__item action__button">
            <button mat-icon-button color="primary" (click)="expandPannel()" [disableRipple]="true" >
             <mat-icon>{{matIcon}}</mat-icon>
@@ -52,9 +53,18 @@
     <div class="opt_expand-header">
       <div class="col-sm-9 opt_flex__item"></div>
       <div class="col-sm-3 opt_flex__item expand-icon">
-          <i class=" material-icons color attach_money-icon btn">attach_money</i>
-          <i class="material-icons color file_copy-icon btn">file_copy</i>
-          <i class="material-icons color launch-icon btn">launch</i>
+
+        <button mat-icon-button >
+          <mat-icon class="btn-color-default ">attach_money</mat-icon>
+        </button>
+        <button mat-icon-button >
+          <mat-icon class="btn-color-default ">file_copy</mat-icon>
+        </button>
+        <button mat-icon-button >
+          <mat-icon class="btn-color-default ">launch</mat-icon>
+        </button>
+          <!--<i class="material-icons color file_copy-icon btn">file_copy</i>-->
+          <!--<i class="material-icons color launch-icon btn">launch</i>-->
       </div>
     </div>
     <div class="opt_expanded-view">

@@ -47,7 +47,7 @@ import {
 import {BrowserModule} from '@angular/platform-browser';
 import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-
+import { trigger, style, transition, animate, keyframes, query, stagger} from '@angular/animations';
 import { ExpansionPanelComponent } from './expansion-panel/expansion-panel.component';
 import { OptBookingListComponent } from './opt-booking-list/opt-booking-list.component';
 import { OptBookingSummaryComponent } from './opt-booking-summary/opt-booking-summary.component';
@@ -67,6 +67,8 @@ import {APP_BASE_HREF} from '@angular/common';
 import {OptAlertComponent} from "./opt-alert/opt-alert.component";
 import { OptBookingListExpandComponent } from './opt-booking-list-expand/opt-booking-list-expand.component';
 import { OptCorporateClientTabsComponent } from './opt-corporate-client-tabs/opt-corporate-client-tabs.component';
+import { OptClientListComponent } from './opt-client-list/opt-client-list.component';
+import { OptClientSummaryComponent } from './opt-client-summary/opt-client-summary.component';
 // import { OptDocumentSelectComponent } from './opt-document-select/opt-document-select.component';
 // import { OptEventLog } from './opt-document-select/opt-document-select.component';
 // import { OptUpload } from './opt-document-select/opt-document-select.component';
@@ -86,6 +88,9 @@ const appRoutes: Routes = [
   { path: 'opt-alert', component: OptAlertComponent},
   { path: 'opt-booking-list-expand', component: OptBookingListExpandComponent},
   { path: 'opt-corporate-client-tabs', component: OptCorporateClientTabsComponent},
+  { path: 'opt-client-list', component: OptClientListComponent},
+  { path: 'opt-client-summary', component: OptClientSummaryComponent},
+
   // { path: 'opt-document-select', component: OptDocumentSelectComponent},
 
   { path: '', redirectTo:'/opt-booking-summary', pathMatch:'full'},
@@ -154,6 +159,8 @@ export class DemoMaterialModule {}
     OptAlertComponent,
     OptBookingListExpandComponent,
     OptCorporateClientTabsComponent,
+    OptClientListComponent,
+    OptClientSummaryComponent,
     // OptDocumentSelectComponent,
 
     RoutingProjectComponent
@@ -186,3 +193,5 @@ export class DemoMaterialModule {}
   bootstrap: [AppComponent],
 })
 export class AppModule { }
+
+// platformBrowserDynamic().bootstrapModule(AppModule);//
