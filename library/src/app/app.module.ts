@@ -41,11 +41,11 @@ import {
   MatToolbarModule,
   MatTooltipModule,
   MatOptionModule,
-  MatDialogTitle,
+  // MatDialogTitle,
 } from '@angular/material';
 
 import {BrowserModule} from '@angular/platform-browser';
-import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
+// import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 import { ExpansionPanelComponent } from './expansion-panel/expansion-panel.component';
@@ -67,6 +67,7 @@ import {APP_BASE_HREF} from '@angular/common';
 import {OptAlertComponent} from "./opt-alert/opt-alert.component";
 import { OptBookingListExpandComponent } from './opt-booking-list-expand/opt-booking-list-expand.component';
 import { OptCorporateClientTabsComponent } from './opt-corporate-client-tabs/opt-corporate-client-tabs.component';
+import { OptBookingActivitiesComponent } from './opt-booking-activities/opt-booking-activities.component';
 // import { OptDocumentSelectComponent } from './opt-document-select/opt-document-select.component';
 // import { OptEventLog } from './opt-document-select/opt-document-select.component';
 // import { OptUpload } from './opt-document-select/opt-document-select.component';
@@ -76,6 +77,7 @@ import { OptCorporateClientTabsComponent } from './opt-corporate-client-tabs/opt
 const appRoutes: Routes = [
   { path: 'opt-booking-list', component: OptBookingListComponent},
   { path: 'opt-booking-details', component: OptBookingDetailsComponent},
+  { path: 'opt-booking-activities', component: OptBookingActivitiesComponent},
   { path: 'opt-booking-summary', component: OptBookingSummaryComponent},
   { path: 'additional-information', component: AdditionalInformationComponent},
   { path: 'opt-section-heading', component: OptSectionHeadingComponent},
@@ -91,7 +93,8 @@ const appRoutes: Routes = [
   { path: '', redirectTo:'/opt-booking-summary', pathMatch:'full'},
   { path: '**', redirectTo:'/opt-booking-summary', pathMatch: 'full'}
 
-]
+];
+
 @NgModule({
   exports: [
     CdkTableModule,
@@ -129,7 +132,6 @@ const appRoutes: Routes = [
     MatTooltipModule
 
   ],
-  declarations: [],
 
 
 
@@ -142,6 +144,7 @@ export class DemoMaterialModule {}
     AppComponent,
     ExpansionPanelComponent,
     OptBookingListComponent,
+    OptBookingActivitiesComponent,
     OptBookingDetailsComponent,
     AdditionalInformationComponent,
     OptSectionHeadingComponent,
