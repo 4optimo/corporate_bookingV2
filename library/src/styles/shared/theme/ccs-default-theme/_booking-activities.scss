@@ -7,3 +7,41 @@
 .mat-expansion-indicator:after{
   border-color: #fff;
 }
+
+.mat-horizontal-stepper-header{
+  height: auto !important;
+  .mat-step-icon {
+    display: none;
+  }
+  .mat-step-icon-not-touched{
+    display: none;
+  }
+}
+
+.activity-avatar-wrapper{
+  border-radius: 50%;
+  padding: 24px 0;
+  border: 1px solid #ddd;
+  i.material-icons{
+    font-size: 32px;
+    color: #909cac;
+  }
+
+}
+
+.activity-availability{
+  color: #909cac;
+  font-size: 11px;
+}
+.mat-step-label-selected{
+  .activity-title{
+    color: #4db4fa;
+    font-size: 15px;
+    font-weight: 500;
+  }
+}
+.activity-title{
+  color: #909cac;
+  font-size: 15px;
+  font-weight: 500;
+}

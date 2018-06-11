@@ -9,26 +9,64 @@
       <!--</mat-panel-description>-->
     </mat-expansion-panel-header>
     <mat-horizontal-stepper #stepper="matHorizontalStepper">
-      <mat-step label="Notes">
-        a
+      <mat-step>
+        <ng-template matStepLabel>
+          <div class="text-center">
+            <div class="activity-avatar-wrapper">
+              <i class="material-icons">pets</i>
+            </div>
+            <div class="activity-availability">0 items available</div>
+            <div class="activity-title">Notes</div>
+          </div>
+        </ng-template>
       </mat-step>
       <mat-step label="Documents">
-        b
+        <ng-template matStepLabel>
+          <div class="text-center">
+            <div class="activity-availability">0 items available</div>
+            <div class="activity-title">Documents</div>
+          </div>
+        </ng-template>
       </mat-step>
       <mat-step label="Correspondence">
-        c
+        <ng-template matStepLabel>
+          <div class="text-center">
+            <div class="activity-availability">0 items available</div>
+            <div class="activity-title">Correspondence</div>
+          </div>
+        </ng-template>
       </mat-step>
       <mat-step label="Payment">
-        d
+        <ng-template matStepLabel>
+          <div class="text-center">
+            <div class="activity-availability">0 items available</div>
+            <div class="activity-title">Payment</div>
+          </div>
+        </ng-template>
       </mat-step>
       <mat-step label="Deliverables & Dispatch">
-        e
+        <ng-template matStepLabel>
+          <div class="text-center">
+            <div class="activity-availability">0 items available</div>
+            <div class="activity-title">Deliverables & Dispatch</div>
+          </div>
+        </ng-template>
       </mat-step>
       <mat-step label="Host">
-        f
+        <ng-template matStepLabel>
+          <div class="text-center">
+            <div class="activity-availability">0 items available</div>
+            <div class="activity-title">Host</div>
+          </div>
+        </ng-template>
       </mat-step>
       <mat-step label="History">
-        g
+        <ng-template matStepLabel>
+          <div class="text-center">
+            <div class="activity-availability">0 items available</div>
+            <div class="activity-title">History</div>
+          </div>
+        </ng-template>
       </mat-step>
     </mat-horizontal-stepper>
   </mat-expansion-panel>
