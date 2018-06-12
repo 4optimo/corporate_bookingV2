@@ -1,0 +1,12 @@
+.opt{
+  &_tooltip{
+    .mat-input-underline {
+      &.mat-form-field-underline{
+        display: none;
+      }
+    }
+    .category{
+      font-size: 11px;
+    }
+  }
+}
