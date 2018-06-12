@@ -1,0 +1,31 @@
+.opt{
+  &_search-panel {
+    padding: 10px;
+    border: 1px solid $separator-border-color;
+    .opt_flex--container{
+      flex-wrap: wrap;
+    }
+    .mat-form-field-wrapper{
+      padding-bottom: 0;
+      height: 40px;
+    }
+    .btn{
+      border: 1px solid $separator-border-color;
+      padding: 8px;
+
+      &.__normal{
+        background-color: $badge-success-bg;
+        color: white;
+      }
+      &.__advance{
+        background-color: $unavailable-state-dark-bg;
+        color: white;
+      }
+    }
+    .mat-input-container >  mat-form-field, ng-tns-c4-0, mat-primary, mat-form-field-type-mat-input, mat-form-field-can-float, mat-form-field-hide-placeholder,mat-form-field-should-float{
+      display: none;
+    }
+  }
+
+}
+
