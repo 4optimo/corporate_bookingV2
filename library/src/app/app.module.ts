@@ -69,6 +69,8 @@ import { OptBookingListExpandComponent } from './opt-booking-list-expand/opt-boo
 import { OptCorporateClientTabsComponent } from './opt-corporate-client-tabs/opt-corporate-client-tabs.component';
 import { OptClientListComponent } from './opt-client-list/opt-client-list.component';
 import { OptClientSummaryComponent } from './opt-client-summary/opt-client-summary.component';
+import {OptTooltipComponent} from "./opt-tooltip/opt-tooltip.component";
+import {OptSearchPanelComponent} from "./opt-search-panel/opt-search-panel.component";
 // import { OptDocumentSelectComponent } from './opt-document-select/opt-document-select.component';
 // import { OptEventLog } from './opt-document-select/opt-document-select.component';
 // import { OptUpload } from './opt-document-select/opt-document-select.component';
@@ -90,7 +92,8 @@ const appRoutes: Routes = [
   { path: 'opt-corporate-client-tabs', component: OptCorporateClientTabsComponent},
   { path: 'opt-client-list', component: OptClientListComponent},
   { path: 'opt-client-summary', component: OptClientSummaryComponent},
-
+  { path: 'opt-client-list', component: OptTooltipComponent},
+  { path: 'opt-client-summary', component: OptSearchPanelComponent},
   // { path: 'opt-document-select', component: OptDocumentSelectComponent},
 
   { path: '', redirectTo:'/opt-booking-summary', pathMatch:'full'},
@@ -161,6 +164,8 @@ export class DemoMaterialModule {}
     OptCorporateClientTabsComponent,
     OptClientListComponent,
     OptClientSummaryComponent,
+    OptSearchPanelComponent,
+    OptTooltipComponent,
     // OptDocumentSelectComponent,
 
     RoutingProjectComponent
