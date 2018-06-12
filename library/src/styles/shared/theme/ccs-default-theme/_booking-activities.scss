@@ -10,20 +10,36 @@
 
 .mat-horizontal-stepper-header{
   height: auto !important;
+
+  &.mat-step-header{
+    width: 100px;
+    &:hover{
+      background-color: transparent;
+    }
+  }
+
   .mat-step-icon {
     display: none;
   }
   .mat-step-icon-not-touched{
     display: none;
   }
+  .mat-step-header-ripple {
+    &.mat-ripple{
+      display: none;
+    }
+  }
 }
 
 .activity-avatar-wrapper{
   border-radius: 50%;
-  padding: 24px 0;
+  padding: 13px 0;
   border: 1px solid #ddd;
-  i.material-icons{
-    font-size: 32px;
+  width: 65px;
+  height: 65px;
+  margin: 0 auto;
+  i{
+    font-size: 40px;
     color: #909cac;
   }
 
@@ -34,6 +50,14 @@
   font-size: 11px;
 }
 .mat-step-label-selected{
+  &.mat-step-label-active{
+    .activity-avatar-wrapper{
+      background-color: #4db4fa;
+      i{
+        color: #fff;
+      }
+    }
+  }
   .activity-title{
     color: #4db4fa;
     font-size: 15px;
@@ -44,4 +68,31 @@
   color: #909cac;
   font-size: 15px;
   font-weight: 500;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.mat-expansion-panel-body{
+  .mat-horizontal-content-container {
+    padding: 24px 24px 0 24px;
+  }
+}
+
+@media (max-width: 991px) {
+  .mat-horizontal-stepper-header-container{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .mat-stepper-horizontal-line{
+    display: none;
+  }
+
+  .mat-horizontal-stepper-header{
+    &.mat-step-header{
+      padding: 15px 24px;
+    }
+  }
 }
