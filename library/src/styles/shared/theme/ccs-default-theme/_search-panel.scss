@@ -25,6 +25,11 @@
     .mat-input-container >  mat-form-field, ng-tns-c4-0, mat-primary, mat-form-field-type-mat-input, mat-form-field-can-float, mat-form-field-hide-placeholder,mat-form-field-should-float{
       display: none;
     }
+    .mat-input-underline {
+      &.mat-form-field-underline{
+        display: none;
+      }
+    }
   }
 
 }
