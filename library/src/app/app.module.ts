@@ -92,8 +92,9 @@ const appRoutes: Routes = [
   { path: 'opt-corporate-client-tabs', component: OptCorporateClientTabsComponent},
   { path: 'opt-client-list', component: OptClientListComponent},
   { path: 'opt-client-summary', component: OptClientSummaryComponent},
-  { path: 'opt-client-list', component: OptTooltipComponent},
-  { path: 'opt-client-summary', component: OptSearchPanelComponent},
+  { path: 'opt-tooltip', component: OptTooltipComponent},
+  { path: 'opt-search-panel', component: OptSearchPanelComponent},
+
   // { path: 'opt-document-select', component: OptDocumentSelectComponent},
 
   { path: '', redirectTo:'/opt-booking-summary', pathMatch:'full'},
