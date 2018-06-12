@@ -1,0 +1,24 @@
+<div class="opt_tooltip">
+  <div class="opt_flex--container">
+    <div class="opt_flex__item">
+      <label class="category opt-txt__light">{{name }}</label>
+    </div>
+  </div>
+  <div class="opt_flex--container">
+    <div class="opt_flex__item">
+      <form [formGroup]="stateForm">
+        <mat-form-field>
+        <input type="text" matInput placeholder="Search by Category" formControlName="stateGroup" [matAutocomplete]="autoGroup" />
+          <!--class="lbl lbl__vat __normal"-->
+          <mat-autocomplete #autoGroup="matAutocomplete">
+            <mat-optgroup *ngFor="let group of stateGroupOptions | async" [label]="group.letter">
+              <mat-option *ngFor="let name of group.names" [value]="name">
+                {{ name }}
+              </mat-option>
+          </mat-optgroup>
+        </mat-autocomplete>
+      </mat-form-field>
+      </form>
+    </div>
+  </div>
+</div>
