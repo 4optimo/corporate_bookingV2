@@ -43,4 +43,25 @@
   .add-padding{
     padding-left: 65px;
   }
+
+  .icon-add-booking2{
+    font-size: 24px;
+  }
+
+}
+.lbl{
+  &.__active{
+    background-color: #27BFC2;
+    color: white;
+  }
+  &.__selected{
+    background-color: #00b0ff;
+    color: white;
+
+  }
+  &.__normal{
+    background-color: #909CAC;
+    color: white;
+
+  }
 }
