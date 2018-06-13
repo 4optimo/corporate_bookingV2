@@ -19,7 +19,16 @@
             <div class="activity-title">Notes</div>
           </div>
         </ng-template>
-        Notes Content
+        <div class="opt_flex--container">
+          <div class="opt_flex__item horizontally-center">
+            <mat-checkbox>Select All</mat-checkbox>
+          </div>
+          <div class="opt_flex__item--inherit horizontally-center">
+            <button mat-button class="btn-icon-text"><i class="material-icons">cloud_upload</i> Upload a new file</button>
+            <button mat-button class="btn-icon-text"><i class="material-icons">email</i> Email</button>
+            <button mat-button class="btn-icon-text"><i class="material-icons">delete</i> Delete</button>
+          </div>
+        </div>
       </mat-step>
       <mat-step label="Documents">
         <ng-template matStepLabel>
