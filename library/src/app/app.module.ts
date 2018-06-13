@@ -60,6 +60,7 @@ import { OptPopupModalComponent } from './opt-popup-modal/opt-popup-modal.compon
 import { OptPopupWindowComponent } from './opt-popup-window/opt-popup-window.component';
 import { OptTabPanelComponent } from './opt-tab-panel/opt-tab-panel.component';
 import { RoutingProjectComponent } from './routing-project/routing-project.component';
+import {ScrollDispatchModule} from '@angular/cdk/scrolling';
 
 import { RouterModule, Routes} from "@angular/router";
 import {APP_BASE_HREF} from '@angular/common';
@@ -137,7 +138,8 @@ const appRoutes: Routes = [
     MatTableModule,
     MatTabsModule,
     MatToolbarModule,
-    MatTooltipModule
+    MatTooltipModule,
+    ScrollDispatchModule
 
   ],
   declarations: [],
@@ -193,6 +195,7 @@ export class DemoMaterialModule {}
     MatNativeDateModule,
     DemoMaterialModule,
     MatInputModule,
+    ScrollDispatchModule,
     RouterModule.forRoot(appRoutes)
   ],
 
