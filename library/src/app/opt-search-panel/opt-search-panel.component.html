@@ -1,0 +1,32 @@
+<div class="opt_search-panel">
+  <div class="opt_flex--container">
+    <div class="opt_flex__item">
+      <!--<form [formGroup]="stateForm">-->
+        <mat-form-field>
+          <input type="text" matInput placeholder="Search by Name, Configuration, Keywords, etc." />
+          <!--<mat-autocomplete #autoGroup="matAutocomplete">-->
+            <!--<mat-optgroup *ngFor="let group of stateGroupOptions | async" [label]="group.letter">-->
+              <!--<mat-option *ngFor="let name of group.names" [value]="name">-->
+                <!--{{ name }}-->
+                <!--&lt;!&ndash;class="lbl lbl__vat __normal"&ndash;&gt;-->
+              <!--</mat-option>-->
+            <!--</mat-optgroup>-->
+          <!--</mat-autocomplete>-->
+        </mat-form-field>
+      <!--</form>-->
+    </div>
+    <div class="opt_flex__item--inherit --right">
+      <div class="opt_flex--container">
+        <div class="opt_flex__item btn __normal">
+          <div mat-raised-button class="btn-color-default">Search</div>
+        </div>
+        <!--<div class="opt_flex__item">-->
+          <!--<i class="material-icons btn-default">filter_list</i>-->
+        <!--</div>-->
+        <button mat-icon-button >
+          <mat-icon class="btn-color-default material-icons">filter_list</mat-icon>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -8,7 +8,6 @@
  =========================================================
  * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
-
 $bootstrap-sass-asset-helper: false;
 
 @import "./shared/theme/ccs-default-theme/variables";
@@ -39,4 +38,9 @@ $bootstrap-sass-asset-helper: false;
 @import "./shared/theme/ccs-default-theme/popup-modal";
 @import "./shared/theme/ccs-default-theme/booking-list-expand";
 @import "./shared/theme/ccs-default-theme/corporate-client-tabs";
+@import "./shared/theme/ccs-default-theme/client-list";
+@import "./shared/theme/ccs-default-theme/tooltip";
+@import "./shared/theme/ccs-default-theme/search-panel";
+@import "./shared/theme/ccs-default-theme/booking-activities";
+
 

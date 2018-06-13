@@ -41,13 +41,13 @@ import {
   MatToolbarModule,
   MatTooltipModule,
   MatOptionModule,
-  // MatDialogTitle,
+  MatDialogTitle,
 } from '@angular/material';
 
 import {BrowserModule} from '@angular/platform-browser';
-// import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
+import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-
+import { trigger, style, transition, animate, keyframes, query, stagger} from '@angular/animations';
 import { ExpansionPanelComponent } from './expansion-panel/expansion-panel.component';
 import { OptBookingListComponent } from './opt-booking-list/opt-booking-list.component';
 import { OptBookingSummaryComponent } from './opt-booking-summary/opt-booking-summary.component';
@@ -60,6 +60,7 @@ import { OptPopupModalComponent } from './opt-popup-modal/opt-popup-modal.compon
 import { OptPopupWindowComponent } from './opt-popup-window/opt-popup-window.component';
 import { OptTabPanelComponent } from './opt-tab-panel/opt-tab-panel.component';
 import { RoutingProjectComponent } from './routing-project/routing-project.component';
+import {ScrollDispatchModule} from '@angular/cdk/scrolling';
 
 import { RouterModule, Routes} from "@angular/router";
 import {APP_BASE_HREF} from '@angular/common';
@@ -67,7 +68,11 @@ import {APP_BASE_HREF} from '@angular/common';
 import {OptAlertComponent} from "./opt-alert/opt-alert.component";
 import { OptBookingListExpandComponent } from './opt-booking-list-expand/opt-booking-list-expand.component';
 import { OptCorporateClientTabsComponent } from './opt-corporate-client-tabs/opt-corporate-client-tabs.component';
-import { OptBookingActivitiesComponent } from './opt-booking-activities/opt-booking-activities.component';
+import { OptClientListComponent } from './opt-client-list/opt-client-list.component';
+import { OptClientSummaryComponent } from './opt-client-summary/opt-client-summary.component';
+import {OptTooltipComponent} from "./opt-tooltip/opt-tooltip.component";
+import {OptSearchPanelComponent} from "./opt-search-panel/opt-search-panel.component";
+import {OptBookingActivitiesComponent} from "./opt-booking-activities/opt-booking-activities.component";
 // import { OptDocumentSelectComponent } from './opt-document-select/opt-document-select.component';
 // import { OptEventLog } from './opt-document-select/opt-document-select.component';
 // import { OptUpload } from './opt-document-select/opt-document-select.component';
@@ -77,7 +82,6 @@ import { OptBookingActivitiesComponent } from './opt-booking-activities/opt-book
 const appRoutes: Routes = [
   { path: 'opt-booking-list', component: OptBookingListComponent},
   { path: 'opt-booking-details', component: OptBookingDetailsComponent},
-  { path: 'opt-booking-activities', component: OptBookingActivitiesComponent},
   { path: 'opt-booking-summary', component: OptBookingSummaryComponent},
   { path: 'additional-information', component: AdditionalInformationComponent},
   { path: 'opt-section-heading', component: OptSectionHeadingComponent},
@@ -88,13 +92,18 @@ const appRoutes: Routes = [
   { path: 'opt-alert', component: OptAlertComponent},
   { path: 'opt-booking-list-expand', component: OptBookingListExpandComponent},
   { path: 'opt-corporate-client-tabs', component: OptCorporateClientTabsComponent},
+  { path: 'opt-client-list', component: OptClientListComponent},
+  { path: 'opt-client-summary', component: OptClientSummaryComponent},
+  { path: 'opt-tooltip', component: OptTooltipComponent},
+  { path: 'opt-search-panel', component: OptSearchPanelComponent},
+  { path: 'opt-booking-activities', component: OptBookingActivitiesComponent},
+
   // { path: 'opt-document-select', component: OptDocumentSelectComponent},
 
   { path: '', redirectTo:'/opt-booking-summary', pathMatch:'full'},
   { path: '**', redirectTo:'/opt-booking-summary', pathMatch: 'full'}
 
-];
-
+]
 @NgModule({
   exports: [
     CdkTableModule,
@@ -129,9 +138,11 @@ const appRoutes: Routes = [
     MatTableModule,
     MatTabsModule,
     MatToolbarModule,
-    MatTooltipModule
+    MatTooltipModule,
+    ScrollDispatchModule
 
   ],
+  declarations: [],
 
 
 
@@ -144,7 +155,6 @@ export class DemoMaterialModule {}
     AppComponent,
     ExpansionPanelComponent,
     OptBookingListComponent,
-    OptBookingActivitiesComponent,
     OptBookingDetailsComponent,
     AdditionalInformationComponent,
     OptSectionHeadingComponent,
@@ -157,6 +167,11 @@ export class DemoMaterialModule {}
     OptAlertComponent,
     OptBookingListExpandComponent,
     OptCorporateClientTabsComponent,
+    OptClientListComponent,
+    OptClientSummaryComponent,
+    OptSearchPanelComponent,
+    OptTooltipComponent,
+    OptBookingActivitiesComponent,
     // OptDocumentSelectComponent,
 
     RoutingProjectComponent
@@ -180,6 +195,7 @@ export class DemoMaterialModule {}
     MatNativeDateModule,
     DemoMaterialModule,
     MatInputModule,
+    ScrollDispatchModule,
     RouterModule.forRoot(appRoutes)
   ],
 
@@ -189,3 +205,5 @@ export class DemoMaterialModule {}
   bootstrap: [AppComponent],
 })
 export class AppModule { }
+
+// platformBrowserDynamic().bootstrapModule(AppModule);//

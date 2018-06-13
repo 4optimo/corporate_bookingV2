@@ -6,6 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./opt-corporate-client-tabs.component.scss']
 })
 export class OptCorporateClientTabsComponent implements OnInit {
+  //
+  // @Input() collapsedHeight: string;
+  // @Input() expandedHeight: string;
+  // panel: MatExpansionPanel;
+
 
   constructor() { }
 
@@ -13,3 +18,4 @@ export class OptCorporateClientTabsComponent implements OnInit {
   }
 
 }
+

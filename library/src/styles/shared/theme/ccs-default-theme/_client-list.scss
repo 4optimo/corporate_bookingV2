@@ -1,0 +1,67 @@
+.opt_client__list{
+
+  .opt-txt__light{
+    font-size: 13px;
+  }
+
+  //.space-between{
+  //  padding-bottom: 2px;
+  //}
+
+  .address{
+    .opt-txt__body1, opt-txt__body2{
+      white-space: normal !important;
+    }
+  }
+
+  .tc-flex-item__center{
+    display: inline-block;
+    vertical-align: center!important;
+  }
+
+  .opt_flex--container{
+    display: flex;
+    line-height: 20px;
+  }
+
+  .opt_circle{
+    padding-top: 0;
+    .client-type{
+      text-align: center;
+      font-size: 30px;
+    }
+    &.__individual{
+      background-color: #27bfc2;
+    }
+    &.__corporate{
+      background-color: #f9d634;
+    }
+  }
+  .no-left-padding{
+    padding-left: 0;
+  }
+  .add-padding{
+    padding-left: 65px;
+  }
+
+  .icon-add-booking2{
+    font-size: 24px;
+  }
+
+}
+.lbl{
+  &.__active{
+    background-color: #27BFC2;
+    color: white;
+  }
+  &.__selected{
+    background-color: #00b0ff;
+    color: white;
+
+  }
+  &.__normal{
+    background-color: #909CAC;
+    color: white;
+
+  }
+}

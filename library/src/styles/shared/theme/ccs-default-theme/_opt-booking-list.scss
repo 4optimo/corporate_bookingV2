@@ -1,6 +1,9 @@
-
 .opt_booking__list{
-
+  $danger_color: #f2705b;
+  $plain_color : white;
+  $border_color: #b7b7b7;
+  $expanded_line: #4bb3fa;
+  $line_color: #d9d9d9;
 
   .opt{
     &_opt_width-define{
@@ -30,17 +33,17 @@
     }
 
     &_circle{
-      @include circle-icon(40px, #f2705b, #f2705b);
+      @include circle-icon(40px, $danger_color, $danger_color);
       padding-top: 2px;
       line-height: 12px;
       .date{
         font-size: 14px;
         font-weight: bold;
-        color: white;
+        color: $plain_color;
       }
       .month_year{
         font-size: 9px;
-        color: white;
+        color: $plain_color;
         font-weight: normal;
       }
     }
@@ -62,7 +65,6 @@
     &_expand-header {
       background-color: #f4f4f4;
       height: 55px;
-
 
       .expand-icon{
         text-align: right;
@@ -104,7 +106,7 @@
         vertical-align: middle;
 
         .note-icon{
-          color: white;
+          color: $plain_color;
           font-size: 30px;
           vertical-align: middle;
         }
@@ -166,8 +168,6 @@
     }
 
   }
-
-
 
   .opt_price-section{
     padding-right: 0;
