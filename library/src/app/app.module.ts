@@ -71,6 +71,7 @@ import { OptClientListComponent } from './opt-client-list/opt-client-list.compon
 import { OptClientSummaryComponent } from './opt-client-summary/opt-client-summary.component';
 import {OptTooltipComponent} from "./opt-tooltip/opt-tooltip.component";
 import {OptSearchPanelComponent} from "./opt-search-panel/opt-search-panel.component";
+import {OptBookingActivitiesComponent} from "./opt-booking-activities/opt-booking-activities.component";
 // import { OptDocumentSelectComponent } from './opt-document-select/opt-document-select.component';
 // import { OptEventLog } from './opt-document-select/opt-document-select.component';
 // import { OptUpload } from './opt-document-select/opt-document-select.component';
@@ -94,6 +95,7 @@ const appRoutes: Routes = [
   { path: 'opt-client-summary', component: OptClientSummaryComponent},
   { path: 'opt-tooltip', component: OptTooltipComponent},
   { path: 'opt-search-panel', component: OptSearchPanelComponent},
+  { path: 'opt-booking-activities', component: OptBookingActivitiesComponent},
 
   // { path: 'opt-document-select', component: OptDocumentSelectComponent},
 
@@ -167,6 +169,7 @@ export class DemoMaterialModule {}
     OptClientSummaryComponent,
     OptSearchPanelComponent,
     OptTooltipComponent,
+    OptBookingActivitiesComponent,
     // OptDocumentSelectComponent,
 
     RoutingProjectComponent

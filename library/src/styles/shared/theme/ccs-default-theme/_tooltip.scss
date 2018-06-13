@@ -1,5 +1,44 @@
 .opt{
-  &_tooltip{
+  &_chip-set{
+    display: flex;
+    font-size: 12px;
+    &--text{
+      padding-right: 10px;
+      padding-left: 4px;
+    }
+    &--label{
+      padding-bottom: 5px;
+      padding-left: 8px;
+    }
+
+    .opt_chip--wrapper{
+      background-color: $badge-undefined-bg;
+      border-radius: 20px;
+      padding: 5px 5px 5px 5px;
+      min-width: 100px;
+      color: white;
+      font-weight: 400;
+
+      input, mat-select{
+        background-color: $badge-undefined-bg;
+        border: none;
+      }
+      .mat-form-field-infix{
+        padding: 2px;
+        border-top: 0;
+      }
+      .mat-form-field-wrapper{
+        padding-bottom: 0;
+      }
+      .icon-set{
+        float: right;
+        //border-left: 1px solid white;
+        padding-left: 5px;
+      }
+      i{
+        font-size: 14px;
+      }
+    }
     .mat-input-underline {
       &.mat-form-field-underline{
         display: none;
@@ -7,7 +46,24 @@
     }
     .lbl {
       font-weight: 400;
+      font-size: 13px;
+      padding: 2px;
     }
+    .mat-select-value {
+      line-height: 1;
+      .mat-select-value-text{
+        color: white;
+      }
+    }
+
+
   }
 }
 
+.opt_drop-down{
+  padding: 20px;
+  border: 1px solid darkgray;
+  li{
+    padding-bottom: 5px;
+  }
+}

@@ -78,6 +78,9 @@ export class OptTooltipComponent implements OnInit {
     names: ['Washington', 'West Virginia', 'Wisconsin', 'Wyoming']
   }];
 
+
+  toppingList = ['Extra cheese', 'Mushroom', 'Onion', 'Pepperoni', 'Sausage', 'Tomato'];
+
   stateGroupOptions: Observable<StateGroup[]>;
 
   constructor(private fb: FormBuilder) { }

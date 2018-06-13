@@ -1,24 +1,113 @@
-<div class="opt_tooltip">
-  <div class="opt_flex--container">
-    <div class="opt_flex__item">
-      <label class="category opt-txt__light">{{name }}</label>
+<div class="opt_chip-set">
+  <div>
+    <div class="opt_flex--container">
+    <div class="opt_flex__item--inherit">
+      <label class="opt_chip-set--label opt-txt__light">
+        Chip Style
+      </label>
     </div>
   </div>
-  <div class="opt_flex--container">
-    <div class="opt_flex__item">
-      <form [formGroup]="stateForm">
-        <mat-form-field>
-        <input type="text" matInput placeholder="Search by Category" formControlName="stateGroup" [matAutocomplete]="autoGroup" />
-          <!--class="lbl lbl__vat __normal"-->
-          <mat-autocomplete #autoGroup="matAutocomplete">
-            <mat-optgroup *ngFor="let group of stateGroupOptions | async" [label]="group.letter">
-              <mat-option *ngFor="let name of group.names" [value]="name">
-                {{ name }}
-              </mat-option>
-          </mat-optgroup>
-        </mat-autocomplete>
-      </mat-form-field>
-      </form>
+    <div class="opt_flex--container">
+    <div class="opt_chip--wrapper">
+      <div class="opt_flex--container">
+        <div class="opt_chip-set--text">Search 1</div>
+        <div class="opt_flex__item--inherit icon-set">
+          <!--<i class="material-icons">search</i>-->
+          <i class="material-icons">cancel</i>
+        </div>
+      </div>
     </div>
+  </div>
+  </div>
+
+  <div>
+    <div class="opt_flex--container">
+      <div class="opt_flex__item--inherit">
+        <label class="opt_chip-set--label opt-txt__light">
+          Chip Input
+        </label>
+      </div>
+    </div>
+    <div class="opt_flex--container">
+      <div class="opt_chip--wrapper">
+        <div class="opt_flex--container">
+          <form>
+            <input type="text" class="opt_chip-set--text">
+          </form>
+          <div class="opt_flex__item--inherit icon-set">
+            <!--<i class="material-icons">search</i>-->
+            <i class="material-icons">cancel</i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div class="opt_flex--container">
+      <div class="opt_flex__item--inherit">
+        <label class="opt_chip-set--label opt-txt__light">
+          Chip Auto Complete
+        </label>
+      </div>
+    </div>
+    <div class="opt_flex--container">
+      <div class="opt_chip--wrapper">
+        <div class="opt_flex--container">
+          <form [formGroup]="stateForm">
+            <input type="text" class="opt_chip-set--text" formControlName="stateGroup" [matAutocomplete]="autoGroup" >
+            <mat-autocomplete #autoGroup="matAutocomplete" >
+              <mat-optgroup *ngFor="let group of stateGroupOptions | async" [label]="group.letter">
+                <mat-option *ngFor="let name of group.names" [value]="name">
+                  {{ name }}
+                </mat-option>
+              </mat-optgroup>
+            </mat-autocomplete>
+
+          </form>
+          <div class="opt_flex__item--inherit icon-set">
+            <!--<i class="material-icons">search</i>-->
+            <i class="material-icons">cancel</i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div class="opt_flex--container">
+      <div class="opt_flex__item--inherit">
+        <label class="opt_chip-set--label opt-txt__light">
+          Chip Multi Select
+        </label>
+      </div>
+    </div>
+    <div class="opt_flex--container">
+      <div class="opt_chip--wrapper">
+        <div class="opt_flex--container">
+          <mat-form-field class="mat-select-value-text">
+            <mat-select placeholder="" [formControl]="toppings" multiple >
+              <mat-option *ngFor="let topping of toppingList" [value]="topping">{{topping}}</mat-option>
+            </mat-select>
+          </mat-form-field>
+          <div class="opt_flex__item--inherit icon-set">
+            <!--<i class="material-icons">search</i>-->
+            <i class="material-icons">cancel</i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="opt_drop-down">
+  <div>
+    <ul>
+      <li><mat-checkbox>Option 1</mat-checkbox></li>
+      <li><mat-checkbox>Option 2</mat-checkbox></li>
+      <li><mat-checkbox>Option 3</mat-checkbox></li>
+      <li><mat-checkbox>Option 4</mat-checkbox></li>
+      <li><mat-checkbox>Option 5</mat-checkbox></li>
+    </ul>
   </div>
 </div>
