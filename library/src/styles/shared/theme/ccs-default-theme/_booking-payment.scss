@@ -1,0 +1,76 @@
+.mat-form-field-infix{
+  border-top: 0;
+  padding-top: 0;
+}
+
+.mat-input-wrapper {
+  &.mat-form-field-wrapper{
+    margin-bottom: -1.25em;
+  }
+}
+
+.payment-inner{
+  border: 1px solid #ddd;
+}
+
+.payment-category-header{
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-bottom: 2px solid #ddd;
+  .payment-category-title{
+    font-size: 14px;
+    color: $primary-theme-font;
+    font-weight: 500;
+  }
+}
+
+.payment-category-body{
+  padding: 15px;
+}
+
+.payment-detail-field{
+  border-bottom: 1px solid #d9d9d9;
+  .payment-schedule{
+    h5{
+      font-size: 13px;
+    }
+    p{
+      font-size: 12px;
+      margin: 0;
+    }
+  }
+  .payment-status{
+    .payment-status-inner{
+      padding: 0 18px;
+      position: relative;
+      &:before{
+        position: absolute;
+        content: '';
+        width: 0;
+        height: 0;
+        border-top: 8px solid transparent;
+        border-bottom: 8px solid transparent;
+        border-left: 10px solid green;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+
+    p{
+      font-size: 14px;
+      margin-bottom: 0;
+      &:first-child{
+        font-size: 11px;
+      }
+      &:last-child{
+        font-size: 14px;
+        font-weight: 600;
+        span{
+          font-weight: 500;
+        }
+      }
+    }
+  }
+
+}
