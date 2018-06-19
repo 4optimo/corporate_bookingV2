@@ -1,12 +1,9 @@
 <mat-accordion>
-  <mat-expansion-panel>
+  <mat-expansion-panel class="shaded">
     <mat-expansion-panel-header>
-      <!--<mat-panel-title>-->
-        <!--Personal data-->
-      <!--</mat-panel-title>-->
-      <!--<mat-panel-description>-->
-        <!--Type your name and age-->
-      <!--</mat-panel-description>-->
+      <mat-panel-title>
+        Activities
+      </mat-panel-title>
     </mat-expansion-panel-header>
     <mat-horizontal-stepper #stepper="matHorizontalStepper">
       <mat-step>
@@ -19,7 +16,16 @@
             <div class="activity-title">Notes</div>
           </div>
         </ng-template>
-        Notes Content
+        <div class="opt_flex--container">
+          <div class="opt_flex__item horizontally-center">
+            <mat-checkbox>Select All</mat-checkbox>
+          </div>
+          <div class="opt_flex__item--inherit horizontally-center">
+            <button mat-button class="btn-icon-text"><i class="material-icons">cloud_upload</i> <span class="btn-text">Upload a new file</span></button>
+            <button mat-button class="btn-icon-text"><i class="material-icons">email</i> <span class="btn-text">Email</span></button>
+            <button mat-button class="btn-icon-text"><i class="material-icons">delete</i> <span class="btn-text">Delete</span></button>
+          </div>
+        </div>
       </mat-step>
       <mat-step label="Documents">
         <ng-template matStepLabel>

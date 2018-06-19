@@ -24,6 +24,11 @@
           flex-grow: inherit;
         }
 
+        &--vcenter{
+          display: flex;
+          align-items: center;
+        }
+
         &.p25{
           width: 25%;
         }
