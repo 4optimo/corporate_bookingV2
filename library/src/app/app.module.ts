@@ -62,6 +62,7 @@ import { OptTabPanelComponent } from './opt-tab-panel/opt-tab-panel.component';
 import { RoutingProjectComponent } from './routing-project/routing-project.component';
 import {ScrollDispatchModule} from '@angular/cdk/scrolling';
 
+
 import { RouterModule, Routes} from "@angular/router";
 import {APP_BASE_HREF} from '@angular/common';
 
@@ -73,9 +74,12 @@ import { OptClientSummaryComponent } from './opt-client-summary/opt-client-summa
 import {OptTooltipComponent} from "./opt-tooltip/opt-tooltip.component";
 import {OptSearchPanelComponent} from "./opt-search-panel/opt-search-panel.component";
 import {OptBookingActivitiesComponent} from "./opt-booking-activities/opt-booking-activities.component";
+import { OptChipComponent } from './opt-chip/opt-chip.component';
 // import { OptDocumentSelectComponent } from './opt-document-select/opt-document-select.component';
 // import { OptEventLog } from './opt-document-select/opt-document-select.component';
 // import { OptUpload } from './opt-document-select/opt-document-select.component';
+
+import { NgMultiSelectDropDownModule } from 'ng-multiselect-dropdown';
 
 
 
@@ -97,6 +101,7 @@ const appRoutes: Routes = [
   { path: 'opt-tooltip', component: OptTooltipComponent},
   { path: 'opt-search-panel', component: OptSearchPanelComponent},
   { path: 'opt-booking-activities', component: OptBookingActivitiesComponent},
+  { path: 'opt-chip', component: OptChipComponent},
 
   // { path: 'opt-document-select', component: OptDocumentSelectComponent},
 
@@ -172,6 +177,7 @@ export class DemoMaterialModule {}
     OptSearchPanelComponent,
     OptTooltipComponent,
     OptBookingActivitiesComponent,
+    OptChipComponent,
     // OptDocumentSelectComponent,
 
     RoutingProjectComponent
@@ -196,6 +202,7 @@ export class DemoMaterialModule {}
     DemoMaterialModule,
     MatInputModule,
     ScrollDispatchModule,
+    NgMultiSelectDropDownModule,
     RouterModule.forRoot(appRoutes)
   ],
 
