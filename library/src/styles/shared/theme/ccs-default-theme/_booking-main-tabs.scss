@@ -1,0 +1,31 @@
+.booking-main-tab-group{
+  .mat-tab-labels{
+    .mat-tab-label{
+      flex-grow: 1;
+      background-color: #e4e8e9;
+      padding: 35px 24px;
+      &:not(.mat-tab-disabled){
+        &.mat-tab-label-active{
+          background-color: #fff;
+        }
+        &:focus{
+          background-color: #fff;
+        }
+      }
+    }
+  }
+
+  .mat-tab-body{
+    .mat-tab-body-content{
+      overflow: hidden;
+    }
+  }
+
+  .mat-ink-bar{
+    display: none;
+  }
+}
+
+.mat-tab-label-button{
+
+}
