@@ -105,17 +105,17 @@
         border: 1px solid #b6b8b9;
       }
 
-      //.opt-section__heading, .section-heading{
-      //  width: 100%;
-      //  background-color: #f1f5f8;
-      //  &:focus, &:active, &:hover, &:visited{
-      //    background-color: #f1f5f8;
-      //  }
-      //}
       .mat-expansion-panel{
         background-color: #f1f5f8;
         &:focus, &:active, &:hover, &:visited{
           background-color: #f1f5f8;
+        }
+      }
+      .opt-section__heading{
+        .__title{
+          &:hover {
+          }
+          background-color: #f1f5f8 !important;
         }
       }
       .add-more-section{
@@ -184,6 +184,13 @@
         background-color: #f1f5f8;
         &:focus, &:active, &:hover, &:visited{
           background-color: #f1f5f8;
+        }
+      }
+      .opt-section__heading{
+        .__title{
+          &:hover {
+          }
+          background-color: #f1f5f8 !important;
         }
       }
       .note-body{
