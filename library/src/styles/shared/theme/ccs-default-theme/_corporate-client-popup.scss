@@ -3,6 +3,10 @@
     font-size: 12px !important;
     font-family: $rub !important;
 
+    .opt_flex--container{
+      flex-wrap: wrap;
+    }
+
     .mat-form-field{
       width: 100%;
     }
@@ -100,18 +104,18 @@
         background-color: #f1f5f8;
         border: 1px solid #b6b8b9;
       }
-      .opt-section__heading{
-        width: 100%;
-        background-color: #f1f5f8;
-        &:focus, :active, &:hover, &:visited{
-          background-color: #f1f5f8;
-        }
-      }
-      .mat-expansion-panel, .mat-expansion-panel-header{
-        background-color: #f1f5f8;
-        &:focus, :active, &:hover, &:visited{
-          background-color: #f1f5f8;
 
+      //.opt-section__heading, .section-heading{
+      //  width: 100%;
+      //  background-color: #f1f5f8;
+      //  &:focus, &:active, &:hover, &:visited{
+      //    background-color: #f1f5f8;
+      //  }
+      //}
+      .mat-expansion-panel{
+        background-color: #f1f5f8;
+        &:focus, &:active, &:hover, &:visited{
+          background-color: #f1f5f8;
         }
       }
       .add-more-section{
@@ -176,10 +180,18 @@
     }
 
     .notes{
-      background-color: #f1f5f8;
+      .mat-expansion-panel{
+        background-color: #f1f5f8;
+        &:focus, &:active, &:hover, &:visited{
+          background-color: #f1f5f8;
+        }
+      }
       .note-body{
-        .txt-area{
+        .mat-form-field{
           background-color: white;
+          padding: 20px;
+        }
+        .txt-area{
           padding: 20px;
         }
       }
@@ -200,9 +212,44 @@
     .communication-consent{
       .communication-consent-body{
         padding: 10px;
+        flex-wrap: wrap;
         flex-direction: column;
+        .opt_flex--container{
+          flex-wrap: wrap;
+          flex-direction: column;
+        }
         .communication-consent-body-item{
           padding-bottom: 20px;
+        }
+        .read-more{
+          padding: 10px;
+          position:relative;
+          width: 100%;
+          .icon-line{
+            left: 0;
+            right: 0;
+            width: 100%;
+            position: absolute;
+            height: 1px;
+            border-bottom: 1px solid #b6b8b9;
+          }
+          label{
+            position: absolute;
+            align-items: right;
+            left: 93%;
+            top: -30%;
+            font-size: 11px;
+            color: #b6b8b9;
+          }
+          &:active, &:hover, &:focus, &:visited, &:active:focus {
+            .icon-line{
+              border-color:#00aeef;
+            }
+            label {
+              color: #00aeef;
+              background: transparent;
+            }
+          }
         }
       }
     }
