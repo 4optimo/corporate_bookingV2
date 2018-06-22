@@ -414,6 +414,11 @@ i {
     padding: 4px 6px;
   }
 
+  &.med-badge{
+    font-size: 16px;
+    padding: 6px 8px;
+  }
+
   &.__success {
     background-color: $badge-success-bg;
   }

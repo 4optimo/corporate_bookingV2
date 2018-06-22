@@ -73,6 +73,8 @@ import { OptClientSummaryComponent } from './opt-client-summary/opt-client-summa
 import {OptTooltipComponent} from "./opt-tooltip/opt-tooltip.component";
 import {OptSearchPanelComponent} from "./opt-search-panel/opt-search-panel.component";
 import {OptBookingActivitiesComponent} from "./opt-booking-activities/opt-booking-activities.component";
+import { OptBookingPaymentComponent } from './opt-booking-payment/opt-booking-payment.component';
+import { OptBookingMainTabsComponent } from './opt-booking-main-tabs/opt-booking-main-tabs.component';
 // import { OptDocumentSelectComponent } from './opt-document-select/opt-document-select.component';
 // import { OptEventLog } from './opt-document-select/opt-document-select.component';
 // import { OptUpload } from './opt-document-select/opt-document-select.component';
@@ -97,7 +99,8 @@ const appRoutes: Routes = [
   { path: 'opt-tooltip', component: OptTooltipComponent},
   { path: 'opt-search-panel', component: OptSearchPanelComponent},
   { path: 'opt-booking-activities', component: OptBookingActivitiesComponent},
-
+  { path: 'opt-booking-payment', component: OptBookingPaymentComponent},
+  { path: 'opt-booking-main-tabs', component: OptBookingMainTabsComponent},
   // { path: 'opt-document-select', component: OptDocumentSelectComponent},
 
   { path: '', redirectTo:'/opt-booking-summary', pathMatch:'full'},
@@ -142,10 +145,6 @@ const appRoutes: Routes = [
     ScrollDispatchModule
 
   ],
-  declarations: [],
-
-
-
 })
 export class DemoMaterialModule {}
 
@@ -172,6 +171,8 @@ export class DemoMaterialModule {}
     OptSearchPanelComponent,
     OptTooltipComponent,
     OptBookingActivitiesComponent,
+    OptBookingMainTabsComponent,
+    OptBookingPaymentComponent,
     // OptDocumentSelectComponent,
 
     RoutingProjectComponent

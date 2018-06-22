@@ -31,13 +31,19 @@
   }
 }
 
-.mat-horizontal-stepper-header-container{
-  background-color: #f9f9f9;
-  padding-bottom: 15px;
-}
-
 .mat-expansion-panel{
-  background-color: #f9f9f9;
+  .mat-horizontal-stepper-header-container{
+    padding-bottom: 15px;
+  }
+  &.shaded{
+    background-color: #f9f9f9;
+    .mat-horizontal-stepper-header-container{
+      background-color: #f9f9f9;
+    }
+    .mat-horizontal-content-container{
+      background-color: #f9f9f9;
+    }
+  }
 }
 
 .activity-avatar-wrapper{
@@ -88,7 +94,7 @@
   .mat-horizontal-content-container {
     padding: 15px 24px;
     border-top: 2px solid #dce0e1;
-    background-color: #f9f9f9;
+    //background-color: #f9f9f9;
     font-size: 13px;
   }
 }
@@ -102,27 +108,6 @@
   align-items: center;
 }
 
-.mat-button{
-  &.btn-icon-text{
-    border: 1px solid #abb5bf;
-    background-color: #fff;
-    border-radius: 5px;
-    margin-right: 4px;
-    font-size: 12px;
-    span{
-      color: #333;
-      i{
-        color: #909cac;
-        padding-right: 5px;
-        font-size: 16px;
-        margin-top: -2px;
-      }
-    }
-    &:last-child{
-      margin-right: 0;
-    }
-  }
-}
 
 @media (max-width: 991px) {
   .mat-horizontal-stepper-header-container{
@@ -137,23 +122,6 @@
   .mat-horizontal-stepper-header{
     &.mat-step-header{
       padding: 15px 24px;
-    }
-  }
-}
-
-@media (max-width: 767px) {
-  .mat-button{
-    &.btn-icon-text{
-      padding: 0 8px;
-      min-width: auto;
-      span{
-        i{
-          padding-right: 0;
-        }
-        &.btn-text{
-          display: none;
-        }
-      }
     }
   }
 }
