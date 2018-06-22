@@ -78,8 +78,10 @@ import { OptChipComponent } from './opt-chip/opt-chip.component';
 // import { OptDocumentSelectComponent } from './opt-document-select/opt-document-select.component';
 // import { OptEventLog } from './opt-document-select/opt-document-select.component';
 // import { OptUpload } from './opt-document-select/opt-document-select.component';
+import { OptBookingPaymentComponent} from './opt-booking-payment/opt-booking-payment.component';
 
 import { NgMultiSelectDropDownModule } from 'ng-multiselect-dropdown';
+import { OptCorporateClientPopupComponent } from './opt-corporate-client-popup/opt-corporate-client-popup.component';
 
 
 
@@ -102,6 +104,7 @@ const appRoutes: Routes = [
   { path: 'opt-search-panel', component: OptSearchPanelComponent},
   { path: 'opt-booking-activities', component: OptBookingActivitiesComponent},
   { path: 'opt-chip', component: OptChipComponent},
+  { path: 'opt-corporate-client-popup', component: OptCorporateClientPopupComponent},
 
   // { path: 'opt-document-select', component: OptDocumentSelectComponent},
 
@@ -178,6 +181,8 @@ export class DemoMaterialModule {}
     OptTooltipComponent,
     OptBookingActivitiesComponent,
     OptChipComponent,
+    OptBookingPaymentComponent,
+    OptCorporateClientPopupComponent,
     // OptDocumentSelectComponent,
 
     RoutingProjectComponent
