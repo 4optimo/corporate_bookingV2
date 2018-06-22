@@ -2,7 +2,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { OptPopupModalComponent } from './opt-popup-modal.component';
 
-describe('OptPopupModalComponent', () => {
+describe('OptPopupQuestionnaireComponent', () => {
   let component: OptPopupModalComponent;
   let fixture: ComponentFixture<OptPopupModalComponent>;
 
