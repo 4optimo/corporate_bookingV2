@@ -7,7 +7,6 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {HttpModule} from '@angular/http';
 
 
-
 import {
   MatAutocompleteModule,
   MatButtonModule,
@@ -42,20 +41,70 @@ import {
   MatToolbarModule,
   MatTooltipModule,
   MatOptionModule,
+  MatDialogTitle,
 } from '@angular/material';
 
 import {BrowserModule} from '@angular/platform-browser';
 import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-
+import { trigger, style, transition, animate, keyframes, query, stagger} from '@angular/animations';
 import { ExpansionPanelComponent } from './expansion-panel/expansion-panel.component';
 import { OptBookingListComponent } from './opt-booking-list/opt-booking-list.component';
 import { OptBookingSummaryComponent } from './opt-booking-summary/opt-booking-summary.component';
 import { OptBookingDetailsComponent } from './opt-booking-details/opt-booking-details.component';
 import { AdditionalInformationComponent} from "./additional-information/additional-information.component";
 import { OptSectionHeadingComponent } from './opt-section-heading/opt-section-heading.component';
+import { ModalWindowComponent } from './modal-window/modal-window.component';
+import { ModalContentComponent } from './modal-content/modal-content.component';
+import { OptPopupModalComponent } from './opt-popup-modal/opt-popup-modal.component';
+import { OptPopupQuestionnaireComponent } from './opt-popup-questionnaire/opt-popup-questionnaire.component';
+import { OptPopupWindowComponent } from './opt-popup-window/opt-popup-window.component';
+import { OptTabPanelComponent } from './opt-tab-panel/opt-tab-panel.component';
+import { RoutingProjectComponent } from './routing-project/routing-project.component';
+import {ScrollDispatchModule} from '@angular/cdk/scrolling';
+
+import { RouterModule, Routes} from "@angular/router";
+import {APP_BASE_HREF} from '@angular/common';
+
+import {OptAlertComponent} from "./opt-alert/opt-alert.component";
+import { OptBookingListExpandComponent } from './opt-booking-list-expand/opt-booking-list-expand.component';
+import { OptCorporateClientTabsComponent } from './opt-corporate-client-tabs/opt-corporate-client-tabs.component';
+import { OptClientListComponent } from './opt-client-list/opt-client-list.component';
+import { OptClientSummaryComponent } from './opt-client-summary/opt-client-summary.component';
+import {OptTooltipComponent} from "./opt-tooltip/opt-tooltip.component";
+import {OptSearchPanelComponent} from "./opt-search-panel/opt-search-panel.component";
+import {OptBookingActivitiesComponent} from "./opt-booking-activities/opt-booking-activities.component";
+// import { OptDocumentSelectComponent } from './opt-document-select/opt-document-select.component';
+// import { OptEventLog } from './opt-document-select/opt-document-select.component';
+// import { OptUpload } from './opt-document-select/opt-document-select.component';
 
 
+
+const appRoutes: Routes = [
+  { path: 'opt-booking-list', component: OptBookingListComponent},
+  { path: 'opt-booking-details', component: OptBookingDetailsComponent},
+  { path: 'opt-booking-summary', component: OptBookingSummaryComponent},
+  { path: 'additional-information', component: AdditionalInformationComponent},
+  { path: 'opt-section-heading', component: OptSectionHeadingComponent},
+  { path: 'opt-section-heading', component: OptSectionHeadingComponent},
+  { path: 'opt-popup-window', component: OptPopupWindowComponent},
+  { path: 'expansion-panel', component: ExpansionPanelComponent},
+  { path: 'opt-tab-panel', component: OptTabPanelComponent},
+  { path: 'opt-alert', component: OptAlertComponent},
+  { path: 'opt-booking-list-expand', component: OptBookingListExpandComponent},
+  { path: 'opt-corporate-client-tabs', component: OptCorporateClientTabsComponent},
+  { path: 'opt-client-list', component: OptClientListComponent},
+  { path: 'opt-client-summary', component: OptClientSummaryComponent},
+  { path: 'opt-tooltip', component: OptTooltipComponent},
+  { path: 'opt-search-panel', component: OptSearchPanelComponent},
+  { path: 'opt-booking-activities', component: OptBookingActivitiesComponent},
+
+  // { path: 'opt-document-select', component: OptDocumentSelectComponent},
+
+  { path: '', redirectTo:'/opt-booking-summary', pathMatch:'full'},
+  { path: '**', redirectTo:'/opt-booking-summary', pathMatch: 'full'}
+
+]
 @NgModule({
   exports: [
     CdkTableModule,
@@ -91,7 +140,12 @@ import { OptSectionHeadingComponent } from './opt-section-heading/opt-section-he
     MatTabsModule,
     MatToolbarModule,
     MatTooltipModule,
+    ScrollDispatchModule
+
   ],
+  declarations: [],
+
+
 
 })
 export class DemoMaterialModule {}
@@ -105,7 +159,25 @@ export class DemoMaterialModule {}
     OptBookingDetailsComponent,
     AdditionalInformationComponent,
     OptSectionHeadingComponent,
-    OptBookingSummaryComponent
+    ModalWindowComponent,
+    ModalContentComponent,
+    OptBookingSummaryComponent,
+    OptPopupModalComponent,
+    OptPopupWindowComponent,
+    OptTabPanelComponent,
+    OptAlertComponent,
+    OptBookingListExpandComponent,
+    OptCorporateClientTabsComponent,
+    OptClientListComponent,
+    OptClientSummaryComponent,
+    OptSearchPanelComponent,
+    OptTooltipComponent,
+    OptBookingActivitiesComponent,
+    OptPopupQuestionnaireComponent,
+
+    // OptDocumentSelectComponent,
+
+    RoutingProjectComponent
   ],
   imports: [
     BrowserModule,
@@ -125,13 +197,16 @@ export class DemoMaterialModule {}
     HttpClientModule,
     MatNativeDateModule,
     DemoMaterialModule,
-    MatInputModule
+    MatInputModule,
+    ScrollDispatchModule,
+    RouterModule.forRoot(appRoutes)
   ],
 
-  entryComponents:[OptBookingDetailsComponent],
+  entryComponents:[OptPopupModalComponent, OptPopupWindowComponent, OptPopupQuestionnaireComponent],
+  providers: [{provide: APP_BASE_HREF, useValue : '/' }],
 
-
-  providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule { }
+
+// platformBrowserDynamic().bootstrapModule(AppModule);//

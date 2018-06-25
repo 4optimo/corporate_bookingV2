@@ -4,11 +4,13 @@ import {MatDialog} from "@angular/material";
 import {OptPopupModalComponent} from "../opt-popup-modal/opt-popup-modal.component";
 import {OptPopupQuestionnaireComponent} from "../opt-popup-questionnaire/opt-popup-questionnaire.component";
 
+
 @Component({
   selector: 'app-opt-popup-window',
   templateUrl: './opt-popup-window.component.html',
   styleUrls: ['./opt-popup-window.component.scss']
 })
+
 export class OptPopupWindowComponent implements OnInit {
 
 
@@ -33,7 +35,6 @@ export class OptPopupWindowComponent implements OnInit {
     });
 
   }
-
   ngOnInit() {
   }
 
