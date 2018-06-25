@@ -83,6 +83,8 @@ import { OptBookingPaymentComponent} from './opt-booking-payment/opt-booking-pay
 import { NgMultiSelectDropDownModule } from 'ng-multiselect-dropdown';
 import { OptCorporateClientPopupComponent } from './opt-corporate-client-popup/opt-corporate-client-popup.component';
 
+import { OptBookingMainTabsComponent } from './opt-booking-main-tabs/opt-booking-main-tabs.component';
+
 
 
 const appRoutes: Routes = [
@@ -183,6 +185,7 @@ export class DemoMaterialModule {}
     OptChipComponent,
     OptBookingPaymentComponent,
     OptCorporateClientPopupComponent,
+    OptBookingMainTabsComponent,
     // OptDocumentSelectComponent,
 
     RoutingProjectComponent
