@@ -9,7 +9,13 @@
           <mat-checkbox>You haven't purchased any items yet</mat-checkbox>
         </div>
         <div class="opt_flex__item--inherit horizontally-center">
-          <button mat-button class="btn-icon-text"><i class="material-icons">add</i> <span class="btn-text">Add</span></button>
+          <button mat-button class="btn-icon-text" [matMenuTriggerFor]="ad" yPosition="below"><i class="material-icons">add</i> <span class="btn-text">Add</span></button>
+          <mat-menu #ad="matMenu" [overlapTrigger]="false" class="addmenu">
+            <button mat-menu-item><i class="material-icons">card_giftcard</i><span>Package</span></button>
+            <button mat-menu-item><i class="material-icons">card_giftcard</i><span>Up-sell</span></button>
+            <button mat-menu-item><i class="material-icons">monetization_on</i><span>Discount</span></button>
+            <button mat-menu-item><i class="material-icons">date_range</i><span>Go to Calendar</span></button>
+          </mat-menu>
           <button mat-button class="btn-icon-text"><i class="material-icons">delete</i> <span class="btn-text">Delete</span></button>
         </div>
       </div>

@@ -628,6 +628,7 @@
     border: 1px dashed #E1E1E1;
     background-color: #F6F6F6;
     text-align: center;
+    transition: all 0.2s ease-in-out;
     .new-booking-detail-tab-icon{
       i{
         color: #E3E3E3;
@@ -639,6 +640,48 @@
       font-size: 16px;
       font-weight: 500;
       margin: 5px 0 0 0;
+    }
+    &:hover{
+      background-color: $opt_color__primary;
+      border-color: $opt_color__primary;
+      @include box_shadow(2);
+      transition: all 0.2s ease-in-out;
+      .new-booking-detail-tab-icon{
+        i{
+          color: #fff;
+        }
+      }
+      .new-booking-detail-tab-title{
+        color: #fff;
+      }
+    }
+    &:active{
+      background-color: $opt_color__primary;
+      border-color: $opt_color__primary;
+      @include box_shadow(3);
+      transition: all 0.2s ease-in-out;
+      .new-booking-detail-tab-icon{
+        i{
+          color: #fff;
+        }
+      }
+      .new-booking-detail-tab-title{
+        color: #fff;
+      }
+    }
+  }
+}
+
+.addmenu{
+  button{
+    i{
+      color: #90a4ae;
+    }
+    span{
+      vertical-align: middle;
+      display: inline-block;
+      padding-left: 15px;
+      font-size: 14px;
     }
   }
 }
