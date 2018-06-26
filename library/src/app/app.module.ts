@@ -186,6 +186,7 @@ export class DemoMaterialModule {}
     OptBookingPaymentComponent,
     OptCorporateClientPopupComponent,
     OptBookingMainTabsComponent,
+    OptBookingFullPageComponent,
     // OptDocumentSelectComponent,
 
     RoutingProjectComponent

@@ -32,7 +32,9 @@
           //display: none;
         }
         .opt_unit-price{
-
+          .multiply-sign{
+            color: $badge-success-bg;
+          }
         }
       }
       .mat-checkbox{
@@ -250,6 +252,10 @@
       &.btn-select {
         border: 1px solid #b7b7b7;
 
+        &:focus, &:active, &:hover, &:visited{
+          background-color: #00aeef;
+          color: white;
+        }
         //outline-color: #0000;
         //border-radius: 4px;
         //background-color: $btn-active-color;
