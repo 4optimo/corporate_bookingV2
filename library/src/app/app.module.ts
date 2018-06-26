@@ -62,7 +62,6 @@ import { OptTabPanelComponent } from './opt-tab-panel/opt-tab-panel.component';
 import { RoutingProjectComponent } from './routing-project/routing-project.component';
 import {ScrollDispatchModule} from '@angular/cdk/scrolling';
 
-
 import { RouterModule, Routes} from "@angular/router";
 import {APP_BASE_HREF} from '@angular/common';
 
@@ -153,7 +152,7 @@ const appRoutes: Routes = [
     ScrollDispatchModule
 
   ],
-  declarations: [OptBookingFullPageComponent],
+  declarations: [],
 
 
 

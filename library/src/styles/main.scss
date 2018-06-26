@@ -29,11 +29,13 @@ $bootstrap-sass-asset-helper: false;
 @import "./shared/theme/ccs-default-theme/theming-material-components";
 
 //@import "./shared/theme/ccs-default-theme/card";
+@import "./shared/theme/ccs-default-theme/buttons";
 @import "./shared/theme/ccs-default-theme/information";
 //@import "./shared/theme/ccs-default-theme/pop-up";
 @import "./shared/theme/ccs-default-theme/booking-details";
 @import "./shared/theme/ccs-default-theme/booking-activities";
-//@import "./shared/theme/ccs-default-theme/booking-payment";
+@import "./shared/theme/ccs-default-theme/booking-payment";
+@import "./shared/theme/ccs-default-theme/booking-main-tabs";
 @import "./shared/theme/ccs-default-theme/opt-booking-list";
 @import "./shared/theme/ccs-default-theme/opt-section__heading";
 @import "./shared/theme/ccs-default-theme/popup-modal";

@@ -1,0 +1,134 @@
+<div class="opt_modal-content example-full-width">
+  <div class="mat-dialog-content ">
+    <!--Modal Header-->
+    <div class="opt_modal-header ">
+      <div class="test opt--depth__1">
+        <div class="opt_flex--container ">
+          <div class="opt_flex__item--inherit test-inner">
+            <div class="inner-icon">
+              <i class="material-icons">question_answer</i>
+            </div>
+          </div>
+          <div class="opt_flex__item test-inner-expand">
+            <div class="title">
+              <h1 mat-dialog-title> Questionnaire </h1>
+              <p mat-dialog-content>Provide you with all the information you require</p>
+            </div>
+          </div>
+          <div class="opt_flex__item--inherit test-inner-2">
+            <div class="inner-action">
+              <button class="material-icons icon1">launch</button>
+              <button class="material-icons icon2" (click)="close()">close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Modal Body-->
+    <div class="opt_modal-body">
+      <div class="opt_flex--container">
+        <div class="opt_flex__item"></div>
+        <div class="opt_flex__item--inherit">
+          <div class="toggle">Show Mandatory
+            <mat-slide-toggle></mat-slide-toggle>
+          </div>
+        </div>
+      </div>
+
+      <!--Lunch-->
+      <section class="opt-section__heading">
+        <mat-accordion>
+          <!--Expansion Panel Header................................................................................................-->
+          <mat-expansion-panel #myPanel class="section-heading __main">
+            <mat-expansion-panel-header>
+              <div class="opt_flex--container">
+                <div class="opt_flex__item">
+                  <div class="icon__cage">
+                    <div class="circle-icon __individual">
+                      <i class="material-icons">restaurant</i>
+                    </div>
+                  </div>
+                </div>
+                <div class="opt_flex__item">
+                  <div class="opt-txt__body1">2 Course meal (8 Pax)*</div>
+                  <div class="badge __success  mini-badge">Lunch</div>
+                </div>
+
+
+
+              </div>
+            </mat-expansion-panel-header>
+
+
+            <!--Expansion Panel Body...............................................................................................-->
+            <div class="expansion-panel_body __inner_body ">
+              <div class="__data separator__line--dotted  block1">
+                <div class="opt_expand--container">
+
+                  <div class="row">
+                    <div class="col-sm-12 col-md-4  col-lg-4">
+
+                      <div class="opt_flex--container">
+                        <div class="opt_flex__item">
+                         Chicken
+                        </div>
+                        <div class="opt_flex__item opt_counter__item">
+
+                        <!--Counter-->
+                          <div class="opt_counter">
+                            <div class="opt_flex--container ">
+                              <div class="opt_flex__item--inherit">
+                                <button mat-raised-button>+</button>
+                              </div>
+                              <div class="opt_flex__item--inherit  tc-flex-item__center">
+                                <form class="example-form">
+                                  <mat-form-field class="">
+                                    <input matInput value="1">
+                                  </mat-form-field>
+                                </form>
+                              </div>
+                              <div class="opt_flex__item--inherit">
+                                <button mat-raised-button>-</button>
+                              </div>
+                            </div>
+                          </div>
+
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-12 col-md-8  col-lg-8">
+                      input
+
+                    </div>
+
+
+                  </div>
+
+
+
+
+
+
+
+                </div>
+              </div>
+            </div>
+
+          </mat-expansion-panel>
+        </mat-accordion>
+      </section>
+
+
+      <div class="opt_flex--container">
+        <div class="opt_flex__item"></div>
+        <div class="opt_flex__item--inherit">
+          <button class="opt-txt__body1 btn btn-info" (click)="close()">Save</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
