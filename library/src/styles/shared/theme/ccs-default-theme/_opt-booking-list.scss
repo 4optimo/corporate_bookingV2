@@ -5,7 +5,42 @@
   $expanded_line: #4bb3fa;
   $line_color: #d9d9d9;
 
+  //over ride booking details component
+  .price__details{
+    display: none;
+  }
   .opt{
+
+    &_booking__detail{
+
+      .row{
+        margin-left: -70px;
+      }
+      .price--values{
+        .lbl__vat{
+          display: none;
+        }
+      }
+      .__link{
+        text-decoration: none;
+      }
+      .mat-form-field-underline{
+        display: none;
+      }
+      .opt_counter__item{
+        .opt_counter{
+          //display: none;
+        }
+        .opt_unit-price{
+
+        }
+      }
+      .mat-checkbox{
+        display: none;
+      }
+
+    }
+    //end
     &_opt_width-define{
       min-height: 55px;
     }

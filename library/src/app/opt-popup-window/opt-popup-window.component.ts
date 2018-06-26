@@ -28,8 +28,8 @@ export class OptPopupWindowComponent implements OnInit {
     this.dialog.open(OptCorporateClientPopupComponent,{
       data: {name:'New Corporate Client'},
       panelClass:'custom-dialog-container',
-      height: '100%',
-      width: '90%',
+      height: '90%',
+      width: '90%'
       // DialogPosition : top
 
     });

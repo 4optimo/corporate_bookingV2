@@ -84,6 +84,7 @@ import { NgMultiSelectDropDownModule } from 'ng-multiselect-dropdown';
 import { OptCorporateClientPopupComponent } from './opt-corporate-client-popup/opt-corporate-client-popup.component';
 
 import { OptBookingMainTabsComponent } from './opt-booking-main-tabs/opt-booking-main-tabs.component';
+import { OptBookingFullPageComponent } from './opt-booking-full-page/opt-booking-full-page.component';
 
 
 
@@ -152,7 +153,7 @@ const appRoutes: Routes = [
     ScrollDispatchModule
 
   ],
-  declarations: [],
+  declarations: [OptBookingFullPageComponent],
 
 
 
