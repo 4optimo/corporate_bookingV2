@@ -74,6 +74,7 @@ import { OptClientSummaryComponent } from './opt-client-summary/opt-client-summa
 import {OptTooltipComponent} from "./opt-tooltip/opt-tooltip.component";
 import {OptSearchPanelComponent} from "./opt-search-panel/opt-search-panel.component";
 import {OptBookingActivitiesComponent} from "./opt-booking-activities/opt-booking-activities.component";
+import {OptBookingPaymentComponent} from "./opt-booking-payment/opt-booking-payment.component";
 // import { OptDocumentSelectComponent } from './opt-document-select/opt-document-select.component';
 // import { OptEventLog } from './opt-document-select/opt-document-select.component';
 // import { OptUpload } from './opt-document-select/opt-document-select.component';
@@ -174,7 +175,7 @@ export class DemoMaterialModule {}
     OptTooltipComponent,
     OptBookingActivitiesComponent,
     OptPopupQuestionnaireComponent,
-
+    OptBookingPaymentComponent,
     // OptDocumentSelectComponent,
 
     RoutingProjectComponent

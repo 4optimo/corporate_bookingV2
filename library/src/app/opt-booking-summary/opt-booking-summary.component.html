@@ -1,7 +1,7 @@
 <!--<mat-drawer-content>-->
   <!--adawd-->
 <!--</mat-drawer-content>-->
-<div class="booking-summary __unavailable">
+<div class="booking-summary">
   <div class="flex-row">
     <div class="col">
       <div class="profile">
@@ -85,10 +85,16 @@
               <span class="font-style-04">Optimizer</span>
             </div>
             <div class="field-inner">
+              <span class="booking-status-icon danger"><i class="material-icons">flag</i></span>
+            </div>
+            <div class="field-inner">
               <span class="font-style-05">BN000769</span>
             </div>
             <div class="field-options">
-              <button class="btn btn-icon"><i class="material-icons small">more_vert</i></button>
+              <button mat-icon-button [matMenuTriggerFor]="bookingFrozen" class="btn btn-icon"><i class="material-icons small">more_vert</i></button>
+              <mat-menu #bookingFrozen="matMenu" class="icon-text-menu">
+                <button mat-menu-item class="danger"><i class="material-icons">flag</i> <span>Booking Frozen Status</span></button>
+              </mat-menu>
             </div>
           </div>
           <div class="field">
@@ -98,14 +104,14 @@
             </div>
             <div class="field-options">
               <button mat-icon-button [matMenuTriggerFor]="bookingStatus" class="btn btn-icon"><i class="material-icons small">more_vert</i></button>
-              <mat-menu #bookingStatus="matMenu">
-                <button mat-menu-item>Cancel Booking</button>
-                <button mat-menu-item>Confirmed Booking</button>
-                <button mat-menu-item>Confirmed Multiple</button>
-                <button mat-menu-item>Provisional</button>
-                <button mat-menu-item>Warning</button>
-                <button mat-menu-item>Tentative</button>
-                <button mat-menu-item>Provisional Multiple</button>
+              <mat-menu #bookingStatus="matMenu" class="booking-status-menu">
+                <button mat-menu-item class="cancelled">Cancel Booking</button>
+                <button mat-menu-item class="confirmed">Confirmed Booking</button>
+                <button mat-menu-item class="confirmed-multiple">Confirmed Multiple</button>
+                <button mat-menu-item class="provisional">Provisional</button>
+                <button mat-menu-item class="warning">Warning</button>
+                <button mat-menu-item class="tentative">Tentative</button>
+                <button mat-menu-item class="provisional-multiple">Provisional Multiple</button>
               </mat-menu>
             </div>
           </div>
