@@ -2,15 +2,13 @@ import { Component, OnInit } from '@angular/core';
 import {ModalContentComponent} from "../modal-content/modal-content.component";
 import {MatDialog} from "@angular/material";
 import {OptPopupModalComponent} from "../opt-popup-modal/opt-popup-modal.component";
-import {OptPopupQuestionnaireComponent} from "../opt-popup-questionnaire/opt-popup-questionnaire.component";
-
+import {OptCorporateClientPopupComponent} from "../opt-corporate-client-popup/opt-corporate-client-popup.component";
 
 @Component({
   selector: 'app-opt-popup-window',
   templateUrl: './opt-popup-window.component.html',
   styleUrls: ['./opt-popup-window.component.scss']
 })
-
 export class OptPopupWindowComponent implements OnInit {
 
 
@@ -26,15 +24,19 @@ export class OptPopupWindowComponent implements OnInit {
 
   }
 
-  public  openQuestionnaire(){
-    this.dialog.open(OptPopupQuestionnaireComponent,{
-      data: {name:'Questionnaire'},
+  public openCorporateClientPopup(){
+    this.dialog.open(OptCorporateClientPopupComponent,{
+      data: {name:'New Corporate Client'},
       panelClass:'custom-dialog-container',
-      width : '1088px',
-      height : 'auto',
+      height: '90%',
+      width: '90%'
+      // DialogPosition : top
+
     });
 
   }
+
+
   ngOnInit() {
   }
 

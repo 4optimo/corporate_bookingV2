@@ -6,6 +6,7 @@
   $line_color: #d9d9d9;
 
   .opt{
+
     &_opt_width-define{
       min-height: 55px;
     }
@@ -62,11 +63,6 @@
 
     }
 
-
-
-
-
-
   .opt_price-section{
     padding-right: 0;
     text-align: right;
@@ -76,7 +72,6 @@
       padding-left: 15px;
     }
   }
-
 
   .mat-expansion-panel-body{
     padding: 0;
@@ -194,3 +189,4 @@
 //  background-color: red;
 //  height: 100%;
 //}
+

@@ -5,7 +5,44 @@
   $expanded_line: #4bb3fa;
   $line_color: #d9d9d9;
 
+  //over ride booking details component
+  .price__details{
+    display: none;
+  }
   .opt{
+
+    &_booking__detail{
+
+      .row{
+        margin-left: -70px;
+      }
+      .price--values{
+        .lbl__vat{
+          display: none;
+        }
+      }
+      .__link{
+        text-decoration: none;
+      }
+      .mat-form-field-underline{
+        display: none;
+      }
+      .opt_counter__item{
+        .opt_counter{
+          //display: none;
+        }
+        .opt_unit-price{
+          .multiply-sign{
+            color: $badge-success-bg;
+          }
+        }
+      }
+      .mat-checkbox{
+        display: none;
+      }
+
+    }
+    //end
     &_opt_width-define{
       min-height: 55px;
     }
@@ -215,6 +252,10 @@
       &.btn-select {
         border: 1px solid #b7b7b7;
 
+        &:focus, &:active, &:hover, &:visited{
+          background-color: #00aeef;
+          color: white;
+        }
         //outline-color: #0000;
         //border-radius: 4px;
         //background-color: $btn-active-color;

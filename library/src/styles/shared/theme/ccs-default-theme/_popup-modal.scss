@@ -2,7 +2,7 @@
   $popup_heading_color : #f9d632;
   $icon_color : #909cac;
   .opt_modal-header {
-
+    margin-bottom: 3px;
     @include shadow-2dp();
     .test-wrapper {
       height: 100%;
@@ -17,6 +17,10 @@
         align-self: center;
         padding-left: 25px;
         padding-right: 25px;
+        i {
+          font-size: 35px;
+          color: white;
+        }
 
       }
     }
@@ -54,6 +58,8 @@
   }
   .opt_modal-body{
     padding: 24px;
+    overflow: auto;
+    max-height: 500px;
   }
 }
 
@@ -62,6 +68,8 @@
   .mat-dialog-content{
     margin: 0;
     padding: 0;
+    overflow: hidden;
+    max-height: none;
   }
   .mat-dialog-title{
     margin: 0;
