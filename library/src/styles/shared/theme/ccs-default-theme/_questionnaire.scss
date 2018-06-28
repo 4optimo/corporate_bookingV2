@@ -1,144 +1,34 @@
 .opt {
   &_questionnaire {
 
-      &_flex--container{
-        & .flex__item{
-          display: inline;
-        }
-      }
-    &_modal-content {
-      $popup_heading_color: #f9d632;
-      $icon_color: #909cac;
-      $popup-bg-color: #fafafa;
-      .opt_modal-header {
+    .__inner_body{
+      padding: 10px;
+    }
 
-       /* @include shadow-2dp();
-        .test-wrapper {
-          height: 100%;
-          min-height: 60px;
-
-        }*/
-
-        .test-inner {
-          background-color: $popup_heading_color;
-          display: flex;
-          .inner-icon {
-            color: $white-color;
-            align-self: center;
-            padding-left: 25px;
-            padding-right: 25px;
-
-          }
-        }
-
-        .test-inner-expand {
-          display: flex;
-          .title {
-            padding-left: 20px;
-            align-self: center;
-          }
-        }
-
-        .test-inner-2 {
-          display: flex;
-          .inner-action {
-            align-self: center;
-            padding-right: 24px;
-            color: $icon_color;
-
-            button {
-              -webkit-appearance: none;
-              background-color: transparent;
-              box-shadow: none;
-              border: none;
-              &:active, &:focus, &:visited, &:active:focus {
-                outline: none;
-              }
-            }
-            .icon1 {
-              padding-right: 7px;
-            }
-          }
-        }
-
-      }
-      .opt_modal-body {
-        padding: 24px;
-        background-color: $popup-bg-color;
-
+    .circle-icon{
+      &.__individual--blue{
+          background-color: #4cb2fa;
+        color: #ffffff;
       }
     }
 
-    .example-form {
-      min-width: 150px;
-      max-width: 500px;
-      width: 100%;
+    .example-container {
+
+      &.time-slot {
+        & mat-radio-button {
+          display: grid;
+          flex-direction: row;
+        }
+      }
 
     }
 
-    .example-full-width {
+    .example-container > * {
       width: 100%;
     }
 
-    .custom-dialog-container .mat-dialog-container {
-      padding: 0;
-      .mat-dialog-content {
-        margin: 0;
-        padding: 0;
-      }
-      .mat-dialog-title {
-        margin: 0;
-      }
-    }
-    .opt-section__heading {
-
-      .section-heading {
-
-        &.__main {
-          //border: 1px solid red;
-          box-shadow: none;
-
-          .__title {
-            &:hover {
-              background-color: white;
-            }
-            border-bottom: 1px solid #e1e1e1;
-            padding: 0 24px 0px 0px;
-
-            .mat-content {
-
-              > h1 {
-                border-bottom: 4px solid #00b0ff;
-                line-height: 44px;
-                padding-left: 3px;
-                padding-right: 3px;
-              }
-
-            }
-
-          }
-
-          .mat-expansion-panel-header{
-            display: inline-block;
-          }
-          .mat-expansion-panel-content {
-            > .mat-expansion-panel-body {
-              padding: 0px;
-              padding-top: 2px;
-
-              & .mat-radio-button {
-                padding-right: 16px;
-                display: block !important;
-              }
-
-            }
-
-          }
-
-        }
-
-      }
-
+    .mat-radio-button ~ .mat-radio-button {
+      padding-right: 16px;
     }
 
   }
