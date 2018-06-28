@@ -84,6 +84,7 @@ import { OptCorporateClientPopupComponent } from './opt-corporate-client-popup/o
 
 import { OptBookingMainTabsComponent } from './opt-booking-main-tabs/opt-booking-main-tabs.component';
 import { OptBookingFullPageComponent } from './opt-booking-full-page/opt-booking-full-page.component';
+import { OptFabComponent } from './opt-fab/opt-fab.component';
 
 
 
@@ -150,9 +151,7 @@ const appRoutes: Routes = [
     MatToolbarModule,
     MatTooltipModule,
     ScrollDispatchModule
-
   ],
-  declarations: [],
 
 
 
@@ -187,6 +186,7 @@ export class DemoMaterialModule {}
     OptCorporateClientPopupComponent,
     OptBookingMainTabsComponent,
     OptBookingFullPageComponent,
+    OptFabComponent,
     // OptDocumentSelectComponent,
 
     RoutingProjectComponent
