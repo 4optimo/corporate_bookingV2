@@ -1,8 +1,8 @@
-<div class="opt-booking-list-full opt_booking__list">
+<div class="opt-client-list-full">
   <div class="filter-section">
     <div class="opt_flex--container">
       <div class="opt_flex__item--inherit filter-padding-left">
-        <p class="opt-txt__body2">300+ Booking Found</p>
+        <p class="opt-txt__body2">300+ Clients Found</p>
       </div>
       <div class="opt_flex__item">
       </div>
@@ -14,9 +14,9 @@
         <div class="opt_flex--container">
           <div class="opt_flex__item">
             <mat-accordion>
-                <span *ngFor="let a of bookingListArray; let index = index">
-                  <app-opt-booking-list></app-opt-booking-list>
-                </span>
+              <span *ngFor="let a of customerListArray; let index = index">
+                <app-opt-client-summary></app-opt-client-summary>
+              </span>
             </mat-accordion>
           </div>
         </div>

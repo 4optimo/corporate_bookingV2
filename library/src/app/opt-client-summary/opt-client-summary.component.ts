@@ -1,5 +1,5 @@
 import {Component, OnInit, ViewChild} from '@angular/core';
-import {MatExpansionPanel} from "@angular/material";
+import {FEB, MatExpansionPanel} from "@angular/material";
 
 @Component({
   selector: 'app-opt-client-summary',

@@ -84,7 +84,8 @@ import { OptCorporateClientPopupComponent } from './opt-corporate-client-popup/o
 
 import { OptBookingMainTabsComponent } from './opt-booking-main-tabs/opt-booking-main-tabs.component';
 import { OptBookingFullPageComponent } from './opt-booking-full-page/opt-booking-full-page.component';
-
+import { OptPaginatorComponent } from './opt-paginator/opt-paginator.component';
+import { OptCustomerFullPageComponent } from './opt-customer-full-page/opt-customer-full-page.component';
 
 
 const appRoutes: Routes = [
@@ -107,6 +108,9 @@ const appRoutes: Routes = [
   { path: 'opt-booking-activities', component: OptBookingActivitiesComponent},
   { path: 'opt-chip', component: OptChipComponent},
   { path: 'opt-corporate-client-popup', component: OptCorporateClientPopupComponent},
+  { path: 'opt-booking-full-page', component: OptBookingFullPageComponent},
+  { path: 'opt-paginator', component: OptPaginatorComponent},
+  { path: 'opt-customer-full-page', component: OptCustomerFullPageComponent},
 
   // { path: 'opt-document-select', component: OptDocumentSelectComponent},
 
@@ -187,6 +191,8 @@ export class DemoMaterialModule {}
     OptCorporateClientPopupComponent,
     OptBookingMainTabsComponent,
     OptBookingFullPageComponent,
+    OptPaginatorComponent,
+    OptCustomerFullPageComponent,
     // OptDocumentSelectComponent,
 
     RoutingProjectComponent

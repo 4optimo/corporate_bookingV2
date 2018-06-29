@@ -5,10 +5,16 @@
   $expanded_line: #4bb3fa;
   $line_color: #d9d9d9;
 
+  font-family: $font-family-rubik;
+
   //over ride booking details component
   .price__details{
     display: none;
   }
+  mat-icon{
+    color: #909cac;
+  }
+
   .opt{
 
     &_booking__detail{
@@ -70,19 +76,37 @@
     }
 
     &_circle{
-      @include circle-icon(40px, $danger_color, $danger_color);
-      padding-top: 2px;
-      line-height: 12px;
-      .date{
-        font-size: 14px;
-        font-weight: bold;
-        color: $plain_color;
+      &__cancelled{
+        @include circle-icon(40px, $danger_color, $danger_color);
+        padding-top: 2px;
+        line-height: 12px;
+        .date{
+          font-size: 14px;
+          font-weight: bold;
+          color: $plain_color;
+        }
+        .month_year{
+          font-size: 9px;
+          color: $plain_color;
+          font-weight: normal;
+        }
       }
-      .month_year{
-        font-size: 9px;
-        color: $plain_color;
-        font-weight: normal;
+      &__confirmed{
+        @include circle-icon(40px, $opt_color__secondary, $opt_color__secondary);
+        padding-top: 2px;
+        line-height: 12px;
+        .date{
+          font-size: 14px;
+          font-weight: bold;
+          color: $plain_color;
+        }
+        .month_year{
+          font-size: 9px;
+          color: $plain_color;
+          font-weight: normal;
+        }
       }
+
     }
 
 
@@ -352,29 +376,22 @@
 
     }
   }
+  .opt_booking__list, .opt_client__list{
 
-}
+      .mat-expansion-panel{
+        &:not([class*=mat-elevation-z]){
+          box-shadow: none;
+        }
+        &.mat-expanded {
+          .mat-expansion-panel-content{
+            box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+          }
+        }
+        .mat-expansion-panel-content {
+          overflow: hidden;
+        }
+      }
+    }
+  }
 
-//.test{
-//  width: 100%;
-//  height: 75px;
-//}
-//
-//.test-wrapper{
-//  height: 100%;
-//}
-//
-//.test-inner{
-//  background-color: red;
-//  height: 100%;
-//}
-//
-//.test-inner-expand{
-//  background-color: green;
-//  height: 100%;
-//}
-//
-//.test-inner-2{
-//  background-color: red;
-//  height: 100%;
 //}

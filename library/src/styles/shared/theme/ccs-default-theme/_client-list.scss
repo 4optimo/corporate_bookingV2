@@ -7,6 +7,9 @@
   //.space-between{
   //  padding-bottom: 2px;
   //}
+  .button-section{
+    padding-right: 0;
+  }
 
   .address{
     .opt-txt__body1, opt-txt__body2{
@@ -25,16 +28,21 @@
   }
 
   .opt_circle{
-    padding-top: 0;
+    //padding-top: 0;
     .client-type{
       text-align: center;
       font-size: 30px;
+      color: white;
     }
-    &.__individual{
-      background-color: #27bfc2;
+    &__individual{
+      @include circle-icon(40px, #27bfc2, #27bfc2);
+      padding-top: 2px;
+      line-height: 12px;
     }
-    &.__corporate{
-      background-color: #f9d634;
+    &__corporate{
+      @include circle-icon(40px, #f9d634, #f9d634);
+      padding-top: 2px;
+      line-height: 12px;
     }
   }
   .no-left-padding{
@@ -47,6 +55,25 @@
   .icon-add-booking2{
     font-size: 24px;
   }
+
+  mat-icon{
+    color: #909cac;
+  }
+
+    .mat-expansion-panel{
+      &:not([class*=mat-elevation-z]){
+        box-shadow: none;
+      }
+      &.mat-expanded {
+        .mat-expansion-panel-content{
+          box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+        }
+      }
+      .mat-expansion-panel-content {
+        overflow: hidden;
+      }
+    }
+
 
 }
 .lbl{
