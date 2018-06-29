@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-opt-fab',
@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./opt-fab.component.scss']
 })
 export class OptFabComponent implements OnInit {
-
   constructor() { }
 
   ngOnInit() {
   }
-
+  showMenu() {
+    console.log("hello");
+  }
+  isSelected = true;
 }
