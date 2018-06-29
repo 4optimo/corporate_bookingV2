@@ -86,6 +86,8 @@ import { OptBookingMainTabsComponent } from './opt-booking-main-tabs/opt-booking
 import { OptBookingFullPageComponent } from './opt-booking-full-page/opt-booking-full-page.component';
 import { OptPaginatorComponent } from './opt-paginator/opt-paginator.component';
 import { OptCustomerFullPageComponent } from './opt-customer-full-page/opt-customer-full-page.component';
+import { OptFabComponent } from './opt-fab/opt-fab.component';
+
 
 
 const appRoutes: Routes = [
@@ -191,6 +193,7 @@ export class DemoMaterialModule {}
     OptCorporateClientPopupComponent,
     OptBookingMainTabsComponent,
     OptBookingFullPageComponent,
+    OptFabComponent,
     OptPaginatorComponent,
     OptCustomerFullPageComponent,
     // OptDocumentSelectComponent,

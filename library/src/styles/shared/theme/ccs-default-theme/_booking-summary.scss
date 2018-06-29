@@ -123,6 +123,17 @@ $rub: 'Rubik', sans-serif;
   }
 }
 
+.booking-status-icon{
+  i{
+    font-size: 18px;
+  }
+  &.danger{
+    i{
+      color: #f5766c;
+    }
+  }
+}
+
 .profile {
   display: flex;
   flex-direction: row;
@@ -511,6 +522,83 @@ i {
     font-family: $rub;
     .mat-option-text{
       font-family: $rub;
+    }
+  }
+}
+
+/* Business Colors */
+$status-hover-font-color: #fff;
+$cancelled-status: black;
+$confirmed-status: yellow;
+$confirmed-multiple: blue;
+$provisional: red;
+$warning: purple;
+$tentative: brown;
+$provisional-multiple:grey;
+
+
+.booking-status-menu{
+  .cancelled{
+    color: $cancelled-status;
+    transition: all 0.4s ease-in-out;
+    &:hover{
+      background-color: $cancelled-status;
+      color: $status-hover-font-color;
+      transition: all 0.4s ease-in-out;
+    }
+  }
+  .confirmed{
+    color: $confirmed-status;
+    transition: all 0.4s ease-in-out;
+    &:hover{
+      background-color: $confirmed-status;
+      color: $status-hover-font-color;
+      transition: all 0.4s ease-in-out;
+    }
+  }
+  .confirmed-multiple{
+    color: $confirmed-multiple;
+    transition: all 0.4s ease-in-out;
+    &:hover{
+      background-color: $confirmed-multiple;
+      color: $status-hover-font-color;
+      transition: all 0.4s ease-in-out;
+    }
+  }
+  .provisional{
+    color: $provisional;
+    transition: all 0.4s ease-in-out;
+    &:hover{
+      background-color: $provisional;
+      color: $status-hover-font-color;
+      transition: all 0.4s ease-in-out;
+    }
+  }
+  .warning{
+    color: $warning;
+    transition: all 0.4s ease-in-out;
+    &:hover{
+      background-color: $warning;
+      color: $status-hover-font-color;
+      transition: all 0.4s ease-in-out;
+    }
+  }
+  .tentative{
+    color: $tentative;
+    transition: all 0.4s ease-in-out;
+    &:hover{
+      background-color: $tentative;
+      color: $status-hover-font-color;
+      transition: all 0.4s ease-in-out;
+    }
+  }
+  .provisional-multiple{
+    color: $provisional-multiple;
+    transition: all 0.4s ease-in-out;
+    &:hover{
+      background-color: $provisional-multiple;
+      color: $status-hover-font-color;
+      transition: all 0.4s ease-in-out;
     }
   }
 }

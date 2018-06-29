@@ -672,8 +672,13 @@
   }
 }
 
-.addmenu{
+.icon-text-menu{
   button{
+    &.blocked{
+      i{
+        color: #f5766c;
+      }
+    }
     i{
       color: #90a4ae;
     }
