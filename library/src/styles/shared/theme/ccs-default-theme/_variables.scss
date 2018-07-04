@@ -118,3 +118,24 @@ $separator-border-color: #d3d6d9;
 $primary-theme-font : $opt_color__primary;
 $secondary-theme-font : $opt_color__secondary;
 /* End of Booking Summary */
+
+/* Business Colors */
+$status-hover-font-color: #fff;
+$cancelled-status: black;
+$confirmed-status: yellow;
+$confirmed-multiple: blue;
+$provisional: red;
+$warning: purple;
+$tentative: brown;
+$provisional-multiple:grey;
+/* End of Business Colors */
+
+
+/* Floating Action Buttons */
+$fab-cancel-state : red;
+$fab-payment-state : red;
+$fab-task-state : red;
+$fab-refund-state : red;
+$fab-invoice-state : red;
+$fab-toggle-bg: red;
+/* End of Floating Action Buttons */

@@ -526,17 +526,6 @@ i {
   }
 }
 
-/* Business Colors */
-$status-hover-font-color: #fff;
-$cancelled-status: black;
-$confirmed-status: yellow;
-$confirmed-multiple: blue;
-$provisional: red;
-$warning: purple;
-$tentative: brown;
-$provisional-multiple:grey;
-
-
 .booking-status-menu{
   .cancelled{
     color: $cancelled-status;

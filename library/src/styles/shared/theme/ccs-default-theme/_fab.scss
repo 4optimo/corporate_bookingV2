@@ -27,9 +27,23 @@
     .fab-button{
       display: inline-block;
       min-width: 65px;
+      position: relative;
       text-align: center;
       .mat-fab{
         margin: 0 auto;
+      }
+      .fab-more-btn{
+        position: absolute;
+        right: -1px;
+        top: -1px;
+        background-color: $opt_color__secondary;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        i{
+          font-size: 22px;
+          color: #fff;
+        }
       }
     }
   }
@@ -62,6 +76,31 @@
         text-align: center;
         .mat-mini-fab{
           margin: 0 auto;
+        }
+      }
+      &.tab-cancel-action{
+        .fab-button{
+          background-color: $fab-cancel-state;
+        }
+      }
+      &.tab-payment-action{
+        .fab-button{
+          background-color: $fab-payment-state;
+        }
+      }
+      &.tab-task-action{
+        .fab-button{
+          background-color: $fab-task-state;
+        }
+      }
+      &.tab-refund-action{
+        .fab-button{
+          background-color: $fab-refund-state;
+        }
+      }
+      &.tab-invoice-action{
+        .fab-button{
+          background-color: $fab-invoice-state;
         }
       }
     }
