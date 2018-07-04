@@ -88,6 +88,7 @@ import { OptPaginatorComponent } from './opt-paginator/opt-paginator.component';
 import { OptCustomerFullPageComponent } from './opt-customer-full-page/opt-customer-full-page.component';
 import { OptFabComponent } from './opt-fab/opt-fab.component';
 import { OptClientPopupComponent } from './opt-client-popup/opt-client-popup.component';
+import { OptIndividualClientPopupComponent } from './opt-individual-client-popup/opt-individual-client-popup.component';
 
 
 
@@ -199,6 +200,7 @@ export class DemoMaterialModule {}
     OptPaginatorComponent,
     OptCustomerFullPageComponent,
     OptClientPopupComponent,
+    OptIndividualClientPopupComponent,
     // OptDocumentSelectComponent,
 
     RoutingProjectComponent
@@ -227,7 +229,7 @@ export class DemoMaterialModule {}
     RouterModule.forRoot(appRoutes)
   ],
 
-  entryComponents:[OptPopupModalComponent, OptPopupWindowComponent, OptClientPopupComponent],
+  entryComponents:[OptPopupModalComponent, OptPopupWindowComponent, OptClientPopupComponent, OptIndividualClientPopupComponent],
   providers: [{provide: APP_BASE_HREF, useValue : '/' }],
 
   bootstrap: [AppComponent],

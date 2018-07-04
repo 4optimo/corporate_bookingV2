@@ -4,6 +4,7 @@ import {MatDialog} from "@angular/material";
 import {OptPopupModalComponent} from "../opt-popup-modal/opt-popup-modal.component";
 import {OptCorporateClientPopupComponent} from "../opt-corporate-client-popup/opt-corporate-client-popup.component";
 import {OptClientPopupComponent} from "../opt-client-popup/opt-client-popup.component";
+import {OptIndividualClientPopupComponent} from "../opt-individual-client-popup/opt-individual-client-popup.component";
 
 @Component({
   selector: 'app-opt-popup-window',
@@ -12,9 +13,7 @@ import {OptClientPopupComponent} from "../opt-client-popup/opt-client-popup.comp
 })
 export class OptPopupWindowComponent implements OnInit {
 
-
   constructor(public dialog: MatDialog) {}
-
 
   public  openModal(){
     this.dialog.open(OptPopupModalComponent,{
@@ -39,7 +38,7 @@ export class OptPopupWindowComponent implements OnInit {
 
   public  openClientPopup(){
     this.dialog.open(OptClientPopupComponent,{
-      data: {name:'sass test component'},
+      data: {name:'Client Search'},
       panelClass:'custom-dialog-container',
       height: '90%',
       width: '90%'
@@ -48,6 +47,16 @@ export class OptPopupWindowComponent implements OnInit {
 
   }
 
+  public  openIndividualClientPopup(){
+    this.dialog.open(OptIndividualClientPopupComponent,{
+      data: {name:'New Individual Client'},
+      panelClass:'custom-dialog-container',
+      height: '90%',
+      width: '90%'
+
+    });
+
+  }
 
   ngOnInit() {
   }
