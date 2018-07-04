@@ -6,41 +6,44 @@
     <div class="opt_flex__item">
       <div class="opt_flex--container">
         <div class="opt_flex__item">
-          <div class="opt_flex__item">
-            <label class="opt_chip-set--label opt-txt__light">
-              {{ category }}
-            </label>
-          </div>
-          <div class="opt_flex__item">
-            <form [formGroup]="stateForm">
-              <input type="text" class="opt_chip-set--text input-field" placeholder=" Search by Keyword, Configuration, etc" formControlName="stateGroup" [matAutocomplete]="autoGroup" [(ngModel)]="category" (keyup.enter)="onKeyUp()">
-              <!--<input type="text" matInput placeholder="{{ category}}" [(ngModel)]="category" (keyup.enter)="onKeyUp()"/>-->
-              <mat-autocomplete #autoGroup="matAutocomplete">
-                <mat-optgroup *ngFor="let group of stateGroupOptions | async" [label]="group.letter">
-                  <mat-option *ngFor="let name of group.names" [value]="name">
-                    {{ name }}
-                    <!--class="lbl lbl__vat __normal"-->
-                  </mat-option>
-                </mat-optgroup>
-              </mat-autocomplete>
-            </form>
+          <div class="opt_expand--container">
+            <div class="opt_flex__item">
+              <label class="opt_chip-set--label opt-txt__light">
+                {{ category }}
+              </label>
+            </div>
+            <div class="opt_flex__item">
+              <form [formGroup]="stateForm">
+                        <input type="text" class="opt_chip-set--text input-field" placeholder=" Search by Keyword, Configuration, etc" formControlName="stateGroup" [matAutocomplete]="autoGroup" [(ngModel)]="category" (keyup.enter)="onKeyUp()">
+                        <!--<input type="text" matInput placeholder="{{ category}}" [(ngModel)]="category" (keyup.enter)="onKeyUp()"/>-->
+                        <mat-autocomplete #autoGroup="matAutocomplete">
+                          <mat-optgroup *ngFor="let group of stateGroupOptions | async" [label]="group.letter">
+                            <mat-option *ngFor="let name of group.names" [value]="name">
+                              {{ name }}
+                              <!--class="lbl lbl__vat __normal"-->
+                            </mat-option>
+                          </mat-optgroup>
+                        </mat-autocomplete>
+                      </form>
+            </div>
           </div>
         </div>
         <div class="opt_flex__item--inherit --right">
-          <div class="opt_flex--container">
-            <div class="opt_flex__item btn __normal">
-              <div mat-raised-button class="btn-color-default">Search</div>
-            </div>
+          <!--<div class="opt_flex&#45;&#45;container">-->
+            <!--<div class="opt_flex__item">-->
+              <div class="btn __normal">
+                <div mat-raised-button class="btn-color-default">Search</div>
+              </div>
+            <!--</div>-->
             <!--<div class="opt_flex__item">-->
               <!--<i class="material-icons btn-default">filter_list</i>-->
             <!--</div>-->
             <button mat-icon-button >
               <mat-icon class="btn-color-default material-icons">filter_list</mat-icon>
             </button>
-          </div>
+          <!--</div>-->
         </div>
       </div>
     </div>
   </div>
 </div>
-

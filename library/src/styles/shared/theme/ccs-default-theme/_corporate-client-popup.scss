@@ -133,6 +133,12 @@
       background-color: #f1f5f8;
       margin: 0 -24px 0 -24px;
 
+      .warning-message{
+        color: $no-color--state;
+        font-size: 12px;
+        padding: 0 10px 10px 10px;
+      }
+
       .inner-wrapper{
         margin: 0 24px 0 24px;
         .outer-contxt{
@@ -236,9 +242,12 @@
         .add-new{
           padding: 0 10px 10px 10px;
           .icon-line{
-            width: 32%;
+            //width: 32%;
             float: right;
-            left: 68% !important;
+            //left: 68% !important;
+            width: 100%;
+            left: 0;
+
           }
         }
         .add-alternative-contact{

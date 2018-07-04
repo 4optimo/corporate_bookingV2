@@ -1,6 +1,7 @@
 .opt{
   &_search-panel {
-
+    border-radius: 3px;
+    background-color: white;
    .opt_chip-set--text{
      font-size: 12px;
    }
@@ -17,11 +18,11 @@
     }
     .mat-form-field-wrapper{
       padding-bottom: 0;
-      height: 40px;
+      height: 30px;
     }
     .btn{
       border: 1px solid $separator-border-color;
-      padding: 8px;
+      padding: 5px;
 
       &.__normal{
         background-color: $badge-success-bg;

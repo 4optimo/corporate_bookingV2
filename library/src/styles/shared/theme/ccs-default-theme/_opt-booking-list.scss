@@ -7,6 +7,20 @@
 
   font-family: $font-family-rubik;
 
+  .mat-expansion-panel{
+    &:not([class*=mat-elevation-z]){
+      box-shadow: none;
+    }
+    &.mat-expanded {
+      .mat-expansion-panel-content{
+        box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+      }
+    }
+    .mat-expansion-panel-content {
+      overflow: hidden;
+    }
+  }
+
   //over ride booking details component
   .price__details{
     display: none;
@@ -125,7 +139,7 @@
 
     &_expand-header {
       background-color: #f4f4f4;
-      height: 55px;
+      height: 40px;
 
       .expand-icon{
         text-align: right;
@@ -244,7 +258,6 @@
       font-weight: 600;
     }
   }
-
 
   .mat-expansion-panel-body{
     padding: 0;
@@ -376,22 +389,5 @@
 
     }
   }
-  .opt_booking__list, .opt_client__list{
 
-      .mat-expansion-panel{
-        &:not([class*=mat-elevation-z]){
-          box-shadow: none;
-        }
-        &.mat-expanded {
-          .mat-expansion-panel-content{
-            box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
-          }
-        }
-        .mat-expansion-panel-content {
-          overflow: hidden;
-        }
-      }
-    }
-  }
-
-//}
+}

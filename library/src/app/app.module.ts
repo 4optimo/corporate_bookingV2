@@ -87,6 +87,7 @@ import { OptBookingFullPageComponent } from './opt-booking-full-page/opt-booking
 import { OptPaginatorComponent } from './opt-paginator/opt-paginator.component';
 import { OptCustomerFullPageComponent } from './opt-customer-full-page/opt-customer-full-page.component';
 import { OptFabComponent } from './opt-fab/opt-fab.component';
+import { OptClientPopupComponent } from './opt-client-popup/opt-client-popup.component';
 
 
 
@@ -113,6 +114,7 @@ const appRoutes: Routes = [
   { path: 'opt-booking-full-page', component: OptBookingFullPageComponent},
   { path: 'opt-paginator', component: OptPaginatorComponent},
   { path: 'opt-customer-full-page', component: OptCustomerFullPageComponent},
+  { path: 'opt-fab', component: OptFabComponent},
 
   // { path: 'opt-document-select', component: OptDocumentSelectComponent},
 
@@ -196,6 +198,7 @@ export class DemoMaterialModule {}
     OptFabComponent,
     OptPaginatorComponent,
     OptCustomerFullPageComponent,
+    OptClientPopupComponent,
     // OptDocumentSelectComponent,
 
     RoutingProjectComponent
@@ -224,7 +227,7 @@ export class DemoMaterialModule {}
     RouterModule.forRoot(appRoutes)
   ],
 
-  entryComponents:[OptPopupModalComponent, OptPopupWindowComponent],
+  entryComponents:[OptPopupModalComponent, OptPopupWindowComponent, OptClientPopupComponent],
   providers: [{provide: APP_BASE_HREF, useValue : '/' }],
 
   bootstrap: [AppComponent],
