@@ -1,4 +1,4 @@
-<div id="fbo" class="fab-overlay">
+<div class="fab-overlay" [ngClass]="{'active':isSelected}">
   <ul class="fab-list">
     <li><div class="fab-label"><span>Cancel</span></div> <div class="fab-button"><button mat-mini-fab class="fab-toggle"><i class="material-icons">perm_contact_calendar</i></button></div></li>
     <li><div class="fab-label"><span>Payment</span></div> <div class="fab-button"><button mat-mini-fab class="fab-toggle"><i class="material-icons">payment</i></button></div></li>
@@ -11,7 +11,7 @@
       <span>Save Booking</span>
     </div>
     <div class="fab-button">
-      <button id="fbt" mat-fab class="fab-toggle"><i class="material-icons">save</i></button>
+      <button mat-fab class="fab-toggle" onmouseover="showMenu()"><i class="material-icons">save</i></button>
     </div>
   </a>
 </div>

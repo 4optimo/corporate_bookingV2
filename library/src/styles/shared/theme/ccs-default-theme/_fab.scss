@@ -13,6 +13,7 @@
       min-width: 110px;
       font-size: 12px;
       text-align: right;
+      visibility: hidden;
       span{
         display: inline-block;
         background-color: #555555;
@@ -70,6 +71,11 @@
     .fab-list{
       visibility: visible;
       opacity: 1;
+    }
+    .fab-toggle{
+      .fab-label{
+        visibility: visible;
+      }
     }
   }
 
