@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OptBookingFullPageComponent implements OnInit {
 
-  bookingListArray = new Array(18);
+  bookingListArray = new Array(1);
 
 
   constructor() { }
