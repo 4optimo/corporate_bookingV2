@@ -13,5 +13,5 @@ export class OptFabComponent implements OnInit {
   showMenu() {
     console.log("hello");
   }
-  isSelected = true;
+  isSelected = false;
 }
