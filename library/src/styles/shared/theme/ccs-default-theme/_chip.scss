@@ -3,58 +3,105 @@
     display: flex;
     padding-right: 10px;
 
+
+    .dropdown-list{
+      min-width: 250px;
+
+    }
+
+
     .container-nw-row{
       flex-direction: column;
     }
     .opt_chip--wrapper {
-      background-color: gray;
-      border-radius: 20px;
-      padding: 5px 5px 5px 5px;
+      background-color: #e0e0e0;
       min-width: 100px;
-      max-width: 200px;
       color: white;
       font-weight: 400;
-      height: 23px;
-      font-size: 11px;
+      @include border-radius(15px);
+
+      min-height: 32px;
+      line-height: 32px;
+      font-size: 13px;
+      padding: 0 0 0 12px;
       //border: 1px solid gray;
 
+      &:hover{
+
+        background-color: red;
+      }
+
+
+      .btn__close{
+
+        i{
+          font-size: 21px;
+          margin-right: 4px;
+          color: #8b8b8b;
+        }
+
+      }
+
       .multiselect-dropdown{
-        padding: 0 !important;
-        line-height: 1 !important;
-        font-size: 12px;
-        //height: 25px;
         border: none;
         background: none;
+
+        :hover{
+          box-shadow: none !important;
+        }
+
 
         li{
           color: black;
         }
 
+
+        .selected-item{
+          color:#535353 !important;
+
+          a{
+            color:#535353 !important;
+          }
+
+        }
+
       }
 
       .selected-item{
-        line-height: 1 !important;
+
         background: none !important;
-        font-size: 11px !important;
+        font-size: 11px;
         border: none !important;
         margin: 0;
+
       }
 
         .dropdown-btn {
           padding: 0 !important;
           border: none !important;
           outline: none;
+          height: 21px;
           span{
-            font-size: 11px;
+            font-size: 14px;
           }
 
       }
       .dropdown-down, .dropdown-up{
-        border-top: 5px solid #adadad !important;
+        //border-top: 5px solid #adadad !important;
         border-left: 5px solid transparent !important;
         border-right: 4px solid transparent !important;
-        padding-bottom: 5px !important;
+        //padding-bottom: 5px !important;
+        //border-bottom: 10px solid #979494;
       }
+
+      .dropdown-down{
+        margin-top: 7px;
+        padding-bottom: 0px;
+
+
+      }
+
+
 
       .cancel{
         font-size: 15px;
@@ -72,8 +119,9 @@
       }
     }
     .category-type{
-      font-size: 10px;
+      font-size: 12px;
       padding-left: 10px;
+      margin-bottom: 2px;
     }
   }
 }
