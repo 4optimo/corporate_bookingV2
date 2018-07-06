@@ -135,70 +135,74 @@
     <mat-expansion-panel #myPanel [disabled]="true" class="opt-expand--line" >
     <mat-expansion-panel-header class="opt_width-define opt_expand__header" collapsedHeight=".collapsedHeight" expandedHeight=".expandedHeight"  >
       <div class="opt_expand--container">
-        <div class="col-sm-6 col-md-4	col-lg-4	col-xs-12">
-          <mat-panel-title class="opt_flex--container tc-flex-item__center">
-            <div class="opt_flex__item--inherit ">
-              <div class="icon__cage">
-                <div class="opt_circle__confirmed">
-                  <div class="date">{{date}}
-                    <div class="month_year">  {{month}} <br>{{year}}</div>
+        <div class="row">
+          <div class="col-sm-6 col-md-4	col-lg-4	col-xs-12">
+            <mat-panel-title class="opt_flex--container tc-flex-item__center">
+              <div class="opt_flex__item--inherit ">
+                <div class="icon__cage">
+                  <div class="opt_circle__confirmed">
+                    <div class="date">{{date}}
+                      <div class="month_year">  {{month}} <br>{{year}}</div>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="opt_flex__item">
-              <div class="opt_width-calc">
-                <div><span class="opt-txt__body2 ref_no">PB3456</span><span class="opt-txt__body2"> - Mr.Jone Albert</span></div>
-                <div><span class="opt-txt__body2">Pandarix</span></div>
+              <div class="opt_flex__item">
+                <div class="opt_width-calc">
+                  <div><span class="opt-txt__body2 ref_no">PB3456</span><span class="opt-txt__body2"> - Mr.Jone Albert</span></div>
+                  <div><span class="opt-txt__body2">Pandarix</span></div>
+                </div>
               </div>
-            </div>
-          </mat-panel-title>
+            </mat-panel-title>
+          </div>
+          <div class="col-sm-6 col-md-4	col-lg-4	col-xs-12">
+            <mat-panel-description class="opt_flex--container">
+              <div class="middle-details">
+                <div class="opt_flex__item tc-flex-item__center opt-txt__body1">5-JAN-18 | <span class="opt-txt__body2"> Personal Training Bookings</span></div>
+                <div class="opt-txt__body1"><span>Corporate </span>| <span class="active-color--state">Confirmed</span></div>
+              </div>
+            </mat-panel-description>
+          </div>
+          <div class="col-sm-6  col-md-4	col-lg-4	col-xs-12  opt_price-section">
+            <mat-panel-description class="opt_flex--container">
+              <!--<div class="price-details">-->
+                <div class="opt_flex__item"><span class="lbl lbl__vat">Inc Vat</span></div>
+                <div class=" opt_flex__item opt-typo-subhead-2 price">£300.00</div>
+                <!--<div class="opt_flex__item opt-txt__light btn btn-select">Select</div>-->
+                <div mat-raised-button class="btn-color-default opt_flex__item opt-txt__light btn btn-select">Select</div>
+                <div class="opt_flex__item action__button">
+                  <button mat-icon-button color="primary" (click)="expandPannel()" [disableRipple]="true" >
+                    <mat-icon>{{matIcon}}</mat-icon>
+                  </button>
+                </div>
+              <!--</div>-->
+            </mat-panel-description>
         </div>
-        <div class="col-sm-6 col-md-4	col-lg-4	col-xs-12">
-          <mat-panel-description class="opt_flex--container">
-            <div>
-              <div class="opt_flex__item tc-flex-item__center opt-txt__body1">5-JAN-18 | <span class="opt-txt__body2"> Personal Training Bookings</span></div>
-              <div class="opt-txt__body1"><span>Corporate </span>| <span class="active-color--state">Confirmed</span></div>
-            </div>
-          </mat-panel-description>
         </div>
-        <div class="col-sm-6  col-md-4	col-lg-4	col-xs-12  opt_price-section">
-          <mat-panel-description class="opt_flex--container">
-            <div class="opt_flex__item"><span class="lbl lbl__vat">Inc Vat</span></div>
-            <div class=" opt_flex__item opt-typo-subhead-2 price">£300.00</div>
-            <!--<div class="opt_flex__item opt-txt__light btn btn-select">Select</div>-->
-            <div mat-raised-button class="btn-color-default opt_flex__item opt-txt__light btn btn-select">Select</div>
-            <div class="opt_flex__item action__button">
-              <button mat-icon-button color="primary" (click)="expandPannel()" [disableRipple]="true" >
-                <mat-icon>{{matIcon}}</mat-icon>
-              </button>
-            </div>
-
-          </mat-panel-description>
-
-        </div>
-
       </div>
     </mat-expansion-panel-header>
 
-
-    <div class="opt_expand-header">
-      <div class="col-sm-9 opt_flex__item"></div>
-      <div class="col-sm-3 opt_flex__item expand-icon">
-
-        <button mat-icon-button >
-          <mat-icon class="btn-color-default ">attach_money</mat-icon>
-        </button>
-        <button mat-icon-button >
-          <mat-icon class="btn-color-default ">file_copy</mat-icon>
-        </button>
-        <button mat-icon-button >
+      <div class="opt_expand--container">
+        <div class="row">
+          <div class="opt_expand-header opt_flex--container">
+            <div class="col-sm-9 opt_flex__item"></div>
+            <div class="col-sm-3 opt_flex__item expand-icon">
+            <button mat-icon-button >
+              <mat-icon class="btn-color-default ">attach_money</mat-icon>
+            </button>
+            <button mat-icon-button >
+              <mat-icon class="btn-color-default ">file_copy</mat-icon>
+            </button>
+            <button mat-icon-button >
           <mat-icon class="btn-color-default ">launch</mat-icon>
         </button>
         <!--<i class="material-icons color file_copy-icon btn">file_copy</i>-->
         <!--<i class="material-icons color launch-icon btn">launch</i>-->
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+
     <div class="opt_expanded-view">
       <app-opt-booking-summary></app-opt-booking-summary>
       <br>
@@ -268,11 +272,4 @@
   </mat-accordion>
 </div>
 
-<!--<div class="test">-->
-  <!--<div class="opt_flex&#45;&#45;container test-wrapper">-->
-    <!--<div class="opt_flex__item&#45;&#45;inherit test-inner">awdawda</div>-->
-    <!--<div class="opt_flex__item test-inner-expand">awdawd</div>-->
-    <!--<div class="opt_flex__item&#45;&#45;inherit test-inner-2">awdawda</div>-->
-  <!--</div>-->
-<!--</div>-->
 

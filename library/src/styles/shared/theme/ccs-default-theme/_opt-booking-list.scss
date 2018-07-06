@@ -19,6 +19,19 @@
     .mat-expansion-panel-content {
       overflow: hidden;
     }
+    .opt_expand--container {
+      padding: 0 10px 0 10px;
+      &> .row > [class^='col-'] {
+        display: flex;
+        min-height: 55px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+      }
+    }
+    .middle-details{
+      align-self: center;
+    }
   }
 
   //over ride booking details component
@@ -75,26 +88,25 @@
 
       >.row{
 
-
         >[class^='col-']{
 
+          display: flex;
           min-height: 55px;
           @include flexbox();
           .opt_flex--container{
             width: 100%;
           }
-
         }
       }
-
     }
 
     &_circle{
       &__cancelled{
-        @include circle-icon(40px, $danger_color, $danger_color);
-        padding-top: 2px;
+        @include circle-icon(45px, $danger_color, $danger_color);
+        //padding-top: 2px;
         line-height: 12px;
         .date{
+          padding-top: 4px;
           font-size: 14px;
           font-weight: bold;
           color: $plain_color;
@@ -106,10 +118,11 @@
         }
       }
       &__confirmed{
-        @include circle-icon(40px, $opt_color__secondary, $opt_color__secondary);
-        padding-top: 2px;
+        @include circle-icon(45px, $opt_color__secondary, $opt_color__secondary);
+        //padding-top: 2px;
         line-height: 12px;
         .date{
+          padding-top: 4px;
           font-size: 14px;
           font-weight: bold;
           color: $plain_color;
@@ -123,28 +136,25 @@
 
     }
 
-
     &_width-calc{
       //position: absolute;
       //left: 80px;
       width: calc(100% - 60px);
       //padding: 5px;
       //text-align: left;
-      padding-left: 20px;
+      padding-left: 15px;
       .ref_no{
         font-weight: 600;
       }
     }
 
-
     &_expand-header {
       background-color: #f4f4f4;
-      height: 40px;
+      height: 55px;
 
       .expand-icon{
         text-align: right;
-        vertical-align: middle;
-
+        align-self: center;
         //padding-right: 23px;
         .attach_money-icon,.file_copy-icon,.launch-icon{
           color: #909cac;
@@ -152,7 +162,13 @@
           font-size: 25px;
           padding-top: 10px;
         }
-
+      }
+      button{
+        .mat-icon{
+          &:active{
+            color: white;
+          }
+        }
       }
     }
 
@@ -241,7 +257,6 @@
 
       }
     }
-
   }
 
   .opt_price-section{
@@ -292,6 +307,7 @@
         &:focus, &:active, &:hover, &:visited{
           background-color: #00aeef;
           color: white;
+          border: none;
         }
         //outline-color: #0000;
         //border-radius: 4px;
@@ -344,17 +360,17 @@
       }
 
 
-      > .row {
-
-        > [class^='col-'] {
-
-          min-height: 55px;
-          @include flexbox();
-          .opt_flex--container {
-            width: 100%;
-          }
-
-        }
+      //> .row {
+      //
+      //  > [class^='col-'] {
+      //
+      //    display: flex;
+      //    min-height: 55px;
+      //    @include flexbox();
+      //    .opt_flex--container {
+      //      width: 100%;
+      //    }
+      //  }
 
       }
     }
@@ -390,4 +406,3 @@
     }
   }
 
-}
