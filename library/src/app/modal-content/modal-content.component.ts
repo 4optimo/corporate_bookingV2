@@ -18,6 +18,7 @@ export class ModalContentComponent  {
   //             @inject(MAT_DIALOG_DATA) public data: any){ }
 
   constructor(
+
     public  matDialogRef: MatDialogRef<ModalContentComponent>,
     @Inject(MAT_DIALOG_DATA) public data: any) { }
 
@@ -27,6 +28,8 @@ export class ModalContentComponent  {
   public close(){
     this.matDialogRef.close();
   }
+
+
 
 
 }
