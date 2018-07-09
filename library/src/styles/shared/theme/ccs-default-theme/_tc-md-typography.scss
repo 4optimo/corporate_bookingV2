@@ -257,7 +257,7 @@ p {
 
 .lead{
   @include typo-title;
-  margin-top: 0px;
+  margin-top: 0;
   margin-bottom: 16px;
 }
 
@@ -330,12 +330,13 @@ p {
     }
 
 //Custom Classes
-.expanded{
+// To be removed
+/*.expanded{
 .tc-body1--txt{
   font-size: 14px;
 }
 
-}
+}*/
 
 .my-bordered-list {
   /* remove the side padding. we'll be placing it around the item instead. */

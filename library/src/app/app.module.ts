@@ -89,6 +89,7 @@ import { OptCustomerFullPageComponent } from './opt-customer-full-page/opt-custo
 import { OptFabComponent } from './opt-fab/opt-fab.component';
 import { OptClientPopupComponent } from './opt-client-popup/opt-client-popup.component';
 import { OptIndividualClientPopupComponent } from './opt-individual-client-popup/opt-individual-client-popup.component';
+import { TypographyComponent } from './typography/typography.component';
 
 
 
@@ -203,7 +204,8 @@ export class DemoMaterialModule {}
     OptIndividualClientPopupComponent,
     // OptDocumentSelectComponent,
 
-    RoutingProjectComponent
+    RoutingProjectComponent,
+    TypographyComponent,
   ],
   imports: [
     BrowserModule,
