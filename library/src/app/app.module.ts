@@ -117,6 +117,7 @@ const appRoutes: Routes = [
   { path: 'opt-paginator', component: OptPaginatorComponent},
   { path: 'opt-customer-full-page', component: OptCustomerFullPageComponent},
   { path: 'opt-fab', component: OptFabComponent},
+  { path: 'typography', component: TypographyComponent},
 
   // { path: 'opt-document-select', component: OptDocumentSelectComponent},
 
