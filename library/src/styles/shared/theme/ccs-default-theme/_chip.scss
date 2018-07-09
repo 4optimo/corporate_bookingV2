@@ -28,19 +28,20 @@
 
       &:hover{
 
-        background-color: red;
+        background-color: #03a9f4;
       }
 
 
-      .btn__close{
+
 
         i{
-          font-size: 21px;
+          font-size: 25px!important;
+
           margin-right: 4px;
           color: #8b8b8b;
         }
 
-      }
+
 
       .multiselect-dropdown{
         border: none;
