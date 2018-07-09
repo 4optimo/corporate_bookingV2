@@ -204,50 +204,50 @@ fieldset.demo{
   h1.opt__heading-1 {
   @include typo-display-3;
 
-    margin-top: 24px;
-    margin-bottom: 24px;
+    margin-top: 0;
+    margin-bottom: 0;
     @extend %tc-ellipsis;
   }
 
   h2.opt__heading-2 {
     @include typo-display-2;
-    margin-top: 24px;
-    margin-bottom: 24px;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   h3.opt__heading-3 {
     @include typo-display-1;
 
-    margin-top: 24px;
-    margin-bottom: 24px;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   h4.opt__heading-4 {
     @include typo-headline;
 
-    margin-top: 24px;
-    margin-bottom: 16px;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   h5.opt__heading-5 {
     @include typo-title;
 
-    margin-top: 24px;
-    margin-bottom: 16px;
+    margin-top:0;
+    margin-bottom: 0;
   }
 
   .opt__heading-title {
     @include typo-title;
 
-    margin-top: 24px;
-    margin-bottom: 16px;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   h6.opt__heading-6 {
     @include typo-subhead;
 
-    margin-top: 24px;
-    margin-bottom: 16px;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
 p {
@@ -257,7 +257,7 @@ p {
 
 .lead{
   @include typo-title;
-  margin-top: 0px;
+  margin-top: 0;
   margin-bottom: 16px;
 }
 
@@ -330,12 +330,13 @@ p {
     }
 
 //Custom Classes
-.expanded{
+// To be removed
+/*.expanded{
 .tc-body1--txt{
   font-size: 14px;
 }
 
-}
+}*/
 
 .my-bordered-list {
   /* remove the side padding. we'll be placing it around the item instead. */
