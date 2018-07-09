@@ -89,6 +89,7 @@ import { OptCustomerFullPageComponent } from './opt-customer-full-page/opt-custo
 import { OptFabComponent } from './opt-fab/opt-fab.component';
 import { OptClientPopupComponent } from './opt-client-popup/opt-client-popup.component';
 import { OptIndividualClientPopupComponent } from './opt-individual-client-popup/opt-individual-client-popup.component';
+import { TypographyComponent } from './typography/typography.component';
 
 
 
@@ -116,6 +117,7 @@ const appRoutes: Routes = [
   { path: 'opt-paginator', component: OptPaginatorComponent},
   { path: 'opt-customer-full-page', component: OptCustomerFullPageComponent},
   { path: 'opt-fab', component: OptFabComponent},
+  { path: 'typography', component: TypographyComponent},
 
   // { path: 'opt-document-select', component: OptDocumentSelectComponent},
 
@@ -203,7 +205,8 @@ export class DemoMaterialModule {}
     OptIndividualClientPopupComponent,
     // OptDocumentSelectComponent,
 
-    RoutingProjectComponent
+    RoutingProjectComponent,
+    TypographyComponent,
   ],
   imports: [
     BrowserModule,
