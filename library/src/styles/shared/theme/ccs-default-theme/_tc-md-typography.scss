@@ -284,11 +284,15 @@ fieldset.demo{
     margin-top: 0;
     margin-bottom: 0;
 
+
     &-small{
+      @include typo-headline;
       font-size: 12px ;
       line-height: 12px;
+
     }
     &-large{
+      @include typo-headline;
       font-size: 16px ;
       line-height: 16px;
     }
@@ -298,15 +302,16 @@ fieldset.demo{
     @include typo-title;
     font-size: 16px;
     line-height: 16px;
-    margin-top: 0;
-    margin-bottom: 0;
+
 
     &-small{
+      @include typo-title;
       font-size: 14px ;
       line-height: 14px;
     }
 
     &-large{
+      @include typo-title;
       font-size: 18px ;
       line-height: 18px;
     }
@@ -378,10 +383,14 @@ p {
   @extend %tc-ellipsis;
 
   &-small{
+    @include typo-body-2;
+    @extend %tc-ellipsis;
     font-size: 12px;
   }
 
   &-large{
+    @include typo-body-2;
+    @extend %tc-ellipsis;
     font-size: 14px;
   }
 
@@ -394,10 +403,14 @@ p {
 
   &-small{
     font-size: 12px;
+    @include typo-body-1;
+    @extend %tc-ellipsis;
   }
 
   &-large{
     font-size: 14px;
+    @include typo-body-1;
+    @extend %tc-ellipsis;
   }
 
 
