@@ -87,8 +87,9 @@
   @include typo-preferred-font($usePreferred);
   font-size: 20px;
   font-weight: 500;
-  line-height: 1;
-  letter-spacing: 0.02em;
+ /* line-height: 1;
+  letter-spacing: 0.02em;*/
+
 
   @if $colorContrast {
     opacity: 0.87;

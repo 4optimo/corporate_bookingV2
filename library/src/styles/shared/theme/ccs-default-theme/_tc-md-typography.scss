@@ -277,7 +277,42 @@ fieldset.demo{
     margin-bottom: 0;
   }
 
-  h4.opt__heading-4 {
+  .opt__subtitle-1 {
+    @include typo-headline;
+    font-size: 14px ;
+    line-height: 14px;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    &-small{
+      font-size: 12px ;
+      line-height: 12px;
+    }
+    &-large{
+      font-size: 16px ;
+      line-height: 16px;
+    }
+  }
+
+  .opt__subtitle-2 {
+    @include typo-title;
+    font-size: 16px;
+    line-height: 16px;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    &-small{
+      font-size: 14px ;
+      line-height: 14px;
+    }
+
+    &-large{
+      font-size: 18px ;
+      line-height: 18px;
+    }
+  }
+
+  /*h4.opt__heading-4 {
     @include typo-headline;
 
     margin-top: 0;
@@ -303,7 +338,7 @@ fieldset.demo{
 
     margin-top: 0;
     margin-bottom: 0;
-  }
+  }*/
 
 p {
     @include typo-body-1;
@@ -328,14 +363,7 @@ p {
 
 
 
-  &.__link{
-    @include typo-caption;
-    font-style: normal;
-    line-height: 16px;
-    text-decoration: underline;
-
-  }
-  &.__link{
+  &__link{
     @include typo-caption;
     font-style: normal;
     line-height: 16px;
@@ -349,6 +377,14 @@ p {
   @include typo-body-2;
   @extend %tc-ellipsis;
 
+  &-small{
+    font-size: 12px;
+  }
+
+  &-large{
+    font-size: 14px;
+  }
+
 }
 
 .opt-txt__body1{
@@ -356,25 +392,33 @@ p {
   @extend %tc-ellipsis;
   //margin-bottom: 10px;
 
-
-  &.__link{
-    @include typo-body-1();
-    font-style: normal;
-    line-height: 1.5;
-    text-decoration: underline;
-
-    &.__bold{
-      font-weight: 500;
-    }
-
-    &:hover{
-      color: #0d47a1;
-    }
-
+  &-small{
+    font-size: 12px;
   }
+
+  &-large{
+    font-size: 14px;
+  }
+
+
+  /* &.__link{
+     @include typo-body-1();
+     font-style: normal;
+     line-height: 1.5;
+     text-decoration: underline;
+
+     &.__bold{
+       font-weight: 500;
+     }
+
+     &:hover{
+       color: #0d47a1;
+     }
+
+   }*/
 }
 
-.opt-txt__body1-large{
+/*.opt-txt__body1-large{
   @include typo-subhead;
   @extend %tc-ellipsis;
   color: $central-brand-primary;
@@ -387,7 +431,7 @@ p {
   &#PROFILE_TYPE_GRP {
     color: #000 !important;
   }
-}
+}*/
 
 .tc-subheading {
       @include typo-subhead;
