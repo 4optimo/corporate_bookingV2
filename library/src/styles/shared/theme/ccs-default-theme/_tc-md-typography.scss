@@ -3,9 +3,13 @@
 
 
 $base-text-color: #000;
+
 $color-base: $base-text-color;
+
 $light: lighten($color-base,60%);
 $dark: darken($color-base,15%);
+
+
 $lighter: lighten($color-base,30%);
 $darker: darken($color-base,30%);
 
@@ -273,7 +277,47 @@ fieldset.demo{
     margin-bottom: 0;
   }
 
-  h4.opt__heading-4 {
+  .opt__subtitle-1 {
+    @include typo-headline;
+    font-size: 14px ;
+    line-height: 14px;
+    margin-top: 0;
+    margin-bottom: 0;
+
+
+    &-small{
+      @include typo-headline;
+      font-size: 12px ;
+      line-height: 12px;
+
+    }
+    &-large{
+      @include typo-headline;
+      font-size: 16px ;
+      line-height: 16px;
+    }
+  }
+
+  .opt__subtitle-2 {
+    @include typo-title;
+    font-size: 16px;
+    line-height: 16px;
+
+
+    &-small{
+      @include typo-title;
+      font-size: 14px ;
+      line-height: 14px;
+    }
+
+    &-large{
+      @include typo-title;
+      font-size: 18px ;
+      line-height: 18px;
+    }
+  }
+
+  /*h4.opt__heading-4 {
     @include typo-headline;
 
     margin-top: 0;
@@ -299,7 +343,7 @@ fieldset.demo{
 
     margin-top: 0;
     margin-bottom: 0;
-  }
+  }*/
 
 p {
     @include typo-body-1;
@@ -324,14 +368,7 @@ p {
 
 
 
-  &.__link{
-    @include typo-caption;
-    font-style: normal;
-    line-height: 16px;
-    text-decoration: underline;
-
-  }
-  &.__link{
+  &__link{
     @include typo-caption;
     font-style: normal;
     line-height: 16px;
@@ -345,6 +382,18 @@ p {
   @include typo-body-2;
   @extend %tc-ellipsis;
 
+  &-small{
+    @include typo-body-2;
+    @extend %tc-ellipsis;
+    font-size: 12px;
+  }
+
+  &-large{
+    @include typo-body-2;
+    @extend %tc-ellipsis;
+    font-size: 14px;
+  }
+
 }
 
 .opt-txt__body1{
@@ -352,25 +401,37 @@ p {
   @extend %tc-ellipsis;
   //margin-bottom: 10px;
 
-
-  &.__link{
-    @include typo-body-1();
-    font-style: normal;
-    line-height: 1.5;
-    text-decoration: underline;
-
-    &.__bold{
-      font-weight: 500;
-    }
-
-    &:hover{
-      color: #0d47a1;
-    }
-
+  &-small{
+    font-size: 12px;
+    @include typo-body-1;
+    @extend %tc-ellipsis;
   }
+
+  &-large{
+    font-size: 14px;
+    @include typo-body-1;
+    @extend %tc-ellipsis;
+  }
+
+
+  /* &.__link{
+     @include typo-body-1();
+     font-style: normal;
+     line-height: 1.5;
+     text-decoration: underline;
+
+     &.__bold{
+       font-weight: 500;
+     }
+
+     &:hover{
+       color: #0d47a1;
+     }
+
+   }*/
 }
 
-.opt-txt__body1-large{
+/*.opt-txt__body1-large{
   @include typo-subhead;
   @extend %tc-ellipsis;
   color: $central-brand-primary;
@@ -383,7 +444,7 @@ p {
   &#PROFILE_TYPE_GRP {
     color: #000 !important;
   }
-}
+}*/
 
 .tc-subheading {
       @include typo-subhead;
