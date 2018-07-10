@@ -85,7 +85,7 @@
     .type{
       @include respond-to('x-small') {
         padding-left: 65px;
-        padding-bottom: 10px;
+        //padding-bottom: 10px;
       }
       @include respond-to('small') {
         padding-left: 0;
@@ -97,7 +97,7 @@
         .opt-txt__body1, opt-txt__body2{
             white-space: normal !important;
         }
-        padding-bottom: 10px;
+        //padding-bottom: 10px;
       }
       @include respond-to('small') {
         padding-left: 0;
@@ -110,7 +110,7 @@
     .address{
       @include respond-to('x-small') {
         padding-left: 65px;
-        padding-bottom: 10px;
+        //padding-bottom: 10px;
         .opt-txt__body1, opt-txt__body2{
           white-space: normal !important;
         }
@@ -127,7 +127,7 @@
     .email-phone {
       @include respond-to('x-small') {
         padding-left: 65px;
-        padding-bottom: 10px;
+        //padding-bottom: 10px;
       }
       @include respond-to('small') {
         padding-left: 65px;
@@ -144,7 +144,7 @@
   .sm-padding{
     @include respond-to('x-small') {
       padding-left: 65px;
-      padding-top: 10px;
+      //padding-top: 10px;
     }
     @include respond-to('small') {
       padding-left: 0;
