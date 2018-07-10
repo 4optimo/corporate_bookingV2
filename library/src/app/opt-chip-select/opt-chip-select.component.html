@@ -1,4 +1,4 @@
-<div class="opt_chip __datepick">
+<div class="opt_chip ">
   <div class="opt_flex--container container-nw-row">
     <div class="opt_flex__item">
       <label class="category-type opt-txt__light">Name</label>
@@ -8,18 +8,19 @@
         <div class="opt_flex--container">
           <div class="opt_flex__item">
             <!--<div [formGroup]="myGroup">-->
-            12/3/18
+            name
             <!--</div>-->
 
-            <div class="dropdown-cage date-picker">
+            <div class="dropdown-cage">
 
-               <div class="opt_flex--container tc-flex-item__center">
-                 <div class="opt_flex__item"> <input matInput [matDatepicker]="picker" placeholder="Choose a date"></div>
-                 <div class="opt_flex__item"><mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-                   <mat-datepicker #picker startView="year" [startAt]="startDate"></mat-datepicker></div>
 
-               </div>
-
+              <mat-form-field>
+                <mat-select placeholder="Favorite food">
+                  <mat-option *ngFor="let food of foods" [value]="food.value">
+                    {{food.viewValue}}
+                  </mat-option>
+                </mat-select>
+              </mat-form-field>
 
 
             </div>

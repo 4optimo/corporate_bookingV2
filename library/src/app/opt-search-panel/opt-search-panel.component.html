@@ -2,6 +2,10 @@
   <div class="opt_flex--container">
 
     <div class="opt_flex__item--inherit">
+      <app-opt-chip></app-opt-chip>
+    </div>
+
+    <div class="opt_flex__item--inherit">
     <app-opt-chip-input></app-opt-chip-input>
     </div>
 
@@ -9,15 +13,23 @@
     <app-opt-chip-date-picker></app-opt-chip-date-picker>
     </div>
 
+    <div class="opt_flex__item--inherit">
+    <app-opt-chip-select></app-opt-chip-select>
+    </div>
+
+
+
     <div class="opt_flex__item">
-      <div class="opt_flex--container">
+      <div class="opt_flex--container tc-flex-item__center main--input">
         <div class="opt_flex__item">
-          <div class="opt_expand--container">
-            <div class="opt_flex__item">
-              <label class="opt_chip-set--label opt-txt__light">
-                {{ category }}
-              </label>
-            </div>
+          <div class="opt_expand--container ">
+
+            <!--<div class="opt_flex__item">-->
+            <!--<label class="opt_chip-set&#45;&#45;label opt-txt__light">-->
+              <!--{{ category }}-->
+            <!--</label>-->
+          <!--</div>-->
+
             <div class="opt_flex__item">
               <form [formGroup]="stateForm">
                         <input type="text" class="opt_chip-set--text input-field" placeholder=" Search by Keyword, Configuration, etc" formControlName="stateGroup" [matAutocomplete]="autoGroup" [(ngModel)]="category" (keyup.enter)="onKeyUp()">
@@ -32,6 +44,7 @@
                         </mat-autocomplete>
                       </form>
             </div>
+
           </div>
         </div>
         <div class="opt_flex__item--inherit --right">

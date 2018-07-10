@@ -2,6 +2,7 @@
   &_chip {
     display: flex;
     padding-right: 10px;
+    cursor: pointer;
 
 
     .dropdown-list{
@@ -16,7 +17,7 @@
     .opt_chip--wrapper {
       background-color: #e0e0e0;
       min-width: 100px;
-      color: white;
+
       font-weight: 400;
       @include border-radius(15px);
 
@@ -27,8 +28,12 @@
       //border: 1px solid gray;
 
       &:hover{
-
+        color: #fff;
         background-color: #03a9f4;
+
+        i{
+          color: #fff;
+        }
       }
 
 

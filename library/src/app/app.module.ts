@@ -73,7 +73,7 @@ import { OptClientSummaryComponent } from './opt-client-summary/opt-client-summa
 import {OptTooltipComponent} from "./opt-tooltip/opt-tooltip.component";
 import {OptSearchPanelComponent} from "./opt-search-panel/opt-search-panel.component";
 import {OptBookingActivitiesComponent} from "./opt-booking-activities/opt-booking-activities.component";
-import { OptChipComponent } from './opt-chip/opt-chip.component';
+import {OptChipComponent} from './opt-chip/opt-chip.component';
 // import { OptDocumentSelectComponent } from './opt-document-select/opt-document-select.component';
 // import { OptEventLog } from './opt-document-select/opt-document-select.component';
 // import { OptUpload } from './opt-document-select/opt-document-select.component';
@@ -93,6 +93,7 @@ import { OptChipInputComponent } from './opt-chip-input/opt-chip-input.component
 
 import { OptChipDatePickerComponent } from './opt-chip-date-picker/opt-chip-date-picker.component';
 import { TypographyComponent } from './typography/typography.component';
+import { OptChipSelectComponent } from './opt-chip-select/opt-chip-select.component';
 
 
 
@@ -124,7 +125,7 @@ const appRoutes: Routes = [
   { path: 'app-opt-chip-date-picker', component: OptChipDatePickerComponent},
   { path: 'picker', component: OptChipInputComponent},
   { path: 'typography', component: TypographyComponent},
-
+  { path: 'opt-chip-select', component: OptChipSelectComponent},
   // { path: 'opt-document-select', component: OptDocumentSelectComponent},
 
   { path: '', redirectTo:'/opt-booking-summary', pathMatch:'full'},
@@ -169,7 +170,7 @@ const appRoutes: Routes = [
     ScrollDispatchModule
 
   ],
-  declarations: [],
+
 
 
 
@@ -211,6 +212,7 @@ export class DemoMaterialModule {}
     OptCustomerFullPageComponent,
     OptClientPopupComponent,
     OptIndividualClientPopupComponent,
+    OptChipSelectComponent,
     // OptDocumentSelectComponent,
 
     RoutingProjectComponent,
