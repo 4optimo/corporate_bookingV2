@@ -92,15 +92,9 @@ body {
   }
 
 
-code{
-  margin: 20px;
+.typography_cage{
+
+  background-color: #fff;
   padding: 20px;
-  border: 1px solid #eee;
-&:before{
-  content: ".";
-  display: block;
-  clear: both;
-  visibility: hidden;
-  height: 0;
-}
+
 }
