@@ -19,6 +19,55 @@ $ci-bg--color :#eee !default;
 $ci-col-hover:#eee !default;
 $background-item:#fff;
 
+// state text  colors ...........................................
+
+.opt-txt__primary {
+  color: $opt-text-color__primary;
+}
+.opt-txt__secondary {
+  color: $opt-text-color__secondary;
+}
+.opt-txt__tertiary {
+  color: $opt-text-color__tertiary;
+}
+
+
+//State link colors...........................................
+.opt-link--primary{
+  @include typo-body-1();
+  font-style: normal;
+  line-height: 1.5;
+  text-decoration: underline;
+  color: $opt-link-color__primary;
+
+  &.__bold{
+    font-weight: 500;
+  }
+
+  &:hover{
+    color: darken($opt-link-color__primary,30%);
+  }
+}
+
+
+
+.opt-link--secondary{
+  @include typo-body-1();
+  font-style: normal;
+  line-height: 1.5;
+  text-decoration: underline;
+  color: $opt-link-color__secondary;
+
+  &.__bold{
+    font-weight: 500;
+  }
+
+  &:hover{
+    color: darken($opt-link-color__secondary,30%);
+  }
+}
+
+
 // state background colors ...........................................
 
 
@@ -143,6 +192,8 @@ text-overflow: ellipsis;
 }
 .opt-txt__line-overline{
   text-decoration: overline;
+  font-size: 12px;
+  line-height: 16px;
 }
 
 .opt-txt__white-space-normal{
@@ -260,22 +311,32 @@ p {
   margin-top: 0;
   margin-bottom: 16px;
 }
-
+/*
 .opt__heading__caption {
       @include typo-caption;
       font-style: normal;
-      color: #9c28b1;
-   }
+      color: #909cac;
+   }*/
 .opt-txt__caption{
   @include typo-caption;
   font-style: normal;
+  color: #909cac;
+
+
 
   &.__link{
     @include typo-caption;
     font-style: normal;
-    line-height: 1.5;
-
+    line-height: 16px;
     text-decoration: underline;
+
+  }
+  &.__link{
+    @include typo-caption;
+    font-style: normal;
+    line-height: 16px;
+    text-decoration: underline;
+
   }
 }
 
