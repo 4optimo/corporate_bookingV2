@@ -92,6 +92,7 @@ import { OptIndividualClientPopupComponent } from './opt-individual-client-popup
 import { OptChipInputComponent } from './opt-chip-input/opt-chip-input.component';
 
 import { OptChipDatePickerComponent } from './opt-chip-date-picker/opt-chip-date-picker.component';
+import { TypographyComponent } from './typography/typography.component';
 
 
 
@@ -122,6 +123,8 @@ const appRoutes: Routes = [
   { path: 'opt-chip-input', component: OptChipInputComponent},
   { path: 'app-opt-chip-date-picker', component: OptChipDatePickerComponent},
   { path: 'picker', component: OptChipInputComponent},
+  { path: 'typography', component: TypographyComponent},
+
   // { path: 'opt-document-select', component: OptDocumentSelectComponent},
 
   { path: '', redirectTo:'/opt-booking-summary', pathMatch:'full'},
@@ -166,8 +169,7 @@ const appRoutes: Routes = [
     ScrollDispatchModule
 
   ],
-  declarations: [ ],
- // declarations: [OptChipInputComponent],
+  declarations: [],
 
 
 
@@ -211,7 +213,8 @@ export class DemoMaterialModule {}
     OptIndividualClientPopupComponent,
     // OptDocumentSelectComponent,
 
-    RoutingProjectComponent
+    RoutingProjectComponent,
+    TypographyComponent,
   ],
   imports: [
     BrowserModule,
