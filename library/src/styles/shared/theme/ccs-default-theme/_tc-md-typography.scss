@@ -3,9 +3,13 @@
 
 
 $base-text-color: #000;
+
 $color-base: $base-text-color;
+
 $light: lighten($color-base,60%);
 $dark: darken($color-base,15%);
+
+
 $lighter: lighten($color-base,30%);
 $darker: darken($color-base,30%);
 

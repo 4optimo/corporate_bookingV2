@@ -1,0 +1,21 @@
+.opt_chip {
+
+  .dropdown-cage{
+    position: absolute;
+    max-width: 250px;
+    height: auto;
+    //border: 1px solid #454545;
+    background-color: #fff;
+    @include box_shadow(3);
+    padding: 3px;
+
+  }
+
+
+  input{
+    font-size: 14px;
+
+
+  }
+
+}

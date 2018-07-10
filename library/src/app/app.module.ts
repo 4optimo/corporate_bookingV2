@@ -89,6 +89,9 @@ import { OptCustomerFullPageComponent } from './opt-customer-full-page/opt-custo
 import { OptFabComponent } from './opt-fab/opt-fab.component';
 import { OptClientPopupComponent } from './opt-client-popup/opt-client-popup.component';
 import { OptIndividualClientPopupComponent } from './opt-individual-client-popup/opt-individual-client-popup.component';
+import { OptChipInputComponent } from './opt-chip-input/opt-chip-input.component';
+
+import { OptChipDatePickerComponent } from './opt-chip-date-picker/opt-chip-date-picker.component';
 
 
 
@@ -116,7 +119,9 @@ const appRoutes: Routes = [
   { path: 'opt-paginator', component: OptPaginatorComponent},
   { path: 'opt-customer-full-page', component: OptCustomerFullPageComponent},
   { path: 'opt-fab', component: OptFabComponent},
-
+  { path: 'opt-chip-input', component: OptChipInputComponent},
+  { path: 'app-opt-chip-date-picker', component: OptChipDatePickerComponent},
+  { path: 'picker', component: OptChipInputComponent},
   // { path: 'opt-document-select', component: OptDocumentSelectComponent},
 
   { path: '', redirectTo:'/opt-booking-summary', pathMatch:'full'},
@@ -161,7 +166,8 @@ const appRoutes: Routes = [
     ScrollDispatchModule
 
   ],
-  declarations: [],
+  declarations: [ ],
+ // declarations: [OptChipInputComponent],
 
 
 
@@ -172,7 +178,9 @@ export class DemoMaterialModule {}
 
   declarations: [
     AppComponent,
+    OptChipDatePickerComponent,
     ExpansionPanelComponent,
+    OptChipInputComponent,
     OptBookingListComponent,
     OptBookingDetailsComponent,
     AdditionalInformationComponent,
