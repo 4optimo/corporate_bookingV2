@@ -37,6 +37,12 @@
             flex-wrap: nowrap;
           }
         }
+        .opt-txt__body2{
+          line-height: 20px;
+        }
+        .opt-txt__body1{
+          line-height: 20px;
+        }
       }
       .__expansion-rgt--side{
         width: 40px;
@@ -61,10 +67,16 @@
   mat-icon{
     color: #909cac;
   }
-
   .opt {
 
     &_booking__detail {
+      .opt_expand--container{
+        padding: 0;
+      }
+      //.mat-expansion-panel-header {
+      //  min-height: 45px;
+      //  height: 48px !important;
+      //}
       padding-top: 15px;
 
       .row {
@@ -175,6 +187,7 @@
 &_expand-header {
   background-color: #f4f4f4;
   height: 55px;
+  margin-top: 2px;
 
   .expand-icon{
     text-align: right;
@@ -278,6 +291,17 @@
   }
 }
 }
+  //end
+
+  //over ride section heading component
+  .opt-section__heading {
+    .section-heading {
+      .__title {
+          padding: 0 !important;
+        }
+    }
+  }
+  //end
 
   .opt_price-section{
     padding-right: 10px;
@@ -308,7 +332,6 @@
   font-weight: 600;
 }
 }
-
   .mat-expansion-panel-body{
 padding: 0;
 
@@ -371,6 +394,16 @@ margin-right: 0;
 }
 .mat-expansion-panel.opt-expand--line.mat-expanded{
   border-left: 4px solid #4bb3fa;
+
+  &.first-outer-wrapper {
+    .opt_expand__header {
+      border-bottom: 1px solid $line_color;
+      margin-top: 15px;
+      &:nth-child(1) {
+        margin-top: 0;
+      }
+    }
+  }
 }
 .mat-expansion-panel-header {
   padding: 0;
@@ -440,14 +473,8 @@ margin-right: 0;
 }
   .booking-summary {
     .flex-row {
-  //margin-bottom: 15px;
 
-  .col {
-    &:nth-child(2) {
-      //background-color: white;
-      //border-right: 1px #909cac solid;
-      //border-left: 1px #909cac solid;
-    }
+    .col {
     &:nth-child(1){
       .profile__image {
         display: none;
@@ -462,18 +489,14 @@ margin-right: 0;
     pointer-events: none;
 
   }
-
-}
+    }
   }
 
   .opt-section__heading{
-.mat-expansion-indicator{
-  line-height: 1;
-}
-.mat-expansion-panel-header {
-  min-height: 45px;
-  height: 48px !important;
-}
+  .mat-expansion-indicator{
+    line-height: 1;
+  }
+
   .mat-expansion-panel.mat-expanded .mat-expansion-panel-content {
     box-shadow: none;
   }
