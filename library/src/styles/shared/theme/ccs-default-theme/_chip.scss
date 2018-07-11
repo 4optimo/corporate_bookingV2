@@ -21,8 +21,8 @@
       font-weight: 400;
       @include border-radius(15px);
 
-      min-height: 32px;
-      line-height: 32px;
+      min-height: 25px;
+      line-height: 25px;
       font-size: 13px;
       padding: 0 0 0 12px;
       //border: 1px solid gray;
@@ -42,7 +42,7 @@
         i{
           font-size: 25px!important;
 
-          margin-right: 4px;
+          margin-right: 2px;
           color: #8b8b8b;
         }
 
