@@ -51,14 +51,25 @@
           <!--<div class="opt_flex&#45;&#45;container">-->
             <!--<div class="opt_flex__item">-->
               <div class="btn __normal">
-                <div mat-raised-button class="btn-color-default">Search</div>
+                <div mat-raised-button>Search</div>
               </div>
             <!--</div>-->
             <!--<div class="opt_flex__item">-->
               <!--<i class="material-icons btn-default">filter_list</i>-->
             <!--</div>-->
             <button mat-icon-button >
-              <mat-icon class="btn-color-default material-icons">filter_list</mat-icon>
+              <!--<mat-icon class="btn-color-default material-icons">filter_list</mat-icon>-->
+              <mat-icon mat-button [matMenuTriggerFor]="menu" class="btn-color-default material-icons">filter_list</mat-icon>
+              <mat-menu #menu="matMenu" class="mat-menu">
+                <button mat-menu-item>
+                  <span><i class="material-icons">search</i></span>
+                  <span>General Search</span>
+                </button>
+                <button mat-menu-item>
+                  <span><i class="material-icons">settings_applications</i></span>
+                  <span>Advanced Search</span>
+                </button>
+              </mat-menu>
             </button>
           <!--</div>-->
         </div>
