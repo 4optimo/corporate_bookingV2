@@ -8,6 +8,12 @@ import { Component, OnInit } from '@angular/core';
 export class OptChipInputComponent implements OnInit {
 
   constructor() { }
+  hideComponent: string;
+
+  isOpen() {
+    this.hideComponent = "hideChip";
+    console.log("button clicked");
+  }
 
   ngOnInit() {
   }

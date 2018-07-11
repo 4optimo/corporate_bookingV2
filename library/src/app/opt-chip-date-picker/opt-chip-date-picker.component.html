@@ -1,7 +1,8 @@
-<div class="opt_chip __datepick">
+<div class="opt_chip __datepick" [ngClass]="isOpen ? 'active':'hideChip'">
+  <!--"[style.display]="isOpen ? 'none':'block'"-->
   <div class="opt_flex--container container-nw-row">
     <div class="opt_flex__item">
-      <label class="category-type opt-txt__light">Name</label>
+      <label class="category-type opt-txt__light">Date</label>
     </div>
     <div class="opt_flex__item">
       <div class="opt_chip--wrapper">
@@ -20,13 +21,11 @@
 
                </div>
 
-
-
             </div>
 
           </div>
           <div class="opt_flex__item--inherit">
-            <i class="material-icons cancel">cancel</i>
+            <i class="material-icons cancel"  (click)="isOpen = !isOpen;">cancel</i>
           </div>
         </div>
       </div>
