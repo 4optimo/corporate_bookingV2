@@ -45,9 +45,7 @@
                         <!--<div class="price-details">-->
                         <div class="opt_flex__item"><span class="lbl lbl__vat">Inc Vat</span></div>
                         <div class=" opt_flex__item opt-typo-subhead-2 price">£300.00</div>
-                        <!--<div class="opt_flex__item opt-txt__light btn btn-select">Select</div>-->
                         <div mat-raised-button class="btn-color-default opt_flex__item opt-txt__light btn btn-select">Select</div>
-                        <!--</div>-->
                       </mat-panel-description>
                     </div>
                   </div>
@@ -79,20 +77,25 @@
                   <button mat-icon-button >
                     <mat-icon class="btn-color-default ">launch</mat-icon>
                   </button>
-                  <!--<i class="material-icons color file_copy-icon btn">file_copy</i>-->
-                  <!--<i class="material-icons color launch-icon btn">launch</i>-->
                 </div>
               </div>
             </div>
           </div>
 
           <div class="opt_expanded-view">
+
+
+            <!--Import opt-booking-summary component-->
             <app-opt-booking-summary></app-opt-booking-summary>
+            <!--end of opt-booking-summary component-->
+
+
             <br>
 
 
+            <!--Import opt-section-heading component-->
             <app-opt-section-heading></app-opt-section-heading>
-            <!--labels-->
+            <!--end of opt-section-heading component-->
 
 
             <div class="opt_flex--container test-wrapper">
@@ -138,6 +141,11 @@
 <code class="opt-tag">
   &lt; app-opt-booking-list &gt;
   &lt; / app-opt-booking-list &gt;
+
+  <br><br>
+
+  &lt; app-opt-selection-heading &gt;
+  &lt; / app-opt-section-heading &gt;
 </code>
 
     <!-- end component -->
