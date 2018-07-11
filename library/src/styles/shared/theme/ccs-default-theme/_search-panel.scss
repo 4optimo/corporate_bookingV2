@@ -28,14 +28,13 @@
     .btn{
       //border: 1px solid $separator-border-color;
       padding: 5px;
+      color: white !important;
 
       &.__normal{
         background-color: $badge-success-bg;
-        color: white;
       }
       &.__advance{
         background-color: $unavailable-state-dark-bg;
-        color: white;
       }
     }
     .mat-input-container >  mat-form-field, ng-tns-c4-0, mat-primary, mat-form-field-type-mat-input, mat-form-field-can-float, mat-form-field-hide-placeholder,mat-form-field-should-float{
