@@ -103,7 +103,14 @@ html{
 
   .typo-txt-tab{
     padding: 10px;
+
+    .table-striped{
+      .header {
+        width: 30%;
+      }
+    }
   }
+
 
 }
 
