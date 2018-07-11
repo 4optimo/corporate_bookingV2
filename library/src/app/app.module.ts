@@ -93,6 +93,7 @@ import { OptChipInputComponent } from './opt-chip-input/opt-chip-input.component
 
 import { OptChipDatePickerComponent } from './opt-chip-date-picker/opt-chip-date-picker.component';
 import { TypographyComponent } from './typography/typography.component';
+import { OptItemPopupComponent } from './opt-item-popup/opt-item-popup.component';
 
 
 
@@ -169,10 +170,6 @@ const appRoutes: Routes = [
     ScrollDispatchModule
 
   ],
-  declarations: [],
-
-
-
 })
 export class DemoMaterialModule {}
 
@@ -212,7 +209,7 @@ export class DemoMaterialModule {}
     OptClientPopupComponent,
     OptIndividualClientPopupComponent,
     // OptDocumentSelectComponent,
-
+    OptItemPopupComponent,
     RoutingProjectComponent,
     TypographyComponent,
   ],
@@ -240,7 +237,7 @@ export class DemoMaterialModule {}
     RouterModule.forRoot(appRoutes)
   ],
 
-  entryComponents:[OptPopupModalComponent, OptPopupWindowComponent, OptClientPopupComponent, OptIndividualClientPopupComponent],
+  entryComponents:[OptPopupModalComponent, OptPopupWindowComponent, OptClientPopupComponent, OptIndividualClientPopupComponent, OptItemPopupComponent],
   providers: [{provide: APP_BASE_HREF, useValue : '/' }],
 
   bootstrap: [AppComponent],
