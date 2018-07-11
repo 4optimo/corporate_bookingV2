@@ -14,8 +14,8 @@ html {
 }
 
 .template-header {
-  adding-top: 60px;
-  padding-bottom: 60px;
+
+  padding-bottom: 20px;
   font-size: 24px;
   text-align: left;
   position: relative;
@@ -42,6 +42,8 @@ html {
     p{
       text-transform: lowercase;
       font-family: Roboto, "Helvetica Neue", sans-serif;
+      font-size: 11px;
+      font-weight: 300;
     }
   }
 
