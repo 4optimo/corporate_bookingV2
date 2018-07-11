@@ -8,6 +8,7 @@ $rub: 'Rubik', sans-serif;
     .col {
       background-color: $default-state-bg;
       &:nth-child(2) {
+        border-right: 1px dashed #ccc;
         background-color: $default-state-dark-bg;
       }
     }
@@ -68,13 +69,13 @@ $rub: 'Rubik', sans-serif;
   }
 
   .details {
+    height: 100%;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-content: stretch;
-    align-items: flex-start;
-    height: 100%;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: space-between;
     .flex-horizontal {
       order: 0;
       flex: 1 1 auto;
@@ -106,6 +107,12 @@ $rub: 'Rubik', sans-serif;
 
   .valuation{
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: space-between;
     .flex-horizontal{
       order: 0;
       flex: 1 1 auto;
@@ -118,12 +125,15 @@ $rub: 'Rubik', sans-serif;
     }
 
     >.opt_flex--container{
-      margin-bottom: 3px;
+      &:first-child{
+        margin-bottom: 5px;
+      }
     }
   }
 }
 
 .booking-status-icon{
+  display: none;
   i{
     font-size: 18px;
   }
@@ -144,10 +154,21 @@ $rub: 'Rubik', sans-serif;
   }
   .profile__image {
     display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: space-between;
     align-items: center;
     padding-right: 15px;
   }
   .profile__details {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: space-between;
     .telephone-field{
       margin-top: 5px;
     }
@@ -207,7 +228,7 @@ $rub: 'Rubik', sans-serif;
 }
 
 .typo{
-  font-family: 'Rubik', sans-serif;
+  //font-family: 'Rubik', sans-serif;
   font-size: 14px;
   font-weight: 400;
   &.sz-11{
@@ -252,7 +273,7 @@ $rub: 'Rubik', sans-serif;
 }
 
 .font-style-01 {
-  font-family: $rub;
+  //font-family: $rub;
   font-size: 18px;
   font-weight: 500;
   color: #3a424d;
@@ -263,49 +284,49 @@ $rub: 'Rubik', sans-serif;
 }
 
 .font-style-02 {
-  font-family: $rub;
+  //font-family: $rub;
   font-size: 11px;
   font-weight: 400;
   color: #3a424d;
 }
 
 .font-style-03 {
-  font-family: 'Rubik', sans-serif;
+  //font-family: 'Rubik', sans-serif;
   font-size: 11px;
   font-weight: 400;
   color: #909cac;
 }
 
 .font-style-04 {
-  font-family: 'Rubik', sans-serif;
+  //font-family: 'Rubik', sans-serif;
   font-size: 13px;
   font-weight: 500;
   color: #27bfc2;
 }
 
 .font-style-05 {
-  font-family: 'Rubik', sans-serif;
+  //font-family: 'Rubik', sans-serif;
   font-size: 16px;
   font-weight: 500;
   color: #27bfc2;
 }
 
 .font-style-06 {
-  font-family: 'Rubik', sans-serif;
+  //font-family: 'Rubik', sans-serif;
   font-size: 12px;
   font-weight: 400;
   color: #333e47;
 }
 
 .font-style-07 {
-  font-family: 'Rubik', sans-serif;
+  //font-family: 'Rubik', sans-serif;
   font-size: 14px;
   font-weight: 500;
   color: #909cac;
 }
 
 .link {
-  font-family: 'Rubik', sans-serif;
+  //font-family: 'Rubik', sans-serif;
   text-decoration: underline;
   cursor: pointer;
   &.__default {
@@ -452,11 +473,16 @@ i {
 }
 
 .valuation{
+
+  .opt-txt__caption{
+    line-height: 1.45;
+  }
+
   .opt_flex--container{
 
     &.parent-width{
       margin: 0 -15px;
-      margin-bottom: 3px;
+      //margin-bottom: 3px;
       padding: 3px 15px;
     }
 
@@ -470,6 +496,13 @@ i {
         align-self: center;
       }
     }
+
+    &:last-child{
+      .badge{
+        margin-top: 3px;
+      }
+    }
+
     .opt_flex__item{
       justify-content: center;
       align-self: center;
@@ -489,21 +522,21 @@ i {
 }
 
 .opt-booking-summary-select-lg{
-  font-family: $rub;
+  //font-family: $rub;
   .mat-select-value{
     font-size: 18px;
     font-weight: 500;
   }
   .mat-option{
-    font-family: $rub;
+    //font-family: $rub;
     .mat-option-text{
-      font-family: $rub;
+      //font-family: $rub;
     }
   }
 }
 
 .opt-booking-summary-select-sm {
-  font-family: $rub;
+  //font-family: $rub;
   &.themed{
     .mat-select-value{
       color: #27bfc2;
@@ -519,9 +552,9 @@ i {
   font-weight: 400;
   }
   .mat-option{
-    font-family: $rub;
+    //font-family: $rub;
     .mat-option-text{
-      font-family: $rub;
+      //font-family: $rub;
     }
   }
 }

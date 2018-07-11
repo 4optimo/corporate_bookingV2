@@ -15,7 +15,8 @@ $darker: darken($color-base,30%);
 
 body{
   color:$base-text-color ;
-  font-family: $font-family-rubik;
+  //font-family: $font-family-rubik;
+  font-family: 'Roboto', sans-serif;
 }
 
 //circle-icon defalt colors
@@ -26,13 +27,16 @@ $background-item:#fff;
 // state text  colors ...........................................
 
 .opt-txt__primary {
-  color: $opt-text-color__primary;
+  color: $opt-text-color__primary !important;
 }
 .opt-txt__secondary {
-  color: $opt-text-color__secondary;
+  color: $opt-text-color__secondary !important;
 }
 .opt-txt__tertiary {
-  color: $opt-text-color__tertiary;
+  color: $opt-text-color__tertiary !important;
+}
+.opt-txt__quaternary {
+  color: $opt-text-color__quaternary !important;
 }
 
 
@@ -476,6 +480,25 @@ p {
   border-top: none;
 }
 
+//Font Weight
+
+.opt-fontweight{
+  &__normal{
+    font-weight: 400 !important;
+  }
+
+  &__medium{
+    font-weight: 500 !important;
+  }
+
+  &__bold{
+    font-weight: 600 !important;
+  }
+
+  &__bolder{
+    font-weight: 600 !important;
+  }
+}
 
 
 ///**
