@@ -59,6 +59,9 @@
       align-self: center;
     }
   }
+  .opt__subtitle-2-small{
+    line-height: 20px;
+  }
 
   //over ride booking details component
   .price__details{
@@ -70,6 +73,12 @@
   .opt {
 
     &_booking__detail {
+      .mat-progress-bar-fill{
+        background-color: $border_color;
+        ::after {
+          background-color: $border_color;
+        }
+      }
       .opt_expand--container{
         padding: 0;
       }
