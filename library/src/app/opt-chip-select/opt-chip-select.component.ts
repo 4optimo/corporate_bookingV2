@@ -11,7 +11,12 @@ export interface Food {
   styleUrls: ['./opt-chip-select.component.scss']
 })
 export class OptChipSelectComponent  {
+  hideComponent: string;
 
+  isOpen() {
+    this.hideComponent = "hideChip";
+    console.log("button clicked");
+  }
 
 
   foods: Food[] = [

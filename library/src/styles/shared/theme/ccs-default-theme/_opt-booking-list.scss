@@ -7,6 +7,15 @@
 
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 
+  .search-panel-wrapper{
+    margin: -15px -15px 10px -15px;
+    padding: 15px;
+    background-color: #393d40;
+    border: none;
+    border-radius: 0;
+    padding-top: 0;
+  }
+
   .mat-expansion-panel{
     &:not([class*=mat-elevation-z]){
       box-shadow: none;
@@ -493,7 +502,7 @@ margin-right: 0;
         display: none;
     }
     .mat-select-arrow-wrapper{
-      visibility: hidden    ;
+      visibility: hidden   ;
     }
     pointer-events: none;
 
