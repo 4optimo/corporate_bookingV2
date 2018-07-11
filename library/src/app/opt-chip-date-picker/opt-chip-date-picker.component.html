@@ -1,7 +1,8 @@
-<div class="opt_chip __datepick">
+<div class="opt_chip __datepick" [ngClass]="isOpen ? 'active':'hideChip'">
+  <!--"[style.display]="isOpen ? 'none':'block'"-->
   <div class="opt_flex--container container-nw-row">
     <div class="opt_flex__item">
-      <label class="category-type opt-txt__light">Name</label>
+      <label class="category-type opt-txt__light">Date</label>
     </div>
     <div class="opt_flex__item">
       <div class="opt_chip--wrapper">
@@ -11,26 +12,20 @@
             12/3/18
             <!--</div>-->
 
-            <div class="dropdown-cage">
+            <div class="dropdown-cage date-picker">
 
-              <form class="example-form">
+               <div class="opt_flex--container tc-flex-item__center">
+                 <div class="opt_flex__item"> <input matInput [matDatepicker]="picker" placeholder="Choose a date"></div>
+                 <div class="opt_flex__item"><mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                   <mat-datepicker #picker startView="year" [startAt]="startDate"></mat-datepicker></div>
 
-                  <mat-form-field>
-                    <input matInput [matDatepicker]="picker" >
-                    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-                    <mat-datepicker #picker></mat-datepicker>
-                  </mat-form-field>
-
-
-
-
-              </form>
+               </div>
 
             </div>
 
           </div>
           <div class="opt_flex__item--inherit">
-            <i class="material-icons cancel">cancel</i>
+            <i class="material-icons cancel"  (click)="isOpen = !isOpen;">cancel</i>
           </div>
         </div>
       </div>

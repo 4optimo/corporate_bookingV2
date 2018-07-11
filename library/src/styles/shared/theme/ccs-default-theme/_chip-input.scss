@@ -1,5 +1,6 @@
 .opt_chip {
-
+  color: #444;
+  background-color: #fff;
   .dropdown-cage{
     position: absolute;
     max-width: 250px;
@@ -8,13 +9,25 @@
     background-color: #fff;
     @include box_shadow(3);
     padding: 3px;
+    min-height: 51px;
 
   }
 
 
   input{
     font-size: 14px;
+    color: #797979;
+    padding-left: 10px;
 
+
+  }
+
+  .date-picker{
+    .mat-icon-button{
+      width: 20px;
+      height: 20px;
+      margin-top: 13px;
+    }
 
   }
 

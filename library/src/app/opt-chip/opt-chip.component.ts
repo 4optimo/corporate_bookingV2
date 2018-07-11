@@ -10,6 +10,12 @@ import {FormBuilder, FormGroup} from '@angular/forms';
 
 export class OptChipComponent implements OnInit {
 
+  hideComponent: string;
+
+  isOpen() {
+    this.hideComponent = "hideChip";
+    console.log("button clicked");
+  }
   constructor() {
   }
   // myGroup:FormGroup;

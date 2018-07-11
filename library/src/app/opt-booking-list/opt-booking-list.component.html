@@ -1,282 +1,297 @@
-<div class="opt_booking__list">
-  <mat-accordion>
-    <!--<mat-expansion-panel #myPanel [disabled]="true" class="opt-expand&#45;&#45;line" >-->
-    <!--<mat-expansion-panel-header class="opt_width-define opt_expand__header" collapsedHeight=".collapsedHeight" expandedHeight=".expandedHeight"  >-->
-      <!--<div class="opt_expand&#45;&#45;container">-->
-        <!--<div class="col-sm-4 col-md-4	col-lg-4	col-xl-4">-->
-          <!--<mat-panel-title class="opt_flex&#45;&#45;container tc-flex-item__center">-->
-            <!--<div class="opt_flex__item&#45;&#45;inherit ">-->
-              <!--<div class="icon__cage">-->
-                <!--<div class="opt_circle__cancelled">-->
-                  <!--<div class="date">{{date}}-->
-                    <!--<div class="month_year">  {{month}} <br>{{year}}</div>-->
-                  <!--</div>-->
-                <!--</div>-->
-              <!--</div>-->
-            <!--</div>-->
-            <!--<div class="opt_flex__item">-->
-              <!--<div class="opt_width-calc">-->
-                <!--<div><span class="opt-txt__body2 ref_no">PB3456</span><span class="opt-txt__body2"> - Mr.Jone Albert</span></div>-->
-                <!--<div><span class="opt-txt__body2">Pandarix</span></div>-->
-              <!--</div>-->
-            <!--</div>-->
-          <!--</mat-panel-title>-->
-        <!--</div>-->
-        <!--<div class="col-sm-4 col-md-4	col-lg-4	col-xl-4">-->
-          <!--<mat-panel-description class="opt_flex&#45;&#45;container">-->
-            <!--<div>-->
-              <!--<div class="opt_flex__item tc-flex-item__center opt-txt__body1">5-JAN-18 | <span class="opt-txt__body2"> Personal Training Bookings</span></div>-->
-              <!--<div class="opt-txt__body1"><span>Corporate </span>| <span class="no-color&#45;&#45;state">Cancelled</span></div>-->
-            <!--</div>-->
-          <!--</mat-panel-description>-->
-        <!--</div>-->
-        <!--<div class="col-sm-4  col-md-4	col-lg-4	col-xl-4  opt_price-section">-->
-        <!--<mat-panel-description class="opt_flex&#45;&#45;container">-->
-          <!--<div class="opt_flex__item"><span class="lbl lbl__vat">Inc Vat</span></div>-->
-          <!--<div class=" opt_flex__item opt-typo-subhead-2 price">£300.00</div>-->
-          <!--&lt;!&ndash;<div class="opt_flex__item opt-txt__light btn btn-select">Select</div>&ndash;&gt;-->
-          <!--<div mat-raised-button class="btn-color-default opt_flex__item opt-txt__light btn btn-select">Select</div>-->
-          <!--<div class="opt_flex__item action__button">-->
-           <!--<button mat-icon-button color="primary" (click)="expandPannel()" [disableRipple]="true" >-->
-            <!--<mat-icon>{{matIcon}}</mat-icon>-->
-            <!--</button>-->
-          <!--</div>-->
 
-        <!--</mat-panel-description>-->
+<mat-tab-group>
+  <mat-tab label="Booking List">
 
-      <!--</div>-->
-
-      <!--</div>-->
-    <!--</mat-expansion-panel-header>-->
+<!-- component -->
 
 
-    <!--<div class="opt_expand-header">-->
-      <!--<div class="col-sm-9 opt_flex__item"></div>-->
-      <!--<div class="col-sm-3 opt_flex__item expand-icon">-->
 
-        <!--<button mat-icon-button >-->
-          <!--<mat-icon class="btn-color-default ">attach_money</mat-icon>-->
-        <!--</button>-->
-        <!--<button mat-icon-button >-->
-          <!--<mat-icon class="btn-color-default ">file_copy</mat-icon>-->
-        <!--</button>-->
-        <!--<button mat-icon-button >-->
-          <!--<mat-icon class="btn-color-default ">launch</mat-icon>-->
-        <!--</button>-->
-          <!--&lt;!&ndash;<i class="material-icons color file_copy-icon btn">file_copy</i>&ndash;&gt;-->
-          <!--&lt;!&ndash;<i class="material-icons color launch-icon btn">launch</i>&ndash;&gt;-->
-      <!--</div>-->
-    <!--</div>-->
-    <!--<div class="opt_expanded-view">-->
-      <!--<app-opt-booking-summary></app-opt-booking-summary>-->
-      <!--<br>-->
-      <!--&lt;!&ndash;Need to add selection heading component&ndash;&gt;-->
-
-        <!--&lt;!&ndash;<section class="opt-section__heading">&ndash;&gt;-->
-          <!--&lt;!&ndash;<mat-accordion>&ndash;&gt;-->
-
-            <!--&lt;!&ndash;<mat-expansion-panel #myPanel2 class="section-heading __main">&ndash;&gt;-->
-              <!--&lt;!&ndash;<mat-expansion-panel-header class="__title" >&ndash;&gt;-->
-                <!--&lt;!&ndash;<h1>Booking Details</h1>&ndash;&gt;-->
-
-
-              <!--&lt;!&ndash;</mat-expansion-panel-header>&ndash;&gt;-->
-
-              <!--&lt;!&ndash;<app-opt-booking-details></app-opt-booking-details>&ndash;&gt;-->
-
-
-            <!--&lt;!&ndash;</mat-expansion-panel>&ndash;&gt;-->
-
-          <!--&lt;!&ndash;</mat-accordion>&ndash;&gt;-->
-
-        <!--&lt;!&ndash;</section>&ndash;&gt;-->
-
-      <!--<app-opt-section-heading></app-opt-section-heading>-->
-      <!--&lt;!&ndash;labels&ndash;&gt;-->
-
-
-        <!--<div class="opt_flex&#45;&#45;container test-wrapper">-->
-          <!--<div class=" opt_latest-note ">-->
-            <!--<div class="opt_flex__item&#45;&#45;inherit item1">-->
-              <!--<div class="background">-->
-                <!--<span class="latest-note-icon">-->
-                  <!--<i class="material-icons note-icon">insert_drive_file</i>-->
-                <!--</span>-->
-              <!--</div>-->
-            <!--</div>-->
-            <!--<div class="opt_flex__item item2 ">-->
-              <!--<div class="text1">-->
-                <!--<div class="opt-txt__body2">Latest Note</div>-->
-                <!--<div class="opt-txt__light">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aeneam commodo ligula eget dolor.</div>-->
-                <!--</div>-->
-              <!--</div>-->
-            <!--<div class="opt_flex__item&#45;&#45;inherit item3 ">-->
-              <!--<div class="text2">-->
-                <!--<span class="opt-txt__body1">10:00 PM | 20-Jan-2018</span>-->
-              <!--</div>-->
-            <!--</div>-->
-          <!--</div>-->
-      <!--</div>-->
-
-      <!--<div class="opt_flex&#45;&#45;container  test-wrapper">-->
-        <!--<div class="opt_dispatch-status">-->
-          <!--<div class="opt_flex__item&#45;&#45;inherit item1">-->
-            <!--<span>-->
-              <!--<i class="material-icons dispatch-icon">call_made</i>-->
-            <!--</span>-->
-          <!--</div>-->
-          <!--<div class="opt_flex__item item2 ">-->
-            <!--<div class="opt-txt__body2 ">Dispatch Status</div>-->
-          <!--</div>-->
-        <!--</div>-->
-      <!--</div>-->
-    <!--</div>-->
-  <!--</mat-expansion-panel>-->
-    <mat-expansion-panel #myPanel [disabled]="true" class="opt-expand--line" >
-    <mat-expansion-panel-header class="opt_width-define opt_expand__header first-outer-wrapper" collapsedHeight=".collapsedHeight" expandedHeight=".expandedHeight"  >
-      <div class="opt_expand--container">
-        <div class="opt_flex--container">
-          <div class="opt_flex__item __expansion-lft--side">
-            <div class="row opt_flex--container tc-flex-item__center ">
-              <div class="col-sm-6 col-md-4	col-lg-4	col-xs-12">
-                  <mat-panel-title class="opt_flex--container tc-flex-item__center">
-                    <div class="opt_flex__item--inherit ">
-                      <div class="icon__cage">
-                        <div class="opt_circle__confirmed">
-                          <div class="date">{{date}}
-                            <div class="month_year">  {{month}} <br>{{year}}</div>
+    <div class="opt_booking__list">
+      <mat-accordion>
+        <mat-expansion-panel #myPanel [disabled]="true" class="opt-expand--line" >
+          <mat-expansion-panel-header class="opt_width-define opt_expand__header first-outer-wrapper" collapsedHeight=".collapsedHeight" expandedHeight=".expandedHeight"  >
+            <div class="opt_expand--container">
+              <div class="opt_flex--container">
+                <div class="opt_flex__item __expansion-lft--side">
+                  <div class="row opt_flex--container tc-flex-item__center ">
+                    <div class="col-sm-6 col-md-4	col-lg-4	col-xs-12">
+                      <mat-panel-title class="opt_flex--container tc-flex-item__center">
+                        <div class="opt_flex__item--inherit ">
+                          <div class="icon__cage">
+                            <div class="opt_circle__confirmed">
+                              <div class="date">{{date}}
+                                <div class="month_year">  {{month}} <br>{{year}}</div>
+                              </div>
+                            </div>
                           </div>
                         </div>
-                      </div>
+                        <div class="opt_flex__item">
+                          <div class="opt_width-calc">
+                            <div><span class="opt-txt__body2-small ref_no">PB3456</span><span class="opt-txt__body2-small"> - Mr.Jone Albert</span></div>
+                            <div><span class="opt-txt__body2-small">Pandarix</span></div>
+                          </div>
+                        </div>
+                      </mat-panel-title>
                     </div>
-                    <div class="opt_flex__item">
-                      <div class="opt_width-calc">
-                        <div><span class="opt-txt__body2-small ref_no">PB3456</span><span class="opt-txt__body2-small"> - Mr.Jone Albert</span></div>
-                        <div><span class="opt-txt__body2-small">Pandarix</span></div>
-                      </div>
+                    <div class="col-sm-6 col-md-4	col-lg-4	col-xs-12">
+                      <mat-panel-description class="opt_flex--container">
+                        <div class="middle-details">
+                          <div class="opt_flex__item tc-flex-item__center opt-txt__body1-small">5-JAN-18 | <span class="opt-txt__body2-small"> Personal Training Bookings</span></div>
+                          <div><span class="opt-txt__body1-small">Corporate </span>| <span class="opt-txt__tertiary opt-txt__body1-small">Confirmed</span></div>
+                        </div>
+                      </mat-panel-description>
                     </div>
-                  </mat-panel-title>
-                </div>
-              <div class="col-sm-6 col-md-4	col-lg-4	col-xs-12">
-                  <mat-panel-description class="opt_flex--container">
-                    <div class="middle-details">
-                      <div class="opt_flex__item tc-flex-item__center opt-txt__body1-small">5-JAN-18 | <span class="opt-txt__body2-small"> Personal Training Bookings</span></div>
-                      <div><span class="opt-txt__body1-small">Corporate </span>| <span class="opt-txt__tertiary opt-txt__body1-small">Confirmed</span></div>
+                    <div class="col-sm-12  col-md-4	col-lg-4	col-xs-12  opt_price-section">
+                      <mat-panel-description class="opt_flex--container">
+                        <!--<div class="price-details">-->
+                        <div class="opt_flex__item"><span class="lbl lbl__vat">Inc Vat</span></div>
+                        <div class=" opt_flex__item opt-typo-subhead-2 price">£300.00</div>
+                        <!--<div class="opt_flex__item opt-txt__light btn btn-select">Select</div>-->
+                        <div mat-raised-button class="btn-color-default opt_flex__item opt-txt__light btn btn-select">Select</div>
+                        <!--</div>-->
+                      </mat-panel-description>
                     </div>
-                  </mat-panel-description>
+                  </div>
                 </div>
-              <div class="col-sm-12  col-md-4	col-lg-4	col-xs-12  opt_price-section">
-                  <mat-panel-description class="opt_flex--container">
-                    <!--<div class="price-details">-->
-                    <div class="opt_flex__item"><span class="lbl lbl__vat">Inc Vat</span></div>
-                    <div class=" opt_flex__item opt-typo-subhead-2 price">£300.00</div>
-                    <!--<div class="opt_flex__item opt-txt__light btn btn-select">Select</div>-->
-                    <div mat-raised-button class="btn-color-default opt_flex__item opt-txt__light btn btn-select">Select</div>
-                    <!--</div>-->
-                  </mat-panel-description>
-                </div>
-            </div>
-          </div>
-          <div class="opt_flex__item __expansion-rgt--side">
-            <div class="col tc-flex-item__center">
-                <div class="opt_flex__item action__button tc-flex-item__center">
-                  <button class="down-arrow" mat-icon-button color="primary" (click)="expandPannel()" [disableRipple]="true" >
-                    <mat-icon>{{matIcon}}</mat-icon>
-                  </button>
+                <div class="opt_flex__item __expansion-rgt--side">
+                  <div class="col tc-flex-item__center">
+                    <div class="opt_flex__item action__button tc-flex-item__center">
+                      <button class="down-arrow" mat-icon-button color="primary" (click)="expandPannel()" [disableRipple]="true" >
+                        <mat-icon>{{matIcon}}</mat-icon>
+                      </button>
+                    </div>
+                  </div>
                 </div>
               </div>
-          </div>
-        </div>
-      </div>
-    </mat-expansion-panel-header>
+            </div>
+          </mat-expansion-panel-header>
 
-    <div class="opt_expand--container">
-        <div class="row">
-          <div class="opt_expand-header opt_flex--container">
-            <div class="col-sm-8 opt_flex__item"></div>
-            <div class="col-sm-4 opt_flex__item expand-icon">
-            <button mat-icon-button >
-              <mat-icon class="btn-color-default ">attach_money</mat-icon>
-            </button>
-            <button mat-icon-button >
-              <mat-icon class="btn-color-default ">file_copy</mat-icon>
-            </button>
-            <button mat-icon-button >
-          <mat-icon class="btn-color-default ">launch</mat-icon>
-        </button>
-        <!--<i class="material-icons color file_copy-icon btn">file_copy</i>-->
-        <!--<i class="material-icons color launch-icon btn">launch</i>-->
+          <div class="opt_expand--container">
+            <div class="row">
+              <div class="opt_expand-header opt_flex--container">
+                <div class="col-sm-8 opt_flex__item"></div>
+                <div class="col-sm-4 opt_flex__item expand-icon">
+                  <button mat-icon-button >
+                    <mat-icon class="btn-color-default ">attach_money</mat-icon>
+                  </button>
+                  <button mat-icon-button >
+                    <mat-icon class="btn-color-default ">file_copy</mat-icon>
+                  </button>
+                  <button mat-icon-button >
+                    <mat-icon class="btn-color-default ">launch</mat-icon>
+                  </button>
+                  <!--<i class="material-icons color file_copy-icon btn">file_copy</i>-->
+                  <!--<i class="material-icons color launch-icon btn">launch</i>-->
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
 
-    <div class="opt_expanded-view">
-      <app-opt-booking-summary></app-opt-booking-summary>
-      <br>
-      <!--Need to add selection heading component-->
-
-      <!--<section class="opt-section__heading">-->
-      <!--<mat-accordion>-->
-
-      <!--<mat-expansion-panel #myPanel2 class="section-heading __main">-->
-      <!--<mat-expansion-panel-header class="__title" >-->
-      <!--<h1>Booking Details</h1>-->
+          <div class="opt_expanded-view">
+            <app-opt-booking-summary></app-opt-booking-summary>
+            <br>
 
 
-      <!--</mat-expansion-panel-header>-->
-
-      <!--<app-opt-booking-details></app-opt-booking-details>-->
-
-
-      <!--</mat-expansion-panel>-->
-
-      <!--</mat-accordion>-->
-
-      <!--</section>-->
-
-      <app-opt-section-heading></app-opt-section-heading>
-      <!--labels-->
+            <app-opt-section-heading></app-opt-section-heading>
+            <!--labels-->
 
 
-      <div class="opt_flex--container test-wrapper">
-        <div class=" opt_latest-note ">
-          <div class="opt_flex__item--inherit item1">
-            <div class="background">
+            <div class="opt_flex--container test-wrapper">
+              <div class=" opt_latest-note ">
+                <div class="opt_flex__item--inherit item1">
+                  <div class="background">
                 <span class="latest-note-icon">
                   <i class="material-icons note-icon">insert_drive_file</i>
                 </span>
+                  </div>
+                </div>
+                <div class="opt_flex__item item2 ">
+                  <div class="text1">
+                    <div class="opt__subtitle-2-small">Latest Note</div>
+                    <div class="opt-txt__body1 opt-txt__light">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aeneam commodo ligula eget dolor.</div>
+                  </div>
+                  <div class="text2">
+                    <span class="opt-txt__body2-small">10:00 PM | 20-Jan-2018</span>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="opt_flex__item item2 ">
-            <div class="text1">
-              <div class="opt__subtitle-2">Latest Note</div>
-              <div class="opt-txt__light">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aeneam commodo ligula eget dolor.</div>
-            </div>
-            <div class="text2">
-              <span class="opt__subtitle-1-small">10:00 PM | 20-Jan-2018</span>
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <div class="opt_flex--container  test-wrapper">
-        <div class="opt_dispatch-status">
-          <div class="opt_flex__item--inherit item1">
+            <div class="opt_flex--container  test-wrapper">
+              <div class="opt_dispatch-status">
+                <div class="opt_flex__item--inherit item1">
             <span>
               <i class="material-icons dispatch-icon">call_made</i>
             </span>
+                </div>
+                <div class="opt_flex__item item2 ">
+                  <div class="opt__subtitle-2-small">Dispatch Status</div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="opt_flex__item item2 ">
-            <div class="opt__subtitle-2">Dispatch Status</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </mat-expansion-panel>
+        </mat-expansion-panel>
 
-  </mat-accordion>
-</div>
+      </mat-accordion>
+    </div>
+
+
+<code class="opt-tag">
+  &lt; app-opt-booking-list &gt;
+  &lt; / app-opt-booking-list &gt;
+</code>
+
+    <!-- end component -->
+
+
+  </mat-tab>
+  <mat-tab label="HTML">
+
+<textarea name="comments" cols="60" rows="3" class="code-view">
+
+
+    <div class="opt_booking__list">
+      <mat-accordion>
+        <mat-expansion-panel #myPanel [disabled]="true" class="opt-expand--line" >
+          <mat-expansion-panel-header class="opt_width-define opt_expand__header first-outer-wrapper" collapsedHeight=".collapsedHeight" expandedHeight=".expandedHeight"  >
+            <div class="opt_expand--container">
+              <div class="opt_flex--container">
+                <div class="opt_flex__item __expansion-lft--side">
+                  <div class="row opt_flex--container tc-flex-item__center ">
+                    <div class="col-sm-6 col-md-4	col-lg-4	col-xs-12">
+                      <mat-panel-title class="opt_flex--container tc-flex-item__center">
+                        <div class="opt_flex__item--inherit ">
+                          <div class="icon__cage">
+                            <div class="opt_circle__confirmed">
+                              <div class="date">{{date}}
+                                <div class="month_year">  {{month}} <br>{{year}}</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="opt_flex__item">
+                          <div class="opt_width-calc">
+                            <div><span class="opt-txt__body2-small ref_no">PB3456</span><span class="opt-txt__body2-small"> - Mr.Jone Albert</span></div>
+                            <div><span class="opt-txt__body2-small">Pandarix</span></div>
+                          </div>
+                        </div>
+                      </mat-panel-title>
+                    </div>
+                    <div class="col-sm-6 col-md-4	col-lg-4	col-xs-12">
+                      <mat-panel-description class="opt_flex--container">
+                        <div class="middle-details">
+                          <div class="opt_flex__item tc-flex-item__center opt-txt__body1-small">5-JAN-18 | <span class="opt-txt__body2-small"> Personal Training Bookings</span></div>
+                          <div><span class="opt-txt__body1-small">Corporate </span>| <span class="opt-txt__tertiary opt-txt__body1-small">Confirmed</span></div>
+                        </div>
+                      </mat-panel-description>
+                    </div>
+                    <div class="col-sm-12  col-md-4	col-lg-4	col-xs-12  opt_price-section">
+                      <mat-panel-description class="opt_flex--container">
+                        <!--<div class="price-details">-->
+                        <div class="opt_flex__item"><span class="lbl lbl__vat">Inc Vat</span></div>
+                        <div class=" opt_flex__item opt-typo-subhead-2 price">£300.00</div>
+                        <!--<div class="opt_flex__item opt-txt__light btn btn-select">Select</div>-->
+                        <div mat-raised-button class="btn-color-default opt_flex__item opt-txt__light btn btn-select">Select</div>
+                        <!--</div>-->
+                      </mat-panel-description>
+                    </div>
+                  </div>
+                </div>
+                <div class="opt_flex__item __expansion-rgt--side">
+                  <div class="col tc-flex-item__center">
+                    <div class="opt_flex__item action__button tc-flex-item__center">
+                      <button class="down-arrow" mat-icon-button color="primary" (click)="expandPannel()" [disableRipple]="true" >
+                        <mat-icon>{{matIcon}}</mat-icon>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </mat-expansion-panel-header>
+
+          <div class="opt_expand--container">
+            <div class="row">
+              <div class="opt_expand-header opt_flex--container">
+                <div class="col-sm-8 opt_flex__item"></div>
+                <div class="col-sm-4 opt_flex__item expand-icon">
+                  <button mat-icon-button >
+                    <mat-icon class="btn-color-default ">attach_money</mat-icon>
+                  </button>
+                  <button mat-icon-button >
+                    <mat-icon class="btn-color-default ">file_copy</mat-icon>
+                  </button>
+                  <button mat-icon-button >
+                    <mat-icon class="btn-color-default ">launch</mat-icon>
+                  </button>
+                  <!--<i class="material-icons color file_copy-icon btn">file_copy</i>-->
+                  <!--<i class="material-icons color launch-icon btn">launch</i>-->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="opt_expanded-view">
+            <app-opt-booking-summary></app-opt-booking-summary>
+            <br>
+
+
+            <app-opt-section-heading></app-opt-section-heading>
+            <!--labels-->
+
+
+            <div class="opt_flex--container test-wrapper">
+              <div class=" opt_latest-note ">
+                <div class="opt_flex__item--inherit item1">
+                  <div class="background">
+                <span class="latest-note-icon">
+                  <i class="material-icons note-icon">insert_drive_file</i>
+                </span>
+                  </div>
+                </div>
+                <div class="opt_flex__item item2 ">
+                  <div class="text1">
+                    <div class="opt__subtitle-2-small">Latest Note</div>
+                    <div class="opt-txt__body1 opt-txt__light">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aeneam commodo ligula eget dolor.</div>
+                  </div>
+                  <div class="text2">
+                    <span class="opt-txt__body2-small">10:00 PM | 20-Jan-2018</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="opt_flex--container  test-wrapper">
+              <div class="opt_dispatch-status">
+                <div class="opt_flex__item--inherit item1">
+            <span>
+              <i class="material-icons dispatch-icon">call_made</i>
+            </span>
+                </div>
+                <div class="opt_flex__item item2 ">
+                  <div class="opt__subtitle-2-small">Dispatch Status</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </mat-expansion-panel>
+
+      </mat-accordion>
+    </div>
+
+
+</textarea>
+
+  </mat-tab>
+</mat-tab-group>
+
+
+
+
+
+
+
+
 
 
 

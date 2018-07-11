@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Inject, OnInit} from '@angular/core';
+import {ModalContentComponent} from "../modal-content/modal-content.component";
+import {MatDialogRef} from "@angular/material";
 
 @Component({
   selector: 'app-opt-chip-date-picker',
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OptChipDatePickerComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+  }
+  hideComponent: string;
 
-  ngOnInit() {
+  isOpen() {
+    this.hideComponent = "hideChip";
+    console.log("button clicked");
   }
 
+  ngOnInit() {
+
+  }
 }
