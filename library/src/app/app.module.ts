@@ -126,6 +126,7 @@ const appRoutes: Routes = [
   { path: 'picker', component: OptChipInputComponent},
   { path: 'typography', component: TypographyComponent},
   { path: 'opt-chip-select', component: OptChipSelectComponent},
+  { path: 'opt-booking-payment', component: OptBookingPaymentComponent},
   // { path: 'opt-document-select', component: OptDocumentSelectComponent},
 
   { path: '', redirectTo:'/opt-booking-summary', pathMatch:'full'},
