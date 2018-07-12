@@ -201,6 +201,7 @@ html {
   background-color: #eee;
   line-height: 25px;
   font-size: 13px;
+  position: relative;
 }
 
 
@@ -217,6 +218,14 @@ html {
 
   .html-code{
     display: none;
+  }
+
+}
+
+.main-link{
+
+  i{
+    color: #ff4081;
   }
 
 }
