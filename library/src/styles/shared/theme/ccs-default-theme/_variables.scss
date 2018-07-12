@@ -25,7 +25,6 @@ $opt_color__tertiary :#f5c70e;
 
 
 
-
 $opt-line-height-base: 18px;
 $opt-line-height-paragraph: 16px;
 
@@ -57,6 +56,7 @@ $firm-color--state: $blue-700 !default;
 $alert-color--state: $yellow-700 !default;
 $definite-color--state: $blue-grey-700 !default;
 $quote-color--state: $brown-700 !default;
+$success-color--state:#27bfc2;
 
 
 
@@ -66,6 +66,8 @@ $quote-color--state: $brown-700 !default;
 $accent:#2196F3 !default;
 $central-brand-primary :red;
 $white-color:#fff;
+$fab:#7a8aea;
+$btn-disabled:#c8c8c8;
 
 $lbl-vat--color:#eee;
 $lbl__price-details:#90a4ae;
@@ -155,3 +157,82 @@ $fab-refund-state : red;
 $fab-invoice-state : red;
 $fab-toggle-bg: red;
 /* End of Floating Action Buttons */
+
+
+
+/****************************** OPTIMO BUTTONS ***************************************/
+
+%btn{
+  height: 30px;
+  padding: 0 15px;
+  width: auto;
+}
+
+%btn-small{
+  height: 23px;
+  padding: 0 15px;
+  width: auto;
+}
+
+.mat-btn{
+
+  &-primary{ /*default*/
+   @extend %btn;
+    background-color: $opt-color__primary;
+    color: $white-color !important;
+    text-align: center !important;
+    &--small{
+     @extend %btn-small;
+      background-color: $opt-color__primary;
+      color: $white-color !important;
+      text-align: center !important;
+    }
+
+
+  }
+ /* &-secondary{
+
+  }*/
+  &-outline {
+    @extend %btn;
+    text-align: center !important;
+    background-color: $white-color;
+    border: 1px solid $opt-btn-color-default !important;
+    color: $opt-btn-color-default;
+
+        &--small {
+          @extend %btn-small;
+          border: 1px solid $opt-btn-color-default !important;
+          background-color: $white-color;
+          color: $opt-btn-color-default;
+        }
+  }
+
+  &-disabled{
+    @extend %btn;
+    border-color: $btn-disabled;
+    color: $btn-disabled;
+    background-color: $white-color;
+  }
+  &-raised{
+
+  }
+  &-icon-btn{
+    @extend %btn;
+    color: $white-color;
+  }
+  &-fab{
+    @extend %btn;
+    background-color:$fab;
+    color: $white-color;
+  }
+
+  &-mini-fab{
+    @extend %btn;
+    background-color: $teal-500;
+    color: $white-color;
+
+
+  }
+
+}
