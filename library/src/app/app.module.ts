@@ -94,6 +94,7 @@ import { OptChipInputComponent } from './opt-chip-input/opt-chip-input.component
 import { OptChipDatePickerComponent } from './opt-chip-date-picker/opt-chip-date-picker.component';
 import { TypographyComponent } from './typography/typography.component';
 import { OptChipSelectComponent } from './opt-chip-select/opt-chip-select.component';
+import { OptPricePopupComponent } from './opt-price-popup/opt-price-popup.component';
 
 
 
@@ -171,6 +172,7 @@ const appRoutes: Routes = [
     ScrollDispatchModule
 
   ],
+  declarations: [],
 
 
 
@@ -214,6 +216,7 @@ export class DemoMaterialModule {}
     OptClientPopupComponent,
     OptIndividualClientPopupComponent,
     OptChipSelectComponent,
+    OptPricePopupComponent,
     // OptDocumentSelectComponent,
 
     RoutingProjectComponent,
