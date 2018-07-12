@@ -2,8 +2,7 @@
   <mat-accordion>
     <mat-expansion-panel #myPanel [disabled]="true" class="opt-expand--line">
       <mat-expansion-panel-header class="opt_width-define opt_expand__header first-outer-wrapper"
-                                  collapsedHeight=".collapsedHeight" expandedHeight=".expandedHeight">
-        <div class="opt_expand--container">
+                                  collapsedHeight=".collapsedHeight" expandedHeight=".expandedHeight">        <div class="opt_expand--container">
           <div class="opt_flex--container">
             <div class="opt_flex__item __expansion-lft--side">
               <div class="row opt_flex--container tc-flex-item__center ">
@@ -88,18 +87,21 @@
 
       <div class="opt_expanded-view">
 
-        <app-opt-booking-summary></app-opt-booking-summary>
 
+        <!--
+        include components
+        ############################################################
+        -->
 
-
-
-        <app-opt-section-heading></app-opt-section-heading>
-
-
-
+                <app-opt-booking-summary></app-opt-booking-summary>
+                <app-opt-section-heading></app-opt-section-heading>
+          <!--
+          end
+          include components
+          ############################################################
+          -->
 
         <!--labels-->
-
 
         <div class="opt_flex--container test-wrapper">
           <div class=" opt_latest-note ">
@@ -145,6 +147,26 @@
 
 <!-- end component -->
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+############################################################
+Please note:
+
+library purpose only
+############################################################
+-->
 
 
 
@@ -246,14 +268,21 @@
           </div>
 
           <div class="opt_expanded-view">
-            <app-opt-booking-summary></app-opt-booking-summary>
-            <br>
 
+               <!--
+             include components
+             ############################################################
+             -->
 
-            <app-opt-section-heading></app-opt-section-heading>
+                <app-opt-booking-summary></app-opt-booking-summary>
+                <app-opt-section-heading></app-opt-section-heading>
+            <!--
+            end
+            include components
+            ############################################################
+            -->
+
             <!--labels-->
-
-
             <div class="opt_flex--container test-wrapper">
               <div class=" opt_latest-note ">
                 <div class="opt_flex__item--inherit item1">
@@ -274,7 +303,6 @@
                 </div>
               </div>
             </div>
-
             <div class="opt_flex--container  test-wrapper">
               <div class="opt_dispatch-status">
                 <div class="opt_flex__item--inherit item1">
@@ -302,8 +330,13 @@
 
 
 
+<!--
+############################################################
+Please note:
 
-
+library purpose only
+############################################################
+-->
 
 
 
