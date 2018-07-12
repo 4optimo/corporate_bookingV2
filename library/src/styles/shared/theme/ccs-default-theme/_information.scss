@@ -1,5 +1,10 @@
 .opt_additional-info{
+  $icon_color : #909cac;
+  $plain_color : white;
+  $icon_hover: #4bb3fa;
+
   padding: 30px 30px 30px 30px;
+
 
   .example-form {
     min-width: 150px;
@@ -27,6 +32,42 @@
     font-weight: 500;
     color: #333e47;
   }
+  .btn {
+    padding: 5px;
+    -webkit-appearance: none;
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
+
+
+    &:active, &:focus, &:visited, &:active:focus {
+      outline: none;
+    }
+
+    //.active {
+    //  background-color: #4bb3fa;
+    //  &:btn-icon {
+    //    color: white;
+    //  }
+    //}
+    &.btn-icon {
+      margin-top: 10px;
+      line-height: 2px;
+
+      background-color: transparent;
+      padding: 0;
+      //color: #f5766c;
+      align-items: center;
+      //border: 1px solid #b7b7b7;
+      &:hover{
+        background-color: $icon_hover;
+        color: $plain_color;
+      }
+
+    }
+
+  }
+
 
   i {
     //float: right;
@@ -50,10 +91,13 @@
         font-size: 50px;
       }
       &.color {
-        color: #8d8d8d;
+        color: $icon_color;
         &.active {
-          color: white;
+          color: $plain_color;
           @include box_shadow (3);
+        }
+        &:hover{
+          color: $plain_color;
         }
       }
     }
@@ -89,32 +133,6 @@
     align-self: auto;
     float: right;
     padding: 2px;
-  }
-  .btn {
-    padding: 5px;
-
-    &:active, &:focus, &:visited, &:active:focus {
-      outline: none;
-    }
-
-    .active {
-      background-color: #4bb3fa;
-      &:btn-icon {
-        color: white;
-      }
-    }
-    &.btn-icon {
-      margin-top: 10px;
-      line-height: 2px;
-
-      background-color: transparent;
-      padding: 0;
-      color: #f5766c;
-      align-items: center;
-      border: 1px solid #b7b7b7;
-
-    }
-
   }
 
 }

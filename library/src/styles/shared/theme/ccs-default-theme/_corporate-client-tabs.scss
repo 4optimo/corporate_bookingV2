@@ -1,0 +1,25 @@
+.opt-section__heading{
+  box-shadow: none;
+  background: white;
+}
+.opt_corporate-client-tabs{
+
+  .mat-expansion-panel {
+
+
+    .mat-expansion-panel-header {
+      min-height: 48px;
+
+      &:hover{
+        background: white;
+      }
+    }
+  }
+  >.mat-card:not([class*=mat-elevation-z]){
+    box-shadow: none;
+    padding: 0;
+  }
+  .mat-expansion-indicator{
+    padding-bottom: 237px;
+  }
+}

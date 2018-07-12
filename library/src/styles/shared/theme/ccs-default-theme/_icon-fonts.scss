@@ -3,6 +3,16 @@ $icn-font--url:'./shared/theme/ccs-default-theme/font/fonts-icon/';
 
 @font-face {
   font-family: 'icomoon';
+  // src:  url('../ccs-default-theme/font/fonts-icon/icomoon.eot?p5o367');
+  //src:  url('../ccs-default-theme/font/fonts-icon/icomoon.eot?p5o367#iefix') format('embedded-opentype'),
+  //url('../ccs-default-theme/font/fonts-icon/icomoon.ttf?p5o367') format('truetype'),
+  //url('../ccs-default-theme/font/fonts-icon/icomoon.woff?p5o367') format('woff'),
+  //url('../ccs-default-theme/font/fonts-icon/icomoon.svg?p5o367#icomoon') format('svg');
+  //src:  url('./ccs-default-theme/font/fonts-icon/icomoon.eot?p5o367');
+  //src:  url('../ccs-default-theme/font/fonts-icon/icomoon.eot?p5o367#iefix') format('embedded-opentype'),
+  // url('../ccs-default-theme/font/fonts-icon/icomoon.ttf?p5o367') format('truetype'),
+  // url('../ccs-default-theme/font/fonts-icon/icomoon.woff?p5o367') format('woff'),
+  // url('../ccs-default-theme/font/fonts-icon/icomoon.svg?p5o367#icomoon') format('svg');
   src:  url('./shared/theme/ccs-default-theme/font/fonts-icon/icomoon.eot?1irofb');
   src:  url('./shared/theme/ccs-default-theme/font/fonts-icon/icomoon.eot?1irofb#iefix') format('embedded-opentype'),
   url('./shared/theme/ccs-default-theme/font/fonts-icon/icomoon.ttf?1irofb') format('truetype'),
@@ -34,7 +44,7 @@ $icn-font--url:'./shared/theme/ccs-default-theme/font/fonts-icon/';
 }
 
 .icon-coin-of-dollar:before {
-  content: "\e900";
+  content: "\e90b";
 }
 
 .icon-icn-item:before {
@@ -68,3 +78,28 @@ $icn-font--url:'./shared/theme/ccs-default-theme/font/fonts-icon/';
 .icon-icn-clipboard:before {
   content: "\e909";
 }
+
+//Booking Activities Icons
+.icon-note:before {
+  content: "\e90e";
+}
+.icon-open-mail:before {
+  content: "\e900";
+}
+.icon-credit-card:before {
+  content: "\e90c";
+}
+.icon-trolley:before {
+  content: "\e91a";
+}
+.icon-server:before {
+  content: "\e90f";
+  color: #a7a9ac;
+}
+.icon-server2:before {
+  content: "\e91b";
+}
+.icon-earth-globe:before {
+  content: "\e90d";
+}
+//End of Booking Activities Icons

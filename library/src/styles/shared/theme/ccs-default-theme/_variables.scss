@@ -22,11 +22,27 @@ $opt_color__primary :#4bb3fa;
 $opt_color__secondary :#27bfc2;
 $opt_color__tertiary :#f5c70e;
 
+
+
+
+
 $opt-line-height-base: 18px;
 $opt-line-height-paragraph: 16px;
 
-$opt-text-color: #1a1a1a;
+/*$opt-text-color: #1a1a1a;*/
 $opt-line-color: #91a0ad;
+
+//text colours..............................................
+$opt-text-color__primary:#3a424d;
+$opt-text-color__secondary:#909cac;
+$opt-text-color__tertiary:#27bfc2;
+$opt-text-color__quaternary:#4bb3fa;
+
+
+//Link Colours..............................................
+$opt-link-color__primary:#3a424d;
+$opt-link-color__secondary:#27bfc2;
+
 
 
 //button colors..............
@@ -99,3 +115,43 @@ $central-page-summery-lbl-border-color: #d6d6d6 !default;
 
 $font-color:                 #66615b !default;
 
+/* Booking Summary */
+$badge-danger-bg : #f5766c;
+$badge-success-bg : #27bfc2;
+$badge-default-bg : #fff;
+$badge-undefined-bg : #909cac;
+$badge-font-color : #fff;
+$badge-font-color_danger : #b6605a;
+
+$unavailable-state-bg : #f5766c;
+$unavailable-state-dark-bg : #b1554e;
+
+$default-state-bg : #fff;
+$default-state-dark-bg : #f5f5f5;
+
+$separator-border-color: #d3d6d9;
+
+$primary-theme-font : $opt_color__primary;
+$secondary-theme-font : $opt_color__secondary;
+/* End of Booking Summary */
+
+/* Business Colors */
+$status-hover-font-color: #fff;
+$cancelled-status: black;
+$confirmed-status: yellow;
+$confirmed-multiple: blue;
+$provisional: red;
+$warning: purple;
+$tentative: brown;
+$provisional-multiple:grey;
+/* End of Business Colors */
+
+
+/* Floating Action Buttons */
+$fab-cancel-state : red;
+$fab-payment-state : red;
+$fab-task-state : red;
+$fab-refund-state : red;
+$fab-invoice-state : red;
+$fab-toggle-bg: red;
+/* End of Floating Action Buttons */

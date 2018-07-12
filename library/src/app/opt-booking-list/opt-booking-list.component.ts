@@ -1,5 +1,5 @@
 import {Component, OnInit, ViewChild} from '@angular/core';
-import {MatExpansionPanel} from "@angular/material";
+import {FEB, MatExpansionPanel} from "@angular/material";
 
 
 @Component({
@@ -9,15 +9,20 @@ import {MatExpansionPanel} from "@angular/material";
 })
 export class OptBookingListComponent implements OnInit {
 
+  date: number = 7;
+  month: string = 'FEB';
+  year: number =2018;
+
   @ViewChild('myPanel') myPanel: MatExpansionPanel;
   matIcon = 'keyboard_arrow_down' || 'keyboard_arrow_up';
 
   // @ViewChild('myPanel2') myPanel2: MatExpansionPanel;
-  // matIcon2 = 'keyboard_arrow_down' || 'keyboard_arrow_up';
-
+  // matIcon = 'keyboard_arrow_down' || 'keyboard_arrow_up';
+  //
   // @ViewChild('myPanel3') myPanel3: MatExpansionPanel;
-  // matIcon3 = 'keyboard_arrow_down' || 'keyboard_arrow_up';
+  // matIcon = 'keyboard_arrow_down' || 'keyboard_arrow_up';
 
+  // this.form.get('mat-select').disable();
 
   constructor() { }
 
@@ -25,11 +30,12 @@ export class OptBookingListComponent implements OnInit {
     this.myPanel.expandedChange.subscribe((data) => {
       this.matIcon = data ? 'keyboard_arrow_up' : 'keyboard_arrow_down';
     });
+
   }
 
   expandPannel() {
     this.myPanel.expanded = !this.myPanel.expanded;
-    // alert("1");
+     // alert("1");
   }
   // expandPannel2() {
   //   this.myPanel2.expanded = !this.myPanel2.expanded;

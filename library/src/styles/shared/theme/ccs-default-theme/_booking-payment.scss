@@ -1,0 +1,162 @@
+.payment-category-header{
+  .mat-form-field-infix{
+    border-top: 0;
+    padding-top: 0;
+  }
+
+  .mat-input-wrapper {
+    &.mat-form-field-wrapper{
+      margin-bottom: -1.25em;
+    }
+  }
+}
+
+
+.payment-body-wrapper{
+  >.opt_flex--container{
+    >.opt_flex__item{
+      &:first-child{
+        width: 70%;
+      }
+    }
+  }
+}
+
+.payment-inner{
+  border: 1px solid #ddd;
+  height: 100%;
+}
+
+.payment-category-header{
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-bottom: 2px solid #ddd;
+  .payment-category-title{
+    font-size: 14px;
+    color: $primary-theme-font;
+    font-weight: 500;
+  }
+}
+
+.payment-category-body{
+  padding: 15px;
+}
+
+.payment-detail-field{
+  margin-bottom: 5px;
+  border-bottom: 1px solid #d9d9d9;
+  &:last-child{
+    margin-bottom: 0;
+  }
+  .payment-schedule{
+    min-height: 38px;
+    .opt_flex--container{
+      .opt_flex__item{
+        padding: 0 15px;
+        &:nth-child(1), &:nth-child(3), &:nth-child(4){
+          text-align: right;
+        }
+      }
+    }
+    h5{
+      font-size: 13px;
+      color: #abb5bf;
+    }
+    p{
+      font-size: 12px;
+      font-weight: 500;
+      margin: 0;
+    }
+    .themed{
+      h5, p{
+        color: #27bfc2;
+      }
+    }
+  }
+  .payment-status{
+    padding: 0 15px;
+    min-height: 37px;
+    &.unsuccessful{
+      background-color: rgba(245,118,108,0.3);
+      border-bottom: 1px solid #f5766c;
+      p{
+        color: #f5766c;
+        &:last-child{
+          color: #f5766c;
+          span{
+            color: #333;
+          }
+        }
+      }
+      .payment-status-inner{
+        &:before{
+          border-left-color: #f5766c;
+        }
+      }
+    }
+    .payment-status-inner{
+      padding: 0 25px 0 20px;
+      position: relative;
+      &:before{
+        position: absolute;
+        content: '';
+        width: 0;
+        height: 0;
+        border-top: 8px solid transparent;
+        border-bottom: 8px solid transparent;
+        border-left: 10px solid #27bfc2;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+
+    p{
+      font-size: 14px;
+      margin-bottom: 0;
+      &:first-child{
+        min-height: 18px;
+        font-size: 11px;
+        font-weight: 500;
+      }
+      &:last-child{
+        font-size: 14px;
+        font-weight: 600;
+        color: #27bfc2;
+        span{
+          color: #4bb3fa;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+
+.cancellation-policy-wrapper{
+  .cancellation-policy-item{
+    padding: 10px;
+    border-bottom: 1px dashed #d9d9d9;
+    p{
+      margin: 0;
+      color: #3b414d;
+      span{
+        font-weight: 500;
+        &.cancellation-period{
+          color: #27bfc2;
+        }
+        &.cancellation-time{
+
+        }
+        &.cancellation-policy-pct{
+          color: #27bfc2;
+        }
+      }
+    }
+
+    .opt_flex--container{
+      .opt_flex__item--inherit{
+        width: 40%;
+      }
+    }
+  }
+}

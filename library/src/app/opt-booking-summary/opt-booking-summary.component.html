@@ -1,3 +1,6 @@
+<!--<mat-drawer-content>-->
+  <!--adawd-->
+<!--</mat-drawer-content>-->
 <div class="booking-summary">
   <div class="flex-row">
     <div class="col">
@@ -21,7 +24,7 @@
           </div>
           <div class="field venue-field">
             <div class="field-detail">
-              <a class="link __default">Coalfield Cricket Club</a>
+              <a class="opt-link--secondary">Coalfield Cricket Club</a>
             </div>
           </div>
           <div class="opt_flex--container telephone-field">
@@ -53,10 +56,25 @@
               <div class="label-icon"><i class="material-icons small">location_on</i></div>
             </div>
             <div class="opt_flex__item">
-              <span class="font-style-06">London, United Kingdom</span>
+              <span class="opt-txt__caption opt-txt__primary">London, United Kingdom</span>
             </div>
           </div>
         </div>
+          <div class="opt_flex__item vh-center" style="display: none;">
+            <div class="tap-to-add-wrapper themed">
+              <button class="btn btn-taptoadd themed"><i class="material-icons">people</i></button>
+              <p>Select Client</p>
+            </div>
+          </div>
+          <div class="opt_flex__item--inherit" style="display: none;">
+            <div class="vertical-divider"></div>
+          </div>
+          <div class="opt_flex__item vh-center" style="display: none;">
+            <div class="tap-to-add-wrapper">
+              <button class="btn btn-taptoadd"><i class="material-icons">person_add</i></button>
+              <p>Add Client</p>
+            </div>
+          </div>
       </div>
     </div>
     <div class="col __colored">
@@ -64,22 +82,37 @@
         <div class="flex-horizontal">
           <div class="field">
             <div class="field-inner">
-              <span class="font-style-04">Optimizer</span>
+              <span class="opt-txt__body2 opt-txt__tertiary">Optimizer</span>
+            </div>
+            <div class="field-inner">
+              <span class="booking-status-icon danger"><i class="material-icons">flag</i></span>
             </div>
             <div class="field-inner">
               <span class="font-style-05">BN000769</span>
             </div>
             <div class="field-options">
-              <button class="btn btn-icon"><i class="material-icons small">more_vert</i></button>
+              <button mat-icon-button [matMenuTriggerFor]="bookingFrozen" class="btn btn-icon"><i class="material-icons small">more_vert</i></button>
+              <mat-menu #bookingFrozen="matMenu" class="icon-text-menu">
+                <button mat-menu-item class="danger"><i class="material-icons">flag</i> <span>Booking Frozen Status</span></button>
+              </mat-menu>
             </div>
           </div>
           <div class="field">
-            <div class="field-inner font-style-06">10:00 PM | 20-Jan-2018</div>
+            <div class="field-inner opt-txt__caption opt-txt__primary">10:00 PM | 20-Jan-2018</div>
             <div class="field-inner">
-              <div class="badge __success __uppercase">Confirmed Booking</div>
+              <div class="badge __success __uppercase mini-badge">Confirmed Booking</div>
             </div>
             <div class="field-options">
-              <button class="btn btn-icon"><i class="material-icons small">more_vert</i></button>
+              <button mat-icon-button [matMenuTriggerFor]="bookingStatus" class="btn btn-icon"><i class="material-icons small">more_vert</i></button>
+              <mat-menu #bookingStatus="matMenu" class="booking-status-menu">
+                <button mat-menu-item class="cancelled">Cancel Booking</button>
+                <button mat-menu-item class="confirmed">Confirmed Booking</button>
+                <button mat-menu-item class="confirmed-multiple">Confirmed Multiple</button>
+                <button mat-menu-item class="provisional">Provisional</button>
+                <button mat-menu-item class="warning">Warning</button>
+                <button mat-menu-item class="tentative">Tentative</button>
+                <button mat-menu-item class="provisional-multiple">Provisional Multiple</button>
+              </mat-menu>
             </div>
           </div>
         </div>
@@ -89,13 +122,19 @@
             <div class="opt_flex__item--inherit">
               <div class="label-icon"><i class="material-icons">person</i></div>
             </div>
+            <div class="opt_flex__item--inherit vh-center" style="display: none;">
+              <div class="tap-to-add-wrapper mini">
+                <button class="btn btn-taptoadd mini"><i class="material-icons">people</i></button>
+                <p class="opt-txt__caption opt-txt__primary">Referer</p>
+              </div>
+            </div>
             <div class="opt_flex__item">
               <mat-select [(value)]="selected" class="opt-booking-summary-select-sm themed emphd">
                 <mat-option value="option1">Coalfield National Park</mat-option>
                 <mat-option value="option2">Coalfield Cricket Club</mat-option>
                 <mat-option value="option3">Silverstone Racing Track</mat-option>
               </mat-select>
-              <div class="typo sz-12">Referrer</div>
+              <div class="opt-txt__caption opt-txt__primary">Referrer</div>
               <mat-select [(value)]="selected" class="opt-booking-summary-select-sm emphd">
                 <mat-option value="option1">Mr. Vitor Belfort</mat-option>
                 <mat-option value="option2">Mr. Peter Worth</mat-option>
@@ -133,35 +172,35 @@
       <div class="valuation">
         <div class="opt_flex--container">
           <div class="opt_flex__item">
-            <div class="badge __grey __uppercase">$ 550.00</div>
+            <div class="badge mini __grey __uppercase">$ 550.00</div>
           </div>
           <div class="opt_flex__item">
-            <div class="font-style-01 __success">&pound; 6,595.86</div>
+            <div class="opt__heading-3 opt-fontweight__medium opt-txt__quaternary">&pound; 6,595.86</div>
         </div>
         </div>
         <div class="opt_flex--container shaded parent-width">
           <div class="opt_flex__item">
-            <div class="typo sz-12">Paid Amount</div>
+            <div class="opt-txt__caption opt-txt__primary">Invoiced Amount</div>
           </div>
           <div class="opt_flex__item">
-            <div class="typo sz-13 medium">&pound; 900.00</div>
+            <div class="opt-txt__body1 opt-txt__primary opt-fontweight__medium">&pound; 900.00</div>
           </div>
         </div>
         <div class="opt_flex--container shaded parent-width">
           <div class="opt_flex__item">
-            <div class="typo sz-12">Invoiced</div>
+            <div class="opt-txt__caption opt-txt__primary">Paid</div>
           </div>
           <div class="opt_flex__item">
-            <div class="typo sz-13 medium">&pound; 795.80</div>
+            <div class="opt-txt__body1 opt-txt__primary opt-fontweight__medium">&pound; 795.80</div>
           </div>
         </div>
         <div class="opt_flex--container">
           <div class="opt_flex__item">
-            <div><span class="typo sz-12 right-spacer-padding">Tax</span><span class="typo sz-12 right-spacer-padding">:</span><span class="typo sz-12 medium">&pound; 0.00</span></div>
-            <div><span class="typo sz-12 right-spacer-padding">Net</span><span class="typo sz-12 right-spacer-padding">:</span><span class="typo sz-12 medium">&pound; 0.00</span></div>
+            <div class="opt-txt__caption opt-txt__primary"><span class="opt-txt__caption opt-txt__primary right-spacer-padding">Tax</span><span class="opt-txt__caption opt-txt__primary right-spacer-padding">:</span><span class="opt-txt__caption opt-txt__primary medium">&pound; 0.00</span></div>
+            <div class="opt-txt__caption opt-txt__primary"><span class="opt-txt__caption opt-txt__primary right-spacer-padding">Net</span><span class="opt-txt__caption opt-txt__primary right-spacer-padding">:</span><span class="opt-txt__caption opt-txt__primary medium">&pound; 0.00</span></div>
           </div>
           <div class="opt_flex__item">
-            <div class="typo sz-14 medium">&pound; 100.06</div>
+            <div class="opt-txt__body1 opt-fontweight__medium">&pound; 100.06</div>
             <div class="badge __danger __uppercase">Outstanding</div>
           </div>
         </div>
