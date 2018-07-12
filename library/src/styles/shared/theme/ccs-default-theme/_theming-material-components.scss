@@ -3,6 +3,13 @@
 mat-expansion-panel{
   border-bottom: 1px solid #eee;
 }
+.mat-progress-bar-fill::after {
+  background-color: #47a9ec !important;
+}
+
+.opt_booking__list .opt_booking__detail .mat-progress-bar-fill {
+  background-color: #eee !important;
+}
 
 button{
   &.mat-icon-button{
