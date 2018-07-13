@@ -63,7 +63,9 @@
   align-self: center !important;
   align-items: center;
 }
-
+.tc-flex-just__right{
+  justify-content: flex-end !important;
+}
 
 .__icn--button_small{
   [class^='icon-icn-'] {

@@ -7,6 +7,23 @@
 
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 
+
+  .tbl_head{
+    .row{
+      margin-left: inherit !important;
+    }
+  }
+
+  .opt_counter{
+    display: none;
+  }
+  .opt_unit-price {
+    display: block;
+  }
+
+  .lft_btn_cage{
+    display: none;
+  }
   .search-panel-wrapper{
     margin: -15px -15px 10px -15px;
     padding: 15px;
