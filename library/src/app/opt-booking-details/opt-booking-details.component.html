@@ -95,8 +95,11 @@
                         </form>
                       </div>
                       <div class="opt_flex__item  price--value__icon">
-                        <span class="icon-coin-of-dollar"></span>
-
+                        <span [matMenuTriggerFor]="menu" class="icon-coin-of-dollar"></span>
+                        <mat-menu #menu="matMenu">
+                          <button mat-menu-item>Item 1</button>
+                          <button mat-menu-item>Item 2</button>
+                        </mat-menu>
                       </div>
                     </div>
                     <div class="opt_flex--container tc-flex-item__center">
