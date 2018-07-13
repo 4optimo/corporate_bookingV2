@@ -82,6 +82,12 @@
   .opt {
 
     &_booking__detail {
+      .opt_counter{
+        display: none;
+      }
+      .opt_unit-price{
+        display: block;
+      }
       .mat-progress-bar-fill{
         background-color: $border_color;
         ::after {
@@ -209,9 +215,9 @@
     //padding-right: 23px;
     .attach_money-icon,.file_copy-icon,.launch-icon{
       color: #909cac;
-      padding: 5px;
+      //padding: 5px;
       font-size: 25px;
-      padding-top: 10px;
+      //padding-top: 10px;
     }
   }
   button{
