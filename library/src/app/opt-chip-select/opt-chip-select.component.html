@@ -1,4 +1,62 @@
-<div class="opt_chip " [ngClass]="isOpen ? 'active':'hideChip'">
+
+<!-- component Start-->
+
+<div class="opt_chip __select" [ngClass]="isOpen ? 'active':'hideChip'">
+  <div class="opt_flex--container container-nw-row">
+    <div class="opt_flex__item">
+      <label class="category-type opt-txt__light">Select Input</label>
+    </div>
+    <div class="opt_flex__item">
+      <div class="opt_chip--wrapper">
+        <div class="opt_flex--container">
+          <div class="opt_flex__item">
+            <!--<div [formGroup]="myGroup">-->
+            Select any
+            <!--</div>-->
+            <div class="dropdown-cage" >
+              <!--<mat-form-field>-->
+                <mat-select placeholder="Favorite food">
+                <mat-option *ngFor="let food of foods" [value]="food.value">
+                {{food.viewValue}}
+                </mat-option>
+                </mat-select>
+              <!--</mat-form-field>-->
+            </div>
+          </div>
+          <div class="opt_flex__item--inherit">
+            <i class="material-icons cancel" (click)="isOpen = !isOpen;">cancel</i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--end of the Component-->
+
+<!--
+############################################################
+Please note:
+
+library purpose only
+############################################################
+-->
+
+<div class="html-code">
+
+  <code class="opt-tag">
+    &lt; app-opt-chip-select &gt;
+    &lt; / app-opt-chip-select &gt;
+  </code>
+  <!--<code class="opt-tag">-->
+    <!--&lt; app-opt-chip-select &gt;-->
+    <!--&lt; / app-opt-chip-select &gt;-->
+  <!--</code>-->
+
+  <textarea name="comments"  class="code-view">
+
+<div class="opt_chip __select" [ngClass]="isOpen ? 'active':'hideChip'">
   <div class="opt_flex--container container-nw-row">
     <div class="opt_flex__item">
       <label class="category-type opt-txt__light">Select Input</label>
@@ -11,17 +69,31 @@
             Select any
             <!--</div>-->
 
-            <div class="dropdown-cage" >
-              <mat-form-field>
-                <mat-select placeholder="Favorite food">
-                  <mat-option *ngFor="let food of foods" [value]="food.value">
-                    {{food.viewValue}}
-                  </mat-option>
-                </mat-select>
-              </mat-form-field>
+
+             <div class="dropdown-cage" >
+              <!--<mat-form-field>-->
 
 
+
+                   <mat-select placeholder="Favorite food">
+                <mat-option >
+                a
+                </mat-option>
+                       <mat-option >
+               f
+                </mat-option>
+                       <mat-option >
+                dd
+                </mat-option>
+                  </mat-select>
+
+
+               <!--</mat-form-field>-->
             </div>
+
+
+
+
 
           </div>
           <div class="opt_flex__item--inherit">
@@ -29,6 +101,8 @@
           </div>
         </div>
       </div>
-    </div>
-  </div>
+
+
+  </textarea>
+
 </div>

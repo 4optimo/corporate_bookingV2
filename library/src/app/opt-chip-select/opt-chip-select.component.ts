@@ -10,7 +10,9 @@ export interface Food {
   templateUrl: './opt-chip-select.component.html',
   styleUrls: ['./opt-chip-select.component.scss']
 })
-export class OptChipSelectComponent  {
+export class OptChipSelectComponent implements OnInit  {
+
+  constructor() { }
   hideComponent: string;
 
   isOpen() {
@@ -18,11 +20,19 @@ export class OptChipSelectComponent  {
     console.log("button clicked");
   }
 
-
   foods: Food[] = [
     {value: 'steak-0', viewValue: 'Steak'},
     {value: 'pizza-1', viewValue: 'Pizza'},
     {value: 'tacos-2', viewValue: 'Tacos'}
   ];
+
+  // foods2: Food2[] = [
+  //   {value: 'steak-0', viewValue: 'Steak'},
+  //   {value: 'pizza-1', viewValue: 'Pizza'},
+  //   {value: 'tacos-2', viewValue: 'Tacos'}
+  // ];
+
+  ngOnInit() {
+  }
 
 }
