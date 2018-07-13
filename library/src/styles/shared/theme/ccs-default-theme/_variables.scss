@@ -9,6 +9,8 @@ $font-family-rubik:  'Rubik', sans-serif;
 
 
 $prefix :'opt_';
+
+//TO be removed===============================================================================================
 $ci-bg--color:red;
 $ci-col-hover:green;
 $primary:blue;
@@ -16,12 +18,32 @@ $primary:blue;
 
 
 
-//optimo brand and color codes .....................
-
 $opt_color__primary :#4bb3fa;
 $opt_color__secondary :#27bfc2;
 $opt_color__tertiary :#f5c70e;
 
+
+
+$opt_color_white : #ffffff;
+
+
+
+
+/* Business Colors */
+$status-hover-font-color: #fff;
+$cancelled-status: black;
+$confirmed-status: yellow;
+$confirmed-multiple: blue;
+$provisional: red;
+$warning: purple;
+$tentative: brown;
+$provisional-multiple:grey;
+/* End of Business Colors */
+
+/*button colors*/
+
+$opt_button-color__primary : $opt_color__primary;
+$opt_button-color__secondary : $opt_color_white;
 
 
 
@@ -68,6 +90,7 @@ $central-brand-primary :red;
 $white-color:#fff;
 $fab:#7a8aea;
 $btn-disabled:#c8c8c8;
+$icon-font--color:#909cac;
 
 $lbl-vat--color:#eee;
 $lbl__price-details:#90a4ae;
@@ -137,16 +160,7 @@ $primary-theme-font : $opt_color__primary;
 $secondary-theme-font : $opt_color__secondary;
 /* End of Booking Summary */
 
-/* Business Colors */
-$status-hover-font-color: #fff;
-$cancelled-status: black;
-$confirmed-status: yellow;
-$confirmed-multiple: blue;
-$provisional: red;
-$warning: purple;
-$tentative: brown;
-$provisional-multiple:grey;
-/* End of Business Colors */
+
 
 
 /* Floating Action Buttons */
@@ -158,6 +172,33 @@ $fab-invoice-state : red;
 $fab-toggle-bg: red;
 /* End of Floating Action Buttons */
 
+//......................................................................................................................
+
+
+
+
+//======================================================
+//              New
+//======================================================
+//optimo brand and color codes .....................
+
+$opt_color__primary :#4bb3fa;
+$opt_color__secondary :#27bfc2;
+$opt_color__tertiary :#f5c70e;
+
+
+
+$opt_color_white : #ffffff;
+$opt_color_accent : #7a8aea;
+
+
+$opt-status-confirmed : $opt_color__secondary;
+$opt-status-cancelled : #f5766c;
+$opt-status-confirmed-multiple:#607d8b;
+$opt-status-provisional : #00bcd4;
+$opt-status-warning :#ff9800;
+$opt-status-tentative :#673ab7;
+$opt-status-provisional-multiple:#9c27b0;
 
 
 /****************************** OPTIMO BUTTONS ***************************************/
@@ -198,20 +239,21 @@ $fab-toggle-bg: red;
     text-align: center !important;
     background-color: $white-color;
     border: 1px solid $opt-btn-color-default !important;
-    color: $opt-btn-color-default;
+    color: $opt-btn-color-default !important;
 
-        &--small {
-          @extend %btn-small;
-          border: 1px solid $opt-btn-color-default !important;
-          background-color: $white-color;
-          color: $opt-btn-color-default;
-        }
+      &--small {
+        @extend %btn-small;
+        text-align: center !important;
+        border: 1px solid $opt-btn-color-default !important;
+        background-color: $white-color;
+        color: $opt-btn-color-default !important;
+      }
   }
 
   &-disabled{
     @extend %btn;
     border-color: $btn-disabled;
-    color: $btn-disabled;
+    color: $btn-disabled !important;
     background-color: $white-color;
   }
   &-raised{
@@ -219,18 +261,18 @@ $fab-toggle-bg: red;
   }
   &-icon-btn{
     @extend %btn;
-    color: $white-color;
+    color: $icon-font--color !important;
   }
   &-fab{
     @extend %btn;
     background-color:$fab;
-    color: $white-color;
+    color: $white-color !important;
   }
 
   &-mini-fab{
     @extend %btn;
     background-color: $teal-500;
-    color: $white-color;
+    color: $white-color !important;
 
 
   }
