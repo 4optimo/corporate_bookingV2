@@ -59,6 +59,25 @@
 
   &_booking__detail {
 
+    .tbl_head{
+
+      padding-left: 15px;
+
+      &:nth-child(1) {
+       //background-color: #eee;
+      }
+    }
+
+
+    .mat-raised-button{
+
+      color: #686868;
+      i{
+        font-size: 16px;
+        margin-right: 5px;
+      }
+    }
+
     .opt_unit-price{
       display: none;
     }
