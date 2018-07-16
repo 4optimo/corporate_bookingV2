@@ -10,6 +10,14 @@
 
   .tbl_head{
 
+    padding-left: 0px;
+
+
+
+    &:first-child {
+      border-bottom: 1px dashed #acacac;
+      background-color: #f6f6f6;
+    }
 
     .row{
       margin-left: inherit !important;
