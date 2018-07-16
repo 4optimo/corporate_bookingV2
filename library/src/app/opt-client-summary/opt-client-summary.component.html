@@ -2,9 +2,9 @@
   <mat-accordion>
     <mat-expansion-panel #myPanel1 [disabled]="true" class="opt-expand--line" >
       <mat-expansion-panel-header class="opt_width-define opt_expand__header" collapsedHeight=".collapsedHeight" expandedHeight=".expandedHeight"  >
-        <div class="row opt_expand--container">
+        <div class="opt_expand--container">
           <div class="opt_flex__item __expansion-lft--side">
-            <div class="opt_flex--container tc-flex-item__center ">
+            <div class="row opt_flex--container tc-flex-item__center ">
               <div class="col-sm-6 col-md-3	col-lg-3	col-xs-12">
                 <mat-panel-title class="opt_flex--container tc-flex-item__center">
                   <div class="opt_flex__item--inherit ">
@@ -42,11 +42,11 @@
                 </mat-panel-description>
               </div>
               <div class="col-sm-6 col-md-3	col-lg-3 col-xs-12">
-                <mat-panel-description class="opt_flex--container address-clent-summary">
+                <mat-panel-description class="opt_flex--container address-client-summary">
                   <span class="opt-txt__body2-small"> 556 </span><span class="opt-txt__body1-small"> Chiswick High Road London, W4 5YA, Australia </span>
                 </mat-panel-description>
               </div>
-              <div class="col-sm-12  col-md-2	col-lg-2	col-xl-2 col-xs-12 button-section">
+              <div class="col-sm-12  col-md-2	col-lg-2	col-xs-12 ">
                 <mat-panel-description class="opt_flex--container opt_price-section">
                   <div mat-raised-button class="btn-color-default opt_flex__item opt-txt__light btn btn-select">
                     Select
@@ -56,11 +56,11 @@
             </div>
           </div>
           <div class="opt_flex__item __expansion-rgt--side">
-            <div class="col tc-flex-item__center">
-              <div class="action__button tc-flex-item__center">
+            <div class="tc-flex-item__center">
+              <div class="opt_flex__item action__button tc-flex-item__center">
                 <button class="down-arrow" mat-icon-button color="primary" (click)="expandPannel()"
                         [disableRipple]="true">
-                  <mat-icon>{{matIcon}}</mat-icon>
+                  <mat-icon>{{matIcon1}}</mat-icon>
                 </button>
               </div>
             </div>
