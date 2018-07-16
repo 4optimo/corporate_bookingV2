@@ -10,7 +10,8 @@ $font-family-rubik:  'Rubik', sans-serif;
 
 $prefix :'opt_';
 
-//TO be removed===============================================================================================
+
+//<! TO be removed>===============================================================================================
 $ci-bg--color:red;
 $ci-col-hover:green;
 $primary:blue;
@@ -38,7 +39,7 @@ $provisional: red;
 $warning: purple;
 $tentative: brown;
 $provisional-multiple:grey;
-/* End of Business Colors */
+ /*End of Business Colors*/
 
 /*button colors*/
 
@@ -100,19 +101,6 @@ $package-color--product: #27bfc2;
 $package-color--type: #f5c70e;
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 //button colors----------------------
 $btn-active-color:$active-color--state;
 $btn-frozen-color:$no-color--state;
@@ -158,12 +146,12 @@ $separator-border-color: #d3d6d9;
 
 $primary-theme-font : $opt_color__primary;
 $secondary-theme-font : $opt_color__secondary;
-/* End of Booking Summary */
+/* End of Booking Summary*/
 
 
 
 
-/* Floating Action Buttons */
+ /*Floating Action Buttons */
 $fab-cancel-state : red;
 $fab-payment-state : red;
 $fab-task-state : red;
@@ -172,109 +160,67 @@ $fab-invoice-state : red;
 $fab-toggle-bg: red;
 /* End of Floating Action Buttons */
 
-//......................................................................................................................
+// </TO BE REMOVED>=================================================================================================================
+
+
+
+
+
+
+
 
 
 
 
 //======================================================
-//              New
+//                    NEW
 //======================================================
 //optimo brand and color codes .....................
 
-$opt_color__primary :#4bb3fa;
-$opt_color__secondary :#27bfc2;
-$opt_color__tertiary :#f5c70e;
+$opt_color_primary :#4bb3fa;
+$opt_color_secondary :#27bfc2;
+$opt_color_tertiary :#f5c70e;
 
 
 
 $opt_color_white : #ffffff;
 $opt_color_accent : #7a8aea;
+$opt_color_header :#333e47;
+$opt_color_footer :#454f58;
 
 
-$opt-status-confirmed : $opt_color__secondary;
-$opt-status-cancelled : #f5766c;
-$opt-status-confirmed-multiple:#607d8b;
-$opt-status-provisional : #00bcd4;
-$opt-status-warning :#ff9800;
-$opt-status-tentative :#673ab7;
-$opt-status-provisional-multiple:#9c27b0;
+
+//========== Status colors=================
+$opt_status_confirmed : $opt_color_secondary;
+$opt_status_cancelled : #f5766c;
+$opt_status_confirmed-multiple:#607d8b;
+$opt_status_provisional : #00bcd4;
+$opt_status_warning :#ff9800;
+$opt_status_tentative :#673ab7;
+$opt_status_provisional_multiple:#9c27b0;
 
 
-/****************************** OPTIMO BUTTONS ***************************************/
-
-%btn{
-  height: 30px;
-  padding: 0 15px;
-  width: auto;
-}
-
-%btn-small{
-  height: 23px;
-  padding: 0 15px;
-  width: auto;
-}
-
-.mat-btn{
-
-  &-primary{ /*default*/
-   @extend %btn;
-    background-color: $opt-color__primary;
-    color: $white-color !important;
-    text-align: center !important;
-    &--small{
-     @extend %btn-small;
-      background-color: $opt-color__primary;
-      color: $white-color !important;
-      text-align: center !important;
-    }
 
 
-  }
- /* &-secondary{
-
-  }*/
-  &-outline {
-    @extend %btn;
-    text-align: center !important;
-    background-color: $white-color;
-    border: 1px solid $opt-btn-color-default !important;
-    color: $opt-btn-color-default !important;
-
-      &--small {
-        @extend %btn-small;
-        text-align: center !important;
-        border: 1px solid $opt-btn-color-default !important;
-        background-color: $white-color;
-        color: $opt-btn-color-default !important;
-      }
-  }
-
-  &-disabled{
-    @extend %btn;
-    border-color: $btn-disabled;
-    color: $btn-disabled !important;
-    background-color: $white-color;
-  }
-  &-raised{
-
-  }
-  &-icon-btn{
-    @extend %btn;
-    color: $icon-font--color !important;
-  }
-  &-fab{
-    @extend %btn;
-    background-color:$fab;
-    color: $white-color !important;
-  }
-
-  &-mini-fab{
-    @extend %btn;
-    background-color: $teal-500;
-    color: $white-color !important;
+//==========Text Colors================
+$opt_text_color_primary:#3a424d;
+$opt_text_color_secondary :$opt_color_secondary;
+$opt_text_color_tertiary: #909cac;
+$opt_text-color_quaternary:$opt_color_primary;
+$opt_text_color_error :#af564e;
 
 
-  }
 
-}
+
+//=========Button Colors=================
+$opt_color_btn_default:$opt_color_white;
+$opt_color_btn_active:$opt-color_primary;
+$opt_color_btn_disabled:#ebebeb;
+$opt_color_btn_outline : #91a0ad;
+$opt_color_icon_font:$opt_text_color_tertiary;
+$opt_color_fab: $opt_color_accent;
+$opt_color_frozen : $opt_status_cancelled;
+
+
+
+

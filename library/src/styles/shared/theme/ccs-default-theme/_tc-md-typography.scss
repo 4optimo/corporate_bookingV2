@@ -1,5 +1,6 @@
 @import "tc-md-variables";
 @import "tc-md-mixins";
+@import "variables";
 
 
 $base-text-color: #000;
@@ -27,16 +28,16 @@ $background-item:#fff;
 // state text  colors ...........................................
 
 .opt-txt__primary {
-  color: $opt-text-color__primary !important;
+  color: $opt_text_color_primary !important;
 }
 .opt-txt__secondary {
-  color: $opt-text-color__secondary !important;
+  color: $opt_text_color_tertiary !important;
 }
 .opt-txt__tertiary {
-  color: $opt-text-color__tertiary !important;
+  color: $opt_text_color_secondary !important;
 }
 .opt-txt__quaternary {
-  color: $opt-text-color__quaternary !important;
+  color: $opt_text-color_quaternary !important;
 }
 
 
