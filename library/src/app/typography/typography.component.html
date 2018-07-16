@@ -320,7 +320,17 @@
             </i></button></td>
           </tr>
 
+          <tr>
+            <td>Floating Action Button</td>
+            <td><code>.mat-btn-fab</code></td>
+            <td><button mat-fab class="mat-btn-fab">+</button></td>
+          </tr>
 
+          <tr>
+            <td>Mini Floating Action Button</td>
+            <td><code>.mat-btn-mini-fab</code></td>
+            <td><button mat-fab class="mat-btn-mini-fab">+</button></td>
+          </tr>
 
 
           </tbody>
@@ -331,7 +341,131 @@
 
       <!--Tab 3-->
         <mat-tab label="Icon Library"> Content 3 </mat-tab><!--/Tab 3-->
-  </mat-tab-group>
+
+      <!--Tab 4-->
+        <mat-tab label="Colour Library">
+          <div class="color-tab">
+            <h1 class="opt__heading-1">optimo brand and color codes</h1>
+            <table class="table table-striped">
+              <thead class="thead-light">
+              <tr>
+                <th></th>
+                <th>Variable Name</th>
+                <th>Hex</th>
+                <th>Color</th>
+              </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>Primary Color</td>
+                  <td><var>$opt_color_primary</var></td>
+                  <td>#4bb3fa</td>
+                  <td bgcolor="#4bb3fa"></td>
+                </tr>
+
+                <tr>
+                  <td>Secondary Color</td>
+                  <td><var>$opt_color_secondary</var></td>
+                  <td>#27bfc2</td>
+                  <td bgcolor="#27bfc2"></td>
+                </tr>
+
+                <tr>
+                  <td>Tertiary Color</td>
+                  <td><var>$opt_color_tertiary</var></td>
+                  <td>#f5c70e</td>
+                  <td bgcolor="#f5c70e"></td>
+                </tr>
+
+                <tr>
+                  <td>Tertiary Color</td>
+                  <td><var>$opt_color_tertiary</var></td>
+                  <td>#f5c70e</td>
+                  <td bgcolor="#f5c70e"></td>
+                </tr>
+
+              </tbody>
+            </table>
+
+
+
+
+
+          $opt_color_white : #ffffff;
+          $opt_color_accent : #7a8aea;
+          $opt_color_header :#333e47;
+          $opt_color_footer :#454f58;
+
+            <h1 class="opt__heading-1">Status colors</h1>
+
+
+          //========== Status colors=================
+          $opt_status_confirmed : $opt_color_secondary;
+          $opt_status_cancelled : #f5766c;
+          $opt_status_confirmed-multiple:#607d8b;
+          $opt_status_provisional : #00bcd4;
+          $opt_status_warning :#ff9800;
+          $opt_status_tentative :#673ab7;
+          $opt_status_provisional_multiple:#9c27b0;
+
+
+            <h1 class="opt__heading-1">Text Colors</h1>
+
+          //==========Text Colors================
+          $opt_text_color_primary:#3a424d;
+          $opt_text_color_secondary :$opt_color_secondary;
+          $opt_text_color_tertiary: #909cac;
+          $opt_text-color_quaternary:$opt_color_primary;
+          $opt_text_color_error :#af564e;
+
+
+
+            <h1 class="opt__heading-1">Button Colors</h1>
+
+          //=========Button Colors=================
+          $opt_color_btn_default:$opt_color_white;
+          $opt_color_btn_active:$opt-color_primary;
+          $opt_color_btn_disabled:#ebebeb;
+          $opt_color_btn_outline : #91a0ad;
+          $opt_color_icon_font:$opt_text_color_tertiary;
+          $opt_color_fab: $opt_color_accent;
+          $opt_color_frozen : $opt_status_cancelled;
+
+          </div>
+
+        </mat-tab><!--/Tab 4-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </mat-tab-group>
 
 </div>
 
