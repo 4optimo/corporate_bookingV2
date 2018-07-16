@@ -1,5 +1,15 @@
 .opt_client__list{
 
+  .opt_expand--container {
+    .__expansion-lft--side{
+      display: inline-block;
+    }
+    .__expansion-rgt--side{
+      display: inline-block;
+      position: absolute;
+    }
+  }
+
   .opt-txt__light{
     font-size: 13px;
   }
@@ -26,20 +36,30 @@
 
   .opt_circle{
     //padding-top: 0;
-    .client-type{
-      text-align: center;
-      font-size: 30px;
-      color: white;
-    }
+
     &__individual{
-      @include circle-icon(40px, #27bfc2, #27bfc2);
+      @include circle-icon(45px, #27bfc2, #27bfc2);
       padding-top: 2px;
       line-height: 12px;
+      .client-type{
+        text-align: center;
+        color: white;
+        .material-icons{
+          font-size: 30px;
+        }
+      }
     }
     &__corporate{
-      @include circle-icon(40px, #f9d634, #f9d634);
+      @include circle-icon(45px, #f9d634, #f9d634);
       padding-top: 2px;
       line-height: 12px;
+      .client-type{
+        text-align: center;
+        color: white;
+        .material-icons{
+          font-size: 30px;
+        }
+      }
     }
   }
 
@@ -84,14 +104,14 @@
     //}
     .type{
       @include respond-to('x-small') {
-        padding-left: 65px;
+        padding-left: 0;
         //padding-bottom: 10px;
       }
       @include respond-to('small') {
         padding-left: 0;
       }
     }
-    .address-clent-summary{
+    .address-client-summary{
       @include respond-to('x-small') {
         padding-left: 65px;
         .opt-txt__body1, opt-txt__body2{
@@ -126,7 +146,7 @@
     }
     .email-phone {
       @include respond-to('x-small') {
-        padding-left: 65px;
+        padding-left: 0;
         //padding-bottom: 10px;
       }
       @include respond-to('small') {
