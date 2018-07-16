@@ -158,8 +158,40 @@
                           <div class="opt_flex__item  price--value__icon">
                             <span [matMenuTriggerFor]="menu" class="icon-coin-of-dollar"></span>
                             <mat-menu #menu="matMenu">
-                              <button mat-menu-item>Item 1</button>
-                              <button mat-menu-item>Item 2</button>
+                              <div class="price-popup">
+                                <div mat-menu-item>
+                                  <span class="opt-txt__caption price-category">Net</span>
+                                  <span class="opt-txt__body2-small price-value">£445.30</span>
+                                </div>
+                                <div mat-menu-item>
+                                  <span class="opt-txt__caption price-category">Tax</span>
+                                  <span class="opt-txt__body2-small price-value">£2,334.00</span>
+                                </div>
+                                <div mat-menu-item>
+                                  <span class="opt-txt__caption price-category">Gross</span>
+                                  <span class="opt-txt__body2-small price-value">£2,334.00</span>
+                                </div>
+                                <div mat-menu-item>
+                                  <span class="opt-txt__caption price-category">Margin</span>
+                                  <span class="opt-txt__body2-small price-value">£2,334.00</span>
+                                </div>
+                                <div mat-menu-item>
+                                  <span class="opt-txt__caption price-category">Estimate Cost</span>
+                                  <span class="opt-txt__body2-small price-value">
+                                    <div class="opt_flex__item--inherit price--value__input">
+                                      <form class="example-form">
+                                        <mat-form-field class="">
+                                          <input matInput value="£19875.89" placeholder="£19875.89">
+                                        </mat-form-field>
+                                      </form>
+                                    </div>
+                                  </span>
+                                </div>
+                                <div mat-menu-item>
+                                <span class="opt-txt__caption price-category">Actual Cost</span>
+                                <span class="opt-txt__body2-small price-value">£2,334.00</span>
+                              </div>
+                              </div>
                             </mat-menu>
                           </div>
                         </div>
@@ -171,11 +203,6 @@
                       </div>
                       </div>
                     </div>
-
-
-
-
-
 
                   <div class="opt_flex__item action__button ">
                     <button mat-icon-button color="primary" (click)="expandPannel()" [disableRipple]="true">

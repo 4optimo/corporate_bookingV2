@@ -3,15 +3,10 @@
   .opt_expand--container {
     .__expansion-lft--side{
       display: inline-block;
-
     }
     .__expansion-rgt--side{
       display: inline-block;
       position: absolute;
-
-      .tc-flex-item__center{
-        float: right;
-      }
     }
   }
 
