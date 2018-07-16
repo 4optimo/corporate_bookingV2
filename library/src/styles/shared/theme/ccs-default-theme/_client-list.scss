@@ -1,5 +1,15 @@
 .opt_client__list{
 
+  .opt_expand--container {
+    .__expansion-lft--side{
+      display: inline-block;
+    }
+    .__expansion-rgt--side{
+      display: inline-block;
+      position: absolute;
+    }
+  }
+
   .opt-txt__light{
     font-size: 13px;
   }
@@ -91,7 +101,7 @@
         padding-left: 0;
       }
     }
-    .address-clent-summary{
+    .address-client-summary{
       @include respond-to('x-small') {
         padding-left: 65px;
         .opt-txt__body1, opt-txt__body2{
