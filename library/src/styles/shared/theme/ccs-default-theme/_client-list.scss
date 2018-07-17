@@ -14,7 +14,13 @@
   mat-expansion-panel{
     &:hover{
       transition: background-color 0.5s ease;
-      background-color: #eee;
+      background-color: #ECEFF1;
+
+      .lbl{
+        transition: background-color 0.5s ease;
+        background-color: #CFD8DC;
+      }
+
       .mat-expansion-panel-content{
         background-color: #fff;
       }
