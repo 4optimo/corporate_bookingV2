@@ -9,6 +9,10 @@
     }
   }
 
+  mat-card{
+    margin:15px 15px;
+  }
+
 
 }
 
@@ -115,21 +119,7 @@
 
       .opt_flex__item{
 
-        //@media (min-width: 300px) {
-        //  flex: 1 1 50%;
-        //}
-        //@media (min-width: 768px) {
-        //  flex: 1 1 50%;
-        //}
-        //@media (min-width: 992px) {
-        //  flex: 1 1 33%;
-        //}
-        //@media (min-width: 1200px) {
-        //  flex: 1 1 33%;
-        //}
-        //@media (min-width: 1440px) {
-        //  flex: 1 1 33%;
-        //}
+
 
         @include respond-to('x-small') {
           flex: 1 1 50%;
