@@ -68,7 +68,6 @@
       }
     }
 
-
     .mat-raised-button{
 
       color: #686868;
@@ -122,7 +121,6 @@
       }
 
     }
-
 
     .__date--cage{
 
@@ -183,7 +181,6 @@
         }
       }
     }
-
 
     .__time--cage{
 
@@ -281,6 +278,7 @@
       }
 
     }
+
     .mat-input-infix {
       .mat-form-field-infix {
         padding: 0px !important;
@@ -340,6 +338,7 @@
         padding-left: 15px;
 
       }
+
 
 
       .price--value__icon {
@@ -753,4 +752,22 @@
   }
 }
 
+//price popup sass
+.price-popup{
+  .mat-menu-item{
+      height: 30px;
+      .price-value {
+        display: inline-block;
+        line-height: 1;
+        float: right;
+        padding: 9px 0;
+      }
+      .price-category{
+        display: inline-block;
+        float: left;
+        width: 50%;
+        padding: 9px 10px 9px 0;
+      }
 
+  }
+}
