@@ -2,6 +2,8 @@
   $popup_heading_color : #f9d632;
   $icon_color : #909cac;
 
+  height: 90vh;
+
   .opt_modal-header {
     margin-bottom: 3px;
     @include shadow-2dp();
@@ -60,7 +62,7 @@
   .opt_modal-body{
     padding: 24px;
     overflow: auto;
-    max-height: 500px;
+   // max-height: 500px;
 
     &::-webkit-scrollbar {
       width: 5px;
