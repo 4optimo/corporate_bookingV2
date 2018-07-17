@@ -4,6 +4,7 @@
 
     .mat-expansion-panel-body{
       padding: 20px 10px !important;
+      background-color: #f0f6fa;
 
     }
   }
@@ -15,6 +16,12 @@
   &_corporate-client-popup {
     font-size: 12px !important;
     font-family: $rub !important;
+
+
+    .clear-space{
+     margin-left: 0px !important;
+      margin-right: 0px !important;
+    }
 
     .opt_flex--container{
       flex-wrap: wrap;
@@ -143,8 +150,8 @@
     }
 
     .contact-details{
-      //background-color: #f1f5f8;
-     margin: 0 -24px 0 -24px;
+     // background-color: #f1f5f8;
+    // margin: 0 -24px 0 -24px;
 
       .warning-message{
         color: $no-color--state;
@@ -189,6 +196,7 @@
           margin: 10px;
           background-color: #f1f5f8;
           border: 1px solid #b6b8b9;
+          margin-bottom: 20px;
         }
 
         .mat-expansion-panel{
@@ -196,12 +204,13 @@
 
 
           &.mat-expanded{
-            background-color: #f1f5f8;
+
+           // background-color: #f1f5f8;
             .mat-expansion-panel-header{
-              background-color: #f1f5f8;
+            //  background-color: #f1f5f8;
             }
             &:focus, &:active, &:hover, &:visited{
-              background-color: #f1f5f8;
+            //  background-color: #f1f5f8;
             }
           }
         }
@@ -273,6 +282,7 @@
         }
         .add-alternative-contact{
           padding: 0 21px 10px 21px;
+          margin-top: 30px;
         }
       }
 
@@ -284,7 +294,8 @@
 
       .inner-wrapper {
         margin: 0 24px 0 24px;
-        .mat-expansion-panel{
+
+
           &.mat-expanded{
             background-color: #f1f5f8;
             .mat-expansion-panel-header{
@@ -294,7 +305,8 @@
               background-color: #f1f5f8;
             }
           }
-        }
+
+
         .opt-section__heading{
           .__title{
             &:hover {
@@ -338,6 +350,7 @@
           flex-direction: column;
         }
         .communication-consent-body-item{
+          margin-bottom: 8px;
           .mat-checkbox-layout{
             white-space: normal;
           }
