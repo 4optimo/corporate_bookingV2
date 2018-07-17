@@ -1,8 +1,6 @@
 @import "variables";
 .mat-button{
-
   line-height: inherit !important;
-
   &.btn-icon-text{
     border: 1px solid #abb5bf;
     background-color: #fff;
@@ -60,29 +58,28 @@
 
 .mat-btn{
 
-  &-primary{ /*default*/
-    @extend %btn;
-    background-color: $opt_color_primary;
-    color: $opt_color_white !important;
-    text-align: center !important;
-    &--small{
-      @extend %btn-small;
-      background-color: $opt_color_primary;
-      color: $opt_color_white !important;
-      text-align: center !important;
-    }
 
-
-  }
-  /* &-secondary{
-
-   }*/
-  &-outline {
+  &-primary { /*default*/
     @extend %btn;
     text-align: center !important;
     background-color: $opt_color_white;
     border: 1px solid $opt_color_btn_outline !important;
     color: $opt_color-btn_outline!important;
+
+    &:hover{
+      @include box_shadow (1);
+      background-color: $opt_color_primary;
+      color: $opt_color_white !important;
+      border: 1px solid  $opt_color_primary !important;
+      text-align: center !important;
+    }
+    &:active{
+      @include box_shadow (2);
+      background-color: $opt_color_primary;
+      color: $opt_color_white !important;
+      border: 1px solid  $opt_color_primary !important;
+      text-align: center !important;
+    }
 
     &--small {
       @extend %btn-small;
@@ -90,8 +87,58 @@
       background-color: $opt_color_white;
       border: 1px solid $opt_color_btn_outline !important;
       color: $opt_color-btn_outline!important;
+
+      &:hover{
+        @include box_shadow (1);
+        background-color: $opt_color_primary;
+        color: $opt_color_white !important;
+        border: 1px solid  $opt_color_primary !important;
+        text-align: center !important;
+      }
+      &:active{
+        @include box_shadow (2);
+        background-color: $opt_color_primary;
+        color: $opt_color_white !important;
+        border: 1px solid $opt_color_primary !important;
+        text-align: center !important;
+      }
+
+      &_active{
+        @extend %btn-small;
+        @include box_shadow(2);
+        background-color: $opt_color_primary;
+        color: $opt_color_white !important;
+        border: 1px solid  $opt_color_primary !important;
+        text-align: center !important;
+      }
+    }
+    &_active{
+      @extend %btn;
+      @include box_shadow(2);
+      background-color: $opt_color_primary;
+      color: $opt_color_white !important;
+      border: 1px solid  $opt_color_primary !important;
+      text-align: center !important;
     }
   }
+
+ /* &-secondary{ !*default*!
+    @extend %btn;
+    background-color: $opt_color_primary;
+    color: $opt_color_white !important;
+    text-align: center !important;
+    @include box_shadow (2);
+
+    &--small{
+      @extend %btn-small;
+      background-color: $opt_color_primary;
+      color: $opt_color_white !important;
+      text-align: center !important;
+      @include box_shadow (2);
+    }
+
+
+  }*/
 
   &-disabled{
     @extend %btn;
@@ -107,13 +154,17 @@
     color: $opt_color_icon_font !important;
   }
   &-fab{
-    @extend %btn;
+    padding: 0 15px;
+    font-size: 36px;
+    font-weight: 300;
     background-color: $opt_color_fab !important;
     color: $opt_color_white !important;
   }
 
   &-mini-fab{
-    @extend %btn-small;
+    padding: 0 15px;
+    font-size: 24px;
+    font-weight: 300;
     background-color: $opt_color_secondary !important;
     color: $opt_color_white !important;
   }
