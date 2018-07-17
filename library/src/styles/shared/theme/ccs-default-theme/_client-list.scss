@@ -7,6 +7,9 @@
     .__expansion-rgt--side{
       display: inline-block;
       position: absolute;
+      .tc-flex-item__center{
+        float: right;
+      }
     }
   }
 
@@ -68,7 +71,7 @@
   }
 
   .add-padding{
-    padding-left: 65px;
+    padding-left: 45px;
   }
 
   .icon-add-booking2{
