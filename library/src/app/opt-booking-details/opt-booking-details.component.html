@@ -2,6 +2,53 @@
 
   <div class="opt_booking__detail">
 
+    <div class="opt_flex--container tc-flex-item__center tbl_head">
+      <div class="row opt_flex--container tc-flex-item__center">
+        <div class="col-md-12">
+          <div class="opt-txt__body2">Headding Name</div>
+          <div class="opt-txt__body1">Attendees : <span class="opt-txt__body2">25</span> </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="tbl_head  opt_flex--container tc-flex-item__center ">
+      <div class="row opt_flex--container tc-flex-item__center">
+        <div class="col-md-6">
+          <div class="col-sm-6  col-md-4	col-lg-4	col-xl-4">
+            <div class="opt_flex--container tc-flex-item__center lft_btn_cage">
+              <div class="opt_flex__item--inherit icon__cage ">
+                <mat-checkbox></mat-checkbox>
+              </div>
+
+              <div class="opt_flex__item">
+                <div class="opt-txt__body2">Select All </div>
+              </div>
+
+              <div class="opt_flex__item">
+                <div class="opt-txt__body2 opt-txt__light">
+                  4 Items
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+
+
+
+        </div>
+        <div class="col-md-6">
+          <div class="btn-group pull-right" >
+            <button mat-raised-button ><i class="material-icons">assessment</i>Add</button>
+            <button mat-raised-button ><i class="material-icons">add</i>Advance Price</button>
+            <button mat-raised-button ><i class="material-icons">delete</i>Delete</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
     <mat-accordion>
 
 
@@ -13,12 +60,10 @@
           <div class="opt_expand--container">
             <div class="row">
               <div class="col-sm-6  	col-md-4	col-lg-4	col-xl-4">
-
                 <div class="opt_flex--container tc-flex-item__center">
                   <div class="opt_flex__item--inherit icon__cage ">
                     <mat-checkbox></mat-checkbox>
                   </div>
-
                   <div class="opt_flex__item">
                     <div class="opt-txt__body2"> {{ PackageName.name }}-{{ i + 1 }} </div>
                     <div class="opt_flex--container tc-flex-item__center">
@@ -27,7 +72,7 @@
                         class="icon-icn-item package-color--item"></span>
                       </div>
                       <div class="opt_flex__item opt-txt__caption ">
-                        <span class="opt-txt__light"> 20-Jan-2018 </span> |<span
+                        <span
                         class="opt-txt__light"> Event Name </span>
                       </div>
                     </div>
@@ -42,8 +87,9 @@
                     <div class="opt-txt__body2"> 6</div>
                   </div>
                   <div class="opt_flex__item __time--cage">
+                    <div class="opt-txt__body1 __link"> 20-Jan-2018 | 28-Jan-2018</div>
                     <div class="opt-txt__body1 __link"> 1.00 PM - 5.00 PM</div>
-                    <div class="opt-txt__body1 __link"> 20-Jan-2018</div>
+
                   </div>
                 </div>
 
@@ -56,7 +102,7 @@
                   </div>
                   <div class="opt_flex__item opt_counter__item">
 
-                    <div class="opt_counter hidden">
+                    <div class="opt_counter">
                       <div class="opt_flex--container ">
                         <div class="opt_flex__item--inherit">
                           <button mat-raised-button>+</button>
@@ -76,7 +122,7 @@
 
                     <!--display none start-->
                     <div class="opt_flex__item opt_unit-price">
-                      <span class="opt-txt__body2 __bold">£150.00</span>
+                      <!--<span class="opt-txt__body2 __bold">£150.00</span>-->
                       <span class="opt-txt__body2 multiply-sign"> x </span>
                       <span class="opt-txt__body2">2</span>
                     </div>
@@ -85,26 +131,67 @@
                   </div>
                   <div class="opt_flex__item price--values">
                     <div class="opt_flex--container tc-flex-item__center">
-                      <div class="opt_flex__item"><span class="lbl lbl__vat">inc Vat</span>
+                      <div class="opt_flex__item">
+                        <span class="lbl lbl__vat">inc Vat</span>
                       </div>
-                      <div class="opt_flex__item--inherit price--value__input">
-                        <form class="example-form">
-                          <mat-form-field class="">
-                            <input matInput value="£19875.89">
-                          </mat-form-field>
-                        </form>
-                      </div>
-                      <div class="opt_flex__item  price--value__icon">
-                        <span class="icon-coin-of-dollar"></span>
+                      <div class="opt_flex__item">
+                        <div class="opt_flex--container tc-flex-item__center tc-flex-just__right">
 
+                          <div class="opt_flex__item--inherit price--value__input">
+                            <form class="example-form">
+                              <mat-form-field class="">
+                                <input matInput value="£19875.89">
+                              </mat-form-field>
+                            </form>
+                          </div>
+                          <div class="opt_flex__item  price--value__icon">
+                            <span [matMenuTriggerFor]="menu" class="icon-coin-of-dollar"></span>
+                            <mat-menu #menu="matMenu">
+                              <div class="price-popup">
+                                <div mat-menu-item>
+                                  <span class="opt-txt__caption price-category">Net</span>
+                                  <span class="opt-txt__body2-small price-value">£445.30</span>
+                                </div>
+                                <div mat-menu-item>
+                                  <span class="opt-txt__caption price-category">Tax</span>
+                                  <span class="opt-txt__body2-small price-value">£2,334.00</span>
+                                </div>
+                                <div mat-menu-item>
+                                  <span class="opt-txt__caption price-category">Gross</span>
+                                  <span class="opt-txt__body2-small price-value">£2,334.00</span>
+                                </div>
+                                <div mat-menu-item>
+                                  <span class="opt-txt__caption price-category">Margin</span>
+                                  <span class="opt-txt__body2-small price-value">£2,334.00</span>
+                                </div>
+                                <div mat-menu-item>
+                                  <span class="opt-txt__caption price-category">Estimate Cost</span>
+                                  <span class="opt-txt__body2-small price-value">
+                                    <div class="opt_flex__item--inherit price--value__input">
+                                      <form class="example-form">
+                                        <mat-form-field class="">
+                                          <input matInput value="£19875.89" placeholder="£19875.89">
+                                        </mat-form-field>
+                                      </form>
+                                    </div>
+                                  </span>
+                                </div>
+                                <div mat-menu-item>
+                                <span class="opt-txt__caption price-category">Actual Cost</span>
+                                <span class="opt-txt__body2-small price-value">£2,334.00</span>
+                              </div>
+                              </div>
+                            </mat-menu>
+                          </div>
+                        </div>
+                        <div class="opt_flex--container tc-flex-item__center">
+                          <div class="opt_flex__item opt-txt__right opt__type">
+                            <span class="opt-txt__body1 __link __bold opt-txt__light">GST</span>
+                          </div>
+                        </div>
+                      </div>
                       </div>
                     </div>
-                    <div class="opt_flex--container tc-flex-item__center">
-                      <div class="opt_flex__item opt-txt__right opt__type">
-                        <span class="opt-txt__body1 __link __bold opt-txt__light">GST</span>
-                      </div>
-                    </div>
-                  </div>
 
                   <div class="opt_flex__item action__button ">
                     <button mat-icon-button color="primary" (click)="expandPannel()" [disableRipple]="true">
@@ -240,7 +327,7 @@
                         <div class="opt-txt__body1 __link __bold">£92.19</div>
                       </div>
                       <div class="opt_flex__item opt_counter__item">
-                        <div class="opt_counter hidden">
+                        <div class="opt_counter hidden1">
                           <div class="opt_flex--container ">
                             <div class="opt_flex__item--inherit">
                               <button mat-raised-button>+</button>
@@ -260,7 +347,7 @@
 
                         <!--display none start-->
                         <div class="opt_flex__item opt_unit-price" >
-                          <span class="opt-txt__body2 __bold">£150.00</span>
+                          <!--<span class="opt-txt__body2 __bold">£150.00</span>-->
                           <span class="opt-txt__body2 multiply-sign"> x </span>
                           <span class="opt-txt__body2">2</span>
                         </div>
@@ -269,6 +356,14 @@
 
 
                       <div class="opt_flex__item price--values">
+
+
+
+
+
+
+
+
                         <div class="opt_flex--container tc-flex-item__center">
                           <div class="opt_flex__item"><span class="lbl lbl__vat">inc Vat</span>
                           </div>
@@ -462,7 +557,7 @@
 
                         <!--display none start-->
                         <div class="opt_flex__item opt_unit-price ">
-                          <span class="opt-txt__body2 __bold">£150.00</span>
+                          <!--<span class="opt-txt__body2 __bold">£150.00</span>-->
                           <span class="opt-txt__body2 multiply-sign"> x </span>
                           <span class="opt-txt__body2">2</span>
                         </div>

@@ -1,3 +1,5 @@
+<!-- component Start-->
+
 <div class="opt_chip __datepick" [ngClass]="isOpen ? 'active':'hideChip'">
   <!--"[style.display]="isOpen ? 'none':'block'"-->
   <div class="opt_flex--container container-nw-row">
@@ -11,18 +13,13 @@
             <!--<div [formGroup]="myGroup">-->
             12/3/18
             <!--</div>-->
-
             <div class="dropdown-cage date-picker">
-
                <div class="opt_flex--container tc-flex-item__center">
                  <div class="opt_flex__item"> <input matInput [matDatepicker]="picker" placeholder="Choose a date"></div>
                  <div class="opt_flex__item"><mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
                    <mat-datepicker #picker startView="year" [startAt]="startDate"></mat-datepicker></div>
-
                </div>
-
             </div>
-
           </div>
           <div class="opt_flex__item--inherit">
             <i class="material-icons cancel"  (click)="isOpen = !isOpen;">cancel</i>
@@ -31,4 +28,59 @@
       </div>
     </div>
   </div>
+</div>
+
+<!--end of the Component-->
+
+
+
+
+
+<!--
+############################################################
+Please note:
+
+library purpose only
+############################################################
+-->
+
+<div class="html-code">
+
+  <code class="opt-tag">
+    &lt; app-opt-chip-date-picker &gt;
+    &lt; / app-opt-chip-date-picker &gt;
+  </code>
+
+  <textarea name="comments"  class="code-view">
+    <div class="opt_chip __datepick" [ngClass]="isOpen ? 'active':'hideChip'">
+  <!--"[style.display]="isOpen ? 'none':'block'"-->
+  <div class="opt_flex--container container-nw-row">
+    <div class="opt_flex__item">
+      <label class="category-type opt-txt__light">Date</label>
+    </div>
+    <div class="opt_flex__item">
+      <div class="opt_chip--wrapper">
+        <div class="opt_flex--container">
+          <div class="opt_flex__item">
+            <!--<div [formGroup]="myGroup">-->
+            12/3/18
+            <!--</div>-->
+            <div class="dropdown-cage date-picker">
+               <div class="opt_flex--container tc-flex-item__center">
+                 <div class="opt_flex__item"> <input matInput [matDatepicker]="picker" placeholder="Choose a date"></div>
+                 <div class="opt_flex__item"><mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                   <mat-datepicker #picker startView="year" [startAt]="startDate"></mat-datepicker></div>
+               </div>
+            </div>
+          </div>
+          <div class="opt_flex__item--inherit">
+            <i class="material-icons cancel"  (click)="isOpen = !isOpen;">cancel</i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  </textarea>
+
 </div>

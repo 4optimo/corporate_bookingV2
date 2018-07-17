@@ -7,6 +7,33 @@
 
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 
+
+  .tbl_head{
+
+    padding-left: 0px;
+
+
+
+    &:first-child {
+      border-bottom: 1px dashed #acacac;
+      background-color: #f6f6f6;
+    }
+
+    .row{
+      margin-left: inherit !important;
+    }
+  }
+
+  .opt_counter{
+    display: none;
+  }
+  .opt_unit-price {
+    display: block;
+  }
+
+  .lft_btn_cage{
+    display: none;
+  }
   .search-panel-wrapper{
     margin: -15px -15px 10px -15px;
     padding: 15px;
@@ -52,6 +79,9 @@
         .opt-txt__body2-small{
           line-height: 20px;
         }
+        .opt-txt__caption{
+          line-height: 20px;
+        }
       }
       .__expansion-rgt--side{
         width: 40px;
@@ -82,6 +112,12 @@
   .opt {
 
     &_booking__detail {
+      .opt_counter{
+        display: none;
+      }
+      .opt_unit-price{
+        display: block;
+      }
       .mat-progress-bar-fill{
         background-color: $border_color;
         ::after {
@@ -96,11 +132,11 @@
       .row {
         margin-left: -70px;
       }
-      .price--values {
-        .lbl__vat {
-          display: none;
-        }
-      }
+      //.price--values {
+      //  .lbl__vat {
+      //    display: none;
+      //  }
+      //}
       .__link {
         text-decoration: none;
       }
@@ -209,9 +245,9 @@
     //padding-right: 23px;
     .attach_money-icon,.file_copy-icon,.launch-icon{
       color: #909cac;
-      padding: 5px;
+      //padding: 5px;
       font-size: 25px;
-      padding-top: 10px;
+      //padding-top: 10px;
     }
   }
   button{

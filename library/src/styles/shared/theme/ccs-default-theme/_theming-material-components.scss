@@ -3,6 +3,13 @@
 mat-expansion-panel{
   border-bottom: 1px solid #eee;
 }
+.mat-progress-bar-fill::after {
+  background-color: #47a9ec !important;
+}
+
+.opt_booking__list .opt_booking__detail .mat-progress-bar-fill {
+  background-color: #eee !important;
+}
 
 button{
   &.mat-icon-button{
@@ -11,7 +18,6 @@ button{
     }
 
     &:hover{
-
      // background-color: $opt_color__primary !important;
     }
 
@@ -20,7 +26,6 @@ button{
 
       &:hover{
         color: #fff;
-
       }
 
       button.mat-icon-button.btn-color-default {
@@ -73,6 +78,7 @@ mat-slider{
     background-color: $opt_color__primary !important;
   }
   .mat-accent .mat-slider-thumb, .mat-accent .mat-slider-thumb-label, .mat-accent .mat-slider-track-fill{
-    background-color: $opt_color__primary !important;
+    background-color: $opt_color__primary /*!important;*/
   }
 }
+

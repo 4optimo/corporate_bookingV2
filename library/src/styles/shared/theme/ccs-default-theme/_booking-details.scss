@@ -59,6 +59,73 @@
 
   &_booking__detail {
 
+    .tbl_head{
+
+      padding-left: 15px;
+
+      &:nth-child(1) {
+       //background-color: #eee;
+      }
+    }
+
+    .mat-raised-button{
+
+      color: #686868;
+      i{
+        font-size: 16px;
+        margin-right: 5px;
+      }
+    }
+
+    .opt_unit-price{
+      display: none;
+    }
+
+    .opt-txt__body1{
+      line-height: 18px;
+    }
+
+    .opt-txt__body2{
+      line-height: 18px;
+    }
+
+    .mat-menu-panel{
+      .mat-menu-item{
+        height: 30px;
+        .price-value {
+          display: inline-block;
+          line-height: 1;
+          float: right;
+          padding: 9px 0;
+        }
+        .price-category{
+          display: inline-block;
+          float: left;
+          width: 50%;
+          padding: 9px 10px 9px 0;
+        }
+      }
+    }
+
+    .tbl_head{
+      background-color: #fff;
+      height: 58px;
+      border-bottom: 2px solid #eee;
+
+
+      &:nth-child(2){
+        padding-left: 0px;
+      }
+
+      >.row{
+        width: 100%;
+      }ah el
+
+      .icon__cage{
+        margin-left: -6px;
+      }
+
+    }
 
     .__date--cage{
 
@@ -119,7 +186,6 @@
         }
       }
     }
-
 
     .__time--cage{
 
@@ -217,6 +283,7 @@
       }
 
     }
+
     .mat-input-infix {
       .mat-form-field-infix {
         padding: 0px !important;
@@ -276,6 +343,7 @@
         padding-left: 15px;
 
       }
+
 
 
       .price--value__icon {
@@ -689,4 +757,22 @@
   }
 }
 
+//price popup sass
+.price-popup{
+  .mat-menu-item{
+      height: 30px;
+      .price-value {
+        display: inline-block;
+        line-height: 1;
+        float: right;
+        padding: 9px 0;
+      }
+      .price-category{
+        display: inline-block;
+        float: left;
+        width: 50%;
+        padding: 9px 10px 9px 0;
+      }
 
+  }
+}

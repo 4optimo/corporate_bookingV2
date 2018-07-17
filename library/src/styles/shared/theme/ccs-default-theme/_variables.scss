@@ -9,6 +9,9 @@ $font-family-rubik:  'Rubik', sans-serif;
 
 
 $prefix :'opt_';
+
+
+//<! TO be removed>===============================================================================================
 $ci-bg--color:red;
 $ci-col-hover:green;
 $primary:blue;
@@ -16,13 +19,32 @@ $primary:blue;
 
 
 
-//optimo brand and color codes .....................
-
 $opt_color__primary :#4bb3fa;
 $opt_color__secondary :#27bfc2;
 $opt_color__tertiary :#f5c70e;
 
 
+
+$opt_color_white : #ffffff;
+
+
+
+
+/* Business Colors */
+$status-hover-font-color: #fff;
+$cancelled-status: black;
+$confirmed-status: yellow;
+$confirmed-multiple: blue;
+$provisional: red;
+$warning: purple;
+$tentative: brown;
+$provisional-multiple:grey;
+ /*End of Business Colors*/
+
+/*button colors*/
+
+$opt_button-color__primary : $opt_color__primary;
+$opt_button-color__secondary : $opt_color_white;
 
 
 
@@ -57,6 +79,7 @@ $firm-color--state: $blue-700 !default;
 $alert-color--state: $yellow-700 !default;
 $definite-color--state: $blue-grey-700 !default;
 $quote-color--state: $brown-700 !default;
+$success-color--state:#27bfc2;
 
 
 
@@ -66,6 +89,9 @@ $quote-color--state: $brown-700 !default;
 $accent:#2196F3 !default;
 $central-brand-primary :red;
 $white-color:#fff;
+$fab:#7a8aea;
+$btn-disabled:#c8c8c8;
+$icon-font--color:#909cac;
 
 $lbl-vat--color:#eee;
 $lbl__price-details:#90a4ae;
@@ -73,19 +99,6 @@ $lbl__price-details:#90a4ae;
 
 $package-color--product: #27bfc2;
 $package-color--type: #f5c70e;
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 //button colors----------------------
@@ -133,21 +146,12 @@ $separator-border-color: #d3d6d9;
 
 $primary-theme-font : $opt_color__primary;
 $secondary-theme-font : $opt_color__secondary;
-/* End of Booking Summary */
-
-/* Business Colors */
-$status-hover-font-color: #fff;
-$cancelled-status: black;
-$confirmed-status: yellow;
-$confirmed-multiple: blue;
-$provisional: red;
-$warning: purple;
-$tentative: brown;
-$provisional-multiple:grey;
-/* End of Business Colors */
+/* End of Booking Summary*/
 
 
-/* Floating Action Buttons */
+
+
+ /*Floating Action Buttons */
 $fab-cancel-state : red;
 $fab-payment-state : red;
 $fab-task-state : red;
@@ -155,3 +159,68 @@ $fab-refund-state : red;
 $fab-invoice-state : red;
 $fab-toggle-bg: red;
 /* End of Floating Action Buttons */
+
+// </TO BE REMOVED>=================================================================================================================
+
+
+
+
+
+
+
+
+
+
+
+//======================================================
+//                    NEW
+//======================================================
+//optimo brand and color codes .....................
+
+$opt_color_primary :#4bb3fa;
+$opt_color_secondary :#27bfc2;
+$opt_color_tertiary :#f5c70e;
+
+
+
+$opt_color_white : #ffffff;
+$opt_color_accent : #7a8aea;
+$opt_color_header :#333e47;
+$opt_color_footer :#454f58;
+
+
+
+//========== Status colors=================
+$opt_status_confirmed : $opt_color_secondary;
+$opt_status_cancelled : #f5766c;
+$opt_status_confirmed-multiple:#607d8b;
+$opt_status_provisional : #00bcd4;
+$opt_status_warning :#ff9800;
+$opt_status_tentative :#673ab7;
+$opt_status_provisional_multiple:#9c27b0;
+
+
+
+
+//==========Text Colors================
+$opt_text_color_primary:#3a424d;
+$opt_text_color_secondary :$opt_color_secondary;
+$opt_text_color_tertiary: #909cac;
+$opt_text-color_quaternary:$opt_color_primary;
+$opt_text_color_error :#af564e;
+
+
+
+
+//=========Button Colors=================
+$opt_color_btn_default:$opt_color_white;
+$opt_color_btn_active:$opt-color_primary;
+$opt_color_btn_disabled:#ebebeb;
+$opt_color_btn_outline : #91a0ad;
+$opt_color_icon_font:$opt_text_color_tertiary;
+$opt_color_fab: $opt_color_accent;
+$opt_color_frozen : $opt_status_cancelled;
+
+
+
+
