@@ -1,3 +1,16 @@
+.opt-corporate-client{
+  mat-expansion-panel{
+    margin-bottom: 15px;
+
+    .mat-expansion-panel-body{
+      padding: 20px 10px !important;
+
+    }
+  }
+
+
+}
+
 .opt {
   &_corporate-client-popup {
     font-size: 12px !important;
@@ -131,7 +144,7 @@
 
     .contact-details{
       //background-color: #f1f5f8;
-      margin: 0 -24px 0 -24px;
+     margin: 0 -24px 0 -24px;
 
       .warning-message{
         color: $no-color--state;
@@ -179,6 +192,9 @@
         }
 
         .mat-expansion-panel{
+
+
+
           &.mat-expanded{
             background-color: #f1f5f8;
             .mat-expansion-panel-header{
