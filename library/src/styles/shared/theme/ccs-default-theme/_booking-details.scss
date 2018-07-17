@@ -112,9 +112,14 @@
       height: 58px;
       border-bottom: 2px solid #eee;
 
+
+      &:nth-child(2){
+        padding-left: 0px;
+      }
+
       >.row{
         width: 100%;
-      }
+      }ah el
 
       .icon__cage{
         margin-left: -6px;
