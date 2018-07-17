@@ -81,12 +81,12 @@
       display: none;
     }
 
-    .opt-txt__body1{
-      line-height: 18px;
+    .opt-txt__body1,.opt-txt__body1-small{
+      line-height: 19px;
     }
 
-    .opt-txt__body2{
-      line-height: 18px;
+    .opt-txt__body2,opt-txt__body2-small{
+      line-height: 19px;
     }
 
     .mat-menu-panel{
@@ -387,7 +387,7 @@
 
           .mat-input-element {
             font-weight: 500;
-            font-size: 16px;
+            font-size: 15px;
           }
         }
 
