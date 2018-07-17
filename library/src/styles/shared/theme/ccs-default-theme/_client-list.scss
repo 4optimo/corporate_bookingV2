@@ -28,6 +28,7 @@
     }
   }
   .mat-accordion .mat-expansion-panel.opt-expand--line.mat-expanded{
+    transition: all 0.3s ease;
 
     margin-bottom: 50px;
     margin-top: 50px;
