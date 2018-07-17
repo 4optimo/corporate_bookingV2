@@ -12,14 +12,24 @@
   //}
 
   mat-expansion-panel{
+    .mat-expansion-panel-header {
+      margin-left: 0px;
+      margin-right: 0px;
+    }
     &:hover{
-      transition: background-color 0.5s ease;
-      background-color: #ECEFF1;
-
-      .lbl{
+      .mat-expansion-panel-header{
         transition: background-color 0.5s ease;
-        background-color: #CFD8DC;
+        background-color: #ECEFF1;
+
       }
+
+
+      //.lbl {
+      //  &.lbl__vat{
+      //  transition: background-color 0.5s ease;
+      //  background-color: #CFD8DC;
+      //}
+      //}
 
       .mat-expansion-panel-content{
         background-color: #fff;
