@@ -268,90 +268,112 @@
 
 
       <!--Tab 2-->
-        <mat-tab label="Buttons and Labels">
+    <mat-tab label="Buttons and Labels">
+      <!--Buttons-->
       <div class="typo-btn-tab">
         <h1 class="opt__heading-1">Buttons</h1>
-        <!--Buttons-->
+        <table class="table table-striped">
+      <thead>
+      <tr>
+        <th scope="col">Button Name</th>
+        <th scope="col">Class Name</th>
+        <th scope="col">Preview</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>Primary Button</td>
+        <td><code>.mat-btn-primary</code></td>
+        <td><button mat-button class="mat-btn-primary">Primary Button</button></td>
+      </tr>
+
+      <tr>
+        <td>Primary Small Button</td>
+        <td><code>.mat-btn-primary--small</code></td>
+        <td><button mat-button class="mat-btn-primary--small">Primary Button</button></td>
+      </tr>
+
+      <tr>
+        <td>Active State</td>
+        <td><code>.mat-btn-primary_active</code></td>
+        <td><button mat-button class="mat-btn-primary_active">Active State </button></td>
+      </tr>
+
+      <tr>
+        <td>Active State Small Button</td>
+        <td><code>.mat-btn-primary--small_active</code></td>
+        <td><button mat-button class="mat-btn-primary--small_active">Active State</button></td>
+      </tr>
+
+      <!--<tr>
+        <td>Secondary Button</td>
+        <td><code>.mat-btn-secondary</code></td>
+        <td><button mat-button class="mat-btn-secondary">Outline Button</button></td>
+      </tr>-->
+     <!-- <tr>
+        <td>Secondary Small Button</td>
+        <td><code>.mat-btn-secondary&#45;&#45;small</code></td>
+        <td><button mat-button class="mat-btn-secondary&#45;&#45;small">Outline Button</button></td>
+      </tr>
+
+-->
+      <tr>
+        <td>Disabled Button</td>
+        <td><code>.mat-btn-disabled</code></td>
+        <td><button mat-button class="mat-btn-disabled">Disabled Button</button></td>
+      </tr>
+
+      <tr>
+        <td>Icon Button</td>
+        <td><code>.mat-btn-icon-btn</code></td>
+        <td><button mat-icon-button class="mat-btn-icon-btn"><i class="material-icons">
+          cloud_upload
+        </i></button></td>
+      </tr>
+
+      <tr>
+        <td>Floating Action Button</td>
+        <td><code>.mat-btn-fab</code></td>
+        <td><button mat-fab class="mat-btn-fab">+</button></td>
+      </tr>
+
+      <tr>
+        <td>Mini Floating Action Button</td>
+        <td><code>.mat-btn-mini-fab</code></td>
+        <td><button mat-mini-fab class="mat-btn-mini-fab">+</button></td>
+      </tr>
+
+      <tr>
+
+      </tr>
+
+      </tbody>
+    </table>
+      </div><!--/Buttons-->
+
+      <!--Labels-->
+      <div class="typo-label">
+        <h1 class="opt__heading-1">Labels</h1>
         <table class="table table-striped">
           <thead>
           <tr>
-            <th scope="col">Button Name</th>
+            <th scope="col">Label Name</th>
             <th scope="col">Class Name</th>
             <th scope="col">Preview</th>
           </tr>
           </thead>
           <tbody>
           <tr>
-            <td>Primary Button</td>
-            <td><code>.mat-btn-primary</code></td>
-            <td><button mat-button class="mat-btn-primary">Primary Button</button></td>
+            <td>
+
+            </td>
           </tr>
-
-          <tr>
-            <td>Primary Small Button</td>
-            <td><code>.mat-btn-primary--small</code></td>
-            <td><button mat-button class="mat-btn-primary--small">Primary Button</button></td>
-          </tr>
-
-          <tr>
-            <td>Active State</td>
-            <td><code>.mat-btn-primary_active</code></td>
-            <td><button mat-button class="mat-btn-primary_active">Active State </button></td>
-          </tr>
-
-          <tr>
-            <td>Active State Small Button</td>
-            <td><code>.mat-btn-primary--small_active</code></td>
-            <td><button mat-button class="mat-btn-primary--small_active">Active State</button></td>
-          </tr>
-
-          <!--<tr>
-            <td>Secondary Button</td>
-            <td><code>.mat-btn-secondary</code></td>
-            <td><button mat-button class="mat-btn-secondary">Outline Button</button></td>
-          </tr>-->
-         <!-- <tr>
-            <td>Secondary Small Button</td>
-            <td><code>.mat-btn-secondary&#45;&#45;small</code></td>
-            <td><button mat-button class="mat-btn-secondary&#45;&#45;small">Outline Button</button></td>
-          </tr>
-
--->
-          <tr>
-            <td>Disabled Button</td>
-            <td><code>.mat-btn-disabled</code></td>
-            <td><button mat-button class="mat-btn-disabled">Disabled Button</button></td>
-          </tr>
-
-          <tr>
-            <td>Icon Button</td>
-            <td><code>.mat-btn-icon-btn</code></td>
-            <td><button mat-icon-button class="mat-btn-icon-btn"><i class="material-icons">
-              cloud_upload
-            </i></button></td>
-          </tr>
-
-          <tr>
-            <td>Floating Action Button</td>
-            <td><code>.mat-btn-fab</code></td>
-            <td><button mat-fab class="mat-btn-fab">+</button></td>
-          </tr>
-
-          <tr>
-            <td>Mini Floating Action Button</td>
-            <td><code>.mat-btn-mini-fab</code></td>
-            <td><button mat-mini-fab class="mat-btn-mini-fab">+</button></td>
-          </tr>
-
-          <tr>
-
-          </tr>
-
           </tbody>
-        </table><!--/Buttons-->
+        </table>
+      </div><!--/Labels-->
+    </mat-tab>
 
-      </div>
-    </mat-tab> <!--/Tab 2-->
+      <!--/Tab 2-->
 
       <!--Tab 3-->
         <mat-tab label="Icon Library"> Content 3 </mat-tab><!--/Tab 3-->
@@ -369,6 +391,7 @@
                 <th scope="col">Color</th>
               </tr>
               </thead>
+
 
               <tbody>
                 <tr>
@@ -390,6 +413,13 @@
                   <td><var>$opt_color_tertiary</var></td>
                   <td>#f5c70e</td>
                   <td bgcolor="#f5c70e"></td>
+                </tr>
+
+                <tr>
+                  <td>Quaternary Color</td>
+                  <td><var>$opt_color_quaternary</var></td>
+                  <td>#333e47</td>
+                  <td bgcolor="#333e47"></td>
                 </tr>
               </tbody>
             </table>
@@ -420,10 +450,10 @@
                   <td bgcolor="#7a8aea"></td>
                 </tr>
 
-                <tr>
+                <!--<tr>
                   <td>Header Color</td>
                   <td><var> $opt_color_header</var></td>
-                  <td>#333e47</td>
+                  <td></td>
                   <td bgcolor="#333e47"></td>
                 </tr>
 
@@ -432,7 +462,7 @@
                   <td><var> $opt_color_footer </var></td>
                   <td>#454f58</td>
                   <td bgcolor="#454f58"></td>
-                </tr>
+                </tr>-->
               </tbody>
             </table>
 
