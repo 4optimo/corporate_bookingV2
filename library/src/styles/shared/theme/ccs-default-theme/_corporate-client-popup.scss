@@ -145,6 +145,19 @@
     .contact-details{
      // background-color: #f1f5f8;
     // margin: 0 -24px 0 -24px;
+      .opt_address_cage{
+        border: 1px dashed #ababab;
+        padding: 15px;
+        margin: 30px 0px;
+        background-color: #f1f5f8;
+      }
+      .delivery-method{
+        text-align: right;
+        border: 1px solid #f3f3f3;
+        padding: 3px;
+        background-color: #eee;
+        /* border-bottom: 1px solid #eee; */
+      }
 
       .warning-message{
         color: $no-color--state;
@@ -184,6 +197,9 @@
           flex-direction: column;
           margin: 10px;
           //border-bottom: 1px dashed #00aeef;
+        }
+        .contact-2{
+          padding-top: 30px;
         }
         .contact-type{
           margin: 10px;
@@ -279,6 +295,49 @@
         }
       }
 
+    }
+
+    .additional-details{
+      .opt_flex__item{
+
+
+
+        @include respond-to('x-small') {
+          flex: 1 1 50%;
+        }
+        @include respond-to('small') {
+          flex: 1 1 50%;
+        }
+        @include respond-to('medium') {
+          flex: 1 1 33%;
+        }
+        @include respond-to('large') {
+          flex: 1 1 33%;
+        }
+        @include respond-to('xx-large') {
+          flex: 1 1 33%;
+        }
+      }
+      //.two-column{
+      //  .opt_flex__item {
+      //
+      //    @include respond-to('x-small') {
+      //      flex: 1 1 25%;
+      //    }
+      //    @include respond-to('small') {
+      //      flex: 1 1 25%;
+      //    }
+      //    @include respond-to('medium') {
+      //      flex: 1 1 16.5%;
+      //    }
+      //    @include respond-to('large') {
+      //      flex: 1 1 16.5%;
+      //    }
+      //    @include respond-to('xx-large') {
+      //      flex: 1 1 16.5%;
+      //    }
+      //  }
+      //}
     }
 
     .notes {
@@ -388,5 +447,12 @@
       margin-bottom: 15px;
     }
 
+    .padding-left{
+      padding-left: 20px;
+    }
+
   }
+
+
+
 }
