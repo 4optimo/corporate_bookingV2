@@ -1,4 +1,4 @@
-<div class="opt_modal-content">
+<div class="opt_modal-content opt-corporate-client">
   <div class="mat-dialog-content ">
     <div class="opt_modal-header ">
       <div class="test opt--depth__1">
@@ -53,11 +53,7 @@
                   </mat-form-field>
                 </div>
                 <div class="opt_flex__item--inherit form-data__individual">
-                  <mat-slide-toggle [labelPosition]='before'>Active</mat-slide-toggle>
-                  <!--
-                  <mat-slide-toggle #toggle [color]="primary" [checked]="true">Slide me</mat-slide-toggle>
-<h3 [ngClass]="{'primary-color' : toggle.checked}">Text</h3>
-                  -->
+                  <mat-slide-toggle [labelPosition]="before">Active</mat-slide-toggle>
                 </div>
               </div>
               <!--</div>-->
@@ -75,37 +71,16 @@
                 <div class="opt_flex--container">
                   <div class="opt_flex__item">
                     <mat-form-field class="example-full-width">
-                      <mat-select placeholder="Title" [(ngModel)]="selectedValue1" name="currency" required>
+                      <input matInput placeholder="Name" value="" required>
+                    </mat-form-field>
+                  </div>
+                  <div class="opt_flex__item">
+                    <mat-form-field class="example-full-width">
+                      <mat-select placeholder="Title" [(ngModel)]="selectedValue1" name="Mr" required>
                         <mat-option *ngFor="let currency of currencys" [value]="currency.value">
                           {{currency.viewValue}}
                         </mat-option>
                       </mat-select>
-                    </mat-form-field>
-                  </div>
-                  <div class="opt_flex__item">
-                    <mat-form-field class="example-full-width">
-                      <input matInput placeholder="First Name" value="" required>
-                    </mat-form-field>
-                  </div>
-                  <div class="opt_flex__item">
-                    <mat-form-field class="example-full-width">
-                      <input matInput placeholder="Last Name" value="" required>
-                    </mat-form-field>
-                  </div>
-                  <div class="opt_flex__item">
-                    <mat-form-field class="example-full-width">
-                      <mat-select placeholder="Primary Client Category" [(ngModel)]="selectedValue1" name="currency" required>
-                        <mat-option *ngFor="let currency of currencys" [value]="currency.value">
-                          {{currency.viewValue}}
-                        </mat-option>
-                      </mat-select>
-                    </mat-form-field>
-                  </div>
-                  <div class="opt_flex__item">
-                    <mat-form-field class="example-full-width">
-                      <input matInput [matDatepicker]="picker" placeholder="Date Registered">
-                      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-                      <mat-datepicker #picker></mat-datepicker>
                     </mat-form-field>
                   </div>
                   <div class="opt_flex__item">
@@ -119,12 +94,41 @@
                   </div>
                   <div class="opt_flex__item">
                     <mat-form-field class="example-full-width">
-                      <input matInput placeholder="ERP Reference" value="" >
+                      <input matInput placeholder="Reference Code" value="" required>
+                    </mat-form-field>
+                  </div>
+                  <div class="opt_flex__item">
+                    <mat-form-field class="example-full-width">
+                      <input matInput [matDatepicker]="picker" placeholder="Date Registered">
+                      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                      <mat-datepicker #picker></mat-datepicker>
+                    </mat-form-field>
+                  </div>
+                  <div class="opt_flex__item">
+                    <mat-form-field class="example-full-width">
+                      <input matInput placeholder="SAP Client Reference" value="" >
                       <mat-icon matSuffix><i class="material-icons">search</i></mat-icon>
                     </mat-form-field>
                   </div>
-                  <div class="opt_flex__item"></div>
-                  <div class="opt_flex__item"></div>
+                  <div class="opt_flex__item">
+                    <mat-form-field class="example-full-width">
+                      <input matInput placeholder="Company Registration No" value="" required>
+                    </mat-form-field>
+                  </div>
+                  <div class="opt_flex__item">
+                    <mat-form-field class="example-full-width">
+                      <mat-select placeholder="Primary Client Category" [(ngModel)]="selectedValue1" name="currency" required>
+                        <mat-option *ngFor="let currency of currencys" [value]="currency.value">
+                          {{currency.viewValue}}
+                        </mat-option>
+                      </mat-select>
+                    </mat-form-field>
+                  </div>
+                  <div class="opt_flex__item">
+                    <mat-form-field class="example-full-width">
+                      <input matInput placeholder="Additional Client Category" value="" >
+                    </mat-form-field>
+                  </div>
                 </div>
               </mat-expansion-panel>
             </mat-accordion>
@@ -132,7 +136,9 @@
         </div>
 
         <div class="contact-details ">
-          <div class="inner-wrapper">
+
+
+          <div class="inner-wrapper clear-space">
             <section class="opt-section__heading">
               <mat-accordion>
 
@@ -181,7 +187,7 @@
                       <div class="opt_flex__item contact-type" >
                         <div class="opt_flex--container inner-contxt">
                           <mat-form-field class="example-full-width">
-                            <mat-select placeholder="Office Phone" [(ngModel)]="selectedValue1" name="currency" required>
+                            <mat-select placeholder="Office Phone" [(ngModel)]="selectedValue1" name="currency">
                               <mat-option *ngFor="let currency of currencys" [value]="currency.value">
                                 {{currency.viewValue}}
                               </mat-option>
@@ -220,7 +226,7 @@
                         <div class="opt_flex--container inner-contxt">
                           <div class="opt_flex__item">
                             <mat-form-field class="example-full-width">
-                              <mat-select placeholder="Office Email" [(ngModel)]="selectedValue1" name="currency" required>
+                              <mat-select placeholder="Office Email" [(ngModel)]="selectedValue1" name="currency">
                                 <mat-option *ngFor="let currency of currencys" [value]="currency.value">
                                   {{currency.viewValue}}
                                 </mat-option>
@@ -247,6 +253,8 @@
                           <label>Please note that at least one phone number and email is required</label>
                         </div>
                       </div>
+
+
                       <div class="opt_flex__item  add-new">
                         <div class="add-more-section">
                           <div class="icon-line">
@@ -276,6 +284,9 @@
               </mat-accordion>
             </section>
           </div>
+
+
+
         </div>
 
         <app-opt-corporate-client-tabs></app-opt-corporate-client-tabs>
@@ -299,8 +310,8 @@
                     <div class="opt_flex--container">
                       <div class="opt_flex__item">
                         <div class="btn-note">
-                          <div class="btn-color-default opt_flex__item opt-txt__light btn" mat-raised-button="">Add</div>
-                          <div class="btn-color-default opt_flex__item opt-txt__light btn" mat-raised-button="">Edit</div>
+                          <div mat-raised-button class="btn-color-default opt_flex__item opt-txt__light btn">Add</div>
+                          <div mat-raised-button class="btn-color-default opt_flex__item opt-txt__light btn ">Edit</div>
                         </div>
                       </div>
                     </div>
@@ -345,15 +356,16 @@
           </section>
         </div>
 
+      </div>
+      <!--modal body end-->
+
       <br>
       <div class="opt_flex--container">
         <div class="opt_flex__item"></div>
         <div class="opt_flex__item--inherit">
-          <button class="opt-txt__body1 btn btn-info" (click)="close()">Save</button>
+          <button class="mat-btn-primary mat-button" (click)="close()">Save</button>
         </div>
       </div>
     </div>
-
-  </div>
 </div>
 </div>
