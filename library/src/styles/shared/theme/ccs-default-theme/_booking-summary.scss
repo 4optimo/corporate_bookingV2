@@ -11,6 +11,12 @@ $rub: 'Rubik', sans-serif;
         border-right: 1px dashed #ccc;
         background-color: $default-state-dark-bg;
       }
+      @include respond-to('x-small') {
+        flex-direction: column;
+      }
+      @include respond-to('medium') {
+        flex-direction: row;
+      }
     }
   }
   &.__unavailable {
