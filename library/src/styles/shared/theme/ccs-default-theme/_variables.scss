@@ -39,7 +39,7 @@ $provisional: red;
 $warning: purple;
 $tentative: brown;
 $provisional-multiple:grey;
- /*End of Business Colors*/
+/*End of Business Colors*/
 
 /*button colors*/
 
@@ -151,7 +151,7 @@ $secondary-theme-font : $opt_color__secondary;
 
 
 
- /*Floating Action Buttons */
+/*Floating Action Buttons */
 $fab-cancel-state : red;
 $fab-payment-state : red;
 $fab-task-state : red;
@@ -164,14 +164,6 @@ $fab-toggle-bg: red;
 
 
 
-
-
-
-
-
-
-
-
 //======================================================
 //                    NEW
 //======================================================
@@ -180,13 +172,13 @@ $fab-toggle-bg: red;
 $opt_color_primary :#4bb3fa;
 $opt_color_secondary :#27bfc2;
 $opt_color_tertiary :#f5c70e;
-
+$opt_color_quaternary :#333e47;
 
 
 $opt_color_white : #ffffff;
 $opt_color_accent : #7a8aea;
-$opt_color_header :#333e47;
-$opt_color_footer :#454f58;
+
+/*$opt_color_footer :#454f58;*/
 
 
 
@@ -219,6 +211,7 @@ $opt_color_btn_disabled:#ebebeb;
 $opt_color_btn_outline : #91a0ad;
 $opt_color_icon_font:$opt_text_color_tertiary;
 $opt_color_fab: $opt_color_accent;
+$opt_color_mini_fab: $opt_color_secondary ;
 $opt_color_frozen : $opt_status_cancelled;
 
 $opt-btn-color-default : #91a0ad;
