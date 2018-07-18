@@ -423,7 +423,7 @@
                     <mat-label  class=""><h3 class="opt__heading-3">Contact {{ 2 }}</h3>  </mat-label>
                     <div class="outer-contxt">
                       <div class="form-data-contact">
-                        <div class="opt_flex--container">
+                        <div class="opt_flex--container contact-details">
                           <div class="opt_flex__item padding-left">
                             <mat-form-field class="example-full-width">
                               <mat-select placeholder="Title" [(ngModel)]="selectedValue1" name="Mr" required>
@@ -443,6 +443,58 @@
                               <input matInput placeholder="Last Name" value="" required>
                             </mat-form-field>
                           </div>
+                          <div class="opt_flex__item padding-left">
+                            <mat-form-field class="example-full-width">
+                              <input matInput placeholder="Address 1" value="" >
+                            </mat-form-field>
+                          </div>
+                          <div class="opt_flex__item">
+                            <mat-form-field class="example-full-width">
+                              <input matInput placeholder="Address 2" value="" >
+                            </mat-form-field>
+                          </div>
+                          <div class="opt_flex__item">
+                            <mat-form-field class="example-full-width">
+                              <input matInput placeholder="Address 3" value="" required>
+                            </mat-form-field>
+                          </div>
+                          <div class="opt_flex__item padding-left">
+                            <mat-form-field class="example-full-width">
+                              <input matInput placeholder="Post Code" value="" >
+                            </mat-form-field>
+                          </div>
+                          <div class="opt_flex__item">
+                            <mat-form-field class="example-full-width">
+                              <input matInput placeholder="City/ Town" value="" required>
+                            </mat-form-field>
+                          </div>
+                          <div class="opt_flex__item">
+                            <mat-form-field class="example-full-width">
+                              <input matInput placeholder="Region/ Country" value="" required>
+                            </mat-form-field>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="delivery-method">
+                        <div class="opt_flex--container">
+                          <div class="opt_flex__item padding-left">
+                            <mat-checkbox checked class="opt-txt__body1-small">Delivery </mat-checkbox>
+                            <mat-checkbox checked class="opt-txt__body1-small">Invoice </mat-checkbox>
+                            <mat-checkbox  class="opt-txt__body1-small">Mailling Addresses are same as above.</mat-checkbox>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="opt_address_cage">
+                        <mat-label class="opt-txt__body2-small">
+
+                           <span class="title_icon"><i class="material-icons">
+                            local_shipping
+                          </i></span>
+
+                          Delivery Address</mat-label>
+                        <div class="opt_flex--container contact-details">
                           <div class="opt_flex__item padding-left">
                             <mat-form-field class="example-full-width">
                               <input matInput placeholder="Address 1" value="" >
@@ -558,6 +610,7 @@
 
 
                       </div>
+
                       <div class="opt_flex--container">
                         <div class="opt_flex__item">
                           <div class="warning-message">
@@ -578,6 +631,7 @@
                           </div>
                         </div>
                       </div>
+
                     </div>
                   </div>
 
@@ -593,6 +647,7 @@
                       </div>
                     </div>
                   </div>
+
                 </mat-expansion-panel>
 
               </mat-accordion>
@@ -628,7 +683,7 @@
                                 <div class="opt_flex--container">
                                   <div class="opt_flex__item p50">
                                     <mat-form-field class="example-full-width">
-                                      <input matInput [matDatepicker]="picker2" placeholder="Date of Birth">
+                                      <input matInput [matDatepicker]="picker2" placeholder="Date of Birth" value="Date of Birth">
                                       <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
                                       <mat-datepicker #picker2></mat-datepicker>
                                     </mat-form-field>
@@ -687,12 +742,12 @@
                                 <div class="opt_flex--container">
                                   <div class="opt_flex__item p50">
                                     <mat-form-field class="example-full-width">
-                                      <input matInput placeholder="Credit" value="" >
+                                      <input matInput placeholder="Opening Balance" value="Debit" >
                                     </mat-form-field>
                                   </div>
                                   <div class="opt_flex__item p50">
                                     <mat-form-field class="example-full-width">
-                                      <input matInput placeholder="Debit" value="" >
+                                      <input matInput placeholder="" value="Credit" >
                                     </mat-form-field>
                                   </div>
                                 </div>
