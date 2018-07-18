@@ -383,7 +383,7 @@
                             </div>
                           </div>
                         </div>
-                        <div class="opt_flex--container">
+                        <div class="opt_flex--container opt_cont__new">
                           <div class="opt_flex__item">
                             <div class="warning-message">
                               <i class="material-icons">info_outline</i>
@@ -391,6 +391,16 @@
                             </div>
                           </div>
 
+                          <div class="opt_flex__item  add-new">
+                            <div class="add-more-section">
+                              <div class="icon-line">
+                              </div>
+                              <label>Add New</label>
+                              <div class="icon-wrapper">
+                                <i class="material-icons">add</i>
+                              </div>
+                            </div>
+                          </div>
 
 
                         </div>
@@ -504,29 +514,49 @@
                             </div>
                           </div>
                         </div>
-                        <div class="opt_flex__item contact-type" >
-                          <div class="opt_flex--container inner-contxt">
-                            <div class="opt_flex__item">
-                              <mat-form-field class="example-full-width">
-                                <mat-select placeholder="Office Email" [(ngModel)]="selectedValue1" name="currency">
-                                  <mat-option *ngFor="let currency of currencys" [value]="currency.value">
-                                    {{currency.viewValue}}
-                                  </mat-option>
-                                </mat-select>
-                              </mat-form-field>
-                            </div>
-                            <div class="opt_flex__item">
-                              <div class="add-more-section">
-                                <div class="icon-line">
-                                </div>
-                                <label>Remove</label>
-                                <div class="icon-wrapper">
-                                  <i class="material-icons">add</i>
-                                </div>
+                        <div class="opt_flex__item -type" >
+
+                          <div class="contact-type">
+
+
+                            <div class="opt_flex--container inner-contxt">
+                          <div class="opt_flex__item">
+                            <mat-form-field class="example-full-width">
+                              <mat-select placeholder="Office Email" [(ngModel)]="selectedValue1" name="currency">
+                                <mat-option *ngFor="let currency of currencys" [value]="currency.value">
+                                  {{currency.viewValue}}
+                                </mat-option>
+                              </mat-select>
+                            </mat-form-field>
+                          </div>
+                          <div class="opt_flex__item">
+                            <div class="add-more-section">
+                              <div class="icon-line">
+                              </div>
+                              <label>Remove</label>
+                              <div class="icon-wrapper">
+                                <i class="material-icons">remove</i>
                               </div>
                             </div>
                           </div>
                         </div>
+
+
+
+
+
+
+
+                      </div>
+
+
+
+                      </div>
+
+
+
+
+
                       </div>
                       <div class="opt_flex--container">
                         <div class="opt_flex__item">
