@@ -57,8 +57,6 @@
 }
 
 .mat-btn{
-
-
   &-primary { /*default*/
     @extend %btn;
     text-align: center !important;
@@ -81,7 +79,7 @@
       text-align: center !important;
     }
 
-    &--small {
+      &--small {
       @extend %btn-small;
       text-align: center !important;
       background-color: $opt_color_white;
@@ -112,7 +110,7 @@
         text-align: center !important;
       }
     }
-    &_active{
+    &_active{ /*Priary Active*/
       @extend %btn;
       @include box_shadow(2);
       background-color: $opt_color_primary;
