@@ -59,6 +59,16 @@
 
   &_booking__detail {
 
+
+    .opt_date_range{
+
+      .mat-form-field{
+        width: 100%;
+      }
+
+
+    }
+
     .tbl_head{
 
       padding-left: 15px;
@@ -83,9 +93,11 @@
 
     .opt-txt__body1,.opt-txt__body1-small{
       line-height: 19px;
+
+
     }
 
-    .opt-txt__body2,opt-txt__body2-small{
+    .opt-txt__body2,.opt-txt__body2-small{
       line-height: 19px;
     }
 
@@ -412,8 +424,6 @@
 }
 .action__button {
   flex: 1;
-
-
   @include respond-to('x-small') {
     flex: 0 1 auto;
   }
