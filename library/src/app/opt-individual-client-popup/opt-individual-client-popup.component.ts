@@ -6,8 +6,12 @@ import {MatDialogRef, MAT_DIALOG_DATA} from "@angular/material";
   selector: 'app-opt-individual-client-popup',
   templateUrl: './opt-individual-client-popup.component.html',
   styleUrls: ['./opt-individual-client-popup.component.scss']
+
+
 })
+
 export class OptIndividualClientPopupComponent implements OnInit {
+
 
   constructor(
     public  matDialogRef: MatDialogRef<ModalContentComponent>,

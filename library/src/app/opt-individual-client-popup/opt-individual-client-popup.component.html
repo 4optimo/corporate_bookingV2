@@ -49,7 +49,12 @@
                 </div>
                 <div class="opt_flex__item form-data__individual">
                   <mat-form-field class="example-full-width">
-                    <input matInput placeholder="Account Manager" value="Sean.Page" required>
+                    <input type="text" placeholder="Sean.Page" aria-label="Number" matInput [formControl]="myControl" [matAutocomplete]="auto">
+                    <mat-autocomplete #auto="matAutocomplete">
+                      <mat-option *ngFor="let option of options" [value]="option">
+                        {{option}}
+                      </mat-option>
+                    </mat-autocomplete>
                   </mat-form-field>
                 </div>
                 <div class="opt_flex__item--inherit form-data__individual">
@@ -64,7 +69,7 @@
         <div class="client-details">
           <section class="opt-section__heading">
             <mat-accordion>
-              <mat-expansion-panel #myPanel2 class="section-heading __main">
+              <mat-expansion-panel #myPanel2 class="section-heading __main" expanded>
                 <mat-expansion-panel-header class="__title" >
                   <h1>Client Details</h1>
                 </mat-expansion-panel-header>
@@ -142,7 +147,7 @@
             <section class="opt-section__heading">
               <mat-accordion>
 
-                <mat-expansion-panel #myPanel2 class="section-heading __main">
+                <mat-expansion-panel #myPanel2 class="section-heading __main" expanded>
                   <mat-expansion-panel-header class="__title" >
                     <h1>Contact Details</h1>
 
@@ -335,7 +340,7 @@
                                 </div>
                                 <label>Remove</label>
                                 <div class="icon-wrapper">
-                                  <i class="material-icons">add</i>
+                                  <i class="material-icons">remove</i>
                                 </div>
                               </div>
                             </div>
@@ -354,7 +359,7 @@
                                 </div>
                                 <label>Remove</label>
                                 <div class="icon-wrapper">
-                                  <i class="material-icons">add</i>
+                                  <i class="material-icons">remove</i>
                                 </div>
                               </div>
                             </div>
@@ -376,7 +381,7 @@
                                   </div>
                                   <label>Remove</label>
                                   <div class="icon-wrapper">
-                                    <i class="material-icons">add</i>
+                                    <i class="material-icons">remove</i>
                                   </div>
                                 </div>
                               </div>
@@ -474,19 +479,18 @@
                             </mat-form-field>
                           </div>
                         </div>
-                      </div>
 
-                      <div class="delivery-method">
+                        <div class="delivery-method">
                         <div class="opt_flex--container">
                           <div class="opt_flex__item padding-left">
-                            <mat-checkbox checked class="opt-txt__body1-small">Delivery </mat-checkbox>
-                            <mat-checkbox checked class="opt-txt__body1-small">Invoice </mat-checkbox>
-                            <mat-checkbox  class="opt-txt__body1-small">Mailling Addresses are same as above.</mat-checkbox>
+                            <mat-checkbox  class="opt-txt__body1-small">Delivery </mat-checkbox>
+                            <mat-checkbox class="opt-txt__body1-small">Invoice </mat-checkbox>
+                            <mat-checkbox class="opt-txt__body1-small">Mailling Addresses are same as above.</mat-checkbox>
                           </div>
                         </div>
                       </div>
 
-                      <div class="opt_address_cage">
+                        <div class="opt_address_cage">
                         <mat-label class="opt-txt__body2-small">
 
                            <span class="title_icon"><i class="material-icons">
@@ -527,6 +531,7 @@
                           </div>
                         </div>
                       </div>
+                      </div>
                       <div class="opt_flex--container">
                         <div class="opt_flex__item contact-type" >
                           <div class="opt_flex--container inner-contxt">
@@ -542,7 +547,7 @@
                               </div>
                               <label>Remove</label>
                               <div class="icon-wrapper">
-                                <i class="material-icons">add</i>
+                                <i class="material-icons">remove</i>
                               </div>
                             </div>
                           </div>
@@ -561,7 +566,7 @@
                               </div>
                               <label>Remove</label>
                               <div class="icon-wrapper">
-                                <i class="material-icons">add</i>
+                                <i class="material-icons">remove</i>
                               </div>
                             </div>
                           </div>
@@ -661,7 +666,7 @@
         <div class="additional-details">
           <section class="opt-section__heading">
             <mat-accordion>
-              <mat-expansion-panel #myPanel2 class="section-heading __main">
+              <mat-expansion-panel #myPanel2 class="section-heading __main" expanded>
                 <mat-expansion-panel-header class="__title" >
                   <h1>Additional Details</h1>
                 </mat-expansion-panel-header>
@@ -840,7 +845,7 @@
           <div class="inner-wrapper">
             <section class="opt-section__heading">
               <mat-accordion>
-                <mat-expansion-panel #myPanel2 class="section-heading __main">
+                <mat-expansion-panel #myPanel2 class="section-heading __main" expanded>
                   <mat-expansion-panel-header class="__title" >
                     <h1>Notes</h1>
                   </mat-expansion-panel-header>
@@ -870,7 +875,7 @@
         <div class="communication-consent">
           <section class="opt-section__heading">
             <mat-accordion>
-              <mat-expansion-panel #myPanel2 class="section-heading __main">
+              <mat-expansion-panel #myPanel2 class="section-heading __main" expanded>
                 <mat-expansion-panel-header class="__title" >
                   <h1>Communication Consent</h1>
                 </mat-expansion-panel-header>
