@@ -61,6 +61,9 @@
         flex-grow: 1;
         margin-right: 0;
         background-color: #f1f5f8;
+        .btn-taptoadd {
+          background-color: white;
+        }
         //@include respond-to('medium') {
         //  padding: 15px;
         //  margin-right: 10px;
@@ -381,6 +384,9 @@
       }
     }
 
+    .opt-section__heading{
+      margin-bottom: 15px;
+    }
 
   }
 }
