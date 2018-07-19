@@ -11,6 +11,12 @@ mat-expansion-panel{
   background-color: #eee !important;
 }
 
+
+.mat-form-field-underline {
+  background-color: rgba(140, 140, 140, 0.42);
+}
+
+
 button{
   &.mat-icon-button{
     &.btn-color-default{
