@@ -1,6 +1,7 @@
 import {Component, Inject, OnInit} from '@angular/core';
 import {MatDialogRef, MAT_DIALOG_DATA} from "@angular/material";
 import {ModalContentComponent} from "../modal-content/modal-content.component";
+import {FormControl} from "@angular/forms";
 
 @Component({
   selector: 'app-opt-corporate-client-popup',
@@ -9,6 +10,8 @@ import {ModalContentComponent} from "../modal-content/modal-content.component";
 })
 export class OptCorporateClientPopupComponent implements OnInit {
 
+  myControl = new FormControl();
+  options: string[] = ['Sean.Page', 'One', 'Two', 'Three'];
 
   constructor(
     public  matDialogRef: MatDialogRef<ModalContentComponent>,
