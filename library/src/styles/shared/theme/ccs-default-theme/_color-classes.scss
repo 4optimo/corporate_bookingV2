@@ -1,0 +1,185 @@
+.opt{
+
+  //===========Optimo Theme Colors===========
+  &_color_primary{
+    background-color: $opt_color_primary;
+    color: $opt_color_white;
+  }
+
+  &_color_secondary{
+    background-color: $opt_color_secondary;
+    color: $opt_color_white;
+  }
+
+  &_color_tertiary{
+    background-color: $opt_color_tertiary;
+    color: $opt_color_white;
+  }
+
+  &_color_quaternary{
+    background-color: $opt_color_quaternary;
+    color: $opt_color_white;
+  }
+
+
+
+
+  //General Colors
+  &_color_white{
+    background-color: $opt_color_white;
+    color: $opt_text_color_primary;
+  }
+
+  &_color_accent{
+    background-color:$opt_color_accent;
+    color: $opt_color_white;
+  }
+
+
+
+
+
+  //========Status Background Colors=========
+  &_bg_status_confirmed{
+    background-color: $opt_status_confirmed;
+    color: $opt_color_white;
+  }
+
+
+  &_bg_status_cancelled{
+    background-color:$opt_status_cancelled;
+    color: $opt_color_white;
+  }
+
+  &_bg_status_confirmed-multiple{
+    background-color: $opt_status_confirmed-multiple;
+    color: $opt_color_white;
+  }
+
+  &_bg_status_provisional{
+    background-color:$opt_status_provisional;
+    color: $opt_color_white;
+  }
+
+  &_bg_status_warning{
+    background-color: $opt_status_warning;
+    color: $opt_color_white;
+
+  }
+
+  &_bg_status_tentative{
+    background-color:$opt_status_tentative;
+    color: $opt_color_white;
+  }
+
+  &_bg_status_provisional_multiple{
+    background-color:$opt_status_provisional_multiple;
+    color: $opt_color_white;
+  }
+
+
+
+
+  //========Status Text Colors=========
+  &_txt_status_confirmed{
+    color: $opt_status_confirmed;
+    background-color: $opt_color_white;
+  }
+
+
+  &_txt_status_cancelled{
+    color:$opt_status_cancelled;
+    background-color: $opt_color_white;
+  }
+
+  &_txt_status_confirmed-multiple{
+    color: $opt_status_confirmed-multiple;
+    background-color: $opt_color_white;
+  }
+
+  &_txt_status_provisional{
+    color:$opt_status_provisional;
+    background-color: $opt_color_white;
+  }
+
+  &_txt_status_warning{
+    color: $opt_status_warning;
+    background-color: $opt_color_white;
+
+  }
+
+  &_txt_status_tentative{
+    color:$opt_status_tentative;
+    background-color: $opt_color_white;
+  }
+
+  &_txt_status_provisional_multiple{
+    color:$opt_status_provisional_multiple;
+    background-color: $opt_color_white;
+  }
+
+
+
+  //==========Text Colors================
+  &_txt_color_primary{
+    color:$opt_text_color_primary;
+  }
+
+  &_txt_color_secondary{
+    color:$opt_text_color_secondary;
+  }
+
+  &_txt_color_tertianry{
+    color: $opt_text_color_tertiary ;
+  }
+
+
+  &_txt_color_qauterary{
+    color: $opt_text-color_quaternary;
+  }
+
+  &_txt_color_error{
+    color: $opt_text_color_error;
+  }
+
+
+
+  //=========Button Colors=================
+  &_color_btn_default{
+    background-color: $opt_color_btn_default;
+    color:$opt_color_btn_outline ;
+  }
+
+  &_color_btn_active{
+    background-color: $opt_color_btn_active;
+    color: $opt_color_white;
+  }
+
+  &_color_btn_disabled{
+    background-color: $opt_color_white;
+    color: $opt_color_btn_disabled;
+  }
+
+
+  &_color_icon_font{
+    color: $opt_color_icon_font;
+  }
+
+  &_color_fab{
+    background-color: $opt_color_fab;
+    color: $opt_color_white;
+  }
+
+  &_color_mini_fab{
+    background-color: $opt_color_mini_fab;
+    color: $opt_color_white;
+  }
+
+  &_color_frozen{
+    background-color: $opt_color_frozen;
+    color: $opt_color_white;
+  }
+
+
+
+}

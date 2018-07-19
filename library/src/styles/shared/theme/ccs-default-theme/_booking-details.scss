@@ -59,6 +59,16 @@
 
   &_booking__detail {
 
+
+    .opt_date_range{
+
+      .mat-form-field{
+        width: 100%;
+      }
+
+
+    }
+
     .tbl_head{
 
       padding-left: 15px;
@@ -81,12 +91,14 @@
       display: none;
     }
 
-    .opt-txt__body1{
-      line-height: 18px;
+    .opt-txt__body1,.opt-txt__body1-small{
+      line-height: 19px;
+
+
     }
 
-    .opt-txt__body2{
-      line-height: 18px;
+    .opt-txt__body2,.opt-txt__body2-small{
+      line-height: 19px;
     }
 
     .mat-menu-panel{
@@ -159,7 +171,7 @@
 
         &.opt-expand--line.mat-expanded{
           border-left: 4px solid #4bb3fa;
-
+          margin-bottom: 50px;
           @include box_shadow(3);
 
         }
@@ -387,7 +399,7 @@
 
           .mat-input-element {
             font-weight: 500;
-            font-size: 16px;
+            font-size: 15px;
           }
         }
 
@@ -412,8 +424,6 @@
 }
 .action__button {
   flex: 1;
-
-
   @include respond-to('x-small') {
     flex: 0 1 auto;
   }
@@ -437,6 +447,7 @@
   padding: 2px 5px;
   line-height: 1.2px;
   font-weight: 500;
+  color: #607D8B;
 
   &.lbl__vat {
     background-color: $lbl-vat--color;

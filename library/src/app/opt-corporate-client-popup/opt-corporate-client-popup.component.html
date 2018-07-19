@@ -1,4 +1,4 @@
-<div class="opt_modal-content">
+<div class="opt_modal-content opt-corporate-client">
   <div class="mat-dialog-content">
     <div class="opt_modal-header ">
       <div class="test opt--depth__1">
@@ -24,7 +24,7 @@
     </div>
     <div class="opt_modal-body">
 
-<!--modal body start-->
+      <!--modal body start-->
       <div class="opt_corporate-client-popup">
 
         <div class="pro-header">
@@ -49,7 +49,12 @@
                 </div>
                 <div class="opt_flex__item form-data__individual">
                   <mat-form-field class="example-full-width">
-                    <input matInput placeholder="Account Manager" value="Sean.Page" required>
+                    <input type="text" placeholder="Sean.Page" aria-label="Number" matInput [formControl]="myControl" [matAutocomplete]="auto">
+                    <mat-autocomplete #auto="matAutocomplete">
+                      <mat-option *ngFor="let option of options" [value]="option">
+                        {{option}}
+                      </mat-option>
+                    </mat-autocomplete>
                   </mat-form-field>
                 </div>
                 <div class="opt_flex__item--inherit form-data__individual">
@@ -64,7 +69,7 @@
         <div class="client-details">
           <section class="opt-section__heading">
             <mat-accordion>
-              <mat-expansion-panel #myPanel2 class="section-heading __main">
+              <mat-expansion-panel #myPanel2 class="section-heading __main" expanded>
                 <mat-expansion-panel-header class="__title" >
                   <h1>Client Details</h1>
                 </mat-expansion-panel-header>
@@ -76,6 +81,7 @@
                   </div>
                   <div class="opt_flex__item">
                     <mat-form-field class="example-full-width">
+                      <span matPrefix><mat-checkbox></mat-checkbox></span>
                       <mat-select placeholder="Head Office" [(ngModel)]="selectedValue1" name="currency">
                         <mat-option *ngFor="let currency of currencys" [value]="currency.value">
                           {{currency.viewValue}}
@@ -129,6 +135,121 @@
                       <input matInput placeholder="Additional Client Category" value="" >
                     </mat-form-field>
                   </div>
+                  <div class="opt_flex__item">
+                    <mat-form-field class="example-full-width">
+                      <input matInput placeholder="Address 1" value="" >
+                    </mat-form-field>
+                  </div>
+                  <div class="opt_flex__item">
+                    <mat-form-field class="example-full-width">
+                      <input matInput placeholder="Address 2" value="" >
+                    </mat-form-field>
+                  </div>
+                  <div class="opt_flex__item">
+                    <mat-form-field class="example-full-width">
+                      <input matInput placeholder="Address 3" value="" required>
+                    </mat-form-field>
+                  </div>
+                  <div class="opt_flex__item">
+                    <mat-form-field class="example-full-width">
+                      <input matInput placeholder="Post Code" value="" required>
+                    </mat-form-field>
+                  </div>
+                  <div class="opt_flex__item">
+                    <mat-form-field class="example-full-width">
+                      <input matInput placeholder="City/ Town" value="" required>
+                    </mat-form-field>
+                  </div>
+                  <div class="opt_flex__item">
+                    <mat-form-field class="example-full-width">
+                      <input matInput placeholder="Region/ Country" value="" required>
+                    </mat-form-field>
+                  </div>
+                </div>
+
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item contact-type" >
+                    <div class="opt_flex--container inner-contxt">
+                      <mat-form-field class="example-full-width">
+                        <mat-select placeholder="Office Phone" [(ngModel)]="selectedValue1" name="currency">
+                          <mat-option *ngFor="let currency of currencys" [value]="currency.value">
+                            {{currency.viewValue}}
+                          </mat-option>
+                        </mat-select>
+                      </mat-form-field>
+                      <div class="add-more-section">
+                        <div class="icon-line">
+                        </div>
+                        <label>Remove</label>
+                        <div class="icon-wrapper">
+                          <i class="material-icons">remove</i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="opt_flex__item contact-type" >
+                    <div class="opt_flex--container inner-contxt">
+                      <mat-form-field class="example-full-width">
+                        <mat-select placeholder="Office Phone2/ Office Fax" [(ngModel)]="selectedValue1" name="currency">
+                          <mat-option *ngFor="let currency of currencys" [value]="currency.value">
+                            {{currency.viewValue}}
+                          </mat-option>
+                        </mat-select>
+                      </mat-form-field>
+                      <div class="add-more-section">
+                        <div class="icon-line">
+                        </div>
+                        <label>Remove</label>
+                        <div class="icon-wrapper">
+                          <i class="material-icons">remove</i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="opt_flex__item contact-type" >
+                    <div class="opt_flex--container inner-contxt">
+                      <div class="opt_flex__item">
+                        <mat-form-field class="example-full-width">
+                          <mat-select placeholder="Office Email" [(ngModel)]="selectedValue1" name="currency">
+                            <mat-option *ngFor="let currency of currencys" [value]="currency.value">
+                              {{currency.viewValue}}
+                            </mat-option>
+                          </mat-select>
+                        </mat-form-field>
+                      </div>
+                      <div class="opt_flex__item">
+                        <div class="add-more-section">
+                          <div class="icon-line">
+                          </div>
+                          <label>Remove</label>
+                          <div class="icon-wrapper">
+                            <i class="material-icons">remove</i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item">
+                    <div class="warning-message">
+                      <i class="material-icons">info_outline</i>
+                      <label>Please note that at least one phone number and email is required</label>
+                    </div>
+                  </div>
+
+
+                  <div class="opt_flex__item  add-new">
+                    <div class="add-more-section">
+                      <div class="icon-line">
+                      </div>
+                      <label>Add New</label>
+                      <div class="icon-wrapper">
+                        <i class="material-icons">add</i>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </mat-expansion-panel>
             </mat-accordion>
@@ -136,106 +257,221 @@
         </div>
 
         <div class="contact-details ">
-          <div class="inner-wrapper">
+
+
+          <div class="inner-wrapper clear-space">
             <section class="opt-section__heading">
-            <mat-accordion>
+              <mat-accordion>
 
-              <mat-expansion-panel #myPanel2 class="section-heading __main">
-                <mat-expansion-panel-header class="__title" >
-                  <h1>Contact Details</h1>
+                <mat-expansion-panel #myPanel2 class="section-heading __main" expanded>
+                  <mat-expansion-panel-header class="__title" >
+                    <h1>Contact Details</h1>
 
-                </mat-expansion-panel-header>
+                  </mat-expansion-panel-header>
 
-                <div class="outer-contxt">
-                  <div class="form-data-contact">
-                    <div class="opt_flex--container">
-                      <div class="opt_flex__item">
-                        <mat-form-field class="example-full-width">
-                          <input matInput placeholder="Name" value="Sushi" >
-                        </mat-form-field>
-                      </div>
-                      <div class="opt_flex__item">
-                        <mat-form-field class="example-full-width">
-                          <input matInput placeholder="Post Code" value="" >
-                        </mat-form-field>
-                      </div>
-                      <div class="opt_flex__item">
-                        <mat-form-field class="example-full-width">
-                          <input matInput placeholder="Address" value="" required>
-                        </mat-form-field>
-                      </div>
-                      <div class="opt_flex__item">
-                        <mat-form-field class="example-full-width">
-                          <input matInput placeholder="Street" value="" required>
-                        </mat-form-field>
-                      </div>
-                      <div class="opt_flex__item">
-                        <mat-form-field class="example-full-width">
-                          <input matInput placeholder="City/ Town" value="" required>
-                        </mat-form-field>
-                      </div>
-                      <div class="opt_flex__item">
-                        <mat-form-field class="example-full-width">
-                          <input matInput placeholder="Region/ Country" value="" required>
-                        </mat-form-field>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="opt_flex--container">
-                    <div class="opt_flex__item contact-type" >
-                      <div class="opt_flex--container inner-contxt">
-                        <mat-form-field class="example-full-width">
-                          <mat-select placeholder="Office Phone" [(ngModel)]="selectedValue1" name="currency">
-                            <mat-option *ngFor="let currency of currencys" [value]="currency.value">
-                              {{currency.viewValue}}
-                            </mat-option>
-                          </mat-select>
-                        </mat-form-field>
-                        <div class="add-more-section">
-                          <div class="icon-line">
+                  <div appearance="outline" class="contact-1">
+                    <mat-label ><h3  class="opt__heading-3">Contact {{ 1 }}</h3></mat-label>
+                    <div class="outer-contxt">
+                      <div class="form-data-contact">
+
+                        <div class="opt_flex--container contact-details">
+                          <div class="opt_flex__item">
+                            <mat-form-field class="example-full-width">
+                              <mat-select placeholder="Title" [(ngModel)]="selectedValue1" name="currency">
+                                <mat-option *ngFor="let currency of currencys" [value]="currency.value">
+                                  {{currency.viewValue}}
+                                </mat-option>
+                              </mat-select>
+                            </mat-form-field>
                           </div>
-                          <label>Remove</label>
-                          <div class="icon-wrapper">
-                            <i class="material-icons">add</i>
+                          <div class="opt_flex__item">
+                            <mat-form-field class="example-full-width">
+                              <input matInput placeholder="First Name" value="" >
+                            </mat-form-field>
+                          </div>
+                          <div class="opt_flex__item">
+                            <mat-form-field class="example-full-width">
+                              <input matInput placeholder="Last Name" value="" required>
+                            </mat-form-field>
+                          </div>
+                        </div>
+
+                        <div class="delivery-method">
+                          <div class="opt_flex--container">
+                            <div class="opt_flex__item padding-left">
+                              <mat-radio-group>
+                                <mat-radio-button value="1" class="opt-txt__body1-small">Same as Above</mat-radio-button>
+                                <mat-radio-button value="2" class="opt-txt__body1-small">New</mat-radio-button>
+                              </mat-radio-group>
+                            </div>
+                          </div>
+                        </div>
+
+
+                        <div class="opt_flex--container contact-details opt_address_cage">
+                          <div class="opt_flex__item">
+                            <mat-form-field class="example-full-width">
+                              <input matInput placeholder="Address 1" value="" >
+                            </mat-form-field>
+                          </div>
+                          <div class="opt_flex__item">
+                            <mat-form-field class="example-full-width">
+                              <input matInput placeholder="Address 2" value="" >
+                            </mat-form-field>
+                          </div>
+                          <div class="opt_flex__item">
+                            <mat-form-field class="example-full-width">
+                              <input matInput placeholder="Address 3" value="" required>
+                            </mat-form-field>
+                          </div>
+                          <div class="opt_flex__item">
+                            <mat-form-field class="example-full-width">
+                              <input matInput placeholder="Post Code" value="" required>
+                            </mat-form-field>
+                          </div>
+                          <div class="opt_flex__item">
+                            <mat-form-field class="example-full-width">
+                              <input matInput placeholder="City/ Town" value="" required>
+                            </mat-form-field>
+                          </div>
+                          <div class="opt_flex__item">
+                            <mat-form-field class="example-full-width">
+                              <input matInput placeholder="Region/ Country" value="" required>
+                            </mat-form-field>
+                          </div>
+                        </div>
+
+                        <div class="delivery-method">
+                          <div class="opt_flex--container">
+                            <div class="opt_flex__item padding-left">
+                              <mat-checkbox checked class="opt-txt__body1-small">Delivery </mat-checkbox>
+                              <mat-checkbox checked class="opt-txt__body1-small">Invoice </mat-checkbox>
+                              <mat-checkbox  class="opt-txt__body1-small">Mailling Addresses are same as above.</mat-checkbox>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="opt_address_cage">
+                          <mat-label class="opt-txt__body2-small">
+
+                           <span class="title_icon"><i class="material-icons">
+                            local_shipping
+                          </i></span>
+
+                            Delivery Address</mat-label>
+                          <div class="opt_flex--container contact-details">
+                            <div class="opt_flex__item padding-left">
+                              <mat-form-field class="example-full-width">
+                                <input matInput placeholder="Address 1" value="" >
+                              </mat-form-field>
+                            </div>
+                            <div class="opt_flex__item">
+                              <mat-form-field class="example-full-width">
+                                <input matInput placeholder="Address 2" value="" >
+                              </mat-form-field>
+                            </div>
+                            <div class="opt_flex__item">
+                              <mat-form-field class="example-full-width">
+                                <input matInput placeholder="Address 3" value="" required>
+                              </mat-form-field>
+                            </div>
+                            <div class="opt_flex__item padding-left">
+                              <mat-form-field class="example-full-width">
+                                <input matInput placeholder="Post Code" value="" >
+                              </mat-form-field>
+                            </div>
+                            <div class="opt_flex__item">
+                              <mat-form-field class="example-full-width">
+                                <input matInput placeholder="City/ Town" value="" required>
+                              </mat-form-field>
+                            </div>
+                            <div class="opt_flex__item">
+                              <mat-form-field class="example-full-width">
+                                <input matInput placeholder="Region/ Country" value="" required>
+                              </mat-form-field>
+                            </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <div class="opt_flex__item contact-type" >
-                      <div class="opt_flex--container inner-contxt">
-                        <mat-form-field class="example-full-width">
-                          <mat-select placeholder="Office Phone2/ Office Fax" [(ngModel)]="selectedValue1" name="currency">
-                            <mat-option *ngFor="let currency of currencys" [value]="currency.value">
-                              {{currency.viewValue}}
-                            </mat-option>
-                          </mat-select>
-                        </mat-form-field>
-                        <div class="add-more-section">
-                          <div class="icon-line">
+
+                      <div class="opt_flex--container">
+                        <div class="opt_flex__item contact-type" >
+                          <div class="opt_flex--container inner-contxt">
+                            <mat-form-field class="example-full-width">
+                              <mat-select placeholder="Office Phone" [(ngModel)]="selectedValue1" name="currency">
+                                <mat-option *ngFor="let currency of currencys" [value]="currency.value">
+                                  {{currency.viewValue}}
+                                </mat-option>
+                              </mat-select>
+                            </mat-form-field>
+                            <div class="add-more-section">
+                              <div class="icon-line">
+                              </div>
+                              <label>Remove</label>
+                              <div class="icon-wrapper">
+                                <i class="material-icons">remove</i>
+                              </div>
+                            </div>
                           </div>
-                          <label>Remove</label>
-                          <div class="icon-wrapper">
-                            <i class="material-icons">add</i>
+                        </div>
+                        <div class="opt_flex__item contact-type" >
+                          <div class="opt_flex--container inner-contxt">
+                            <mat-form-field class="example-full-width">
+                              <mat-select placeholder="Office Phone2/ Office Fax" [(ngModel)]="selectedValue1" name="currency">
+                                <mat-option *ngFor="let currency of currencys" [value]="currency.value">
+                                  {{currency.viewValue}}
+                                </mat-option>
+                              </mat-select>
+                            </mat-form-field>
+                            <div class="add-more-section">
+                              <div class="icon-line">
+                              </div>
+                              <label>Remove</label>
+                              <div class="icon-wrapper">
+                                <i class="material-icons">remove</i>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="opt_flex__item contact-type" >
+                          <div class="opt_flex--container inner-contxt">
+                            <div class="opt_flex__item">
+                              <mat-form-field class="example-full-width">
+                                <mat-select placeholder="Office Email" [(ngModel)]="selectedValue1" name="currency">
+                                  <mat-option *ngFor="let currency of currencys" [value]="currency.value">
+                                    {{currency.viewValue}}
+                                  </mat-option>
+                                </mat-select>
+                              </mat-form-field>
+                            </div>
+                            <div class="opt_flex__item">
+                              <div class="add-more-section">
+                                <div class="icon-line">
+                                </div>
+                                <label>Remove</label>
+                                <div class="icon-wrapper">
+                                  <i class="material-icons">remove</i>
+                                </div>
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <div class="opt_flex__item contact-type" >
-                      <div class="opt_flex--container inner-contxt">
+
+                      <div class="opt_flex--container">
                         <div class="opt_flex__item">
-                          <mat-form-field class="example-full-width">
-                            <mat-select placeholder="Office Email" [(ngModel)]="selectedValue1" name="currency">
-                              <mat-option *ngFor="let currency of currencys" [value]="currency.value">
-                                {{currency.viewValue}}
-                              </mat-option>
-                            </mat-select>
-                          </mat-form-field>
+                          <div class="warning-message">
+                            <i class="material-icons">info_outline</i>
+                            <label>Please note that at least one phone number and email is required</label>
+                          </div>
                         </div>
-                        <div class="opt_flex__item">
+
+
+                        <div class="opt_flex__item  add-new">
                           <div class="add-more-section">
                             <div class="icon-line">
                             </div>
-                            <label>Remove</label>
+                            <label>Add New</label>
                             <div class="icon-wrapper">
                               <i class="material-icons">add</i>
                             </div>
@@ -244,42 +480,240 @@
                       </div>
                     </div>
                   </div>
-                  <div class="opt_flex--container">
-                    <div class="opt_flex__item">
-                      <div class="warning-message">
-                        <i class="material-icons">info_outline</i>
-                        <label>Please note that at least one phone number and email is required</label>
+
+                  <div appearance="outline" class="contact-2">
+
+                    <mat-label ><h3  class="opt__heading-3">Contact {{ 2 }}</h3></mat-label>
+                    <div class="outer-contxt">
+                      <div class="form-data-contact">
+
+                        <div class="opt_flex--container contact-details">
+                          <div class="opt_flex__item">
+                            <mat-form-field class="example-full-width">
+                              <mat-select placeholder="Title" [(ngModel)]="selectedValue1" name="currency">
+                                <mat-option *ngFor="let currency of currencys" [value]="currency.value">
+                                  {{currency.viewValue}}
+                                </mat-option>
+                              </mat-select>
+                            </mat-form-field>
+                          </div>
+                          <div class="opt_flex__item">
+                            <mat-form-field class="example-full-width">
+                              <input matInput placeholder="First Name" value="" >
+                            </mat-form-field>
+                          </div>
+                          <div class="opt_flex__item">
+                            <mat-form-field class="example-full-width">
+                              <input matInput placeholder="Last Name" value="" required>
+                            </mat-form-field>
+                          </div>
+                        </div>
+
+                        <div class="delivery-method">
+                          <div class="opt_flex--container">
+                            <div class="opt_flex__item padding-left">
+                              <mat-radio-group>
+                                <mat-radio-button value="1" class="opt-txt__body1-small">Same as Above</mat-radio-button>
+                                <mat-radio-button value="2" class="opt-txt__body1-small">New</mat-radio-button>
+                              </mat-radio-group>
+                            </div>
+                          </div>
+                        </div>
+
+
+                        <div class="opt_flex--container contact-details opt_address_cage">
+                          <div class="opt_flex__item">
+                            <mat-form-field class="example-full-width">
+                              <input matInput placeholder="Address 1" value="" >
+                            </mat-form-field>
+                          </div>
+                          <div class="opt_flex__item">
+                            <mat-form-field class="example-full-width">
+                              <input matInput placeholder="Address 2" value="" >
+                            </mat-form-field>
+                          </div>
+                          <div class="opt_flex__item">
+                            <mat-form-field class="example-full-width">
+                              <input matInput placeholder="Address 3" value="" required>
+                            </mat-form-field>
+                          </div>
+                          <div class="opt_flex__item">
+                            <mat-form-field class="example-full-width">
+                              <input matInput placeholder="Post Code" value="" required>
+                            </mat-form-field>
+                          </div>
+                          <div class="opt_flex__item">
+                            <mat-form-field class="example-full-width">
+                              <input matInput placeholder="City/ Town" value="" required>
+                            </mat-form-field>
+                          </div>
+                          <div class="opt_flex__item">
+                            <mat-form-field class="example-full-width">
+                              <input matInput placeholder="Region/ Country" value="" required>
+                            </mat-form-field>
+                          </div>
+                        </div>
+
+                        <div class="delivery-method">
+                          <div class="opt_flex--container">
+                            <div class="opt_flex__item padding-left">
+                              <mat-checkbox checked class="opt-txt__body1-small">Delivery </mat-checkbox>
+                              <mat-checkbox checked class="opt-txt__body1-small">Invoice </mat-checkbox>
+                              <mat-checkbox  class="opt-txt__body1-small">Mailling Addresses are same as above.</mat-checkbox>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="opt_address_cage">
+                          <mat-label class="opt-txt__body2-small">
+
+                           <span class="title_icon"><i class="material-icons">
+                            local_shipping
+                          </i></span>
+
+                            Delivery Address</mat-label>
+                          <div class="opt_flex--container contact-details">
+                            <div class="opt_flex__item padding-left">
+                              <mat-form-field class="example-full-width">
+                                <input matInput placeholder="Address 1" value="" >
+                              </mat-form-field>
+                            </div>
+                            <div class="opt_flex__item">
+                              <mat-form-field class="example-full-width">
+                                <input matInput placeholder="Address 2" value="" >
+                              </mat-form-field>
+                            </div>
+                            <div class="opt_flex__item">
+                              <mat-form-field class="example-full-width">
+                                <input matInput placeholder="Address 3" value="" required>
+                              </mat-form-field>
+                            </div>
+                            <div class="opt_flex__item padding-left">
+                              <mat-form-field class="example-full-width">
+                                <input matInput placeholder="Post Code" value="" >
+                              </mat-form-field>
+                            </div>
+                            <div class="opt_flex__item">
+                              <mat-form-field class="example-full-width">
+                                <input matInput placeholder="City/ Town" value="" required>
+                              </mat-form-field>
+                            </div>
+                            <div class="opt_flex__item">
+                              <mat-form-field class="example-full-width">
+                                <input matInput placeholder="Region/ Country" value="" required>
+                              </mat-form-field>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="opt_flex--container">
+                        <div class="opt_flex__item contact-type" >
+                          <div class="opt_flex--container inner-contxt">
+                            <mat-form-field class="example-full-width">
+                              <mat-select placeholder="Office Phone" [(ngModel)]="selectedValue1" name="currency">
+                                <mat-option *ngFor="let currency of currencys" [value]="currency.value">
+                                  {{currency.viewValue}}
+                                </mat-option>
+                              </mat-select>
+                            </mat-form-field>
+                            <div class="add-more-section">
+                              <div class="icon-line">
+                              </div>
+                              <label>Remove</label>
+                              <div class="icon-wrapper">
+                                <i class="material-icons">remove</i>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="opt_flex__item contact-type" >
+                          <div class="opt_flex--container inner-contxt">
+                            <mat-form-field class="example-full-width">
+                              <mat-select placeholder="Office Phone2/ Office Fax" [(ngModel)]="selectedValue1" name="currency">
+                                <mat-option *ngFor="let currency of currencys" [value]="currency.value">
+                                  {{currency.viewValue}}
+                                </mat-option>
+                              </mat-select>
+                            </mat-form-field>
+                            <div class="add-more-section">
+                              <div class="icon-line">
+                              </div>
+                              <label>Remove</label>
+                              <div class="icon-wrapper">
+                                <i class="material-icons">remove</i>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="opt_flex__item contact-type" >
+                          <div class="opt_flex--container inner-contxt">
+                            <div class="opt_flex__item">
+                              <mat-form-field class="example-full-width">
+                                <mat-select placeholder="Office Email" [(ngModel)]="selectedValue1" name="currency">
+                                  <mat-option *ngFor="let currency of currencys" [value]="currency.value">
+                                    {{currency.viewValue}}
+                                  </mat-option>
+                                </mat-select>
+                              </mat-form-field>
+                            </div>
+                            <div class="opt_flex__item">
+                              <div class="add-more-section">
+                                <div class="icon-line">
+                                </div>
+                                <label>Remove</label>
+                                <div class="icon-wrapper">
+                                  <i class="material-icons">remove</i>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="opt_flex--container">
+                        <div class="opt_flex__item">
+                          <div class="warning-message">
+                            <i class="material-icons">info_outline</i>
+                            <label>Please note that at least one phone number and email is required</label>
+                          </div>
+                        </div>
+
+
+                        <div class="opt_flex__item  add-new">
+                          <div class="add-more-section">
+                            <div class="icon-line">
+                            </div>
+                            <label>Add New</label>
+                            <div class="icon-wrapper">
+                              <i class="material-icons">add</i>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                    <div class="opt_flex__item  add-new">
+                  </div>
+
+                  <div class="opt_flex--container">
+                    <div class="opt_flex__item add-alternative-contact">
                       <div class="add-more-section">
                         <div class="icon-line">
                         </div>
-                        <label>Add New</label>
+                        <label>Add Alternative Contact</label>
                         <div class="icon-wrapper">
                           <i class="material-icons">add</i>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="opt_flex--container">
-                  <div class="opt_flex__item add-alternative-contact">
-                    <div class="add-more-section">
-                      <div class="icon-line">
-                      </div>
-                      <label>Add Alternative Contact</label>
-                      <div class="icon-wrapper">
-                        <i class="material-icons">add</i>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </mat-expansion-panel>
+                </mat-expansion-panel>
 
-            </mat-accordion>
-          </section>
+              </mat-accordion>
+            </section>
           </div>
+
+
+
         </div>
 
         <app-opt-corporate-client-tabs></app-opt-corporate-client-tabs>
@@ -287,38 +721,38 @@
         <div class="notes">
           <div class="inner-wrapper">
             <section class="opt-section__heading">
-            <mat-accordion>
-              <mat-expansion-panel #myPanel2 class="section-heading __main">
-                <mat-expansion-panel-header class="__title" >
-                  <h1>Notes</h1>
-                </mat-expansion-panel-header>
-                <div class="note-body">
-                  <div class="opt_flex--container txt-area">
-                    <div class="opt_flex__item">
-                      <mat-form-field>
-                        <textarea matInput placeholder="Duis non erat massa. Send consequat dignissim justo send tristique. Fusce eget efficitur dolor, send congue diam. Sed imperdiet ut elit sed."></textarea>
-                      </mat-form-field>
+              <mat-accordion>
+                <mat-expansion-panel #myPanel2 class="section-heading __main" expanded>
+                  <mat-expansion-panel-header class="__title" >
+                    <h1>Notes</h1>
+                  </mat-expansion-panel-header>
+                  <div class="note-body">
+                    <div class="opt_flex--container txt-area">
+                      <div class="opt_flex__item">
+                        <mat-form-field>
+                          <textarea matInput placeholder="Duis non erat massa. Send consequat dignissim justo send tristique. Fusce eget efficitur dolor, send congue diam. Sed imperdiet ut elit sed."></textarea>
+                        </mat-form-field>
+                      </div>
                     </div>
-                  </div>
-                  <div class="opt_flex--container">
-                    <div class="opt_flex__item">
-                      <div class="btn-note">
-                        <div mat-raised-button class="btn-color-default opt_flex__item opt-txt__light btn">Add</div>
-                        <div mat-raised-button class="btn-color-default opt_flex__item opt-txt__light btn ">Edit</div>
+                    <div class="opt_flex--container">
+                      <div class="opt_flex__item">
+                        <div class="btn-note">
+                          <div mat-raised-button class="btn-color-default opt_flex__item opt-txt__light btn">Add</div>
+                          <div mat-raised-button class="btn-color-default opt_flex__item opt-txt__light btn ">Edit</div>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </mat-expansion-panel>
-            </mat-accordion>
-          </section>
+                </mat-expansion-panel>
+              </mat-accordion>
+            </section>
           </div>
         </div>
 
         <div class="communication-consent">
           <section class="opt-section__heading">
             <mat-accordion>
-              <mat-expansion-panel #myPanel2 class="section-heading __main">
+              <mat-expansion-panel #myPanel2 class="section-heading __main" expanded>
                 <mat-expansion-panel-header class="__title" >
                   <h1>Communication Consent</h1>
                 </mat-expansion-panel-header>
@@ -355,7 +789,7 @@
       <div class="opt_flex--container">
         <div class="opt_flex__item"></div>
         <div class="opt_flex__item--inherit">
-          <button class="opt-txt__body1 btn btn-info" (click)="close()">Save</button>
+          <button class="mat-btn-primary mat-button" (click)="close()">Save</button>
         </div>
       </div>
     </div>
