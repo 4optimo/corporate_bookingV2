@@ -14,9 +14,23 @@
 
 .payment-body-wrapper{
   >.opt_flex--container{
+
+   // flex-direction: column;
+
+    @include respond-to('x-small') {
+      flex-direction: column;
+    }
+    @include respond-to('medium') {
+      flex-direction: row;
+    }
     >.opt_flex__item{
       &:first-child{
-        width: 70%;
+        @include respond-to('x-small') {
+          width: 100%;
+        }
+        @include respond-to('medium') {
+          width: 70%;
+        }
       }
     }
   }
@@ -74,7 +88,7 @@
     }
   }
   .payment-status{
-    padding: 0 15px;
+    padding: 5px 15px;
     min-height: 37px;
     &.unsuccessful{
       background-color: rgba(245,118,108,0.3);
@@ -139,6 +153,7 @@
     p{
       margin: 0;
       color: #3b414d;
+      line-height: 1.4;
       span{
         font-weight: 500;
         &.cancellation-period{
