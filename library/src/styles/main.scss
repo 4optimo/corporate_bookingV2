@@ -11,6 +11,7 @@
 $bootstrap-sass-asset-helper: false;
 
 @import "./shared/theme/ccs-default-theme/variables";
+@import "./shared/theme/ccs-default-theme/color-classes";
 @import "shared/theme/ccs-default-theme/bootstrap/stylesheets/bootstrap";
 @import "./shared/theme/ccs-default-theme/icon-fonts";
 @import "./shared/theme/ccs-default-theme/reset";
@@ -57,3 +58,4 @@ $bootstrap-sass-asset-helper: false;
 
 @import "./shared/theme/ccs-default-theme/library";
 @import "./shared/theme/ccs-default-theme/chip-input";
+@import "./shared/theme/ccs-default-theme/label";

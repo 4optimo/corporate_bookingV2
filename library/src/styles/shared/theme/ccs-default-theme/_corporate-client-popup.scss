@@ -47,7 +47,7 @@
 
 
     .clear-space{
-     margin-left: 0px !important;
+      margin-left: 0px !important;
       margin-right: 0px !important;
     }
 
@@ -77,6 +77,7 @@
         }
       }
     }
+
 
     .pro-header {
       //display: flex;
@@ -144,9 +145,25 @@
     .client-details{
       padding-top: 20px;
 
+
+      .mat-checkbox-layout {
+        margin-right: 20px;
+        margin-left: 0 !important;
+      }
       .opt_flex__item{
+        &.add-new-contact-wrapper{
+          flex-basis: auto;
+        }
 
-
+        &.contact-type{
+          flex: 1 1 auto;
+          background-color: white;
+        }
+        &.add-new{
+          flex: 1 1 auto;
+          margin-left: 0;
+          margin-right: 10px;
+        }
 
         @include respond-to('x-small') {
           flex: 1 1 50%;
@@ -167,8 +184,8 @@
     }
 
     .contact-details{
-     // background-color: #f1f5f8;
-    // margin: 0 -24px 0 -24px;
+      // background-color: #f1f5f8;
+      // margin: 0 -24px 0 -24px;
       .opt_address_cage{
         border: 1px dashed #ababab;
         padding: 15px;
@@ -178,7 +195,7 @@
         @include box-shadow(1);
 
         mat-label{
-         margin-bottom: 20px;
+          margin-bottom: 20px;
         }
 
 
@@ -192,11 +209,7 @@
         /* border-bottom: 1px solid #eee; */
       }
 
-      .warning-message{
-        color: $no-color--state;
-        font-size: 12px;
-        padding: 0 10px 10px 10px;
-      }
+
 
       .inner-wrapper{
         margin: 0 24px 0 24px;
@@ -226,22 +239,12 @@
             }
           }
         }
-        .inner-contxt{
-          flex-direction: column;
-          margin: 10px;
-          //border-bottom: 1px dashed #00aeef;
-        }
+
         .contact-2{
           padding-top: 30px;
         }
         contact-type_cage{
 
-        }
-        .contact-type{
-          margin: 10px;
-          background-color: #f1f5f8;
-          border: 1px solid #b6b8b9;
-          margin-bottom: 20px;
         }
 
         .mat-expansion-panel{
@@ -250,12 +253,12 @@
 
           &.mat-expanded{
 
-           // background-color: #f1f5f8;
+            // background-color: #f1f5f8;
             .mat-expansion-panel-header{
-            //  background-color: #f1f5f8;
+              //  background-color: #f1f5f8;
             }
             &:focus, &:active, &:hover, &:visited{
-            //  background-color: #f1f5f8;
+              //  background-color: #f1f5f8;
             }
           }
         }
@@ -266,55 +269,7 @@
             //background-color: #f1f5f8;
           }
         }
-        .add-more-section{
-          padding: 10px;
-          position:relative;
-          width: 100%;
-          height: 21px;
-          margin-top: 15px;
 
-          &:active, &:hover, &:focus, &:visited, &:active:focus {
-            .icon-line{
-              border-color:#00aeef;
-            }
-            .icon-wrapper{
-              background-color: #00aeef;
-            }
-            label {
-              color: #00aeef;
-              background: transparent;
-            }
-
-          }
-          .icon-line{
-            left: 0;
-            right: 0;
-            width: 100%;
-            position: absolute;
-            height: 1px;
-            border-bottom: 1px dashed #b6b8b9;
-          }
-          .icon-wrapper{
-            position: absolute;
-            color: #fff;
-            line-height: 0;
-            padding: 1px 1px;
-            background-color: #b6b8b9;
-            right: 15px;
-            top: 0;
-            i.material-icons{
-              font-size: 18px;
-            }
-          }
-          label{
-            position: absolute;
-            align-items: right;
-            right: 50px;
-            top: -30%;
-            font-size: 11px;
-            color: #b6b8b9;
-          }
-        }
         .add-new{
           padding: 0 10px 10px 10px;
           .icon-line{
@@ -385,15 +340,15 @@
         margin: 0 24px 0 24px;
 
 
-          &.mat-expanded{
+        &.mat-expanded{
+          background-color: #f1f5f8;
+          .mat-expansion-panel-header{
             background-color: #f1f5f8;
-            .mat-expansion-panel-header{
-              background-color: #f1f5f8;
-            }
-            &:focus, &:active, &:hover, &:visited{
-              background-color: #f1f5f8;
-            }
           }
+          &:focus, &:active, &:hover, &:visited{
+            background-color: #f1f5f8;
+          }
+        }
 
 
         .opt-section__heading{
@@ -486,6 +441,74 @@
 
     .padding-left{
       padding-left: 20px;
+    }
+
+    .contact-type{
+      margin: 10px;
+      background-color: #f1f5f8;
+      border: 1px solid #b6b8b9;
+      margin-bottom: 20px;
+    }
+    .inner-contxt{
+      flex-direction: column;
+      margin: 10px;
+      //border-bottom: 1px dashed #00aeef;
+    }
+    .add-more-section{
+      padding: 10px;
+      position:relative;
+      width: 100%;
+      height: 21px;
+      margin-top: 15px;
+      cursor: pointer;
+
+      &:active, &:hover, &:focus, &:visited, &:active:focus {
+        .icon-line{
+          border-color:#00aeef;
+        }
+        .icon-wrapper{
+          background-color: #00aeef;
+        }
+        label {
+          color: #00aeef;
+          background: transparent;
+        }
+
+      }
+      .icon-line{
+        left: 0;
+        right: 0;
+        width: 100%;
+        position: absolute;
+        height: 1px;
+        border-bottom: 1px dashed #b6b8b9;
+      }
+      .icon-wrapper{
+        position: absolute;
+        color: #fff;
+        line-height: 0;
+        padding: 1px 1px;
+        background-color: #b6b8b9;
+        right: 15px;
+        top: 0;
+        i.material-icons{
+          font-size: 18px;
+        }
+      }
+      label{
+        position: absolute;
+        align-items: right;
+        right: 50px;
+        top: -30%;
+        font-size: 11px;
+        color: #b6b8b9;
+      }
+    }
+
+    .warning-message{
+      color: $no-color--state;
+      font-size: 12px;
+      padding: 0 10px 10px 10px;
     }
 
   }
