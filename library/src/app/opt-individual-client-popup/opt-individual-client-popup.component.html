@@ -751,7 +751,11 @@
                               </div>
                               <div class="opt_flex__item">
                                 <mat-form-field class="example-full-width">
-                                  <input matInput placeholder="Default Value" value="" >
+                                  <mat-select placeholder="Default Venue" [(ngModel)]="selectedValue1" name="default-venue">
+                                    <mat-option *ngFor="let currency of currencys" [value]="currency.value">
+                                      {{currency.viewValue}}
+                                    </mat-option>
+                                  </mat-select>
                                 </mat-form-field>
                               </div>
                               <div class="opt_flex__item">
