@@ -81,11 +81,7 @@
                   </div>
                   <div class="opt_flex__item">
                     <mat-form-field class="example-full-width">
-<<<<<<<<< Temporary merge branch 1
-                      <span matPrefix><mat-checkbox>  </mat-checkbox></span>
-=========
                       <span matPrefix><mat-checkbox></mat-checkbox></span>
->>>>>>>>> Temporary merge branch 2
                       <mat-select placeholder="Head Office" [(ngModel)]="selectedValue1" name="currency">
                         <mat-option *ngFor="let currency of currencys" [value]="currency.value">
                           {{currency.viewValue}}
@@ -141,20 +137,12 @@
                   </div>
                   <div class="opt_flex__item">
                     <mat-form-field class="example-full-width">
-<<<<<<<<< Temporary merge branch 1
-                      <input matInput placeholder="Address 1" value="" >
-=========
                       <input matInput placeholder="Address 1" value="" required>
->>>>>>>>> Temporary merge branch 2
                     </mat-form-field>
                   </div>
                   <div class="opt_flex__item">
                     <mat-form-field class="example-full-width">
-<<<<<<<<< Temporary merge branch 1
-                      <input matInput placeholder="Address 2" value="" >
-=========
                       <input matInput placeholder="Address 2" value="" required >
->>>>>>>>> Temporary merge branch 2
                     </mat-form-field>
                   </div>
                   <div class="opt_flex__item">
@@ -173,141 +161,16 @@
                     </mat-form-field>
                   </div>
                   <div class="opt_flex__item">
-<<<<<<<<< Temporary merge branch 1
-                    <mat-form-field class="example-full-width">
-                      <input matInput placeholder="Region/ Country" value="" required>
-=========
                     <mat-form-field class="example-full-width" >
                       <mat-select placeholder="Region/Country" required >
                         <mat-option >
                           Sri Lanka
                         </mat-option>
                       </mat-select>
->>>>>>>>> Temporary merge branch 2
                     </mat-form-field>
                   </div>
                 </div>
 
-<<<<<<<<< Temporary merge branch 1
-              <mat-expansion-panel #myPanel2 class="section-heading __main">
-                <mat-expansion-panel-header class="__title" >
-                  <h1>Contact Details</h1>
-
-                </mat-expansion-panel-header>
-
-                <div appearance="outline" class="contact-1">
-                  <mat-label class="opt__subtitle-2-small">Contact {{ 1 }}</mat-label>
-                  <div class="outer-contxt">
-                    <div class="form-data-contact">
-
-                      <div class="delivery-method">
-                        <div class="opt_flex--container">
-                          <div class="opt_flex__item padding-left">
-                            <mat-radio-group>
-                              <mat-radio-button value="1" class="opt-txt__body1-small">Same as Above</mat-radio-button>
-                              <mat-radio-button value="2" class="opt-txt__body1-small">New</mat-radio-button>
-                            </mat-radio-group>
-                          </div>
-                        </div>
-                      </div>
-
-
-                      <div class="opt_flex--container contact-details opt_address_cage">
-                        <div class="opt_flex__item">
-                          <mat-form-field class="example-full-width">
-                            <mat-select placeholder="Title" [(ngModel)]="selectedValue1" name="currency">
-                              <mat-option *ngFor="let currency of currencys" [value]="currency.value">
-                                {{currency.viewValue}}
-                              </mat-option>
-                            </mat-select>
-                          </mat-form-field>
-                        </div>
-                        <div class="opt_flex__item">
-                          <mat-form-field class="example-full-width">
-                            <input matInput placeholder="First Name" value="" >
-                          </mat-form-field>
-                        </div>
-                        <div class="opt_flex__item">
-                          <mat-form-field class="example-full-width">
-                            <input matInput placeholder="Last Name" value="" required>
-                          </mat-form-field>
-                        </div>
-                        <div class="opt_flex__item">
-                            <mat-form-field class="example-full-width">
-                              <input matInput placeholder="Address 1" value="" >
-                            </mat-form-field>
-                          </div>
-                        <div class="opt_flex__item">
-                            <mat-form-field class="example-full-width">
-                              <input matInput placeholder="Address 2" value="" >
-                            </mat-form-field>
-                          </div>
-                        <div class="opt_flex__item">
-                            <mat-form-field class="example-full-width">
-                              <input matInput placeholder="Address 3" value="" required>
-                            </mat-form-field>
-                          </div>
-                        <div class="opt_flex__item">
-                            <mat-form-field class="example-full-width">
-                              <input matInput placeholder="Post Code" value="" required>
-                            </mat-form-field>
-                          </div>
-                        <div class="opt_flex__item">
-                            <mat-form-field class="example-full-width">
-                              <input matInput placeholder="City/ Town" value="" required>
-                            </mat-form-field>
-                          </div>
-                        <div class="opt_flex__item">
-                            <mat-form-field class="example-full-width">
-                              <input matInput placeholder="Region/ Country" value="" required>
-                            </mat-form-field>
-                          </div>
-                      </div>
-
-                      <div class="delivery-method">
-                          <div class="opt_flex--container">
-                            <div class="opt_flex__item padding-left">
-                              <mat-checkbox checked class="opt-txt__body1-small">Delivery </mat-checkbox>
-                              <mat-checkbox checked class="opt-txt__body1-small">Invoice </mat-checkbox>
-                              <mat-checkbox  class="opt-txt__body1-small">Mailling Addresses are same as above.</mat-checkbox>
-                            </div>
-                          </div>
-                        </div>
-
-                      <div class="opt_address_cage">
-                          <mat-label class="opt-txt__body2-small">Delivery Address</mat-label>
-                          <div class="opt_flex--container contact-details">
-                            <div class="opt_flex__item padding-left">
-                              <mat-form-field class="example-full-width">
-                                <input matInput placeholder="Address 1" value="" >
-                              </mat-form-field>
-                            </div>
-                            <div class="opt_flex__item">
-                              <mat-form-field class="example-full-width">
-                                <input matInput placeholder="Address 2" value="" >
-                              </mat-form-field>
-                            </div>
-                            <div class="opt_flex__item">
-                              <mat-form-field class="example-full-width">
-                                <input matInput placeholder="Address 3" value="" required>
-                              </mat-form-field>
-                            </div>
-                            <div class="opt_flex__item padding-left">
-                              <mat-form-field class="example-full-width">
-                                <input matInput placeholder="Post Code" value="" >
-                              </mat-form-field>
-                            </div>
-                            <div class="opt_flex__item">
-                              <mat-form-field class="example-full-width">
-                                <input matInput placeholder="City/ Town" value="" required>
-                              </mat-form-field>
-                            </div>
-                            <div class="opt_flex__item">
-                              <mat-form-field class="example-full-width">
-                                <input matInput placeholder="Region/ Country" value="" required>
-                              </mat-form-field>
-                            </div>
-=========
                 <div class="opt_flex--container">
                   <div class="opt_flex__item contact-type" >
                     <div class="opt_flex--container inner-contxt">
@@ -365,85 +228,10 @@
                           <label>Remove</label>
                           <div class="icon-wrapper">
                             <i class="material-icons">remove</i>
->>>>>>>>> Temporary merge branch 2
                           </div>
                         </div>
+                      </div>
                     </div>
-<<<<<<<<< Temporary merge branch 1
-
-                    <div class="opt_flex--container">
-                          <div class="opt_flex__item contact-type" >
-                            <div class="opt_flex--container inner-contxt">
-                              <mat-form-field class="example-full-width">
-                                <mat-select placeholder="Office Phone" [(ngModel)]="selectedValue1" name="currency">
-                                  <mat-option *ngFor="let currency of currencys" [value]="currency.value">
-                                    {{currency.viewValue}}
-                                  </mat-option>
-                                </mat-select>
-                              </mat-form-field>
-                              <div class="add-more-section">
-                                <div class="icon-line">
-                                </div>
-                                <label>Remove</label>
-                                <div class="icon-wrapper">
-                                  <i class="material-icons">add</i>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="opt_flex__item contact-type" >
-                            <div class="opt_flex--container inner-contxt">
-                              <mat-form-field class="example-full-width">
-                                <mat-select placeholder="Office Phone2/ Office Fax" [(ngModel)]="selectedValue1" name="currency">
-                                  <mat-option *ngFor="let currency of currencys" [value]="currency.value">
-                                    {{currency.viewValue}}
-                                  </mat-option>
-                                </mat-select>
-                              </mat-form-field>
-                              <div class="add-more-section">
-                                <div class="icon-line">
-                                </div>
-                                <label>Remove</label>
-                                <div class="icon-wrapper">
-                                  <i class="material-icons">add</i>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="opt_flex__item contact-type" >
-                            <div class="opt_flex--container inner-contxt">
-                              <div class="opt_flex__item">
-                                <mat-form-field class="example-full-width">
-                                  <mat-select placeholder="Office Email" [(ngModel)]="selectedValue1" name="currency">
-                                    <mat-option *ngFor="let currency of currencys" [value]="currency.value">
-                                      {{currency.viewValue}}
-                                    </mat-option>
-                                  </mat-select>
-                                </mat-form-field>
-                              </div>
-                              <div class="opt_flex__item">
-                                <div class="add-more-section">
-                                  <div class="icon-line">
-                                  </div>
-                                  <label>Remove</label>
-                                  <div class="icon-wrapper">
-                                    <i class="material-icons">add</i>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="opt_flex__item contact-type" >
-                        <div class="opt_flex--container inner-contxt">
-                          <div class="opt_flex__item">
-                            <mat-form-field class="example-full-width">
-                              <mat-select placeholder="Office Email" [(ngModel)]="selectedValue1" name="currency">
-                                <mat-option *ngFor="let currency of currencys" [value]="currency.value">
-                                  {{currency.viewValue}}
-                                </mat-option>
-                              </mat-select>
-                            </mat-form-field>
-=========
                   </div>
                 </div>
 
@@ -615,59 +403,9 @@
                                 </mat-select>
                               </mat-form-field>
                             </div>
->>>>>>>>> Temporary merge branch 2
-                          </div>
-                          <div class="opt_flex__item">
-                            <div class="add-more-section">
-                              <div class="icon-line">
-                              </div>
-                              <label>Remove</label>
-                              <div class="icon-wrapper">
-                                <i class="material-icons">add</i>
-                              </div>
-                            </div>
                           </div>
                         </div>
                       </div>
-                        </div>
-                    <div class="opt_flex--container">
-                    <div class="opt_flex__item">
-                      <div class="warning-message">
-                        <i class="material-icons">info_outline</i>
-                        <label>Please note that at least one phone number and email is required</label>
-                      </div>
-                    </div>
-
-
-                    <div class="opt_flex__item  add-new">
-                      <div class="add-more-section">
-                        <div class="icon-line">
-                        </div>
-                        <label>Add New</label>
-                        <div class="icon-wrapper">
-                          <i class="material-icons">add</i>
-                        </div>
-                      </div>
-<<<<<<<<< Temporary merge branch 1
-                    </div>
-                  </div>
-                  </div>
-                </div>
-
-                <div appearance="outline" class="contact-2">
-                  <mat-label class="opt__subtitle-2-small">Contact {{ 2 }}</mat-label>
-                  <div class="outer-contxt">
-                    <div class="form-data-contact">
-                      <div class="opt_flex--container">
-                        <div class="opt_flex__item padding-left">
-                          <mat-form-field class="example-full-width">
-                            <mat-select placeholder="Title" [(ngModel)]="selectedValue1" name="Mr" required>
-                              <mat-option *ngFor="let currency of currencys" [value]="currency.value">
-                                {{currency.viewValue}}
-                              </mat-option>
-                            </mat-select>
-                          </mat-form-field>
-=========
 
                       <div class="opt_flex--container">
                         <div class="opt_flex__item contact-type" >
@@ -707,7 +445,6 @@
                               </div>
                             </div>
                           </div>
->>>>>>>>> Temporary merge branch 2
                         </div>
                         <div class="opt_flex__item contact-type" >
                           <div class="opt_flex--container inner-contxt">
@@ -736,59 +473,6 @@
 
                       <div class="opt_flex--container">
                         <div class="opt_flex__item">
-<<<<<<<<< Temporary merge branch 1
-                          <mat-form-field class="example-full-width">
-                            <input matInput placeholder="First Name" value="" required>
-                          </mat-form-field>
-                        </div>
-                        <div class="opt_flex__item">
-                          <mat-form-field class="example-full-width">
-                            <input matInput placeholder="Last Name" value="" required>
-                          </mat-form-field>
-                        </div>
-                        <div class="opt_flex__item padding-left">
-                          <mat-form-field class="example-full-width">
-                            <input matInput placeholder="Address 1" value="" >
-                          </mat-form-field>
-                        </div>
-                        <div class="opt_flex__item">
-                          <mat-form-field class="example-full-width">
-                            <input matInput placeholder="Address 2" value="" >
-                          </mat-form-field>
-                        </div>
-                        <div class="opt_flex__item">
-                          <mat-form-field class="example-full-width">
-                            <input matInput placeholder="Address 3" value="" required>
-                          </mat-form-field>
-                        </div>
-                        <div class="opt_flex__item padding-left">
-                          <mat-form-field class="example-full-width">
-                            <input matInput placeholder="Post Code" value="" >
-                          </mat-form-field>
-                        </div>
-                        <div class="opt_flex__item">
-                          <mat-form-field class="example-full-width">
-                            <input matInput placeholder="City/ Town" value="" required>
-                          </mat-form-field>
-                        </div>
-                        <div class="opt_flex__item">
-                          <mat-form-field class="example-full-width">
-                            <input matInput placeholder="Region/ Country" value="" required>
-                          </mat-form-field>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="opt_flex--container">
-                      <div class="opt_flex__item contact-type" >
-                        <div class="opt_flex--container inner-contxt">
-                          <mat-form-field class="example-full-width">
-                            <mat-select placeholder="Office Phone" [(ngModel)]="selectedValue1" name="currency">
-                              <mat-option *ngFor="let currency of currencys" [value]="currency.value">
-                                {{currency.viewValue}}
-                              </mat-option>
-                            </mat-select>
-                          </mat-form-field>
-=========
                           <div class="warning-message">
                             <i class="material-icons">info_outline</i>
                             <label>Please note that at least one phone number and email is required</label>
@@ -797,7 +481,6 @@
 
 
                         <div class="opt_flex__item  add-new">
->>>>>>>>> Temporary merge branch 2
                           <div class="add-more-section">
                             <div class="icon-line">
                             </div>
@@ -808,32 +491,6 @@
                           </div>
                         </div>
                       </div>
-<<<<<<<<< Temporary merge branch 1
-                      <div class="opt_flex__item contact-type" >
-                        <div class="opt_flex--container inner-contxt">
-                          <mat-form-field class="example-full-width">
-                            <mat-select placeholder="Office Phone2/ Office Fax" [(ngModel)]="selectedValue1" name="currency">
-                              <mat-option *ngFor="let currency of currencys" [value]="currency.value">
-                                {{currency.viewValue}}
-                              </mat-option>
-                            </mat-select>
-                          </mat-form-field>
-                          <div class="add-more-section">
-                            <div class="icon-line">
-                            </div>
-                            <label>Remove</label>
-                            <div class="icon-wrapper">
-                              <i class="material-icons">add</i>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="opt_flex__item contact-type" >
-                        <div class="opt_flex--container inner-contxt">
-                          <div class="opt_flex__item">
-                            <mat-form-field class="example-full-width">
-                              <mat-select placeholder="Office Email" [(ngModel)]="selectedValue1" name="currency">
-=========
                     </div>
                   </div>
 
@@ -847,7 +504,6 @@
                           <div class="opt_flex__item">
                             <mat-form-field class="example-full-width">
                               <mat-select placeholder="Title" [(ngModel)]="selectedValue1" name="currency">
->>>>>>>>> Temporary merge branch 2
                                 <mat-option *ngFor="let currency of currencys" [value]="currency.value">
                                   {{currency.viewValue}}
                                 </mat-option>
@@ -855,15 +511,6 @@
                             </mat-form-field>
                           </div>
                           <div class="opt_flex__item">
-<<<<<<<<< Temporary merge branch 1
-                            <div class="add-more-section">
-                              <div class="icon-line">
-                              </div>
-                              <label>Remove</label>
-                              <div class="icon-wrapper">
-                                <i class="material-icons">add</i>
-                              </div>
-=========
                             <mat-form-field class="example-full-width">
                               <input matInput placeholder="First Name" value="" >
                             </mat-form-field>
@@ -877,6 +524,7 @@
 
                         <div class="delivery-method">
                           <div class="opt_flex--container">
+                            <div class="opt_flex__item opt-txt__left"> Contact address :</div>
                             <div class="opt_flex__item padding-left">
                               <mat-radio-group>
                                 <mat-radio-button value="1" class="opt-txt__body1-small">Same as Above</mat-radio-button>
@@ -976,22 +624,10 @@
                                   </mat-option>
                                 </mat-select>
                               </mat-form-field>
->>>>>>>>> Temporary merge branch 2
                             </div>
                           </div>
                         </div>
                       </div>
-<<<<<<<<< Temporary merge branch 1
-                    </div>
-                    <div class="opt_flex--container">
-                      <div class="opt_flex__item">
-                        <div class="warning-message">
-                          <i class="material-icons">info_outline</i>
-                          <label>Please note that at least one phone number and email is required</label>
-                        </div>
-                      </div>
-=========
->>>>>>>>> Temporary merge branch 2
 
                       <div class="opt_flex--container">
                         <div class="opt_flex__item contact-type" >
@@ -1080,16 +716,6 @@
                     </div>
                   </div>
 
-<<<<<<<<< Temporary merge branch 1
-                      <div class="opt_flex__item  add-new">
-                        <div class="add-more-section">
-                          <div class="icon-line">
-                          </div>
-                          <label>Add New</label>
-                          <div class="icon-wrapper">
-                            <i class="material-icons">add</i>
-                          </div>
-=========
                   <div class="opt_flex--container">
                     <div class="opt_flex__item add-alternative-contact">
                       <div class="add-more-section">
@@ -1098,30 +724,11 @@
                         <label>Add Alternative Contact</label>
                         <div class="icon-wrapper">
                           <i class="material-icons">add</i>
->>>>>>>>> Temporary merge branch 2
                         </div>
                       </div>
                     </div>
                   </div>
-<<<<<<<<< Temporary merge branch 1
-                </div>
-
-                <div class="opt_flex--container">
-                  <div class="opt_flex__item add-alternative-contact">
-                    <div class="add-more-section">
-                      <div class="icon-line">
-                      </div>
-                      <label>Add Alternative Contact</label>
-                      <div class="icon-wrapper">
-                        <i class="material-icons">add</i>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </mat-expansion-panel>
-=========
                 </mat-expansion-panel>
->>>>>>>>> Temporary merge branch 2
 
               </mat-accordion>
             </section>
@@ -1152,8 +759,8 @@
                     <div class="opt_flex--container">
                       <div class="opt_flex__item">
                         <div class="btn-note">
-                          <div mat-raised-button class="btn-color-default opt_flex__item opt-txt__light btn">Add</div>
-                          <div mat-raised-button class="btn-color-default opt_flex__item opt-txt__light btn ">Edit</div>
+                          <button class="mat-btn-primary mat-button">Add</button>
+                          <button class="mat-btn-primary mat-button">Edit</button>
                         </div>
                       </div>
                     </div>
