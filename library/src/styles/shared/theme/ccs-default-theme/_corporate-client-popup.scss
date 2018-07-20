@@ -47,7 +47,7 @@
 
 
     .clear-space{
-     margin-left: 0px !important;
+      margin-left: 0px !important;
       margin-right: 0px !important;
     }
 
@@ -184,8 +184,8 @@
     }
 
     .contact-details{
-     // background-color: #f1f5f8;
-    // margin: 0 -24px 0 -24px;
+      // background-color: #f1f5f8;
+      // margin: 0 -24px 0 -24px;
       .opt_address_cage{
         border: 1px dashed #ababab;
         padding: 15px;
@@ -195,7 +195,7 @@
         @include box-shadow(1);
 
         mat-label{
-         margin-bottom: 20px;
+          margin-bottom: 20px;
         }
 
 
@@ -253,12 +253,12 @@
 
           &.mat-expanded{
 
-           // background-color: #f1f5f8;
+            // background-color: #f1f5f8;
             .mat-expansion-panel-header{
-            //  background-color: #f1f5f8;
+              //  background-color: #f1f5f8;
             }
             &:focus, &:active, &:hover, &:visited{
-            //  background-color: #f1f5f8;
+              //  background-color: #f1f5f8;
             }
           }
         }
@@ -340,15 +340,15 @@
         margin: 0 24px 0 24px;
 
 
-          &.mat-expanded{
+        &.mat-expanded{
+          background-color: #f1f5f8;
+          .mat-expansion-panel-header{
             background-color: #f1f5f8;
-            .mat-expansion-panel-header{
-              background-color: #f1f5f8;
-            }
-            &:focus, &:active, &:hover, &:visited{
-              background-color: #f1f5f8;
-            }
           }
+          &:focus, &:active, &:hover, &:visited{
+            background-color: #f1f5f8;
+          }
+        }
 
 
         .opt-section__heading{
@@ -460,6 +460,7 @@
       width: 100%;
       height: 21px;
       margin-top: 15px;
+      cursor: pointer;
 
       &:active, &:hover, &:focus, &:visited, &:active:focus {
         .icon-line{
