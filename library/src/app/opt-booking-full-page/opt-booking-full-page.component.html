@@ -244,10 +244,10 @@
             <div class="opt_flex--container">
               <div class="opt_flex__item">
                 <mat-accordion>
-                <span *ngFor="let a of bookingListArray; let index = index">
 
 
-                  <app-opt-booking-list>
+
+                  <app-opt-booking-list *ngFor="let a of bookingListArray; let index = index" >
 
 
 
@@ -256,7 +256,7 @@
 
 
 
-                </span>
+
                 </mat-accordion>
               </div>
             </div>

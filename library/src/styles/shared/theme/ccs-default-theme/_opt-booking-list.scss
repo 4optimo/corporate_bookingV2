@@ -419,8 +419,10 @@ margin-right: 0;
 
     &:focus, &:active, &:hover, &:visited{
       background-color: #00aeef;
+      transition: background-color 0.5s ease;
       color: white;
       border: none;
+
     }
     //outline-color: #0000;
     //border-radius: 4px;
