@@ -108,6 +108,17 @@
   align-items: center;
 }
 
+.row{
+  width: 100%;
+  margin: 5px 0;
+}
+
+.info-bk{
+  display: block;
+  div{
+
+  }
+}
 
 @media (max-width: 991px) {
   .mat-horizontal-stepper-header-container{
