@@ -226,7 +226,9 @@
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <div class="opt-booking-list-full opt_booking__list">
+      <div class="search-panel-wrapper">
         <app-opt-search-panel></app-opt-search-panel>
+      </div>
       <div class="filter-section">
         <div class="opt_flex--container">
           <div class="opt_flex__item--inherit filter-padding-left">
@@ -242,10 +244,10 @@
             <div class="opt_flex--container">
               <div class="opt_flex__item">
                 <mat-accordion>
+                <span *ngFor="let a of bookingListArray; let index = index">
 
 
-
-                  <app-opt-booking-list *ngFor="let a of bookingListArray; let index = index" >
+                  <app-opt-booking-list>
 
 
 
@@ -254,7 +256,7 @@
 
 
 
-
+                </span>
                 </mat-accordion>
               </div>
             </div>

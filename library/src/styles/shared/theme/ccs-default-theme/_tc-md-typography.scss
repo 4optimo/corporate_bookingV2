@@ -231,9 +231,6 @@ text-overflow: ellipsis;
         text-align: right;
   }
 
-  &__left{
-    text-align: left;
-  }
 
   &__center{
     text-align: center;
@@ -372,7 +369,7 @@ p {
 .opt-txt__caption{
   @include typo-caption;
   font-style: normal;
-  color: rgb(83, 100, 123);
+  color: #909cac;
 
 
 
