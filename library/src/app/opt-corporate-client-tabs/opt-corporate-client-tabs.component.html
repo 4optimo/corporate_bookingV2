@@ -1,16 +1,15 @@
 
 
-<section class="opt-section__heading ">
-  <mat-accordion>
+<!--<section class="opt-section__heading ">-->
+  <!--<mat-accordion>-->
 
-    <mat-expansion-panel #myPanel2 class="section-heading __main">
-      <mat-expansion-panel-header class="__title">
-        <!-- [collapsedHeight]="400" [expandedHeight]="500"-->
-        <h1>Additional Details</h1>
-      </mat-expansion-panel-header>
+    <!--<mat-expansion-panel #myPanel2 class="section-heading __main">-->
+      <!--<mat-expansion-panel-header class="__title">-->
+        <!--<h1>Additional Details</h1>-->
+      <!--</mat-expansion-panel-header>-->
 
 
-      <div class="opt--tab-module opt_corporate-client-tabs">
+      <div class="opt--tab-module opt_corporate-client-tabs opt_corporate-client-popup">
         <mat-card>
           <mat-card-content>
             <mat-tab-group class="demo-tab-group" #tabGroup>
@@ -222,12 +221,45 @@
                 </div>
               </mat-tab>
               <mat-tab label="Document">
-                <div class="demo-tab-content">
-                  <!--Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue.-->
-                  <!--Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus.-->
-                  <!--In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec,-->
-                  <!--feugiat ultricies mi. Aliquam erat volutpat. Nam placerat, tortor in ultrices porttitor,-->
-                  <!--orci enim rutrum enim, vel tempor sapien arcu a tellus.-->
+                <div class="demo-tab-content document-upload-section">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="btn-group pull-right">
+                        <button mat-raised-button>Add</button>
+                        <button mat-raised-button>Edit</button>
+                        <button mat-raised-button>Delete</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="doc-upload-container">
+                        <div class="opt_flex--container">
+                          <div class="opt_flex__item--inherit" >
+                            <div class="document-upload-icon">
+                              <i class="icon-icn-file tc-flex-item__center"></i>
+                            </div>
+                          </div>
+                          <div class="opt_flex__item--inherit">
+                            <div class="document-upload-message">Drag and Drop files here or select them from your computer</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                          <form class=" opt_flex__item">
+                            <div class="flex-container">
+                              <mat-form-field class="opt_flex__item">
+                                <textarea matInput placeholder="Textarea"></textarea>
+                              </mat-form-field>
+                            </div>
+                          </form>
+                        </div>
+                    </div>
+                  </div>
                 </div>
               </mat-tab>
               <mat-tab label="Highlights" >
@@ -290,13 +322,11 @@
               </mat-tab>
               <mat-tab label="Tab 5" disabled>
               </mat-tab>
-              <mat-tab label="Tab 6" disabled>
-              </mat-tab>
             </mat-tab-group>
           </mat-card-content>
         </mat-card>
       </div>
 
-    </mat-expansion-panel>
-  </mat-accordion>
-</section>
+    <!--</mat-expansion-panel>-->
+  <!--</mat-accordion>-->
+<!--</section>-->
