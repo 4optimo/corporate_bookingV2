@@ -1,6 +1,6 @@
 import {Component, OnInit, ViewChild, ViewChildren} from '@angular/core';
 import {MatExpansionPanel} from "@angular/material";
-import {FormControl} from '@angular/forms';
+
 @Component({
   selector: 'app-opt-booking-details',
   templateUrl: './opt-booking-details.component.html',
@@ -11,9 +11,6 @@ export class OptBookingDetailsComponent implements OnInit {
 
 
 
-
-  dater = new FormControl(new Date());
-  serializedDater = new FormControl((new Date()).toISOString());
 
   @ViewChild('myPanel') myPanel: MatExpansionPanel;
   matIcon = 'keyboard_arrow_down' || 'keyboard_arrow_up';
@@ -83,7 +80,6 @@ export class OptBookingDetailsComponent implements OnInit {
       "name": "BTX16L4 - Premier Dinner 4 & Eye"
     }
   ];
-
 
 
 }

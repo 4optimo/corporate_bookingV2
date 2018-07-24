@@ -8,21 +8,8 @@
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 
 
-  .sub_chip__cage{
-    padding-top: 5px;
-  }
-
-
   .tbl_head{
 
-    padding-left: 0px;
-
-
-
-    &:first-child {
-      border-bottom: 1px dashed #acacac;
-      background-color: #f6f6f6;
-    }
 
     .row{
       margin-left: inherit !important;
@@ -64,7 +51,7 @@
       padding: 0 10px 0 10px;
       &> .row > [class^='col-'] {
         display: flex;
-        min-height: 50px;
+        min-height: 55px;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -236,7 +223,6 @@
   padding-left: 15px;
   .ref_no{
     font-weight: 600;
-
   }
 }
 
@@ -424,10 +410,8 @@ margin-right: 0;
 
     &:focus, &:active, &:hover, &:visited{
       background-color: #00aeef;
-      transition: background-color 0.5s ease;
       color: white;
       border: none;
-
     }
     //outline-color: #0000;
     //border-radius: 4px;
