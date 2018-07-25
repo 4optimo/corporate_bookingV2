@@ -2,13 +2,19 @@
 .page-loader-msg{
   @include box_shadow (2);
   background-color: #fff;
-  padding: 60px;
+  padding: 80px;
 
   h1{
     margin: 50px;
+    font-size: 50px;
+    font-weight: 200;
+    color: #6e6e6e;
   }
   p{
     margin-bottom: 20px;
+    color: #6e6e6e;
+    font-size: 18px;
+    margin-bottom: 30px;
   }
 
   .big-font{
