@@ -95,6 +95,7 @@ import { OptChipDatePickerComponent } from './opt-chip-date-picker/opt-chip-date
 import { TypographyComponent } from './typography/typography.component';
 import { OptChipSelectComponent } from './opt-chip-select/opt-chip-select.component';
 import { OptPricePopupComponent } from './opt-price-popup/opt-price-popup.component';
+import { OptPageloaderComponent } from './opt-pageloader/opt-pageloader.component';
 
 
 
@@ -128,7 +129,9 @@ const appRoutes: Routes = [
   { path: 'typography', component: TypographyComponent},
   { path: 'opt-chip-select', component: OptChipSelectComponent},
   { path: 'opt-booking-payment', component: OptBookingPaymentComponent},
-  // { path: 'opt-document-select', component: OptDocumentSelectComponent},
+
+
+   { path: 'opt-pageloader', component: OptPageloaderComponent},
 
   { path: '', redirectTo:'/opt-booking-summary', pathMatch:'full'},
   { path: '**', redirectTo:'/opt-booking-summary', pathMatch: 'full'}
@@ -172,7 +175,8 @@ const appRoutes: Routes = [
     ScrollDispatchModule
 
   ],
-  declarations: [],
+
+
 
 
 
@@ -183,6 +187,7 @@ export class DemoMaterialModule {}
 @NgModule({
 
   declarations: [
+    OptPageloaderComponent,
     AppComponent,
     OptChipDatePickerComponent,
     ExpansionPanelComponent,
