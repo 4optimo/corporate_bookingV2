@@ -1,3 +1,22 @@
+
+.page-loader-msg{
+  @include box_shadow (2);
+  background-color: #fff;
+  padding: 60px;
+
+  h1{
+    margin: 50px;
+  }
+  p{
+    margin-bottom: 20px;
+  }
+
+  .big-font{
+    font-size: 90px;
+  }
+
+}
+
 .page-loader{
   @include box_shadow (2);
   background-color: #fff;
