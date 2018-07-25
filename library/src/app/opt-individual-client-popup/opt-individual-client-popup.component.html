@@ -80,7 +80,7 @@
                         <div class="activity-availability">General Details</div>
                       </div>
                     </ng-template>
-                    <div class="opt_flex--container">
+                    <div class="opt_flex--container stepper">
                       <div class="opt_flex__item padding-left">
                         <mat-form-field class="example-full-width">
                           <mat-select placeholder="Title" [(ngModel)]="selectedValue1" name="Mr" required>
@@ -293,7 +293,45 @@
                             <mat-tab label="Preference">
                             </mat-tab>
                             <mat-tab label="Document">
-                              <div class="demo-tab-content">
+                              <div class="demo-tab-content document-upload-section">
+                                <div class="row">
+                                  <div class="col-md-12">
+                                    <div class="btn-group pull-right">
+                                      <button mat-raised-button>Add</button>
+                                      <button mat-raised-button>Edit</button>
+                                      <button mat-raised-button>Delete</button>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="col-md-12">
+                                    <div class="doc-upload-container">
+                                      <div class="opt_flex--container">
+                                        <div class="opt_flex__item--inherit" >
+                                          <div class="document-upload-icon">
+                                            <i class="icon-icn-file tc-flex-item__center"></i>
+                                          </div>
+                                        </div>
+                                        <div class="opt_flex__item--inherit">
+                                          <div class="document-upload-message">Drag and Drop files here or select them from your computer</div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="col-md-12">
+                                    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                      <form class=" opt_flex__item">
+                                        <div class="flex-container">
+                                          <mat-form-field class="opt_flex__item">
+                                            <textarea matInput placeholder="Textarea"></textarea>
+                                          </mat-form-field>
+                                        </div>
+                                      </form>
+                                    </div>
+                                  </div>
+                                </div>
                               </div>
                             </mat-tab>
                             <mat-tab label="Hobbies">
@@ -1356,6 +1394,7 @@
             </section>
           </div>
         </div>
+
         <div class="notes">
           <div class="inner-wrapper">
             <section class="opt-section__heading">

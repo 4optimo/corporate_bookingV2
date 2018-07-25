@@ -143,7 +143,9 @@
 
     .client-details{
       padding-top: 20px;
-
+      .stepper{
+        padding-top: 30px;
+      }
       .mat-checkbox-layout {
         margin-right: 20px;
         margin-left: 0 !important;
@@ -548,6 +550,9 @@
 .document-upload-section{
   padding: 10px;
 
+  .mat-tab-body-content {
+    overflow: hidden;
+  }
   .opt_flex--container{
     justify-content: center;
     align-items: center;
@@ -566,5 +571,8 @@
       font-size: 35px;
       vertical-align: middle;
     }
+  }
+  .document-upload-message{
+    padding-left: 20px;
   }
 }
