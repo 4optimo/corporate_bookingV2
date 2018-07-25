@@ -45,7 +45,6 @@
     font-size: 12px !important;
     font-family: $rub !important;
 
-
     .clear-space{
       margin-left: 0px !important;
       margin-right: 0px !important;
@@ -144,8 +143,9 @@
 
     .client-details{
       padding-top: 20px;
-
-
+      .stepper{
+        padding-top: 30px;
+      }
       .mat-checkbox-layout {
         margin-right: 20px;
         margin-left: 0 !important;
@@ -186,6 +186,22 @@
     .contact-details{
       // background-color: #f1f5f8;
       // margin: 0 -24px 0 -24px;
+
+      .hobbies-tab, .preferences-tab, .marketing-tab, .general-tab {
+        .opt_additional-info {
+          .opt_flex__item {
+            .mat-checkbox-layout {
+              padding-bottom: 15px;
+            }
+            &.decision-maker{
+              display:  flex;
+              align-items:  center;
+              padding-left: 0;
+            }
+          }
+        }
+      }
+
       .opt_address_cage{
         border: 1px dashed #ababab;
         padding: 15px;
@@ -209,7 +225,23 @@
         /* border-bottom: 1px solid #eee; */
       }
 
-
+      .opt_flex__item{
+        @include respond-to('x-small') {
+          flex: 1 1 50%;
+        }
+        @include respond-to('small') {
+          flex: 1 1 50%;
+        }
+        @include respond-to('medium') {
+          flex: 1 1 31%;
+        }
+        @include respond-to('large') {
+          flex: 1 1 31%;
+        }
+        @include respond-to('xx-large') {
+          flex: 1 1 31%;
+        }
+      }
 
       .inner-wrapper{
         margin: 0 24px 0 24px;
@@ -220,23 +252,6 @@
           .form-data-contact{
             padding: 10px;
             //flex: 1 1 33%;
-            .opt_flex__item{
-              @include respond-to('x-small') {
-                flex: 1 1 50%;
-              }
-              @include respond-to('small') {
-                flex: 1 1 50%;
-              }
-              @include respond-to('medium') {
-                flex: 1 1 33%;
-              }
-              @include respond-to('large') {
-                flex: 1 1 33%;
-              }
-              @include respond-to('xx-large') {
-                flex: 1 1 33%;
-              }
-            }
           }
         }
 
@@ -290,9 +305,8 @@
     }
 
     .additional-details{
+
       .opt_flex__item{
-
-
 
         @include respond-to('x-small') {
           flex: 1 1 50%;
@@ -511,8 +525,54 @@
       padding: 0 10px 10px 10px;
     }
 
+
+    .mat-horizontal-stepper-header-container{
+      margin: 0 24px;
+      background-color: darkgray;
+      justify-content: center;
+      border-radius: 5px 5px 0 0;
+    }
+    .mat-horizontal-stepper-content{
+      background-color: white;
+    }
+    .mat-stepper-horizontal, .mat-stepper-vertical {
+      background-color: #f0f6fa;
+    }
+    .mat-stepper-horizontal-line{
+      flex: none;
+    }
+    .activity-availability{
+      color: white;
+    }
   }
 
+}
+.document-upload-section{
+  padding: 10px;
 
-
+  .mat-tab-body-content {
+    overflow: hidden;
+  }
+  .opt_flex--container{
+    justify-content: center;
+    align-items: center;
+  }
+  .btn-group{
+    padding-bottom: 20px;
+  }
+  .doc-upload-container{
+    padding: 20px;
+    border: 1px dashed darkgray;
+  }
+  .document-upload-icon{
+    @include circle-icon(70px, #f0f6fa, #f0f6fa);
+    .icon-icn-file{
+      color: lightgray;
+      font-size: 35px;
+      vertical-align: middle;
+    }
+  }
+  .document-upload-message{
+    padding-left: 20px;
+  }
 }

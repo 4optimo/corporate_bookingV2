@@ -7,6 +7,7 @@
     </mat-expansion-panel-header>
     <mat-horizontal-stepper #stepper="matHorizontalStepper">
       <mat-step>
+
         <ng-template matStepLabel>
           <div class="text-center">
             <div class="activity-avatar-wrapper">
@@ -16,17 +17,92 @@
             <div class="activity-title">Notes</div>
           </div>
         </ng-template>
-        <div class="opt_flex--container">
-          <div class="opt_flex__item horizontally-center">
-            <mat-checkbox>Select All</mat-checkbox>
-          </div>
-          <div class="opt_flex__item--inherit horizontally-center">
-            <button mat-button class="btn-icon-text"><i class="material-icons">cloud_upload</i> <span class="btn-text">Upload a new file</span></button>
-            <button mat-button class="btn-icon-text"><i class="material-icons">email</i> <span class="btn-text">Email</span></button>
-            <button mat-button class="btn-icon-text"><i class="material-icons">delete</i> <span class="btn-text">Delete</span></button>
+
+        <!--Notes Tab Content-->
+        <!--Header-->
+        <div class="info-bk">
+          <div class="opt_flex--container">
+          <div class="row">
+            <div class="col-sm-6 col-md-7	col-lg-8	col-xs-12">
+                <div class="opt_flex__item chck-box horizontally-center"> <mat-checkbox></mat-checkbox> </div>
+                <div >
+                  <span class="opt_flex__item des-box horizontally-center">  Select All
+                      <mat-form-field>
+                        <mat-select placeholder="Note Type">
+                          <mat-option *ngFor="let food of foods" [value]="food.value">
+                            {{ food.viewValue }}
+                          </mat-option>
+                        </mat-select>
+                      </mat-form-field>
+                  </span>
+                </div>
+              </div>
+            </div>
+              <div class="col-sm-6 col-md-5	col-lg-4	col-xs-12">
+                  <div class="opt_flex__item--inherit horizontally-center">
+                    <button mat-button class="btn-icon-text"><i class="material-icons">cloud_upload</i> <span class="btn-text">Upload a new file</span></button>
+                    <button mat-button class="btn-icon-text"><i class="material-icons">email</i> <span class="btn-text">Email</span></button>
+                    <button mat-button class="btn-icon-text"><i class="material-icons">delete</i> <span class="btn-text">Delete</span></button>
+                  </div>
+              </div>
           </div>
         </div>
+
+          <!--<div class="opt_flex&#45;&#45;container">
+            <div class="col-sm-6 col-md-3	col-lg-4	col-xs-12">
+              <div class="opt_flex__item horizontally-center">
+                <mat-checkbox>Optimo User</mat-checkbox>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4	col-lg-5	col-xs-12">
+              <div class="opt_flex__item&#45;&#45;inherit horizontally-center">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                Aenean commodo ligula eget dolor. Aenean massa
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-3	col-lg-3	col-xs-12">
+              <div class="opt_flex__item&#45;&#45;inherit horizontally-center">
+                <span>
+                  <i class="material-icons mat-btn-icon-btn opt_color_icon_font">edit</i>
+                  <i class="material-icons mat-btn-icon-btn opt_color_icon_font">delete</i>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>-->
+
+            <!--Content-->
+            <div class="opt_flex--container">
+              <div class="opt_flex__item horizontally-center">
+                <div class="row">
+                <div class="col-sm-6 col-md-3	col-lg-4	col-xs-12">
+                  <div class="opt_flex--container">
+                    <div class="opt_flex__item chck-box"> <mat-checkbox></mat-checkbox> </div>
+                    <div class="opt_flex__item des-box">
+                      <div class="opt-txt__body2-small opt-fontweight--bold"> Optimo User </div>
+                      <div class="opt-txt__secondary"> 04-Jan-2018 | <i class="material-icons mat-btn-icon-btn opt_color_icon_font">note</i></div>
+                    </div>
+                  </div>
+                </div>
+            <div class="col-sm-6 col-md-6	col-lg-5	col-xs-12">
+              <div class="opt_flex__item horizontally-center opt-txt__secondary">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                    Aenean commodo ligula eget dolor. Aenean massa
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-3	col-lg-3	col-xs-12">
+              <div class="opt_flex__item edit_icon">
+                <span><i class="material-icons mat-btn-icon-btn opt_color_icon_font">edit</i>
+                <i class="material-icons mat-btn-icon-btn opt_color_icon_font">delete</i></span>
+              </div>
+            </div>
+          </div>
+              </div>
+            </div>
       </mat-step>
+
       <mat-step label="Documents">
         <ng-template matStepLabel>
           <div class="text-center">

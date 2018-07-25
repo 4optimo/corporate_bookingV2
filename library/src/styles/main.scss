@@ -11,7 +11,7 @@
 $bootstrap-sass-asset-helper: false;
 
 @import "./shared/theme/ccs-default-theme/variables";
-@import "./shared/theme/ccs-default-theme/color-classes";
+
 @import "shared/theme/ccs-default-theme/bootstrap/stylesheets/bootstrap";
 @import "./shared/theme/ccs-default-theme/icon-fonts";
 @import "./shared/theme/ccs-default-theme/reset";
@@ -35,7 +35,7 @@ $bootstrap-sass-asset-helper: false;
 //@import "./shared/theme/ccs-default-theme/pop-up";
 @import "./shared/theme/ccs-default-theme/booking-details";
 @import "./shared/theme/ccs-default-theme/booking-activities";
-@import "./shared/theme/ccs-default-theme/booking-payment";
+//@import "./shared/theme/ccs-default-theme/booking-payment";
 @import "./shared/theme/ccs-default-theme/booking-main-tabs";
 @import "./shared/theme/ccs-default-theme/opt-booking-list";
 @import "./shared/theme/ccs-default-theme/opt-section__heading";
@@ -45,7 +45,7 @@ $bootstrap-sass-asset-helper: false;
 @import "./shared/theme/ccs-default-theme/client-list";
 //@import "./shared/theme/ccs-default-theme/tooltip";
 @import "./shared/theme/ccs-default-theme/search-panel";
-@import "./shared/theme/ccs-default-theme/booking-activities";
+//@import "./shared/theme/ccs-default-theme/booking-activities";
 @import "./shared/theme/ccs-default-theme/corporate-client-popup";
 @import "./shared/theme/ccs-default-theme/chip";
 @import "./shared/theme/ccs-default-theme/fab";
@@ -59,3 +59,6 @@ $bootstrap-sass-asset-helper: false;
 @import "./shared/theme/ccs-default-theme/library";
 @import "./shared/theme/ccs-default-theme/chip-input";
 @import "./shared/theme/ccs-default-theme/label";
+@import "./shared/theme/ccs-default-theme/color-classes";
+@import "./shared/theme/ccs-default-theme/buttons";
+@import "./shared/theme/ccs-default-theme/opt_pageloader";

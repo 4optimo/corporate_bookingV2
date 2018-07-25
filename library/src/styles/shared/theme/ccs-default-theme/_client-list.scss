@@ -112,7 +112,7 @@
     //padding-top: 0;
 
     &__individual{
-      @include circle-icon(45px, #27bfc2, #27bfc2);
+      @include circle-icon(45px,#9c27b0,#9c27b0);
       padding-top: 2px;
       line-height: 12px;
       .client-type{
@@ -124,7 +124,7 @@
       }
     }
     &__corporate{
-      @include circle-icon(45px, #f9d634, #f9d634);
+      @include circle-icon(45px, #27bfc2, #27bfc2);
       padding-top: 2px;
       line-height: 12px;
       .client-type{

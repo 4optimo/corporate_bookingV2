@@ -108,6 +108,29 @@
   align-items: center;
 }
 
+.row{
+  width: 100%;
+  margin: 0;
+  padding: 5px 0;
+  border-bottom: 0.5px solid #e0e0e0;
+}
+
+.info-bk{
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.edit_icon{
+  text-align: right;
+}
+
+.chck-box{
+  width: 40px;
+}
+
+.des-box{
+  width: calc(100% - 40px)
+}
+
 
 @media (max-width: 991px) {
   .mat-horizontal-stepper-header-container{
