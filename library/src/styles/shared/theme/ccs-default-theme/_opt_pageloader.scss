@@ -1,0 +1,37 @@
+.page-loader{
+  @include box_shadow (2);
+  background-color: #fff;
+  padding: 10px;
+  background: linear-gradient(-45deg, #fafafa, #e7e9ff, #fafafa, #e7e9ff);
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 8s ease infinite;
+  -moz-animation: Gradient 8s ease infinite;
+  animation: Gradient 8s ease infinite;
+
+  .spinner{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  mat-spinner{
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 60%;
+
+    circle{
+      stroke-width: 5% !important;
+      stroke: #00b0ff;
+    }
+  }
+
+  .title{
+    text-align: center;
+    margin-top: 35px;
+  }
+
+  .page-wrap{
+    padding: 80px;
+    border: 1px dotted #eee;
+  }
+
+}
