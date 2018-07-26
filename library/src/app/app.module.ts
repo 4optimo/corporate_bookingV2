@@ -96,6 +96,7 @@ import { TypographyComponent } from './typography/typography.component';
 import { OptChipSelectComponent } from './opt-chip-select/opt-chip-select.component';
 import { OptPricePopupComponent } from './opt-price-popup/opt-price-popup.component';
 import { OptPageloaderComponent } from './opt-pageloader/opt-pageloader.component';
+import { Opt404Component } from './opt-404/opt-404.component';
 
 
 
@@ -129,6 +130,7 @@ const appRoutes: Routes = [
   { path: 'typography', component: TypographyComponent},
   { path: 'opt-chip-select', component: OptChipSelectComponent},
   { path: 'opt-booking-payment', component: OptBookingPaymentComponent},
+  { path: 'app-opt-404', component: Opt404Component},
 
 
    { path: 'opt-pageloader', component: OptPageloaderComponent},
@@ -181,12 +183,14 @@ const appRoutes: Routes = [
 
 
 
+
 })
 export class DemoMaterialModule {}
 
 @NgModule({
 
   declarations: [
+    Opt404Component,
     OptPageloaderComponent,
     AppComponent,
     OptChipDatePickerComponent,
