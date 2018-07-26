@@ -7,6 +7,37 @@
       margin-top: 30px;
     }
   }
+  .document-upload-section{
+    overflow: hidden;
+    padding: 10px;
+
+    .mat-tab-body-content {
+      overflow: hidden;
+    }
+    .opt_flex--container{
+      justify-content: center;
+      align-items: center;
+    }
+    .btn-group{
+      padding-bottom: 20px;
+    }
+    .doc-upload-container{
+      padding: 20px;
+      border: 1px dashed darkgray;
+    }
+    .document-upload-icon{
+      @include circle-icon(70px, #f0f6fa, #f0f6fa);
+      .icon-icn-file{
+        color: lightgray;
+        font-size: 35px;
+        vertical-align: middle;
+      }
+    }
+    .document-upload-message{
+      padding-left: 20px;
+    }
+
+  }
 
   .opt_cont__new{
     .opt_flex__item{
@@ -26,6 +57,11 @@
   mat-expansion-panel{
     margin-bottom: 15px;
 
+    .mat-expansion-panel-content{
+      &.expanded{
+        border-bottom: 3px solid lightgray;
+      }
+    }
     .mat-expansion-panel-body{
       padding: 20px 10px !important;
       background-color: #f0f6fa;
@@ -78,6 +114,17 @@
     }
 
 
+    .mat-slide-toggle-content {
+      font-size: 12px;
+
+    }
+    .mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-thumb {
+      background-color: $badge-success-bg;
+    }
+    .mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-bar {
+      background-color: #d0d4db;
+    }
+
     .pro-header {
       //display: flex;
 
@@ -103,20 +150,6 @@
         background-color: #f1f5f8;
         justify-content: center;
 
-        .mat-slide-toggle-content {
-          font-size: 12px;
-          font-family: $rub;
-
-        }
-        .mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-thumb {
-          background-color: $badge-success-bg;
-        }
-        .mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-bar {
-          background-color: #d0d4db;
-        }
-        .mat-input-infix mat-form-field-infix {
-          font-family: 'Rubik', sans-serif;
-        }
         .form-data {
           &__individual{
             margin: 0 5px;
@@ -141,10 +174,64 @@
       }
     }
 
+    .hobbies-tab, .preferences-tab, .marketing-tab, .general-tab {
+      .opt_additional-info {
+        .opt_flex__item {
+          .mat-checkbox-layout {
+            padding-bottom: 15px;
+          }
+          &.decision-maker{
+            display:  flex;
+            align-items:  center;
+            padding-left: 0;
+          }
+        }
+      }
+    }
+
+    .opt_address_cage{
+      border: 1px dashed #ababab;
+      padding: 15px;
+      margin: 30px 0px;
+      background-color: #fafafa;
+
+      @include box-shadow(1);
+
+      mat-label{
+        margin-bottom: 20px;
+      }
+
+
+    }
+
+    .contact-note{
+      margin-left: 0 !important;
+      .mat-btn-primary{
+        float: right;
+      }
+      .note-action{
+        .opt-txt__caption{
+          font-size: 18px;
+          padding-right: 15px;
+        }
+      }
+      .opt_flex--container{
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+      }
+
+    }
     .client-details{
       padding-top: 20px;
-      .stepper{
-        padding-top: 30px;
+      .opt_address_cage{
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+      .mat-horizontal-stepper-content{
+        .client-general-info{
+          padding-top: 30px;
+        }
       }
       .mat-checkbox-layout {
         margin-right: 20px;
@@ -187,35 +274,6 @@
       // background-color: #f1f5f8;
       // margin: 0 -24px 0 -24px;
 
-      .hobbies-tab, .preferences-tab, .marketing-tab, .general-tab {
-        .opt_additional-info {
-          .opt_flex__item {
-            .mat-checkbox-layout {
-              padding-bottom: 15px;
-            }
-            &.decision-maker{
-              display:  flex;
-              align-items:  center;
-              padding-left: 0;
-            }
-          }
-        }
-      }
-
-      .opt_address_cage{
-        border: 1px dashed #ababab;
-        padding: 15px;
-        margin: 30px 0px;
-        background-color: #fafafa;
-
-        @include box-shadow(1);
-
-        mat-label{
-          margin-bottom: 20px;
-        }
-
-
-      }
       .delivery-method{
         text-align: right;
         border-bottom: 2px solid #00b0ff;
@@ -223,6 +281,9 @@
 
         margin-top: 30px;
         /* border-bottom: 1px solid #eee; */
+        .opt-txt__left{
+          text-align: left!important;
+        }
       }
 
       .opt_flex__item{
@@ -248,7 +309,7 @@
         .outer-contxt{
           background-color: white;
           margin: 10px;
-          border: 1px dashed #b6b8b9;
+          //border: 1px dashed #b6b8b9;
           .form-data-contact{
             padding: 10px;
             //flex: 1 1 33%;
@@ -265,7 +326,6 @@
         .mat-expansion-panel{
 
 
-
           &.mat-expanded{
 
             // background-color: #f1f5f8;
@@ -275,6 +335,7 @@
             &:focus, &:active, &:hover, &:visited{
               //  background-color: #f1f5f8;
             }
+
           }
         }
         .opt-section__heading{
@@ -448,7 +509,6 @@
         }
       }
     }
-
     .opt-section__heading{
       margin-bottom: 15px;
     }
@@ -524,13 +584,31 @@
       font-size: 12px;
       padding: 0 10px 10px 10px;
     }
+    .mat-horizontal-stepper-content {
+      overflow: hidden;
+      border: 1px solid #cbdfed;
+    }
 
+    .mat-stepper-horizontal{
+      padding-top:20px;
+    }
+    .mat-horizontal-stepper-header {
+        &.mat-step-header{
+          &.cdk-mouse-focused{
+            border-bottom: 2px solid #00b0ff;
+          }
+        }
+        .mat-step-icon {
+          background-color: #00b0ff;
+          color: #fff;
+        }
+      }
 
     .mat-horizontal-stepper-header-container{
       margin: 0 24px;
-      background-color: darkgray;
       justify-content: center;
       border-radius: 5px 5px 0 0;
+      background-color: #cbdfec;
     }
     .mat-horizontal-stepper-content{
       background-color: white;
@@ -541,38 +619,6 @@
     .mat-stepper-horizontal-line{
       flex: none;
     }
-    .activity-availability{
-      color: white;
-    }
-  }
-
-}
-.document-upload-section{
-  padding: 10px;
-
-  .mat-tab-body-content {
-    overflow: hidden;
-  }
-  .opt_flex--container{
-    justify-content: center;
-    align-items: center;
-  }
-  .btn-group{
-    padding-bottom: 20px;
-  }
-  .doc-upload-container{
-    padding: 20px;
-    border: 1px dashed darkgray;
-  }
-  .document-upload-icon{
-    @include circle-icon(70px, #f0f6fa, #f0f6fa);
-    .icon-icn-file{
-      color: lightgray;
-      font-size: 35px;
-      vertical-align: middle;
-    }
-  }
-  .document-upload-message{
-    padding-left: 20px;
   }
 }
+
