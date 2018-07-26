@@ -7,7 +7,37 @@
       margin-top: 30px;
     }
   }
+  .document-upload-section{
+    overflow: hidden;
+    padding: 10px;
 
+    .mat-tab-body-content {
+      overflow: hidden;
+    }
+    .opt_flex--container{
+      justify-content: center;
+      align-items: center;
+    }
+    .btn-group{
+      padding-bottom: 20px;
+    }
+    .doc-upload-container{
+      padding: 20px;
+      border: 1px dashed darkgray;
+    }
+    .document-upload-icon{
+      @include circle-icon(70px, #f0f6fa, #f0f6fa);
+      .icon-icn-file{
+        color: lightgray;
+        font-size: 35px;
+        vertical-align: middle;
+      }
+    }
+    .document-upload-message{
+      padding-left: 20px;
+    }
+
+  }
   .opt_cont__new{
     .opt_flex__item{
 
@@ -478,7 +508,6 @@
         }
       }
     }
-
     .opt-section__heading{
       margin-bottom: 15px;
     }
@@ -591,33 +620,4 @@
     }
   }
 }
-.document-upload-section{
-  padding: 10px;
 
-  .mat-tab-body-content {
-    overflow: hidden;
-  }
-  .opt_flex--container{
-    justify-content: center;
-    align-items: center;
-  }
-  .btn-group{
-    padding-bottom: 20px;
-  }
-  .doc-upload-container{
-    padding: 20px;
-    border: 1px dashed darkgray;
-  }
-  .document-upload-icon{
-    @include circle-icon(70px, #f0f6fa, #f0f6fa);
-    .icon-icn-file{
-      color: lightgray;
-      font-size: 35px;
-      vertical-align: middle;
-    }
-  }
-  .document-upload-message{
-    padding-left: 20px;
-  }
-
-}
