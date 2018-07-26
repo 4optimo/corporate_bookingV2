@@ -1,4 +1,4 @@
-.activity {
+.opt_booking__activity {
   .mat-expansion-indicator {
     background-color: rgb(39, 191, 194);
     padding: 4px 10px 8px;
@@ -133,7 +133,7 @@
     width: calc(100% - 40px)
   }
 
-  .action-btn{
+  .action-btn {
     justify-content: flex-end;
   }
 
@@ -157,5 +157,5 @@
       }
     }
   }
-
 }
+
