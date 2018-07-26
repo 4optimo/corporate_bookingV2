@@ -159,13 +159,13 @@
                                 <mat-checkbox  class="opt-txt__body1">We may contact you about product and services you may like.</mat-checkbox>
                               </div>
                               <div class="note-action">
-                                <i class="material-icons opt-txt__caption">delete</i>
+                                <!--<i class="material-icons opt-txt__caption">delete</i>-->
                                 <i class="material-icons opt-txt__caption">create</i>
                               </div>
                             </div>
                             <div class="flex-container">
                               <mat-form-field class="opt_flex__item">
-                                <textarea matInput placeholder="Textarea"></textarea>
+                                <textarea matInput placeholder="Write your Note"></textarea>
                               </mat-form-field>
                             </div>
                             <button class="mat-btn-primary mat-button">Add</button>
@@ -373,7 +373,7 @@
                                       <form class=" opt_flex__item">
                                         <div class="flex-container">
                                           <mat-form-field class="opt_flex__item">
-                                            <textarea matInput placeholder="Textarea"></textarea>
+                                            <textarea matInput placeholder="Description"></textarea>
                                           </mat-form-field>
                                         </div>
                                       </form>
@@ -436,10 +436,23 @@
                               </mat-tab>
                             <mat-tab label="Open">
                                 <div class="demo-tab-content">
-                                  <!--content-->
-                                  <!--<br />-->
-                                  <!--<br />-->
-                                  <!--content-->
+                                  <div class="opt_flex--container">
+                                    <div class="opt_flex__item padding-left">
+                                      <mat-form-field class="example-full-width">
+                                        <textarea matInput placeholder="N/A"></textarea>
+                                      </mat-form-field>
+                                    </div>
+                                    <div class="opt_flex__item padding-left">
+                                      <mat-form-field class="example-full-width">
+                                        <textarea matInput placeholder="N/A"></textarea>
+                                      </mat-form-field>
+                                    </div>
+                                    <div class="opt_flex__item padding-left">
+                                      <mat-form-field class="example-full-width">
+                                        <textarea matInput placeholder="N/A"></textarea>
+                                      </mat-form-field>
+                                    </div>
+                                  </div>
                                 </div>
                               </mat-tab>
                           </mat-tab-group>
@@ -480,29 +493,14 @@
                       <div class="outer-contxt">
                       <div class="form-data-contact">
                         <div class="opt_flex--container contact-details">
-                          <div class="opt_flex__item padding-left tc-flex-item__center">
-                            <label class="opt-txt__caption">Contact Ref: <span class="opt-txt__body2">0002</span></label>
-                          </div>
-                          <div class="opt_flex__item">
-                            <mat-form-field class="example-full-width">
-                              <input matInput [matDatepicker]="picker11" placeholder="Date Registered">
-                              <mat-datepicker-toggle matSuffix [for]="picker11"></mat-datepicker-toggle>
-                              <mat-datepicker #picker11></mat-datepicker>
-                            </mat-form-field>
-                          </div>
-                          <div class="opt_flex__item">
-                            <div class="form-data__individual tc-flex-item__center">
-                              <mat-slide-toggle [labelPosition]="before">Active Status</mat-slide-toggle>
-                            </div>
-                          </div>
                           <div class="opt_flex__item padding-left">
                             <mat-form-field class="example-full-width">
-                              <input matInput placeholder="Address 1" value="" >
+                              <input matInput placeholder="Address 1" value="" required>
                             </mat-form-field>
                           </div>
                           <div class="opt_flex__item">
                             <mat-form-field class="example-full-width">
-                              <input matInput placeholder="Address 2" value="" >
+                              <input matInput placeholder="Address 2" value="" required>
                             </mat-form-field>
                           </div>
                           <div class="opt_flex__item">
@@ -629,12 +627,12 @@
                           <div class="opt_flex--container contact-details">
                             <div class="opt_flex__item padding-left">
                               <mat-form-field class="example-full-width">
-                                <input matInput placeholder="Address 1" value="" >
+                                <input matInput placeholder="Address 1" value="" required>
                               </mat-form-field>
                             </div>
                             <div class="opt_flex__item">
                               <mat-form-field class="example-full-width">
-                                <input matInput placeholder="Address 2" value="" >
+                                <input matInput placeholder="Address 2" value="" required>
                               </mat-form-field>
                             </div>
                             <div class="opt_flex__item">
@@ -679,12 +677,12 @@
                           <div class="opt_flex--container contact-details">
                             <div class="opt_flex__item padding-left">
                               <mat-form-field class="example-full-width">
-                                <input matInput placeholder="Address 1" value="" >
+                                <input matInput placeholder="Address 1" value="" required>
                               </mat-form-field>
                             </div>
                             <div class="opt_flex__item">
                               <mat-form-field class="example-full-width">
-                                <input matInput placeholder="Address 2" value="" >
+                                <input matInput placeholder="Address 2" value="" required>
                               </mat-form-field>
                             </div>
                             <div class="opt_flex__item">
@@ -1074,12 +1072,12 @@
                               </div>
                               <div class="opt_flex__item padding-left">
                                 <mat-form-field class="example-full-width">
-                                  <input matInput placeholder="Address 1" value="" >
+                                  <input matInput placeholder="Address 1" value="" required>
                                 </mat-form-field>
                               </div>
                               <div class="opt_flex__item">
                                 <mat-form-field class="example-full-width">
-                                  <input matInput placeholder="Address 2" value="" >
+                                  <input matInput placeholder="Address 2" value="" required>
                                 </mat-form-field>
                               </div>
                               <div class="opt_flex__item">
@@ -1131,13 +1129,13 @@
                                         <mat-checkbox  class="opt-txt__body1">We may contact you about product and services you may like.</mat-checkbox>
                                       </div>
                                       <div class="note-action">
-                                        <i class="material-icons opt-txt__caption">delete</i>
+                                        <!--<i class="material-icons opt-txt__caption">delete</i>-->
                                         <i class="material-icons opt-txt__caption">create</i>
                                       </div>
                                     </div>
                                     <div class="flex-container">
                                       <mat-form-field class="opt_flex__item">
-                                        <textarea matInput placeholder="Textarea"></textarea>
+                                        <textarea matInput placeholder="Write your Note"></textarea>
                                       </mat-form-field>
                                     </div>
                                     <button class="mat-btn-primary mat-button">Add</button>
@@ -1170,12 +1168,12 @@
                               <div class="opt_flex--container contact-details">
                                 <div class="opt_flex__item padding-left">
                                   <mat-form-field class="example-full-width">
-                                    <input matInput placeholder="Address 1" value="" >
+                                    <input matInput placeholder="Address 1" value="" required>
                                   </mat-form-field>
                                 </div>
                                 <div class="opt_flex__item">
                                   <mat-form-field class="example-full-width">
-                                    <input matInput placeholder="Address 2" value="" >
+                                    <input matInput placeholder="Address 2" value="" required>
                                   </mat-form-field>
                                 </div>
                                 <div class="opt_flex__item">
