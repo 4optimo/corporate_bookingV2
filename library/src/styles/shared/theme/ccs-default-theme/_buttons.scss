@@ -1,0 +1,169 @@
+@import "variables";
+.mat-button{
+  line-height: inherit !important;
+  &.btn-icon-text{
+    border: 1px solid #abb5bf;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-right: 4px;
+    font-size: 12px;
+    span{
+      color: #333;
+      i{
+        color: #909cac;
+        padding-right: 5px;
+        font-size: 16px;
+        margin-top: -2px;
+      }
+    }
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .mat-button{
+    &.btn-icon-text{
+      padding: 0 8px;
+      min-width: auto;;
+      span{
+        i{
+          padding-right: 0;
+        }
+        &.btn-text{
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+//================= OPTIMO BUTTONS ================/
+
+%btn{
+  height: 30px;
+  padding: 0 15px;
+  width: auto;
+}
+
+%btn-small{
+  height: 23px;
+  padding: 0 15px;
+  width: auto;
+}
+
+.mat-btn{
+  &-primary { /*default*/
+    @extend %btn;
+    color: $opt-color_btn_outline !important;
+    text-align: center !important;
+    border: 1px solid $opt_color_btn_outline !important;
+
+    &:hover{
+      @include box_shadow (1);
+      background-color: $opt_color_btn_active;
+      color: $opt_color_white !important;
+      border: 1px solid  $opt_color_primary !important;
+      text-align: center !important;
+    }
+    &:active{
+      @include box_shadow (2);
+      background-color: $opt_color_primary;
+      color: $opt_color_white !important;
+      border: 1px solid  $opt_color_primary !important;
+      text-align: center !important;
+    }
+
+      &--small {
+      @extend %btn-small;
+        color: $opt-color_btn_outline !important;
+      text-align: center !important;
+      border: 1px solid $opt_color_btn_outline !important;
+
+
+      &:hover{
+        @include box_shadow (1);
+        background-color: $opt_color_primary;
+        color: $opt_color_white !important;
+        border: 1px solid  $opt_color_primary !important;
+        text-align: center !important;
+      }
+      &:active{
+        @include box_shadow (2);
+        background-color: $opt_color_primary;
+        color: $opt_color_white !important;
+        border: 1px solid $opt_color_primary !important;
+        text-align: center !important;
+      }
+
+      &_active{
+        @extend %btn-small;
+        @include box_shadow(2);
+        background-color: $opt_color_primary;
+        color: $opt_color_white !important;
+        border: 1px solid  $opt_color_primary !important;
+        text-align: center !important;
+      }
+    }
+    &_active{ /*Priary Active*/
+      @extend %btn;
+      @include box_shadow(2);
+     // background-color: $opt_color_primary;
+      color: $opt_color_white !important;
+      border: 1px solid  $opt_color_primary !important;
+      text-align: center !important;
+    }
+  }
+
+ /* &-secondary{ !*default*!
+    @extend %btn;
+    background-color: $opt_color_primary;
+    color: $opt_color_white !important;
+    text-align: center !important;
+    @include box_shadow (2);
+
+    &--small{
+      @extend %btn-small;
+      background-color: $opt_color_primary;
+      color: $opt_color_white !important;
+      text-align: center !important;
+      @include box_shadow (2);
+    }
+
+
+  }*/
+
+  &-disabled{
+    @extend %btn;
+    border-color: $opt_color_btn_disabled;
+    color:  $opt_color_btn_disabled !important;
+    background-color: $opt_color_white;
+  }
+  &-raised{
+
+  }
+  &-icon-btn{
+    @extend %btn;
+    //color: $opt_color_icon_font !important; m
+  }
+  &-fab{
+    padding: 0 15px;
+    font-size: 36px;
+    font-weight: 300;
+    //background-color: $opt_color_fab !important;
+    //color: $opt_color_white !important;
+  }
+
+  &-mini-fab{
+    padding: 0 15px;
+    font-size: 24px;
+    font-weight: 300;
+    //background-color: $opt_color_secondary !important;
+    //color: $opt_color_white !important;
+  }
+
+}

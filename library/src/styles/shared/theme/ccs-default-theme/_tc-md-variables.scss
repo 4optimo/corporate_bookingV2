@@ -98,6 +98,9 @@ $color-primary: $palette-indigo-500 !default;
 $color-primary-dark: $palette-indigo-700 !default;
 $color-accent: $palette-pink-A200 !default;
 
+
+
+
 // Our primary is dark, so use $color-dark-contrast for overlaid text.
 $color-primary-contrast: $color-dark-contrast !default;
 // Our accent is dark, so use $color-dark-contrast for overlaid text.
@@ -134,6 +137,7 @@ $target-elements-directly: true !default;
 
 // Default button colors.
 $button-primary-color: unquote("rgba(#{$palette-grey-500}, 0.20)") !default;
+$button-primary-color: unquote("rgba(#{$palette-grey-500}, 0.20)") !default;
 $button-secondary-color: unquote("rgb(#{$color-black})") !default;
 $button-hover-color: $button-primary-color !default;
 $button-active-color: unquote("rgba(#{$palette-grey-500}, 0.40)") !default;
@@ -163,6 +167,8 @@ $button-fab-ripple-color-alt: unquote("rgb(#{$color-accent-contrast})") !default
 // Icon button colors and sizes.
 $button-icon-color: unquote("rgb(#{$palette-grey-700})") !default;
 $button-icon-focus-color: $button-focus-color !default;
+
+
 
 /* ==========  Icon Toggles  ========== */
 
@@ -590,3 +596,5 @@ $chip-bg-color: rgb(222, 222, 222) !default;
 $chip-bg-active-color: rgb(214, 214, 214) !default;
 $chip-height: 32px !default;
 $chip-font-size: 13px !default;
+
+

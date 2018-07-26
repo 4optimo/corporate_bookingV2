@@ -1,0 +1,309 @@
+
+
+<!--<section class="opt-section__heading ">-->
+  <!--<mat-accordion>-->
+
+    <!--<mat-expansion-panel #myPanel2 class="section-heading __main">-->
+      <!--<mat-expansion-panel-header class="__title">-->
+        <!--<h1>Additional Details</h1>-->
+      <!--</mat-expansion-panel-header>-->
+
+
+      <div class="opt--tab-module opt_corporate-client-tabs opt_corporate-client-popup">
+        <mat-card>
+          <mat-card-content>
+            <mat-tab-group class="demo-tab-group" #tabGroup>
+              <mat-tab label="General">
+                <div class="demo-tab-content">
+
+                  <div class="opt_additional-info">
+                    <div class="row font-style-07 ">
+                      <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                        <form class="example-form opt_flex__item">
+                          <mat-form-field class="example-full-width">
+                            <input matInput placeholder="Turn Over " value="£0.00" >
+                          </mat-form-field>
+                        </form>
+                      </div>
+                      <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                        <form class="example-form opt_flex__item">
+                          <mat-form-field class="example-full-width">
+                            <input matInput placeholder="Credit Limit" value="£0.00">
+                          </mat-form-field>
+                        </form>
+                      </div>
+                      <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                        <form class="example-form opt_flex__item">
+                          <mat-form-field class="example-full-width">
+                            <input matInput placeholder="Budget" value="£0.00">
+                          </mat-form-field>
+                        </form>
+                      </div>
+                    </div>
+                    <div class="row font-style-07 ">
+                      <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                        <form class="example-form opt_flex__item">
+                          <div class="flex-container">
+                            <div class="input opt_flex__item">
+                              <mat-form-field class="example-full-width">
+                                <input matInput [matDatepicker]="picker1" placeholder="Date Finalized">
+                                <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+                                <mat-datepicker #picker1></mat-datepicker>
+                              </mat-form-field>
+                            </div>
+                            <!--<i class="btn icon opt_flex__item&#45;&#45;inherit">-->
+                              <!--<i class="btn btn-icon"><i class="material-icons small color">calendar_today</i></i>-->
+                            <!--</i>-->
+                          </div>
+                        </form>
+                      </div>
+                      <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <!--<div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">-->
+                            <form class="example-form opt_flex__item p50">
+                              <mat-form-field class="example-full-width">
+                                <input matInput placeholder="Opening Balance" value="Debit">
+                              </mat-form-field>
+                            </form>
+                            <!--</div>-->
+                          </div>
+                          <div class="col-sm-6">
+                            <!--<div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">-->
+                            <form class="example-form opt_flex__item p50">
+                              <mat-form-field class="example-full-width">
+                                <input matInput placeholder="" value="Credit">
+                              </mat-form-field>
+                            </form>
+                            <!--</div>-->
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                        <form class="example-form opt_flex__item">
+                          <div class="flex-container">
+                            <div class="input opt_flex__item">
+                              <mat-form-field class="example-full-width">
+                                <mat-select placeholder="Industry" [(ngModel)]="selectedValue7" name="payment_terms">
+                                  <mat-option *ngFor="let payment_terms of payment_termss" [value]="payment_terms.value">
+                                    {{payment_terms.viewValue}}
+                                  </mat-option>
+                                </mat-select>
+                              </mat-form-field>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                    <div class="row font-style-07 ">
+                      <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                        <form class="example-form opt_flex__item">
+                          <mat-form-field class="example-full-width">
+                            <mat-select placeholder="Source" [(ngModel)]="selectedValue8" name="reason">
+                              <mat-option *ngFor="let reason of reasons" [value]="reason.value">
+                                {{reason.viewValue}}
+                              </mat-option>
+                            </mat-select>
+                          </mat-form-field>
+                        </form>
+                      </div>
+                      <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                        <form class="example-form opt_flex__item">
+                          <mat-form-field class="example-full-width">
+                            <mat-select placeholder="No Of Employees" [(ngModel)]="selectedValue9" name="event_manager">
+                              <mat-option *ngFor="let event_manager of event_managers" [value]="event_manager.value">
+                                {{event_manager.viewValue}}
+                              </mat-option>
+                            </mat-select>
+                          </mat-form-field>
+                        </form>
+                      </div>
+                      <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                        <form class="example-form opt_flex__item">
+                          <mat-form-field class="example-full-width">
+                            <mat-select placeholder="Default Venue" [(ngModel)]="selectedValue10" name="commercial">
+                              <mat-option *ngFor="let commercial of commercials" [value]="commercial.value">
+                                {{commercial.viewValue}}
+                              </mat-option>
+                            </mat-select>
+                          </mat-form-field>
+                        </form>
+                      </div>
+                    </div>
+                    <div class="row font-style-07 ">
+                      <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                        <form class="example-form opt_flex__item">
+                          <mat-form-field class="example-full-width">
+                            <input matInput placeholder="Legal Name" value="" >
+                          </mat-form-field>
+                        </form>
+                      </div>
+                      <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                        <form class="example-form opt_flex__item">
+                          <mat-form-field class="example-full-width">
+                            <input matInput placeholder="Website" value="">
+                          </mat-form-field>
+                        </form>
+                      </div>
+                      <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                        <form class="example-form opt_flex__item">
+                          <mat-form-field class="example-full-width">
+                            <mat-select placeholder="Dunning Level" [(ngModel)]="selectedValue8" name="dinning-level">
+                              <mat-option *ngFor="let reason of reasons" [value]="reason.value">
+                                {{reason.viewValue}}
+                              </mat-option>
+                            </mat-select>
+                          </mat-form-field>
+                        </form>
+                      </div>
+                    </div>
+                    <div class="row font-style-07 ">
+                      <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                        <form class="example-form opt_flex__item">
+                          <mat-form-field class="example-full-width">
+                            <mat-select placeholder="Payment Term" [(ngModel)]="selectedValue8" name="payment-term">
+                              <mat-option *ngFor="let reason of reasons" [value]="reason.value">
+                                01- Credit 100%
+                              </mat-option>
+                            </mat-select>
+                          </mat-form-field>
+                        </form>
+                      </div>
+                      <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                        <form class="example-form opt_flex__item">
+                          <mat-form-field class="example-full-width">
+                            <mat-select placeholder="VAT" [(ngModel)]="selectedValue9" name="vat">
+                              <mat-option *ngFor="let vat of vat" [value]="vat.value">
+                                {{vat.viewValue}}
+                              </mat-option>
+                            </mat-select>
+                          </mat-form-field>
+                        </form>
+                      </div>
+
+                      <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                        <form class="example-form opt_flex__item">
+                          <mat-form-field class="example-full-width">
+                            <mat-select placeholder="Currency" [(ngModel)]="selectedValue10" name="currency">
+                              <mat-option *ngFor="let currency of currency" [value]="currency.value">
+                                {{currency.viewValue}}
+                              </mat-option>
+                            </mat-select>
+                          </mat-form-field>
+                        </form>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </mat-tab>
+              <mat-tab label="Document">
+                <div class="demo-tab-content document-upload-section">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="btn-group pull-right">
+                        <button mat-raised-button>Add</button>
+                        <button mat-raised-button>Edit</button>
+                        <button mat-raised-button>Delete</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="doc-upload-container">
+                        <div class="opt_flex--container">
+                          <div class="opt_flex__item--inherit" >
+                            <div class="document-upload-icon">
+                              <i class="icon-icn-file tc-flex-item__center"></i>
+                            </div>
+                          </div>
+                          <div class="opt_flex__item--inherit">
+                            <div class="document-upload-message">Drag and Drop files here or select them from your computer</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                          <form class=" opt_flex__item">
+                            <div class="flex-container">
+                              <mat-form-field class="opt_flex__item">
+                                <textarea matInput placeholder="Description"></textarea>
+                              </mat-form-field>
+                            </div>
+                          </form>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </mat-tab>
+              <mat-tab label="Highlights" >
+                <div class="demo-tab-content">
+                  <div class="opt_additional-info">
+                    <div class="row font-style-07 ">
+                      <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                        <form class="example-form opt_flex__item">
+                          <div class="flex-container">
+                            <div class="input opt_flex__item">
+                              <mat-form-field class="example-full-width">
+                                <mat-select placeholder="Account Contact" [(ngModel)]="selectedValue7" name="payment_terms">
+                                  <mat-option *ngFor="let payment_terms of payment_termss" [value]="payment_terms.value">
+                                    {{payment_terms.viewValue}}
+                                  </mat-option>
+                                </mat-select>
+                              </mat-form-field>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                        <form class="example-form opt_flex__item">
+                          <div class="flex-container">
+                            <div class="input opt_flex__item">
+                              <mat-form-field class="example-full-width">
+                                <input matInput [matDatepicker]="picker" placeholder="Account Anniversary">
+                                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                                <mat-datepicker #picker></mat-datepicker>
+                              </mat-form-field>
+                            </div>
+                            <!--<i class="btn icon opt_flex__item&#45;&#45;inherit">-->
+                              <!--<i class="btn btn-icon"><i class="material-icons small color">calendar_today</i></i>-->
+                            <!--</i>-->
+                          </div>
+                        </form>
+                    </div>
+                    </div>
+                    <div class="row font-style-07 ">
+                      <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                        <form class=" opt_flex__item">
+                          <div class="flex-container">
+                            <mat-form-field class="opt_flex__item">
+                                  <textarea matInput placeholder="Key Comments"></textarea>
+                                </mat-form-field>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </mat-tab>
+              <mat-tab label="Open">
+                <div class="demo-tab-content">
+                  <!--content-->
+                  <!--<br />-->
+                  <!--<br />-->
+                  <!--content-->
+                </div>
+              </mat-tab>
+              <mat-tab label="Tab 5" disabled>
+              </mat-tab>
+            </mat-tab-group>
+          </mat-card-content>
+        </mat-card>
+      </div>
+
+    <!--</mat-expansion-panel>-->
+  <!--</mat-accordion>-->
+<!--</section>-->

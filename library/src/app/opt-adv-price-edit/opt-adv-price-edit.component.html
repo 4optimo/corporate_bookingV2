@@ -1,0 +1,105 @@
+<!--<mat-form-field class="inner-table-input">-->
+  <!--<input matInput value="&pound; 92.59">-->
+<!--</mat-form-field>-->
+<div class="example-container mat-elevation-z8">
+  <mat-table #table [dataSource]="dataSource">
+
+    <!--- Note that these columns can be defined in any order.
+          The actual rendered columns are set as a property on the row definition" -->
+
+    <!-- Position Column -->
+    <ng-container matColumnDef="package">
+      <mat-header-cell *matHeaderCellDef> </mat-header-cell>
+      <mat-cell *matCellDef="let element">
+      <div class="package-details-wrapper">
+        <div class="package-name">BTX16L4 - Premier Dinner & Eye</div>
+        <div class="package-extra-details">
+          <span class="package-icon"><i class="material-icons">card_giftcard</i></span>
+          <span class="package-extra-icon"><i class="material-icons">style</i></span>
+          <span class="package-date-name">20-Jan-2018 | Event Name</span>
+        </div>
+      </div>
+      </mat-cell>
+    </ng-container>
+
+    <!-- Name Column -->
+    <ng-container matColumnDef="price">
+      <mat-header-cell *matHeaderCellDef> Price </mat-header-cell>
+      <!--<mat-cell *matCellDef="let element"> {{element.name}} </mat-cell>-->
+      <mat-cell *matCellDef="let element">
+        <mat-form-field class="inner-table-input">
+        <input matInput value="&pound; 92.59">
+        </mat-form-field>
+      </mat-cell>
+    </ng-container>
+
+    <!-- Weight Column -->
+    <ng-container matColumnDef="net">
+      <mat-header-cell *matHeaderCellDef> Net </mat-header-cell>
+      <mat-cell *matCellDef="let element">
+        <mat-form-field class="inner-table-input">
+          <input matInput value="&pound; 92.59">
+        </mat-form-field>
+      </mat-cell>
+    </ng-container>
+
+    <!-- Symbol Column -->
+    <ng-container matColumnDef="tax">
+      <mat-header-cell *matHeaderCellDef> Tax </mat-header-cell>
+      <mat-cell *matCellDef="let element">
+        <mat-form-field class="inner-table-input">
+          <input matInput value="&pound; 92.59">
+        </mat-form-field>
+      </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="gross">
+      <mat-header-cell *matHeaderCellDef> Gross </mat-header-cell>
+      <mat-cell *matCellDef="let element">
+        <mat-form-field class="inner-table-input">
+          <input matInput value="&pound; 92.59">
+        </mat-form-field>
+      </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="margin">
+      <mat-header-cell *matHeaderCellDef> Margin </mat-header-cell>
+      <mat-cell *matCellDef="let element">
+        <mat-form-field class="inner-table-input">
+          <input matInput value="&pound; 92.59">
+        </mat-form-field>
+      </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="estimated">
+      <mat-header-cell *matHeaderCellDef> Estimated </mat-header-cell>
+      <mat-cell *matCellDef="let element">
+        <mat-form-field class="inner-table-input">
+          <input matInput value="&pound; 92.59">
+        </mat-form-field>
+      </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="cost">
+      <mat-header-cell *matHeaderCellDef> Cost </mat-header-cell>
+      <mat-cell *matCellDef="let element">
+        <mat-form-field class="inner-table-input">
+          <input matInput value="&pound; 92.59">
+        </mat-form-field>
+      </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="actual">
+      <mat-header-cell *matHeaderCellDef> Actual </mat-header-cell>
+      <mat-cell *matCellDef="let element">
+        <mat-form-field class="inner-table-input">
+          <input matInput value="&pound; 92.59">
+        </mat-form-field>
+      </mat-cell>
+    </ng-container>
+
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+
+  </mat-table>
+</div>

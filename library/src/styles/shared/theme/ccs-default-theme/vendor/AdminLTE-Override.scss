@@ -1,0 +1,184 @@
+/* ADMINLTE CUSTOM CHANGES */
+
+.content-wrapper{
+  background-color: #e1e1e1 !important;
+}
+
+.main-header{
+  z-index: 1000 !important;
+  .logo{
+    .logo-lg{
+      padding: 5px 0;
+      img{
+        width: 150px;
+        height: 40px;
+        margin: 0 auto;
+      }
+    }
+  }
+  .navbar{
+    .sidebar-toggle{
+      line-height: 1.42857143;
+      font-size: 14px;
+    }
+  }
+}
+
+.sidebar-menu{
+  >li{
+    >a{
+      font-size: 14px;
+    }
+  }
+}
+
+.main-footer{
+  font-size: 14px;
+}
+
+
+
+/* THEME STYLES  */
+
+$mainheader-navbar-bg: #393d40;
+$mainheader-navbar-logo-bg: #2b3033;
+$mainsidebar-bg: #212629;
+$main-sidebar-header-bg: $opt_color__tertiary;
+$main-sidebar-header-font-color: #393d40;
+$main-sidebar-link-open-bg: #e6c62d;
+$main-sidebar-link-open-borderleft-color: #272727;
+
+.opt-skin .main-header .navbar {
+  background-color: $mainheader-navbar-bg;
+}
+.opt-skin .main-header .navbar .nav > li > a {
+  color: #ffffff;
+}
+.opt-skin .main-header .navbar .nav > li > a:hover,
+.opt-skin .main-header .navbar .nav > li > a:active,
+.opt-skin .main-header .navbar .nav > li > a:focus,
+.opt-skin .main-header .navbar .nav .open > a,
+.opt-skin .main-header .navbar .nav .open > a:hover,
+.opt-skin .main-header .navbar .nav .open > a:focus,
+.opt-skin .main-header .navbar .nav > .active > a {
+  background: rgba(0, 0, 0, 0.1);
+  color: #f6f6f6;
+}
+.opt-skin .main-header .navbar .sidebar-toggle {
+  color: #ffffff;
+  text-decoration: none;
+}
+.opt-skin .main-header .navbar .sidebar-toggle:hover {
+  color: #f6f6f6;
+  background: rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 767px) {
+  .opt-skin .main-header .navbar .dropdown-menu li.divider {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  .opt-skin .main-header .navbar .dropdown-menu li a {
+    color: #fff;
+  }
+  .opt-skin .main-header .navbar .dropdown-menu li a:hover {
+    background: #367fa9;
+  }
+}
+.opt-skin .main-header .logo {
+  background-color: $mainheader-navbar-logo-bg;
+  color: #ffffff;
+  border-bottom: 0 solid transparent;
+}
+.opt-skin .main-header .logo:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.opt-skin .main-header li.user-header {
+  background-color: #3c8dbc;
+}
+.opt-skin .content-header {
+  background: transparent;
+}
+.opt-skin .wrapper,
+.opt-skin .main-sidebar,
+.opt-skin .left-side {
+  background-color: $mainsidebar-bg;
+}
+.opt-skin .user-panel > .info,
+.opt-skin .user-panel > .info > a {
+  color: #fff;
+}
+.opt-skin .sidebar-menu > li.header {
+  color: $main-sidebar-header-font-color;
+  background: $main-sidebar-header-bg;
+}
+.opt-skin .sidebar-menu > li > a {
+  border-left: 3px solid transparent;
+}
+.opt-skin .sidebar-menu > li:hover > a,
+.opt-skin .sidebar-menu > li.active > a,
+.opt-skin .sidebar-menu > li.menu-open > a {
+  color: #ffffff;
+  background: $main-sidebar-link-open-bg;
+}
+.opt-skin .sidebar-menu > li.active > a {
+  border-left-color: $main-sidebar-link-open-borderleft-color;
+}
+.opt-skin .sidebar-menu > li > .treeview-menu {
+  margin: 0 1px;
+  background: #2c3b41;
+}
+.opt-skin .sidebar a {
+  color: #b8c7ce;
+}
+.opt-skin .sidebar a:hover {
+  text-decoration: none;
+}
+.opt-skin .sidebar-menu .treeview-menu > li > a {
+  color: #8aa4af;
+}
+.opt-skin .sidebar-menu .treeview-menu > li.active > a,
+.opt-skin .sidebar-menu .treeview-menu > li > a:hover {
+  color: #ffffff;
+}
+.opt-skin .sidebar-form {
+  border-radius: 3px;
+  border: 1px solid #374850;
+  margin: 10px 10px;
+}
+.opt-skin .sidebar-form input[type="text"],
+.opt-skin .sidebar-form .btn {
+  box-shadow: none;
+  background-color: #374850;
+  border: 1px solid transparent;
+  height: 35px;
+}
+.opt-skin .sidebar-form input[type="text"] {
+  color: #666;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 2px;
+}
+.opt-skin .sidebar-form input[type="text"]:focus,
+.opt-skin .sidebar-form input[type="text"]:focus + .input-group-btn .btn {
+  background-color: #fff;
+  color: #666;
+}
+.opt-skin .sidebar-form input[type="text"]:focus + .input-group-btn .btn {
+  border-left-color: #fff;
+}
+.opt-skin .sidebar-form .btn {
+  color: #999;
+  border-top-left-radius: 0;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  border-bottom-left-radius: 0;
+}
+.opt-skin.layout-top-nav .main-header > .logo {
+  background-color: #3c8dbc;
+  color: #ffffff;
+  border-bottom: 0 solid transparent;
+}
+.opt-skin.layout-top-nav .main-header > .logo:hover {
+  background-color: #3b8ab8;
+}
+

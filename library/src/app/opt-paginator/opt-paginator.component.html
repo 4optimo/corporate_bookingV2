@@ -1,0 +1,42 @@
+<!--<mat-form-field>-->
+  <!--List length:-->
+  <!--<input matInput [(ngModel)]="length">-->
+<!--</mat-form-field>-->
+
+<!--<mat-form-field>-->
+  <!--Page size:-->
+  <!--<input matInput [(ngModel)]="pageSize">-->
+<!--</mat-form-field>-->
+<!--<mat-form-field>-->
+  <!--Page size options:-->
+  <!--<input matInput-->
+         <!--[ngModel]="pageSizeOptions"-->
+         <!--(ngModelChange)="setPageSizeOptions($event)">-->
+<!--</mat-form-field>-->
+<div class="opt_paginator">
+  <div class="opt_flex--container">
+    <div class="opt_flex__item">
+      <mat-paginator [length]="length"
+                     [pageSize]="pageSize"
+                     [pageSizeOptions]="pageSizeOptions"
+                     (page)="pageEvent = $event">
+      </mat-paginator>
+    </div>
+  </div>
+</div>
+
+
+<!--<div *ngIf="pageEvent">-->
+  <!--<h5>Page Change Event Properties</h5>-->
+  <!--<div>List length: {{pageEvent.length}}</div>-->
+  <!--<div>Page size: {{pageEvent.pageSize}}</div>-->
+  <!--<div>Page index: {{pageEvent.pageIndex}}</div>-->
+<!--</div>-->
+<!--<mat-list>-->
+  <!--<mat-list-item>Item 1</mat-list-item>-->
+  <!--<mat-divider></mat-divider>-->
+  <!--<mat-list-item>Item 2</mat-list-item>-->
+  <!--<mat-divider></mat-divider>-->
+  <!--<mat-list-item>Item 3</mat-list-item>-->
+<!--</mat-list>-->
+<!--<fuse-search-bar (input)="search($event)"></fuse-search-bar>-->

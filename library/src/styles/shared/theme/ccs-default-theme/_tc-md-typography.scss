@@ -1,23 +1,81 @@
 @import "tc-md-variables";
 @import "tc-md-mixins";
+@import "variables";
 
 
 $base-text-color: #000;
+
 $color-base: $base-text-color;
+
 $light: lighten($color-base,60%);
 $dark: darken($color-base,15%);
+
+
 $lighter: lighten($color-base,30%);
 $darker: darken($color-base,30%);
 
 body{
   color:$base-text-color ;
-  font-family: $font-family-rubik;
+  //font-family: $font-family-rubik;
+  font-family: 'Roboto', sans-serif;
 }
 
 //circle-icon defalt colors
 $ci-bg--color :#eee !default;
 $ci-col-hover:#eee !default;
 $background-item:#fff;
+
+// state text  colors ...........................................
+
+.opt-txt__primary {
+  color: $opt_text_color_primary !important;
+}
+.opt-txt__secondary {
+  color: $opt_text_color_tertiary !important;
+}
+.opt-txt__tertiary {
+  color: $opt_text_color_secondary !important;
+}
+.opt-txt__quaternary {
+  color: $opt_text-color_quaternary !important;
+}
+
+
+//State link colors...........................................
+.opt-link--primary{
+  @include typo-body-1();
+  font-style: normal;
+  line-height: 1.5;
+  text-decoration: underline;
+  color: $opt-link-color__primary;
+
+  &.__bold{
+    font-weight: 500;
+  }
+
+  &:hover{
+    color: darken($opt-link-color__primary,30%);
+  }
+}
+
+
+
+.opt-link--secondary{
+  @include typo-body-1();
+  font-style: normal;
+  line-height: 1.5;
+  text-decoration: underline;
+  color: $opt-link-color__secondary;
+
+  &.__bold{
+    font-weight: 500;
+  }
+
+  &:hover{
+    color: darken($opt-link-color__secondary,30%);
+  }
+}
+
 
 // state background colors ...........................................
 
@@ -119,6 +177,13 @@ $background-item:#fff;
   }
 }
 
+.package-color--product{
+  color: $package-color--product;
+}
+.package-color--item{
+  color: $package-color--type;
+
+}
 
 
 
@@ -136,6 +201,8 @@ text-overflow: ellipsis;
 }
 .opt-txt__line-overline{
   text-decoration: overline;
+  font-size: 12px;
+  line-height: 16px;
 }
 
 .opt-txt__white-space-normal{
@@ -159,6 +226,16 @@ text-overflow: ellipsis;
   &__align-right {
    text-align: right;
   }
+
+  &__right{
+        text-align: right;
+  }
+
+
+  &__center{
+    text-align: center;
+  }
+
 
 }
 
@@ -187,51 +264,91 @@ fieldset.demo{
   h1.opt__heading-1 {
   @include typo-display-3;
 
-    margin-top: 24px;
-    margin-bottom: 24px;
+    margin-top: 0;
+    margin-bottom: 0;
     @extend %tc-ellipsis;
   }
 
   h2.opt__heading-2 {
     @include typo-display-2;
-    margin-top: 24px;
-    margin-bottom: 24px;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   h3.opt__heading-3 {
     @include typo-display-1;
 
-    margin-top: 24px;
-    margin-bottom: 24px;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
-  h4.opt__heading-4 {
+  .opt__subtitle-1 {
+    @include typo-headline;
+    font-size: 14px ;
+    line-height: 14px;
+    margin-top: 0;
+    margin-bottom: 0;
+
+
+    &-small{
+      @include typo-headline;
+      font-size: 12px ;
+      line-height: 12px;
+
+    }
+    &-large{
+      @include typo-headline;
+      font-size: 16px ;
+      line-height: 16px;
+    }
+  }
+
+  .opt__subtitle-2 {
+    @include typo-title;
+    font-size: 16px;
+    line-height: 16px;
+
+
+    &-small{
+      @include typo-title;
+      font-size: 14px ;
+      line-height: 14px;
+    }
+
+    &-large{
+      @include typo-title;
+      font-size: 18px ;
+      line-height: 18px;
+    }
+  }
+
+  /*h4.opt__heading-4 {
     @include typo-headline;
 
-    margin-top: 24px;
-    margin-bottom: 16px;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   h5.opt__heading-5 {
     @include typo-title;
 
-    margin-top: 24px;
-    margin-bottom: 16px;
+    margin-top:0;
+    margin-bottom: 0;
   }
 
   .opt__heading-title {
     @include typo-title;
 
-    margin-top: 24px;
-    margin-bottom: 16px;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   h6.opt__heading-6 {
     @include typo-subhead;
 
-    margin-top: 24px;
-    margin-bottom: 16px;
-  }
+    margin-top: 0;
+    margin-bottom: 0;
+  }*/
 
 p {
     @include typo-body-1;
@@ -240,25 +357,28 @@ p {
 
 .lead{
   @include typo-title;
-  margin-top: 0px;
+  margin-top: 0;
   margin-bottom: 16px;
 }
-
+/*
 .opt__heading__caption {
       @include typo-caption;
       font-style: normal;
-      color: #9c28b1;
-   }
+      color: #909cac;
+   }*/
 .opt-txt__caption{
   @include typo-caption;
   font-style: normal;
+  color: #909cac;
 
-  &.__link{
+
+
+  &__link{
     @include typo-caption;
     font-style: normal;
-    line-height: 1.5;
-
+    line-height: 16px;
     text-decoration: underline;
+
   }
 }
 
@@ -267,15 +387,56 @@ p {
   @include typo-body-2;
   @extend %tc-ellipsis;
 
+  &-small{
+    @include typo-body-2;
+    @extend %tc-ellipsis;
+    font-size: 12px;
+  }
+
+  &-large{
+    @include typo-body-2;
+    @extend %tc-ellipsis;
+    font-size: 14px;
+  }
+
 }
 
 .opt-txt__body1{
   @include typo-body-1;
   @extend %tc-ellipsis;
   //margin-bottom: 10px;
+
+  &-small{
+    font-size: 12px;
+   // @include typo-body-1;
+    @extend %tc-ellipsis;
+  }
+
+  &-large{
+    font-size: 14px;
+   // @include typo-body-1;
+    @extend %tc-ellipsis;
+  }
+
+
+  /* &.__link{
+     @include typo-body-1();
+     font-style: normal;
+     line-height: 1.5;
+     text-decoration: underline;
+
+     &.__bold{
+       font-weight: 500;
+     }
+
+     &:hover{
+       color: #0d47a1;
+     }
+
+   }*/
 }
 
-.opt-txt__body1-large{
+/*.opt-txt__body1-large{
   @include typo-subhead;
   @extend %tc-ellipsis;
   color: $central-brand-primary;
@@ -288,7 +449,7 @@ p {
   &#PROFILE_TYPE_GRP {
     color: #000 !important;
   }
-}
+}*/
 
 .tc-subheading {
       @include typo-subhead;
@@ -296,12 +457,13 @@ p {
     }
 
 //Custom Classes
-.expanded{
+// To be removed
+/*.expanded{
 .tc-body1--txt{
   font-size: 14px;
 }
 
-}
+}*/
 
 .my-bordered-list {
   /* remove the side padding. we'll be placing it around the item instead. */
@@ -319,6 +481,25 @@ p {
   border-top: none;
 }
 
+//Font Weight
+
+.opt-fontweight{
+  &__normal{
+    font-weight: 400 !important;
+  }
+
+  &__medium{
+    font-weight: 500 !important;
+  }
+
+  &__bold{
+    font-weight: 600 !important;
+  }
+
+  &__bolder{
+    font-weight: 600 !important;
+  }
+}
 
 
 ///**

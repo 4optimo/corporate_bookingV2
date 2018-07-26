@@ -1,0 +1,32 @@
+<div class="opt-client-list-full">
+  <div class="filter-section">
+    <div class="opt_flex--container">
+      <div class="opt_flex__item--inherit filter-padding-left">
+        <p class="opt-txt__body2">300+ Clients Found</p>
+      </div>
+      <div class="opt_flex__item">
+      </div>
+    </div>
+  </div>
+  <div class="body-content">
+    <div class="opt_flex--container">
+      <div class="opt_flex__item">
+        <div class="opt_flex--container">
+          <div class="opt_flex__item">
+            <mat-accordion>
+              <span *ngFor="let a of customerListArray; let index = index">
+                <app-opt-client-summary></app-opt-client-summary>
+              </span>
+            </mat-accordion>
+          </div>
+        </div>
+        <div class="opt_flex--container">
+          <div class="opt_flex__item">
+            <app-opt-paginator></app-opt-paginator>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

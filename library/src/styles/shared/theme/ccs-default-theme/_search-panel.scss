@@ -1,0 +1,82 @@
+.opt-search-panel-wrapper{
+  margin: -15px -15px 0 -15px;
+  padding: 15px 15px 15px 15px;
+  background-color: #393d40;
+}
+
+.opt{
+
+  &_search-panel {
+    border-radius: 3px;
+    background-color: white;
+   .opt_chip-set--text{
+     font-size: 12px;
+   }
+    .main--input{
+      height: 100%;
+    }
+    padding: 3px;
+    border: 1px solid $separator-border-color;
+    .opt_flex--container{
+      flex-wrap: wrap;
+
+      .input-field{
+        width: 100%;
+        outline: none;
+      }
+    }
+    .mat-form-field-wrapper{
+      padding-bottom: 0;
+      height: 30px;
+    }
+    .btn{
+      //border: 1px solid $separator-border-color;
+      padding: 5px;
+      color: white !important;
+
+      &.__normal{
+        background-color: $badge-success-bg;
+      }
+      &.__advance{
+        background-color: $unavailable-state-dark-bg;
+      }
+    }
+    .mat-input-container >  mat-form-field, ng-tns-c4-0, mat-primary, mat-form-field-type-mat-input, mat-form-field-can-float, mat-form-field-hide-placeholder,mat-form-field-should-float{
+      display: none;
+    }
+    input{
+      border: none;
+    }
+    label{
+      font-size: 12px;
+    }
+    .mat-input-underline {
+      &.mat-form-field-underline{
+        display: none;
+      }
+    }
+    .mat-menu-panel{
+      .mat-menu-item{
+        .material-icons{
+          padding-right: 20px;
+        }
+      }
+    }
+    .opt_chip{
+      .dropdown-cage{
+        display: none;
+      }
+    }
+    .html-code{
+      display: none;
+    }
+  }
+
+
+}
+
+.filter-section{
+  margin-top: 15px;
+  padding-left: 15px;
+  margin-bottom: 15px;
+}

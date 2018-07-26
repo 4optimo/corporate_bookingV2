@@ -1,5 +1,10 @@
-.opt--additional-info{
+.opt_additional-info{
+  $icon_color : #909cac;
+  $plain_color : white;
+  $icon_hover: #4bb3fa;
+
   padding: 30px 30px 30px 30px;
+
 
   .example-form {
     min-width: 150px;
@@ -27,10 +32,48 @@
     font-weight: 500;
     color: #333e47;
   }
+  .btn {
+    padding: 5px;
+    -webkit-appearance: none;
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
+
+
+    &:active, &:focus, &:visited, &:active:focus {
+      outline: none;
+    }
+
+    //.active {
+    //  background-color: #4bb3fa;
+    //  &:btn-icon {
+    //    color: white;
+    //  }
+    //}
+    &.btn-icon {
+      margin-top: 10px;
+      line-height: 2px;
+
+      background-color: transparent;
+      padding: 0;
+      //color: #f5766c;
+      align-items: center;
+      //border: 1px solid #b7b7b7;
+      &:hover{
+        background-color: $icon_hover;
+        color: $plain_color;
+      }
+
+    }
+
+  }
+
 
   i {
     //float: right;
-    margin-top: 15px;
+    //margin-top: 10px;
+    ////margin-top: 7px;
+    //line-height: 2px;
 
     &.material-icons {
       transform: rotate(0.03deg);
@@ -48,11 +91,26 @@
         font-size: 50px;
       }
       &.color {
-        color: #8d8d8d;
+        color: $icon_color;
+        &.active {
+          color: $plain_color;
+          @include box_shadow (3);
+        }
+        &:hover{
+          color: $plain_color;
+        }
       }
     }
   }
 
+//div{
+//.mat-select-arrow{
+//
+//  background: url('./shared/images/baseline-keyboard_arrow_down-24px.svg');
+//  content : '<i class="material-icons">keyboard_arrow_down</i>';
+//
+//}
+//}
   .flex-container {
     display: flex;
     flex-direction: row;
@@ -61,7 +119,7 @@
     align-content: stretch;
     align-items: flex-start;
     }
-  }
+
 
   .input {
     order: 0;
@@ -74,22 +132,7 @@
     //flex: 10%;
     align-self: auto;
     float: right;
-    //margin-top: 15px;
-  }
-  .btn {
-    &:active, &:focus, &:visited, &:active:focus {
-      outline: none;
-    }
-    &.btn-icon {
-      background-color: transparent;
-      padding: 0;
-      color: #f5766c;
-      align-items: center;
-    }
+    padding: 2px;
   }
 
-hr{
-  border-top: 3px solid #dce0e1;
 }
-
-

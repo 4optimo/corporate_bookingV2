@@ -1,0 +1,103 @@
+.opt_modal-content {
+  $popup_heading_color : #f9d632;
+  $icon_color : #909cac;
+
+  max-height: 95vh;
+
+  .opt_modal-header {
+    margin-bottom: 3px;
+    @include shadow-2dp();
+    .test-wrapper {
+      height: 100%;
+      min-height: 60px;
+
+    }
+
+    .test-inner {
+      background-color: $popup_heading_color;
+      display: flex;
+      .inner-icon{
+        align-self: center;
+        padding-left: 25px;
+        padding-right: 25px;
+        i {
+          font-size: 35px;
+          color: white;
+        }
+
+      }
+    }
+
+    .test-inner-expand {
+      display: flex;
+      .title{
+        padding-left: 20px;
+        align-self: center;
+      }
+    }
+
+    .test-inner-2 {
+      display: flex;
+      .inner-action{
+        align-self: center;
+        padding-right: 24px;
+        color: $icon_color;
+
+        button{
+          -webkit-appearance: none;
+          background-color: transparent;
+          box-shadow: none;
+          border: none;
+          &:active, &:focus, &:visited, &:active:focus {
+            outline: none;
+          }
+        }
+        .icon1{
+          padding-right: 7px;
+        }
+      }
+    }
+
+  }
+  .opt_modal-body{
+    padding: 24px;
+    overflow: auto;
+   // max-height: 500px;
+
+    &::-webkit-scrollbar {
+      width: 5px;
+    }
+
+    &::-webkit-scrollbar-track {
+      //-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+      border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      -webkit-box-shadow: inset 0 0 6px gray;
+      background-color: $icon_color;
+    }
+
+  }
+}
+
+.custom-dialog-container .mat-dialog-container {
+  padding: 0;
+  border-radius: 4px;
+  .mat-dialog-content{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    max-height: none;
+  }
+  .mat-dialog-title{
+    margin: 0;
+  }
+}
+
+.opt-section__heading {
+  .mat-expansion-panel-header{
+    height: 48px !important;
+  }
+}

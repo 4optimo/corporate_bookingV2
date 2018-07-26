@@ -1,0 +1,234 @@
+<mat-accordion>
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Payment
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <div class="payment-body-wrapper">
+      <div class="opt_flex--container">
+        <div class="opt_flex__item">
+          <div class="payment-inner payment-term-wrapper">
+            <div class="payment-category-header">
+              <div class="opt_flex--container">
+                <div class="opt_flex__item">
+                  <h3 class="payment-category-title">Payment Term</h3>
+                </div>
+                <div class="opt_flex__item--inherit">
+                  <mat-form-field>
+                    <mat-select [(value)]="selected">
+                      <mat-option value="option1">7 Days</mat-option>
+                      <mat-option value="option2">14 Days</mat-option>
+                      <mat-option value="option3">21 Days</mat-option>
+                    </mat-select>
+                  </mat-form-field>
+                </div>
+              </div>
+            </div>
+            <div class="payment-category-body">
+              <div class="payment-detail-field">
+                <div class="payment-schedule">
+                </div>
+                <div class="payment-status">
+                  <div class="opt_flex--container">
+                    <div class="opt_flex__item--inherit opt_flex__item--vcenter">
+                      <div class="payment-status-inner">
+                        <div class="badge __success med-badge">30%</div>
+                      </div>
+                    </div>
+                    <div class="opt_flex__item opt_flex__item--vcenter">
+                      <div class="payment-inner-desc">
+                        <p>This payment was not completed successfully!</p>
+                        <p>30 days <span>before the event</span></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="payment-detail-field">
+                <div class="payment-schedule">
+                  <div class="opt_flex--container">
+                    <div class="opt_flex__item">
+                      <h5>Amount Due</h5>
+                      <p>&pound; 2,334.13</p>
+                    </div>
+                    <div class="opt_flex__item">
+                      <div class="themed">
+                        <h5>Due Date</h5>
+                        <p>20-Jan-2018</p>
+                      </div>
+                    </div>
+                    <div class="opt_flex__item">
+                      <h5>Paid Amount</h5>
+                      <p>&pound; 100.13</p>
+                    </div>
+                    <div class="opt_flex__item">
+                      <h5>Balance Due</h5>
+                      <p>&pound; 2,234.13</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="payment-status unsuccessful">
+                  <div class="opt_flex--container">
+                    <div class="opt_flex__item--inherit opt_flex__item--vcenter">
+                      <div class="payment-status-inner">
+                        <div class="badge __danger med-badge">30%</div>
+                      </div>
+                    </div>
+                    <div class="opt_flex__item opt_flex__item--vcenter">
+                      <div class="payment-inner-desc">
+                        <p>This payment was not completed successfully!</p>
+                        <p>30 days <span>before the event</span></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="payment-detail-field">
+                <div class="payment-schedule">
+                  <div class="opt_flex--container">
+                    <div class="opt_flex__item">
+                      <h5>Amount Due</h5>
+                      <p>&pound; 2,334.13</p>
+                    </div>
+                    <div class="opt_flex__item">
+                      <div class="themed">
+                        <h5>Due Date</h5>
+                        <p>20-Jan-2018</p>
+                      </div>
+                    </div>
+                    <div class="opt_flex__item">
+                      <h5>Paid Amount</h5>
+                      <p>&pound; 100.13</p>
+                    </div>
+                    <div class="opt_flex__item">
+                      <h5>Balance Due</h5>
+                      <p>&pound; 2,234.13</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="payment-status">
+                  <div class="opt_flex--container">
+                    <div class="opt_flex__item--inherit opt_flex__item--vcenter">
+                      <div class="payment-status-inner">
+                        <div class="badge __success med-badge">30%</div>
+                      </div>
+                    </div>
+                    <div class="opt_flex__item opt_flex__item--vcenter">
+                      <div class="payment-inner-desc">
+                        <!--<p>This payment was not completed successfully!</p>-->
+                        <p>30 days <span>before the event</span></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="payment-detail-field">
+                <div class="payment-schedule">
+                  <div class="opt_flex--container">
+                    <div class="opt_flex__item">
+                      <h5>Amount Due</h5>
+                      <p>&pound; 2,334.13</p>
+                    </div>
+                    <div class="opt_flex__item">
+                      <div class="themed">
+                        <h5>Due Date</h5>
+                        <p>20-Jan-2018</p>
+                      </div>
+                    </div>
+                    <div class="opt_flex__item">
+                      <h5>Paid Amount</h5>
+                      <p>&pound; 100.13</p>
+                    </div>
+                    <div class="opt_flex__item">
+                      <h5>Balance Due</h5>
+                      <p>&pound; 2,234.13</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="payment-status">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="opt_flex__item">
+          <div class="payment-inner payment-cancellation-policy-wrapper">
+            <div class="payment-category-header">
+              <div class="opt_flex--container">
+                <div class="opt_flex__item">
+                  <h3 class="payment-category-title">Cancellation Policy</h3>
+                </div>
+                <div class="opt_flex__item--inherit">
+                  <mat-form-field>
+                    <mat-select [(value)]="selected">
+                      <mat-option value="option1">7 Days</mat-option>
+                      <mat-option value="option2">14 Days</mat-option>
+                      <mat-option value="option3">21 Days</mat-option>
+                    </mat-select>
+                  </mat-form-field>
+                </div>
+              </div>
+            </div>
+            <div class="payment-category-body">
+              <div class="cancellation-policy-wrapper">
+                <div class="cancellation-policy-item">
+                  <div class="opt_flex--container">
+                    <div class="opt_flex__item">
+                      <p>
+                        Cancelled
+                        <span class="cancellation-period">14 days</span>
+                        before
+                        <span class="cancellation-time">12:00 AM</span>
+                        of the event date cancellation charge
+                        <span class="cancellation-policy-pct">100%</span>
+                      </p>
+                    </div>
+                    <div class="opt_flex__item--inherit text-right">
+                      <p class="opt-fontweight__medium">&pound; 2,434.13</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="cancellation-policy-item">
+                  <div class="opt_flex--container">
+                    <div class="opt_flex__item">
+                      <p>
+                        Cancelled
+                        <span class="cancellation-period">14 days</span>
+                        before
+                        <span class="cancellation-time">12:00 AM</span>
+                        of the event date cancellation charge
+                        <span class="cancellation-policy-pct">100%</span>
+                      </p>
+                    </div>
+                    <div class="opt_flex__item--inherit text-right">
+                      <p class="opt-fontweight__medium">&pound; 2,434.13</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="cancellation-policy-item">
+                  <div class="opt_flex--container">
+                    <div class="opt_flex__item">
+                      <p>
+                        Cancelled
+                        <span class="cancellation-period">14 days</span>
+                        before
+                        <span class="cancellation-time">12:00 AM</span>
+                        of the event date cancellation charge
+                        <span class="cancellation-policy-pct">100%</span>
+                      </p>
+                    </div>
+                    <div class="opt_flex__item--inherit text-right">
+                      <p class="opt-fontweight__medium">&pound; 234.13</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </mat-expansion-panel>
+</mat-accordion>

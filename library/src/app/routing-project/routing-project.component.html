@@ -1,0 +1,169 @@
+<mat-drawer-container class="example-container"     >
+  <mat-drawer #drawer class="example-sidenav" mode="side" >
+    <!--<p>Auto-resizing sidenav</p>-->
+    <!--<p *ngIf="showFiller">Lorem, ipsum dolor sit amet consectetur.</p>-->
+
+
+    <!--<button (click)="showFiller = !showFiller" mat-raised-button>-->
+    <!--Toggle extra text-->
+    <!--</button>-->
+
+<div class="lib-logo" >
+  <img  class="img-responsive" src="../../assets/companylogo.png" >
+</div>
+      <mat-list role="list" class="main-link"   >
+      <!--Typography , Buttons & Labels and Icons-->
+      <mat-list-item role="listitem"  ><i class="material-icons">keyboard_arrow_right
+      </i> <a routerLink="/typography" mat-button color="primary">Style Guide</a></mat-list-item>
+
+
+      <!--A-->
+      <mat-list-item role="listitem"><a routerLink="/additional-information" mat-button color="primary">Additional Information</a></mat-list-item>
+      <mat-list-item role="listitem"><a routerLink="/opt-alert" mat-button color="primary">Alert</a></mat-list-item>
+
+      <!--B-->
+      <mat-list-item role="listitem"><a routerLink="/opt-booking-activities" mat-button color="primary">Booking Activity</a></mat-list-item>
+      <mat-list-item role="listitem"><a routerLink="/opt-booking-details" mat-button color="primary">Booking Details</a></mat-list-item>
+      <mat-list-item role="listitem" class="main-link"><i class="material-icons">keyboard_arrow_right</i><a routerLink="/opt-booking-list" mat-button color="primary">Booking List</a></mat-list-item>
+      <mat-list-item role="listitem"  class="main-link"><i class="material-icons">keyboard_arrow_right</i> <a routerLink="/opt-booking-full-page" mat-button color="primary">Booking Page</a></mat-list-item>
+      <mat-list-item role="listitem"><a routerLink="/opt-booking-payment" mat-button color="primary">Booking Payment</a></mat-list-item>
+      <mat-list-item role="listitem"  class="main-link"><i class="material-icons">keyboard_arrow_right</i><a routerLink="/opt-booking-summary" mat-button color="primary">Booking Summary</a></mat-list-item>
+
+      <!--C-->
+      <mat-list-item role="listitem"  class="main-link"><i class="material-icons">keyboard_arrow_right</i><a routerLink="/app-opt-chip-date-picker" mat-button color="primary">Chip-date-picker</a></mat-list-item>
+      <mat-list-item role="listitem"  class="main-link"><i class="material-icons">keyboard_arrow_right</i><a routerLink="/opt-chip-input" mat-button color="primary">Chip-input</a></mat-list-item>
+      <mat-list-item role="listitem"  class="main-link"><i class="material-icons">keyboard_arrow_right</i><a routerLink="/opt-chip-select" mat-button color="primary">Chip-Select</a></mat-list-item>
+      <mat-list-item role="listitem"  class="main-link"><i class="material-icons">keyboard_arrow_right</i><a routerLink="/opt-chip" mat-button color="primary">Chip set</a></mat-list-item>
+      <mat-list-item role="listitem"><i class="material-icons">keyboard_arrow_right</i><a routerLink="/opt-client-summary" mat-button color="primary">Client Summary</a></mat-list-item>
+      <mat-list-item role="listitem"><a routerLink="/opt-corporate-client-tabs" mat-button color="primary">Corporate Client Tabs</a></mat-list-item>
+      <mat-list-item role="listitem"><i class="material-icons">keyboard_arrow_right</i><a routerLink="/opt-customer-full-page" mat-button color="primary">Client Page</a></mat-list-item>
+
+      <!--E-->
+      <!--<mat-list-item role="listitem"><a routerLink="/expansion-panel" mat-button color="primary">Expansion Panel</a></mat-list-item>-->
+
+      <!--F-->
+      <mat-list-item role="listitem"><a routerLink="/opt-fab" mat-button color="primary">Fab</a></mat-list-item>
+
+      <!--P-->
+      <mat-list-item role="listitem"><a routerLink="/opt-paginator" mat-button color="primary">Paginator</a></mat-list-item>
+      <!--<mat-list-item role="listitem"><i class="material-icons">keyboard_arrow_right</i><a routerLink="/opt-popup-window" mat-button color="primary">Pop Up</a></mat-list-item><mat-list-item role="listitem"><i class="material-icons">keyboard_arrow_right</i><a routerLink="/opt-popup-window" mat-button color="primary">Pop Up</a></mat-list-item><mat-list-item role="listitem"><i class="material-icons">keyboard_arrow_right</i><a routerLink="/opt-popup-window" mat-button color="primary">Pop Up</a></mat-list-item>-->
+        <mat-list-item role="listitem"><i class="material-icons">keyboard_arrow_right</i><a routerLink="/opt-popup-window" mat-button color="primary">Corporate Client</a></mat-list-item>
+        <mat-list-item role="listitem"><i class="material-icons">keyboard_arrow_right</i><a routerLink="/opt-popup-window" mat-button color="primary">Individual Client</a></mat-list-item>
+        <mat-list-item role="listitem"><i class="material-icons">keyboard_arrow_right</i><a routerLink="/opt-pageloader" mat-button color="primary">Page Loading</a></mat-list-item>
+
+
+
+
+        <!--S-->
+      <mat-list-item role="listitem"  class="main-link"><i class="material-icons">keyboard_arrow_right</i> <a routerLink="/opt-search-panel" mat-button color="primary">Search Panel</a></mat-list-item>
+
+      <!--T-->
+      <mat-list-item role="listitem"><a routerLink="/opt-tab-panel" mat-button color="primary">Tab</a></mat-list-item>
+    </mat-list>
+
+
+  </mat-drawer>
+
+  <div class="example-sidenav-content">
+
+
+    <div class="wrapper-tmp">
+
+      <button mat-mini-fab type="button" mat-button (click)="drawer.toggle()">
+        <i class="material-icons">
+          art_track
+        </i>
+      </button>
+
+
+      <div class="container-tmp">
+
+
+        <header class="template-header header">
+
+
+          <div class="grid-inner">
+
+            <div class="title"><h1>OPTIMO V4</h1></div>
+            <div> Component Library / DESIGN GUIDELINES </div>
+            <p>Welcome to the Component Library/Design Guideline for OPTIMO V4, although the V4 follows strict material design rules
+              and guides, there are certain changes that are customized to best fit in V4 design's into a more of a User
+              Experience perspective </p>
+
+          </div>
+        </header>
+
+
+        <div class="comp-wrap">
+
+          <router-outlet></router-outlet>
+        </div>
+
+
+      </div>
+
+    </div>
+
+
+  </div>
+
+</mat-drawer-container>
+
+
+<!--<div class="wrapper-tmp">-->
+
+
+<!--<div class="container-tmp">-->
+
+
+<!--<header class="template-header header">-->
+<!--<div class="grid-inner">-->
+<!--<h1>-->
+<!--Component Library<br>-->
+
+<!--</h1>-->
+<!--<p>Corporate Booking</p>-->
+<!--</div>-->
+<!--</header>-->
+
+
+<!--<div class="button-row">-->
+<!--<button routerLink="/opt-booking-summary" mat-button color="primary">Booking Summary</button>-->
+<!--<a routerLink="/opt-booking-list" mat-button color="primary">Booking List</a>-->
+<!--<a routerLink="/opt-booking-details" mat-button color="primary">Booking Details</a>-->
+<!--<a routerLink="/additional-information" mat-button color="primary">Additional Information</a>-->
+<!--<a routerLink="/expansion-panel" mat-button color="primary">Expansion Panel</a>-->
+<!--<a routerLink="/opt-popup-window" mat-button color="primary">Pop Up</a>-->
+<!--<a routerLink="/opt-tab-panel" mat-button color="primary">Tab</a>-->
+<!--<a routerLink="/opt-alert" mat-button color="primary">Alert</a>-->
+<!--<a routerLink="/opt-corporate-client-tabs" mat-button color="primary">Corporate Client Tabs</a>-->
+<!--<a routerLink="/opt-client-list" mat-button color="primary">Client List</a>-->
+<!--<a routerLink="/opt-client-summary" mat-button color="primary">Client Summary</a>-->
+<!--<a routerLink="/opt-chip" mat-button color="primary">Chip set</a>-->
+<!--<a routerLink="/opt-search-panel" mat-button color="primary">Search Panel</a>-->
+<!--<a routerLink="/opt-booking-activities" mat-button color="primary">Booking Activity</a>-->
+<!--<a routerLink="/opt-corporate-client-popup" mat-button color="primary">Corporate Client</a>-->
+<!--<a routerLink="/opt-paginator" mat-button color="primary">Paginator</a>-->
+<!--<a routerLink="/opt-fab" mat-button color="primary">Fab</a>-->
+<!--<a routerLink="/opt-chip-input" mat-button color="primary">Chip-input</a>-->
+<!--<a routerLink="/app-opt-chip-date-picker" mat-button color="primary">Chip-date-picker</a>-->
+<!--<a routerLink="/opt-chip-select" mat-button color="primary">Chip-Select</a>-->
+<!--<hr>-->
+<!--<a routerLink="/opt-booking-full-page" mat-button color="primary">Booking Page</a>-->
+<!--<a routerLink="/opt-customer-full-page" mat-button color="primary">Customer Page</a>-->
+<!--<a routerLink="/typography" mat-button color="primary">Style Guide</a>-->
+
+
+<!--&lt;!&ndash;<a routerLink="/opt-booking-list-expand" mat-button color="warn">Booking List Expand</a>&ndash;&gt;-->
+
+<!--</div>-->
+
+<!--<div   class="comp-wrap">-->
+
+<!--<router-outlet></router-outlet>-->
+<!--</div>-->
+
+
+<!--</div>-->
+
+<!--</div>-->

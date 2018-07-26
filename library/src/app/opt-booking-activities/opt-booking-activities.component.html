@@ -1,0 +1,182 @@
+<mat-accordion>
+  <mat-expansion-panel class="shaded">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Activities
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <mat-horizontal-stepper #stepper="matHorizontalStepper">
+      <mat-step>
+
+        <ng-template matStepLabel>
+          <div class="text-center">
+            <div class="activity-avatar-wrapper">
+              <i class="icon-note"></i>
+            </div>
+            <div class="activity-availability">0 items available</div>
+            <div class="activity-title">Notes</div>
+          </div>
+        </ng-template>
+
+        <!--Notes Tab Content-->
+        <!--Header-->
+        <div class="info-bk">
+          <div class="opt_flex--container">
+          <div class="row">
+            <div class="col-sm-6 col-md-7	col-lg-8	col-xs-12">
+                <div class="opt_flex__item chck-box horizontally-center"> <mat-checkbox></mat-checkbox> </div>
+                <div >
+                  <span class="opt_flex__item des-box horizontally-center">  Select All
+                      <mat-form-field>
+                        <mat-select placeholder="Note Type">
+                          <mat-option *ngFor="let food of foods" [value]="food.value">
+                            {{ food.viewValue }}
+                          </mat-option>
+                        </mat-select>
+                      </mat-form-field>
+                  </span>
+                </div>
+              </div>
+            </div>
+              <div class="col-sm-6 col-md-5	col-lg-4	col-xs-12">
+                  <div class="opt_flex__item--inherit horizontally-center">
+                    <button mat-button class="btn-icon-text"><i class="material-icons">cloud_upload</i> <span class="btn-text">Upload a new file</span></button>
+                    <button mat-button class="btn-icon-text"><i class="material-icons">email</i> <span class="btn-text">Email</span></button>
+                    <button mat-button class="btn-icon-text"><i class="material-icons">delete</i> <span class="btn-text">Delete</span></button>
+                  </div>
+              </div>
+          </div>
+        </div>
+
+          <!--<div class="opt_flex&#45;&#45;container">
+            <div class="col-sm-6 col-md-3	col-lg-4	col-xs-12">
+              <div class="opt_flex__item horizontally-center">
+                <mat-checkbox>Optimo User</mat-checkbox>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4	col-lg-5	col-xs-12">
+              <div class="opt_flex__item&#45;&#45;inherit horizontally-center">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                Aenean commodo ligula eget dolor. Aenean massa
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-3	col-lg-3	col-xs-12">
+              <div class="opt_flex__item&#45;&#45;inherit horizontally-center">
+                <span>
+                  <i class="material-icons mat-btn-icon-btn opt_color_icon_font">edit</i>
+                  <i class="material-icons mat-btn-icon-btn opt_color_icon_font">delete</i>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>-->
+
+            <!--Content-->
+            <div class="opt_flex--container">
+              <div class="opt_flex__item horizontally-center">
+                <div class="row">
+                <div class="col-sm-6 col-md-3	col-lg-4	col-xs-12">
+                  <div class="opt_flex--container">
+                    <div class="opt_flex__item chck-box"> <mat-checkbox></mat-checkbox> </div>
+                    <div class="opt_flex__item des-box">
+                      <div class="opt-txt__body2-small opt-fontweight--bold"> Optimo User </div>
+                      <div class="opt-txt__secondary"> 04-Jan-2018 | <i class="material-icons mat-btn-icon-btn opt_color_icon_font">note</i></div>
+                    </div>
+                  </div>
+                </div>
+            <div class="col-sm-6 col-md-6	col-lg-5	col-xs-12">
+              <div class="opt_flex__item horizontally-center opt-txt__secondary">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                    Aenean commodo ligula eget dolor. Aenean massa
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-3	col-lg-3	col-xs-12">
+              <div class="opt_flex__item edit_icon">
+                <span><i class="material-icons mat-btn-icon-btn opt_color_icon_font">edit</i>
+                <i class="material-icons mat-btn-icon-btn opt_color_icon_font">delete</i></span>
+              </div>
+            </div>
+          </div>
+              </div>
+            </div>
+      </mat-step>
+
+      <mat-step label="Documents">
+        <ng-template matStepLabel>
+          <div class="text-center">
+            <div class="activity-avatar-wrapper">
+              <i class="icon-open-mail"></i>
+            </div>
+            <div class="activity-availability">0 items available</div>
+            <div class="activity-title">Documents</div>
+          </div>
+        </ng-template>
+        Documents Content
+      </mat-step>
+      <mat-step label="Correspondence">
+        <ng-template matStepLabel>
+          <div class="text-center">
+            <div class="activity-avatar-wrapper">
+              <i class="icon-icn-file"></i>
+            </div>
+            <div class="activity-availability">0 items available</div>
+            <div class="activity-title" matTooltip="Correspondence">Correspondence</div>
+          </div>
+        </ng-template>
+        Correspondence Content
+      </mat-step>
+      <mat-step label="Payment">
+        <ng-template matStepLabel>
+          <div class="text-center">
+            <div class="activity-avatar-wrapper">
+              <i class="icon-credit-card"></i>
+            </div>
+            <div class="activity-availability">0 items available</div>
+            <div class="activity-title">Payment</div>
+          </div>
+        </ng-template>
+        Payment Content
+      </mat-step>
+      <mat-step label="Deliverables & Dispatch">
+        <ng-template matStepLabel>
+          <div class="text-center">
+            <div class="activity-avatar-wrapper">
+              <i class="icon-trolley"></i>
+            </div>
+            <div class="activity-availability">0 items available</div>
+            <div class="activity-title" matTooltip="Deliverables & Dispatch">Deliverables & Dispatch</div>
+          </div>
+        </ng-template>
+        Deliverables & Dispatch Content
+      </mat-step>
+      <mat-step label="Host">
+        <ng-template matStepLabel>
+          <div class="text-center">
+            <div class="activity-avatar-wrapper">
+              <i class="icon-server2"></i>
+            </div>
+            <div class="activity-availability">0 items available</div>
+            <div class="activity-title">Host</div>
+          </div>
+        </ng-template>
+        Host Content
+      </mat-step>
+      <mat-step label="History">
+        <ng-template matStepLabel>
+          <div class="text-center">
+            <div class="activity-avatar-wrapper">
+              <i class="icon-earth-globe"></i>
+            </div>
+            <div class="activity-availability">0 items available</div>
+            <div class="activity-title">History</div>
+          </div>
+        </ng-template>
+        History Content
+      </mat-step>
+    </mat-horizontal-stepper>
+  </mat-expansion-panel>
+</mat-accordion>
+
+

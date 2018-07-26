@@ -1,0 +1,140 @@
+.opt {
+  &_chip {
+    display: flex;
+    padding-right: 10px;
+    cursor: pointer;
+
+
+    .dropdown-list{
+      min-width: 250px;
+
+    }
+
+
+    .container-nw-row{
+      flex-direction: column;
+    }
+    .opt_chip--wrapper {
+      background-color: #e0e0e0;
+      min-width: 100px;
+
+      font-weight: 400;
+      @include border-radius(15px);
+
+      min-height: 25px;
+      line-height: 25px;
+      font-size: 13px;
+      padding: 0 0 0 12px;
+      //border: 1px solid gray;
+
+      &:hover{
+        color: #fff;
+        background-color: #03a9f4;
+
+        i{
+          color: #fff;
+        }
+      }
+
+
+
+
+        i{
+          font-size: 25px!important;
+
+          margin-right: 2px;
+          color: #8b8b8b;
+        }
+
+
+
+      .multiselect-dropdown{
+        border: none;
+        background: none;
+
+        :hover{
+          box-shadow: none !important;
+        }
+
+
+        li{
+          color: black;
+        }
+
+
+        .selected-item{
+          color:#535353 !important;
+
+          a{
+            color:#535353 !important;
+          }
+
+        }
+
+      }
+
+      .selected-item{
+
+        background: none !important;
+        font-size: 11px;
+        border: none !important;
+        margin: 0;
+
+      }
+
+        .dropdown-btn {
+          padding: 0 !important;
+          border: none !important;
+          outline: none;
+          height: 21px;
+          span{
+            font-size: 14px;
+          }
+
+      }
+      .dropdown-down, .dropdown-up{
+        //border-top: 5px solid #adadad !important;
+        border-left: 5px solid transparent !important;
+        border-right: 4px solid transparent !important;
+        //padding-bottom: 5px !important;
+        //border-bottom: 10px solid #979494;
+      }
+
+      .dropdown-down{
+        margin-top: 7px;
+        padding-bottom: 0px;
+
+
+      }
+      .cancel{
+        font-size: 15px;
+      }
+    }
+
+    input{
+      outline: none;
+      color: black;
+      :active{
+        display: none;
+      }
+      :focus{
+        display: none;
+      }
+    }
+    .category-type{
+      font-size: 12px;
+      padding-left: 10px;
+      margin-bottom: 2px;
+    }
+
+    .selected-item[_ngcontent-c16]{
+      font-family: 'Futura', 'Avenir', 'Helvetica', sans-serif;
+      font-size: 12px;
+    }
+  }
+}
+
+.hideChip{
+  display: none;
+}
+

@@ -1,0 +1,31 @@
+.opt_client-search{
+  .opt_modal-content{
+    overflow: auto;
+
+    .opt_modal-body {
+      padding: 0;
+
+      .search-panel-wrapper {
+        min-width: 30px;
+        background-color: #e4e8e9;
+        padding: 24px;
+        .opt_search-panel {
+          background-color: white;
+          border: none;
+          .btn{
+            border: 1px solid #fff;
+
+          }
+
+        }
+      }
+      .opt-client-list-full {
+        padding: 24px;
+      }
+    }
+    .html-code{
+      display: none;
+    }
+  }
+
+}

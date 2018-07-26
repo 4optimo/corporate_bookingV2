@@ -1,0 +1,55 @@
+
+<div class="mat-tab-button-wrapper">
+  <button class="mat-tab-label-button" mat-button [matMenuTriggerFor]="menu"><i class="material-icons">add</i></button>
+  <mat-menu class="mat-tab-label-menu" #menu="matMenu" yPosition="below" [overlapTrigger]="false">
+    <button mat-menu-item>
+      <div class="mat-menu-item-icon">
+        <i class="material-icons">date_range</i>
+      </div>
+      <div class="mat-menu-item-label">
+        Copy Booking
+      </div>
+    </button>
+    <button mat-menu-item>
+      <div class="mat-menu-item-icon">
+        <i class="material-icons">date_range</i>
+      </div>
+      <div class="mat-menu-item-label">
+        New Booking
+      </div>
+    </button>
+    <button mat-menu-item>
+      <div class="mat-menu-item-icon">
+        <i class="material-icons">date_range</i>
+      </div>
+      <div class="mat-menu-item-label">
+        New Booking
+      </div>
+    </button>
+  </mat-menu>
+</div>
+    <mat-tab-group class="booking-main-tab-group">
+      <mat-tab>
+        <ng-template mat-tab-label>
+        </ng-template>
+      </mat-tab>
+      <mat-tab>
+        <ng-template mat-tab-label>
+          <h3>BN000769</h3>
+          <div class="badge __danger">Cancelled Booking</div>
+        </ng-template>
+        Content 1
+      </mat-tab>
+      <mat-tab>
+        <ng-template mat-tab-label>
+          <h3>BN000769</h3>
+        </ng-template>
+        Content 1
+      </mat-tab>
+      <mat-tab>
+        <ng-template mat-tab-label>
+          <h3>BN000769</h3>
+        </ng-template>
+        Content 1
+      </mat-tab>
+    </mat-tab-group>
