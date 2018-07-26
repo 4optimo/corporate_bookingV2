@@ -7,7 +7,7 @@ import { Component} from '@angular/core';
 })
 export class OptBookingActivitiesComponent {
   foods = [
-    {value: 'steak-0', viewValue: 'Steak'},
+    {value: 'steak-0', viewValue: 'All'},
     {value: 'pizza-1', viewValue: 'Pizza'},
     {value: 'tacos-2', viewValue: 'Tacos'}
   ];

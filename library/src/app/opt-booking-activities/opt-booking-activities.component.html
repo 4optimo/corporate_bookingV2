@@ -1,3 +1,4 @@
+<div class="opt_booking__activity">
 <mat-accordion>
   <mat-expansion-panel class="shaded">
     <mat-expansion-panel-header>
@@ -22,11 +23,13 @@
         <!--Header-->
         <div class="info-bk">
           <div class="opt_flex--container">
-          <div class="row">
-            <div class="col-sm-6 col-md-7	col-lg-8	col-xs-12">
-                <div class="opt_flex__item chck-box horizontally-center"> <mat-checkbox></mat-checkbox> </div>
-                <div >
-                  <span class="opt_flex__item des-box horizontally-center">  Select All
+            <div class="opt_flex__item horizontally-center">
+              <div class="row">
+                <div class="col-sm-6 col-md-7	col-lg-8	col-xs-12">
+                  <div class="opt_flex--container">
+                    <div class="opt_flex__item chck-box horizontally-center"> <mat-checkbox></mat-checkbox> </div>
+                    <div class="opt_flex__item des-box horizontally-center">
+                      <span>  Select All
                       <mat-form-field>
                         <mat-select placeholder="Note Type">
                           <mat-option *ngFor="let food of foods" [value]="food.value">
@@ -34,18 +37,23 @@
                           </mat-option>
                         </mat-select>
                       </mat-form-field>
-                  </span>
+                      </span>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-              <div class="col-sm-6 col-md-5	col-lg-4	col-xs-12">
-                  <div class="opt_flex__item--inherit horizontally-center">
-                    <button mat-button class="btn-icon-text"><i class="material-icons">cloud_upload</i> <span class="btn-text">Upload a new file</span></button>
+                <div class="col-sm-6 col-md-5	col-lg-4	col-xs-12">
+                  <div class="opt_flex__item--inherit horizontally-center action-btn">
+                    <mat-form-field class="note-search">
+                      <input matInput placeholder="Search">
+                      <mat-icon matSuffix><i class="material-icons mat-btn-icon-btn opt_color_icon_font icn-search">search</i></mat-icon>
+                    </mat-form-field>
                     <button mat-button class="btn-icon-text"><i class="material-icons">email</i> <span class="btn-text">Email</span></button>
                     <button mat-button class="btn-icon-text"><i class="material-icons">delete</i> <span class="btn-text">Delete</span></button>
                   </div>
               </div>
+            </div>
           </div>
+        </div>
         </div>
 
           <!--<div class="opt_flex&#45;&#45;container">
@@ -77,30 +85,84 @@
             <div class="opt_flex--container">
               <div class="opt_flex__item horizontally-center">
                 <div class="row">
-                <div class="col-sm-6 col-md-3	col-lg-4	col-xs-12">
-                  <div class="opt_flex--container">
-                    <div class="opt_flex__item chck-box"> <mat-checkbox></mat-checkbox> </div>
-                    <div class="opt_flex__item des-box">
-                      <div class="opt-txt__body2-small opt-fontweight--bold"> Optimo User </div>
-                      <div class="opt-txt__secondary"> 04-Jan-2018 | <i class="material-icons mat-btn-icon-btn opt_color_icon_font">note</i></div>
+                  <div class="col-sm-6 col-md-3	col-lg-4	col-xs-12">
+                    <div class="opt_flex--container">
+                      <div class="opt_flex__item chck-box"> <mat-checkbox></mat-checkbox> </div>
+                      <div class="opt_flex__item des-box">
+                        <div class="opt-txt__body2-small opt-fontweight--bold"> Optimo User </div>
+                        <div class="opt-txt__secondary"> 04-Jan-2018 | <i class="material-icons mat-btn-icon-btn opt_color_icon_font">local_dining</i></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-6	col-lg-5	col-xs-12">
+                    <div class="opt_flex__item horizontally-center opt-txt__secondary">
+                          Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                          Aenean commodo ligula eget dolor. Aenean massa
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-3	col-lg-3	col-xs-12">
+                    <div class="opt_flex__item edit_icon">
+                      <span><i class="material-icons mat-btn-icon-btn opt_color_icon_font">edit</i>
+                      <i class="material-icons mat-btn-icon-btn opt_color_icon_font">delete</i></span>
                     </div>
                   </div>
                 </div>
-            <div class="col-sm-6 col-md-6	col-lg-5	col-xs-12">
-              <div class="opt_flex__item horizontally-center opt-txt__secondary">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                    Aenean commodo ligula eget dolor. Aenean massa
               </div>
             </div>
-            <div class="col-sm-6 col-md-3	col-lg-3	col-xs-12">
-              <div class="opt_flex__item edit_icon">
-                <span><i class="material-icons mat-btn-icon-btn opt_color_icon_font">edit</i>
-                <i class="material-icons mat-btn-icon-btn opt_color_icon_font">delete</i></span>
+            <div class="opt_flex--container">
+              <div class="opt_flex__item horizontally-center">
+                <div class="row">
+                  <div class="col-sm-6 col-md-3	col-lg-4	col-xs-12">
+                    <div class="opt_flex--container">
+                      <div class="opt_flex__item chck-box"> <mat-checkbox></mat-checkbox> </div>
+                      <div class="opt_flex__item des-box">
+                        <div class="opt-txt__body2-small opt-fontweight--bold"> Optimo User </div>
+                        <div class="opt-txt__secondary"> 04-Jan-2018 | <i class="material-icons mat-btn-icon-btn opt_color_icon_font">note</i></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-6	col-lg-5	col-xs-12">
+                    <div class="opt_flex__item horizontally-center opt-txt__secondary">
+                          Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                          Aenean commodo ligula eget dolor. Aenean massa
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-3	col-lg-3	col-xs-12">
+                    <div class="opt_flex__item edit_icon">
+                      <span><i class="material-icons mat-btn-icon-btn opt_color_icon_font">edit</i>
+                      <i class="material-icons mat-btn-icon-btn opt_color_icon_font">delete</i></span>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
+        </div>
+            <div class="opt_flex--container">
+              <div class="opt_flex__item horizontally-center">
+                <div class="row">
+                  <div class="col-sm-6 col-md-3	col-lg-4	col-xs-12">
+                    <div class="opt_flex--container">
+                      <div class="opt_flex__item chck-box"> <mat-checkbox></mat-checkbox> </div>
+                      <div class="opt_flex__item des-box">
+                        <div class="opt-txt__body2-small opt-fontweight--bold"> Optimo User </div>
+                        <div class="opt-txt__secondary"> 04-Jan-2018 | <i class="material-icons mat-btn-icon-btn opt_color_icon_font">directions_bus</i></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-6	col-lg-5	col-xs-12">
+                    <div class="opt_flex__item horizontally-center opt-txt__secondary">
+                          Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                          Aenean commodo ligula eget dolor. Aenean massa
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-3	col-lg-3	col-xs-12">
+                    <div class="opt_flex__item edit_icon">
+                      <span><i class="material-icons mat-btn-icon-btn opt_color_icon_font">edit</i>
+                      <i class="material-icons mat-btn-icon-btn opt_color_icon_font">delete</i></span>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
+        </div>
       </mat-step>
 
       <mat-step label="Documents">
@@ -178,5 +240,7 @@
     </mat-horizontal-stepper>
   </mat-expansion-panel>
 </mat-accordion>
+</div>
+
 
 
