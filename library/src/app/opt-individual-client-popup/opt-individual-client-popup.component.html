@@ -80,7 +80,7 @@
                         <div class="activity-availability">General Details</div>
                       </div>
                     </ng-template>
-                    <div class="opt_flex--container stepper">
+                    <div class="opt_flex--container client-general-info">
                       <div class="opt_flex__item padding-left">
                         <mat-form-field class="example-full-width">
                           <mat-select placeholder="Title" [(ngModel)]="selectedValue1" name="Mr" required>
@@ -142,6 +142,38 @@
                       <div class="opt_flex__item"></div>
                       <div class="opt_flex__item"></div>
                     </div>
+
+                    <div class="opt_address_cage">
+                      <mat-label class="opt-txt__body2-small">
+
+                           <span class="title_icon"><i class="material-icons">
+                            note
+                          </i></span>
+
+                        Notes</mat-label>
+                      <div class="opt_flex--container contact-details">
+                        <div class="opt_flex__item padding-left">
+                          <div class="contact-note">
+                            <div class="opt_flex--container">
+                              <div class="opt_flex__item">
+                                <mat-checkbox  class="opt-txt__body1">We may contact you about product and services you may like.</mat-checkbox>
+                              </div>
+                              <div class="note-action">
+                                <i class="material-icons opt-txt__caption">delete</i>
+                                <i class="material-icons opt-txt__caption">create</i>
+                              </div>
+                            </div>
+                            <div class="flex-container">
+                              <mat-form-field class="opt_flex__item">
+                                <textarea matInput placeholder="Textarea"></textarea>
+                              </mat-form-field>
+                            </div>
+                            <button class="mat-btn-primary mat-button">Add</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
                     </mat-step>
                     <mat-step>
                     <ng-template matStepLabel>
@@ -267,30 +299,46 @@
                                       </mat-select>
                                     </mat-form-field>
                                   </div>
-                                  <div class="opt_flex__item">
-                                    <mat-form-field class="example-full-width">
-                                      <mat-select placeholder="Delivery Address" [(ngModel)]="selectedValue9" name="vat">
-                                        <mat-option *ngFor="let vat of vat" [value]="vat.value">
-                                          {{vat.viewValue}}
-                                        </mat-option>
-                                      </mat-select>
-                                    </mat-form-field>
-                                  </div>
-                                  <div class="opt_flex__item padding-left">
-                                    <mat-form-field class="example-full-width">
-                                      <mat-select placeholder="Invoice Address" [(ngModel)]="selectedValue10" name="currency">
-                                        <mat-option *ngFor="let currency of currency" [value]="currency.value">
-                                          {{currency.viewValue}}
-                                        </mat-option>
-                                      </mat-select>
-                                    </mat-form-field>
-                                  </div>
-                                  <div class="opt_flex__item"></div>
+                                  <!--<div class="opt_flex__item">-->
+                                    <!--<mat-form-field class="example-full-width">-->
+                                      <!--<mat-select placeholder="Delivery Address" [(ngModel)]="selectedValue9" name="vat">-->
+                                        <!--<mat-option *ngFor="let vat of vat" [value]="vat.value">-->
+                                          <!--{{vat.viewValue}}-->
+                                        <!--</mat-option>-->
+                                      <!--</mat-select>-->
+                                    <!--</mat-form-field>-->
+                                  <!--</div>-->
+                                  <!--<div class="opt_flex__item padding-left">-->
+                                    <!--<mat-form-field class="example-full-width">-->
+                                      <!--<mat-select placeholder="Invoice Address" [(ngModel)]="selectedValue10" name="currency">-->
+                                        <!--<mat-option *ngFor="let currency of currency" [value]="currency.value">-->
+                                          <!--{{currency.viewValue}}-->
+                                        <!--</mat-option>-->
+                                      <!--</mat-select>-->
+                                    <!--</mat-form-field>-->
+                                  <!--</div>-->
+                                  <!--<div class="opt_flex__item"></div>-->
                                   <div class="opt_flex__item"></div>
                                 </div>
                               </div>
                             </mat-tab>
                             <mat-tab label="Preference">
+                              <div class="demo-tab-content preferences-tab">
+                                <div class="opt_flex--container opt_additional-info">
+                                  <div class="opt_flex__item padding-left">
+                                    <mat-checkbox>Effort</mat-checkbox>
+                                  </div>
+                                  <div class="opt_flex__item">
+                                    <mat-checkbox>Motivation</mat-checkbox>
+                                  </div>
+                                  <div class="opt_flex__item">
+                                    <mat-checkbox>Test 1</mat-checkbox>
+                                  </div>
+                                  <div class="opt_flex__item padding-left">
+                                    <mat-checkbox>Test 2</mat-checkbox>
+                                  </div>
+                                </div>
+                              </div>
                             </mat-tab>
                             <mat-tab label="Document">
                               <div class="demo-tab-content document-upload-section">
@@ -335,7 +383,30 @@
                               </div>
                             </mat-tab>
                             <mat-tab label="Hobbies">
-                              <mat-tab label="Highlights" >
+                              <div class="demo-tab-content hobbies-tab">
+                                <div class="opt_flex--container opt_additional-info">
+                                  <div class="opt_flex__item padding-left">
+                                    <mat-checkbox>Hiking</mat-checkbox>
+                                  </div>
+                                  <div class="opt_flex__item">
+                                    <mat-checkbox>Movies</mat-checkbox>
+                                  </div>
+                                  <div class="opt_flex__item">
+                                    <mat-checkbox>Reading</mat-checkbox>
+                                  </div>
+                                  <div class="opt_flex__item padding-left">
+                                    <mat-checkbox>Test Hobby 1</mat-checkbox>
+                                  </div>
+                                  <div class="opt_flex__item">
+                                    <mat-checkbox>Test Hobby 2</mat-checkbox>
+                                  </div>
+                                  <div class="opt_flex__item">
+                                    <mat-checkbox>Test Hobby 2</mat-checkbox>
+                                  </div>
+                                </div>
+                              </div>
+                            </mat-tab>
+                            <mat-tab label="Highlights" >
                                 <div class="demo-tab-content">
                                   <div class="opt_additional-info opt_flex--container">
                                     <div class="opt_flex__item padding-left">
@@ -357,13 +428,13 @@
                                     <div class="opt_flex__item"></div>
                                     <div class="opt_flex__item padding-left">
                                       <mat-form-field class="example-full-width">
-                                        <textarea matInput placeholder="Textarea"></textarea>
+                                        <textarea matInput placeholder="Key Comments"></textarea>
                                       </mat-form-field>
                                     </div>
                                   </div>
                                 </div>
                               </mat-tab>
-                              <mat-tab label="Open">
+                            <mat-tab label="Open">
                                 <div class="demo-tab-content">
                                   <!--content-->
                                   <!--<br />-->
@@ -371,7 +442,6 @@
                                   <!--content-->
                                 </div>
                               </mat-tab>
-                            </mat-tab>
                           </mat-tab-group>
                         </mat-card-content>
                       </mat-card>
@@ -410,6 +480,21 @@
                       <div class="outer-contxt">
                       <div class="form-data-contact">
                         <div class="opt_flex--container contact-details">
+                          <div class="opt_flex__item padding-left tc-flex-item__center">
+                            <label class="opt-txt__caption">Contact Ref: <span class="opt-txt__body2">0002</span></label>
+                          </div>
+                          <div class="opt_flex__item">
+                            <mat-form-field class="example-full-width">
+                              <input matInput [matDatepicker]="picker11" placeholder="Date Registered">
+                              <mat-datepicker-toggle matSuffix [for]="picker11"></mat-datepicker-toggle>
+                              <mat-datepicker #picker11></mat-datepicker>
+                            </mat-form-field>
+                          </div>
+                          <div class="opt_flex__item">
+                            <div class="form-data__individual tc-flex-item__center">
+                              <mat-slide-toggle [labelPosition]="before">Active Status</mat-slide-toggle>
+                            </div>
+                          </div>
                           <div class="opt_flex__item padding-left">
                             <mat-form-field class="example-full-width">
                               <input matInput placeholder="Address 1" value="" >
@@ -451,7 +536,25 @@
                           </div>
                           <div class="opt_flex__item"></div>
                           <div class="opt_flex__item"></div>
+                          <!--<div class="opt_flex__item padding-left">-->
+                            <!--<div class="contact-note">-->
+                              <!--<div class="opt_flex&#45;&#45;container">-->
+                                <!--<div class="opt_flex__item">-->
+                                  <!--<mat-checkbox  class="opt-txt__body1">We may contact you about product and services you may like.</mat-checkbox>-->
+                                <!--</div>-->
+                                <!--<div class="note-action">-->
+                                  <!--<i class="material-icons">delete</i>-->
+                                  <!--<i class="material-icons">create</i>-->
+                                <!--</div>-->
+                              <!--</div>-->
+                              <!--<mat-form-field class="example-full-width">-->
+                                <!--<textarea matInput placeholder="Notes"></textarea>-->
+                              <!--</mat-form-field>-->
+                            <!--</div>-->
+                          <!--</div>-->
                         </div>
+
+
                         <div class="delivery-method">
                           <div class="opt_flex--container">
                             <div class="opt_flex__item padding-left">
@@ -935,6 +1038,21 @@
                       <div class="outer-contxt">
                           <div class="form-data-contact">
                             <div class="opt_flex--container contact-details">
+                              <div class="opt_flex__item padding-left tc-flex-item__center">
+                                <label class="opt-txt__caption">Contact Ref: <span class="opt-txt__body2">0003</span></label>
+                              </div>
+                              <div class="opt_flex__item">
+                                <mat-form-field class="example-full-width">
+                                  <input matInput [matDatepicker]="picker16" placeholder="Date Registered">
+                                  <mat-datepicker-toggle matSuffix [for]="picker16"></mat-datepicker-toggle>
+                                  <mat-datepicker #picker16></mat-datepicker>
+                                </mat-form-field>
+                              </div>
+                              <div class="opt_flex__item">
+                                <div class="form-data__individual tc-flex-item__center">
+                                  <mat-slide-toggle [labelPosition]="before">Active Status</mat-slide-toggle>
+                                </div>
+                              </div>
                               <div class="opt_flex__item padding-left">
                                 <mat-form-field class="example-full-width">
                                   <mat-select placeholder="Title" [(ngModel)]="selectedValue1" name="Mr" required>
@@ -995,6 +1113,37 @@
                               </div>
                               <div class="opt_flex__item"></div>
                               <div class="opt_flex__item"></div>
+                            </div>
+
+                            <div class="opt_address_cage">
+                              <mat-label class="opt-txt__body2-small">
+
+                           <span class="title_icon"><i class="material-icons">
+                            note
+                          </i></span>
+
+                                Notes</mat-label>
+                              <div class="opt_flex--container contact-details">
+                                <div class="opt_flex__item padding-left">
+                                  <div class="contact-note">
+                                    <div class="opt_flex--container">
+                                      <div class="opt_flex__item">
+                                        <mat-checkbox  class="opt-txt__body1">We may contact you about product and services you may like.</mat-checkbox>
+                                      </div>
+                                      <div class="note-action">
+                                        <i class="material-icons opt-txt__caption">delete</i>
+                                        <i class="material-icons opt-txt__caption">create</i>
+                                      </div>
+                                    </div>
+                                    <div class="flex-container">
+                                      <mat-form-field class="opt_flex__item">
+                                        <textarea matInput placeholder="Textarea"></textarea>
+                                      </mat-form-field>
+                                    </div>
+                                    <button class="mat-btn-primary mat-button">Add</button>
+                                  </div>
+                                </div>
+                              </div>
                             </div>
 
                             <div class="delivery-method">
@@ -1395,36 +1544,45 @@
           </div>
         </div>
 
-        <div class="notes">
-          <div class="inner-wrapper">
-            <section class="opt-section__heading">
-              <mat-accordion>
-                <mat-expansion-panel #myPanel2 class="section-heading __main" expanded>
-                  <mat-expansion-panel-header class="__title" >
-                    <h1>Notes</h1>
-                  </mat-expansion-panel-header>
-                  <div class="note-body">
-                    <div class="opt_flex--container txt-area">
-                      <div class="opt_flex__item">
-                        <mat-form-field>
-                          <textarea matInput placeholder="Duis non erat massa. Send consequat dignissim justo send tristique. Fusce eget efficitur dolor, send congue diam. Sed imperdiet ut elit sed."></textarea>
-                        </mat-form-field>
-                      </div>
-                    </div>
-                    <div class="opt_flex--container">
-                      <div class="opt_flex__item">
-                        <div class="btn-note">
-                          <button class="mat-btn-primary mat-button">Add</button>
-                          <button class="mat-btn-primary mat-button">Edit</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </mat-expansion-panel>
-              </mat-accordion>
-            </section>
-          </div>
-        </div>
+        <!--<div class="notes">-->
+          <!--<div class="inner-wrapper">-->
+            <!--<section class="opt-section__heading">-->
+              <!--<mat-accordion>-->
+                <!--<mat-expansion-panel #myPanel2 class="section-heading __main" expanded>-->
+                  <!--<mat-expansion-panel-header class="__title" >-->
+                    <!--<h1>Notes</h1>-->
+                  <!--</mat-expansion-panel-header>-->
+                  <!--<div class="note-body">-->
+                    <!--<div class="opt_flex&#45;&#45;container">-->
+                      <!--<div class="opt_flex__item communication-consent-body-item">-->
+                        <!--<mat-checkbox  class="opt-txt__body1">We may contact you about product and services you may like.</mat-checkbox>-->
+                      <!--</div>-->
+                      <!--<div class="note-action">-->
+                        <!--<i class="material-icons">delete</i>-->
+                        <!--<i class="material-icons">create</i>-->
+                      <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="opt_flex&#45;&#45;container txt-area">-->
+                      <!--<div class="opt_flex__item">-->
+                        <!--<mat-form-field>-->
+                          <!--<textarea matInput placeholder="Duis non erat massa. Send consequat dignissim justo send tristique. Fusce eget efficitur dolor, send congue diam. Sed imperdiet ut elit sed."></textarea>-->
+                        <!--</mat-form-field>-->
+                      <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="opt_flex&#45;&#45;container">-->
+                      <!--<div class="opt_flex__item">-->
+                        <!--<div class="btn-note">-->
+                          <!--<button class="mat-btn-primary mat-button">Add</button>-->
+                          <!--<button class="mat-btn-primary mat-button">Edit</button>-->
+                        <!--</div>-->
+                      <!--</div>-->
+                    <!--</div>-->
+                  <!--</div>-->
+                <!--</mat-expansion-panel>-->
+              <!--</mat-accordion>-->
+            <!--</section>-->
+          <!--</div>-->
+        <!--</div>-->
 
         <div class="communication-consent">
           <section class="opt-section__heading">
