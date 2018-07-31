@@ -1,0 +1,90 @@
+<div class="opt_package-details opt_booking__list opt_booking__detail">
+  <mat-accordion>
+    <mat-expansion-panel #myPanel [disabled]="true" class="opt-expand--line">
+      <mat-expansion-panel-header class="opt_width-define opt_expand__header first-outer-wrapper"
+                                  collapsedHeight=".collapsedHeight" expandedHeight=".expandedHeight">
+        <div class="opt_expand--container">
+          <div class="opt_flex--container">
+            <div class="opt_flex__item __expansion-lft--side">
+              <div class="row opt_flex--container tc-flex-item__center ">
+                <div class="col-sm-6 col-md-4	col-lg-4	col-xs-12">
+                  <mat-panel-title class="opt_flex--container tc-flex-item__center">
+                    <div class="opt_flex__item--inherit ">
+                      <div class="icon__cage">
+                        <div class="opt_circle__confirmed">
+                          <!--package line icon-->
+                        </div>
+                      </div>
+                    </div>
+                    <div class="opt_flex__item">
+                      <div class="opt_width-calc">
+                        <div class="opt-txt__body2-small ref_no">Chelsea Flower Show Hospitality</div>
+                        <div><span class="opt-txt__body2-small">12-Jan-2018</span><span class="opt-txt__body2-small">| Event Name</span></div>
+                      </div>
+                    </div>
+                  </mat-panel-title>
+                </div>
+                <div class="col-sm-6 col-md-2	col-lg-2	col-xs-12">
+                  <mat-panel-description class="opt_flex--container">
+                    <div class="middle-details">
+                      <div class="opt_flex__item tc-flex-item__center opt-txt__body1-small">Unlimited</div>
+                      <div class="opt_flex__item tc-flex-item__center opt-txt__body1-small __link">Adult</div>
+                    </div>
+                  </mat-panel-description>
+                </div>
+                <div class="col-sm-6 col-md-2	col-lg-2	col-xs-12">
+                  <mat-panel-description class="opt_flex--container">
+                    <div class="opt_flex__item tc-flex-item__center opt-txt__body1-small">£92.19</div>
+                    <div class="opt_flex__item opt_counter__item">
+                      <div class="opt_counter">
+                        <div class="opt_flex--container ">
+                          <div class="opt_flex__item--inherit">
+                            <button mat-raised-button>+</button>
+                          </div>
+                          <div class="opt_flex__item--inherit  tc-flex-item__center">
+                            <form class="example-form">
+                              <mat-form-field class="">
+                                <input matInput value="1">
+                              </mat-form-field>
+                            </form>
+                          </div>
+                          <div class="opt_flex__item--inherit">
+                            <button mat-raised-button>-</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </mat-panel-description>
+                </div>
+                <div class="col-sm-12  col-md-4	col-lg-4	col-xs-12  opt_price-section">
+                  <mat-panel-description class="opt_flex--container">
+                    <!--<div class="price-details">-->
+                    <div class="opt_flex__item"><span class="lbl lbl__vat">Inc Vat</span></div>
+                    <div class=" opt_flex__item opt-typo-subhead-2 price">£92.19</div>
+                    <div class="opt_flex__item  price--value__icon">
+                    <!--<div class="opt_flex__item opt-txt__light btn btn-select">Select</div>-->
+                      <div mat-raised-button class="btn-color-default opt_flex__item opt-txt__light btn btn-select">
+                        Add
+                      </div>
+                    <!--</div>-->
+                    </div>
+                  </mat-panel-description>
+                </div>
+              </div>
+            </div>
+            <div class="opt_flex__item __expansion-rgt--side">
+              <div class="col tc-flex-item__center">
+                <div class="opt_flex__item action__button tc-flex-item__center">
+                  <button class="down-arrow" mat-icon-button color="primary" (click)="expandPannel()"
+                          [disableRipple]="true">
+                    <mat-icon>{{matIcon}}</mat-icon>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </mat-expansion-panel-header>
+    </mat-expansion-panel>
+  </mat-accordion>
+</div>
