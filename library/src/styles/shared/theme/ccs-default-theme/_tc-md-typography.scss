@@ -386,6 +386,7 @@ p {
 .opt-txt__body2{
   @include typo-body-2;
   @extend %tc-ellipsis;
+  line-height: 1.5;
 
   &-small{
     @include typo-body-2;

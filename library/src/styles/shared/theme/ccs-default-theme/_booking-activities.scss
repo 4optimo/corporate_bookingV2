@@ -117,7 +117,7 @@
 
   }
 
-  .info-bk {
+  .header-row {
     border-bottom: 2px solid #e0e0e0;
   }
 
@@ -140,6 +140,17 @@
   .icn-search {
     padding: 0;
   }
+
+
+
+    .show-all{
+     float: right;
+      padding: auto 5px;
+      i{
+        padding: 0 5px 0 0;
+      }
+    }
+
 
   @media (max-width: 991px) {
     .mat-horizontal-stepper-header-container {
