@@ -52,7 +52,7 @@ export class OptPopupWindowComponent implements OnInit {
     this.dialog.open(OptIndividualClientPopupComponent,{
       data: {name:'New Individual Client'},
       panelClass:'custom-dialog-container',
-      height: '90%',
+      height: 'auto',
       width: '90%'
 
     });

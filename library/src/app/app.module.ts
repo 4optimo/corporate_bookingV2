@@ -97,6 +97,8 @@ import { OptChipSelectComponent } from './opt-chip-select/opt-chip-select.compon
 import { OptPricePopupComponent } from './opt-price-popup/opt-price-popup.component';
 import { OptPageloaderComponent } from './opt-pageloader/opt-pageloader.component';
 import { Opt404Component } from './opt-404/opt-404.component';
+import { OptPackageDetailsComponent } from './opt-package-details/opt-package-details.component';
+
 
 
 
@@ -131,6 +133,7 @@ const appRoutes: Routes = [
   { path: 'opt-chip-select', component: OptChipSelectComponent},
   { path: 'opt-booking-payment', component: OptBookingPaymentComponent},
   { path: 'app-opt-404', component: Opt404Component},
+  { path: 'app-package-details', component: OptPackageDetailsComponent},
 
 
    { path: 'opt-pageloader', component: OptPageloaderComponent},
@@ -177,6 +180,7 @@ const appRoutes: Routes = [
     ScrollDispatchModule
 
   ],
+  declarations: [],
 
 
 
@@ -226,7 +230,8 @@ export class DemoMaterialModule {}
     OptIndividualClientPopupComponent,
     OptChipSelectComponent,
     OptPricePopupComponent,
-    // OptDocumentSelectComponent,
+    OptPackageDetailsComponent,
+      // OptDocumentSelectComponent,
 
     RoutingProjectComponent,
     TypographyComponent,
