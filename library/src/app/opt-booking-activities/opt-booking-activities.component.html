@@ -8,9 +8,9 @@
     </mat-expansion-panel-header>
     <mat-horizontal-stepper #stepper="matHorizontalStepper">
 
-      <!-- ============
-      Notes Tab
-      ============-->
+      <!--============
+           Notes Tab
+         ============-->
 
       <mat-step>
         <ng-template matStepLabel>
@@ -143,9 +143,9 @@
       </mat-step>
 
 
-      <!-- ============
-      Document Tab
-      ============-->
+      <!-- ==============
+            Document Tab
+           ==============-->
 
       <mat-step label="Documents">
         <ng-template matStepLabel>
@@ -209,9 +209,69 @@
             </div>
           </div>
         </div>
+        <div class="opt_flex--container">
+          <div class="opt_flex__item horizontally-center">
+            <div class="row">
+              <div class="col-sm-6 col-md-3	col-lg-4	col-xs-12">
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item chck-box horizontally-center"> <mat-checkbox></mat-checkbox> </div>
+                  <div class="opt_flex__item des-box">
+                    <div class="opt-txt__body2 opt-fontweight--bold opt-txt__body2 text-truncate"> Our Delicious Meal Plans</div>
+                    <div class="opt-txt__body1-small"><i class="material-icons mat-btn-icon-btn opt_color_icon_font indicator-icon">attach_file</i> PDF </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-6	col-lg-5	col-xs-12">
+                <div class="opt_flex__item horizontally-center opt-txt__body2">
+                  Booking Confirmation
+                </div>
+                <div class="opt_flex__item horizontally-center opt-txt__body1-small">
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-3	col-lg-3	col-xs-12">
+                <div class="opt_flex__item edit_icon">
+                  <span><i class="material-icons mat-btn-icon-btn opt_color_icon_font">edit</i>
+                  <i class="material-icons mat-btn-icon-btn opt_color_icon_font">delete</i></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="opt_flex--container">
+          <div class="opt_flex__item horizontally-center">
+            <div class="row">
+              <div class="col-sm-6 col-md-3	col-lg-4	col-xs-12">
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item chck-box horizontally-center"> <mat-checkbox></mat-checkbox> </div>
+                  <div class="opt_flex__item des-box">
+                    <div class="opt-txt__body2 opt-fontweight--bold opt-txt__body2 text-truncate"> Venue Hire Inquiry</div>
+                    <div class="opt-txt__body1-small"><i class="material-icons mat-btn-icon-btn opt_color_icon_font indicator-icon">attach_file</i> Doc </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-6	col-lg-5	col-xs-12">
+                <div class="opt_flex__item horizontally-center opt-txt__body2">
+                  Booking Confirmation
+                </div>
+                <div class="opt_flex__item horizontally-center opt-txt__body1-small">
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-3	col-lg-3	col-xs-12">
+                <div class="opt_flex__item edit_icon">
+                  <span><i class="material-icons mat-btn-icon-btn opt_color_icon_font">edit</i>
+                  <i class="material-icons mat-btn-icon-btn opt_color_icon_font">delete</i></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </mat-step>
 
-
+      <!-- ==================
+          Correspondence Tab
+          ===================-->
       <mat-step label="Correspondence">
         <ng-template matStepLabel>
           <div class="text-center">
@@ -224,6 +284,10 @@
         </ng-template>
         Correspondence Content
       </mat-step>
+
+      <!-- ==============
+            Payment Tab
+           ==============-->
       <mat-step label="Payment">
         <ng-template matStepLabel>
           <div class="text-center">
@@ -236,6 +300,10 @@
         </ng-template>
         Payment Content
       </mat-step>
+
+      <!-- =============================
+            Deliverables & Dispatch Tab
+           =============================-->
       <mat-step label="Deliverables & Dispatch">
         <ng-template matStepLabel>
           <div class="text-center">
@@ -248,6 +316,10 @@
         </ng-template>
         Deliverables & Dispatch Content
       </mat-step>
+
+      <!-- ===========
+            Host Tab
+           ===========-->
       <mat-step label="Host">
         <ng-template matStepLabel>
           <div class="text-center">
@@ -262,9 +334,9 @@
       </mat-step>
 
 
-     <!-- ============
-      History Tab
-      ============-->
+     <!-- =============
+           History Tab
+          =============-->
 
         <mat-step label="History">
         <ng-template matStepLabel>
