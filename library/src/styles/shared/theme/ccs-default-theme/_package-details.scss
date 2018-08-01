@@ -68,4 +68,40 @@
 
     }
   }
+
+  mat-accordion{
+      .mat-expansion-panel-header {
+        @include respond-to('medium') {
+          height: auto !important;
+          //background-color: #9e9d24;
+        }
+        @include respond-to('small') {
+          height: auto !important;
+          //background-color: red;
+        }
+      }
+    }
+
+  .opt_linked-packages{
+    margin: 0 10px;
+    padding: 0 40px;
+    overflow-y: scroll;
+
+    .outer-wrapper{
+      padding: 15px;
+      border-bottom: 1px dashed lightgrey;
+
+      &:last-child{
+        border-bottom: none;
+      }
+      .opt_counter{
+        .mat-form-field-infix{
+          width: 30px;
+        }
+      }
+      .linked-icon{
+        color: darkgray;
+      }
+    }
+  }
 }
