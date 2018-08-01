@@ -1,7 +1,71 @@
-//.opt_package-details{
-//    .opt_booking__list {
-      .opt_counter  {
-        display: block !important;
+.opt_package-details{
+  &.opt_booking__list{
+    &.opt_booking__detail{
+      .opt_counter{
+        display: block;
       }
-  //  }
-  //}
+    }
+  }
+  .price--value__icon{
+    text-align: left;
+    padding-left: 10px;
+    height: 35px;
+  }
+  .price{
+    text-align: right!important;
+    line-height: 20px;
+  }
+  .inc-label{
+    height: 35px;
+  }
+  .cover-icons{
+    font-size: 16px;
+  }
+
+  .opt_expand--container{
+    min-height: 50px;
+    .package-expand-description {
+      padding-left: 3px;
+    }
+    .icon__cage{
+      &.__multi-buttons{
+        padding-left: 75px!important;
+      }
+    }
+  }
+  .opt_counter__item{
+    align-items: center;
+  }
+  .opt_counter{
+    .opt_flex--container{
+      justify-content: center;
+    }
+  }
+  .opt_unit__price{
+    text-align: right;
+  }
+  .mat-expansion-panel-header-description{
+    flex-wrap: wrap;
+    .btn-select{
+      @include respond-to('x-small') {
+        flex-basis: 100%;
+        margin-bottom: 15px;
+        margin-top: 15px;
+      }
+
+      @include respond-to('small') {
+        flex-basis: 100%;
+        margin-bottom: 15px;
+        margin-top: 15px;
+      }
+      @include respond-to('medium') {
+        flex-basis: 0;
+      }
+      @include respond-to('large') {
+        flex-basis: 0;
+
+      }
+
+    }
+  }
+}
