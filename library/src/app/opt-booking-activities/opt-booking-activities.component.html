@@ -23,128 +23,128 @@
           </div>
         </ng-template>
 
-        <!--Header-->
-        <div class="header-row">
+        <div class="notes">
+          <!--Header-->
+          <div class="header-row">
+            <div class="opt_flex--container">
+              <div class="opt_flex__item horizontally-center">
+                <div class="row">
+                  <div class="col-xs-12 col-sm-12 col-md-7	col-lg-8">
+                    <div class="opt_flex--container">
+                      <div class="opt_flex__item chck-box horizontally-center"> <mat-checkbox></mat-checkbox> </div>
+                      <div class="opt_flex__item des-box horizontally-center">
+                        <span>  Select All
+                        <mat-form-field>
+                          <mat-select placeholder="Note Type">
+                            <mat-option *ngFor="let food of foods" [value]="food.value">
+                              {{ food.viewValue }}
+                            </mat-option>
+                          </mat-select>
+                        </mat-form-field>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-12 col-md-5	col-lg-4">
+                    <div class="opt_flex__item--inherit horizontally-center action-btn">
+                      <mat-form-field class="note-search">
+                        <input matInput placeholder="Search">
+                        <mat-icon matSuffix><i class="material-icons mat-btn-icon-btn opt_color_icon_font icn-search">search</i></mat-icon>
+                      </mat-form-field>
+                      <button mat-button class="btn-icon-text"><i class="material-icons">email</i> <span class="btn-text">Email</span></button>
+                      <button mat-button class="btn-icon-text"><i class="material-icons">delete</i> <span class="btn-text">Delete</span></button>
+                    </div>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Content-->
           <div class="opt_flex--container">
             <div class="opt_flex__item horizontally-center">
               <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-7	col-lg-8">
+                <div class="col-xs-12 col-sm-5 col-md-3	col-lg-4">
                   <div class="opt_flex--container">
-                    <div class="opt_flex__item chck-box horizontally-center"> <mat-checkbox></mat-checkbox> </div>
-                    <div class="opt_flex__item des-box horizontally-center">
-                      <span>  Select All
-                      <mat-form-field>
-                        <mat-select placeholder="Note Type">
-                          <mat-option *ngFor="let food of foods" [value]="food.value">
-                            {{ food.viewValue }}
-                          </mat-option>
-                        </mat-select>
-                      </mat-form-field>
-                      </span>
+                    <div class="opt_flex__item chck-box"> <mat-checkbox></mat-checkbox> </div>
+                    <div class="opt_flex__item des-box">
+                      <div class="opt-txt__body2-small opt-fontweight--bold"> Optimo User </div>
+                      <div class="opt-txt__secondary"> 04-Jan-2018 | <i class="material-icons mat-btn-icon-btn opt_color_icon_font">local_dining</i></div>
                     </div>
                   </div>
                 </div>
-                <div class="col-xs-12 col-sm-12 col-md-5	col-lg-4">
-                  <div class="opt_flex__item--inherit horizontally-center action-btn">
-                    <mat-form-field class="note-search">
-                      <input matInput placeholder="Search">
-                      <mat-icon matSuffix><i class="material-icons mat-btn-icon-btn opt_color_icon_font icn-search">search</i></mat-icon>
-                    </mat-form-field>
-                    <button mat-button class="btn-icon-text"><i class="material-icons">email</i> <span class="btn-text">Email</span></button>
-                    <button mat-button class="btn-icon-text"><i class="material-icons">delete</i> <span class="btn-text">Delete</span></button>
+                <div class="col-xs-12 col-sm-4 col-md-6	col-lg-5">
+                  <div class="opt_flex__item horizontally-center text-truncate">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Aenean commodo ligula eget dolor. Aenean massa
                   </div>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3	col-lg-3">
+                  <div class="opt_flex__item edit_icon">
+                    <span><i class="material-icons mat-btn-icon-btn opt_color_icon_font">edit</i>
+                    <i class="material-icons mat-btn-icon-btn opt_color_icon_font">delete</i></span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
+          <div class="opt_flex--container">
+            <div class="opt_flex__item horizontally-center">
+              <div class="row">
+                <div class="col-sm-5 col-md-3	col-lg-4	col-xs-12">
+                  <div class="opt_flex--container">
+                    <div class="opt_flex__item chck-box"> <mat-checkbox></mat-checkbox> </div>
+                    <div class="opt_flex__item des-box">
+                      <div class="opt-txt__body2-small opt-fontweight--bold"> Optimo User </div>
+                      <div class="opt-txt__secondary"> 04-Jan-2018 | <i class="material-icons mat-btn-icon-btn opt_color_icon_font">note</i></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4 col-md-6	col-lg-5	col-xs-12">
+                  <div class="text-truncate opt_flex__item horizontally-center opt-txt__secondary">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                        Aenean commodo ligula eget dolor. Aenean massa
+                  </div>
+                </div>
+                <div class="col-sm-3 col-md-3	col-lg-3	col-xs-12">
+                  <div class="opt_flex__item edit_icon">
+                    <span><i class="material-icons mat-btn-icon-btn opt_color_icon_font">edit</i>
+                    <i class="material-icons mat-btn-icon-btn opt_color_icon_font">delete</i></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+      </div>
+          <div class="opt_flex--container">
+            <div class="opt_flex__item horizontally-center">
+              <div class="row">
+                <div class="col-sm-5 col-md-3	col-lg-4	col-xs-12">
+                  <div class="opt_flex--container">
+                    <div class="opt_flex__item chck-box"> <mat-checkbox></mat-checkbox> </div>
+                    <div class="opt_flex__item des-box">
+                      <div class="opt-txt__body2-small opt-fontweight--bold"> Optimo User </div>
+                      <div class="opt-txt__secondary"> 04-Jan-2018 | <i class="material-icons mat-btn-icon-btn opt_color_icon_font">directions_bus</i></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4 col-md-6	col-lg-5	col-xs-12">
+                  <div class="opt_flex__item horizontally-center opt-txt__secondary text-truncate">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa
+                  </div>
+                </div>
+                <div class="col-sm-3 col-md-3	col-lg-3	col-xs-12">
+                  <div class="opt_flex__item edit_icon">
+                    <span><i class="material-icons mat-btn-icon-btn opt_color_icon_font">edit</i>
+                    <i class="material-icons mat-btn-icon-btn opt_color_icon_font">delete</i></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+      </div>
         </div>
-        </div>
-        <!--Content-->
-        <div class="opt_flex--container">
-          <div class="opt_flex__item horizontally-center">
-            <div class="row">
-              <div class="col-xs-12 col-sm-5 col-md-3	col-lg-4">
-                <div class="opt_flex--container">
-                  <div class="opt_flex__item chck-box"> <mat-checkbox></mat-checkbox> </div>
-                  <div class="opt_flex__item des-box">
-                    <div class="opt-txt__body2-small opt-fontweight--bold"> Optimo User </div>
-                    <div class="opt-txt__secondary"> 04-Jan-2018 | <i class="material-icons mat-btn-icon-btn opt_color_icon_font">local_dining</i></div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xs-12 col-sm-4 col-md-6	col-lg-5">
-                <div class="opt_flex__item horizontally-center opt-txt__secondary text-truncate">
-                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                      Aenean commodo ligula eget dolor. Aenean massa
-                </div>
-              </div>
-              <div class="col-xs-12 col-sm-3 col-md-3	col-lg-3">
-                <div class="opt_flex__item edit_icon">
-                  <span><i class="material-icons mat-btn-icon-btn opt_color_icon_font">edit</i>
-                  <i class="material-icons mat-btn-icon-btn opt_color_icon_font">delete</i></span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="opt_flex--container">
-          <div class="opt_flex__item horizontally-center">
-            <div class="row">
-              <div class="col-sm-5 col-md-3	col-lg-4	col-xs-12">
-                <div class="opt_flex--container">
-                  <div class="opt_flex__item chck-box"> <mat-checkbox></mat-checkbox> </div>
-                  <div class="opt_flex__item des-box">
-                    <div class="opt-txt__body2-small opt-fontweight--bold"> Optimo User </div>
-                    <div class="opt-txt__secondary"> 04-Jan-2018 | <i class="material-icons mat-btn-icon-btn opt_color_icon_font">note</i></div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-4 col-md-6	col-lg-5	col-xs-12">
-                <div class="opt_flex__item horizontally-center opt-txt__secondary">
-                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                      Aenean commodo ligula eget dolor. Aenean massa
-                </div>
-              </div>
-              <div class="col-sm-3 col-md-3	col-lg-3	col-xs-12">
-                <div class="opt_flex__item edit_icon">
-                  <span><i class="material-icons mat-btn-icon-btn opt_color_icon_font">edit</i>
-                  <i class="material-icons mat-btn-icon-btn opt_color_icon_font">delete</i></span>
-                </div>
-              </div>
-            </div>
-          </div>
-    </div>
-        <div class="opt_flex--container">
-          <div class="opt_flex__item horizontally-center">
-            <div class="row">
-              <div class="col-sm-5 col-md-3	col-lg-4	col-xs-12">
-                <div class="opt_flex--container">
-                  <div class="opt_flex__item chck-box"> <mat-checkbox></mat-checkbox> </div>
-                  <div class="opt_flex__item des-box">
-                    <div class="opt-txt__body2-small opt-fontweight--bold"> Optimo User </div>
-                    <div class="opt-txt__secondary"> 04-Jan-2018 | <i class="material-icons mat-btn-icon-btn opt_color_icon_font">directions_bus</i></div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-4 col-md-6	col-lg-5	col-xs-12">
-                <div class="opt_flex__item horizontally-center opt-txt__secondary">
-                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                      Aenean commodo ligula eget dolor. Aenean massa
-                </div>
-              </div>
-              <div class="col-sm-3 col-md-3	col-lg-3	col-xs-12">
-                <div class="opt_flex__item edit_icon">
-                  <span><i class="material-icons mat-btn-icon-btn opt_color_icon_font">edit</i>
-                  <i class="material-icons mat-btn-icon-btn opt_color_icon_font">delete</i></span>
-                </div>
-              </div>
-            </div>
-          </div>
-    </div>
       </mat-step>
 
 
       <!-- ==============
-            Document Tab
+            Document Tab     To Redo
            ==============-->
 
       <mat-step label="Documents">
@@ -158,7 +158,7 @@
           </div>
         </ng-template>
 
-        <div class="document">
+        <div class="documents">
           <!--Header-->
           <div class="header-row">
             <div class="opt_flex--container">
@@ -301,7 +301,124 @@
             <div class="activity-title">Payment</div>
           </div>
         </ng-template>
-        Payment Content
+
+        <!--Tabs-->
+        <mat-tab-group>
+          <mat-tab label="Schedule"> </mat-tab>
+
+
+          <mat-tab label="Invoice and Credit Notes">
+            <!--Header-->
+            <div class="header-row">
+              <div class="opt_flex--container">
+                <div class="opt_flex__item horizontally-center">
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-7	col-lg-8">
+                      <div class="opt_flex--container">
+                        <div class="opt_flex__item chck-box horizontally-center"> <mat-checkbox></mat-checkbox> </div>
+                        <div class="opt_flex__item des-box horizontally-center opt-txt__body2-small">Select All <span class="cage_selected"> 1 Item</span> </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--Content-->
+            <div class="opt_flex--container">
+              <div class="opt_flex__item horizontally-center">
+                <div class="row">
+                  <div class="col-xs-12 col-sm-6 col-md-2	col-lg-3">
+                    <div class="opt_flex--container">
+                      <div class="opt_flex__item chck-box tc-flex-item__center"> <mat-checkbox></mat-checkbox> </div>
+                      <div class="opt_flex__item des-box tc-flex-item__center">
+                        <div class="opt-txt__body2-small opt-fontweight--bold"> 092883 | Box office event 1item </div>
+                        <div class="opt-txt__secondary"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">local_dining</i> Mr.Jone | 19-Jan-2018</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-2	col-lg-5	col-xs-12">
+                    <div class="opt_flex--container">
+                      <div class="opt_flex__item tc-flex-item__center">
+                        <div class="opt-txt__body2 opt-link--primary"> 3509 Chimney Road Drive, UK</div>
+                        <div class="opt_txt_color_tertiary opt-txt__body1-small">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-5	col-lg-1	col-xs-12">
+                    <div class="opt_flex--container">
+                      <div class="opt_flex__item tc-flex-item__center">
+                        <div class="htry_sub opt-txt__body1-small"><i class="material-icons">credit_card</i></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-3	col-lg-2	col-xs-12">
+                    <div class="opt_flex--container">
+                      <div class="opt_flex__item tc-flex-item__center">
+                        <div class="opt_txt_color_tertiary opt-txt__body1-small">-£108.85</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-3	col-lg-1	col-xs-12">
+                    <div class="opt_flex--container">
+                      <div class="opt_flex__item tc-flex-item__center">
+                        <div class="opt_txt_color_tertiary opt-txt__body1-small"><i class="material-icons">exit_to_app</i></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="opt_flex--container">
+              <div class="opt_flex__item horizontally-center">
+                <div class="row">
+                  <div class="col-xs-12 col-sm-6 col-md-2	col-lg-3">
+                    <div class="opt_flex--container">
+                      <div class="opt_flex__item chck-box tc-flex-item__center"> <mat-checkbox></mat-checkbox> </div>
+                      <div class="opt_flex__item des-box tc-flex-item__center">
+                        <div class="opt-txt__body2-small opt-fontweight--bold"> 092883 | Box office event 1item </div>
+                        <div class="opt-txt__secondary"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">local_dining</i> Mr.Jone | 19-Jan-2018</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-2	col-lg-5	col-xs-12">
+                    <div class="opt_flex--container">
+                      <div class="opt_flex__item tc-flex-item__center">
+                        <div class="opt-txt__body2 opt-link--primary"> 3509 Chimney Road Drive, UK</div>
+                        <div class="opt_txt_color_tertiary opt-txt__body1-small">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-5	col-lg-1	col-xs-12">
+                    <div class="opt_flex--container">
+                      <div class="opt_flex__item tc-flex-item__center">
+                        <div class="htry_sub opt-txt__body1-small"><i class="material-icons">credit_card</i></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-3	col-lg-2	col-xs-12">
+                    <div class="opt_flex--container">
+                      <div class="opt_flex__item tc-flex-item__center">
+                        <div class="opt_txt_color_tertiary opt-txt__body1-small">£108.85</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-3	col-lg-1	col-xs-12">
+                    <div class="opt_flex--container">
+                      <div class="opt_flex__item tc-flex-item__center">
+                        <div class="opt_txt_color_tertiary opt-txt__body1-small"><i class="material-icons">exit_to_app</i></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </mat-tab>
+
+
+
+          <mat-tab label="Payments"> Content 3 </mat-tab>
+        </mat-tab-group>
       </mat-step>
 
       <!-- =============================

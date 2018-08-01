@@ -126,7 +126,10 @@
   }
 
   .des-box {
-    width: calc(100% - 40px)
+    width: calc(100% - 40px);
+    .cage_selected{
+      margin-left: 20px;
+    }
   }
 
   .action-btn {
@@ -170,24 +173,47 @@
 
   }
 
-  .history{
+  .history {
+    .text-truncate {
+
+      @include respond-to('x-small') {
+        max-width: 110px;
+        display: inline-block;
+      }
+      @include respond-to('small') {
+        max-width: 250px;
+        display: inline-block;
+      }
+      @include respond-to('medium') {
+        max-width: 345px;
+        display: inline-block;
+      }
+      @include respond-to('large') {
+        max-width: 400px;
+        display: inline-block;
+      }
+
+    }
+  }
+
+  .notes{
     .text-truncate{
 
-      display: inline-block;
 
-        @include respond-to('x-small'){
-          max-width: 110px;
-        }
-        @include respond-to('small'){
-          max-width: 250px;
-        }
-        @include respond-to('medium'){
-          max-width: 345px;
-        }
-        @include respond-to('large'){
-          max-width: 400px;
-        }
-
+      @include respond-to('x-small'){
+        max-width: 110px;
+        display: inline-block;
+      }
+      @include respond-to('small'){
+        max-width: 250px;
+      }
+      @include respond-to('medium'){
+        max-width: 345px;
+      }
+      @include respond-to('large'){
+        max-width: 470px;
+        display: inline-block;
+      }
     }
   }
 
