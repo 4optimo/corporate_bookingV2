@@ -203,6 +203,10 @@
      @include respond-to('x-small'){
        max-width: 100px;
      }
+
+     @include respond-to('small'){
+       max-width: 100%;
+     }
    }
 
    .text-truncate{
