@@ -69,6 +69,17 @@ export class OptPopupWindowComponent implements OnInit {
     });
 
   }
+  public openCollectionDispatchPopup(){
+    this.dialog.open(OptCorporateClientPopupComponent,{
+      data: {name:'New Corporate Client'},
+      panelClass:'custom-dialog-container',
+      height: 'auto',
+      width: '80%'
+      // DialogPosition : top
+
+    });
+
+  }
 
   ngOnInit() {
   }
