@@ -98,6 +98,7 @@ import { OptPricePopupComponent } from './opt-price-popup/opt-price-popup.compon
 import { OptPageloaderComponent } from './opt-pageloader/opt-pageloader.component';
 import { Opt404Component } from './opt-404/opt-404.component';
 import { OptPackageDetailsComponent } from './opt-package-details/opt-package-details.component';
+import { OptCollectionDispatchComponent } from './opt-collection-dispatch/opt-collection-dispatch.component';
 
 
 
@@ -180,7 +181,7 @@ const appRoutes: Routes = [
     ScrollDispatchModule
 
   ],
-  declarations: [],
+  declarations: [OptCollectionDispatchComponent],
 
 
 
@@ -231,6 +232,7 @@ export class DemoMaterialModule {}
     OptChipSelectComponent,
     OptPricePopupComponent,
     OptPackageDetailsComponent,
+    OptCollectionDispatchComponent,
       // OptDocumentSelectComponent,
 
     RoutingProjectComponent,
