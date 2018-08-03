@@ -6,7 +6,7 @@ import {OptCorporateClientPopupComponent} from "../opt-corporate-client-popup/op
 import {OptClientPopupComponent} from "../opt-client-popup/opt-client-popup.component";
 import {OptIndividualClientPopupComponent} from "../opt-individual-client-popup/opt-individual-client-popup.component";
 import {OptItemPopupComponent} from "../opt-item-popup/opt-item-popup.component";
-import {OptCollectionDispatchComponent} from "../opt-collection-dispatch/opt-collection-dispatch.component";
+import {OptCollectionDispatchPopupComponent} from "../opt-collection-dispatch-popup/opt-collection-dispatch-popup.component";
 
 @Component({
   selector: 'app-opt-popup-window',
@@ -71,8 +71,8 @@ export class OptPopupWindowComponent implements OnInit {
 
   }
   public openCollectionDispatchPopup(){
-    this.dialog.open(OptCollectionDispatchComponent,{
-      data: {name:'New Corporate Client'},
+    this.dialog.open(OptCollectionDispatchPopupComponent,{
+      data: {name:'Collection/Dispatch'},
       panelClass:'custom-dialog-container',
       height: 'auto',
       width: '80%'
