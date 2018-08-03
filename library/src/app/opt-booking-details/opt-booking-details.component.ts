@@ -8,10 +8,6 @@ import {MatExpansionPanel} from "@angular/material";
 })
 export class OptBookingDetailsComponent implements OnInit {
 
-
-
-
-
   @ViewChild('myPanel') myPanel: MatExpansionPanel;
   matIcon = 'keyboard_arrow_down' || 'keyboard_arrow_up';
 

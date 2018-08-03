@@ -84,16 +84,18 @@
 
   .opt_linked-packages{
     margin: 0 10px;
-    padding: 0 40px;
-    overflow-y: scroll;
+    padding:10px;
 
     .outer-wrapper{
-      padding: 15px;
-      border-bottom: 1px dashed lightgrey;
-
-      &:last-child{
-        border-bottom: none;
+      overflow-y: scroll;
+      .inner-wrapper{
+        border-bottom: 1px dashed lightgrey;
+        padding: 15px;
+        &:last-child{
+          border-bottom: none;
+        }
       }
+
       .opt_counter{
         .mat-form-field-infix{
           width: 30px;
@@ -101,7 +103,70 @@
       }
       .linked-icon{
         color: darkgray;
+        padding-right: 20px;
       }
     }
+  }
+
+  .opt_calendar-expand{
+    margin: 0 10px;
+    padding:10px;
+
+
+    .outer-wrapper {
+      overflow-y: scroll;
+      overflow-x: hidden;
+      .time-slot{
+        padding: 0 15px;
+        border-bottom: 1px dashed lightgrey;
+        &:last-child{
+          border-bottom: none;
+        }
+      }
+      .inner-wrapper {
+        .date-select{
+          text-align: center;
+          display: flex;
+          flex-direction: column!important;
+          align-items: center!important;
+          justify-content: center!important;
+          max-height: 150px;
+          max-width: 150px;
+          border: 1px dashed darkgray;
+          .material-icons{
+            color: lightgray;
+            font-size: 40px;
+          }
+          .date-field{
+            width: 110px;
+          }
+        }
+      }
+
+      .opt_counter{
+        .mat-form-field-infix{
+          width: 30px;
+        }
+      }
+      .individual-row{
+        padding: 15px;
+
+        .material-icons{
+          padding-right: 15px;
+        }
+        .availability-icon{
+          &.__last-few{
+            color: #f44336;
+          }
+          &.__good-availability{
+            color: #2c95dc;
+          }
+          &.__limited{
+            color: #9c27b0;
+          }
+        }
+      }
+    }
+
   }
 }
