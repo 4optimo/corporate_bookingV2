@@ -6,6 +6,7 @@ import {OptCorporateClientPopupComponent} from "../opt-corporate-client-popup/op
 import {OptClientPopupComponent} from "../opt-client-popup/opt-client-popup.component";
 import {OptIndividualClientPopupComponent} from "../opt-individual-client-popup/opt-individual-client-popup.component";
 import {OptItemPopupComponent} from "../opt-item-popup/opt-item-popup.component";
+import {OptCollectionDispatchPopupComponent} from "../opt-collection-dispatch-popup/opt-collection-dispatch-popup.component";
 
 @Component({
   selector: 'app-opt-popup-window',
@@ -65,6 +66,17 @@ export class OptPopupWindowComponent implements OnInit {
       panelClass:'custom-dialog-container',
       height: '90%',
       width: '90%'
+
+    });
+
+  }
+  public openCollectionDispatchPopup(){
+    this.dialog.open(OptCollectionDispatchPopupComponent,{
+      data: {name:'Collection/Dispatch'},
+      panelClass:'custom-dialog-container',
+      height: 'auto',
+      width: '80%'
+      // DialogPosition : top
 
     });
 

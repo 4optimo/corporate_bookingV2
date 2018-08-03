@@ -26,6 +26,16 @@
         }
 
       }
+      .inner-icon-black{
+        align-self: center;
+        padding-left: 25px;
+        padding-right: 25px;
+        i {
+          font-size: 35px;
+          color: $black;
+        }
+
+      }
     }
 
     .test-inner-expand {

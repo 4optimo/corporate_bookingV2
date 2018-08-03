@@ -1,0 +1,93 @@
+<div class="opt_modal-content opt-corporate-client">
+  <div class="mat-dialog-content">
+    <div class="opt_modal-header ">
+      <div class="test opt--depth__1">
+        <div class="opt_flex--container test-wrapper">
+          <div class="opt_flex__item--inherit test-inner">
+            <div class="inner-icon-black">
+              <i class="material-icons mat-icon-black">call_made</i>
+            </div>
+          </div>
+          <div class="opt_flex__item test-inner-expand">
+            <div class="title">
+              <h1 mat-dialog-title>{{data.name}}</h1>
+            </div>
+          </div>
+          <div class="opt_flex__item--inherit test-inner-2">
+            <div class="inner-action">
+              <button class="material-icons icon1">launch</button>
+              <button class="material-icons icon2" (click)="close()">close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="opt_modal-body">
+
+      <!--modal body start-->
+      <div class="opt_collection-despatch-popup opt_corporate-client-popup">
+        <div class="opt_flex--container">
+          <div class="opt_flex__item opt-txt__right">
+            <mat-label class="opt-txt__body2-small opt-fontweight__bold">2 Items</mat-label>
+          </div>
+        </div>
+
+
+        <!--List start-->
+        <div class="opt_collection-despatch-list-wrapper">
+          <app-opt-collection-dispatch-list></app-opt-collection-dispatch-list>
+          <app-opt-collection-dispatch-list></app-opt-collection-dispatch-list>
+        </div>
+        <!--List end-->
+
+
+        <div class="opt_flex--container">
+          <div class="opt_flex__item section-panel p33" >
+            <div class="opt_flex--container inner-contxt">
+              <div class="opt_flex__item">
+                <mat-form-field class="example-full-width">
+                  <input matInput placeholder="Despatch Comments (Options)" value="">
+                </mat-form-field>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="opt_flex--container">
+          <div class="opt_flex__item section-panel p33" >
+            <div class="row opt_flex--container">
+              <div class="col-sm-12 col-md-6 opt_flex__item padding-left flex-item-margin" >
+                <mat-form-field class="example-full-width">
+                  <input matInput placeholder="Tracking No." value="">
+                </mat-form-field>
+              </div>
+              <div class="col-sm-12 col-md-6 opt_flex__item padding-left flex-item-margin opt-txt__right" >
+                <mat-checkbox  class="opt-txt__body1 despatch-checkbox">Print Despatch Note</mat-checkbox>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="opt_flex--container">
+          <div class="opt_flex__item" >
+            <mat-checkbox  class="opt-txt__body1 more-info-checkbox">Display more information</mat-checkbox>
+          </div>
+        </div>
+        <div class="opt_flex--container opt-section__heading">
+          <div class="opt_flex__item" >
+            <app-opt-alert></app-opt-alert>
+          </div>
+        </div>
+        <br>
+        <div class="opt_flex--container">
+          <div class="opt_flex__item"></div>
+          <div class="opt_flex__item--inherit">
+            <button class="mat-btn-primary mat-button" (click)="close()">Save</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
