@@ -141,7 +141,7 @@
 
 
       <!-- ==============
-            Document Tab     To Redo
+            Document Tab
            ==============-->
 
       <mat-step label="Documents">
@@ -179,6 +179,8 @@
             </div>
           </div>
           <!--Content-->
+
+          <!--****1st row*****-->
           <!--<mat-accordion>
             <mat-expansion-panel>
               <mat-expansion-panel-header>
@@ -278,6 +280,8 @@
               </div>
             </mat-expansion-panel>
           </mat-accordion>-->
+
+          <!--****2nd row*****-->
           <mat-accordion>
             <mat-expansion-panel>
               <mat-expansion-panel-header>
@@ -336,6 +340,8 @@
               </div>
             </mat-expansion-panel>
           </mat-accordion>
+
+          <!--****3rd row*****-->
           <mat-accordion>
             <mat-expansion-panel>
               <mat-expansion-panel-header>
@@ -412,7 +418,150 @@
             <div class="activity-title" matTooltip="Correspondence">Correspondence</div>
           </div>
         </ng-template>
-        Correspondence Content
+        <mat-tab-group>
+          <div class="c-received">
+            <mat-tab label="Received">
+              <!--Header-->
+              <div class="header-row">
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item horizontally-center">
+                    <div class="row">
+                      <div class="col-sm-6 col-md-7	col-lg-8	col-xs-12">
+                        <div class="opt_flex--container">
+                          <div class="opt_flex__item chck-box horizontally-center "> <mat-checkbox></mat-checkbox> </div>
+                          <div class="opt_flex__item des-box horizontally-center opt-txt__body2">Select All</div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-md-5	col-lg-4	col-xs-12">
+                        <div class="opt_flex__item--inherit horizontally-center action-btn">
+                          <button mat-button class="btn-icon-text"><i class="material-icons">add</i> <span class="btn-text">Add</span></button>
+                          <button mat-button class="btn-icon-text"><i class="material-icons">email</i> <span class="btn-text">Email</span></button>
+                          <button mat-button class="btn-icon-text"><i class="material-icons">delete</i> <span class="btn-text">Delete</span></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--Content-->
+              <div class="opt_flex--container">
+                <div class="opt_flex__item horizontally-center">
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-2	col-lg-3">
+                      <div class="opt_flex--container">
+                        <div class="opt_flex__item chck-box horizontally-center"> <mat-checkbox></mat-checkbox> </div>
+                        <div class="opt_flex__item des-box">
+                          <div class="opt-txt__body2 opt-fontweight--bold opt-txt__body2 text-truncate">  No FS Category  Available</div>
+                          <div class="date-time opt_txt_color_tertiary opt-txt__body1-small">Document | V2.89 </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-2	col-lg-3">
+                      <div class="opt_flex--container">
+                        <div class="opt_flex__item">
+                          <div class="htry_ID_no opt-txt__body2">Received From</div>
+                          <div class="htry_des opt_txt_color_tertiary opt-txt__body1-small"> 04-Jan-2018</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-5	col-lg-3">
+                      <div class="opt_flex--container">
+                        <div class="opt_flex__item">
+                          <div class="htry_sub opt-txt__body1-small">Media</div>
+                          <div class="htry_des opt_txt_color_tertiary opt-txt__body1-small text-truncate">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3	col-lg-3">
+                      <div class="opt_flex__item edit_icon">
+                        <span><i class="material-icons mat-btn-icon-btn opt_color_icon_font">edit</i>
+                        <i class="material-icons mat-btn-icon-btn opt_color_icon_font">delete</i></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="opt_flex--container">
+                <div class="opt_flex__item horizontally-center">
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-2	col-lg-3">
+                      <div class="opt_flex--container">
+                        <div class="opt_flex__item chck-box horizontally-center"> <mat-checkbox></mat-checkbox> </div>
+                        <div class="opt_flex__item des-box">
+                          <div class="opt-txt__body2 opt-fontweight--bold opt-txt__body2 text-truncate">  No FS Category  Available</div>
+                          <div class="date-time opt_txt_color_tertiary opt-txt__body1-small">Document | V2.89 </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-2	col-lg-3">
+                      <div class="opt_flex--container">
+                        <div class="opt_flex__item">
+                          <div class="htry_ID_no opt-txt__body2">Received From</div>
+                          <div class="htry_des opt_txt_color_tertiary opt-txt__body1-small"> 04-Jan-2018</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-5	col-lg-3">
+                      <div class="opt_flex--container">
+                        <div class="opt_flex__item">
+                          <div class="htry_sub opt-txt__body1-small">Meadia</div>
+                          <div class="htry_des opt_txt_color_tertiary opt-txt__body1-small text-truncate">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3	col-lg-3">
+                      <div class="opt_flex__item edit_icon">
+                        <span><i class="material-icons mat-btn-icon-btn opt_color_icon_font">edit</i>
+                        <i class="material-icons mat-btn-icon-btn opt_color_icon_font">delete</i></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="opt_flex--container">
+                <div class="opt_flex__item horizontally-center">
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-2	col-lg-3">
+                      <div class="opt_flex--container">
+                        <div class="opt_flex__item chck-box horizontally-center"> <mat-checkbox></mat-checkbox> </div>
+                        <div class="opt_flex__item des-box">
+                          <div class="opt-txt__body2 opt-fontweight--bold opt-txt__body2 text-truncate">  No FS Category  Available</div>
+                          <div class="date-time opt_txt_color_tertiary opt-txt__body1-small">Document | V2.89 </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-2	col-lg-3">
+                      <div class="opt_flex--container">
+                        <div class="opt_flex__item">
+                          <div class="htry_ID_no opt-txt__body2">Received From</div>
+                          <div class="htry_des opt_txt_color_tertiary opt-txt__body1-small"> 04-Jan-2018</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-5	col-lg-3">
+                      <div class="opt_flex--container">
+                        <div class="opt_flex__item">
+                          <div class="htry_sub opt-txt__body1-small">Meadia</div>
+                          <div class="htry_des opt_txt_color_tertiary opt-txt__body1-small text-truncate">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3	col-lg-3">
+                      <div class="opt_flex__item edit_icon">
+                        <span><i class="material-icons mat-btn-icon-btn opt_color_icon_font">edit</i>
+                        <i class="material-icons mat-btn-icon-btn opt_color_icon_font">delete</i></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </mat-tab>
+          </div>
+          <mat-tab label="Sent">  </mat-tab>
+
+        </mat-tab-group>
+
       </mat-step>
 
 
@@ -925,7 +1074,173 @@
             <div class="activity-title">Host</div>
           </div>
         </ng-template>
-        Host Content
+
+        <div class="host">
+          <!--Header-->
+          <div class="header-row">
+            <div class="opt_flex--container">
+              <div class="opt_flex__item horizontally-center">
+                <div class="row">
+                  <div class="col-sm-6 col-md-7	col-lg-8	col-xs-12">
+                    <div class="opt_flex--container">
+                      <div class="opt_flex__item chck-box horizontally-center "> <mat-checkbox></mat-checkbox> </div>
+                      <div class="opt_flex__item des-box horizontally-center opt-txt__body2">Select All <span class="cage_selected"> 2 Items</span></div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-5	col-lg-4	col-xs-12">
+                    <div class="opt_flex__item--inherit horizontally-center action-btn">
+                      <i class="material-icons opt-txt__secondary">filter_list</i>
+                      <button mat-button class="btn-icon-text"><i class="material-icons">add</i> <span class="btn-text">Add</span></button>
+                      <button mat-button class="btn-icon-text"><i class="material-icons">delete</i> <span class="btn-text">Delete</span></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--****1st row*****-->
+          <mat-accordion>
+            <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  <div class="row">
+                    <div class="col-sm-6 col-md-3	col-lg-3	col-xs-12">
+                      <div class="opt_flex--container">
+                        <div class="opt_flex__item des-box">
+                          <div class="opt-txt__body2 opt-fontweight--bold opt-txt__body2 text-truncate"> Gold Ticket Bo Package</div>
+                          <div class="opt-txt__body1-small">26-Dec-2018</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6	col-lg-3	col-xs-12">
+                      <div class="opt_flex__item horizontally-center opt-txt__body2 text-truncate">
+                        HST174923
+                      </div>
+                      <div class="opt_flex__item horizontally-center opt-txt__body1-small text-truncate">
+                        Ms.Belind Griffiths
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6	col-lg-3	col-xs-12">
+                      <div class="opt_flex__item horizontally-center opt-txt__body2 text-truncate">
+                        Status
+                      </div>
+                      <div class="opt_flex__item horizontally-center opt-txt__body1-small text-truncate">
+                        Media
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3	col-lg-3	col-xs-12">
+                      <div class="opt_flex__item edit_icon">
+                      <span><i class="material-icons mat-btn-icon-btn opt_color_icon_font">edit</i>
+                      <i class="material-icons mat-btn-icon-btn opt_color_icon_font">delete</i></span>
+                      </div>
+                    </div>
+                  </div>
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <div class="row">
+                <div class="col-sm-6 col-md-3	col-lg-3	col-xs-12">
+                  <div class="opt_flex--container">
+                    <div class="opt_flex__item chck-box horizontally-center"> <mat-checkbox></mat-checkbox> </div>
+                    <div class="opt_flex__item des-box">
+                      <div class="opt-txt__body2 opt-fontweight--bold opt-txt__body2 text-truncate"> +8134567800 </div>
+                      <div class="opt-txt__body1-small">noreply@programus.co.uk</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-6	col-lg-3	col-xs-12">
+                  <div class="opt_flex__item horizontally-center opt-txt__body2 text-truncate">
+                    344 Chiswick Hidh Road London, W45YA.
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-6	col-lg-3	col-xs-12">
+                  <div class="opt_flex__item horizontally-center opt-txt__body2 text-truncate">
+                    Instruction
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-6	col-lg-3	col-xs-12">
+                  <div class="opt_flex__item horizontally-center opt-txt__body1-small text-truncate">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa
+                  </div>
+                  <div class="opt_flex__item horizontally-center opt-txt__body2 text-truncate">
+                    26-Dec-2018
+                  </div>
+                </div>
+              </div>
+            </mat-expansion-panel>
+          </mat-accordion>
+
+          <!--****2nd row*****-->
+          <mat-accordion>
+            <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  <div class="row">
+                    <div class="col-sm-6 col-md-3	col-lg-3	col-xs-12">
+                      <div class="opt_flex--container">
+                        <div class="opt_flex__item des-box">
+                          <div class="opt-txt__body2 opt-fontweight--bold opt-txt__body2 text-truncate"> No FS Category Available</div>
+                          <div class="opt-txt__body1-small">26-Dec-2018</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6	col-lg-3	col-xs-12">
+                      <div class="opt_flex__item horizontally-center opt-txt__body2 text-truncate">
+                        HST174923
+                      </div>
+                      <div class="opt_flex__item horizontally-center opt-txt__body1-small text-truncate">
+                        Ms.Belind Griffiths
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6	col-lg-3	col-xs-12">
+                      <div class="opt_flex__item horizontally-center opt-txt__body2 text-truncate">
+                        Status
+                      </div>
+                      <div class="opt_flex__item horizontally-center opt-txt__body1-small text-truncate">
+                        Media
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3	col-lg-3	col-xs-12">
+                      <div class="opt_flex__item edit_icon">
+                      <span><i class="material-icons mat-btn-icon-btn opt_color_icon_font">edit</i>
+                      <i class="material-icons mat-btn-icon-btn opt_color_icon_font">delete</i></span>
+                      </div>
+                    </div>
+                  </div>
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <div class="row">
+                <div class="col-sm-6 col-md-3	col-lg-3	col-xs-12">
+                  <div class="opt_flex--container">
+                    <div class="opt_flex__item chck-box horizontally-center"> <mat-checkbox></mat-checkbox> </div>
+                    <div class="opt_flex__item des-box">
+                      <div class="opt-txt__body2 opt-fontweight--bold opt-txt__body2 text-truncate"> +8134567800 </div>
+                      <div class="opt-txt__body1-small">noreply@programus.co.uk</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-6	col-lg-3	col-xs-12">
+                  <div class="opt_flex__item horizontally-center opt-txt__body2 text-truncate">
+                    344 Chiswick Hidh Road London, W45YA.
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-6	col-lg-3	col-xs-12">
+                  <div class="opt_flex__item horizontally-center opt-txt__body2 text-truncate">
+                    Instruction
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-6	col-lg-3	col-xs-12">
+                  <div class="opt_flex__item horizontally-center opt-txt__body1-small text-truncate">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa
+                  </div>
+                  <div class="opt_flex__item horizontally-center opt-txt__body2 text-truncate">
+                    26-Dec-2018
+                  </div>
+                </div>
+              </div>
+            </mat-expansion-panel>
+          </mat-accordion>
+        </div>
       </mat-step>
 
 
