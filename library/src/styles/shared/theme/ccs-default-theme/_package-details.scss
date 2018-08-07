@@ -1,8 +1,43 @@
+.opt_package-popup{
+  .opt-search-panel-wrapper{
+    background-color: #e4e8e9;
+    margin: -24px;
+  }
+  .html-code{
+    display: none;
+  }
+  .icon-icn-package{
+    font-size: 24px;
+    line-height: 45px;
+    color: white;
+  }
+  .top-label{
+    padding: 20px 15px;
+
+    .opt_flex__item--inherit{
+      padding-left: 40px;
+    }
+  }
+  .package-wrapper{
+    padding-top: 40px;
+  }
+}
+
 .opt_package-details{
   &.opt_booking__list{
     &.opt_booking__detail{
       .opt_counter{
         display: block;
+      }
+    }
+  }
+  .icon__cage{
+    .opt_circle{
+      &__bespoke{
+        @include circle-icon(45px, #27bfc2, #27bfc2);
+      }
+      &__standard{
+        @include circle-icon(45px, #8f44ad, #8f44ad);
       }
     }
   }
@@ -249,4 +284,35 @@
   }
 
 }
+
+.opt_modal-content{
+  .inner-icon-black{
+    .icon-icn-package{
+      color: white!important;
+    }
+  }
+  .inner-action{
+    .cart-wrapper{
+      border-right: 1px solid lightgray;
+      display: inline-block;
+      padding: 0 15px;
+      position:  relative;
+      .notification_count{
+        position:  absolute;
+        font-size: 10px;
+        background-color: #ddd;
+        padding: 3px;
+        border-radius: 50%;
+        top: -4px;
+        right: 5px;
+        color: #000;
+      }
+    }
+
+  }
+  .opt_modal-body{
+    background-color: #f8f8f8;
+  }
+}
+
 
