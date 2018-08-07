@@ -100,6 +100,7 @@ import { Opt404Component } from './opt-404/opt-404.component';
 import { OptPackageDetailsComponent } from './opt-package-details/opt-package-details.component';
 import { OptCollectionDispatchPopupComponent } from './opt-collection-dispatch-popup/opt-collection-dispatch-popup.component';
 import { OptCollectionDispatchListComponent } from './opt-collection-dispatch-list/opt-collection-dispatch-list.component';
+import { OptPaymentModalComponent } from './opt-payment-modal/opt-payment-modal.component';
 
 
 
@@ -184,12 +185,6 @@ const appRoutes: Routes = [
     ScrollDispatchModule
 
   ],
-
-
-
-
-
-
 })
 export class DemoMaterialModule {}
 
@@ -235,6 +230,7 @@ export class DemoMaterialModule {}
     OptPackageDetailsComponent,
     OptCollectionDispatchPopupComponent,
     OptCollectionDispatchListComponent,
+    OptPaymentModalComponent,
       // OptDocumentSelectComponent,
 
     RoutingProjectComponent,
@@ -264,7 +260,7 @@ export class DemoMaterialModule {}
     RouterModule.forRoot(appRoutes)
   ],
 
-  entryComponents:[OptPopupModalComponent, OptPopupWindowComponent, OptClientPopupComponent, OptIndividualClientPopupComponent],
+  entryComponents:[OptPopupModalComponent, OptPopupWindowComponent, OptClientPopupComponent, OptIndividualClientPopupComponent, OptPaymentModalComponent],
   providers: [{provide: APP_BASE_HREF, useValue : '/' }],
 
   bootstrap: [AppComponent],
