@@ -8,6 +8,7 @@ import {OptIndividualClientPopupComponent} from "../opt-individual-client-popup/
 import {OptItemPopupComponent} from "../opt-item-popup/opt-item-popup.component";
 import {OptCollectionDispatchPopupComponent} from "../opt-collection-dispatch-popup/opt-collection-dispatch-popup.component";
 import {OptPaymentModalComponent} from "../opt-payment-modal/opt-payment-modal.component";
+import {OptPackagePopupComponent} from "../opt-package-popup/opt-package-popup.component";
 
 @Component({
   selector: 'app-opt-popup-window',
@@ -84,11 +85,11 @@ export class OptPopupWindowComponent implements OnInit {
   }
 
   public openPackagePopup(){
-    this.dialog.open(OptPaymentModalComponent,{
-      data: {name:'Payment'},
-      panelClass:'',
-      height: '',
-      width: ''
+    this.dialog.open(OptPackagePopupComponent,{
+      data: {name:'Package Search'},
+      panelClass:'custom-dialog-container',
+      height: 'auto',
+      width: '80%'
       // DialogPosition : top
 
     });
