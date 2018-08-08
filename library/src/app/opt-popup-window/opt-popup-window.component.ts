@@ -83,12 +83,12 @@ export class OptPopupWindowComponent implements OnInit {
 
   }
 
-  public openPackagePopup(){
+  public openPaymentsPopup(){
     this.dialog.open(OptPaymentModalComponent,{
       data: {name:'Payment'},
-      panelClass:'',
-      height: '',
-      width: ''
+      panelClass:'payment_modal',
+      height: '80%',
+      width: '80%'
       // DialogPosition : top
 
     });
