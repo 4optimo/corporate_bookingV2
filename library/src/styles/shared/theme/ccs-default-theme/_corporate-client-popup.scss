@@ -1,3 +1,4 @@
+
 .opt-corporate-client{
 
   mat-label{
@@ -86,6 +87,7 @@
       margin-bottom: 20px;
       margin-top: 10px;
       font-size: 14px;
+      background-color: $white;
     }
     .inner-contxt{
       flex-direction: column;
@@ -120,6 +122,9 @@
     .opt--depth__2{
       margin:30px 15px 20px 15px;
     }
+    .opt_alert{
+      background-color: #fafafa;
+    }
   }
   &_corporate-client-popup {
     font-size: 12px !important;
@@ -137,6 +142,7 @@
     .mat-form-field{
       width: 100%;
       padding-right: 20px;
+      font-size: 14px;
     }
 
     .btn {
@@ -664,6 +670,42 @@
     .mat-stepper-horizontal-line{
       flex: none;
     }
+  }
+  &_email-document-popup{
+    .label-top-margin{
+      margin-top:20px;
+    }
+    .mat-form-field{
+      padding-right: 0px;
+    }
+  }
+  &_ticket-scan-popup{
+    .mat-list{
+      padding-top:0px;
+    }
+    .mat-expansion-panel-list{
+      box-shadow:none !important;
+      background-color: #fafafa !important;
+    }
+    .mat-expansion-panel-header{
+      padding:0 10px 0 10px;
+      i{
+        margin-right:15px;
+      }
+    }
+    .padding-left-10{
+      padding-left:10px;
+    }
+    .row{
+      padding:15px 15px 15px 10px;
+    }
+    .ticket-scan-list-wrapper{
+      border-top:2px solid #e0e0e0;
+      margin-top:20px;
+    }
+  }
+  &_collection-despatch-body{
+    background-color: #fafafa;
   }
 }
 
