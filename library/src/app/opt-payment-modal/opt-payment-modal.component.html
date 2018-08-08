@@ -31,15 +31,49 @@
       </ng-template>
       <div class="row">
         <div class="col-md-9">
-
+          <section class="opt-section__heading">
+            <mat-accordion>
+              <mat-expansion-panel #myPanel2 class="section-heading __main">
+                <mat-expansion-panel-header class="__title section-header" >
+                  <h1>Select Invoice</h1>
+                </mat-expansion-panel-header>
+              </mat-expansion-panel>
+            </mat-accordion>
+          </section>
+          <section class="opt-section__heading">
+            <mat-accordion>
+              <mat-expansion-panel #myPanel2 class="section-heading __main">
+                <mat-expansion-panel-header class="__title section-header" >
+                  <h1>Billing Info</h1>
+                </mat-expansion-panel-header>
+              </mat-expansion-panel>
+            </mat-accordion>
+          </section>
+          <section class="opt-section__heading">
+            <mat-accordion>
+              <mat-expansion-panel #myPanel2 class="section-heading __main">
+                <mat-expansion-panel-header class="__title section-header" >
+                  <h1>Note</h1>
+                </mat-expansion-panel-header>
+              </mat-expansion-panel>
+            </mat-accordion>
+          </section>
         </div>
         <div class="col-md-3">
           <div class="balance_section">
-              <div class="">
-                Current Balance
+              <div class="balance_section--title">
+                Current Balance<!--Refund Payments-->
               </div>
-            <div>
-
+            <div class="balance_section--balance">
+                <span class="sup-mark">&pound;</span> 20
+            </div>
+            <div class="additional_info">
+              <ul class="balance_section--date_list">
+                <li><span class="--date">06-Feb-2018</span> <span>+ <span class="sup-mark--mini">&pound;</span>80</span></li>
+                <li><span class="--date">06-Feb-2018</span> <span>+ <span class="sup-mark--mini">&pound;</span>80</span></li>
+                <li><span class="--date">06-Feb-2018</span> <span>+ <span class="sup-mark--mini">&pound;</span>80</span></li>
+              </ul>
+              <p><strong>Note:</strong> Refund Receipts doubles up a credit if there is already a credit memo entered in the system.</p>
             </div>
           </div>
         </div>

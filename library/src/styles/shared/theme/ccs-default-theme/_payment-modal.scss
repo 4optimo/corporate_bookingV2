@@ -89,7 +89,7 @@
   }
 
   .tab-icon-wrapper{
-    padding: 0px 12px;
+    padding: 0 12px;
     background-color: #fff;
     border: 2px solid #fff;
     width: 100px;
@@ -116,5 +116,72 @@
 
   .mat-tab-body-wrapper{
     padding: 15px;
+    .mat-tab-body-content{
+      overflow: hidden;
+    }
+  }
+}
+
+.balance_section{
+  font-family: 'Roboto', sans-serif !important;
+  background-color: #343e47;
+  color: #fff;
+  padding: 15px;
+  display: inline-block;
+  max-width: 215px;
+
+  .additional_info{
+    border: none;
+    padding-top: 0;
+    ul{
+      display: block;
+    }
+    p{
+      display: none;
+    }
+  }
+
+  &.refund{
+    background-color: #ffb200;
+    .additional_info{
+      border-top: 1px solid #fbd46b;
+      padding-top: 10px;
+      ul{
+        display: none;
+      }
+      p{
+        display: block;
+      }
+    }
+  }
+  &--title{
+    font-size: 16px;
+    font-weight: 500;
+  }
+  &--balance{
+    padding: 20px 0;
+    font-size: 45px;
+  }
+  &--date_list{
+    li{
+      padding: 5px 0;
+      border-top: 1px solid #77818a;
+      font-weight: 300;
+      &:last-child{
+        border-bottom: 1px solid #77818a;
+      }
+    }
+    .--date{
+      margin-right: 45px;
+    }
+  }
+  .sup-mark{
+    font-size: 15px;
+    vertical-align: top;
+    &--mini{
+      font-size: 10px;
+      padding-right: 3px;
+      vertical-align: top;
+    }
   }
 }

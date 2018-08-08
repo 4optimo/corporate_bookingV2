@@ -65,3 +65,8 @@ $bootstrap-sass-asset-helper: false;
 @import "./shared/theme/ccs-default-theme/collection-dispatch-list";
 @import "./shared/theme/ccs-default-theme/payment-modal";
 
+html,
+body{
+  font-family: 'Roboto', sans-serif !important;
+}
+
