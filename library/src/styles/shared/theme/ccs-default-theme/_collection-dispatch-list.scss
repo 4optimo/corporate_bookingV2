@@ -1,18 +1,17 @@
 .opt_collection-despatch-list-wrapper{
-  border-top:2px solid #bfbfbf;
+  border-top:2px solid #e0e0e0;
   margin-bottom: 20px;
   margin-top: 20px;
-}
-.opt_collection-despatch-list{
-  span{
+
+.despatch-list-item{
     position: relative;
     top: 3px;
   }
   .mat-list{
-    padding-top: 10px;
+    padding-top: 2px;
   }
   .row{
-    padding-bottom: 10px;
+    padding:10px 10px 10px 0px;
   }
   .list-checkbox{
     margin-right: -50px;

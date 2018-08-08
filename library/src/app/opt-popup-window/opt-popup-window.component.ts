@@ -8,6 +8,8 @@ import {OptIndividualClientPopupComponent} from "../opt-individual-client-popup/
 import {OptItemPopupComponent} from "../opt-item-popup/opt-item-popup.component";
 import {OptCollectionDispatchPopupComponent} from "../opt-collection-dispatch-popup/opt-collection-dispatch-popup.component";
 import {OptPaymentModalComponent} from "../opt-payment-modal/opt-payment-modal.component";
+import {OptEmailDocumentPopupComponent} from "../opt-email-document-popup/opt-email-document-popup.component";
+import {OptTicketScanPopupComponent} from "../opt-ticket-scan-popup/opt-ticket-scan-popup.component";
 
 @Component({
   selector: 'app-opt-popup-window',
@@ -94,7 +96,28 @@ export class OptPopupWindowComponent implements OnInit {
     });
 
   }
+  public openEmailDocumentPopup(){
+    this.dialog.open(OptEmailDocumentPopupComponent,{
+      data: {name:'Email Document'},
+      panelClass:'custom-dialog-container',
+      height: 'auto',
+      width: '80%'
+      // DialogPosition : top
 
+    });
+
+  }
+  public openTicketScanPopup(){
+    this.dialog.open(OptTicketScanPopupComponent,{
+      data: {name:'Ticket Scan'},
+      panelClass:'custom-dialog-container',
+      height: 'auto',
+      width: '80%'
+      // DialogPosition : top
+
+    });
+
+  }
   ngOnInit() {
   }
 
