@@ -100,6 +100,8 @@ import { Opt404Component } from './opt-404/opt-404.component';
 import { OptPackageDetailsComponent } from './opt-package-details/opt-package-details.component';
 import { OptCollectionDispatchPopupComponent } from './opt-collection-dispatch-popup/opt-collection-dispatch-popup.component';
 import { OptCollectionDispatchListComponent } from './opt-collection-dispatch-list/opt-collection-dispatch-list.component';
+import { OptEmailDocumentPopupComponent } from './opt-email-document-popup/opt-email-document-popup.component';
+import { OptTicketScanPopupComponent } from './opt-ticket-scan-popup/opt-ticket-scan-popup.component';
 import { OptPaymentModalComponent } from './opt-payment-modal/opt-payment-modal.component';
 import { OptPackagePopupComponent } from './opt-package-popup/opt-package-popup.component';
 import {OptItemPopupComponent} from "./opt-item-popup/opt-item-popup.component";
@@ -140,6 +142,10 @@ const appRoutes: Routes = [
   { path: 'opt-booking-payment', component: OptBookingPaymentComponent},
   { path: 'opt-collection-dispatch-popup', component: OptCollectionDispatchPopupComponent},
   { path: 'opt-collection-dispatch-list', component: OptCollectionDispatchListComponent},
+  { path: 'opt-email-document-popup', component: OptEmailDocumentPopupComponent},
+  { path: 'opt-ticket-scan-popup', component: OptTicketScanPopupComponent},
+  { path: 'opt-payment-modal', component: OptPaymentModalComponent},
+  { path: 'opt-package-popup', component: OptPackagePopupComponent},
   { path: 'app-opt-404', component: Opt404Component},
   { path: 'app-package-details', component: OptPackageDetailsComponent},
 
@@ -234,6 +240,8 @@ export class DemoMaterialModule {}
     OptPackageDetailsComponent,
     OptCollectionDispatchPopupComponent,
     OptCollectionDispatchListComponent,
+    OptEmailDocumentPopupComponent,
+    OptTicketScanPopupComponent,
     OptPaymentModalComponent,
     OptPackagePopupComponent,
     OptItemPopupComponent,
