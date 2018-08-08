@@ -24,6 +24,7 @@
 }
 
 .opt_package-details{
+
   &.opt_booking__list{
     &.opt_booking__detail{
       .opt_counter{
@@ -285,6 +286,35 @@
 
 }
 
+.opt_cart{
+  padding: 0 10px;
+  .opt_cart-wrapper{
+    display: flex;
+    flex-direction: column;
+    min-height: 500px;
+    padding: 10px;
+    .package-list{
+      padding-top: 30px;
+      flex-grow: 1;
+    }
+    .package-alert-section{
+      min-height: 80px;
+      background-color: #e3e3e3;
+      .icon{
+        color: darkgray;
+        font-size: 50px;
+        padding-left: 30px;
+      }
+      .text{
+        padding-left: 60px;
+      }
+    }
+    .bottom-section{
+      align-self: flex-end;
+    }
+  }
+}
+
 .opt_modal-content{
   .inner-icon-black{
     .icon-icn-package{
@@ -308,10 +338,11 @@
         color: #000;
       }
     }
-
   }
-  .opt_modal-body{
-    background-color: #f8f8f8;
+  .opt_package-popup{
+    &.opt_modal-body{
+      background-color: #f8f8f8;
+    }
   }
 }
 

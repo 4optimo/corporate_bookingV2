@@ -62,16 +62,7 @@ export class OptPopupWindowComponent implements OnInit {
 
   }
 
-  public  openItemPopup(){
-    this.dialog.open(OptItemPopupComponent,{
-      data: {name:'Item Search'},
-      panelClass:'custom-dialog-container',
-      height: '90%',
-      width: '90%'
 
-    });
-
-  }
   public openCollectionDispatchPopup(){
     this.dialog.open(OptCollectionDispatchPopupComponent,{
       data: {name:'Collection/Dispatch'},
@@ -87,6 +78,18 @@ export class OptPopupWindowComponent implements OnInit {
   public openPackagePopup(){
     this.dialog.open(OptPackagePopupComponent,{
       data: {name:'Package Search'},
+      panelClass:'custom-dialog-container',
+      height: 'auto',
+      width: '80%'
+      // DialogPosition : top
+
+    });
+
+  }
+
+  public openItemPopup(){
+    this.dialog.open(OptItemPopupComponent,{
+      data: {name:'Item Search'},
       panelClass:'custom-dialog-container',
       height: 'auto',
       width: '80%'

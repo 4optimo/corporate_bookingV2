@@ -1,24 +1,17 @@
 import {Component, Inject, OnInit, ViewChild} from '@angular/core';
+import {MatDialogRef, MatExpansionPanel, MAT_DIALOG_DATA} from "@angular/material";
 import {ModalContentComponent} from "../modal-content/modal-content.component";
-import {MatDialogRef, MAT_DIALOG_DATA, MatExpansionPanel} from "@angular/material";
 
 @Component({
-  selector: 'app-opt-item-popup',
-  templateUrl: './opt-item-popup.component.html',
-  styleUrls: ['./opt-item-popup.component.scss']
+  selector: 'app-opt-package-cart',
+  templateUrl: './opt-package-cart.component.html',
+  styleUrls: ['./opt-package-cart.component.scss']
 })
-export class OptItemPopupComponent implements OnInit {
+export class OptPackageCartComponent implements OnInit {
 
-  itemListArray = new Array(10);
 
-  constructor(
+  packageCartListArray = new Array(4);
 
-    public  matDialogRef: MatDialogRef<ModalContentComponent>,
-    @Inject(MAT_DIALOG_DATA) public data: any) { }
-
-  public close(){
-    this.matDialogRef.close();
-  }
   @ViewChild('myPanel') myPanel: MatExpansionPanel;
   matIcon = 'keyboard_arrow_down' || 'keyboard_arrow_up';
 
@@ -28,6 +21,8 @@ export class OptItemPopupComponent implements OnInit {
     });
 
   }
+  constructor() {}
+
   expandPannel() {
     this.myPanel.expanded = !this.myPanel.expanded;
     // alert("1");

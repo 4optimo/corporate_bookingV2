@@ -1,52 +1,20 @@
-<div class="opt_modal-content">
-  <div class="mat-dialog-content">
-    <div class="opt_modal-header ">
-      <div class="test opt--depth__1">
-        <div class="opt_flex--container test-wrapper">
-          <div class="opt_flex__item--inherit test-inner">
-            <div class="inner-icon-black">
-              <i class="icon-icn-package"></i>
-            </div>
-          </div>
-          <div class="opt_flex__item test-inner-expand">
-            <div class="title">
-              <h1 mat-dialog-title>{{data.name}}</h1>
-            </div>
-          </div>
-          <div class="opt_flex__item--inherit test-inner-2">
-            <div class="inner-action">
-              <div class="cart-wrapper">
-                <button class="material-icons">add_alert</button>
-                <div class="notification_count">99</div>
-              </div>
-              <button class="material-icons icon1">launch</button>
-              <button class="material-icons icon2" (click)="close()">close</button>
-            </div>
+<div class=" opt_cart">
+  <div class="opt_package-details opt_package-popup opt_booking__detail">
 
-          </div>
+    <div class="opt_cart-wrapper opt--depth__2">
+      <div class="package-alert-section opt_flex--container">
+        <div class="opt_flex__item--inherit tc-flex-item__center">
+          <i class="material-icons icon">add_alert</i>
+        </div>
+        <div class="opt_flex__item tc-flex-item__center text">
+          <span class="opt__subtitle-2">4 Packages</span><span class="opt-txt__body1"> in Your Cart</span>
         </div>
       </div>
-    </div>
-    <div class="opt_modal-body opt_package-popup">
 
-      <!--modal body start-->
-      <div class=" opt_package-details opt_client-list">
-        <app-opt-search-panel></app-opt-search-panel>
+      <div class="package-list">
 
-        <div class="package-wrapper">
-          <div class="top-label opt_flex--container">
-            <div class="opt_flex__item opt-txt__secondary opt-txt__body2">30 Packages</div>
-            <div class="opt_flex__item--inherit opt-txt__body2-small">
-              <mat-checkbox>Create time slot if not exists</mat-checkbox>
-            </div>
-            <div class="opt_flex__item--inherit opt-txt__body2-small">
-              <mat-checkbox>Show selected items only</mat-checkbox>
-            </div>
-          </div>
-
-          <div class="package-list">
-            <mat-accordion>
-                <span *ngFor="let a of packageListArray; let index = index">
+        <mat-accordion>
+                <span *ngFor="let a of packageCartListArray; let index = index">
                   <div class="opt_package-details opt_booking__list opt_booking__detail">
                     <mat-accordion>
                       <mat-expansion-panel #myPanel [disabled]="true" class="opt-expand--line">
@@ -129,8 +97,8 @@
                                   </div>
                                   <div class="col-sm-12  col-md-1	col-lg-1	col-xs-12">
                                     <mat-panel-description class="opt_flex--container">
-                                      <div mat-raised-button class="btn-color-default opt_flex__item opt-txt__light btn btn-select">
-                                        Add
+                                      <div mat-raised-button class="opt_bg_status_cancelled btn-color-default opt_flex__item opt-txt__light btn btn-select">
+                                        Remove
                                       </div>
                                     </mat-panel-description>
                                   </div>
@@ -194,24 +162,17 @@
                     </mat-accordion>
                   </div>
                 </span>
-            </mat-accordion>
+        </mat-accordion>
 
-          </div>
-        </div>
+      </div>
 
-        <br><br><br>
-        <div class="opt_flex--container">
-          <div class="opt_flex__item">
-            <span class=" opt-txt__secondary opt-txt__body2">30 Packages found, </span>
-            <span class="opt-txt__body2 ">10 Displayed.</span>
-          </div>
+      <div class="opt_flex--container bottom-section">
+        <div class="opt_flex__item--inherit">
+          <button class="mat-btn-primary mat-button">Back</button>
+          <button class="mat-btn-primary mat-button">Go to Booking</button>
         </div>
       </div>
     </div>
 
   </div>
 </div>
-
-
-
-
