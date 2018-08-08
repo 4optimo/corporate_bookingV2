@@ -1,0 +1,120 @@
+.payment_modal{
+  .mat-dialog-container{
+    padding: 0;
+  }
+
+  .mat-dialog-content{
+    padding: 0;
+    margin: 0;
+  }
+
+  .mat-tab-labels{
+    justify-content: center;
+  }
+}
+
+
+.modal_header{
+  .modal_header--icon{
+    padding: 17px;
+    background-color: $opt_color__tertiary;
+    i.material-icons{
+      font-size: 36px;
+      color: #fff;
+    }
+  }
+  .modal_header--title{
+    height: 100%;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .modal_title{
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 1.4;
+      margin: 0;
+    }
+    .modal_subtitle{
+      font-size: 14px;
+      line-height: 14px;
+      margin: 0;
+    }
+  }
+  .modal_header--actions{
+    height: 100%;
+  }
+}
+
+
+.icon-tabs{
+  .mat-tab-label-container{
+    background-color: #e4e8e9;
+    padding: 15px;
+    .mat-tab-label{
+      background-color: transparent;
+      height: auto;
+      min-width: unset;
+      opacity: 1;
+      overflow: visible;
+      &.mat-tab-label-active{
+        background-color: transparent;
+        .tab-icon-wrapper{
+          border: 2px solid #00abed;
+          i.material-icons{
+            color: #393c41;
+          }
+        }
+        .tab-icon-label{
+          color: #393c41;
+        }
+        &:after{
+          content: '';
+          bottom: -15px;
+          position: absolute;
+          border-bottom: 10px solid #fff;
+          border-left: 8px solid transparent;
+          border-right: 8px solid transparent;
+        }
+      }
+      &:not(.mat-tab-disabled){
+        &:focus{
+          background-color: transparent;
+        }
+      }
+    }
+    .mat-ink-bar{
+      display: none;
+    }
+  }
+
+  .tab-icon-wrapper{
+    padding: 0px 12px;
+    background-color: #fff;
+    border: 2px solid #fff;
+    width: 100px;
+    height: 70px;
+    i.material-icons{
+      color: #a7aaaf;
+      line-height: 70px;
+      font-size: 36px;
+    }
+  }
+
+  .tab-icon-label{
+    margin-top: 10px;
+    color: #b8bcbf;
+  }
+
+  .mat-tab-header{
+    border: none;
+  }
+
+  //&.mat-tab-group{
+  //  margin: 0 -24px;
+  //}
+
+  .mat-tab-body-wrapper{
+    padding: 15px;
+  }
+}
