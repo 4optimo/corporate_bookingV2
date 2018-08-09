@@ -10,6 +10,7 @@ import {OptCollectionDispatchPopupComponent} from "../opt-collection-dispatch-po
 import {OptPaymentModalComponent} from "../opt-payment-modal/opt-payment-modal.component";
 import {OptEmailDocumentPopupComponent} from "../opt-email-document-popup/opt-email-document-popup.component";
 import {OptTicketScanPopupComponent} from "../opt-ticket-scan-popup/opt-ticket-scan-popup.component";
+import {OptPackagePopupComponent} from "../opt-package-popup/opt-package-popup.component";
 
 @Component({
   selector: 'app-opt-popup-window',
@@ -101,6 +102,18 @@ export class OptPopupWindowComponent implements OnInit {
   public openTicketScanPopup(){
     this.dialog.open(OptTicketScanPopupComponent,{
       data: {name:'Ticket Scan'},
+      panelClass:'custom-dialog-container',
+      height: 'auto',
+      width: '80%'
+      // DialogPosition : top
+
+    });
+
+  }
+
+  public openPackagePopup(){
+    this.dialog.open(OptPackagePopupComponent,{
+      data: {name:'Package Search'},
       panelClass:'custom-dialog-container',
       height: 'auto',
       width: '80%'
