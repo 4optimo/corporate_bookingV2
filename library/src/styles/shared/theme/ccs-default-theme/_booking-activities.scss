@@ -105,8 +105,6 @@
     margin: 0;
     padding: 5px 0;
     border-bottom: 0.5px solid #e0e0e0;
-
-
   }
 
   .header-row {
@@ -264,11 +262,6 @@
     }*/
     }
   }
-  .payments{
-    .row{
-      border-bottom:none;
-    }
-  }
 
   .host{
     .status{
@@ -280,6 +273,12 @@
   .deliverables{
     mat-checkbox{
       margin-right: 10px;
+    }
+  }
+
+  .documents , .c-sent , .payments, .host{
+    .row{
+      border-bottom: none;
     }
   }
 }
