@@ -1,3 +1,75 @@
+/* Expansion Panel Button Styles */
+.panel-action-btn-icon{
+  &.mat-button{
+    padding: 3px;
+    height: auto;
+    width: auto;
+    min-width: unset;
+  }
+  i{
+    &.material-icons{
+      font-size: 18px;
+      line-height: 18px;
+      height: auto;
+      padding: 0;
+    }
+  }
+}
+
+.symbol_icon{
+  display: inline-block;
+  i{
+    &.material-icons{
+      font-size: 16px;
+      line-height: 16px;
+      height: auto;
+    }
+  }
+}
+
+.header_row--action-wrapper{
+  font-size: 0;
+  .mat-button{
+    &.btn-icon-text{
+      padding: 6px 12px;
+      margin-right: 10px;
+      &:last-child{
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.aligned_form_field{
+  .mat-input-wrapper{
+    padding: 0;
+  }
+  .mat-form-field-underline{
+    bottom: -2px;
+  }
+
+  .mat-form-field-infix{
+    border-top: none;
+  }
+}
+
+.just-content-end{
+  justify-content: flex-end;
+}
+
+.history_list_item{
+  padding: 10px 0;
+  border-bottom: 1px solid #e0e0e0;
+  .row{
+    display: flex;
+    [class*=' col-']{
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+/* End of Expansion Panel Button Styles */
+
 .opt_booking__activity {
 
   .mat-horizontal-stepper-header {
@@ -78,13 +150,13 @@
     font-weight: 500;
     -ms-text-overflow: ellipsis;
     text-overflow: ellipsis;
-    white-space: nowrap;
+    white-space: normal;
     overflow: hidden;
   }
 
   .mat-expansion-panel-body {
     .mat-horizontal-content-container {
-      padding: 15px 24px;
+      padding: 15px 0px;
       border-top: 2px solid #dce0e1;
       //background-color: #f9f9f9;
       font-size: 13px;
@@ -100,25 +172,40 @@
     align-items: center;
   }
 
-  .row {
-    width: 100%;
-    margin: 0;
-    padding: 5px 0;
-    border-bottom: 0.5px solid #e0e0e0;
+  .note_list_item {
+    padding: 10px 0;
+    border-bottom: 1px solid #e0e0e0;
+    .row{
+      display: flex;
+      [class*=' col-']{
+        display: flex;
+        align-items: center;
+      }
+    }
   }
 
   .header-row {
     border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 15px;
+    .row{
+      display: flex;
+      [class*=' col-']{
+        display: flex;
+        align-items: center;
+      }
+    }
   }
 
 
   .edit_icon {
     text-align: right;
-    padding: 10px 0;
+    //padding: 10px 0;
   }
 
   .chck-box {
     width: 40px;
+    display: flex;
+    align-items: center;
   }
 
   .des-box {
@@ -197,7 +284,7 @@
    }
 
    .note-search{
-     margin-right: 10px;
+     margin-right: 15px;
      @include respond-to('x-small'){
        max-width: 100px;
      }

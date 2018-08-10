@@ -1,6 +1,6 @@
 <div class="opt_booking__activity">
 <mat-accordion>
-  <mat-expansion-panel class="shaded">
+  <mat-expansion-panel class="shaded" [expanded]="true">
     <mat-expansion-panel-header>
       <mat-panel-title>
         Activities
@@ -26,15 +26,13 @@
         <div class="notes">
           <!--Header-->
           <div class="header-row">
-            <div class="opt_flex--container">
-              <div class="opt_flex__item horizontally-center">
                 <div class="row">
-                  <div class="col-xs-12 col-sm-12 col-md-7	col-lg-8">
+                  <div class="col-xs-12 col-sm-12 col-md-7	col-lg-7">
                     <div class="opt_flex--container">
                       <div class="opt_flex__item chck-box horizontally-center"> <mat-checkbox></mat-checkbox> </div>
                       <div class="opt_flex__item des-box horizontally-center">
                         <span>  Select All
-                        <mat-form-field class="drp-dwn">
+                        <mat-form-field class="drp-dwn aligned_form_field">
                           <mat-select placeholder="Note Type">
                             <mat-option *ngFor="let food of foods" [value]="food.value">
                               {{ food.viewValue }}
@@ -45,30 +43,29 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-xs-12 col-sm-12 col-md-5	col-lg-4">
+                  <div class="col-xs-12 col-sm-12 col-md-5	col-lg-5 just-content-end">
                     <div class="opt_flex__item--inherit horizontally-center action-btn">
-                      <mat-form-field class="note-search">
+                      <mat-form-field class="note-search aligned_form_field">
                         <input matInput placeholder="Search">
                         <mat-icon matSuffix><i class="material-icons mat-btn-icon-btn opt_color_icon_font icn-search">search</i></mat-icon>
                       </mat-form-field>
-                      <button mat-button class="btn-icon-text"><i class="material-icons">email</i> <span class="btn-text">Email</span></button>
-                      <button mat-button class="btn-icon-text"><i class="material-icons">delete</i> <span class="btn-text">Delete</span></button>
+                      <div class="header_row--action-wrapper btn-group">
+                        <button mat-button class="btn-icon-text"><i class="material-icons">note_add</i> <span class="btn-text">Add Note</span></button>
+                        <button mat-button class="btn-icon-text"><i class="material-icons">delete</i> <span class="btn-text">Delete</span></button>
+                      </div>
                     </div>
                 </div>
                 </div>
-              </div>
-            </div>
           </div>
           <!--Content-->
-          <div class="opt_flex--container">
-            <div class="opt_flex__item horizontally-center">
+          <div class="note_list_item">
               <div class="row">
                 <div class="col-xs-12 col-sm-4 col-md-3	col-lg-4">
                   <div class="opt_flex--container">
                     <div class="opt_flex__item chck-box"> <mat-checkbox></mat-checkbox> </div>
                     <div class="opt_flex__item des-box">
                       <div class="opt-txt__body2-small opt-fontweight--bold"> Optimo User </div>
-                      <div class="opt-txt__secondary"> 04-Jan-2018 | <i class="material-icons mat-btn-icon-btn opt_color_icon_font">local_dining</i></div>
+                      <div class="opt-txt__secondary"> 04-Jan-2018 | <span class="symbol_icon"><i class="material-icons">local_dining</i></span></div>
                     </div>
                   </div>
                 </div>
@@ -78,22 +75,20 @@
                 </div>
                 <div class="col-xs-12 col-sm-4 col-md-3	col-lg-3">
                   <div class="opt_flex__item edit_icon">
-                    <span><i class="material-icons mat-btn-icon-btn opt_color_icon_font">edit</i>
-                    <i class="material-icons mat-btn-icon-btn opt_color_icon_font">delete</i></span>
+                    <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">edit</i></button>
+                    <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">delete</i></button>
                   </div>
                 </div>
               </div>
-            </div>
           </div>
-          <div class="opt_flex--container">
-            <div class="opt_flex__item horizontally-center">
+          <div class="note_list_item">
               <div class="row">
                 <div class="col-xs-12 col-sm-4 col-md-3	col-lg-4">
                   <div class="opt_flex--container">
                     <div class="opt_flex__item chck-box"> <mat-checkbox></mat-checkbox> </div>
                     <div class="opt_flex__item des-box">
                       <div class="opt-txt__body2-small opt-fontweight--bold"> Optimo User </div>
-                      <div class="opt-txt__secondary"> 04-Jan-2018 | <i class="material-icons mat-btn-icon-btn opt_color_icon_font">note</i></div>
+                      <div class="opt-txt__secondary"> 04-Jan-2018 | <span class="symbol_icon"><i class="material-icons">note</i></span></div>
                     </div>
                   </div>
                 </div>
@@ -103,22 +98,20 @@
                 </div>
                 <div class="col-xs-12 col-sm-4 col-md-3	col-lg-3">
                   <div class="opt_flex__item edit_icon">
-                    <span><i class="material-icons mat-btn-icon-btn opt_color_icon_font">edit</i>
-                    <i class="material-icons mat-btn-icon-btn opt_color_icon_font">delete</i></span>
+                    <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">edit</i></button>
+                    <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">delete</i></button>
                   </div>
                 </div>
               </div>
-            </div>
-      </div>
-          <div class="opt_flex--container">
-            <div class="opt_flex__item horizontally-center">
+           </div>
+          <div class="note_list_item">
               <div class="row">
                 <div class="col-xs-12 col-sm-4 col-md-3	col-lg-4">
                   <div class="opt_flex--container">
                     <div class="opt_flex__item chck-box"> <mat-checkbox></mat-checkbox> </div>
                     <div class="opt_flex__item des-box">
                       <div class="opt-txt__body2-small opt-fontweight--bold"> Optimo User </div>
-                      <div class="opt-txt__secondary"> 04-Jan-2018 | <i class="material-icons mat-btn-icon-btn opt_color_icon_font">directions_bus</i></div>
+                      <div class="opt-txt__secondary"> 04-Jan-2018 | <span class="symbol_icon"><i class="material-icons">directions_bus</i></span></div>
                     </div>
                   </div>
                 </div>
@@ -128,13 +121,12 @@
                 </div>
                 <div class="col-xs-12 col-sm-4 col-md-3	col-lg-3">
                   <div class="opt_flex__item edit_icon">
-                    <span><i class="material-icons mat-btn-icon-btn opt_color_icon_font">edit</i>
-                    <i class="material-icons mat-btn-icon-btn opt_color_icon_font">delete</i></span>
+                    <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">edit</i></button>
+                    <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">delete</i></button>
                   </div>
                 </div>
               </div>
-            </div>
-      </div>
+          </div>
         </div>
       </mat-step>
 
@@ -158,8 +150,6 @@
         <div class="documents">
           <!--Header-->
           <div class="header-row">
-            <div class="opt_flex--container">
-              <div class="opt_flex__item horizontally-center">
                 <div class="row">
                   <div class="col-sm-6 col-md-7	col-lg-8	col-xs-12">
                     <div class="opt_flex--container">
@@ -167,16 +157,14 @@
                       <div class="opt_flex__item des-box horizontally-center opt-txt__body2">Select All</div>
                     </div>
                   </div>
-                  <div class="col-sm-6 col-md-5	col-lg-4	col-xs-12">
-                    <div class="opt_flex__item--inherit horizontally-center action-btn">
+                  <div class="col-sm-6 col-md-5	col-lg-4	col-xs-12 just-content-end">
+                    <div class="header_row--action-wrapper btn-group">
                       <button mat-button class="btn-icon-text"><i class="material-icons">cloud_upload</i><span class="btn-text">Upload a new file</span></button>
                       <button mat-button class="btn-icon-text"><i class="material-icons">email</i> <span class="btn-text">Email</span></button>
                       <button mat-button class="btn-icon-text"><i class="material-icons">delete</i> <span class="btn-text">Delete</span></button>
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
           </div>
           <!--Content-->
 
@@ -292,7 +280,7 @@
                         <div class="opt_flex__item chck-box horizontally-center"> <mat-checkbox></mat-checkbox> </div>
                         <div class="opt_flex__item des-box">
                           <div class="opt-txt__body2 opt-fontweight--bold text-truncate"> Our Delicious Meal Plans</div>
-                          <div class="opt-txt__body1-small"><i class="material-icons mat-btn-icon-btn opt-txt__tertiary indicator-icon">attach_file</i> <span class="opt-txt__tertiary"> PDF </span>| v1.01 |<span class="opt-txt__secondary">04-Jan-2018</span></div>
+                          <div class="opt-txt__body1-small"><span class="symbol_icon"><i class="material-icons mat-btn-icon-btn opt-txt__tertiary indicator-icon">attach_file</i></span> <span class="opt-txt__tertiary"> PDF </span>| v1.01 |<span class="opt-txt__secondary">04-Jan-2018</span></div>
                         </div>
                       </div>
                     </div>
@@ -306,8 +294,8 @@
                     </div>
                     <div class="col-sm-6 col-md-3	col-lg-3	col-xs-12">
                       <div class="opt_flex__item edit_icon">
-                    <span><i class="material-icons mat-btn-icon-btn opt_color_icon_font">edit</i>
-                    <i class="material-icons mat-btn-icon-btn opt_color_icon_font">delete</i></span>
+                        <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">edit</i></button>
+                        <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">delete</i></button>
                       </div>
                     </div>
                   </div>
@@ -319,7 +307,7 @@
                     <div class="opt_flex__item chck-box horizontally-center"> <mat-checkbox></mat-checkbox> </div>
                     <div class="opt_flex__item des-box">
                       <div class="opt-txt__body1  text-truncate"> Our Delicious Meal Plans</div>
-                      <div class="opt-txt__body1-small"><i class="material-icons mat-btn-icon-btn opt-txt__tertiary indicator-icon">attach_file</i><span class="opt-txt__tertiary"> PDF </span>|v1.00 |<span class="opt-txt__secondary">04-Jan-2017</span></div>
+                      <div class="opt-txt__body1-small"><span class="symbol_icon"><i class="material-icons mat-btn-icon-btn opt-txt__tertiary indicator-icon">attach_file</i></span><span class="opt-txt__tertiary"> PDF </span>|v1.00 |<span class="opt-txt__secondary">04-Jan-2017</span></div>
                     </div>
                   </div>
                 </div>
@@ -333,8 +321,8 @@
                 </div>
                 <div class="col-sm-6 col-md-3	col-lg-3	col-xs-12">
                   <div class="opt_flex__item edit_icon">
-                    <span><i class="material-icons mat-btn-icon-btn opt_color_icon_font">edit</i>
-                    <i class="material-icons mat-btn-icon-btn opt_color_icon_font">delete</i></span>
+                    <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">edit</i></button>
+                    <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">delete</i></button>
                   </div>
                 </div>
               </div>
@@ -352,7 +340,7 @@
                         <div class="opt_flex__item chck-box horizontally-center"> <mat-checkbox></mat-checkbox> </div>
                         <div class="opt_flex__item des-box">
                           <div class="opt-txt__body2 opt-fontweight--bold opt-txt__body2 text-truncate"> Venue Hire Inquiry</div>
-                          <div class="opt-txt__body1-small"><i class="material-icons mat-btn-icon-btn opt-txt__tertiary indicator-icon">attach_file</i><span class="opt-txt__tertiary"> Doc </span>|v1.01 |<span class="opt-txt__secondary">04-Jan-2017</span></div>
+                          <div class="opt-txt__body1-small"><span class="symbol_icon"><i class="material-icons mat-btn-icon-btn opt-txt__tertiary indicator-icon">attach_file</i></span><span class="opt-txt__tertiary"> Doc </span>|v1.01 |<span class="opt-txt__secondary">04-Jan-2017</span></div>
                         </div>
                       </div>
                     </div>
@@ -366,8 +354,8 @@
                     </div>
                     <div class="col-sm-6 col-md-3	col-lg-3	col-xs-12">
                       <div class="opt_flex__item edit_icon">
-                    <span><i class="material-icons mat-btn-icon-btn opt_color_icon_font">edit</i>
-                    <i class="material-icons mat-btn-icon-btn opt_color_icon_font">delete</i></span>
+                        <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">edit</i></button>
+                        <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">delete</i></button>
                       </div>
                     </div>
                   </div>
@@ -379,7 +367,7 @@
                     <div class="opt_flex__item chck-box horizontally-center"> <mat-checkbox></mat-checkbox> </div>
                     <div class="opt_flex__item des-box">
                       <div class="opt-txt__body1 text-truncate"> Venue Hire Inquiry</div>
-                      <div class="opt-txt__body1-small"><i class="material-icons mat-btn-icon-btn opt-txt__tertiary indicator-icon">attach_file</i><span class="opt-txt__tertiary"> Doc </span>|v1.01 |<span class="opt-txt__secondary">04-Jan-2017</span> </div>
+                      <div class="opt-txt__body1-small"><span class="symbol_icon"><i class="material-icons mat-btn-icon-btn opt-txt__tertiary indicator-icon">attach_file</i></span><span class="opt-txt__tertiary"> Doc </span>|v1.01 |<span class="opt-txt__secondary">04-Jan-2017</span> </div>
                     </div>
                   </div>
                 </div>
@@ -393,8 +381,8 @@
                 </div>
                 <div class="col-sm-6 col-md-3	col-lg-3	col-xs-12">
                   <div class="opt_flex__item edit_icon">
-                    <span><i class="material-icons mat-btn-icon-btn opt_color_icon_font">edit</i>
-                    <i class="material-icons mat-btn-icon-btn opt_color_icon_font">delete</i></span>
+                    <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">edit</i></button>
+                    <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">delete</i></button>
                   </div>
                 </div>
               </div>
@@ -684,7 +672,7 @@
                               <div class="opt_flex__item chck-box horizontally-center"> <mat-checkbox></mat-checkbox> </div>
                               <div class="opt_flex__item des-box">
                                 <div class="opt-txt__body2 opt-fontweight--bold opt-txt__body2 text-truncate"> No FS Category  Available </div>
-                                <div class="opt-txt__body1-small"><i class="material-icons opt-txt__tertiary">attach_file</i> <span class="opt-txt__tertiary">PDF</span> | V2.89 |<i class="material-icons opt_txt_color_tertiary">comment</i> </div>
+                                <div class="opt-txt__body1-small"><span class="symbol_icon"><span class="symbol_icon"><i class="material-icons mat-btn-icon-btn opt-txt__tertiary indicator-icon">attach_file</i></span></span> <span class="opt-txt__tertiary">PDF</span> | V2.89 |<i class="material-icons opt_txt_color_tertiary">comment</i> </div>
                               </div>
                             </div>
                           </div>
@@ -724,7 +712,7 @@
                           <div class="opt_flex__item chck-box horizontally-center"> <mat-checkbox></mat-checkbox> </div>
                           <div class="opt_flex__item des-box">
                             <div class="opt-txt__body2 opt-fontweight--bold opt-txt__body2 text-truncate"> No FS Category  Available </div>
-                            <div class="opt-txt__body1-small"><i class="material-icons opt-txt__tertiary">attach_file</i> <span class="opt-txt__tertiary">PDF</span> | V2.89 |<i class="material-icons opt_txt_color_tertiary">comment</i> </div>
+                            <div class="opt-txt__body1-small"><span class="symbol_icon"><i class="material-icons mat-btn-icon-btn opt-txt__tertiary indicator-icon">attach_file</i></span> <span class="opt-txt__tertiary">PDF</span> | V2.89 |<i class="material-icons opt_txt_color_tertiary">comment</i> </div>
                           </div>
                         </div>
                       </div>
@@ -1652,26 +1640,42 @@
         <div class="host">
           <!--Header-->
           <div class="header-row">
-            <div class="opt_flex--container">
-              <div class="opt_flex__item horizontally-center">
-                <div class="row">
-                  <div class="col-sm-6 col-md-7	col-lg-8	col-xs-12">
-                    <div class="opt_flex--container">
-                      <div class="opt_flex__item chck-box horizontally-center"> <mat-checkbox></mat-checkbox> </div>
-                      <div class="opt_flex__item des-box horizontally-center opt-txt__body2">Select All <span class="cage_selected"> 2 Items</span></div>
-                    </div>
-                  </div>
-                  <div class="col-sm-6 col-md-5	col-lg-4	col-xs-12">
-                    <div class="opt_flex__item--inherit horizontally-center action-btn">
-                      <i class="material-icons opt-txt__secondary">filter_list</i>
-                      <button mat-button class="btn-icon-text"><i class="material-icons">add</i> <span class="btn-text">Add</span></button>
-                      <button mat-button class="btn-icon-text"><i class="material-icons">delete</i> <span class="btn-text">Delete</span></button>
-                    </div>
-                  </div>
+            <div class="row">
+              <div class="col-sm-6 col-md-7	col-lg-8	col-xs-12">
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item chck-box horizontally-center"> <mat-checkbox></mat-checkbox> </div>
+                  <div class="opt_flex__item des-box horizontally-center opt-txt__body2">Select All <span class="cage_selected"> 2 Items</span></div>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-12 col-md-5	col-lg-5 just-content-end">
+                <div class="header_row--action-wrapper btn-group">
+                  <button mat-button class="btn-icon-text"><i class="material-icons">add</i> <span class="btn-text">Add</span></button>
+                  <button mat-button class="btn-icon-text"><i class="material-icons">delete</i> <span class="btn-text">Delete</span></button>
                 </div>
               </div>
             </div>
           </div>
+          <!--<div class="header-row">-->
+            <!--<div class="opt_flex&#45;&#45;container">-->
+              <!--<div class="opt_flex__item horizontally-center">-->
+                <!--<div class="row">-->
+                  <!--<div class="col-sm-6 col-md-7	col-lg-8	col-xs-12">-->
+                    <!--<div class="opt_flex&#45;&#45;container">-->
+                      <!--<div class="opt_flex__item chck-box horizontally-center"> <mat-checkbox></mat-checkbox> </div>-->
+                      <!--<div class="opt_flex__item des-box horizontally-center opt-txt__body2">Select All <span class="cage_selected"> 2 Items</span></div>-->
+                    <!--</div>-->
+                  <!--</div>-->
+                  <!--<div class="col-sm-6 col-md-5	col-lg-4	col-xs-12">-->
+                    <!--<div class="opt_flex__item&#45;&#45;inherit horizontally-center action-btn">-->
+                      <!--<i class="material-icons opt-txt__secondary">filter_list</i>-->
+                      <!--<button mat-button class="btn-icon-text"><i class="material-icons">add</i> <span class="btn-text">Add</span></button>-->
+                      <!--<button mat-button class="btn-icon-text"><i class="material-icons">delete</i> <span class="btn-text">Delete</span></button>-->
+                    <!--</div>-->
+                  <!--</div>-->
+                <!--</div>-->
+              <!--</div>-->
+            <!--</div>-->
+          <!--</div>-->
 
           <!--****1st row*****-->
           <mat-accordion>
@@ -1837,25 +1841,20 @@
           <div class="history">
             <!--Header-->
             <div class="header-row">
-            <div class="opt_flex--container">
-              <div class="opt_flex__item horizontally-center">
-                <div class="row">
-                  <div class="col-sm-6 col-md-8	col-lg-8	col-xs-12">
-                    <div class="opt__subtitle-2-small opt_txt_color_tertiary">3 items</div>
-                  </div>
-                  <div class="col-sm-6 col-md-4	col-lg-4	col-xs-12">
-                      <div class="opt_flex__item ">
-                      <button mat-button class="mat-btn-primary opt_color_btn_default show-all"><i class="material-icons">visibility</i>Show All</button>
+              <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-7	col-lg-7">
+                  <div class="opt__subtitle-2-small opt_txt_color_tertiary">3 items</div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-5	col-lg-5 just-content-end">
+                    <div class="header_row--action-wrapper btn-group">
+                      <button mat-button class="btn-icon-text"><i class="material-icons">visibility</i>Show All</button>
                     </div>
-                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
             <!--Content-->
-            <div class="opt_flex--container">
-            <div class="opt_flex__item horizontally-center">
+            <div class="history_list_item">
               <div class="row">
                   <div class="col-xs-12 col-sm-6 col-md-2	col-lg-2">
                     <div class="opt_flex--container">
@@ -1890,10 +1889,8 @@
                     </div>
                   </div>
                 </div>
-            </div>
           </div>
-            <div class="opt_flex--container">
-            <div class="opt_flex__item horizontally-center">
+            <div class="history_list_item">
               <div class="row">
                   <div class="col-sm-6 col-md-2	col-lg-2	col-xs-12">
                     <div class="opt_flex--container">
@@ -1928,10 +1925,8 @@
                     </div>
                   </div>
                 </div>
-            </div>
           </div>
-            <div class="opt_flex--container">
-            <div class="opt_flex__item horizontally-center">
+            <div class="history_list_item">
               <div class="row">
                   <div class="col-sm-6 col-md-2	col-lg-2	col-xs-12">
                     <div class="opt_flex--container">
@@ -1966,7 +1961,6 @@
                     </div>
                   </div>
                 </div>
-            </div>
           </div>
           </div>
         </mat-step>

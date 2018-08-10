@@ -79,8 +79,13 @@
 
 .opt {
   &_collection-despatch-popup {
-    .opt_flex--container{
-      flex-wrap:inherit !important;
+    .opt_collection-despatch-list-wrapper{
+      border-top:2px solid #e0e0e0;
+      margin-top:20px;
+      margin-bottom:40px;
+    }
+    .list-item-count{
+      margin-top:20px;
     }
     .section-panel{
       border: 1px solid #b6b8b9;
@@ -88,36 +93,34 @@
       margin-top: 10px;
       font-size: 14px;
       background-color: $white;
-    }
-    .inner-contxt{
-      flex-direction: column;
-      margin: 10px;
-    }
-    .opt_address_cage{
-      border: 1px dashed #ababab;
-      padding: 15px;
-      margin: 30px 0px;
-      background-color: #fafafa;
-
-      @include box-shadow(1);
-
-      mat-label{
-        margin-bottom: 20px;
-      }
-    }
-    .flex-item-margin{
-      margin: 10px;
-    }
-    .despatch-checkbox{
-      position: relative;
-      top:16px;
-    }
-    .more-info-checkbox{
-      margin-left: -20px;
+      padding:20px;
     }
     .mat-form-field{
-      display: block;
-      padding-right: 0px !important;
+      padding-right:0px !important;
+    }
+    .opt_flex--container{
+      flex-wrap:inherit !important;
+    }
+    .despatch-checkbox{
+      @include respond-to('x-small') {
+        position: relative;
+        top:0px;
+      }
+      @include respond-to('medium') {
+        position: relative;
+        top:16px;
+      }
+    }
+    .despatch-note-checkbox{
+      @include respond-to('x-small') {
+        text-align: left;
+      }
+      @include respond-to('medium') {
+        text-align: right;
+      }
+    }
+    .mat-checkbox-layout{
+      margin-left: 0px;
     }
     .opt--depth__2{
       margin:30px 15px 20px 15px;
@@ -680,28 +683,15 @@
     }
   }
   &_ticket-scan-popup{
-    .mat-list{
-      padding-top:0px;
-    }
-    .mat-expansion-panel-list{
-      box-shadow:none !important;
-      background-color: #fafafa !important;
-    }
-    .mat-expansion-panel-header{
-      padding:0 10px 0 10px;
-      i{
-        margin-right:15px;
-      }
-    }
-    .padding-left-10{
-      padding-left:10px;
-    }
-    .row{
-      padding:15px 15px 15px 10px;
-    }
-    .ticket-scan-list-wrapper{
+    .ticket-scan-wrapper{
       border-top:2px solid #e0e0e0;
       margin-top:20px;
+    }
+    mat-list{
+      padding-top:0px;
+    }
+    .ticket-list-wrapper{
+      padding:15px 10px 15px 10px;
     }
   }
   &_collection-despatch-body{
@@ -709,3 +699,19 @@
   }
 }
 
+/*Global classes*/
+.pull-xs-left{
+  @include respond-to('x-small') {
+    float: left !important;
+  }
+}
+.pull-sm-left{
+  @include respond-to('small') {
+    float: left !important;
+  }
+}
+.pull-md-right{
+  @include respond-to('medium') {
+    float: right !important;
+  }
+}
