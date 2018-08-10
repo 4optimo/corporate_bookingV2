@@ -1,0 +1,181 @@
+<div class="opt_modal-content opt-host-add-popup">
+  <div class="mat-dialog-content">
+    <div class="opt_modal-header">
+      <div class="test opt--depth__1">
+        <div class="opt_flex--container test-wrapper">
+          <div class="opt_flex__item--inherit test-inner">
+            <div class="inner-icon">
+              <i class="material-icons">contacts</i>
+            </div>
+          </div>
+          <div class="opt_flex__item test-inner-expand">
+            <div class="title">
+              <h1 mat-dialog-title class="opt__subtitle-2"> Host</h1>
+              <p class="opt-txt__body1">Create a new Host</p>
+            </div>
+          </div>
+          <div class="opt_flex__item--inherit test-inner-2">
+            <div class="inner-action">
+              <button class="material-icons icon1">launch</button>
+              <button class="material-icons icon2" (click)="close()">close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="opt_modal-body">
+
+      <!--modal body start-->
+      <div class="host-add-popup">
+
+        <div class="host-information">
+          <section class="opt-section__heading">
+            <mat-accordion>
+              <mat-expansion-panel #myPanel2 class="section-heading __main" expanded>
+                <mat-expansion-panel-header class="__title" >
+                  <h1>Host Information</h1>
+                </mat-expansion-panel-header>
+                    <div class="opt_flex--container client-info">
+                      <div class="opt_flex__item padding-left">
+                            <mat-form-field class="example-full-width">
+                              <input matInput placeholder="Client Name" value="" >
+                              <mat-icon matSuffix><i class="material-icons">search</i></mat-icon>
+                            </mat-form-field>
+                      </div>
+                    </div>
+                    <div class="opt_flex--container">
+                      <div class="opt_flex__item padding-left">
+                        <mat-form-field class="example-full-width">
+                          <mat-select placeholder="Title" [(ngModel)]="selectedValue1" name="Mr" required>
+                            <mat-option *ngFor="let currency of currencys" [value]="currency.value">
+                              {{currency.viewValue}}
+                            </mat-option>
+                          </mat-select>
+                        </mat-form-field>
+                      </div>
+                      <div class="opt_flex__item">
+                        <mat-form-field class="example-full-width">
+                          <input matInput placeholder="First Name" value="">
+                        </mat-form-field>
+                      </div>
+                      <div class="opt_flex__item">
+                        <mat-form-field class="example-full-width">
+                          <input matInput placeholder="Last Name" value="">
+                        </mat-form-field>
+                      </div>
+                      <div class="opt_flex__item">
+                        <mat-form-field class="example-full-width">
+                          <input matInput placeholder="Company Name" value="">
+                        </mat-form-field>
+                      </div>
+                    </div>
+              </mat-expansion-panel>
+            </mat-accordion>
+          </section>
+        </div>
+
+        <div class="contact-details">
+          <section class="opt-section__heading">
+            <mat-accordion>
+              <mat-expansion-panel #myPanel2 class="section-heading __main" expanded>
+                <mat-expansion-panel-header class="__title" >
+                  <h1>Contact Details</h1>
+                </mat-expansion-panel-header>
+                    <div class="opt_flex--container client-general-info">
+                      <div class="opt_flex__item">
+                        <mat-form-field class="example-full-width">
+                          <input matInput placeholder="Post Code" value="">
+                        </mat-form-field>
+                      </div>
+                      <div class="opt_flex__item">
+                        <mat-form-field class="example-full-width">
+                          <input matInput placeholder="Email" value="">
+                        </mat-form-field>
+                      </div>
+                      <div class="opt_flex__item">
+                        <mat-form-field class="example-full-width">
+                          <input matInput placeholder="Office Telephone" value="">
+                        </mat-form-field>
+                      </div>
+                    </div>
+                    <div class="opt_flex--container">
+                      <div class="opt_flex__item">
+                        <mat-form-field class="example-full-width">
+                          <input matInput placeholder="Street" value="">
+                        </mat-form-field>
+                      </div>
+                      <div class="opt_flex__item">
+                        <mat-form-field class="example-full-width">
+                          <input matInput placeholder="Mobile" value="">
+                        </mat-form-field>
+                      </div>
+                      <div class="opt_flex__item">
+                        <mat-form-field class="example-full-width">
+                          <input matInput placeholder="Fax" value="">
+                        </mat-form-field>
+                      </div>
+                    </div>
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item">
+                    <mat-form-field class="example-full-width">
+                      <input matInput placeholder="City" value="">
+                    </mat-form-field>
+                  </div>
+                  <div class="opt_flex__item">
+                    <mat-form-field class="example-full-width">
+                      <input matInput placeholder="State" value="">
+                    </mat-form-field>
+                  </div>
+                </div>
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item">
+                    <mat-form-field class="example-full-width">
+                      <input matInput placeholder="Post" value="">
+                    </mat-form-field>
+                  </div>
+                  <div class="opt_flex__item padding-left">
+                    <mat-form-field class="example-full-width">
+                        <mat-select placeholder="Country" [(ngModel)]="selectedValue1" name="" required>
+                          <mat-option *ngFor="let currency of currencys" [value]="currency.value">
+                            {{currency.viewValue}}
+                          </mat-option>
+                        </mat-select>
+                      </mat-form-field>
+                  </div>
+                </div>
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item add-alternative-contact">
+                    <div class="add-more-section">
+                      <div class="icon-line">
+                      </div>
+                      <label>Additional Contact</label>
+                      <div class="icon-wrapper">
+                        <i class="material-icons">add</i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </mat-expansion-panel>
+            </mat-accordion>
+          </section>
+        </div>
+      </div>
+      <br>
+      <div class="opt_flex--container">
+        <div class="opt_flex__item"></div>
+        <div class="opt_flex__item--inherit">
+          <button class="mat-btn-primary mat-button" (click)="close()">Save</button>
+        </div>
+        <div class="opt_flex__item--inherit">
+          <button class="mat-btn-primary mat-button" (click)="close()">Close</button>
+        </div>
+      </div>
+
+      </div>
+      <!--modal body end-->
+
+
+    </div>
+</div>
