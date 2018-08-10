@@ -27,7 +27,7 @@
       <!--modal body start-->
       <div class="opt_collection-despatch-popup opt_corporate-client-popup">
         <div class="opt_flex--container">
-          <div class="opt_flex__item opt-txt__right">
+          <div class="opt_flex__item opt-txt__right list-item-count">
             <mat-label class="opt-txt__body2-small">2 Items</mat-label>
           </div>
         </div>
@@ -39,36 +39,42 @@
           <app-opt-collection-dispatch-list></app-opt-collection-dispatch-list>
         </div>
         <!--List end-->
-
-
-        <div class="opt_flex--container">
-          <div class="opt_flex__item section-panel" >
-            <div class="opt_flex--container inner-contxt">
-              <div class="opt_flex__item">
-                <mat-form-field class="example-full-width">
-                  <input matInput placeholder="Despatch Comments (Options)" value="">
-                </mat-form-field>
+        <div class="section-panel">
+          <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+              <div class="opt_flex--container">
+                <div class="opt_flex__item">
+                  <mat-form-field class="example-full-width">
+                    <input matInput placeholder="Despatch Comments (Options)" value="">
+                  </mat-form-field>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="opt_flex--container">
-          <div class="opt_flex__item section-panel" >
-            <div class="row opt_flex--container">
-              <div class="col-sm-12 col-md-6 opt_flex__item padding-left flex-item-margin" >
-                <mat-form-field class="example-full-width">
-                  <input matInput placeholder="Tracking No." value="">
-                </mat-form-field>
+        <div class=" section-panel">
+          <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-6">
+              <div class="opt_flex--container">
+                <div class="opt_flex__item">
+                  <mat-form-field class="example-full-width">
+                    <input matInput placeholder="Tracking No." value="">
+                  </mat-form-field>
+                </div>
               </div>
-              <div class="col-sm-12 col-md-6 opt_flex__item padding-left flex-item-margin opt-txt__right" >
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6">
+              <div class="opt_flex__item despatch-note-checkbox">
                 <mat-checkbox  class="opt-txt__body1 despatch-checkbox">Print Despatch Note</mat-checkbox>
               </div>
             </div>
           </div>
         </div>
-        <div class="opt_flex--container">
-          <div class="opt_flex__item" >
-            <mat-checkbox  class="opt-txt__body1 more-info-checkbox">Display more information</mat-checkbox>
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-12">
+            <div class="opt_flex__item">
+              <mat-checkbox  class="opt-txt__body1">Display more information</mat-checkbox>
+            </div>
           </div>
         </div>
         <div class="opt_flex--container opt-section__heading">

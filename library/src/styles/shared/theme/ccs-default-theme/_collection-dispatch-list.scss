@@ -1,20 +1,19 @@
-.opt_collection-despatch-list-wrapper{
-  border-top:2px solid #e0e0e0;
-  margin-bottom: 20px;
-  margin-top: 20px;
-
-.despatch-list-item{
-    position: relative;
-    top: 3px;
+.opt_collection-despatch-list{
+  .list-wrapper{
+    border-bottom: 1px solid #e0e0e0;
+    padding:5px 10px;
+    [class*="col-"]{
+      min-height: 40px;
+      display: flex;
+    }
   }
-  .mat-list{
-    padding-top: 2px;
+  .opt_flex--container{
+    flex-grow: 1;
   }
-  .row{
-    padding:10px 10px 10px 0px;
+  p{
+    margin-bottom: 0px;
   }
-  .list-checkbox{
-    margin-right: -50px;
-    margin-left: 5px;
+  mat-checkbox{
+    padding-right:10px;
   }
 }
