@@ -1,0 +1,29 @@
+.opt_data-table{
+  .test-wrapper{
+    justify-content: flex-end;
+  }
+  .bottom-section{
+    justify-content: flex-end;
+    padding: 20px 0;
+  }
+  &.__header{
+    height: 55px;
+    background-color: #f6f6f6;
+  }
+  .opt_modal-content {
+    .opt_modal-body {
+      padding: 0 24px;
+    }
+    .data-list{
+      .mat-form-field-infix{
+        width: auto;
+        padding: 0;
+      }
+      .mat-input-element{
+        width: 70px;
+        font-size: 12px;
+        text-align: right;
+      }
+    }
+  }
+}
