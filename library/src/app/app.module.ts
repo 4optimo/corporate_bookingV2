@@ -275,7 +275,7 @@ export class DemoMaterialModule {}
     RouterModule.forRoot(appRoutes)
   ],
 
-  entryComponents:[OptPopupModalComponent, OptPopupWindowComponent, OptClientPopupComponent, OptIndividualClientPopupComponent, OptPaymentModalComponent,OptPackagePopupComponent, OptItemPopupComponent],
+  entryComponents:[OptPopupModalComponent, OptPopupWindowComponent, OptClientPopupComponent, OptIndividualClientPopupComponent, OptPaymentModalComponent,OptPackagePopupComponent, OptItemPopupComponent, OptPackageCartComponent],
   providers: [{provide: APP_BASE_HREF, useValue : '/' }],
 
   bootstrap: [AppComponent],
