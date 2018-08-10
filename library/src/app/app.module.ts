@@ -106,6 +106,7 @@ import { OptPaymentModalComponent } from './opt-payment-modal/opt-payment-modal.
 import { OptPackagePopupComponent } from './opt-package-popup/opt-package-popup.component';
 import {OptItemPopupComponent} from "./opt-item-popup/opt-item-popup.component";
 import { OptPackageCartComponent } from './opt-package-cart/opt-package-cart.component';
+import { OptDataTableComponent } from './opt-data-table/opt-data-table.component';
 
 
 
@@ -246,6 +247,7 @@ export class DemoMaterialModule {}
     OptPackagePopupComponent,
     OptItemPopupComponent,
     OptPackageCartComponent,
+    OptDataTableComponent,
       // OptDocumentSelectComponent,
 
     RoutingProjectComponent,
@@ -275,7 +277,18 @@ export class DemoMaterialModule {}
     RouterModule.forRoot(appRoutes)
   ],
 
-  entryComponents:[OptPopupModalComponent, OptPopupWindowComponent, OptClientPopupComponent, OptIndividualClientPopupComponent, OptPaymentModalComponent,OptPackagePopupComponent, OptItemPopupComponent, OptPackageCartComponent],
+  entryComponents:[
+    OptPopupModalComponent,
+    OptPopupWindowComponent,
+    OptClientPopupComponent,
+    OptIndividualClientPopupComponent,
+    OptPaymentModalComponent,
+    OptPackagePopupComponent,
+    OptItemPopupComponent,
+    OptPackageCartComponent,
+    OptDataTableComponent
+  ],
+
   providers: [{provide: APP_BASE_HREF, useValue : '/' }],
 
   bootstrap: [AppComponent],
