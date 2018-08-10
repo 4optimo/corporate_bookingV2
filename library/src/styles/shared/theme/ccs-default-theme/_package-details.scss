@@ -312,6 +312,13 @@
     .bottom-section{
       align-self: flex-end;
     }
+    .btn-select{
+      &:focus, &:active, &:hover, &:visited{
+        background-color: #f5766c !important;
+        color: white;
+        border: none;
+      }
+    }
   }
 }
 
@@ -346,4 +353,16 @@
   }
 }
 
-
+.opt_item-popup{
+  .ref_no{
+    position:  relative;
+    .notification_count{
+      font-size: 10px;
+      background-color: #ddd;
+      padding: 3px;
+      border-radius: 50%;
+      right: 5px;
+      color: #000;
+    }
+  }
+}

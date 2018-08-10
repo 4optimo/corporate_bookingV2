@@ -22,87 +22,46 @@
         </div>
       </div>
     </div>
-    <div class="opt_modal-body  opt_collection-despatch-body opt_ticket-scan-popup">
-
+    <div class="opt_modal-body">
       <!--modal body start-->
-      <div class="opt_collection-despatch-popup opt_corporate-client-popup">
+      <div class="opt_ticket-scan-popup">
         <div class="opt_flex--container">
           <div class="opt_flex__item opt-txt__right">
-            <mat-label class="opt-txt__body2-small">1 Items</mat-label>
+            <mat-label class="opt-txt__body2-small">2 Items</mat-label>
           </div>
         </div>
-
-
-        <!--List start-->
-        <div class="ticket-scan-list">
-          <div class="opt_flex--container">
-            <div class="opt_flex__item">
-              <span>092883|</span>
-              <span>Country Stand Admission</span>
-            </div>
-            <div class="opt_flex__item">
-              <span>2</span>
-            </div>
-          </div>
-        </div>
-        <mat-accordion>
-          <mat-expansion-panel>
-            <mat-expansion-panel-header>
-              <mat-panel-title>
-                <div class="opt_flex--container">
-                  <div class="opt_flex__item">
-                    <i class="material-icons">local_offer</i>
-                    <span class="opt-txt__body1-small">Tickets for Child</span>
+        <div class="ticket-scan-wrapper">
+          <div class="ticket-list-wrapper">
+            <div class="opt_flex--container">
+              <div class="opt_flex__item">
+                <mat-list>
+                  <div class="list-wrapper">
+                    <div class="row">
+                      <div class="col-xs-10 col-sm-3">
+                        <div class="opt_flex--container tc-flex-item__center">
+                          <div class="opt_flex__item">
+                            <span class="opt-txt__body2-small opt-txt__quaternary despatch-list-item">092883 |</span>
+                            <span class="opt-txt__body2-small despatch-list-item">Country Stand Admission</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xs-12 col-sm-3">
+                        <div class="opt_flex--container tc-flex-item__center">
+                          <div class="opt_flex__item">
+                            <span class="opt-txt__body1-small despatch-list-item">2</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </mat-panel-title>
-              <mat-panel-description>
-                <span class="opt-txt__body2-small">3 <span class="opt-txt__body1-small">out of</span> 5</span>
-              </mat-panel-description>
-              <i class="material-icons">scanner</i>
-            </mat-expansion-panel-header>
-            <div class="row">
-              <div class="col-sm-1 list-checkbox">
-                <div class="opt_flex__item">
-                  <mat-checkbox  class="opt-txt__body1 more-info-checkbox"></mat-checkbox>
-                </div>
-              </div>
-              <div class="col-sm-4">
-                <div class="opt_flex__item">
-                  <span class="opt-txt__body2-small despatch-list-item">Ticket 1</span>
-                </div>
-              </div>
-              <div class="col-sm-2">
-                <div class="opt_flex__item">
-                    <span class="opt-txt__body2-small opt-txt__caption despatch-list-item">002122234</span>
-                </div>
-              </div>
-              <div class="col-sm-5">
-                <div class="opt_flex__item  opt-txt__right">
-                  <i class="material-icons">scanner</i>
-                  <i class="material-icons">close</i>
-                </div>
+                </mat-list>
               </div>
             </div>
-          </mat-expansion-panel>
-        </mat-accordion>
-
-
-
-
-        <!--List end-->
-
-        <br>
-        <div class="opt_flex--container">
-          <div class="opt_flex__item"></div>
-          <div class="opt_flex__item--inherit">
-            <button class="mat-btn-primary mat-button" (click)="close()">Save</button>
           </div>
+          <mat-divider></mat-divider>
         </div>
       </div>
-
     </div>
-
   </div>
 </div>
 

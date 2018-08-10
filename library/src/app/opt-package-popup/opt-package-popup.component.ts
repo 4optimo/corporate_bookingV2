@@ -1,6 +1,9 @@
 import {Component, Inject, OnInit, ViewChild} from '@angular/core';
+import {MatDialog} from "@angular/material";
 import {ModalContentComponent} from "../modal-content/modal-content.component";
 import {MatDialogRef, MAT_DIALOG_DATA, MatExpansionPanel} from "@angular/material";
+import {OptIndividualClientPopupComponent} from "../opt-individual-client-popup/opt-individual-client-popup.component";
+import {OptPackageCartComponent} from "../opt-package-cart/opt-package-cart.component";
 
 @Component({
   selector: 'app-opt-package-popup',
