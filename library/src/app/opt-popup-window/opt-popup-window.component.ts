@@ -11,6 +11,7 @@ import {OptPaymentModalComponent} from "../opt-payment-modal/opt-payment-modal.c
 import {OptEmailDocumentPopupComponent} from "../opt-email-document-popup/opt-email-document-popup.component";
 import {OptTicketScanPopupComponent} from "../opt-ticket-scan-popup/opt-ticket-scan-popup.component";
 import {OptPackagePopupComponent} from "../opt-package-popup/opt-package-popup.component";
+import {OptHostAddPopupComponent} from "../opt-host-add-popup/opt-host-add-popup.component";
 
 @Component({
   selector: 'app-opt-popup-window',
@@ -135,6 +136,14 @@ export class OptPopupWindowComponent implements OnInit {
 
   }
 
+  public  openDialog(){
+    this.dialog.open(OptHostAddPopupComponent,{
+      panelClass:'custom-dialog-container',
+      height: 'auto',
+      width: '80%'
+    });
+
+  }
   ngOnInit() {
   }
 

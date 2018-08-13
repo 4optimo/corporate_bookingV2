@@ -1,4 +1,5 @@
 import { Component} from '@angular/core';
+import {ModalContentComponent} from "../modal-content/modal-content.component";
 
 @Component({
   selector: 'app-opt-booking-activities',
