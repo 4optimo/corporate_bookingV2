@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material';
  import {ModalContentComponent} from "../modal-content/modal-content.component";
+import {OptHostAddPopupComponent} from "../opt-host-add-popup/opt-host-add-popup.component";
 
 
 @Component({
@@ -17,6 +18,15 @@ export class ModalWindowComponent implements OnInit {
 
   public  openModal(){
     this.dialog.open(ModalContentComponent,{
+      data: {name:'sass test component'},
+      panelClass:'custom-dialog-container'
+
+    });
+
+  }
+
+  public  openDialog(){
+    this.dialog.open(OptHostAddPopupComponent,{
       data: {name:'sass test component'},
       panelClass:'custom-dialog-container'
 

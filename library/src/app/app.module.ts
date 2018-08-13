@@ -107,6 +107,7 @@ import { OptPackagePopupComponent } from './opt-package-popup/opt-package-popup.
 import {OptItemPopupComponent} from "./opt-item-popup/opt-item-popup.component";
 import { OptPackageCartComponent } from './opt-package-cart/opt-package-cart.component';
 import { OptDataTableComponent } from './opt-data-table/opt-data-table.component';
+import {OptHostAddPopupComponent} from "./opt-host-add-popup/opt-host-add-popup.component";
 
 
 
@@ -149,6 +150,8 @@ const appRoutes: Routes = [
   { path: 'opt-package-popup', component: OptPackagePopupComponent},
   { path: 'app-opt-404', component: Opt404Component},
   { path: 'app-package-details', component: OptPackageDetailsComponent},
+  { path: 'opt-host-add-popup', component: OptHostAddPopupComponent},
+
 
 
    { path: 'opt-pageloader', component: OptPageloaderComponent},
@@ -248,6 +251,7 @@ export class DemoMaterialModule {}
     OptItemPopupComponent,
     OptPackageCartComponent,
     OptDataTableComponent,
+    OptHostAddPopupComponent,
       // OptDocumentSelectComponent,
 
     RoutingProjectComponent,
