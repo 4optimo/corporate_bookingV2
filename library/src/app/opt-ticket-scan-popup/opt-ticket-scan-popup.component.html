@@ -1,4 +1,4 @@
-<div class="opt_modal-content opt-corporate-client">
+<div class="opt_modal-content">
   <div class="mat-dialog-content">
     <div class="opt_modal-header ">
       <div class="test opt--depth__1">
@@ -22,7 +22,7 @@
         </div>
       </div>
     </div>
-    <div class="opt_modal-body">
+    <div class="opt_modal-body opt_collection-despatch-body">
       <!--modal body start-->
       <div class="opt_ticket-scan-popup">
         <div class="opt_flex--container">
@@ -30,35 +30,208 @@
             <mat-label class="opt-txt__body2-small">2 Items</mat-label>
           </div>
         </div>
+        <div class="ticket-list-row">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="opt_flex--container">
+                <div class="opt_flex__item opt_flex__item--vcenter">
+                  <p class="opt-txt__body2-small"><span class="opt-txt__quaternary">092883 | </span>Country Stand Admission</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-8">
+              <div class="opt_flex--container">
+                <div class="opt_flex__item opt_flex__item--vcenter">
+                  <p class="opt-txt__body2-small">2</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="ticket-scan-wrapper">
-          <div class="ticket-list-wrapper">
-            <div class="opt_flex--container">
-              <div class="opt_flex__item">
-                <mat-list>
-                  <div class="list-wrapper">
+          <mat-accordion>
+            <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  <div class="row">
+                    <div class="col-xs-7 col-sm-8 col-md-4">
+                      <div class="opt_flex--container">
+                        <div class="opt_flex__item opt_flex__item--vcenter">
+                          <p class="opt-txt__body2-small"><span class="opt-txt__quaternary">092883 | </span>Country Stand Admission</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-4 col-sm-2 col-md-6">
+                      <div class="opt_flex--container">
+                        <div class="opt_flex__item opt_flex__item--vcenter">
+                          <p class="opt-txt__body2-small">10 <span class="opt-txt__caption">out of</span> 10</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-1 col-sm-2 col-md-2"></div>
+                  </div>
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <!--expanded panel content-->
+              <div class="row">
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                  <div class="opt_flex--container">
+                    <div class="opt_flex__item opt_flex__item--vcenter">
+                      <mat-checkbox></mat-checkbox>
+                      <p class="opt-txt__body2-small">Ticket 1</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-6">
+                  <div class="opt_flex--container">
+                    <div class="opt_flex__item opt_flex__item--vcenter">
+                      <p class="opt-txt__body2-small">00212234</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-2">
+                  <div class="opt_flex--container">
+                    <div class="opt_flex__item opt_flex__item--vcenter list-icon-wrapper">
+                      <i class="material-icons mat-grey-icon">scanner</i>
+                      <i class="material-icons mat-grey-icon">close</i>
+                    </div>
+                  </div>
+                </div>
+                <div class="row ticket-list-divider">
+                  <div class="col-md-12">
+                    <mat-list>
+                      <mat-divider></mat-divider>
+                    </mat-list>
+                  </div>
+                </div>
+              </div>
+            </mat-expansion-panel>
+            <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                <mat-panel-title>
                     <div class="row">
-                      <div class="col-xs-10 col-sm-3">
-                        <div class="opt_flex--container tc-flex-item__center">
-                          <div class="opt_flex__item">
-                            <span class="opt-txt__body2-small opt-txt__quaternary despatch-list-item">092883 |</span>
-                            <span class="opt-txt__body2-small despatch-list-item">Country Stand Admission</span>
+                      <div class="col-xs-5 col-sm-8 col-md-4">
+                        <div class="opt_flex--container">
+                          <div class="opt_flex__item opt_flex__item--vcenter">
+                            <p class="opt-txt__body2-small"><span class="opt-txt__quaternary">092883 | </span>Country Stand Admission</p>
                           </div>
                         </div>
                       </div>
-                      <div class="col-xs-12 col-sm-3">
-                        <div class="opt_flex--container tc-flex-item__center">
-                          <div class="opt_flex__item">
-                            <span class="opt-txt__body1-small despatch-list-item">2</span>
+                      <div class="col-xs-4 col-sm-2 col-md-6">
+                        <div class="opt_flex--container">
+                          <div class="opt_flex__item opt_flex__item--vcenter">
+                            <p class="opt-txt__body2-small">3 <span class="opt-txt__caption">out of</span> 5</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xs-1 col-sm-2 col-md-2">
+                        <div class="opt_flex--container">
+                          <div class="opt_flex__item opt_flex__item--vcenter list-icon-wrapper">
+                            <i class="material-icons mat-grey-icon panel-header-icon">scanner</i>
                           </div>
                         </div>
                       </div>
                     </div>
+                  </mat-panel-title>
+              </mat-expansion-panel-header>
+              <div class="row">
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                  <div class="opt_flex--container">
+                    <div class="opt_flex__item opt_flex__item--vcenter">
+                      <mat-checkbox></mat-checkbox>
+                      <p class="opt-txt__body2-small">Ticket 1</p>
+                    </div>
                   </div>
-                </mat-list>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-6">
+                  <div class="opt_flex--container">
+                    <div class="opt_flex__item opt_flex__item--vcenter">
+                      <p class="opt-txt__body2-small">00212234</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-2">
+                  <div class="opt_flex--container">
+                    <div class="opt_flex__item opt_flex__item--vcenter list-icon-wrapper">
+                      <i class="material-icons mat-grey-icon">scanner</i>
+                      <i class="material-icons mat-grey-icon">close</i>
+                    </div>
+                  </div>
+                </div>
+                <div class="row ticket-list-divider">
+                  <div class="col-md-12">
+                    <mat-list>
+                      <mat-divider></mat-divider>
+                    </mat-list>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <mat-divider></mat-divider>
+              <div class="row">
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                  <div class="opt_flex--container">
+                    <div class="opt_flex__item opt_flex__item--vcenter">
+                      <mat-checkbox></mat-checkbox>
+                      <p class="opt-txt__body2-small">Ticket 2</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-6">
+                  <div class="opt_flex--container">
+                    <div class="opt_flex__item opt_flex__item--vcenter">
+                      <p class="opt-txt__body2-small">00212234</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-2">
+                  <div class="opt_flex--container">
+                    <div class="opt_flex__item opt_flex__item--vcenter list-icon-wrapper">
+                      <i class="material-icons mat-grey-icon">scanner</i>
+                      <i class="material-icons mat-grey-icon">close</i>
+                    </div>
+                  </div>
+                </div>
+                <div class="row ticket-list-divider">
+                  <div class="col-md-12">
+                    <mat-list>
+                      <mat-divider></mat-divider>
+                    </mat-list>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                  <div class="opt_flex--container">
+                    <div class="opt_flex__item opt_flex__item--vcenter">
+                      <mat-checkbox></mat-checkbox>
+                      <p class="opt-txt__body2-small">Ticket 3</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-6">
+                  <div class="opt_flex--container">
+                    <div class="opt_flex__item opt_flex__item--vcenter">
+                      <p class="opt-txt__body2-small">00212234</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-2">
+                  <div class="opt_flex--container">
+                    <div class="opt_flex__item opt_flex__item--vcenter list-icon-wrapper">
+                      <i class="material-icons mat-grey-icon">scanner</i>
+                      <i class="material-icons mat-grey-icon">close</i>
+                    </div>
+                  </div>
+                </div>
+                <div class="row ticket-list-divider">
+                  <div class="col-md-12">
+                    <mat-list>
+                      <mat-divider></mat-divider>
+                    </mat-list>
+                  </div>
+                </div>
+              </div>
+            </mat-expansion-panel>
+          </mat-accordion>
         </div>
       </div>
     </div>

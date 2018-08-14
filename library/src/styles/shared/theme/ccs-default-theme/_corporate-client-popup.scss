@@ -675,23 +675,95 @@
     }
   }
   &_email-document-popup{
-    .label-top-margin{
-      margin-top:20px;
+    .email-document-label{
+      min-height: 50px;
+      display: flex;
     }
     .mat-form-field{
       padding-right: 0px;
     }
   }
   &_ticket-scan-popup{
+    .ticket-list-row{
+      background-color: $white;
+      padding-left: 24px;
+      padding-right: 34px;
+      margin:20px 0 0 0 !important;
+      border-top: 2px solid #e0e0e0;
+      border-bottom: 1px solid #e0e0e0;
+      .opt_flex--container{
+        min-height: 50px;
+        display: flex;
+      }
+      p{
+        margin-bottom:0px ;
+      }
+
+      @include respond-to('x-small') {
+        margin-right: 0px;
+      }
+      @include respond-to('small') {
+        margin-right: 34px;
+      }
+    }
     .ticket-scan-wrapper{
-      border-top:2px solid #e0e0e0;
-      margin-top:20px;
-    }
-    mat-list{
-      padding-top:0px;
-    }
-    .ticket-list-wrapper{
-      padding:15px 10px 15px 10px;
+      mat-expansion-panel-header{
+          @include respond-to('small') {
+            min-height: 50px !important;
+          }
+      }
+      p{
+        margin-bottom: 0px;
+        white-space: normal;
+      }
+      .mat-expansion-panel-header-title{
+        .row{
+          flex-grow:1;
+        }
+        .opt_flex--container{
+          min-height: 50px;
+          display: flex;
+        }
+        margin-right:0px;
+      }
+      .mat-expansion-panel-body{
+        padding: 0 24px 0 24px;
+        .opt_flex--container{
+          min-height: 50px;
+          display: flex;
+        }
+      }
+      .mat-grey-icon{
+        font-size: 18px;
+        line-height: 18px;
+        height: auto;
+        color:#909cac !important;
+      }
+      .list-icon-wrapper{
+        justify-content: flex-end;
+        margin-right: -2px;
+      }
+      .mat-checkbox{
+        padding-right:15px;
+      }
+      .list-icon-wrapper{
+        i:first-child{
+          padding-right: 15px;
+        }
+      }
+      .mat-expansion-panel-header{
+        border-bottom: 1px solid #e0e0e0;
+      }
+      .ticket-list-divider{
+        margin-right: 0px;
+        margin-left: 0px;
+        mat-list{
+          padding-top: 0px;
+        }
+      }
+      .panel-header-icon{
+        margin-right:10px;
+      }
     }
   }
   &_collection-despatch-body{
@@ -713,5 +785,10 @@
 .pull-md-right{
   @include respond-to('medium') {
     float: right !important;
+  }
+}
+.opt-text-editor{
+  .ngx-editor-textarea{
+    min-height: 150px !important;
   }
 }
