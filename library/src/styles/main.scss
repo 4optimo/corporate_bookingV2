@@ -66,6 +66,8 @@ $bootstrap-sass-asset-helper: false;
 @import "./shared/theme/ccs-default-theme/payment-modal";
 @import "./shared/theme/ccs-default-theme/data-table";
 @import "./shared/theme/ccs-default-theme/host-add-popup";
+$fa-font-path: "../../node_modules/font-awesome/fonts";
+@import "../../node_modules/font-awesome/scss/font-awesome.scss";
 html,
 body{
   font-family: 'Roboto', sans-serif !important;

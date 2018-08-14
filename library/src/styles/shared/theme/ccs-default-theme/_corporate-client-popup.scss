@@ -787,3 +787,8 @@
     float: right !important;
   }
 }
+.opt-text-editor{
+  .ngx-editor-textarea{
+    min-height: 150px !important;
+  }
+}
