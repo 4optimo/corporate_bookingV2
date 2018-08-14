@@ -11,9 +11,9 @@
       padding-bottom: 15px;
     }
   }
-  .padding-left{
+  /*.padding-left{
     padding-left: 20px;
-  }
+  }*/
 
   .inner-wrapper{
     margin: 0 24px 0 24px;
@@ -44,6 +44,16 @@
     width: 100%;
   }*/
 
+  .additional-contact , .cust-info{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 33%;
+
+    .width{
+      width: 120px;
+    }
+
+  }
   /*.package-details{
     .special-instruction{
       padding-top: 20px;
@@ -54,9 +64,9 @@
     padding-top: 20px;
   }
 
-  /*.additional-contact{
-    width: 40%;
-  }*/
+  .margin-right{
+   margin-right: auto;
+  }
 
   .opt_flex__item{
     flex-basis: 150px;

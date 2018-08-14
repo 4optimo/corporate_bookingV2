@@ -48,7 +48,7 @@
                     </div>
                     <div class="opt_flex--container padding-top">
                       <div class="opt_flex__item padding-left">
-                        <mat-form-field>
+                        <mat-form-field class="width">
                           <mat-select placeholder="Title" [(ngModel)]="selectedValue1" name="Mr" required>
                             <mat-option *ngFor="let currency of currencys" [value]="currency.value">
                               {{currency.viewValue}}
@@ -57,7 +57,7 @@
                         </mat-form-field>
                       </div>
                       <div class="opt_flex__item padding-left">
-                        <mat-form-field>
+                        <mat-form-field class="width">
                           <input matInput placeholder="First Name" value="">
                         </mat-form-field>
                       </div>
@@ -119,25 +119,25 @@
                     </div>
                   </div>
                   <div class="opt_flex--container padding-top additional-contact">
-                    <div class="opt_flex__item padding-left">
-                      <mat-form-field>
+                    <div class="opt_flex__item  p50">
+                      <mat-form-field class="width">
                         <input matInput placeholder="City" value="">
                       </mat-form-field>
                     </div>
-                    <div class="opt_flex__item padding-left">
-                      <mat-form-field>
+                    <div class="opt_flex__item  p50">
+                      <mat-form-field class="width">
                         <input matInput placeholder="State" value="">
                       </mat-form-field>
                     </div>
                   </div>
                   <div class="opt_flex--container padding-top additional-contact">
-                    <div class="opt_flex__item padding-left">
-                      <mat-form-field>
+                    <div class="opt_flex__item p50">
+                      <mat-form-field class="width">
                         <input matInput placeholder="Region/County" value="">
                       </mat-form-field>
                     </div>
-                    <div class="opt_flex__item padding-left">
-                      <mat-form-field>
+                    <div class="opt_flex__item p50">
+                      <mat-form-field class="width">
                           <mat-select placeholder="Country" [(ngModel)]="selectedValue1" name="" required>
                             <mat-option *ngFor="let currency of currencys" [value]="currency.value">
                               {{currency.viewValue}}
