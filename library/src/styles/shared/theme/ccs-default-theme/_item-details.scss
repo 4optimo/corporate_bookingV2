@@ -1,0 +1,38 @@
+.opt-item-details{
+  .opt_circle__confirmed{
+    .icon-icn-item {
+      font-size: 24px;
+      line-height: 45px;
+      color: white;
+    }
+  }
+  .mat-content{
+    padding-left: 5px;
+    .notification_count{
+      //position: absolute;
+      font-size: 12px;
+      background-color: #909cac;
+      border-radius: 50%;
+      color: #ffff;
+      width: 20px;
+      height: 20px;
+      text-align: center;
+      line-height: 20px;
+      font-weight: 500;
+      display: inline-block;
+    }
+  }
+  .package-select-section{
+    padding: 10px 0 0;
+    fieldset{
+      border: 1px dashed;
+      padding: 15px;
+      margin-top: 40px;
+      legend {
+        display: inline-block;
+        width: auto;
+      }
+    }
+  }
+
+}

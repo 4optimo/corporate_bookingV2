@@ -59,14 +59,11 @@
 
   &_booking__detail {
 
-
     .opt_date_range{
 
       .mat-form-field{
         width: 100%;
       }
-
-
     }
 
     .tbl_head{
@@ -786,5 +783,14 @@
         padding: 9px 10px 9px 0;
       }
 
+  }
+}
+.mat-menu-content{
+  .mat-menu-item{
+    .mat-icon{
+      .icon-icn-package, .icon-icn-item{
+        font-size: 22px !important;
+        vertical-align: text-top;      }
+    }
   }
 }
