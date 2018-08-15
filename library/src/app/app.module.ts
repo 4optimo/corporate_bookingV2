@@ -5,8 +5,8 @@ import {HttpClientModule} from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {HttpModule} from '@angular/http';
-
-
+import { NgxEditorModule } from 'ngx-editor';
+import { TooltipModule } from 'ngx-bootstrap/tooltip';
 import {
   MatAutocompleteModule,
   MatButtonModule,
@@ -108,6 +108,8 @@ import {OptItemPopupComponent} from "./opt-item-popup/opt-item-popup.component";
 import { OptPackageCartComponent } from './opt-package-cart/opt-package-cart.component';
 import { OptDataTableComponent } from './opt-data-table/opt-data-table.component';
 import {OptHostAddPopupComponent} from "./opt-host-add-popup/opt-host-add-popup.component";
+import { OptAddNoteComponent } from './opt-add-note/opt-add-note.component';
+import { OptReprintPopupComponent } from './opt-reprint-popup/opt-reprint-popup.component';
 
 
 
@@ -151,6 +153,8 @@ const appRoutes: Routes = [
   { path: 'app-opt-404', component: Opt404Component},
   { path: 'app-package-details', component: OptPackageDetailsComponent},
   { path: 'opt-host-add-popup', component: OptHostAddPopupComponent},
+  { path: 'opt-add-note-popup', component: OptAddNoteComponent},
+  { path: 'opt-reprint-popup', component: OptReprintPopupComponent},
 
 
 
@@ -198,7 +202,6 @@ const appRoutes: Routes = [
     ScrollDispatchModule
 
   ],
-  declarations: [],
 })
 export class DemoMaterialModule {}
 
@@ -252,6 +255,8 @@ export class DemoMaterialModule {}
     OptPackageCartComponent,
     OptDataTableComponent,
     OptHostAddPopupComponent,
+    OptAddNoteComponent,
+    OptReprintPopupComponent,
       // OptDocumentSelectComponent,
 
     RoutingProjectComponent,
@@ -278,7 +283,9 @@ export class DemoMaterialModule {}
     MatInputModule,
     ScrollDispatchModule,
     NgMultiSelectDropDownModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    NgxEditorModule,
+    TooltipModule.forRoot()
   ],
 
   entryComponents:[

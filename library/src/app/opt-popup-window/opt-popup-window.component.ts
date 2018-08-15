@@ -12,6 +12,8 @@ import {OptEmailDocumentPopupComponent} from "../opt-email-document-popup/opt-em
 import {OptTicketScanPopupComponent} from "../opt-ticket-scan-popup/opt-ticket-scan-popup.component";
 import {OptPackagePopupComponent} from "../opt-package-popup/opt-package-popup.component";
 import {OptHostAddPopupComponent} from "../opt-host-add-popup/opt-host-add-popup.component";
+import { OptAddNoteComponent } from '../opt-add-note/opt-add-note.component';
+import {OptReprintPopupComponent} from "../opt-reprint-popup/opt-reprint-popup.component";
 
 @Component({
   selector: 'app-opt-popup-window',
@@ -140,7 +142,25 @@ export class OptPopupWindowComponent implements OnInit {
     this.dialog.open(OptHostAddPopupComponent,{
       panelClass:'custom-dialog-container',
       height: 'auto',
-      width: '80%'
+      width: '60%'
+    });
+
+  }
+  public  openAddNotePopup(){
+    this.dialog.open(OptAddNoteComponent,{
+      data: {name:'Notes'},
+      panelClass:'custom-dialog-container',
+      height: 'auto',
+      width: '60%'
+    });
+
+  }
+  public  openReprintPopup(){
+    this.dialog.open(OptReprintPopupComponent,{
+      data: {name:'Reprint Tickets/Badges/Passes'},
+      panelClass:'custom-dialog-container',
+      height: 'auto',
+      width: '60%'
     });
 
   }
