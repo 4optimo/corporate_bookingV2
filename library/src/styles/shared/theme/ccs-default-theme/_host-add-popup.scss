@@ -1,4 +1,6 @@
+
 .opt-host-add-popup{
+/*
   .opt_flex--container{
     display: flex;
     flex-flow: row wrap;
@@ -11,9 +13,9 @@
       padding-bottom: 15px;
     }
   }
-  /*.padding-left{
+  !*.padding-left{
     padding-left: 20px;
-  }*/
+  }*!
 
   .inner-wrapper{
     margin: 0 24px 0 24px;
@@ -27,7 +29,7 @@
       }
     }
 
-    /*.contact-details {
+    !*.contact-details {
       add-alternative-contact{
         .add-more-section{
           .icon-line{
@@ -38,11 +40,11 @@
           }
         }
       }
-    }*/
+    }*!
   }
-  /*.example-full-width{
+  !*.example-full-width{
     width: 100%;
-  }*/
+  }*!
 
   .additional-contact , .cust-info{
     display: flex;
@@ -54,11 +56,11 @@
     }
 
   }
-  /*.package-details{
+  !*.package-details{
     .special-instruction{
       padding-top: 20px;
     }
-  }*/
+  }*!
 
   .padding-top{
     padding-top: 20px;
@@ -71,6 +73,7 @@
   .opt_flex__item{
     flex-basis: 150px;
   }
+  */
 
 
   .add-more-section{
@@ -124,4 +127,5 @@
     }
   }
 }
+
 
