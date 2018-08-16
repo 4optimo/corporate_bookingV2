@@ -5,7 +5,7 @@
         <div class="opt_flex--container test-wrapper">
           <div class="opt_flex__item--inherit test-inner">
             <div class="inner-icon">
-              <i class="material-icons">person_add</i>
+              <i class="material-icons">note_add</i>
             </div>
           </div>
           <div class="opt_flex__item test-inner-expand">
@@ -28,13 +28,13 @@
         <div class="mat-dialog-content">
           <div class="row">
             <div class="col-md-12">
-              <mat-tab-group class="icon-tabs" [disableRipple]="true">
+              <mat-tab-group class="icon__tabs" [disableRipple]="true">
                 <mat-tab>
                   <ng-template mat-tab-label>
                     <div class="tab-icon-wrapper">
                       <i class="material-icons">note</i>
                     </div>
-                    <div class="tab-icon-label">
+                    <div class="tab__icon_label">
                       Note
                     </div>
                   </ng-template>
@@ -68,25 +68,13 @@
                       </div>
                     </div>
                   </div>
-                  <div class="note-button-row">
-                    <div class="row">
-                      <div class="col-md-12">
-                        <div class="opt_flex--container">
-                          <div class="opt_flex__item opt_flex__item--vcenter">
-                            <button class="mat-btn-primary mat-button" (click)="close()">Cancel</button>
-                            <button class="mat-btn-primary mat-button" (click)="close()">Save</button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
                 </mat-tab>
                 <mat-tab>
                   <ng-template mat-tab-label>
                     <div class="tab-icon-wrapper">
-                      <i class="material-icons">insert</i>
+                      <i class="material-icons">restaurant</i>
                     </div>
-                    <div class="tab-icon-label">
+                    <div class="tab__icon_label">
                       Catering
                     </div>
                   </ng-template>
@@ -98,7 +86,7 @@
                     <div class="tab-icon-wrapper">
                       <i class="material-icons">train</i>
                     </div>
-                    <div class="tab-icon-label">
+                    <div class="tab__icon_label">
                       Mobility/Delivery
                     </div>
                   </ng-template>
@@ -108,9 +96,9 @@
                 <mat-tab>
                   <ng-template mat-tab-label>
                     <div class="tab-icon-wrapper">
-                      <i class="material-icons">File</i>
+                      <i class="material-icons">folder_special</i>
                     </div>
-                    <div class="tab-icon-label">
+                    <div class="tab__icon_label">
                       Special
                     </div>
                   </ng-template>
@@ -118,6 +106,18 @@
                   <p>...</p>
                 </mat-tab>
               </mat-tab-group>
+            </div>
+          </div>
+          <div class="note-button-row">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item opt_flex__item--vcenter">
+                    <button class="mat-btn-primary mat-button" (click)="close()">Cancel</button>
+                    <button class="mat-btn-primary mat-button" (click)="close()">Save</button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

@@ -14,6 +14,7 @@ import {OptPackagePopupComponent} from "../opt-package-popup/opt-package-popup.c
 import {OptHostAddPopupComponent} from "../opt-host-add-popup/opt-host-add-popup.component";
 import { OptAddNoteComponent } from '../opt-add-note/opt-add-note.component';
 import {OptReprintPopupComponent} from "../opt-reprint-popup/opt-reprint-popup.component";
+import {OptTaskPopupComponent} from "../opt-task-popup/opt-task-popup.component";
 
 @Component({
   selector: 'app-opt-popup-window',
@@ -158,6 +159,15 @@ export class OptPopupWindowComponent implements OnInit {
   public  openReprintPopup(){
     this.dialog.open(OptReprintPopupComponent,{
       data: {name:'Reprint Tickets/Badges/Passes'},
+      panelClass:'custom-dialog-container',
+      height: 'auto',
+      width: '60%'
+    });
+
+  }
+  public  openTaskPopup(){
+    this.dialog.open(OptTaskPopupComponent,{
+      data: {name:'Booking Task'},
       panelClass:'custom-dialog-container',
       height: 'auto',
       width: '60%'
