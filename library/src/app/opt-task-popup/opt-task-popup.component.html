@@ -165,6 +165,92 @@
               </div>
             </div>
           </div>
+          <div class="task-section-body">
+            <form>
+              <div class="row">
+                <div class="col-md-8">
+                  <div class="opt_flex--container">
+                    <div class="opt_flex__item opt_flex__item--vcenter">
+                      <mat-form-field class="example-full-width">
+                        <input matInput placeholder="From" value="" required>
+                      </mat-form-field>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="opt_flex--container">
+                    <div class="opt_flex__item opt_flex__item--vcenter">
+                      <mat-form-field>
+                        <input matInput [matDatepicker]="picker" placeholder="Choose a date">
+                        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                        <mat-datepicker #picker></mat-datepicker>
+                      </mat-form-field>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-8">
+                  <div class="opt_flex--container">
+                    <div class="opt_flex__item opt_flex__item--vcenter">
+                      <mat-form-field class="example-full-width">
+                        <input matInput placeholder="To" value="" required>
+                      </mat-form-field>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="opt_flex--container">
+                    <div class="opt_flex__item opt_flex__item--vcenter task-doc-popup">
+                      <i class="material-icons">note</i>
+                      <span class="opt-txt__body2-small">Document Information</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="opt_flex--container">
+                    <div class="opt_flex__item opt_flex__item--vcenter">
+                      <mat-form-field class="example-full-width">
+                        <input matInput placeholder="Subject" value="" required>
+                      </mat-form-field>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="opt-text-editor">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="opt_flex--container">
+                          <div class="opt_flex__item">
+                            <app-ngx-editor [placeholder]="'Enter text here...'" [spellcheck]="true" [(ngModel)]="htmlContent"></app-ngx-editor>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="task-button-row">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item opt_flex__item--vcenter">
+                    <button class="mat-btn-primary mat-button" (click)="close()">New Task</button>
+                    <button class="mat-btn-primary mat-button" (click)="close()">New Message</button>
+                    <button class="mat-btn-primary mat-button" (click)="close()">Forward</button>
+                    <button class="mat-btn-primary mat-button" (click)="close()">Complete</button>
+                    <button class="mat-btn-primary mat-button" (click)="close()">Send</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
