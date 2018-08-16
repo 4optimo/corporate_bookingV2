@@ -714,6 +714,14 @@
           @include respond-to('small') {
             min-height: 50px !important;
           }
+
+      }
+
+      .mat-expansion-panel{
+        box-shadow: none;
+      }
+      .mat-expansion-panel.mat-expanded{
+        box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
       }
       p{
         margin-bottom: 0px;
@@ -804,6 +812,7 @@
         }
       }
       .note-button-row{
+        padding:15px;
         .opt_flex__item{
           justify-content: flex-end;
         }
@@ -814,13 +823,25 @@
     }
   }
   &_reprint-popup{
+    .mat-expansion-panel{
+      border-left: 4px solid #00b0ff;
+      box-shadow: none !important;
+      .mat-expansion-panel-body{
+        padding:0 24px 0;
+      }
+    }
+    .mat-expansion-panel.mat-expanded{
+      box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12) !important;
+    }
     .reprint-button-row{
       i{
         padding-left: 10px;
       }
     }
-    button{
-      margin-left: 20px;
+    .reprint-button-row{
+      button{
+        margin-left: 20px;
+      }
     }
     .flex-item-align-right{
       justify-content: flex-end;
@@ -836,11 +857,9 @@
       margin-bottom: 20px;
      .mat-accordion{
        flex-grow: 1;
-       mat-expansion-panel{
-         border-left: 4px solid #00b0ff;
-       }
        mat-expansion-panel-header{
          border-bottom: 1px solid #e0e0e0;
+         height: 55px !important;
        }
      }
      .reprint-accordion-row{
@@ -856,13 +875,76 @@
       margin-bottom: 0px;
     }
     .reprint-expanded-content-row{
-      padding:10px 0;
       border-bottom: 1px solid #e0e0e0;
       display: flex;
       flex-grow: 1;
+      .opt_flex--container{
+        height:55px;
+      }
     }
     .expanded-list-row-padding{
       padding-right: 24px;
+    }
+  }
+  &_task-popup{
+    .opt-task-wrapper{
+      .opt_modal-body{
+        padding:0;
+        overflow: hidden;
+      }
+      .header-section-left{
+        padding: 15px;
+      }
+      .bio-section{
+        border-bottom: 1px solid #e0e0e0;
+        padding: 24px 12px;
+        .opt_flex__item:nth-child(2){
+          justify-content: flex-end;
+        }
+      }
+      .booking-status{
+        padding: 24px 12px;
+        .opt_flex--container:nth-child(1){
+          margin-bottom: 10px;
+        }
+      }
+      .header-section-right{
+        padding: 15px;
+        background-color: #bfbfbf;
+        .opt_flex--container{
+          @include respond-to('x-small') {
+            flex-direction: column;
+          }
+          @include respond-to('medium') {
+            flex-direction: row;
+          }
+          @include respond-to('medium') {
+            flex-direction: row;
+          }
+        }
+      }
+      .booking-option-box{
+        padding:24px 24px 0px 24px;
+        background-color: $white;
+        margin:10px;
+        .mat-form-field-infix{
+          width:100%;
+          border-top: 0px;
+        }
+      }
+      .task-section{
+        padding: 24px;
+        .task-section-header{
+          border-bottom: 1px solid #e0e0e0;
+          margin-bottom: 20px;
+          h1{
+            border-bottom: 4px solid #00b0ff;
+            line-height: 44px;
+            padding-left: 3px;
+            padding-right: 3px;
+          }
+        }
+      }
     }
   }
 }
