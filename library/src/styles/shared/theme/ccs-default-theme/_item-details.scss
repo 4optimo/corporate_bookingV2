@@ -1,4 +1,22 @@
 .opt-item-details{
+  .opt-header-section{
+    margin: -24px;
+    background-color: #e4e8e9;
+    padding: 24px 24px 1px;
+    .opt-search-panel-wrapper {
+      margin: -15px;
+    }
+    .package-select-section{
+      flex-wrap: nowrap;
+      flex-grow: inherit;
+    }
+    .package-list-section{
+      float: left;
+    }
+    .package-select-menu{
+      float: right;
+    }
+  }
   .opt_circle__confirmed{
     .icon-icn-item {
       font-size: 24px;
@@ -6,10 +24,14 @@
       color: white;
     }
   }
+  .additional-features{
+    .material-icons{
+      font-size: 17px;
+    }
+  }
   .mat-content{
     padding-left: 5px;
     .notification_count{
-      //position: absolute;
       font-size: 12px;
       background-color: #909cac;
       border-radius: 50%;
@@ -23,14 +45,17 @@
     }
   }
   .package-select-section{
-    padding: 10px 0 0;
+    padding: 10px 0 2px;
     fieldset{
-      border: 1px dashed;
-      padding: 15px;
-      margin-top: 40px;
+      border: 1px dashed #8f9fac;
+      padding: 15px 15px 0;
+      margin-top: 30px;
+      background-color: white;
       legend {
         display: inline-block;
         width: auto;
+        background-color: #e4e8e9;
+        padding: 2px 15px;
       }
     }
   }
