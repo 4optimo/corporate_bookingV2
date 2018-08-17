@@ -67,4 +67,11 @@ $bootstrap-sass-asset-helper: false;
 @import "./shared/theme/ccs-default-theme/data-table";
 @import "./shared/theme/ccs-default-theme/host-add-popup";
 @import "./shared/theme/ccs-default-theme/font/font-awesome/scss/font-awesome.scss";
+@import "./shared/theme/ccs-default-theme/item-details";
+
+
+html,
+body{
+  font-family: 'Roboto', sans-serif !important;
+}
 

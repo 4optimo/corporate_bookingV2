@@ -1,13 +1,15 @@
-import {Component, Inject, OnInit, ViewChild} from '@angular/core';
+import {Component, OnInit, ViewChild, Input} from '@angular/core';
 import {MatDialogRef, MatExpansionPanel, MAT_DIALOG_DATA} from "@angular/material";
-import {ModalContentComponent} from "../modal-content/modal-content.component";
 
 @Component({
   selector: 'app-opt-package-cart',
   templateUrl: './opt-package-cart.component.html',
   styleUrls: ['./opt-package-cart.component.scss']
 })
+
 export class OptPackageCartComponent implements OnInit {
+
+  @Input() showMePartially: boolean;
 
 
   packageCartListArray = new Array(4);

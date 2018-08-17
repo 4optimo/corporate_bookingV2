@@ -1,4 +1,4 @@
-<div class="opt_modal-content opt_item-popup">
+<div class="opt_modal-content opt-item-details">
   <div class="mat-dialog-content">
     <div class="opt_modal-header ">
       <div class="test opt--depth__1">
@@ -28,23 +28,67 @@
       </div>
     </div>
     <div class="opt_modal-body">
-
       <!--modal body start-->
-      <div class=" opt_package-details opt_package-popup opt_client-list">
-        <app-opt-search-panel></app-opt-search-panel>
+      <div class="opt_package-popup">
+        <div class="opt-header-section">
+          <app-opt-search-panel></app-opt-search-panel>
+          <div class="package-select-section">
+            <form>
+              <fieldset>
+                <legend class="opt-txt__body2-small">Select Your Packages </legend>
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item">
+                    <div class="opt_flex--container">
+                      <div class="opt_flex__item--inherit opt_chip">
+                        <div class="opt_chip--wrapper">
+                          <div class="opt_flex--container">
+                            <div class="opt_flex__item">
+                              FIFA World Cup
+                            </div>
+                            <div class="opt_flex__item--inherit">
+                              <i class="material-icons cancel" (click)="isOpen = !isOpen;">cancel</i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="opt_flex__item--inherit opt_chip">
+                        <div class="opt_chip--wrapper">
+                          <div class="opt_flex--container">
+                            <div class="opt_flex__item">
+                              Premier Dinner & Eye
+                            </div>
+                            <div class="opt_flex__item--inherit">
+                              <i class="material-icons cancel" (click)="isOpen = !isOpen;">cancel</i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="opt_flex__item--inherit package-select-menu  mat-icon-button">
+                    <i class="material-icons">
+                      keyboard_arrow_down
+                    </i>
+                  </div>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+        </div>
 
         <div class="package-wrapper">
           <div class="top-label opt_flex--container">
             <div class="opt_flex__item opt-txt__secondary opt-txt__body2">30 Items</div>
             <div class="opt_flex__item--inherit opt-txt__body2-small">
-              <mat-checkbox>Create time slot if not exists</mat-checkbox>
+              <mat-checkbox>Show selected items only</mat-checkbox>
             </div>
             <div class="opt_flex__item--inherit opt-txt__body2-small">
-              <mat-checkbox>Show selected items only</mat-checkbox>
+              <i class="material-icons">live_help</i>
+              Smart App Off <mat-slide-toggle></mat-slide-toggle>
             </div>
           </div>
 
-          <div class="package-list">
+          <div class="">
             <mat-accordion>
                 <span *ngFor="let a of itemListArray; let index = index">
                   <div class="opt_package-details opt_booking__list opt_booking__detail">
@@ -72,8 +116,8 @@
                                               <span class="notification_count">10</span>
                                             </div>
                                             <div>
-                                              <div class="opt_flex__item--inherit icon__cage __min">
-                                                <span class="icon-icn-item package-color--item"></span>
+                                              <div class="opt_flex__item--inherit additional-features">
+                                                <span class="material-icons package-color--product">gamepad</span>
                                                 <span class="opt__subtitle-1-small opt-txt__secondary">| Alnut Park </span>
                                               </div>
                                             </div>
@@ -89,7 +133,7 @@
                                         </div>
                                       </mat-panel-description>
                                     </div>
-                                    <div class="col-sm-6 col-md-4	col-lg-4	col-xs-12">
+                                    <div class="col-sm-6 col-md-3	col-lg-3	col-xs-12">
                                       <mat-panel-description class="opt_flex--container">
                                         <div class="opt_flex__item tc-flex-item__center opt-txt__secondary opt__subtitle-2-small opt_unit__price">£450.00</div>
                                         <div class="opt_flex__item opt_counter__item">
@@ -113,7 +157,7 @@
                                         </div>
                                       </mat-panel-description>
                                     </div>
-                                    <div class="col-sm-6  col-md-2	col-lg-2	col-xs-12  opt_price-section">
+                                    <div class="col-sm-6  col-md-3	col-lg-3	col-xs-12  opt_price-section">
                                       <mat-panel-description class="opt_flex--container">
                                         <div class="opt_flex__item inc-label"><span class="lbl lbl__vat">Inc Vat</span></div>
                                         <div class=" opt_flex__item opt-typo-subhead-2 price __link">£450.00</div>
@@ -154,7 +198,7 @@
                                       <div class="opt_flex__item icon__cage __multi-buttons">
 
                                         <button mat-icon-button class="btn-color-default">
-                                          <span class="icon-icn-item  "> </span>
+                                          <span class="material-icons"> date_range</span>
                                         </button>
 
                                         <button mat-icon-button class="btn-color-default">
@@ -166,11 +210,15 @@
                                         </button>
 
                                         <button mat-icon-button class="btn-color-default">
-                                          <span class="material-icons"> date_range</span>
+                                          <span class="material-icons"> settings</span>
                                         </button>
 
                                         <button mat-icon-button class="btn-color-default">
                                           <span class="material-icons">help</span>
+                                        </button>
+
+                                        <button mat-icon-button class="btn-color-default">
+                                          <span class="material-icons">layers</span>
                                         </button>
 
                                       </div>

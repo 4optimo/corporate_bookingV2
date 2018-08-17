@@ -47,7 +47,7 @@
 }
 
 
-.icon-tabs{
+.icon__tabs{
   .mat-tab-label-container{
     background-color: #e4e8e9;
     padding: 15px;
@@ -65,7 +65,7 @@
             color: #393c41;
           }
         }
-        .tab-icon-label{
+        .tab__icon_label{
           color: #393c41;
         }
         &:after{
@@ -101,7 +101,7 @@
     }
   }
 
-  .tab-icon-label{
+  .tab__icon_label{
     margin-top: 10px;
     color: #b8bcbf;
   }

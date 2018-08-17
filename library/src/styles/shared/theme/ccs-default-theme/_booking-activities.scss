@@ -31,8 +31,31 @@
   font-size: 0;
   .mat-button{
     &.btn-icon-text{
-      padding: 6px 12px;
-      margin-right: 10px;
+
+
+
+      @include respond-to('x-small') {
+        min-width: 47px;
+        padding: 5px;
+        margin: 5px;
+      }
+      @include respond-to('small') {
+        min-width: 47px;
+        padding: 5px;
+        margin: 5px;
+      }
+      @include respond-to('medium') {
+        padding: 6px 12px;
+        margin-right: 10px;
+        min-width: 88px;
+      }
+      @include respond-to('large') {
+        padding: 6px 12px;
+        margin-right: 10px;
+        min-width: 88px;
+      }
+
+
       &:last-child{
         margin-right: 0;
       }
@@ -345,7 +368,7 @@
         max-width: 400px;
       }
    }
-    .btn-group{
+    /*.btn-group{
       @include respond-to('small'){
         display: inherit;
         .btn-icon-text{
@@ -357,7 +380,7 @@
       }
 
       @include respond-to('medium'){
-        /*display: inline-block;*/
+        !*display: inline-block;*!
         .btn-icon-text{
           .btn-text{
             display:inline-block;
@@ -365,7 +388,7 @@
           }
         }
       }
-    }
+    }*/
   }
   .invoice{
     width: 100%;
@@ -388,21 +411,6 @@
         }
       }
 
-      /*.add-des{
-        display: inline-block;
-          @include respond-to('x-small'){
-            max-width: 130px;
-          }
-          @include respond-to('small'){
-            max-width: 260px;
-          }
-          @include respond-to('medium'){
-            max-width: 325px;
-          }
-          @include respond-to('large'){
-            max-width: 390px;
-          }
-    }*/
     }
   }
 
@@ -446,6 +454,7 @@
   .documents{
     .mat-expansion-panel{
       box-shadow: none;
+
       &.mat-expanded{
         border-left: 4px solid #4db4fa;
         box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
@@ -462,11 +471,13 @@
 
     .mat-expansion-panel-header{
       padding-left: 15px;
+      width:auto;
     }
     .mat-expansion-panel-header-title{
       .row{
         width: 100%;
         display: flex;
+        flex-wrap: wrap;
         [class*=' col-']{
           display: flex;
           //align-items: center;
@@ -490,6 +501,54 @@
       }
     }
   }
+
+  .opt__sent{
+
+    &.mat-expansion-panel{
+      box-shadow: none;
+      &.mat-expanded{
+        border-left: 4px solid $opt_color_primary;
+        box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+        margin-bottom: 5px;
+        padding: 0 10px;
+        .mat-expansion-panel-header{
+          border-bottom: 1px dashed $opt_color_primary;
+        }
+        .mat-expansion-panel-content{
+          padding-top: 10px;
+        }
+      }
+    }
+
+
+    .header_row--action-wrapper{
+      display: inline-block;
+    }
+    .row{
+      display:flex;
+      width: 100%;
+      flex-wrap: wrap;
+    }
+
+    &.mat-expansion-panel-header{
+      border-bottom: 1px dashed $opt_color_primary;
+
+      @include respond-to('x-small') {
+        height: auto;
+      }
+      @include respond-to('small') {
+        height: auto !important;
+
+      }
+      @include respond-to ('medium') {
+
+      }
+      @include respond-to('large') {
+
+      }
+    }
+  }
+
 }
 
 .host_panel{

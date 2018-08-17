@@ -110,6 +110,7 @@ import { OptDataTableComponent } from './opt-data-table/opt-data-table.component
 import {OptHostAddPopupComponent} from "./opt-host-add-popup/opt-host-add-popup.component";
 import { OptAddNoteComponent } from './opt-add-note/opt-add-note.component';
 import { OptReprintPopupComponent } from './opt-reprint-popup/opt-reprint-popup.component';
+import { OptTaskPopupComponent } from './opt-task-popup/opt-task-popup.component';
 
 
 
@@ -155,6 +156,7 @@ const appRoutes: Routes = [
   { path: 'opt-host-add-popup', component: OptHostAddPopupComponent},
   { path: 'opt-add-note-popup', component: OptAddNoteComponent},
   { path: 'opt-reprint-popup', component: OptReprintPopupComponent},
+  { path: 'opt-task-popup', component: OptTaskPopupComponent},
 
 
 
@@ -257,6 +259,7 @@ export class DemoMaterialModule {}
     OptHostAddPopupComponent,
     OptAddNoteComponent,
     OptReprintPopupComponent,
+    OptTaskPopupComponent,
       // OptDocumentSelectComponent,
 
     RoutingProjectComponent,
