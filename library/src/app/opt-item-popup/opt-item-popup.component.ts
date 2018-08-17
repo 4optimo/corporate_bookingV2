@@ -1,6 +1,7 @@
 import {Component, Inject, OnInit, ViewChild} from '@angular/core';
 import {ModalContentComponent} from "../modal-content/modal-content.component";
-import {MatDialogRef, MAT_DIALOG_DATA, MatExpansionPanel} from "@angular/material";
+import {MatDialogRef, MAT_DIALOG_DATA, MatExpansionPanel, MatDialog} from "@angular/material";
+import {OptDataTableComponent} from "../opt-data-table/opt-data-table.component";
 
 @Component({
   selector: 'app-opt-item-popup',
@@ -15,6 +16,7 @@ export class OptItemPopupComponent implements OnInit {
 
     public  matDialogRef: MatDialogRef<ModalContentComponent>,
     @Inject(MAT_DIALOG_DATA) public data: any) { }
+
 
   public close(){
     this.matDialogRef.close();
@@ -32,5 +34,6 @@ export class OptItemPopupComponent implements OnInit {
     this.myPanel.expanded = !this.myPanel.expanded;
     // alert("1");
   }
+
 
 }

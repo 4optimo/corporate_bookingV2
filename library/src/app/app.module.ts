@@ -111,6 +111,8 @@ import {OptHostAddPopupComponent} from "./opt-host-add-popup/opt-host-add-popup.
 import { OptAddNoteComponent } from './opt-add-note/opt-add-note.component';
 import { OptReprintPopupComponent } from './opt-reprint-popup/opt-reprint-popup.component';
 import { OptTaskPopupComponent } from './opt-task-popup/opt-task-popup.component';
+import { OptPackageSelectionModalComponent } from './opt-package-selection-modal/opt-package-selection-modal.component';
+import { OptSuccessComponent } from './opt-success/opt-success.component';
 
 
 
@@ -157,6 +159,7 @@ const appRoutes: Routes = [
   { path: 'opt-add-note-popup', component: OptAddNoteComponent},
   { path: 'opt-reprint-popup', component: OptReprintPopupComponent},
   { path: 'opt-task-popup', component: OptTaskPopupComponent},
+  { path: 'opt-success', component: OptSuccessComponent},
 
 
 
@@ -204,6 +207,7 @@ const appRoutes: Routes = [
     ScrollDispatchModule
 
   ],
+  declarations: [],
 })
 export class DemoMaterialModule {}
 
@@ -260,6 +264,8 @@ export class DemoMaterialModule {}
     OptAddNoteComponent,
     OptReprintPopupComponent,
     OptTaskPopupComponent,
+    OptPackageSelectionModalComponent,
+    OptSuccessComponent,
       // OptDocumentSelectComponent,
 
     RoutingProjectComponent,
