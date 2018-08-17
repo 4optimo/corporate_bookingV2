@@ -25,8 +25,10 @@
     }
   }
   .additional-features{
+    display: flex;
     .material-icons{
-      font-size: 17px;
+      line-height: 17px;
+      font-size: 14px;
     }
   }
   .mat-content{

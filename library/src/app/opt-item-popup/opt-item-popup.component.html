@@ -65,11 +65,11 @@
                       </div>
                     </div>
                   </div>
-                  <div class="opt_flex__item--inherit package-select-menu  mat-icon-button">
+                  <button class="opt_flex__item--inherit package-select-menu  mat-icon-button" (click)="openPackageSelectionDropDown()">
                     <i class="material-icons">
                       keyboard_arrow_down
                     </i>
-                  </div>
+                  </button>
                 </div>
               </fieldset>
             </form>
@@ -83,7 +83,7 @@
               <mat-checkbox>Show selected items only</mat-checkbox>
             </div>
             <div class="opt_flex__item--inherit opt-txt__body2-small">
-              <i class="material-icons">live_help</i>
+              <i class="material-icons opt-txt__secondary">live_help</i>
               Smart App Off <mat-slide-toggle></mat-slide-toggle>
             </div>
           </div>
@@ -157,13 +157,15 @@
                                         </div>
                                       </mat-panel-description>
                                     </div>
-                                    <div class="col-sm-6  col-md-3	col-lg-3	col-xs-12  opt_price-section">
+                                    <div class="col-sm-6  col-md-3	col-lg-3	col-xs-12">
                                       <mat-panel-description class="opt_flex--container">
-                                        <div class="opt_flex__item inc-label"><span class="lbl lbl__vat">Inc Vat</span></div>
-                                        <div class=" opt_flex__item opt-typo-subhead-2 price __link">£450.00</div>
-                                        <div class="opt_flex__item  price--value__icon">
-                                          <span class="icon-coin-of-dollar"></span>
-                                        </div>
+                                        <div class="opt_flex__item"><span class="lbl lbl__vat">Inc Vat</span></div>
+                                        <div class=" opt_flex__item opt_price-section">
+                                          <mat-form-field class="example-full-width opt-typo-subhead-2 price">
+                                            <input matInput placeholder="" value=" £450.00">
+                                          </mat-form-field>
+                                         </div>
+                                        <div class="opt_flex__item"><span class="icon-coin-of-dollar"></span></div>
                                       </mat-panel-description>
                                     </div>
                                     <div class="col-sm-12  col-md-1	col-lg-1	col-xs-12">
