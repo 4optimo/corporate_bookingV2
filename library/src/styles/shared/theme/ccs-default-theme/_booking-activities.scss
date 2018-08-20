@@ -27,12 +27,10 @@
   }
 }
 
-.header_row--action-wrapper{
+.header_row--action-wrapper {
   font-size: 0;
   .mat-button{
     &.btn-icon-text{
-
-
 
       @include respond-to('x-small') {
         min-width: 47px;
@@ -119,6 +117,11 @@
 /* End of Expansion Panel Button Styles */
 
 .opt_booking__activity {
+  .row{
+    display:flex;
+    width: 100%;
+    flex-wrap: wrap;
+  }
 
   .mat-horizontal-stepper-header {
     height: auto !important;
@@ -180,14 +183,14 @@
   .mat-step-label-selected {
     &.mat-step-label-active {
       .activity-avatar-wrapper {
-        background-color: #4db4fa;
+        background-color: $opt_color_primary;
         i {
-          color: #fff;
+          color: $opt_color_white;
         }
       }
     }
     .activity-title {
-      color: #4db4fa;
+      color:$opt_color_primary;
       font-size: 15px;
       font-weight: 500;
     }
@@ -390,6 +393,15 @@
       }
     }*/
   }
+  .opt_schedule , .opt-pay{
+    .row{
+      display:flex;
+      width: 100%;
+      flex-wrap: wrap;
+     /* border-bottom: 1px solid $opt-border-color;*/
+    }
+
+  }
   .invoice{
     width: 100%;
     margin: 0;
@@ -502,7 +514,7 @@
     }
   }
 
-  .opt__sent{
+  .opt__sent , .opt-pay {
 
     &.mat-expansion-panel{
       box-shadow: none;
@@ -512,7 +524,7 @@
         margin-bottom: 5px;
         padding: 0 10px;
         .mat-expansion-panel-header{
-          border-bottom: 1px dashed $opt_color_primary;
+          /*border-bottom: 1px dashed $opt_color_primary;*/
         }
         .mat-expansion-panel-content{
           padding-top: 10px;
@@ -529,9 +541,9 @@
       width: 100%;
       flex-wrap: wrap;
     }
+    .mat-expansion-panel-header{
 
-    &.mat-expansion-panel-header{
-      border-bottom: 1px dashed $opt_color_primary;
+     /* border-bottom: 1px solid $opt-border-color;*/
 
       @include respond-to('x-small') {
         height: auto;
@@ -547,8 +559,15 @@
 
       }
     }
-  }
 
+    .icn-right{
+      @include circle-icon(14px, $opt_color_frozen , $opt_color_frozen);
+      font-size: 14px;
+      color: $opt_color_white;
+      float: right;
+
+    }
+  }
 }
 
 .host_panel{
