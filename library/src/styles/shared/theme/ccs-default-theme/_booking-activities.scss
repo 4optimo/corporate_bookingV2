@@ -29,6 +29,7 @@
 
 .header_row--action-wrapper {
   font-size: 0;
+  display: inline-flex;
   .mat-button{
     &.btn-icon-text{
 
@@ -63,7 +64,7 @@
     &.btn-icon{
       i{
         &.material-icons{
-          color: #97a3b1;
+          /*color: #97a3b1;*/
         }
       }
       margin-right: 10px;
@@ -276,6 +277,7 @@
     .cage_selected{
       margin-left: 20px;
     }
+
   }
 
   .action-btn {
@@ -429,13 +431,24 @@
   .host{
     .status{
       width: 60px;
+      padding: 10px;
+      margin-top: 5px;
 
     }
   }
 
-  .deliverables{
+  .opt-deli{
     mat-checkbox{
       margin-right: 10px;
+
+    }
+    & span{
+      margin-right: 10px;
+    }
+    .mat-icon-button{
+      &.btn-icon{
+        margin-right: auto;
+      }
     }
   }
 
@@ -514,7 +527,7 @@
     }
   }
 
-  .opt__sent , .opt-pay {
+  .opt__sent , .opt-pay , .opt-host{
 
     &.mat-expansion-panel{
       box-shadow: none;
@@ -533,9 +546,9 @@
     }
 
 
-    .header_row--action-wrapper{
+    /*.header_row--action-wrapper{
       display: inline-block;
-    }
+    }*/
     .row{
       display:flex;
       width: 100%;
@@ -553,9 +566,11 @@
 
       }
       @include respond-to ('medium') {
+        height: auto !important;
 
       }
       @include respond-to('large') {
+        height: auto !important;
 
       }
     }
