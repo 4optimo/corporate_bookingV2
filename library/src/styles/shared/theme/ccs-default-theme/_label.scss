@@ -1,15 +1,22 @@
 
   %lbl{
-    height: 30px;
+   /* height: 30px;
     width: auto;
     text-align: center;
     border-radius: 5px;
     font-size: 12px;
     padding: inherit;
     font-weight: 500;
-    color:$opt_color_white;
+    color:$opt_color_white;*/
+    border-radius: (3px);
+    font-size: 12px;
+    padding: 2px 5px;
+    line-height: 1.2px;
+    font-weight: 500;
+    color: $opt_color_white;
   }
   .opt_lbl{
+
 
     &_primary{
       @extend %lbl;
