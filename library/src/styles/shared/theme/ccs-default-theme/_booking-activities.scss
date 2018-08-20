@@ -395,12 +395,12 @@
       }
     }*/
   }
-  .opt_schedule , .opt-pay{
+  .opt_schedule , .opt-invo , .opt-deli , .opt-des{
     .row{
       display:flex;
       width: 100%;
       flex-wrap: wrap;
-     /* border-bottom: 1px solid $opt-border-color;*/
+      border-bottom: 1px solid $opt-border-color;
     }
 
   }
@@ -437,7 +437,7 @@
     }
   }
 
-  .opt-deli{
+  .opt-deli-header{
     mat-checkbox{
       margin-right: 10px;
 
