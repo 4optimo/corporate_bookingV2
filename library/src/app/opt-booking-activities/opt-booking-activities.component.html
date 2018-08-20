@@ -271,7 +271,7 @@
 
           <!--****2nd row*****-->
           <mat-accordion>
-            <mat-expansion-panel>
+            <mat-expansion-panel  class="documents_list_item">
               <mat-expansion-panel-header>
                 <mat-panel-title>
                   <div class="row">
@@ -331,7 +331,7 @@
 
           <!--****3rd row*****-->
           <mat-accordion>
-            <mat-expansion-panel>
+            <mat-expansion-panel  class="documents_list_item">
               <mat-expansion-panel-header>
                 <mat-panel-title>
                   <div class="row">
@@ -411,21 +411,21 @@
             <mat-tab label="Received">
               <!--Header-->
               <div class="header-row">
-                    <div class="row">
-                      <div class="col-sm-6 col-md-6	col-lg-6	col-xs-12">
-                        <div class="opt_flex--container">
-                          <div class="opt_flex__item chck-box horizontally-center "> <mat-checkbox></mat-checkbox> </div>
-                          <div class="opt_flex__item des-box horizontally-center opt-txt__body2">Select All</div>
-                        </div>
-                      </div>
-                      <div class="col-sm-6 col-md-6	col-lg-6	col-xs-12 just-content-end">
-                        <div class="header_row--action-wrapper btn-group">
-                          <button mat-button class="btn-icon-text"><i class="material-icons opt_color_icon_font">add</i><span class="btn-text opt-txt__secondary hidden-sm">Add</span></button>
-                          <button mat-button class="btn-icon-text"><i class="material-icons opt_color_icon_font">email</i> <span class="btn-text opt-txt__secondary hidden-sm">Email</span></button>
-                          <button mat-button class="btn-icon-text"><i class="material-icons opt_color_icon_font">delete</i> <span class="btn-text opt-txt__secondary hidden-sm">Delete</span></button>
-                        </div>
-                      </div>
+                <div class="row">
+                  <div class="col-sm-6 col-md-6	col-lg-6	col-xs-12">
+                    <div class="opt_flex--container">
+                      <div class="opt_flex__item chck-box horizontally-center "> <mat-checkbox></mat-checkbox> </div>
+                      <div class="opt_flex__item des-box horizontally-center opt-txt__body2">Select All</div>
                     </div>
+                  </div>
+                  <div class="col-sm-6 col-md-6	col-lg-6	col-xs-12 just-content-end">
+                    <div class="header_row--action-wrapper btn-group">
+                      <button mat-button class="btn-icon-text"><i class="material-icons opt_color_icon_font">add</i><span class="btn-text opt-txt__secondary hidden-sm">Add</span></button>
+                      <button mat-button class="btn-icon-text"><i class="material-icons opt_color_icon_font">email</i> <span class="btn-text opt-txt__secondary hidden-sm">Email</span></button>
+                      <button mat-button class="btn-icon-text"><i class="material-icons opt_color_icon_font">delete</i> <span class="btn-text opt-txt__secondary hidden-sm">Delete</span></button>
+                    </div>
+                  </div>
+                </div>
               </div>
 
               <!--Content-->
@@ -483,7 +483,7 @@
                     </div>
                   </div>
               </div>
-                  <div class="correspondence_entry">
+              <div class="correspondence_entry">
                     <div class="row">
                       <div class="col-xs-12 col-sm-4 col-md-3	col-lg-3">
                         <div class="opt_flex--container">
@@ -539,7 +539,7 @@
 
                 <!--****1st row*****-->
                 <mat-accordion>
-                  <mat-expansion-panel  class="opt__sent">
+                  <mat-expansion-panel  class="correspondence_entry-sent opt__sent">
                     <mat-expansion-panel-header>
                       <mat-panel-title>
                         <div class="row">
@@ -625,7 +625,7 @@
 
                 <!--****2nd row*****-->
               <mat-accordion>
-                <mat-expansion-panel  class="opt__sent">
+                <mat-expansion-panel  class="correspondence_entry-sent opt__sent">
                   <mat-expansion-panel-header>
                     <mat-panel-title>
                       <div class="row">
@@ -756,7 +756,7 @@
 
             <!--Content-->
               <div class="opt_schedule">
-                <div class="opt_flex--container">
+                <div class="opt_flex--container schedule-list-item">
                   <div class="opt_flex__item horizontally-center">
                     <div class="row">
                       <div class="col-xs-12 col-sm-4 col-md-3	col-lg-4">
@@ -803,7 +803,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="opt_flex--container">
+                <div class="opt_flex--container schedule-list-item">
                   <div class="opt_flex__item horizontally-center">
                     <div class="row">
                       <div class="col-xs-12 col-sm-4 col-md-3	col-lg-4">
@@ -875,7 +875,7 @@
               </div>
 
               <!--Content-->
-            <div class="opt_flex--container opt-invo">
+            <div class="opt_flex--container invoice-list-item opt-invo">
                 <div class="opt_flex__item horizontally-center">
                   <div class="row">
                     <div class="col-xs-12 col-sm-6 col-md-3	col-lg-3">
@@ -931,7 +931,7 @@
                   </div>
                 </div>
               </div>
-            <div class="opt_flex--container opt-invo">
+            <div class="opt_flex--container invoice-list-item opt-invo">
               <div class="opt_flex__item horizontally-center">
                 <div class="row">
                   <div class="col-xs-12 col-sm-6 col-md-3	col-lg-3">
@@ -1014,7 +1014,7 @@
               </div>
               <!--Content-->
               <mat-accordion>
-                <mat-expansion-panel class="opt-pay">
+                <mat-expansion-panel  class="payments-list-item opt-pay">
                   <mat-expansion-panel-header>
                     <mat-panel-title>
                       <div class="row">
@@ -1044,7 +1044,7 @@
                           </div>
                         </div>
                         <div class="col-xs-12 col-sm-3 col-md-3	col-lg-2">
-                          <div class="opt_flex__item edit_icon">
+                          <div class="opt_flex__item edit_icon tc-flex-item__center">
                             <span><i class="material-icons mat-btn-icon-btn opt_color_icon_font">edit</i>
                                 <i class="material-icons mat-btn-icon-btn opt_color_icon_font">delete</i></span>
                           </div>
@@ -1090,7 +1090,7 @@
                 </mat-expansion-panel>
               </mat-accordion>
               <mat-accordion>
-                <mat-expansion-panel class="opt-pay">
+                <mat-expansion-panel  class="payments-list-item opt-pay">
                   <mat-expansion-panel-header>
                     <mat-panel-title>
                       <div class="row">
@@ -1221,7 +1221,7 @@
               </div>
 
                 <!--Content-->
-                <div class="opt_flex--container opt-deli">
+                <div class="opt_flex--container deliverables-list-item opt-deli">
                   <div class="opt_flex__item horizontally-center">
                     <div class="row">
                       <div class="col-xs-12 col-sm-6 col-md-3	col-lg-3">
@@ -1258,7 +1258,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="opt_flex--container opt-deli">
+                <div class="opt_flex--container deliverables-list-item opt-deli">
                   <div class="opt_flex__item horizontally-center">
                     <div class="row">
                       <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
@@ -1295,7 +1295,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="opt_flex--container opt-deli">
+                <div class="opt_flex--container deliverables-list-item opt-deli">
                   <div class="opt_flex__item horizontally-center">
                     <div class="row">
                       <div class="col-xs-12 col-sm-6 col-md-3	col-lg-3">
@@ -1365,7 +1365,7 @@
 
 
                 <!--Content-->
-                <div class="opt_flex--container opt-des">
+                <div class="opt_flex--container dispatch-list-item opt-des">
                   <div class="opt_flex__item horizontally-center">
                     <div class="row">
                       <div class="col-xs-12 col-sm-6 col-md-3	col-lg-3">
@@ -1416,7 +1416,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="opt_flex--container opt-des">
+                <div class="opt_flex--container dispatch-list-item opt-des">
                   <div class="opt_flex__item horizontally-center">
                     <div class="row">
                       <div class="col-xs-12 col-sm-6 col-md-3	col-lg-3">
@@ -1460,7 +1460,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="opt_flex--container opt-des">
+                <div class="opt_flex--container dispatch-list-item opt-des">
                   <div class="opt_flex__item horizontally-center">
                     <div class="row">
                       <div class="col-xs-12 col-sm-6 col-md-3	col-lg-3">
@@ -1547,7 +1547,7 @@
 
           <!--****1st row*****-->
           <mat-accordion>
-            <mat-expansion-panel class="opt-host">
+            <mat-expansion-panel class="host-list-item opt-host">
               <mat-expansion-panel-header>
                 <mat-panel-title class="host_panel">
                   <div class="row">
@@ -1619,7 +1619,7 @@
 
           <!--****2nd row*****-->
           <mat-accordion>
-            <mat-expansion-panel class="opt-host">
+            <mat-expansion-panel  class="host-list-item opt-host">
               <mat-expansion-panel-header>
                 <mat-panel-title class="host_panel">
                   <div class="row">

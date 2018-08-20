@@ -101,20 +101,8 @@
   }
 }
 
-.correspondence_entry {
-  padding: 5px 0;
-  border-bottom: 1px solid #ddd;
-  padding-left: 15px;
-  .row{
-    margin: 0;
-    display: flex;
-    [class*=' col-']{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-  }
-}
+
+
 /* End of Expansion Panel Button Styles */
 
 .opt_booking__activity {
@@ -373,29 +361,42 @@
         max-width: 400px;
       }
    }
-    /*.btn-group{
-      @include respond-to('small'){
-        display: inherit;
-        .btn-icon-text{
-          min-width: 0;
-          .btn-text{
-            display: none;
-          }
-        }
-      }
-
-      @include respond-to('medium'){
-        !*display: inline-block;*!
-        .btn-icon-text{
-          .btn-text{
-            display:inline-block;
-            position: relative;
-          }
-        }
-      }
-    }*/
   }
-  .opt_schedule , .opt-invo , .opt-deli , .opt-des{
+
+  .correspondence_entry {
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+    padding-left: 15px;
+    .row{
+      margin: 0;
+      display: flex;
+      [class*=' col-']{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+    }
+  }
+
+  .correspondence_entry-sent {
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+
+    .row{
+      margin: 0;
+      display: flex;
+      [class*=' col-']{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+    }
+
+    .mat-expansion-panel-body{
+      padding : 10px 50px 16px 15px;
+    }
+  }
+  .opt-des{
     .row{
       display:flex;
       width: 100%;
@@ -404,29 +405,105 @@
     }
 
   }
-  .invoice{
+
+  .schedule-list-item{
+    padding: 5px 15px;
+    border-bottom: 1px solid #ddd;
+
+    .row{
+      margin: 0;
+      display: flex;
+      [class*=' col-']{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+    }
+
+    .mat-expansion-panel-body{
+      padding : 10px 45px 16px 0;
+    }
+  }
+
+  .opt-invo{
     width: 100%;
     margin: 0;
     padding: 0;
-    .title_box{
-      .text-truncate{
-        display: inline-block;
-        @include respond-to('x-small'){
-          max-width: 130px;
-        }
-        @include respond-to('small'){
-          max-width: 270px;
-        }
-        @include respond-to('medium'){
-          max-width: 180px;
-        }
-        @include respond-to('large'){
-          max-width: 225px;
+
+    .text-truncate{
+      display: inline-block;
+      @include respond-to('x-small'){
+        max-width: 130px;
+      }
+      @include respond-to('small'){
+        max-width: 270px;
+      }
+      @include respond-to('medium'){
+        max-width: 180px;
+      }
+      @include respond-to('large'){
+        max-width: 225px;
+      }
+    }
+
+    &.invoice-list-item{
+      padding: 5px 15px;
+      border-bottom: 1px solid #ddd;
+
+      .row{
+        margin: 0;
+        display: flex;
+        [class*=' col-']{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
         }
       }
 
+      .mat-expansion-panel-body{
+        padding : 10px 45px 16px 0;
+      }
     }
   }
+
+  .payments-list-item{
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+
+    .row{
+      margin: 0;
+      display: flex;
+      [class*=' col-']{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+    }
+
+    .mat-expansion-panel-body{
+      padding : 10px 50px 16px 15px;
+    }
+  }
+
+  .deliverables-list-item{
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+
+    .row{
+      margin: 0;
+      display: flex;
+      [class*=' col-']{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+    }
+
+    .mat-expansion-panel-body{
+      padding : 10px 50px 16px 15px;
+    }
+  }
+
 
   .host{
     .status{
@@ -467,6 +544,7 @@
         margin-bottom: 5px;
         padding: 0 10px;
         .mat-expansion-panel-header{
+          padding: 10px 0;
           border-bottom: 1px dashed #4db4fa;
         }
         .mat-expansion-panel-content{
@@ -477,6 +555,18 @@
   }
 
   .documents{
+    .documents_list_item {
+      padding: 10px 0;
+      border-bottom: 1px solid #e0e0e0;
+
+      .row{
+        display: flex;
+        [class*=' col-']{
+          display: flex;
+
+        }
+      }
+    }
     .mat-expansion-panel{
       box-shadow: none;
 
@@ -537,7 +627,7 @@
         margin-bottom: 5px;
         padding: 0 10px;
         .mat-expansion-panel-header{
-          /*border-bottom: 1px dashed $opt_color_primary;*/
+
         }
         .mat-expansion-panel-content{
           padding-top: 10px;
@@ -546,17 +636,13 @@
     }
 
 
-    /*.header_row--action-wrapper{
-      display: inline-block;
-    }*/
     .row{
       display:flex;
       width: 100%;
       flex-wrap: wrap;
     }
     .mat-expansion-panel-header{
-
-     /* border-bottom: 1px solid $opt-border-color;*/
+      padding-left: 15px;
 
       @include respond-to('x-small') {
         height: auto;
