@@ -893,44 +893,30 @@
         padding:0;
         overflow: hidden;
       }
-      .header-section-left{
-        padding: 15px;
+      .task-header{
+        min-height: 250px;
+        background-color: white;
       }
-      .bio-section{
-        border-bottom: 1px solid #e0e0e0;
-        padding: 24px 12px;
-        .opt_flex__item:nth-child(2){
-          justify-content: flex-end;
-        }
-      }
-      .booking-status{
-        padding: 24px 12px;
-        .opt_flex--container:nth-child(1){
-          margin-bottom: 10px;
-        }
-      }
-      .header-section-right{
-        padding: 15px;
-        background-color: #bfbfbf;
-        .opt_flex--container{
-          @include respond-to('x-small') {
-            flex-direction: column;
-          }
-          @include respond-to('medium') {
-            flex-direction: row;
-          }
-          @include respond-to('medium') {
-            flex-direction: row;
-          }
-        }
-      }
-      .booking-option-box{
-        padding:24px 24px 0px 24px;
+      .header-left-section{
         background-color: $white;
-        margin:10px;
-        .mat-form-field-infix{
-          width:100%;
-          border-top: 0px;
+        min-height: 250px;
+        .task-bio{
+          border-bottom:1px solid #e0e0e0;
+        }
+        .task-status{
+
+        }
+      }
+      .header-right-section{
+        min-height: 250px;
+        background-color: #e0e0e0;
+        .booking-option-box{
+          margin: 10px;
+          padding:10px;
+          background-color: $white;
+          .days-dropdown{
+            overflow: hidden;
+          }
         }
       }
       .task-section{
