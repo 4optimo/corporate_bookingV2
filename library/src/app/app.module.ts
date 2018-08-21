@@ -1,4 +1,3 @@
-
 import { AppComponent } from './app.component';
 import {CdkTableModule} from '@angular/cdk/table';
 import {HttpClientModule} from '@angular/common/http';
@@ -113,6 +112,7 @@ import { OptReprintPopupComponent } from './opt-reprint-popup/opt-reprint-popup.
 import { OptTaskPopupComponent } from './opt-task-popup/opt-task-popup.component';
 import { OptPackageSelectionModalComponent } from './opt-package-selection-modal/opt-package-selection-modal.component';
 import { OptSuccessComponent } from './opt-success/opt-success.component';
+import { OptBookingDetailsFullPageComponent } from './opt-booking-details-full-page/opt-booking-details-full-page.component';
 
 
 
@@ -160,7 +160,7 @@ const appRoutes: Routes = [
   { path: 'opt-reprint-popup', component: OptReprintPopupComponent},
   { path: 'opt-task-popup', component: OptTaskPopupComponent},
   { path: 'opt-success', component: OptSuccessComponent},
-
+  { path: 'opt-booking-details-full-page', component: OptBookingDetailsFullPageComponent},
 
 
   { path: 'opt-pageloader', component: OptPageloaderComponent},
@@ -266,10 +266,12 @@ export class DemoMaterialModule {}
     OptTaskPopupComponent,
     OptPackageSelectionModalComponent,
     OptSuccessComponent,
-    // OptDocumentSelectComponent,
+// OptDocumentSelectComponent,
+    OptBookingDetailsFullPageComponent,
 
     RoutingProjectComponent,
     TypographyComponent,
+
   ],
   imports: [
     BrowserModule,

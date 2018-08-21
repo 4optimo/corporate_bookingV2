@@ -1,4 +1,16 @@
 .opt-item-details{
+  &.opt_modal-content {
+    .opt_modal-header {
+    }
+    .test-inner {
+      .inner-icon-black {
+        i {
+          color: white;
+        }
+      }
+    }
+  }
+
   .opt-header-section{
     margin: -24px;
     background-color: #e4e8e9;
@@ -65,6 +77,21 @@
     .mat-input-infix {
       width: 80px;
     }
+  }
+  .opt_expand--container{
+    display: flex;
+    .item-details{
+        width: 100%;
+        align-items:  center;
+    }
+  }
+  .item-price-wrapper{
+    float: right;
+  }
+  .first-col{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: "...";
   }
 
 }
