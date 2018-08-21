@@ -2,10 +2,12 @@
 import { AppComponent } from './app.component';
 import {CdkTableModule} from '@angular/cdk/table';
 import {HttpClientModule} from '@angular/common/http';
-import { NgModule } from '@angular/core';
+import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {HttpModule} from '@angular/http';
 import { NgxEditorModule } from 'ngx-editor';
+import { PopoverModule, WavesModule } from 'angular-bootstrap-md';
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { TooltipModule } from 'ngx-bootstrap/tooltip';
 import {
   MatAutocompleteModule,
@@ -113,6 +115,9 @@ import { OptReprintPopupComponent } from './opt-reprint-popup/opt-reprint-popup.
 import { OptTaskPopupComponent } from './opt-task-popup/opt-task-popup.component';
 import { OptPackageSelectionModalComponent } from './opt-package-selection-modal/opt-package-selection-modal.component';
 import { OptSuccessComponent } from './opt-success/opt-success.component';
+import { OptBookingDetailsFullPageComponent } from './opt-booking-details-full-page/opt-booking-details-full-page.component';
+// import { OptSuccessComponent } from './opt-success/opt-success.component';
+/*import { OptSuccessComponent } from './opt-success/opt-success.component';*/
 
 
 
@@ -162,6 +167,8 @@ const appRoutes: Routes = [
   { path: 'opt-success', component: OptSuccessComponent},
 
 
+  // { path: 'opt-success', component: OptSuccessComponent},
+  { path: 'opt-booking-details-full-page', component: OptBookingDetailsFullPageComponent},
 
    { path: 'opt-pageloader', component: OptPageloaderComponent},
 
@@ -266,6 +273,8 @@ export class DemoMaterialModule {}
     OptTaskPopupComponent,
     OptPackageSelectionModalComponent,
     OptSuccessComponent,
+    OptBookingDetailsFullPageComponent,
+    // OptSuccessComponent,
       // OptDocumentSelectComponent,
 
     RoutingProjectComponent,
@@ -294,8 +303,12 @@ export class DemoMaterialModule {}
     NgMultiSelectDropDownModule,
     RouterModule.forRoot(appRoutes),
     NgxEditorModule,
-    TooltipModule.forRoot()
+    TooltipModule.forRoot(),
+    MDBBootstrapModule.forRoot()
+
   ],
+  providers: [],
+  schemas: [ NO_ERRORS_SCHEMA ]
 
   entryComponents:[
     OptPopupModalComponent,

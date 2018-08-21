@@ -1,79 +1,9 @@
-
 .opt-host-add-popup{
-/*
-  .opt_flex--container{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
+
+  mat-form-field{
+    max-width: 150px;
   }
 
-  .host-information{
-    .host-info {
-      padding-top: 30px;
-      padding-bottom: 15px;
-    }
-  }
-  !*.padding-left{
-    padding-left: 20px;
-  }*!
-
-  .inner-wrapper{
-    margin: 0 24px 0 24px;
-    .outer-contxt{
-      background-color: white;
-      margin: 10px;
-      //border: 1px dashed #b6b8b9;
-      .form-data-contact{
-        padding: 10px;
-        //flex: 1 1 33%;
-      }
-    }
-
-    !*.contact-details {
-      add-alternative-contact{
-        .add-more-section{
-          .icon-line{
-            width: 100%;
-            position: absolute;
-            height: 1px;
-            border-bottom: 1px dashed lighten($opt_color_quaternary, 10%)
-          }
-        }
-      }
-    }*!
-  }
-  !*.example-full-width{
-    width: 100%;
-  }*!
-
-  .additional-contact , .cust-info{
-    display: flex;
-    flex-wrap: nowrap;
-    width: 33%;
-
-    .width{
-      width: 120px;
-    }
-
-  }
-  !*.package-details{
-    .special-instruction{
-      padding-top: 20px;
-    }
-  }*!
-
-  .padding-top{
-    padding-top: 20px;
-  }
-
-  .margin-right{
-   margin-right: auto;
-  }
-
-  .opt_flex__item{
-    flex-basis: 150px;
-  }
-  */
 
 
   .add-more-section{
