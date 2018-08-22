@@ -251,8 +251,10 @@
   }
 
 
-  .edit_icon {
-    text-align: right;
+  .panel-icon {
+    display: inline-block;
+    padding: 3px;
+    font-size: 18px;
     //padding: 10px 0;
   }
 
@@ -529,7 +531,17 @@
     }
   }
 
+.opt-deli{
 
+  .field-icon{
+    width: 25px;
+  }
+
+  .field-detail{
+    width : calc(100% - 25px);
+  }
+
+}
 
   .opt-deli-header{
     mat-checkbox{
@@ -671,6 +683,13 @@
 
 
 .host{
+   .icn-number{
+    @include circle-icon(20px, $opt_status_confirmed-multiple , $opt_status_confirmed-multiple);
+    font-size: 14px;
+    color: $opt_color_white;
+
+
+  }
   .mat-expansion-panel{
     box-shadow: none;
     &.mat-expanded{
