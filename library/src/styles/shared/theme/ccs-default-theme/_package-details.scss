@@ -323,7 +323,7 @@
 }
 
 .opt_cart{
-  padding: 0 10px;
+  background-color: white;
   .opt_cart-wrapper{
     display: flex;
     flex-direction: column;
@@ -345,14 +345,32 @@
         padding-left: 60px;
       }
     }
-    .bottom-section{
-      align-self: flex-end;
+    .footer{
+      border-top: 2px solid lightgray;
+      margin-top: 80px;
+      .bottom-section{
+        padding: 20px;
+        justify-content: flex-end;
+      }
     }
     .btn-select{
       &:focus, &:active, &:hover, &:visited{
         background-color: #f5766c !important;
         color: white;
         border: none;
+      }
+    }
+
+    .package-list{
+      .package-name{
+        padding: 10px;
+      }
+      .loop-class{
+        &:first-child {
+          .mat-expansion-panel-header {
+            border-top: 2px solid lightgray;
+          }
+        }
       }
     }
   }

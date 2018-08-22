@@ -457,6 +457,14 @@
     border-radius: (10px);
     padding: 2px 10px;
   }
+  &.lbl__corporate-client{
+    border: 1px solid #27bfc2;
+    color: #27bfc2;
+  }
+  &.lbl__individual-client{
+    border: 1px solid #9c27b0;
+    color: #9c27b0;
+  }
 }
 
 .loadding--cage {

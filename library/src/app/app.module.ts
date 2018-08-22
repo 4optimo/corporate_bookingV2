@@ -113,6 +113,7 @@ import { OptTaskPopupComponent } from './opt-task-popup/opt-task-popup.component
 import { OptPackageSelectionModalComponent } from './opt-package-selection-modal/opt-package-selection-modal.component';
 import { OptSuccessComponent } from './opt-success/opt-success.component';
 import { OptBookingDetailsFullPageComponent } from './opt-booking-details-full-page/opt-booking-details-full-page.component';
+import { OptItemCartComponent } from './opt-item-cart/opt-item-cart.component';
 
 
 
@@ -161,7 +162,8 @@ const appRoutes: Routes = [
   { path: 'opt-task-popup', component: OptTaskPopupComponent},
   { path: 'opt-success', component: OptSuccessComponent},
   { path: 'opt-booking-details-full-page', component: OptBookingDetailsFullPageComponent},
-
+  { path: 'opt-package-cart', component: OptPackageCartComponent},
+  { path: 'opt-item-cart', component: OptItemCartComponent},
 
   { path: 'opt-pageloader', component: OptPageloaderComponent},
 
@@ -268,6 +270,7 @@ export class DemoMaterialModule {}
     OptSuccessComponent,
 // OptDocumentSelectComponent,
     OptBookingDetailsFullPageComponent,
+    OptItemCartComponent,
 
     RoutingProjectComponent,
     TypographyComponent,

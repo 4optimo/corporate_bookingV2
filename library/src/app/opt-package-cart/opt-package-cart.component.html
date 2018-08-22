@@ -15,7 +15,7 @@
       <div class="package-list">
 
         <mat-accordion>
-                <span *ngFor="let a of packageCartListArray; let index = index">
+                <div *ngFor="let a of packageCartListArray; let index = index" class="loop-class">
                   <div class="opt_package-details opt_booking__list opt_booking__detail">
                     <mat-accordion>
                       <mat-expansion-panel #myPanel [disabled]="true" class="opt-expand--line">
@@ -162,15 +162,17 @@
                       </mat-expansion-panel>
                     </mat-accordion>
                   </div>
-                </span>
+                </div>
         </mat-accordion>
 
       </div>
 
-      <div class="opt_flex--container bottom-section">
-        <div class="opt_flex__item--inherit">
-          <button class="mat-btn-primary mat-button">Back</button>
-          <button class="mat-btn-primary mat-button">Go to Booking</button>
+      <div class="footer">
+        <div class="opt_flex--container bottom-section">
+          <div class="opt_flex__item--inherit cart-btn">
+            <button class="mat-btn-primary mat-button">Back</button>
+            <button class="mat-btn-primary mat-button">Go to Booking</button>
+          </div>
         </div>
       </div>
     </div>
