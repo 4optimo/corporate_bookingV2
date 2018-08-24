@@ -114,6 +114,9 @@ import { OptPackageSelectionModalComponent } from './opt-package-selection-modal
 import { OptSuccessComponent } from './opt-success/opt-success.component';
 import { OptBookingDetailsFullPageComponent } from './opt-booking-details-full-page/opt-booking-details-full-page.component';
 import { OptItemCartComponent } from './opt-item-cart/opt-item-cart.component';
+import { OptModalPopoverComponent } from './opt-modal-popover/opt-modal-popover.component';
+import { OptTabbedPopoverComponent } from './opt-tabbed-popover/opt-tabbed-popover.component';
+import { OptDocumentPopoverComponent } from './opt-document-popover/opt-document-popover.component';
 
 
 
@@ -164,6 +167,9 @@ const appRoutes: Routes = [
   { path: 'opt-booking-details-full-page', component: OptBookingDetailsFullPageComponent},
   { path: 'opt-package-cart', component: OptPackageCartComponent},
   { path: 'opt-item-cart', component: OptItemCartComponent},
+  { path: 'opt-modal-popover', component: OptModalPopoverComponent},
+  { path: 'opt-tabbed-popover', component: OptTabbedPopoverComponent},
+  { path: 'opt-document-popover', component: OptDocumentPopoverComponent},
 
   { path: 'opt-pageloader', component: OptPageloaderComponent},
 
@@ -209,7 +215,6 @@ const appRoutes: Routes = [
     ScrollDispatchModule
 
   ],
-  declarations: [],
 })
 export class DemoMaterialModule {}
 
@@ -268,6 +273,9 @@ export class DemoMaterialModule {}
     OptTaskPopupComponent,
     OptPackageSelectionModalComponent,
     OptSuccessComponent,
+    OptModalPopoverComponent,
+    OptTabbedPopoverComponent,
+    OptDocumentPopoverComponent,
 // OptDocumentSelectComponent,
     OptBookingDetailsFullPageComponent,
     OptItemCartComponent,

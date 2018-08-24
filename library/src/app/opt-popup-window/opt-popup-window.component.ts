@@ -170,7 +170,7 @@ export class OptPopupWindowComponent implements OnInit {
       data: {name:'Booking Task'},
       panelClass:'custom-dialog-container',
       height: 'auto',
-      width: '60%'
+      width: '70%'
     });
 
   }
