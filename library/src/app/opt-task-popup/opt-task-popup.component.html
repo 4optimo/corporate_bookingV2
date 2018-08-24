@@ -27,7 +27,7 @@
       <div class="opt_modal-body">
         <div class="task-header">
           <div class="opt_flex--container task-header-container">
-            <div class="opt_flex__item header-left-section p33">
+            <div class="opt_flex__item header-left-section">
               <div class="bio-info">
                 <div class="opt_flex--container">
                   <div class="opt_flex__item opt_flex__item--vcenter">
@@ -59,11 +59,11 @@
                 </div>
               </div>
             </div>
-            <div class="opt_flex__item header-right-section p75">
+            <div class="opt_flex__item header-right-section">
               <div class="section-wrapper">
                 <div class="row">
-                  <div class="col-md-6">
-                    <div class="booking-option-box">
+                  <div class="col-xs- 12  col-sm-12 col-md-6">
+                    <div class="booking-option-box opt-txt__body1">
                       <div class="opt_flex--container">
                         <div class="opt_flex__item opt_flex__item--vcenter">
                           <span>Active Status</span>
@@ -83,8 +83,8 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-6">
-                    <div class="booking-option-box">
+                  <div class="col-xs- 12  col-sm-12 col-md-6">
+                    <div class="booking-option-box opt-txt__body1">
                       <div class="opt_flex--container">
                         <div class="opt_flex__item opt_flex__item--vcenter">
                           <span>Due Date</span>
@@ -103,8 +103,8 @@
                   </div>
                 </div>
                 <div class="row">
-                  <div class="col-md-6">
-                    <div class="booking-option-box">
+                  <div class="col-xs- 12  col-sm-12 col-md-6">
+                    <div class="booking-option-box opt-txt__body1">
                       <div class="opt_flex--container">
                         <div class="opt_flex__item opt_flex__item--vcenter">
                           <span>Function Sheet Category</span>
@@ -124,8 +124,8 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-6">
-                    <div class="booking-option-box">
+                  <div class="col-xs- 12  col-sm-12 col-md-6">
+                    <div class="booking-option-box opt-txt__body1 days-dropdown">
                       <div class="opt_flex--container">
                         <div class="opt_flex__item opt_flex__item--vcenter">
                           <span>Days</span>
@@ -263,205 +263,6 @@
                     <button class="mat-btn-primary mat-button" (click)="close()">Forward</button>
                     <button class="mat-btn-primary mat-button" (click)="close()">Complete</button>
                     <button class="mat-btn-primary mat-button" (click)="close()">Send</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="task-document-popup">
-          <div class="row">
-            <div class="col-md-1 pull-right">
-              <i class="material-icons pull-right">close</i>
-            </div>
-          </div>
-          <div class="document-popup-header">
-            <div class="row">
-              <div class="col-md-12">
-                <div class="opt_flex--container">
-                  <div class="opt_flex__item opt_flex__item--vcenter">
-                    <h1>Task Details</h1>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-3 pull-right">
-              <button class="mat-btn-primary mat-button pull-right">
-                <i class="material-icons">cloud_off</i>
-                <span>Close file panel</span>
-              </button>
-            </div>
-          </div>
-          <div class="drag-drop-wrapper">
-            <div class="row">
-              <div class="col-md-12">
-                <div class="opt_flex--container">
-                  <div class="opt_flex__item opt_flex__item--vcenter task-doc-popup">
-                    <i class="material-icons">note</i>
-                    <span class="opt-txt__body2-small">Document Information</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-12">
-              <div class="opt_flex--container">
-                <div class="opt_flex__item opt_flex__item--vcenter">
-                  <mat-form-field class="example-full-width">
-                    <input matInput placeholder="Description" value="">
-                  </mat-form-field>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-2 pull-right">
-              <div class="opt_flex--container pull-right">
-                <div class="opt_flex__item opt_flex__item--vcenter">
-                  <button class="mat-btn-primary mat-button pull-right">Save</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="task-to-popup">
-          <div class="row">
-            <div class="col-md-1 pull-right">
-              <i class="material-icons pull-right">close</i>
-            </div>
-          </div>
-          <div class="to-popup-header">
-            <div class="row">
-              <div class="col-md-12">
-                <div class="opt_flex--container">
-                  <div class="opt_flex__item opt_flex__item--vcenter">
-                    <mat-tab-group class="demo-tab-group" #tabGroup>
-                      <mat-tab label="Groups">
-                        <div class="demo-tab-content">
-                          <div class="to-tab-content">
-                            <div class="opt_flex--container">
-                              <div class="opt_flex__item opt_flex__item--vcenter">
-                                <mat-checkbox>Administration</mat-checkbox>
-                              </div>
-                            </div>
-                            <div class="opt_flex--container">
-                              <div class="opt_flex__item opt_flex__item--vcenter">
-                                <mat-checkbox>Event Administrator</mat-checkbox>
-                              </div>
-                            </div>
-                            <div class="opt_flex--container">
-                              <div class="opt_flex__item opt_flex__item--vcenter">
-                                <mat-checkbox>Finance</mat-checkbox>
-                              </div>
-                            </div>
-                            <div class="opt_flex--container">
-                              <div class="opt_flex__item opt_flex__item--vcenter">
-                                <mat-checkbox>Operations</mat-checkbox>
-                              </div>
-                            </div>
-                            <div class="opt_flex--container">
-                              <div class="opt_flex__item opt_flex__item--vcenter">
-                                <mat-checkbox>Sales Department</mat-checkbox>
-                              </div>
-                            </div>
-                            <div class="opt_flex--container">
-                              <div class="opt_flex__item opt_flex__item--vcenter">
-                                <mat-checkbox>Venue Management</mat-checkbox>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="to-bottom-section">
-                            <div class="opt_flex--container">
-                              <div class="opt_flex__item opt_flex__item--vcenter p25">
-                                <div class="opt_flex--container">
-                                  <div class="opt_flex__item opt_flex__item--vcenter">
-                                    <mat-checkbox>Administration</mat-checkbox>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="opt_flex__item opt_flex__item--vcenter p75">
-                                <span>3 Groups Selected</span>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="to-button">
-                            <div class="row">
-                              <div class="col-md-2 pull-right">
-                                <div class="opt_flex--container pull-right">
-                                  <div class="opt_flex__item opt_flex__item--vcenter">
-                                    <button class="mat-btn-primary mat-button pull-right">Add</button>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </mat-tab>
-                      <mat-tab label="Users">
-                        <div class="demo-tab-content">
-                          <div class="to-tab-content">
-                            <div class="opt_flex--container">
-                              <div class="opt_flex__item opt_flex__item--vcenter">
-                                <mat-checkbox>Support</mat-checkbox>
-                              </div>
-                            </div>
-                            <div class="opt_flex--container">
-                              <div class="opt_flex__item opt_flex__item--vcenter">
-                                <mat-checkbox>Philip</mat-checkbox>
-                              </div>
-                            </div>
-                            <div class="opt_flex--container">
-                              <div class="opt_flex__item opt_flex__item--vcenter">
-                                <mat-checkbox>Ros</mat-checkbox>
-                              </div>
-                            </div>
-                            <div class="opt_flex--container">
-                              <div class="opt_flex__item opt_flex__item--vcenter">
-                                <mat-checkbox>Ken</mat-checkbox>
-                              </div>
-                            </div>
-                            <div class="opt_flex--container">
-                              <div class="opt_flex__item opt_flex__item--vcenter">
-                                <mat-checkbox>Optimo</mat-checkbox>
-                              </div>
-                            </div>
-                            <div class="opt_flex--container">
-                              <div class="opt_flex__item opt_flex__item--vcenter">
-                                <mat-checkbox>Nick</mat-checkbox>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="to-bottom-section">
-                            <div class="opt_flex--container">
-                              <div class="opt_flex__item opt_flex__item--vcenter p25">
-                                <div class="opt_flex--container">
-                                  <div class="opt_flex__item opt_flex__item--vcenter">
-                                    <mat-checkbox>Administration</mat-checkbox>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="opt_flex__item opt_flex__item--vcenter p75">
-                                <span>3 Groups Selected</span>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="to-button">
-                            <div class="row">
-                              <div class="col-md-2 pull-right">
-                                <div class="opt_flex--container pull-right">
-                                  <div class="opt_flex__item opt_flex__item--vcenter">
-                                    <button class="mat-btn-primary mat-button pull-right">Add</button>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </mat-tab>
-                    </mat-tab-group>
                   </div>
                 </div>
               </div>
