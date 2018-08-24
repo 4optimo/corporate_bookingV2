@@ -9,6 +9,26 @@
   &_search-panel {
     border-radius: 3px;
     background-color: white;
+    position: relative;
+    .search-load{
+      width:calc(100% - 5px);
+      position: absolute;
+      height: calc(100% - 5px);
+      z-index: 9999;
+      background: -moz-linear-gradient(top, rgba(238,238,238,0.8) 0%, rgba(238,238,238,0.8) 1%, rgba(238,238,238,0.8) 100%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(top, rgba(238,238,238,0.8) 0%,rgba(238,238,238,0.8) 1%,rgba(238,238,238,0.8) 100%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to bottom, rgba(238,238,238,0.8) 0%,rgba(238,238,238,0.8) 1%,rgba(238,238,238,0.8) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cceeeeee', endColorstr='#cceeeeee',GradientType=0 ); /* IE6-9 */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      mat-spinner{
+        margin: 0 auto;
+
+      }
+
+    }
    .opt_chip-set--text{
      font-size: 12px;
    }
