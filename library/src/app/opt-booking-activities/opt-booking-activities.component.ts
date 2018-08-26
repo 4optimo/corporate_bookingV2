@@ -26,6 +26,15 @@ export class OptBookingActivitiesComponent implements OnInit{
   @ViewChild('myPanel4') myPanel4: MatExpansionPanel;
   matIcon4 = 'keyboard_arrow_down' || 'keyboard_arrow_up';
 
+  @ViewChild('myPanel5') myPanel5: MatExpansionPanel;
+  matIcon5 = 'keyboard_arrow_down' || 'keyboard_arrow_up';
+
+  @ViewChild('myPanel6') myPanel6: MatExpansionPanel;
+  matIcon6 = 'keyboard_arrow_down' || 'keyboard_arrow_up';
+
+  @ViewChild('myPanel7') myPanel7: MatExpansionPanel;
+  matIcon7 = 'keyboard_arrow_down' || 'keyboard_arrow_up';
+
 
 
   ngOnInit() {
@@ -43,6 +52,18 @@ export class OptBookingActivitiesComponent implements OnInit{
 
     this.myPanel4.expandedChange.subscribe((data) => {
       this.matIcon4 = data ? 'keyboard_arrow_up' : 'keyboard_arrow_down';
+    });
+
+    this.myPanel5.expandedChange.subscribe((data) => {
+      this.matIcon5 = data ? 'keyboard_arrow_up' : 'keyboard_arrow_down';
+    });
+
+    this.myPanel6.expandedChange.subscribe((data) => {
+      this.matIcon6 = data ? 'keyboard_arrow_up' : 'keyboard_arrow_down';
+    });
+
+    this.myPanel7.expandedChange.subscribe((data) => {
+      this.matIcon7 = data ? 'keyboard_arrow_up' : 'keyboard_arrow_down';
     });
   }
   expandPannel1() {
@@ -62,6 +83,21 @@ export class OptBookingActivitiesComponent implements OnInit{
 
   expandPannel4() {
     this.myPanel4.expanded = !this.myPanel4.expanded;
+    // alert("1");
+  }
+
+  expandPannel5() {
+    this.myPanel5.expanded = !this.myPanel5.expanded;
+    // alert("1");
+  }
+
+  expandPannel6() {
+    this.myPanel6.expanded = !this.myPanel6.expanded;
+    // alert("1");
+  }
+
+  expandPannel7() {
+    this.myPanel7.expanded = !this.myPanel7.expanded;
     // alert("1");
   }
 }
