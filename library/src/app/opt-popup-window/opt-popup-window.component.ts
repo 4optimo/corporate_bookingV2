@@ -144,7 +144,7 @@ export class OptPopupWindowComponent implements OnInit {
     this.dialog.open(OptHostAddPopupComponent,{
       panelClass:'custom-dialog-container',
       height: 'auto',
-      width: '60%'
+      width: '80%'
     });
 
   }
