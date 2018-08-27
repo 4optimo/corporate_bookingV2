@@ -778,32 +778,7 @@
     //=========================================
   }
 
-  .opt__sent, .opt-pay, .opt-host {
-    .row {
-      display: flex;
-      width: 100%;
-      flex-wrap: wrap;
-    }
-    .mat-expansion-panel-header {
-      padding-right: 15px;
-      height: 100%;
-
-      /*@include respond-to('x-small') {
-        height: auto;
-      }
-      @include respond-to('small') {
-        height: auto !important;
-
-      }
-      @include respond-to ('medium') {
-        height: auto !important;
-
-      }
-      @include respond-to('large') {
-        height: auto !important;
-
-      }*/
-    }
+  .opt__sent, .opt-pay, .opt-host{
 
     .icn-right {
       @include circle-icon(14px, $opt_color_frozen, $opt_color_frozen);
@@ -821,22 +796,6 @@
       color: $opt_color_white;
 
     }
-    .mat-expansion-panel {
-      box-shadow: none;
-      &.mat-expanded {
-        border-left: 4px solid #4db4fa;
-        box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12);
-        margin-bottom: 5px;
-        padding: 0 10px;
-        .mat-expansion-panel-header {
-          padding: 10px 0;
-          border-bottom: 1px dashed #4db4fa;
-        }
-        .mat-expansion-panel-content {
-          padding-top: 10px;
-        }
-      }
-    }
     .status {
       width: 60px;
       padding: 10px;
@@ -846,23 +805,32 @@
   }
 
   .host-list-item {
-    padding: 5px;
-    border-bottom: 1px solid #e0e0e0;
-
-    .row {
-      width: 100%;
-      display: flex;
-      [class*=' col-'] {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-      }
-    }
     //========styles for expansion ================
     .row{
       align-items: center;
+
+      .text-truncate {
+
+        @include respond-to('x-small') {
+          max-width: 110px;
+          display: inline-block;
+        }
+        @include respond-to('small') {
+          max-width: 250px;
+          display: inline-block;
+        }
+        @include respond-to('medium') {
+          max-width: 345px;
+          display: inline-block;
+        }
+        @include respond-to('large') {
+          max-width: 400px;
+          display: inline-block;
+        }
+
+      }
     }
-    .mat-expansion-panel {
+    &.mat-expansion-panel {
       box-shadow: none;
       .mat-expansion-panel-header[aria-disabled=true] {
         color: inherit;
@@ -924,6 +892,9 @@
         justify-content: center;
       }
 
+    }
+    .padding-left{
+      padding-left:40px;
     }
     //=========================================
   }

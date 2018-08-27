@@ -35,6 +35,9 @@ export class OptBookingActivitiesComponent implements OnInit{
   @ViewChild('myPanel7') myPanel7: MatExpansionPanel;
   matIcon7 = 'keyboard_arrow_down' || 'keyboard_arrow_up';
 
+  @ViewChild('myPanel8') myPanel8: MatExpansionPanel;
+  matIcon8 = 'keyboard_arrow_down' || 'keyboard_arrow_up';
+
 
 
   ngOnInit() {
@@ -64,6 +67,10 @@ export class OptBookingActivitiesComponent implements OnInit{
 
     this.myPanel7.expandedChange.subscribe((data) => {
       this.matIcon7 = data ? 'keyboard_arrow_up' : 'keyboard_arrow_down';
+    });
+
+    this.myPanel8.expandedChange.subscribe((data) => {
+      this.matIcon8 = data ? 'keyboard_arrow_up' : 'keyboard_arrow_down';
     });
   }
   expandPannel1() {
@@ -98,6 +105,11 @@ export class OptBookingActivitiesComponent implements OnInit{
 
   expandPannel7() {
     this.myPanel7.expanded = !this.myPanel7.expanded;
+    // alert("1");
+  }
+
+  expandPannel8() {
+    this.myPanel8.expanded = !this.myPanel8.expanded;
     // alert("1");
   }
 }
