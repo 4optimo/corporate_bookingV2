@@ -8,7 +8,7 @@ import {ModalContentComponent} from "../modal-content/modal-content.component";
   styleUrls: ['./opt-invoice-generator.component.scss']
 })
 export class OptInvoiceGeneratorComponent implements OnInit {
-
+  selected = 'option2';
   constructor(public  matDialogRef: MatDialogRef<ModalContentComponent>,
               @Inject(MAT_DIALOG_DATA) public data: any) { }
   public close(){

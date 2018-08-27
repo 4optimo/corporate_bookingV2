@@ -1028,6 +1028,9 @@
     .invoice-generator-wrapper{
       .invoice-header{
         padding:24px;
+        .header-row{
+          margin-bottom: 20px;
+        }
         .opt_flex--container{
           min-height: 48px;
         }
@@ -1048,13 +1051,14 @@
         .invoice-status{
           i{
             font-size: 28px;
-            background-color: grey;
+            background-color: #69f0ae;
             border-radius: 24px;
             color: white;
             padding: 10px;
           }
           .opt_flex--container{
             flex-direction: column;
+            margin-left: -15px;
           }
         }
         .invoice-total{
@@ -1063,10 +1067,11 @@
           }
         }
       }
-      .invoice-list{
+      .invoice-list-row{
         padding:0 24px;
-        .list-row{
-          padding: 24px 0;
+        border-bottom: 1px solid #e0e0e0;
+        .list-row-wrapper{
+          padding: 6px 0;
           display: flex;
           .row{
             flex-grow: 1;
@@ -1079,6 +1084,85 @@
             }
           }
         }
+        span{
+          overflow: visible;
+        }
+      }
+      .invoice-summary{
+        padding: 0 24px;
+        .invoice-summary-row{
+          padding:10px 0;
+          border-bottom: 1px solid #e0e0e0;
+        }
+        .summary-total{
+          padding: 24px 0;
+          .opt_flex__item{
+            justify-content: flex-end;
+          }
+        ;
+        }
+      }
+      .invoice-payment-terms{
+        margin-bottom: 20px;
+        padding:0 24px;
+        .list-success{
+          background-color:#69f0ae;
+          padding:5px;
+          border-radius:12px;
+          color:$white;
+          font-size: 14px;
+        }
+        p{
+          margin-bottom: 0px;
+          span{
+            color:$black !important;
+          }
+          overflow: visible;
+          white-space: normal;
+        }
+        .payment-terms-wrapper{
+          padding:15px;
+          background-color: #fafafa;
+          .right-align{
+            justify-content: flex-end;
+          }
+          .payment-terms-header{
+            padding: 10px 0;
+          }
+          .payment-list-row{
+            border-bottom:1px solid #e0e0e0 ;
+            padding: 10px 0;
+          }
+          .payment-term-note{
+            background-color: $white;
+            padding:10px;
+            min-height: 208px;
+            .opt-txt__body1,.opt-txt__body2{
+              white-space: normal;
+            }
+            .opt_flex--container{
+              flex-direction: column;
+            }
+          }
+        }
+      }
+      .invoice-button-row{
+        padding:0 24px;
+        margin-bottom: 20px;
+        .opt_flex__item{
+          justify-content: flex-end;
+          flex-wrap: wrap;
+        }
+        button{
+          margin-left: 15px;
+          margin-bottom: 10px;
+        }
+      }
+      .invoice-text-success{
+        color:#69f0ae ;
+      }
+      .mat-checkbox-inner-container{
+        margin-right: 15px;
       }
     }
   }
