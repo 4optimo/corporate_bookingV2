@@ -118,6 +118,7 @@ import { OptModalPopoverComponent } from './opt-modal-popover/opt-modal-popover.
 import { OptTabbedPopoverComponent } from './opt-tabbed-popover/opt-tabbed-popover.component';
 import { OptDocumentPopoverComponent } from './opt-document-popover/opt-document-popover.component';
 import { OptInvoiceGeneratorComponent } from './opt-invoice-generator/opt-invoice-generator.component';
+import { OptItemModalPopoversComponent } from './opt-item-modal-popovers/opt-item-modal-popovers.component';
 
 
 
@@ -215,8 +216,8 @@ const appRoutes: Routes = [
     MatToolbarModule,
     MatTooltipModule,
     ScrollDispatchModule
-
   ],
+  declarations: [],
 })
 export class DemoMaterialModule {}
 
@@ -282,6 +283,7 @@ export class DemoMaterialModule {}
 // OptDocumentSelectComponent,
     OptBookingDetailsFullPageComponent,
     OptItemCartComponent,
+    OptItemModalPopoversComponent,
 
     RoutingProjectComponent,
     TypographyComponent,
