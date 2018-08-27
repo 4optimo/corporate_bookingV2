@@ -59,14 +59,11 @@
 
   &_booking__detail {
 
-
     .opt_date_range{
 
       .mat-form-field{
         width: 100%;
       }
-
-
     }
 
     .tbl_head{
@@ -460,6 +457,14 @@
     border-radius: (10px);
     padding: 2px 10px;
   }
+  &.lbl__corporate-client{
+    border: 1px solid #27bfc2;
+    color: #27bfc2;
+  }
+  &.lbl__individual-client{
+    border: 1px solid #9c27b0;
+    color: #9c27b0;
+  }
 }
 
 .loadding--cage {
@@ -786,5 +791,14 @@
         padding: 9px 10px 9px 0;
       }
 
+  }
+}
+.mat-menu-content{
+  .mat-menu-item{
+    .mat-icon{
+      .icon-icn-package, .icon-icn-item{
+        font-size: 22px !important;
+        vertical-align: text-top;      }
+    }
   }
 }

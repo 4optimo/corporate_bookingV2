@@ -1,6 +1,3 @@
-/* Font Families */
-$rub: 'Rubik', sans-serif;
-
 .booking-summary {
   border-bottom: 1px solid $separator-border-color;
   color: #3b414d;
@@ -234,7 +231,6 @@ $rub: 'Rubik', sans-serif;
 }
 
 .typo{
-  //font-family: 'Rubik', sans-serif;
   font-size: 14px;
   font-weight: 400;
   &.sz-11{
@@ -279,7 +275,6 @@ $rub: 'Rubik', sans-serif;
 }
 
 .font-style-01 {
-  //font-family: $rub;
   font-size: 18px;
   font-weight: 500;
   color: #3a424d;
@@ -290,49 +285,42 @@ $rub: 'Rubik', sans-serif;
 }
 
 .font-style-02 {
-  //font-family: $rub;
   font-size: 11px;
   font-weight: 400;
   color: #3a424d;
 }
 
 .font-style-03 {
-  //font-family: 'Rubik', sans-serif;
   font-size: 11px;
   font-weight: 400;
   color: #909cac;
 }
 
 .font-style-04 {
-  //font-family: 'Rubik', sans-serif;
   font-size: 13px;
   font-weight: 500;
   color: #27bfc2;
 }
 
 .font-style-05 {
-  //font-family: 'Rubik', sans-serif;
   font-size: 16px;
   font-weight: 500;
   color: #27bfc2;
 }
 
 .font-style-06 {
-  //font-family: 'Rubik', sans-serif;
   font-size: 12px;
   font-weight: 400;
   color: #333e47;
 }
 
 .font-style-07 {
-  //font-family: 'Rubik', sans-serif;
   font-size: 14px;
   font-weight: 500;
   color: #909cac;
 }
 
 .link {
-  //font-family: 'Rubik', sans-serif;
   text-decoration: underline;
   cursor: pointer;
   &.__default {
@@ -534,15 +522,12 @@ i {
     font-weight: 500;
   }
   .mat-option{
-    //font-family: $rub;
     .mat-option-text{
-      //font-family: $rub;
     }
   }
 }
 
 .opt-booking-summary-select-sm {
-  //font-family: $rub;
   &.themed{
     .mat-select-value{
       color: #27bfc2;
@@ -558,9 +543,7 @@ i {
   font-weight: 400;
   }
   .mat-option{
-    //font-family: $rub;
     .mat-option-text{
-      //font-family: $rub;
     }
   }
 }

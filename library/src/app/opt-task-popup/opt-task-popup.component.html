@@ -1,0 +1,275 @@
+<div class="opt_modal-content opt_task-popup">
+  <div class="mat-dialog-content">
+    <div class="opt_modal-header ">
+      <div class="test opt--depth__1">
+        <div class="opt_flex--container test-wrapper">
+          <div class="opt_flex__item--inherit test-inner">
+            <div class="inner-icon">
+              <i class="material-icons">note_add</i>
+            </div>
+          </div>
+          <div class="opt_flex__item test-inner-expand">
+            <div class="title">
+              <h1 mat-dialog-title>{{data.name}}</h1>
+              <p class="opt-txt__body2-small">Task Scheduler</p>
+            </div>
+          </div>
+          <div class="opt_flex__item--inherit test-inner-2">
+            <div class="inner-action">
+              <button class="material-icons icon1">launch</button>
+              <button class="material-icons icon2" (click)="close()">close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="opt-task-wrapper">
+      <div class="opt_modal-body">
+        <div class="task-header">
+          <div class="opt_flex--container task-header-container">
+            <div class="opt_flex__item header-left-section">
+              <div class="bio-info">
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item opt_flex__item--vcenter">
+                    <span class="opt-txt__body2-small">Mr. Peter Worth</span>
+                  </div>
+                  <div class="opt_flex__item opt_flex__item--vcenter justify-right">
+                    <i class="material-icons">info</i>
+                  </div>
+                </div>
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item opt_flex__item--vcenter">
+                    <span class="opt-txt__tertiary opt-txt__body2-small">Coalfield Cricket Club</span>
+                  </div>
+                  <div class="opt_flex__item opt_flex__item--vcenter justify-right">
+                    <i class="material-icons">info</i>
+                  </div>
+                </div>
+              </div>
+              <div class="task-status">
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item opt_flex__item--vcenter">
+                    <span class="font-style-05">BP829890</span>
+                  </div>
+                </div>
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item opt_flex__item--vcenter">
+                    <span class="badge __success __uppercase mini-badge">Booking</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="opt_flex__item header-right-section">
+              <div class="section-wrapper">
+                <div class="row">
+                  <div class="col-xs- 12  col-sm-12 col-md-6">
+                    <div class="booking-option-box opt-txt__body1">
+                      <div class="opt_flex--container">
+                        <div class="opt_flex__item opt_flex__item--vcenter">
+                          <span>Active Status</span>
+                        </div>
+                      </div>
+                      <div class="opt_flex--container">
+                        <div class="opt_flex__item opt_flex__item--vcenter">
+                          <mat-form-field>
+                            <mat-select [(value)]="selected">
+                              <mat-option>None</mat-option>
+                              <mat-option value="option1">Option 1</mat-option>
+                              <mat-option value="option2">Awaiting Payment</mat-option>
+                              <mat-option value="option3">Option 3</mat-option>
+                            </mat-select>
+                          </mat-form-field>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs- 12  col-sm-12 col-md-6">
+                    <div class="booking-option-box opt-txt__body1">
+                      <div class="opt_flex--container">
+                        <div class="opt_flex__item opt_flex__item--vcenter">
+                          <span>Due Date</span>
+                        </div>
+                      </div>
+                      <div class="opt_flex--container">
+                        <div class="opt_flex__item opt_flex__item--vcenter">
+                          <mat-form-field>
+                            <input matInput [matDatepicker]="picker1" placeholder="Choose a date">
+                            <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+                            <mat-datepicker #picker1></mat-datepicker>
+                          </mat-form-field>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs- 12  col-sm-12 col-md-6">
+                    <div class="booking-option-box opt-txt__body1">
+                      <div class="opt_flex--container">
+                        <div class="opt_flex__item opt_flex__item--vcenter">
+                          <span>Function Sheet Category</span>
+                        </div>
+                      </div>
+                      <div class="opt_flex--container">
+                        <div class="opt_flex__item opt_flex__item--vcenter">
+                          <mat-form-field>
+                            <mat-select [(value)]="selected">
+                              <mat-option>None</mat-option>
+                              <mat-option value="option1">Option 1</mat-option>
+                              <mat-option value="option2">Awaiting Payment</mat-option>
+                              <mat-option value="option3">Option 3</mat-option>
+                            </mat-select>
+                          </mat-form-field>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs- 12  col-sm-12 col-md-6">
+                    <div class="booking-option-box opt-txt__body1 days-dropdown">
+                      <div class="opt_flex--container">
+                        <div class="opt_flex__item opt_flex__item--vcenter">
+                          <span>Days</span>
+                        </div>
+                      </div>
+                      <div class="opt_flex--container">
+                        <div class="opt_flex__item opt_flex__item--vcenter p33">
+                          <mat-form-field>
+                            <mat-select [(value)]="selected">
+                              <mat-option>None</mat-option>
+                              <mat-option value="option1">Option 1</mat-option>
+                              <mat-option value="option2">1</mat-option>
+                              <mat-option value="option3">Option 3</mat-option>
+                            </mat-select>
+                          </mat-form-field>
+                        </div>
+                        <div class="opt_flex__item opt_flex__item--vcenter p33">
+                          <mat-form-field>
+                            <mat-select [(value)]="selected">
+                              <mat-option>None</mat-option>
+                              <mat-option value="option1">Option 1</mat-option>
+                              <mat-option value="option2">After</mat-option>
+                              <mat-option value="option3">Option 3</mat-option>
+                            </mat-select>
+                          </mat-form-field>
+                        </div>
+                        <div class="opt_flex__item opt_flex__item--vcenter p33">
+                          <mat-form-field>
+                            <mat-select [(value)]="selected">
+                              <mat-option>None</mat-option>
+                              <mat-option value="option1">Option 1</mat-option>
+                              <mat-option value="option2">Booking Date</mat-option>
+                              <mat-option value="option3">Option 3</mat-option>
+                            </mat-select>
+                          </mat-form-field>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="task-section">
+          <div class="task-section-header">
+            <div class="row">
+              <div class="col-md-9">
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item opt_flex__item--vcenter">
+                    <h1>Task Details</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="task-section-body">
+            <form name="task-popup-form">
+              <div class="row">
+                <div class="col-md-8">
+                  <div class="opt_flex--container">
+                    <div class="opt_flex__item opt_flex__item--vcenter">
+                      <mat-form-field class="example-full-width">
+                        <input matInput placeholder="From" value="" required>
+                      </mat-form-field>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="opt_flex--container">
+                    <div class="opt_flex__item opt_flex__item--vcenter">
+                      <mat-form-field>
+                        <input matInput [matDatepicker]="picker2" placeholder="Choose a date">
+                        <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+                        <mat-datepicker #picker2></mat-datepicker>
+                      </mat-form-field>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-8">
+                  <div class="opt_flex--container">
+                    <div class="opt_flex__item opt_flex__item--vcenter">
+                      <mat-form-field class="example-full-width">
+                        <input matInput placeholder="To" value="" required>
+                      </mat-form-field>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="opt_flex--container">
+                    <div class="opt_flex__item opt_flex__item--vcenter task-doc-popup">
+                      <i class="material-icons">note</i>
+                      <span class="opt-txt__body2-small">Document Information</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="opt_flex--container">
+                    <div class="opt_flex__item opt_flex__item--vcenter">
+                      <mat-form-field class="example-full-width">
+                        <input matInput placeholder="Subject" value="" required>
+                      </mat-form-field>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="opt-text-editor">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="opt_flex--container">
+                          <div class="opt_flex__item">
+                            <app-ngx-editor [placeholder]="'Enter text here...'" [spellcheck]="true" [(ngModel)]="htmlContent"></app-ngx-editor>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="task-button-row">
+            <div class="row">
+              <div class="col-xs-12 col-md-12">
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item opt_flex__item--vcenter">
+                    <button class="mat-btn-primary mat-button" (click)="close()">New Task</button>
+                    <button class="mat-btn-primary mat-button" (click)="close()">New Message</button>
+                    <button class="mat-btn-primary mat-button" (click)="close()">Forward</button>
+                    <button class="mat-btn-primary mat-button" (click)="close()">Complete</button>
+                    <button class="mat-btn-primary mat-button" (click)="close()">Send</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

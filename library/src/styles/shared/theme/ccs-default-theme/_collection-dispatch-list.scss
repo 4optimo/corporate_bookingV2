@@ -1,0 +1,19 @@
+.opt_collection-despatch-list{
+  .list-wrapper{
+    border-bottom: 1px solid $opt-border-color;
+    padding:5px 10px;
+    [class*="col-"]{
+      min-height: 40px;
+      display: flex;
+    }
+  }
+  .opt_flex--container{
+    flex-grow: 1;
+  }
+  p{
+    margin-bottom: 0px;
+  }
+  mat-checkbox{
+    padding-right:10px;
+  }
+}

@@ -1,5 +1,6 @@
 import {Component, OnInit, ViewChild, ViewChildren} from '@angular/core';
-import {MatExpansionPanel} from "@angular/material";
+import {MatDialog, MatExpansionPanel} from "@angular/material";
+import {OptDataTableComponent} from "../opt-data-table/opt-data-table.component";
 
 @Component({
   selector: 'app-opt-booking-details',
@@ -7,10 +8,6 @@ import {MatExpansionPanel} from "@angular/material";
   styleUrls: ['./opt-booking-details.component.scss']
 })
 export class OptBookingDetailsComponent implements OnInit {
-
-
-
-
 
   @ViewChild('myPanel') myPanel: MatExpansionPanel;
   matIcon = 'keyboard_arrow_down' || 'keyboard_arrow_up';
@@ -24,7 +21,18 @@ export class OptBookingDetailsComponent implements OnInit {
   // @ViewChild('myPanel4') myPanel4: MatExpansionPanel;
   // matIcon4 = 'keyboard_arrow_down' || 'keyboard_arrow_up';
 
-  constructor() { }
+  constructor(public dialog: MatDialog)  { }
+
+  public openDataTable(){
+    this.dialog.open(OptDataTableComponent,{
+      panelClass:'custom-dialog-container',
+      height: 'auto',
+      width: '80%'
+      // DialogPosition : top
+
+    });
+
+  }
 
   ngOnInit() {
     this.myPanel.expandedChange.subscribe((data) => {

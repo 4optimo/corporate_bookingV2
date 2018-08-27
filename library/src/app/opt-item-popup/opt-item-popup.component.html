@@ -1,360 +1,407 @@
-<div class="opt_modal-content">
-  <div class="mat-dialog-content ">
+<div class="opt_modal-content opt-item-details">
+  <div class="mat-dialog-content">
     <div class="opt_modal-header ">
       <div class="test opt--depth__1">
         <div class="opt_flex--container test-wrapper">
           <div class="opt_flex__item--inherit test-inner">
-            <div class="inner-icon">
-              <i class="material-icons">person</i>
+            <div class="inner-icon-black">
+              <i class="icon-icn-item"></i>
             </div>
           </div>
           <div class="opt_flex__item test-inner-expand">
             <div class="title">
-              <h1 mat-dialog-title>{{ data.name}}</h1>
+              <h1 mat-dialog-title>{{data.name}}</h1>
             </div>
           </div>
           <div class="opt_flex__item--inherit test-inner-2">
             <div class="inner-action">
+              <div class="cart-wrapper">
+                <button class="material-icons">add_alert</button>
+                <div class="notification_count">99</div>
+              </div>
               <button class="material-icons icon1">launch</button>
               <button class="material-icons icon2" (click)="close()">close</button>
             </div>
+
           </div>
         </div>
       </div>
     </div>
     <div class="opt_modal-body">
-
       <!--modal body start-->
-      <div class="opt_corporate-client-popup opt_individual-client-popup">
-
-        <div class="pro-header">
-          <div class="opt_flex--container">
-            <div class="opt_flex__item--inherit pro-main-wrapper" >
-              <!--<div class="pro-main-wrapper">-->
-              <div class="opt_flex__item vh-center">
-                <div class="tap-to-add-wrapper themed">
-                  <button class="btn btn-taptoadd themed"><i class="material-icons">person</i></button>
-                  <p>Drag Image or Browse to Upload</p>
-                </div>
-              </div>
-              <!--</div>-->
-            </div>
-            <div class="opt_flex__item pro-sub-wrapper" >
-              <!--<div class="pro-sub-wrapper">-->
-              <div class="opt_flex--container form-data">
-                <div class="opt_flex__item form-data__individual">
-                  <mat-form-field class="example-full-width">
-                    <input matInput placeholder="Client Ref" value="0001">
-                  </mat-form-field>
-                </div>
-                <div class="opt_flex__item form-data__individual">
-                  <mat-form-field class="example-full-width">
-                    <input matInput placeholder="Account Manager" value="Sean.Page" required>
-                  </mat-form-field>
-                </div>
-                <div class="opt_flex__item--inherit form-data__individual">
-                  <mat-slide-toggle [labelPosition]='before'>Active</mat-slide-toggle>
-                  <!--
-                  <mat-slide-toggle #toggle [color]="primary" [checked]="true">Slide me</mat-slide-toggle>
-<h3 [ngClass]="{'primary-color' : toggle.checked}">Text</h3>
-                  -->
-                </div>
-              </div>
-              <!--</div>-->
-            </div>
-          </div>
-        </div>
-
-        <div class="client-details">
-          <section class="opt-section__heading">
-            <mat-accordion>
-              <mat-expansion-panel #myPanel2 class="section-heading __main">
-                <mat-expansion-panel-header class="__title" >
-                  <h1>Client Details</h1>
-                </mat-expansion-panel-header>
+      <div class="opt_package-popup">
+        <div class="opt-header-section">
+          <app-opt-search-panel></app-opt-search-panel>
+          <div class="package-select-section">
+            <form>
+              <fieldset>
+                <legend class="opt-txt__body2-small">Select Your Packages </legend>
                 <div class="opt_flex--container">
                   <div class="opt_flex__item">
-                    <mat-form-field class="example-full-width">
-                      <mat-select placeholder="Title" [(ngModel)]="selectedValue1" name="currency" required>
-                        <mat-option *ngFor="let currency of currencys" [value]="currency.value">
-                          {{currency.viewValue}}
-                        </mat-option>
-                      </mat-select>
-                    </mat-form-field>
+                    <div class="opt_flex--container">
+                      <div class="opt_flex__item--inherit opt_chip">
+                        <div class="opt_chip--wrapper">
+                          <div class="opt_flex--container">
+                            <div class="opt_flex__item">
+                              FIFA World Cup
+                            </div>
+                            <div class="opt_flex__item--inherit">
+                              <i class="material-icons cancel" (click)="isOpen = !isOpen;">cancel</i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="opt_flex__item--inherit opt_chip">
+                        <div class="opt_chip--wrapper">
+                          <div class="opt_flex--container">
+                            <div class="opt_flex__item">
+                              Premier Dinner & Eye
+                            </div>
+                            <div class="opt_flex__item--inherit">
+                              <i class="material-icons cancel" (click)="isOpen = !isOpen;">cancel</i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div class="opt_flex__item">
-                    <mat-form-field class="example-full-width">
-                      <input matInput placeholder="First Name" value="" required>
-                    </mat-form-field>
-                  </div>
-                  <div class="opt_flex__item">
-                    <mat-form-field class="example-full-width">
-                      <input matInput placeholder="Last Name" value="" required>
-                    </mat-form-field>
-                  </div>
-                  <div class="opt_flex__item">
-                    <mat-form-field class="example-full-width">
-                      <mat-select placeholder="Primary Client Category" [(ngModel)]="selectedValue1" name="currency" required>
-                        <mat-option *ngFor="let currency of currencys" [value]="currency.value">
-                          {{currency.viewValue}}
-                        </mat-option>
-                      </mat-select>
-                    </mat-form-field>
-                  </div>
-                  <div class="opt_flex__item">
-                    <mat-form-field class="example-full-width">
-                      <input matInput [matDatepicker]="picker" placeholder="Date Registered">
-                      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-                      <mat-datepicker #picker></mat-datepicker>
-                    </mat-form-field>
-                  </div>
-                  <div class="opt_flex__item">
-                    <mat-form-field class="example-full-width">
-                      <mat-select placeholder="Type" [(ngModel)]="selectedValue1" name="currency" required>
-                        <mat-option *ngFor="let currency of currencys" [value]="currency.value">
-                          {{currency.viewValue}}
-                        </mat-option>
-                      </mat-select>
-                    </mat-form-field>
-                  </div>
-                  <div class="opt_flex__item">
-                    <mat-form-field class="example-full-width">
-                      <input matInput placeholder="ERP Reference" value="" >
-                      <mat-icon matSuffix><i class="material-icons">search</i></mat-icon>
-                    </mat-form-field>
-                  </div>
-                  <div class="opt_flex__item"></div>
-                  <div class="opt_flex__item"></div>
+                  <button class="opt_flex__item--inherit package-select-menu  mat-icon-button" (click)="openPackageSelectionDropDown()">
+                    <i class="material-icons">
+                      keyboard_arrow_down
+                    </i>
+                  </button>
                 </div>
-              </mat-expansion-panel>
-            </mat-accordion>
-          </section>
-        </div>
-
-        <div class="contact-details ">
-          <div class="inner-wrapper">
-            <section class="opt-section__heading">
-              <mat-accordion>
-
-                <mat-expansion-panel #myPanel2 class="section-heading __main">
-                  <mat-expansion-panel-header class="__title" >
-                    <h1>Contact Details</h1>
-
-                  </mat-expansion-panel-header>
-
-                  <div class="outer-contxt">
-                    <div class="form-data-contact">
-                      <div class="opt_flex--container">
-                        <div class="opt_flex__item">
-                          <mat-form-field class="example-full-width">
-                            <input matInput placeholder="Name" value="Sushi" >
-                          </mat-form-field>
-                        </div>
-                        <div class="opt_flex__item">
-                          <mat-form-field class="example-full-width">
-                            <input matInput placeholder="Post Code" value="" >
-                          </mat-form-field>
-                        </div>
-                        <div class="opt_flex__item">
-                          <mat-form-field class="example-full-width">
-                            <input matInput placeholder="Address" value="" required>
-                          </mat-form-field>
-                        </div>
-                        <div class="opt_flex__item">
-                          <mat-form-field class="example-full-width">
-                            <input matInput placeholder="Street" value="" required>
-                          </mat-form-field>
-                        </div>
-                        <div class="opt_flex__item">
-                          <mat-form-field class="example-full-width">
-                            <input matInput placeholder="City/ Town" value="" required>
-                          </mat-form-field>
-                        </div>
-                        <div class="opt_flex__item">
-                          <mat-form-field class="example-full-width">
-                            <input matInput placeholder="Region/ Country" value="" required>
-                          </mat-form-field>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="opt_flex--container">
-                      <div class="opt_flex__item contact-type" >
-                        <div class="opt_flex--container inner-contxt">
-                          <mat-form-field class="example-full-width">
-                            <mat-select placeholder="Office Phone" [(ngModel)]="selectedValue1" name="currency" required>
-                              <mat-option *ngFor="let currency of currencys" [value]="currency.value">
-                                {{currency.viewValue}}
-                              </mat-option>
-                            </mat-select>
-                          </mat-form-field>
-                          <div class="add-more-section">
-                            <div class="icon-line">
-                            </div>
-                            <label>Remove</label>
-                            <div class="icon-wrapper">
-                              <i class="material-icons">add</i>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="opt_flex__item contact-type" >
-                        <div class="opt_flex--container inner-contxt">
-                          <mat-form-field class="example-full-width">
-                            <mat-select placeholder="Office Phone2/ Office Fax" [(ngModel)]="selectedValue1" name="currency">
-                              <mat-option *ngFor="let currency of currencys" [value]="currency.value">
-                                {{currency.viewValue}}
-                              </mat-option>
-                            </mat-select>
-                          </mat-form-field>
-                          <div class="add-more-section">
-                            <div class="icon-line">
-                            </div>
-                            <label>Remove</label>
-                            <div class="icon-wrapper">
-                              <i class="material-icons">add</i>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="opt_flex__item contact-type" >
-                        <div class="opt_flex--container inner-contxt">
-                          <div class="opt_flex__item">
-                            <mat-form-field class="example-full-width">
-                              <mat-select placeholder="Office Email" [(ngModel)]="selectedValue1" name="currency" required>
-                                <mat-option *ngFor="let currency of currencys" [value]="currency.value">
-                                  {{currency.viewValue}}
-                                </mat-option>
-                              </mat-select>
-                            </mat-form-field>
-                          </div>
-                          <div class="opt_flex__item">
-                            <div class="add-more-section">
-                              <div class="icon-line">
-                              </div>
-                              <label>Remove</label>
-                              <div class="icon-wrapper">
-                                <i class="material-icons">add</i>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="opt_flex--container">
-                      <div class="opt_flex__item">
-                        <div class="warning-message">
-                          <i class="material-icons">info_outline</i>
-                          <label>Please note that at least one phone number and email is required</label>
-                        </div>
-                      </div>
-                      <div class="opt_flex__item  add-new">
-                        <div class="add-more-section">
-                          <div class="icon-line">
-                          </div>
-                          <label>Add New</label>
-                          <div class="icon-wrapper">
-                            <i class="material-icons">add</i>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="opt_flex--container">
-                    <div class="opt_flex__item add-alternative-contact">
-                      <div class="add-more-section">
-                        <div class="icon-line">
-                        </div>
-                        <label>Add Alternative Contact</label>
-                        <div class="icon-wrapper">
-                          <i class="material-icons">add</i>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </mat-expansion-panel>
-
-              </mat-accordion>
-            </section>
+              </fieldset>
+            </form>
           </div>
         </div>
 
-        <app-opt-corporate-client-tabs></app-opt-corporate-client-tabs>
+        <div class="package-wrapper">
+          <div class="top-label opt_flex--container">
+            <div class="opt_flex__item opt-txt__secondary opt-txt__body2">30 Items</div>
+            <div class="opt_flex__item--inherit opt-txt__body2-small">
+              <mat-checkbox>Show selected items only</mat-checkbox>
+            </div>
+            <div class="opt_flex__item--inherit opt-txt__body2-small">
+              <i class="material-icons opt-txt__secondary">live_help</i>
+              Smart App Off <mat-slide-toggle></mat-slide-toggle>
+            </div>
+          </div>
 
-        <div class="notes">
-          <div class="inner-wrapper">
-            <section class="opt-section__heading">
-              <mat-accordion>
-                <mat-expansion-panel #myPanel2 class="section-heading __main">
-                  <mat-expansion-panel-header class="__title" >
-                    <h1>Notes</h1>
-                  </mat-expansion-panel-header>
-                  <div class="note-body">
-                    <div class="opt_flex--container txt-area">
-                      <div class="opt_flex__item">
-                        <mat-form-field>
-                          <textarea matInput placeholder="Duis non erat massa. Send consequat dignissim justo send tristique. Fusce eget efficitur dolor, send congue diam. Sed imperdiet ut elit sed."></textarea>
-                        </mat-form-field>
+          <div class="">
+
+            <!--<mat-accordion>-->
+                <!--<div *ngFor="let a of itemListArray; let index = index">-->
+                  <!--<div class="opt_package-details opt_booking__list opt_booking__detail">-->
+                      <!--<mat-accordion>-->
+                        <!--<mat-expansion-panel #myPanel [disabled]="true" class="opt-expand&#45;&#45;line">-->
+                          <!--<mat-expansion-panel-header class="opt_width-define opt_expand__header first-outer-wrapper"-->
+                                                      <!--collapsedHeight=".collapsedHeight" expandedHeight=".expandedHeight">-->
+                            <!--<div class="opt_expand&#45;&#45;container">-->
+                              <!--<div class="opt_flex&#45;&#45;container item-details">-->
+                                <!--<div class="opt_flex__item __expansion-lft&#45;&#45;side">-->
+                                  <!--<div class="row opt_flex&#45;&#45;container tc-flex-item__center ">-->
+                                    <!--<div class="col-sm-8 col-md-4	col-lg-4	col-xs-12">-->
+                                      <!--<mat-panel-title class="opt_flex&#45;&#45;container tc-flex-item__center first-col">-->
+                                        <!--<div class="opt_flex__item&#45;&#45;inherit ">-->
+                                          <!--<div class="icon__cage">-->
+                                            <!--<div class="opt_circle__confirmed">-->
+                                              <!--<span class="icon-icn-item"> </span>-->
+                                            <!--</div>-->
+                                          <!--</div>-->
+                                        <!--</div>-->
+                                        <!--<div class="opt_flex__item">-->
+                                          <!--<div class="opt_width-calc">-->
+                                            <!--<div class="opt-txt__body2-small ref_no">-->
+                                              <!--<span>BTX15GV - Child Classic Sunday</span>-->
+                                              <!--<span class="notification_count">10</span>-->
+                                            <!--</div>-->
+                                            <!--<div>-->
+                                              <!--<div class="opt_flex__item&#45;&#45;inherit additional-features">-->
+                                                <!--<span class="material-icons package-color&#45;&#45;product">gamepad</span>-->
+                                                <!--<span class="opt__subtitle-1-small opt-txt__secondary">| Alnut Park </span>-->
+                                              <!--</div>-->
+                                            <!--</div>-->
+                                          <!--</div>-->
+                                        <!--</div>-->
+                                      <!--</mat-panel-title>-->
+                                    <!--</div>-->
+                                    <!--<div class="col-sm-4 col-md-1	col-lg-1	col-xs-12">-->
+                                      <!--<mat-panel-description class="opt_flex&#45;&#45;container">-->
+                                        <!--<div class="middle-details">-->
+                                          <!--<div class="opt_flex__item tc-flex-item__center opt-txt__body1-small">Unlimited</div>-->
+                                          <!--<div class="opt_flex__item tc-flex-item__center opt-txt__caption __link">Half Day</div>-->
+                                        <!--</div>-->
+                                      <!--</mat-panel-description>-->
+                                    <!--</div>-->
+                                    <!--<div class="col-sm-6 col-md-3	col-lg-3	col-xs-12">-->
+                                      <!--<mat-panel-description class="opt_flex&#45;&#45;container">-->
+                                        <!--<div class="opt_flex__item tc-flex-item__center opt-txt__secondary opt__subtitle-2-small opt_unit__price">£450.00</div>-->
+                                        <!--<div class="opt_flex__item opt_counter__item">-->
+                                          <!--<div class="opt_counter">-->
+                                            <!--<div class="opt_flex&#45;&#45;container ">-->
+                                              <!--<div class="opt_flex__item&#45;&#45;inherit">-->
+                                                <!--<button mat-raised-button>+</button>-->
+                                              <!--</div>-->
+                                              <!--<div class="opt_flex__item&#45;&#45;inherit  tc-flex-item__center">-->
+                                                <!--<form class="example-form">-->
+                                                  <!--<mat-form-field class="">-->
+                                                    <!--<input matInput value="1">-->
+                                                  <!--</mat-form-field>-->
+                                                <!--</form>-->
+                                              <!--</div>-->
+                                              <!--<div class="opt_flex__item&#45;&#45;inherit">-->
+                                                <!--<button mat-raised-button>-</button>-->
+                                              <!--</div>-->
+                                            <!--</div>-->
+                                          <!--</div>-->
+                                        <!--</div>-->
+                                      <!--</mat-panel-description>-->
+                                    <!--</div>-->
+                                    <!--<div class="col-sm-6  col-md-3	col-lg-3	col-xs-12">-->
+                                      <!--<mat-panel-description class="opt_flex&#45;&#45;container item-price-wrapper">-->
+                                        <!--<div class="opt_flex__item&#45;&#45;inherit"><span class="lbl lbl__vat">Inc Vat</span></div>-->
+                                        <!--<div class=" opt_flex__item&#45;&#45;inherit opt_price-section">-->
+                                          <!--<mat-form-field class="example-full-width opt-typo-subhead-2 price">-->
+                                            <!--<input matInput placeholder="" value=" £450.00">-->
+                                          <!--</mat-form-field>-->
+                                         <!--</div>-->
+                                        <!--<div class="opt_flex__item"><span class="icon-coin-of-dollar"></span></div>-->
+                                      <!--</mat-panel-description>-->
+                                    <!--</div>-->
+                                    <!--<div class="col-sm-12  col-md-1	col-lg-1	col-xs-12">-->
+                                      <!--<mat-panel-description class="opt_flex&#45;&#45;container">-->
+                                        <!--<div mat-raised-button class="btn-color-default opt_flex__item opt-txt__light btn btn-select">-->
+                                          <!--Add-->
+                                        <!--</div>-->
+                                      <!--</mat-panel-description>-->
+                                    <!--</div>-->
+                                  <!--</div>-->
+                                <!--</div>-->
+                                <!--<div class="opt_flex__item __expansion-rgt&#45;&#45;side">-->
+                                  <!--<div class="col tc-flex-item__center">-->
+                                    <!--<div class="opt_flex__item action__button tc-flex-item__center">-->
+                                      <!--<button class="down-arrow" mat-icon-button color="primary" (click)="expandPannel()"-->
+                                              <!--[disableRipple]="true">-->
+                                        <!--<mat-icon>{{matIcon}}</mat-icon>-->
+                                      <!--</button>-->
+                                    <!--</div>-->
+                                  <!--</div>-->
+                                <!--</div>-->
+                              <!--</div>-->
+                            <!--</div>-->
+                          <!--</mat-expansion-panel-header>-->
+
+                          <!--<div class="opt_expand&#45;&#45;container">-->
+                            <!--<div class="opt_flex&#45;&#45;container item-details">-->
+                              <!--<div class="opt_flex__item">-->
+                                <!--<div class="row opt_flex&#45;&#45;container tc-flex-item__center">-->
+                                  <!--<div class="col-sm-6 col-md-4	col-lg-4	col-xs-12">-->
+                                    <!--<div class="opt_flex&#45;&#45;container row tc-flex-item__center __data">-->
+                                      <!--<div class="opt_flex__item icon__cage __multi-buttons">-->
+
+                                        <!--<button mat-icon-button class="btn-color-default">-->
+                                          <!--<i class="material-icons"> date_range</i>-->
+                                        <!--</button>-->
+
+                                        <!--<button mat-icon-button class="btn-color-default">-->
+                                          <!--<i class="icon-icn-office-big-chair  "> </i>-->
+                                        <!--</button>-->
+
+                                        <!--<button mat-icon-button class="btn-color-default">-->
+                                          <!--<i class="icon-icn-table"> </i>-->
+                                        <!--</button>-->
+
+                                        <!--<button mat-icon-button class="btn-color-default">-->
+                                          <!--<i class="material-icons"> settings</i>-->
+                                        <!--</button>-->
+
+                                        <!--<button mat-icon-button class="btn-color-default">-->
+                                          <!--<i class="material-icons">help</i>-->
+                                        <!--</button>-->
+
+                                        <!--<button mat-icon-button class="btn btn__frozen">-->
+                                          <!--<i class="material-icons">layers</i>-->
+                                        <!--</button>-->
+
+                                      <!--</div>-->
+                                    <!--</div>-->
+                                  <!--</div>-->
+                                  <!--<div class="col-sm-6 col-md-8	col-lg-8 col-xs-12 package-expand-description ">-->
+                                    <!--<div class="tc-flex-item__center">-->
+                                      <!--<div class="opt-txt__caption">Quisque in dolor hendrerit, dignissim lacus non, accumsan nisl. Duis sollicitudin convallis magna.</div>-->
+                                    <!--</div>-->
+                                  <!--</div>-->
+                                <!--</div>-->
+                              <!--</div>-->
+                            <!--</div>-->
+                          <!--</div>-->
+                        <!--</mat-expansion-panel>-->
+                      <!--</mat-accordion>-->
+                  <!--</div>-->
+                <!--</div>-->
+            <!--</mat-accordion>-->
+
+          </div>
+        </div>
+
+
+
+        <div class="opt_package-details opt_booking__list opt_booking__detail">
+          <mat-accordion>
+            <mat-expansion-panel #myPanel [disabled]="true" class="opt-expand--line">
+              <mat-expansion-panel-header class="opt_width-define opt_expand__header first-outer-wrapper"
+                                          collapsedHeight=".collapsedHeight" expandedHeight=".expandedHeight">
+                <div class="opt_expand--container">
+                  <div class="opt_flex--container item-details">
+                    <div class="opt_flex__item __expansion-lft--side">
+                      <div class="row opt_flex--container tc-flex-item__center ">
+                        <div class="col-md-4">
+                          <div class="opt_flex--container tc-flex-item__center first-col">
+                            <div class="opt_flex__item--inherit ">
+                              <div class="icon__cage">
+                                <div class="opt_circle__confirmed">
+                                  <span class="icon-icn-item"> </span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="opt_flex__item">
+                              <div class="opt_width-calc">
+                                <div class="opt-txt__body2-small ref_no">
+                                  <span>BTX15GV - Child Classic Sunday</span>
+                                  <span class="notification_count">10</span>
+                                </div>
+                                <div>
+                                  <div class="opt_flex__item--inherit additional-features">
+                                    <span class="material-icons package-color--product">gamepad</span>
+                                    <span class="opt__subtitle-1-small opt-txt__secondary">| Alnut Park </span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="opt_flex--container">
+                            <div class="opt_flex__item--inherit">
+                              <div class="opt-txt__body1-small">Unlimited</div>
+                              <div class="opt-txt__caption __link">Half Day</div>
+                            </div>
+
+                            <div class="opt_flex__item tc-flex-item__center opt-txt__secondary opt__subtitle-2-small opt_unit__price">£450.00</div>
+                            <div class="opt_flex__item tc-flex-item__center opt_counter__item">
+                              <div class="opt_counter">
+                                <div class="opt_flex--container ">
+                                  <div class="opt_flex__item--inherit">
+                                    <button mat-raised-button>+</button>
+                                  </div>
+                                  <div class="opt_flex__item--inherit  tc-flex-item__center">
+                                    <form class="example-form">
+                                      <mat-form-field class="">
+                                        <input matInput value="1">
+                                      </mat-form-field>
+                                    </form>
+                                  </div>
+                                  <div class="opt_flex__item--inherit">
+                                    <button mat-raised-button>-</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="opt_flex--container tc-flex-item__center item-price-wrapper">
+                            <div class="opt_flex__item--inherit">
+                              <div class="lbl lbl__vat">Inc Vat</div>
+                            </div>
+                            <div class=" opt_flex__item--inherit opt_price-section">
+                              <mat-form-field class="example-full-width opt-typo-subhead-2 price">
+                                <input matInput placeholder="" value=" £450.00">
+                              </mat-form-field>
+                            </div>
+                            <div class="opt_flex__item--inherit"><span class="icon-coin-of-dollar"></span></div>
+                            <div class="add-btn">
+                              <button mat-raised-button class="btn-color-default opt-txt__caption btn btn-select">
+                                Add
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+
                       </div>
                     </div>
-                    <div class="opt_flex--container">
-                      <div class="opt_flex__item">
-                        <div class="btn-note">
-                          <div class="btn-color-default opt_flex__item opt-txt__light btn" mat-raised-button="">Add</div>
-                          <div class="btn-color-default opt_flex__item opt-txt__light btn" mat-raised-button="">Edit</div>
+                    <div class="opt_flex__item __expansion-rgt--side">
+                      <div class="col tc-flex-item__center">
+                        <div class="opt_flex__item action__button tc-flex-item__center">
+                          <button class="down-arrow" mat-icon-button color="primary" (click)="expandPannel()"
+                                  [disableRipple]="true">
+                            <mat-icon>{{matIcon}}</mat-icon>
+                          </button>
                         </div>
                       </div>
                     </div>
                   </div>
-                </mat-expansion-panel>
-              </mat-accordion>
-            </section>
-          </div>
-        </div>
+                </div>
+              </mat-expansion-panel-header>
 
-        <div class="communication-consent">
-          <section class="opt-section__heading">
-            <mat-accordion>
-              <mat-expansion-panel #myPanel2 class="section-heading __main">
-                <mat-expansion-panel-header class="__title" >
-                  <h1>Communication Consent</h1>
-                </mat-expansion-panel-header>
-                <div class="communication-consent-body">
-                  <div class="opt_flex--container">
-                    <div class="opt_flex__item communication-consent-body-item">
-                      <mat-checkbox  class="opt-txt__body1">We may contact you about product and services you may like.</mat-checkbox>
-                    </div>
-                  </div>
-                  <div class="opt_flex--container">
-                    <div class="opt_flex__item communication-consent-body-item">
-                      <mat-checkbox class="opt-txt__body1">You are hereby, permitting us to send you a monthly news letter with the latest update about the product.</mat-checkbox>
-                    </div>
-                  </div>
-                  <div class="opt_flex--container">
-                    <div class="opt_flex__item">
-                      <div class="read-more">
-                        <a href="">
-                          <div class="icon-line"></div>
-                          <label>Read More ></label>
-                        </a>
+              <div class="opt_expand--container">
+                <div class="opt_flex--container item-details">
+                  <div class="opt_flex__item">
+                    <div class="row opt_flex--container tc-flex-item__center">
+                      <div class="col-sm-6 col-md-4	col-lg-4	col-xs-12">
+                        <div class="opt_flex--container row tc-flex-item__center __data">
+                          <div class="opt_flex__item icon__cage __multi-buttons">
+
+                            <button mat-icon-button class="btn-color-default">
+                              <i class="material-icons"> date_range</i>
+                            </button>
+
+                            <button mat-icon-button class="btn-color-default">
+                              <i class="icon-icn-office-big-chair  "> </i>
+                            </button>
+
+                            <button mat-icon-button class="btn-color-default">
+                              <i class="icon-icn-table"> </i>
+                            </button>
+
+                            <button mat-icon-button class="btn-color-default">
+                              <i class="material-icons"> settings</i>
+                            </button>
+
+                            <button mat-icon-button class="btn-color-default">
+                              <i class="material-icons">help</i>
+                            </button>
+
+                            <button mat-icon-button class="btn btn__frozen">
+                              <i class="material-icons">layers</i>
+                            </button>
+
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-md-8	col-lg-8 col-xs-12 package-expand-description ">
+                        <div class="tc-flex-item__center">
+                          <div class="opt-txt__caption">Quisque in dolor hendrerit, dignissim lacus non, accumsan nisl. Duis sollicitudin convallis magna.</div>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </mat-expansion-panel>
-            </mat-accordion>
-          </section>
+              </div>
+            </mat-expansion-panel>
+          </mat-accordion>
         </div>
 
-        <br>
+        <br><br><br>
         <div class="opt_flex--container">
-          <div class="opt_flex__item"></div>
-          <div class="opt_flex__item--inherit">
-            <button class="opt-txt__body1 btn btn-info" (click)="close()">Save</button>
+          <div class="opt_flex__item">
+            <span class=" opt-txt__secondary opt-txt__body2">30 Items found, </span>
+            <span class="opt-txt__body2 ">10 Displayed.</span>
           </div>
         </div>
       </div>
-
     </div>
+
   </div>
 </div>
-

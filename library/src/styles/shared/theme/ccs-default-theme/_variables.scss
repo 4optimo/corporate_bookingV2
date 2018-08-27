@@ -65,6 +65,8 @@ $opt-text-color__quaternary:#4bb3fa;
 $opt-link-color__primary:#3a424d;
 $opt-link-color__secondary:#27bfc2;
 
+//Border line color.........................................
+$opt-border-color:#e0e0e0;
 
 
 //button colors..............
@@ -215,3 +217,8 @@ $opt_color_mini_fab: $opt_color_secondary ;
 $opt_color_frozen : $opt_status_cancelled;
 
 
+//Border line color.........................................
+$opt-border-color:#e0e0e0;
+
+//---Font Awesome variable--
+$fa-font-path: "./shared/theme/ccs-default-theme/font/font-awesome/fonts";

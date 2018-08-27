@@ -1,0 +1,428 @@
+.opt_package-popup{
+
+  .opt_booking__list {
+    .mat-accordion {
+      .mat-expansion-panel-header {
+        margin: 0;
+      }
+    }
+  }
+  .mat-expansion-panel {
+    &:hover {
+      .mat-expansion-panel-header {
+        -webkit-transition: background-color 0.5s ease;
+        transition: background-color 0.5s ease;
+        background-color: #ECEFF1;
+      }
+    }
+  }
+
+  .opt_calendar-expand {
+    width: 900px;
+    position: absolute;
+    background-color: #fff;
+    z-index: 999;
+  }
+  .opt_linked-packages {
+    width: 1053px;
+    position: absolute;
+    background-color: #fff;
+    z-index: 999;
+    left: -353px;
+  }
+
+  .mat-expansion-panel-content, .mat-content{
+    overflow: inherit!important;
+    visibility: visible;
+  }
+  .opt-search-panel-wrapper{
+    background-color: #e4e8e9;
+    margin: -24px;
+  }
+  .html-code{
+    display: none;
+  }
+  .icon-icn-package{
+    font-size: 24px;
+    line-height: 45px;
+    color: white;
+  }
+  .top-label{
+    padding: 20px 15px;
+
+    .opt_flex__item--inherit{
+      padding-left: 40px;
+    }
+  }
+  .package-wrapper{
+    padding-top: 40px;
+  }
+}
+
+.opt_package-details{
+
+  &.opt_booking__list{
+    &.opt_booking__detail{
+      .opt_counter{
+        display: block;
+      }
+    }
+  }
+  .icon__cage{
+    .opt_circle{
+      &__bespoke{
+        @include circle-icon(45px, #27bfc2, #27bfc2);
+      }
+      &__standard{
+        @include circle-icon(45px, #8f44ad, #8f44ad);
+      }
+    }
+  }
+  .price--value__icon{
+    text-align: left;
+    padding-left: 10px;
+    height: 35px;
+  }
+  .price{
+    text-align: right!important;
+    line-height: 20px;
+  }
+  .inc-label{
+    height: 35px;
+  }
+  .cover-icons{
+    font-size: 16px;
+  }
+
+  .opt_expand--container{
+    min-height: 50px;
+    .package-expand-description {
+      padding-left: 3px;
+    }
+    .icon__cage{
+      &.__multi-buttons{
+        padding-left: 75px!important;
+      }
+    }
+  }
+  .opt_counter__item{
+    align-items: center;
+  }
+  .opt_counter{
+    .opt_flex--container{
+      justify-content: center;
+    }
+  }
+  .opt_unit__price{
+    text-align: right;
+  }
+  .mat-expansion-panel-header-description{
+    flex-wrap: wrap;
+    .btn-select{
+      @include respond-to('x-small') {
+        flex-basis: 100%;
+        margin-bottom: 15px;
+        margin-top: 15px;
+      }
+
+      @include respond-to('small') {
+        flex-basis: 100%;
+        margin-bottom: 15px;
+        margin-top: 15px;
+      }
+      @include respond-to('medium') {
+        flex-basis: 0;
+      }
+      @include respond-to('large') {
+        flex-basis: 0;
+
+      }
+
+    }
+  }
+
+  mat-accordion{
+      .mat-expansion-panel-header {
+        @include respond-to('medium') {
+          height: auto !important;
+          //background-color: #9e9d24;
+        }
+        @include respond-to('small') {
+          height: auto !important;
+          //background-color: red;
+        }
+      }
+    }
+
+  .opt_linked-packages{
+    margin: 0 10px;
+    padding:10px;
+
+    .outer-wrapper{
+      overflow-y: scroll;
+      padding: 0 15px;
+
+      &::-webkit-scrollbar {
+        width: 5px;
+      }
+
+      &::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
+        border-radius: 10px;
+        background-color: #e3e3e3!important;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
+      }
+
+      .inner-wrapper{
+        border-bottom: 1px dashed lightgrey;
+        padding: 15px;
+        &:last-child{
+          border-bottom: none;
+        }
+      }
+      .mat-input-wrapper{
+        margin: 0 3px;
+      }
+
+      .opt_counter__item{
+        padding-left: 57px;
+        .opt_counter{
+          .mat-form-field-infix{
+            width: 30px;
+          }
+        }
+      }
+      .mat-input-wrapper{
+        margin: 0 3px;
+      }
+      .linked-icon{
+        color: darkgray;
+        padding-right: 20px;
+      }
+    }
+  }
+
+  .opt_calendar-expand{
+    margin: 0 10px;
+    padding:10px;
+
+
+    .outer-wrapper {
+      overflow-y: scroll;
+      overflow-x: hidden;
+
+      &::-webkit-scrollbar {
+        width: 5px;
+      }
+
+      &::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
+        border-radius: 10px;
+        background-color: #e3e3e3!important;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
+      }
+
+      .time-slot{
+        padding: 0 15px;
+        border-bottom: 1px dashed lightgrey;
+        &:last-child{
+          border-bottom: none;
+        }
+      }
+      .inner-wrapper {
+        .time-slot-selection{
+          padding: 0 15px;
+        }
+        .date-select{
+          &:hover{
+            background-color: #2c95dc;
+            .material-icons{
+              color: white;
+            }
+            .mat-form-field-underline{
+              background-color: white;
+            }
+          }
+          background-color: #f9f9f9;
+          text-align: center;
+          display: flex;
+          flex-direction: column!important;
+          align-items: center!important;
+          justify-content: center!important;
+          min-height: 150px;
+          border: 1px dashed darkgray;
+          padding: 20px;
+          .material-icons{
+            color: lightgray;
+            font-size: 40px;
+            padding-bottom: 25px;
+          }
+          .date-field{
+            width: 110px;
+          }
+        }
+      }
+      .mat-input-wrapper{
+        margin: 0 3px;
+      }
+      .opt_counter{
+        .mat-form-field-infix{
+          width: 30px;
+        }
+      }
+      .individual-row{
+        padding: 15px;
+
+        .material-icons{
+          padding-right: 15px;
+        }
+        .availability-icon{
+          &.__last-few{
+            color: #f44336;
+          }
+          &.__good-availability{
+            color: #2c95dc;
+          }
+          &.__limited{
+            color: #9c27b0;
+          }
+        }
+      }
+    }
+
+  }
+
+  .linked-calendar-both{
+    margin: 10px;
+    .opt_calendar-expand{
+      margin: 0;
+      padding: 10px;
+    }
+    .opt_linked-packages{
+      margin: 0;
+      padding: 0;
+      .linked-package-text{
+        padding: 20px;
+      }
+      .outer-wrapper{
+        border-top: 2px solid lightgray;
+        overflow: hidden;
+        background-color: #f9f9f9;
+      }
+    }
+  }
+
+}
+
+.opt_cart{
+  background-color: white;
+  .opt_cart-wrapper{
+    display: flex;
+    flex-direction: column;
+    min-height: 500px;
+    padding: 10px;
+    .package-list{
+      padding-top: 30px;
+      flex-grow: 1;
+    }
+    .package-alert-section{
+      min-height: 80px;
+      background-color: #e3e3e3;
+      .icon{
+        color: darkgray;
+        font-size: 50px;
+        padding-left: 30px;
+      }
+      .text{
+        padding-left: 60px;
+      }
+    }
+    .footer{
+      border-top: 2px solid lightgray;
+      margin-top: 80px;
+      .bottom-section{
+        padding: 20px;
+        justify-content: flex-end;
+      }
+    }
+    .btn-select{
+      &:focus, &:active, &:hover, &:visited{
+        background-color: #f5766c !important;
+        color: white;
+        border: none;
+      }
+    }
+
+    .package-list{
+      .package-name{
+        padding: 10px;
+      }
+      .loop-class{
+        &:first-child {
+          .mat-expansion-panel-header {
+            border-top: 2px solid lightgray;
+          }
+        }
+      }
+    }
+  }
+}
+
+.opt_modal-content{
+
+  .opt_booking__list {
+    .opt_width-calc {
+      width: unset;
+    }
+  }
+  .inner-icon-black{
+    .icon-icn-package{
+      color: white!important;
+    }
+  }
+  .inner-action{
+    .cart-wrapper{
+      border-right: 1px solid lightgray;
+      display: inline-block;
+      padding: 0 15px;
+      position:  relative;
+      .notification_count{
+        position:  absolute;
+        font-size: 10px;
+        background-color: #ddd;
+        padding: 3px;
+        border-radius: 50%;
+        top: -4px;
+        right: 5px;
+        color: #000;
+      }
+    }
+  }
+  .opt_package-popup{
+    &.opt_modal-body{
+      background-color: #f8f8f8;
+    }
+  }
+}
+
+.opt_item-popup{
+  .ref_no{
+    position:  relative;
+    .notification_count{
+      font-size: 10px;
+      background-color: #ddd;
+      padding: 3px;
+      border-radius: 50%;
+      right: 5px;
+      color: #000;
+    }
+  }
+}

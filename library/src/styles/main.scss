@@ -34,7 +34,7 @@ $bootstrap-sass-asset-helper: false;
 @import "./shared/theme/ccs-default-theme/information";
 //@import "./shared/theme/ccs-default-theme/pop-up";
 @import "./shared/theme/ccs-default-theme/booking-details";
-//@import "./shared/theme/ccs-default-theme/booking-payment";
+@import "./shared/theme/ccs-default-theme/booking-payment";
 @import "./shared/theme/ccs-default-theme/booking-main-tabs";
 @import "./shared/theme/ccs-default-theme/opt-booking-list";
 @import "./shared/theme/ccs-default-theme/opt-section__heading";
@@ -61,3 +61,20 @@ $bootstrap-sass-asset-helper: false;
 @import "./shared/theme/ccs-default-theme/color-classes";
 @import "./shared/theme/ccs-default-theme/buttons";
 @import "./shared/theme/ccs-default-theme/opt_pageloader";
+@import "./shared/theme/ccs-default-theme/package-details";
+@import "./shared/theme/ccs-default-theme/collection-dispatch-list";
+@import "./shared/theme/ccs-default-theme/payment-modal";
+@import "./shared/theme/ccs-default-theme/data-table";
+@import "./shared/theme/ccs-default-theme/host-add-popup";
+@import "./shared/theme/ccs-default-theme/success";
+@import "./shared/theme/ccs-default-theme/font/font-awesome/scss/font-awesome.scss";
+@import "./shared/theme/ccs-default-theme/item-details";
+@import "./shared/theme/ccs-default-theme/package-selection-modal";
+@import "./shared/theme/ccs-default-theme/booking-details-full-page";
+
+
+html,
+body{
+  font-family: 'Roboto', sans-serif !important;
+}
+

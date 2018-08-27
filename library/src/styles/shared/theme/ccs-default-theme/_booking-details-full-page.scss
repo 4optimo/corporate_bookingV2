@@ -1,0 +1,23 @@
+.opt{
+  &_booking-details-full{
+    .content-wrapper{
+      padding: 0 !important;
+      background-color: white !important;
+    }
+    .opt_alert{
+      padding: 40px !important;
+    }
+    .opt_additional-details-section{
+      padding: 20px 25px;
+    }
+    .opt_booking-details-section{
+      padding: 20px 25px;
+    }
+    .opt_booking-activities-section{
+      padding: 20px 25px;
+    }
+    .opt_booking-payments-section{
+      padding: 20px 25px;
+    }
+  }
+}

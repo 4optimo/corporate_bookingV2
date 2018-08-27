@@ -39,8 +39,26 @@
         </div>
         <div class="col-md-6">
           <div class="btn-group pull-right">
-            <button mat-raised-button><i class="material-icons">assessment</i>Add</button>
-            <button mat-raised-button><i class="material-icons">add</i>Advance Price</button>
+            <button mat-raised-button  [matMenuTriggerFor]="menu"><i class="material-icons">assessment</i>Add</button>
+            <mat-menu #menu="matMenu">
+              <button mat-menu-item>
+                <mat-icon><span class="icon-icn-package"></span></mat-icon>
+                <span>Package</span>
+              </button>
+              <button mat-menu-item>
+                <mat-icon><span class="icon-icn-item"></span></mat-icon>
+                <span>Up-sell</span>
+              </button>
+              <button mat-menu-item>
+                <mat-icon>date_range</mat-icon>
+                <span>Discount</span>
+              </button>
+              <button mat-menu-item>
+                <mat-icon>monetization_on</mat-icon>
+                <span>Go to Calendar</span>
+              </button>
+            </mat-menu>
+            <button mat-raised-button (click)="openDataTable()"><i class="material-icons">add</i>Advance Price</button>
             <button mat-raised-button><i class="material-icons">delete</i>Delete</button>
           </div>
         </div>
