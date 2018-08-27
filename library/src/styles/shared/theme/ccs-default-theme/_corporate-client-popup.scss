@@ -1024,6 +1024,64 @@
       }
     }
   }
+  &_invoice-generator-popup{
+    .invoice-generator-wrapper{
+      .invoice-header{
+        padding:24px;
+        .opt_flex--container{
+          min-height: 48px;
+        }
+        background-color: #fafafa;
+        img{
+          height: 40px;
+        }
+        .invoice-info{
+          flex-direction: column;
+          .opt_flex__item{
+            justify-content: flex-end;
+          }
+        }
+        .invoice-bio{
+          flex-direction: column;
+          border-right: 1px solid #e0e0e0;
+        }
+        .invoice-status{
+          i{
+            font-size: 28px;
+            background-color: grey;
+            border-radius: 24px;
+            color: white;
+            padding: 10px;
+          }
+          .opt_flex--container{
+            flex-direction: column;
+          }
+        }
+        .invoice-total{
+          .opt_flex__item{
+            justify-content: flex-end;
+          }
+        }
+      }
+      .invoice-list{
+        padding:0 24px;
+        .list-row{
+          padding: 24px 0;
+          display: flex;
+          .row{
+            flex-grow: 1;
+          }
+          .value-col{
+            min-height: 48px;
+            flex-direction: column;
+            .opt_flex__item{
+              justify-content: flex-end;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 /*Global classes*/

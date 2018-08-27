@@ -15,6 +15,7 @@ import {OptHostAddPopupComponent} from "../opt-host-add-popup/opt-host-add-popup
 import { OptAddNoteComponent } from '../opt-add-note/opt-add-note.component';
 import {OptReprintPopupComponent} from "../opt-reprint-popup/opt-reprint-popup.component";
 import {OptTaskPopupComponent} from "../opt-task-popup/opt-task-popup.component";
+import {OptInvoiceGeneratorComponent} from "../opt-invoice-generator/opt-invoice-generator.component";
 
 @Component({
   selector: 'app-opt-popup-window',
@@ -168,6 +169,15 @@ export class OptPopupWindowComponent implements OnInit {
   public  openTaskPopup(){
     this.dialog.open(OptTaskPopupComponent,{
       data: {name:'Booking Task'},
+      panelClass:'custom-dialog-container',
+      height: 'auto',
+      width: '70%'
+    });
+
+  }
+  public  openInvoicePopup(){
+    this.dialog.open(OptInvoiceGeneratorComponent,{
+      data: {name:'Invoice Generator'},
       panelClass:'custom-dialog-container',
       height: 'auto',
       width: '70%'
