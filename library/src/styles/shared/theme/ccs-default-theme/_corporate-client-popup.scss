@@ -888,33 +888,93 @@
   }
   &_task-popup{
     .opt-task-wrapper{
+      .justify-right{
+        justify-content: flex-end;
+      }
       background-color: #fafafa;
       .opt_modal-body{
-        padding:0;
-        overflow: hidden;
+        padding: 0px;
       }
       .task-header{
-        min-height: 250px;
-        background-color: white;
+        .task-header-container{
+          min-height: 250px !important;
+          @include respond-to('x-small') {
+            flex-direction: column;
+          }
+          @include respond-to('small') {
+            flex-direction: column;
+          }
+          @include respond-to('medium') {
+            flex-direction: row;
+          }
+        }
       }
       .header-left-section{
+        flex-grow: 1;
         background-color: $white;
-        min-height: 250px;
-        .task-bio{
+        @include respond-to('x-small') {
+          width: 100%;
+        }
+        @include respond-to('medium') {
+          width: 33%;
+        }
+        .bio-info{
+          .opt_flex--container{
+            padding-bottom: 10px;
+          }
           border-bottom:1px solid #e0e0e0;
+          margin:15px;
+          padding:25px 10px;
+          .row{
+            display: flex;
+            align-items: center;
+          }
         }
         .task-status{
-
+          margin:15px;
+          padding:10px;
+          .row{
+            display: flex;
+            align-items: center;
+          }
+          .opt_flex--container{
+            padding-bottom: 10px;
+          }
         }
       }
       .header-right-section{
-        min-height: 250px;
-        background-color: #e0e0e0;
+        display: flex;
+        align-items: center;
+        padding-left: 15px;
+        padding-right: 15px;
+        overflow: hidden;
+        @include respond-to('x-small') {
+          width: 100%;
+        }
+        @include respond-to('medium') {
+          width: 67%;
+        }
+        .section-wrapper{
+          padding-left:15px;
+          padding-right:15px;
+          overflow: hidden;
+        }
+        .days-dropdown{
+          mat-form-field{
+            padding-right: 10px;
+          }
+        }
+        flex-grow: 4;
+        background-color: #f5f5f5;
         .booking-option-box{
-          margin: 10px;
-          padding:10px;
           background-color: $white;
-          .days-dropdown{
+          margin:15px 0 15px 0;
+          padding:10px;
+          .mat-form-field{
+            flex-grow: 1;
+            overflow: hidden;
+          }
+          .opt_flex__item{
             overflow: hidden;
           }
         }
@@ -942,6 +1002,7 @@
           i{
             padding-right: 10px;
           }
+          cursor: pointer;
         }
         .opt_flex__item.task-doc-popup{
           justify-content: center;
@@ -953,9 +1014,11 @@
           margin-top: 20px;
           .opt_flex__item{
             justify-content: flex-end;
+            flex-wrap: wrap;
           }
           button{
             margin-left: 20px;
+            margin-bottom: 20px;
           }
         }
       }
@@ -964,6 +1027,70 @@
 }
 
 /*Global classes*/
+.task-document-popup{
+  padding:24px;
+  background-color: $white;
+  .close-popover{
+    cursor: pointer;
+    color: #909cac;
+  }
+  h1{
+    border-bottom: 4px solid #00b0ff;
+    line-height: 44px;
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+  .document-popup-header{
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 20px;
+  }
+  .drag-drop-wrapper{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px dashed #d9d9d9;
+    margin-bottom: 20px;
+    margin-top:20px;
+    padding:15px;
+    min-height: 100px;
+    i{
+      padding-right: 10px;
+    }
+  }
+  mat-form-field{
+    flex-grow: 1;
+    margin-bottom: 20px;
+  }
+}
+.task-to-popup{
+  padding:24px;
+  background-color: $white;
+  .close-popover{
+    cursor: pointer;
+    color: #909cac;
+  }
+  .to-popup-header{
+    margin-bottom: 20px;
+  }
+  mat-tab-group{
+    flex-grow: 1;
+  }
+  .to-tab-content{
+    padding:15px;
+    border-bottom:1px solid #e0e0e0;
+    margin-bottom: 15px;
+    mat-checkbox{
+      margin-bottom: 10px;
+    }
+  }
+  .to-bottom-section{
+    padding:15px;
+  }
+  .to-button{
+    overflow: hidden;
+  }
+}
 .pull-xs-left{
   @include respond-to('x-small') {
     float: left !important;

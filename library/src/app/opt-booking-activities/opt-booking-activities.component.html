@@ -272,46 +272,44 @@
           <!--****2nd row*****-->
           <mat-accordion>
             <mat-expansion-panel #myPanel1 [disabled]="true" class="opt-expand--line documents_list_item" >
-              <mat-expansion-panel-header class="opt_width-define opt_expand__header" collapsedHeight=".collapsedHeight" expandedHeight=".expandedHeight"  >
+              <mat-expansion-panel-header collapsedHeight=".collapsedHeight" expandedHeight=".expandedHeight"  >
                 <div class="opt_expand--container">
                   <mat-panel-title>
                     <div class="opt_flex__item __expansion-lft--side">
-                    <div class="row">
-                      <div class="col-xs-12 col-sm-4 col-md-3	col-lg-4">
-                        <div class="opt_flex--container">
-                          <div class="opt_flex__item chck-box horizontally-center"> <mat-checkbox></mat-checkbox> </div>
-                          <div class="opt_flex__item des-box">
-                            <div class="opt-txt__body2 opt-fontweight--bold text-truncate"> Our Delicious Meal Plans</div>
-                            <div class="opt-txt__body1-small"><span class="symbol_icon"><i class="material-icons mat-btn-icon-btn opt-txt__tertiary indicator-icon">attach_file</i></span> <span class="opt-txt__tertiary"> PDF </span>| v1.01 |<span class="opt-txt__secondary">04-Jan-2018</span></div>
+                      <div class="row">
+                        <div class="col-xs-12 col-sm-4 col-md-3	col-lg-4">
+                          <div class="opt_flex--container data-cadge">
+                            <div class="opt_flex__item chck-box horizontally-center"> <mat-checkbox></mat-checkbox> </div>
+                            <div class="opt_flex__item des-box">
+                              <div class="opt-txt__body2 opt-fontweight--bold text-truncate"> Our Delicious Meal Plans</div>
+                              <div class="opt-txt__body1-small"><span class="symbol_icon"><i class="material-icons mat-btn-icon-btn opt-txt__tertiary indicator-icon">attach_file</i></span> <span class="opt-txt__tertiary"> PDF </span>| v1.01 |<span class="opt-txt__secondary">04-Jan-2018</span></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6	col-lg-4">
+                          <div class="opt_flex--container data-cadge">
+                            <div class="opt_flex__item  opt-txt__body2 text-truncate">
+                              Booking Confirmation
+                            </div>
+                            <div class="opt_flex__item opt-txt__body1-small opt-txt__secondary text-truncate">
+                              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-2 col-md-3	col-lg-4">
+                          <div class="opt_flex__item opt-txt__align-right data-cadge">
+                            <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">edit</i></button>
+                            <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">delete</i></button>
                           </div>
                         </div>
                       </div>
-                      <div class="col-xs-12 col-sm-6 col-md-6	col-lg-4">
-                        <div class="opt-txt__body2 text-truncate">
-                          Booking Confirmation
-                        </div>
-                        <div class="opt-txt__body1-small opt-txt__secondary text-truncate">
-                          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa
-                        </div>
-                      </div>
-                      <div class="col-xs-12 col-sm-2 col-md-3	col-lg-4">
-                        <div class="opt_flex__item opt-txt__align-right">
-                          <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">edit</i></button>
-                          <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">delete</i></button>
-                          <!--<button class="down-arrow opt_color_icon_font panel-action-btn-icon" mat-icon-button (click)="expandPannel()"
-                                  [disableRipple]="true">
-                            <mat-icon>{{matIcon1}}</mat-icon>
-                          </button>-->
-                        </div>
-                      </div>
-                    </div>
                     </div>
                     <div class="opt_flex__item __expansion-rgt--side">
                       <div class="col tc-flex-item__center">
                         <div class="opt_flex__item action__button tc-flex-item__center">
-                          <button class="down-arrow" mat-icon-button color="primary" (click)="expandPannel()"
+                          <button class="down-arrow" mat-icon-button color="primary" (click)="expandPannel1()"
                                   [disableRipple]="true">
-                            <mat-icon>{{matIcon1}}</mat-icon>
+                            <mat-icon class="opt_color_icon_font">{{matIcon1}}</mat-icon>
                           </button>
                         </div>
                       </div>
@@ -321,7 +319,7 @@
               </mat-expansion-panel-header>
               <div class="row">
                 <div class="col-xs-12 col-sm-4 col-md-3	col-lg-4">
-                  <div class="opt_flex--container">
+                  <div class="opt_flex--container  data-cadge">
                     <div class="opt_flex__item chck-box horizontally-center"> <mat-checkbox></mat-checkbox> </div>
                     <div class="opt_flex__item des-box">
                       <div class="opt-txt__body1  text-truncate"> Our Delicious Meal Plans</div>
@@ -329,16 +327,18 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-6	col-lg-5">
-                  <div class="opt-txt__body1  text-truncate">
-                    Booking Confirmation
-                  </div>
-                  <div class="opt-txt__body1-small text-truncate opt-txt__secondary">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa
-                  </div>
+                <div class="col-xs-12 col-sm-6 col-md-6	col-lg-4">
+                  <div class="opt_flex--container data-cadge">
+                      <div class="opt_flex__item  opt-txt__body2 text-truncate">
+                        Booking Confirmation
+                      </div>
+                      <div class="opt_flex__item opt-txt__body1-small opt-txt__secondary text-truncate">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa
+                      </div>
+                    </div>
                 </div>
-                <div class="col-xs-12 col-sm-2 col-md-3	col-lg-3">
-                  <div class="opt_flex__item opt-txt__align-right">
+                <div class="col-xs-12 col-sm-2 col-md-3	col-lg-4">
+                  <div class="opt_flex__item opt-txt__align-right data-cadge">
                     <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">edit</i></button>
                     <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">delete</i></button>
                   </div>
@@ -347,58 +347,77 @@
             </mat-expansion-panel>
           </mat-accordion>
 
+
           <!--****3rd row*****-->
           <mat-accordion>
-            <mat-expansion-panel  class="documents_list_item">
-              <mat-expansion-panel-header>
-                <mat-panel-title>
-                  <div class="row">
-                    <div class="col-xs-12 col-sm-4 col-md-3	col-lg-4">
-                      <div class="opt_flex--container">
-                        <div class="opt_flex__item chck-box horizontally-center"> <mat-checkbox></mat-checkbox> </div>
-                        <div class="opt_flex__item des-box">
-                          <div class="opt-txt__body2 opt-fontweight--bold opt-txt__body2 text-truncate"> Venue Hire Inquiry</div>
-                          <div class="opt-txt__body1-small"><span class="symbol_icon"><i class="material-icons mat-btn-icon-btn opt-txt__tertiary indicator-icon">attach_file</i></span><span class="opt-txt__tertiary"> Doc </span>|v1.01 |<span class="opt-txt__secondary">04-Jan-2017</span></div>
+            <mat-expansion-panel #myPanel2 [disabled]="true" class="opt-expand--line documents_list_item" >
+              <mat-expansion-panel-header collapsedHeight=".collapsedHeight" expandedHeight=".expandedHeight"  >
+                <div class="opt_expand--container">
+                  <mat-panel-title>
+                    <div class="opt_flex__item __expansion-lft--side">
+                      <div class="row">
+                        <div class="col-xs-12 col-sm-4 col-md-3	col-lg-4">
+                          <div class="opt_flex--container data-cadge">
+                            <div class="opt_flex__item chck-box horizontally-center"> <mat-checkbox></mat-checkbox> </div>
+                            <div class="opt_flex__item des-box">
+                              <div class="opt-txt__body2 text-truncate"> Venue Hire Inquiry</div>
+                              <div class="opt-txt__body1-small"><span class="symbol_icon"><i class="material-icons mat-btn-icon-btn opt-txt__tertiary indicator-icon">attach_file</i></span><span class="opt-txt__tertiary"> Doc </span>|v1.01 |<span class="opt-txt__secondary">04-Jan-2017</span></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6	col-lg-4">
+                          <div class="opt_flex--container data-cadge">
+                            <div class="opt_flex__item  opt-txt__body2 text-truncate">
+                              Booking Confirmation
+                            </div>
+                            <div class="opt_flex__item opt-txt__body1-small opt-txt__secondary text-truncate">
+                              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-2 col-md-3	col-lg-4">
+                          <div class="opt_flex__item opt-txt__align-right data-cadge">
+                            <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">edit</i></button>
+                            <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">delete</i></button>
+                          </div>
                         </div>
                       </div>
                     </div>
-                    <div class="col-xs-12 col-sm-6 col-md-6	col-lg-5">
-                      <div class="opt-txt__body2 text-truncate">
-                        Booking Confirmation
-                      </div>
-                      <div class="opt-txt__body1-small text-truncate opt-txt__secondary">
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa
-                      </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-2 col-md-3	col-lg-3">
-                      <div class="opt_flex__item opt-txt__align-right">
-                        <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">edit</i></button>
-                        <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">delete</i></button>
+                    <div class="opt_flex__item __expansion-rgt--side">
+                      <div class="col tc-flex-item__center">
+                        <div class="opt_flex__item action__button tc-flex-item__center">
+                          <button class="down-arrow" mat-icon-button color="primary" (click)="expandPannel2()"
+                                  [disableRipple]="true">
+                            <mat-icon class="opt_color_icon_font">{{matIcon2}}</mat-icon>
+                          </button>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </mat-panel-title>
+                  </mat-panel-title>
+                </div>
               </mat-expansion-panel-header>
               <div class="row">
                 <div class="col-xs-12 col-sm-4 col-md-3	col-lg-4">
-                  <div class="opt_flex--container">
+                  <div class="opt_flex--container  data-cadge">
                     <div class="opt_flex__item chck-box horizontally-center"> <mat-checkbox></mat-checkbox> </div>
                     <div class="opt_flex__item des-box">
-                      <div class="opt-txt__body1 text-truncate"> Venue Hire Inquiry</div>
-                      <div class="opt-txt__body1-small"><span class="symbol_icon"><i class="material-icons mat-btn-icon-btn opt-txt__tertiary indicator-icon">attach_file</i></span><span class="opt-txt__tertiary"> Doc </span>|v1.01 |<span class="opt-txt__secondary">04-Jan-2017</span> </div>
+                      <div class="opt-txt__body1  text-truncate"> Venue Hire Inquiry</div>
+                      <div class="opt-txt__body1-small"><span class="symbol_icon"><i class="material-icons mat-btn-icon-btn opt-txt__tertiary indicator-icon">attach_file</i></span><span class="opt-txt__tertiary"> Doc </span>|v1.01 |<span class="opt-txt__secondary">04-Jan-2017</span></div>
                     </div>
                   </div>
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-6	col-lg-5">
-                  <div class="opt-txt__body1 text-truncate">
-                    Booking Confirmation
-                  </div>
-                  <div class="opt-txt__body1-small text-truncate opt-txt__secondary">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa
+                <div class="col-xs-12 col-sm-6 col-md-6	col-lg-4">
+                  <div class="opt_flex--container data-cadge">
+                    <div class="opt_flex__item  opt-txt__body1 text-truncate">
+                      Booking Confirmation
+                    </div>
+                    <div class="opt_flex__item opt-txt__body1-small opt-txt__secondary text-truncate">
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa
+                    </div>
                   </div>
                 </div>
-                <div class="col-xs-12 col-sm-2 col-md-3	col-lg-3">
-                  <div class="opt_flex__item opt-txt__align-right">
+                <div class="col-xs-12 col-sm-2 col-md-3	col-lg-4">
+                  <div class="opt_flex__item opt-txt__align-right data-cadge">
                     <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">edit</i></button>
                     <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">delete</i></button>
                   </div>
@@ -531,8 +550,9 @@
             </mat-tab>
           </div>
 
-          <div class="c-sent">
+
             <mat-tab label="Sent">
+              <div class="c-sent">
 
                 <!--Header-->
                 <div class="header-row">
@@ -557,82 +577,104 @@
 
                 <!--****1st row*****-->
                 <mat-accordion>
-                  <mat-expansion-panel  class="correspondence_entry-sent opt__sent">
-                    <mat-expansion-panel-header>
-                      <mat-panel-title>
-                        <div class="row">
-                          <div class="col-sm-6 col-md-3	col-lg-3	col-xs-12">
-                            <div class="opt_flex--container">
-                              <div class="opt_flex__item chck-box horizontally-center"> <mat-checkbox></mat-checkbox> </div>
-                              <div class="opt_flex__item des-box">
-                                <div class="opt-txt__body2 opt-fontweight--bold opt-txt__body2 text-truncate"> Official Receipt- INV000348</div>
-                                <div class="opt-txt__body1-small"><span class="symbol_icon"><i class="material-icons mat-btn-icon-btn opt-txt__tertiary  indicator-icon">mail_outline</i> </span> <span class="opt-txt__tertiary">EMAIL</span>| V7.01 |<span class="symbol_icon"><i class="material-icons opt_txt_color_tertiary">comment</i></span> </div>
+                  <mat-expansion-panel #myPanel3 [disabled]="true" class="opt-expand--line correspondence_entry-sent" >
+                    <mat-expansion-panel-header collapsedHeight=".collapsedHeight" expandedHeight=".expandedHeight"  >
+                      <div class="opt_expand--container">
+                        <mat-panel-title>
+                          <div class="opt_flex__item __expansion-lft--side">
+                            <div class="row">
+                              <div class="col-sm-6 col-md-3	col-lg-3	col-xs-12">
+                                <div class="opt_flex--container data-cadge">
+                                  <div class="opt_flex__item chck-box horizontally-center"> <mat-checkbox></mat-checkbox> </div>
+                                  <div class="opt_flex__item des-box">
+                                    <div class="opt-txt__body2 opt-fontweight--bold opt-txt__body2 text-truncate"> Official Receipt- INV000348</div>
+                                    <div class="opt-txt__body1-small"><span class="symbol_icon"><i class="material-icons mat-btn-icon-btn opt-txt__tertiary  indicator-icon">mail_outline</i> </span> <span class="opt-txt__tertiary">EMAIL</span>| V7.01 |<span class="symbol_icon"><i class="material-icons opt_txt_color_tertiary">comment</i></span> </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-sm-6 col-md-3	col-lg-4	col-xs-12">
+                                <div class="opt_flex--container data-cadge flex-direction">
+                                  <div class="opt_flex__item horizontally-center opt-txt__body2 text-truncate">
+                                    Package | Media
+                                  </div>
+                                  <div class="opt_flex__item horizontally-center opt-txt__body1-small opt-txt__secondary text-truncate">
+                                    04-Jan-2018 <i class="material-icons">arrow_right_alt</i>04-Jan-2018
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-sm-4 col-md-1	col-lg-1	col-xs-12">
+                                <div class="opt_flex__item horizontally-center opt-txt__body1-small data-cadge">
+                                  <button mat-button class="panel-action-btn-icon"><i class="material-icons opt_txt_color_tertiary">print</i></button>
+                                </div>
+                              </div>
+                              <div class="col-sm-4 col-md-2 col-lg-2	col-xs-12">
+                                <div class="opt_flex--container data-cadge">
+                                  <div class="opt_flex__item horizontally-center opt-txt__body2 text-truncate">
+                                    <span class="symbol_icon"><i class="material-icons">call_made</i></span> harry@abc.com | Client
+                                  </div>
+                                  <div class="opt_flex__item horizontally-center opt-txt__body1-small opt-txt__secondary text-truncate">
+                                    <span class="symbol_icon"><i class="material-icons">call_received</i></span> Alex
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-sm-4 col-md-3	col-lg-2	col-xs-12">
+                                <div class="opt_flex__item opt-txt__align-right data-cadge">
+                                  <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">edit</i></button>
+                                  <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">delete</i></button>
+                                </div>
                               </div>
                             </div>
                           </div>
-                          <div class="col-sm-6 col-md-3	col-lg-4	col-xs-12">
-                            <div class="opt_flex__item horizontally-center opt-txt__body2 text-truncate">
-                              Package | Media
-                            </div>
-                            <div class="opt_flex__item horizontally-center opt-txt__body1-small opt-txt__secondary text-truncate">
-                              04-Jan-2018 <i class="material-icons">arrow_right_alt</i>04-Jan-2018
-                            </div>
-                          </div>
-                          <div class="col-sm-4 col-md-1	col-lg-1	col-xs-12">
-                            <div class="opt_flex__item horizontally-center opt-txt__body1-small">
-                              <button mat-button class="panel-action-btn-icon"><i class="material-icons opt_txt_color_tertiary">print</i></button>
+                          <div class="opt_flex__item __expansion-rgt--side">
+                            <div class="col tc-flex-item__center">
+                              <div class="opt_flex__item action__button tc-flex-item__center">
+                                <button class="down-arrow" mat-icon-button color="primary" (click)="expandPannel3()"
+                                        [disableRipple]="true">
+                                  <mat-icon class="opt_color_icon_font">{{matIcon3}}</mat-icon>
+                                </button>
+                              </div>
                             </div>
                           </div>
-                          <div class="col-sm-4 col-md-2 col-lg-2	col-xs-12">
-                            <div class="opt_flex__item horizontally-center opt-txt__body2 text-truncate">
-                              <span class="symbol_icon"><i class="material-icons">call_made</i></span> harry@abc.com | Client
-                            </div>
-                            <div class="opt_flex__item horizontally-center opt-txt__body1-small opt-txt__secondary text-truncate">
-                              <span class="symbol_icon"><i class="material-icons">call_received</i></span> Alex
-                            </div>
-                          </div>
-                          <div class="col-sm-4 col-md-3	col-lg-2	col-xs-12">
-                            <div class="opt_flex__item opt-txt__align-right">
-                              <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">edit</i></button>
-                              <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">delete</i></button>
-                            </div>
-                          </div>
-                        </div>
-                      </mat-panel-title>
+                        </mat-panel-title>
+                      </div>
                     </mat-expansion-panel-header>
                     <div class="row">
                       <div class="col-sm-6 col-md-3	col-lg-3	col-xs-12">
-                        <div class="opt_flex--container">
+                        <div class="opt_flex--container data-cadge">
                           <div class="opt_flex__item chck-box horizontally-center"> <mat-checkbox></mat-checkbox> </div>
                           <div class="opt_flex__item des-box">
                             <div class="opt-txt__body2 opt-fontweight--bold opt-txt__body2 text-truncate"> Official Receipt- INV000348</div>
-                            <div class="opt-txt__body1-small"><span class="symbol_icon"><i class="material-icons mat-btn-icon-btn opt-txt__tertiary  indicator-icon">mail_outline</i></span> <span class="opt-txt__tertiary">EMAIL</span>| V7.01 |<span class="symbol_icon"><i class="material-icons opt_txt_color_tertiary">comment</i></span> </div>
+                            <div class="opt-txt__body1-small"><span class="symbol_icon"><i class="material-icons mat-btn-icon-btn opt-txt__tertiary  indicator-icon">mail_outline</i> </span> <span class="opt-txt__tertiary">EMAIL</span>| V7.01 |<span class="symbol_icon"><i class="material-icons opt_txt_color_tertiary">comment</i></span> </div>
                           </div>
                         </div>
                       </div>
                       <div class="col-sm-6 col-md-3	col-lg-4	col-xs-12">
-                        <div class="opt_flex__item horizontally-center opt-txt__body2 text-truncate">
-                          Package | Media
-                        </div>
-                        <div class="opt_flex__item horizontally-center opt-txt__body1-small opt-txt__secondary text-truncate">
-                          04-Jan-2018 <i class="material-icons">arrow_right_alt</i>04-Jan-2018
+                        <div class="opt_flex--container data-cadge  flex-direction">
+                          <div class="opt_flex__item horizontally-center opt-txt__body2 text-truncate">
+                            Package | Media
+                          </div>
+                          <div class="opt_flex__item horizontally-center opt-txt__body1-small opt-txt__secondary text-truncate">
+                            04-Jan-2018 <i class="material-icons">arrow_right_alt</i>04-Jan-2018
+                          </div>
                         </div>
                       </div>
                       <div class="col-sm-4 col-md-1	col-lg-1	col-xs-12">
-                        <div class="opt_flex__item horizontally-center opt-txt__body1-small text-truncate">
+                        <div class="opt_flex__item horizontally-center opt-txt__body1-small data-cadge">
                           <button mat-button class="panel-action-btn-icon"><i class="material-icons opt_txt_color_tertiary">print</i></button>
                         </div>
                       </div>
                       <div class="col-sm-4 col-md-2 col-lg-2	col-xs-12">
-                        <div class="opt_flex__item horizontally-center opt-txt__body2 text-truncate">
-                          <span class="symbol_icon"><i class="material-icons">call_made</i></span> harry@abc.com | Contact User
-                        </div>
-                        <div class="opt_flex__item horizontally-center opt-txt__body1-small opt-txt__secondary text-truncate">
-                          <span class="symbol_icon"><i class="material-icons">call_received</i></span> Alex
+                        <div class="opt_flex--container data-cadge">
+                          <div class="opt_flex__item horizontally-center opt-txt__body2 text-truncate">
+                            <span class="symbol_icon"><i class="material-icons">call_made</i></span> harry@abc.com | Client
+                          </div>
+                          <div class="opt_flex__item horizontally-center opt-txt__body1-small opt-txt__secondary text-truncate">
+                            <span class="symbol_icon"><i class="material-icons">call_received</i></span> Alex
+                          </div>
                         </div>
                       </div>
                       <div class="col-sm-4 col-md-3	col-lg-2	col-xs-12">
-                        <div class="opt_flex__item opt-txt__align-right">
+                        <div class="opt_flex__item opt-txt__align-right data-cadge">
                           <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">edit</i></button>
                           <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">delete</i></button>
                         </div>
@@ -642,21 +684,80 @@
                 </mat-accordion>
 
                 <!--****2nd row*****-->
-              <mat-accordion>
-                <mat-expansion-panel  class="correspondence_entry-sent opt__sent">
-                  <mat-expansion-panel-header>
-                    <mat-panel-title>
-                      <div class="row">
-                        <div class="col-sm-6 col-md-3	col-lg-3	col-xs-12">
-                          <div class="opt_flex--container">
-                            <div class="opt_flex__item chck-box horizontally-center"> <mat-checkbox></mat-checkbox> </div>
-                            <div class="opt_flex__item des-box">
-                              <div class="opt-txt__body2 opt-fontweight--bold opt-txt__body2 text-truncate"> Official Receipt- INV000348</div>
-                              <div class="opt-txt__body1-small"><span class="symbol_icon"><i class="material-icons mat-btn-icon-btn opt-txt__tertiary  indicator-icon">mail_outline</i> </span> <span class="opt-txt__tertiary">EMAIL</span>| V7.01 |<span class="symbol_icon"><i class="material-icons opt_txt_color_tertiary">comment</i></span> </div>
+                <mat-accordion>
+                  <mat-expansion-panel #myPanel4 [disabled]="true" class="opt-expand--line correspondence_entry-sent" >
+                    <mat-expansion-panel-header collapsedHeight=".collapsedHeight" expandedHeight=".expandedHeight"  >
+                      <div class="opt_expand--container">
+                        <mat-panel-title>
+                          <div class="opt_flex__item __expansion-lft--side">
+                            <div class="row">
+                              <div class="col-sm-6 col-md-3	col-lg-3	col-xs-12">
+                                <div class="opt_flex--container data-cadge">
+                                  <div class="opt_flex__item chck-box horizontally-center"> <mat-checkbox></mat-checkbox> </div>
+                                  <div class="opt_flex__item des-box">
+                                    <div class="opt-txt__body2 opt-fontweight--bold opt-txt__body2 text-truncate"> Official Receipt- INV000348</div>
+                                    <div class="opt-txt__body1-small"><span class="symbol_icon"><i class="material-icons mat-btn-icon-btn opt-txt__tertiary  indicator-icon">mail_outline</i> </span> <span class="opt-txt__tertiary">EMAIL</span>| V7.01 |<span class="symbol_icon"><i class="material-icons opt_txt_color_tertiary">comment</i></span> </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-sm-6 col-md-3	col-lg-4	col-xs-12">
+                                <div class="opt_flex--container data-cadge flex-direction">
+                                  <div class="opt_flex__item horizontally-center opt-txt__body2 text-truncate">
+                                    Package | Media
+                                  </div>
+                                  <div class="opt_flex__item horizontally-center opt-txt__body1-small opt-txt__secondary text-truncate">
+                                    04-Jan-2018 <i class="material-icons">arrow_right_alt</i>04-Jan-2018
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-sm-4 col-md-1	col-lg-1	col-xs-12">
+                                <div class="opt_flex__item horizontally-center opt-txt__body1-small data-cadge">
+                                  <button mat-button class="panel-action-btn-icon"><i class="material-icons opt_txt_color_tertiary">print</i></button>
+                                </div>
+                              </div>
+                              <div class="col-sm-4 col-md-2 col-lg-2	col-xs-12">
+                                <div class="opt_flex--container data-cadge">
+                                  <div class="opt_flex__item horizontally-center opt-txt__body2 text-truncate">
+                                    <span class="symbol_icon"><i class="material-icons">call_made</i></span> harry@abc.com | Client
+                                  </div>
+                                  <div class="opt_flex__item horizontally-center opt-txt__body1-small opt-txt__secondary text-truncate">
+                                    <span class="symbol_icon"><i class="material-icons">call_received</i></span> Alex
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-sm-4 col-md-3	col-lg-2	col-xs-12">
+                                <div class="opt_flex__item opt-txt__align-right data-cadge">
+                                  <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">edit</i></button>
+                                  <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">delete</i></button>
+                                </div>
+                              </div>
                             </div>
                           </div>
+                          <div class="opt_flex__item __expansion-rgt--side">
+                            <div class="col tc-flex-item__center">
+                              <div class="opt_flex__item action__button tc-flex-item__center">
+                                <button class="down-arrow" mat-icon-button color="primary" (click)="expandPannel4()"
+                                        [disableRipple]="true">
+                                  <mat-icon class="opt_color_icon_font">{{matIcon4}}</mat-icon>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </mat-panel-title>
+                      </div>
+                    </mat-expansion-panel-header>
+                    <div class="row">
+                      <div class="col-sm-6 col-md-3	col-lg-3	col-xs-12">
+                        <div class="opt_flex--container data-cadge">
+                          <div class="opt_flex__item chck-box horizontally-center"> <mat-checkbox></mat-checkbox> </div>
+                          <div class="opt_flex__item des-box">
+                            <div class="opt-txt__body2 opt-fontweight--bold opt-txt__body2 text-truncate"> Official Receipt- INV000348</div>
+                            <div class="opt-txt__body1-small"><span class="symbol_icon"><i class="material-icons mat-btn-icon-btn opt-txt__tertiary  indicator-icon">mail_outline</i> </span> <span class="opt-txt__tertiary">EMAIL</span>| V7.01 |<span class="symbol_icon"><i class="material-icons opt_txt_color_tertiary">comment</i></span> </div>
+                          </div>
                         </div>
-                        <div class="col-sm-6 col-md-3	col-lg-4	col-xs-12">
+                      </div>
+                      <div class="col-sm-6 col-md-3	col-lg-4	col-xs-12">
+                        <div class="opt_flex--container data-cadge  flex-direction">
                           <div class="opt_flex__item horizontally-center opt-txt__body2 text-truncate">
                             Package | Media
                           </div>
@@ -664,12 +765,14 @@
                             04-Jan-2018 <i class="material-icons">arrow_right_alt</i>04-Jan-2018
                           </div>
                         </div>
-                        <div class="col-sm-4 col-md-1	col-lg-1	col-xs-12">
-                          <div class="opt_flex__item horizontally-center opt-txt__body1-small text-truncate">
-                            <button mat-button class="panel-action-btn-icon"><i class="material-icons opt_txt_color_tertiary">print</i></button>
-                          </div>
+                      </div>
+                      <div class="col-sm-4 col-md-1	col-lg-1	col-xs-12">
+                        <div class="opt_flex__item horizontally-center opt-txt__body1-small data-cadge">
+                          <button mat-button class="panel-action-btn-icon"><i class="material-icons opt_txt_color_tertiary">print</i></button>
                         </div>
-                        <div class="col-sm-4 col-md-2 col-lg-2	col-xs-12">
+                      </div>
+                      <div class="col-sm-4 col-md-2 col-lg-2	col-xs-12">
+                        <div class="opt_flex--container data-cadge">
                           <div class="opt_flex__item horizontally-center opt-txt__body2 text-truncate">
                             <span class="symbol_icon"><i class="material-icons">call_made</i></span> harry@abc.com | Client
                           </div>
@@ -677,59 +780,19 @@
                             <span class="symbol_icon"><i class="material-icons">call_received</i></span> Alex
                           </div>
                         </div>
-                        <div class="col-sm-4 col-md-3	col-lg-2	col-xs-12">
-                          <div class="opt_flex__item opt-txt__align-right">
-                            <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">edit</i></button>
-                            <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">delete</i></button>
-                          </div>
-                        </div>
                       </div>
-                    </mat-panel-title>
-                  </mat-expansion-panel-header>
-                  <div class="row">
-                    <div class="col-sm-6 col-md-3	col-lg-3	col-xs-12">
-                      <div class="opt_flex--container">
-                        <div class="opt_flex__item chck-box horizontally-center"> <mat-checkbox></mat-checkbox> </div>
-                        <div class="opt_flex__item des-box">
-                          <div class="opt-txt__body2 opt-fontweight--bold opt-txt__body2 text-truncate"> Official Receipt- INV000348</div>
-                          <div class="opt-txt__body1-small"><span class="symbol_icon"><i class="material-icons mat-btn-icon-btn opt-txt__tertiary  indicator-icon">mail_outline</i></span> <span class="opt-txt__tertiary">EMAIL</span>| V7.01 |<span class="symbol_icon"><i class="material-icons opt_txt_color_tertiary">comment</i></span> </div>
+                      <div class="col-sm-4 col-md-3	col-lg-2	col-xs-12">
+                        <div class="opt_flex__item opt-txt__align-right data-cadge">
+                          <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">edit</i></button>
+                          <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">delete</i></button>
                         </div>
                       </div>
                     </div>
-                    <div class="col-sm-6 col-md-3	col-lg-4	col-xs-12">
-                      <div class="opt_flex__item horizontally-center opt-txt__body2 text-truncate">
-                        Package | Media
-                      </div>
-                      <div class="opt_flex__item horizontally-center opt-txt__body1-small opt-txt__secondary text-truncate">
-                        04-Jan-2018 <i class="material-icons">arrow_right_alt</i>04-Jan-2018
-                      </div>
-                    </div>
-                    <div class="col-sm-4 col-md-1	col-lg-1	col-xs-12">
-                      <div class="opt_flex__item horizontally-center opt-txt__body1-small text-truncate">
-                        <button mat-button class="panel-action-btn-icon"><i class="material-icons opt_txt_color_tertiary">print</i></button>
-                      </div>
-                    </div>
-                    <div class="col-sm-4 col-md-2 col-lg-2	col-xs-12">
-                      <div class="opt_flex__item horizontally-center opt-txt__body2 text-truncate">
-                        <span class="symbol_icon"><i class="material-icons">call_made</i></span> harry@abc.com | Contact User
-                      </div>
-                      <div class="opt_flex__item horizontally-center opt-txt__body1-small opt-txt__secondary text-truncate">
-                        <span class="symbol_icon"><i class="material-icons">call_received</i></span> Alex
-                      </div>
-                    </div>
-                    <div class="col-sm-4 col-md-3	col-lg-2	col-xs-12">
-                      <div class="opt_flex__item opt-txt__align-right">
-                        <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">edit</i></button>
-                        <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">delete</i></button>
-                      </div>
-                    </div>
-                  </div>
-                </mat-expansion-panel>
-              </mat-accordion>
-
-
+                  </mat-expansion-panel>
+                </mat-accordion>
+              </div>
             </mat-tab>
-          </div>
+
 
         </mat-tab-group>
 
@@ -1018,56 +1081,70 @@
               </div>
               <!--Content-->
               <mat-accordion>
-                <mat-expansion-panel  class="payments-list-item opt-pay">
-                  <mat-expansion-panel-header>
-                    <mat-panel-title>
-                      <div class="row">
-                        <div class="col-xs-12 col-sm-3 col-md-3	col-lg-3">
-                          <div class="opt_flex--container">
-                            <div class="opt_flex__item chck-box tc-flex-item__center"> <mat-checkbox></mat-checkbox> </div>
-                            <div class="opt_flex__item des-box tc-flex-item__center">
-                              <div class="opt-txt__body2-small 	opt-fontweight--bolder"><div class="text-truncate"> PVY46 </div></div>
-                              <div class="opt_txt_color_tertiary opt-txt__body1-small text-truncate">Mode</div>
+                <mat-expansion-panel #myPanel5 [disabled]="true" class="opt-expand--line payments-list-item opt-pay" >
+                  <mat-expansion-panel-header collapsedHeight=".collapsedHeight" expandedHeight=".expandedHeight"  >
+                    <div class="opt_expand--container">
+                      <mat-panel-title>
+                        <div class="opt_flex__item __expansion-lft--side">
+                          <div class="row">
+                            <div class="col-xs-12 col-sm-3 col-md-3	col-lg-3">
+                              <div class="opt_flex--container">
+                                <div class="opt_flex__item chck-box tc-flex-item__center"> <mat-checkbox></mat-checkbox> </div>
+                                <div class="opt_flex__item des-box tc-flex-item__center">
+                                  <div class="opt-txt__body2-small 	opt-fontweight--bolder"><div class="text-truncate"> PVY46 </div></div>
+                                  <div class="opt_txt_color_tertiary opt-txt__body1-small text-truncate">Mode</div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-4 col-md-5	col-lg-5">
+                              <div class="opt_flex--container">
+                                <div class="opt_flex__item tc-flex-item__center">
+                                  <div class="opt-txt__body2">Host <i class="material-icons">arrow_right_alt</i> Host Name </div>
+                                  <div class="opt-txt__body2 opt_txt_color_tertiary">Client <i class="material-icons">arrow_right_alt</i> Client Name </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-2 col-md-1	col-lg-2">
+                              <div class="opt_flex--container">
+                                <div class="opt_flex__item tc-flex-item__center">
+                                  <div class="opt-txt__primary opt-txt__body1-small">Amount</div>
+                                  <div class="opt_txt_color_tertiary opt-txt__body1-small">Voucher</div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-3 col-md-3	col-lg-2">
+                              <div class="opt_flex__item opt-txt__align-right">
+                                <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">edit</i></button>
+                                <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">delete</i></button>
+                              </div>
                             </div>
                           </div>
                         </div>
-                        <div class="col-xs-12 col-sm-4 col-md-5	col-lg-5">
-                          <div class="opt_flex--container">
-                            <div class="opt_flex__item tc-flex-item__center">
-                              <div class="opt-txt__body2">Host <i class="material-icons">arrow_right_alt</i> Host Name </div>
-                              <div class="opt-txt__body2 opt_txt_color_tertiary">Client <i class="material-icons">arrow_right_alt</i> Client Name </div>
+                        <div class="opt_flex__item __expansion-rgt--side">
+                          <div class="col tc-flex-item__center">
+                            <div class="opt_flex__item action__button tc-flex-item__center">
+                              <button class="down-arrow" mat-icon-button color="primary" (click)="expandPannel5()"
+                                      [disableRipple]="true">
+                                <mat-icon class="opt_color_icon_font">{{matIcon5}}</mat-icon>
+                              </button>
                             </div>
                           </div>
                         </div>
-                        <div class="col-xs-12 col-sm-2 col-md-1	col-lg-2">
-                          <div class="opt_flex--container">
-                            <div class="opt_flex__item tc-flex-item__center">
-                              <div class="opt-txt__primary opt-txt__body1-small">Amount</div>
-                              <div class="opt_txt_color_tertiary opt-txt__body1-small">Voucher</div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-3 col-md-3	col-lg-2">
-                          <div class="opt_flex__item opt-txt__align-right">
-                            <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">edit</i></button>
-                            <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">delete</i></button>
-                          </div>
-                        </div>
-                      </div>
-                    </mat-panel-title>
+                      </mat-panel-title>
+                    </div>
                   </mat-expansion-panel-header>
 
                   <div class="row">
                     <div class="col-xs-12 col-sm-6 col-md-3	col-lg-3">
-                      <div class="opt_flex--container">
-                        <div class="opt_flex__item des-box tc-flex-item__center">
-                          <div class="opt-txt__body2-small opt-fontweight--bold"><div class="text-truncate"> Package Name </div></div>
+                      <div class="opt_flex--container data-cadge">
+                        <div class="opt_flex__item  tc-flex-item__center padding-left">
+                          <div class="opt-txt__body2-small opt-fontweight--bold text-truncate"> Package Name</div>
                           <div class="opt_txt_color_tertiary opt-txt__body1-small text-truncate">Voucher Expiry date</div>
                         </div>
                       </div>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-5	col-lg-5">
-                      <div class="opt_flex--container">
+                      <div class="opt_flex--container data-cadge">
                         <div class="opt_flex__item tc-flex-item__center">
                           <div class="opt-txt__body2">Extension Letter Checked By </div>
                           <div class="opt-txt__body2 ">Extensioin Letter Checked By | <span class="opt_txt_color_tertiary">Taken By</span> </div>
@@ -1075,7 +1152,7 @@
                       </div>
                     </div>
                     <div class="col-xs-12 col-sm-4 col-md-1	col-lg-2">
-                      <div class="opt_flex--container">
+                      <div class="opt_flex--container data-cadge">
                         <div class="opt_flex__item tc-flex-item__center">
                           <div class="opt-txt__primary opt-txt__body1-small">Date</div>
                           <div class="opt_txt_color_tertiary opt-txt__body1-small">Notes</div>
@@ -1083,7 +1160,7 @@
                       </div>
                     </div>
                     <div class="col-xs-12 col-sm-4 col-md-3	col-lg-2">
-                      <div class="opt_flex--container">
+                      <div class="opt_flex--container data-cadge">
                         <div class="opt_flex__item tc-flex-item__center">
                           <div class="opt-txt__primary opt-txt__body1-small">Cancelled<i class="material-icons icn-right">close</i></div>
                           <div class="opt_txt_color_tertiary opt-txt__body1-small">Original Payment</div>
@@ -1093,57 +1170,72 @@
                   </div>
                 </mat-expansion-panel>
               </mat-accordion>
+
               <mat-accordion>
-                <mat-expansion-panel  class="payments-list-item opt-pay">
-                  <mat-expansion-panel-header>
-                    <mat-panel-title>
-                      <div class="row">
-                        <div class="col-xs-12 col-sm-3 col-md-3	col-lg-3">
-                          <div class="opt_flex--container">
-                            <div class="opt_flex__item chck-box tc-flex-item__center"> <mat-checkbox></mat-checkbox> </div>
-                            <div class="opt_flex__item des-box tc-flex-item__center">
-                              <div class="opt-txt__body2-small 	opt-fontweight--bolder"><div class="text-truncate"> PVY46 </div></div>
-                              <div class="opt_txt_color_tertiary opt-txt__body1-small text-truncate">Mode</div>
+                <mat-expansion-panel #myPanel6 [disabled]="true" class="opt-expand--line payments-list-item opt-pay" >
+                  <mat-expansion-panel-header collapsedHeight=".collapsedHeight" expandedHeight=".expandedHeight"  >
+                    <div class="opt_expand--container">
+                      <mat-panel-title>
+                        <div class="opt_flex__item __expansion-lft--side">
+                          <div class="row">
+                            <div class="col-xs-12 col-sm-3 col-md-3	col-lg-3">
+                              <div class="opt_flex--container">
+                                <div class="opt_flex__item chck-box tc-flex-item__center"> <mat-checkbox></mat-checkbox> </div>
+                                <div class="opt_flex__item des-box tc-flex-item__center">
+                                  <div class="opt-txt__body2-small 	opt-fontweight--bolder"><div class="text-truncate"> PVY46 </div></div>
+                                  <div class="opt_txt_color_tertiary opt-txt__body1-small text-truncate">Mode</div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-4 col-md-5	col-lg-5">
+                              <div class="opt_flex--container">
+                                <div class="opt_flex__item tc-flex-item__center">
+                                  <div class="opt-txt__body2">Host <i class="material-icons">arrow_right_alt</i> Host Name </div>
+                                  <div class="opt-txt__body2 opt_txt_color_tertiary">Client <i class="material-icons">arrow_right_alt</i> Client Name </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-2 col-md-1	col-lg-2">
+                              <div class="opt_flex--container">
+                                <div class="opt_flex__item tc-flex-item__center">
+                                  <div class="opt-txt__primary opt-txt__body1-small">Amount</div>
+                                  <div class="opt_txt_color_tertiary opt-txt__body1-small">Voucher</div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-3 col-md-3	col-lg-2">
+                              <div class="opt_flex__item opt-txt__align-right">
+                                <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">edit</i></button>
+                                <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">delete</i></button>
+                              </div>
                             </div>
                           </div>
                         </div>
-                        <div class="col-xs-12 col-sm-4 col-md-5	col-lg-5">
-                          <div class="opt_flex--container">
-                            <div class="opt_flex__item tc-flex-item__center">
-                              <div class="opt-txt__body2">Host <i class="material-icons">arrow_right_alt</i> Host Name </div>
-                              <div class="opt-txt__body2 opt_txt_color_tertiary">Client <i class="material-icons">arrow_right_alt</i> Client Name </div>
+                        <div class="opt_flex__item __expansion-rgt--side">
+                          <div class="col tc-flex-item__center">
+                            <div class="opt_flex__item action__button tc-flex-item__center">
+                              <button class="down-arrow" mat-icon-button color="primary" (click)="expandPannel6()"
+                                      [disableRipple]="true">
+                                <mat-icon class="opt_color_icon_font">{{matIcon6}}</mat-icon>
+                              </button>
                             </div>
                           </div>
                         </div>
-                        <div class="col-xs-12 col-sm-2 col-md-1	col-lg-2">
-                          <div class="opt_flex--container">
-                            <div class="opt_flex__item tc-flex-item__center">
-                              <div class="opt-txt__primary opt-txt__body1-small">Amount</div>
-                              <div class="opt_txt_color_tertiary opt-txt__body1-small">Voucher</div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-3 col-md-3	col-lg-2">
-                          <div class="opt_flex__item opt-txt__align-right">
-                            <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">edit</i></button>
-                            <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">delete</i></button>
-                          </div>
-                        </div>
-                      </div>
-                    </mat-panel-title>
+                      </mat-panel-title>
+                    </div>
                   </mat-expansion-panel-header>
 
                   <div class="row">
                     <div class="col-xs-12 col-sm-6 col-md-3	col-lg-3">
-                      <div class="opt_flex--container">
-                        <div class="opt_flex__item des-box tc-flex-item__center">
-                          <div class="opt-txt__body2-small opt-fontweight--bold"><div class="text-truncate"> Package Name </div></div>
+                      <div class="opt_flex--container data-cadge">
+                        <div class="opt_flex__item  tc-flex-item__center padding-left">
+                          <div class="opt-txt__body2-small opt-fontweight--bold text-truncate"> Package Name</div>
                           <div class="opt_txt_color_tertiary opt-txt__body1-small text-truncate">Voucher Expiry date</div>
                         </div>
                       </div>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-5	col-lg-5">
-                      <div class="opt_flex--container">
+                      <div class="opt_flex--container data-cadge">
                         <div class="opt_flex__item tc-flex-item__center">
                           <div class="opt-txt__body2">Extension Letter Checked By </div>
                           <div class="opt-txt__body2 ">Extensioin Letter Checked By | <span class="opt_txt_color_tertiary">Taken By</span> </div>
@@ -1151,7 +1243,7 @@
                       </div>
                     </div>
                     <div class="col-xs-12 col-sm-4 col-md-1	col-lg-2">
-                      <div class="opt_flex--container">
+                      <div class="opt_flex--container data-cadge">
                         <div class="opt_flex__item tc-flex-item__center">
                           <div class="opt-txt__primary opt-txt__body1-small">Date</div>
                           <div class="opt_txt_color_tertiary opt-txt__body1-small">Notes</div>
@@ -1159,7 +1251,7 @@
                       </div>
                     </div>
                     <div class="col-xs-12 col-sm-4 col-md-3	col-lg-2">
-                      <div class="opt_flex--container">
+                      <div class="opt_flex--container data-cadge">
                         <div class="opt_flex__item tc-flex-item__center">
                           <div class="opt-txt__primary opt-txt__body1-small">Cancelled<i class="material-icons icn-right">close</i></div>
                           <div class="opt_txt_color_tertiary opt-txt__body1-small">Original Payment</div>
@@ -1169,6 +1261,9 @@
                   </div>
                 </mat-expansion-panel>
               </mat-accordion>
+
+
+
 
 
             </mat-tab>
@@ -1195,7 +1290,6 @@
           <mat-tab-group>
             <div class="deliverables">
             <mat-tab label="Deliverables">
-                <!--Header-->
               <!--Header-->
               <div class="header-row">
                 <div class="opt_flex--container opt-deli-header">
@@ -1558,73 +1652,87 @@
 
           <!--****1st row*****-->
           <mat-accordion>
-            <mat-expansion-panel class="host-list-item opt-host">
-              <mat-expansion-panel-header>
-                <mat-panel-title class="host_panel">
+                <mat-expansion-panel #myPanel7 [disabled]="true" class="opt-expand--line host-list-item opt-host" >
+                  <mat-expansion-panel-header collapsedHeight=".collapsedHeight" expandedHeight=".expandedHeight" class="host_panel"  >
+                    <div class="opt_expand--container">
+                      <mat-panel-title>
+                        <div class="opt_flex__item __expansion-lft--side">
+                          <div class="row">
+                          <div class="col-sm-6 col-md-3	col-lg-3	col-xs-12">
+                          <div class="opt_flex--container">
+                            <div class="opt_flex__item chck-box"> <mat-checkbox></mat-checkbox></div>
+                            <div class="opt_flex__item des-box">
+                              <div class="opt-txt__body2 opt-fontweight--bold opt-txt__body2 text-truncate"> Gold Ticket Bo Package <span class="icn-number opt_bg_status_confirmed-multiple">5</span></div>
+                              <div class="opt-txt__body1-small opt-txt__secondary">26-Dec-2018</div>
+                            </div>
+                          </div>
+                        </div>
+                          <div class="col-sm-6 col-md-3	col-lg-3	col-xs-12">
+                          <div class="opt_flex__item horizontally-center opt-txt__body2 text-truncate">
+                            HST174923
+                          </div>
+                          <div class="opt_flex__item horizontally-center opt-txt__body1-small opt-txt__secondary
+                           text-truncate">
+                            Ms.Belind Griffiths
+                          </div>
+                        </div>
+                          <div class="col-sm-6 col-md-3	col-lg-3	col-xs-12">
+                          <div class="opt_flex__item horizontally-center opt-txt__body2 opt_lbl_quaternary opt_color_quaternary_lbl status">
+                           Status
+                          </div>
+                          <div class="opt_flex__item horizontally-center opt-txt__body1-small opt-txt__secondary text-truncate">
+                            Media
+                          </div>
+                        </div>
+                          <div class="col-sm-6 col-md-3	col-lg-3	col-xs-12">
+                          <div class="opt_flex__item opt-txt__align-right">
+                            <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">edit</i></button>
+                            <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">delete</i></button>
+                          </div>
+                        </div>
+                          </div>
+                        </div>
+                        <div class="opt_flex__item __expansion-rgt--side">
+                          <div class="col tc-flex-item__center">
+                            <div class="opt_flex__item action__button tc-flex-item__center">
+                              <button class="down-arrow" mat-icon-button color="primary" (click)="expandPannel7()"
+                                      [disableRipple]="true">
+                                <mat-icon class="opt_color_icon_font">{{matIcon7}}</mat-icon>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </mat-panel-title>
+                    </div>
+                  </mat-expansion-panel-header>
                   <div class="row">
                     <div class="col-sm-6 col-md-3	col-lg-3	col-xs-12">
                       <div class="opt_flex--container">
-                        <div class="opt_flex__item chck-box"> <mat-checkbox></mat-checkbox></div>
                         <div class="opt_flex__item des-box">
-                          <div class="opt-txt__body2 opt-fontweight--bold opt-txt__body2 text-truncate"> Gold Ticket Bo Package <span class="icn-number opt_bg_status_confirmed-multiple">5</span></div>
-                          <div class="opt-txt__body1-small opt-txt__secondary">26-Dec-2018</div>
+                          <div class="opt-txt__body2 opt-fontweight--bold opt-txt__body2 text-truncate"> +8134567800 </div>
+                          <div class="opt-txt__body1-small opt-txt__secondary">noreply@programus.co.uk</div>
                         </div>
                       </div>
                     </div>
                     <div class="col-sm-6 col-md-3	col-lg-3	col-xs-12">
-                      <div class="opt_flex__item horizontally-center opt-txt__body2 text-truncate">
-                        HST174923
-                      </div>
-                      <div class="opt_flex__item horizontally-center opt-txt__body1-small opt-txt__secondary
-                       text-truncate">
-                        Ms.Belind Griffiths
+                      <div class="opt_flex__item horizontally-center opt-txt__body2 opt-txt__secondary text-truncate">
+                        344 Chiswick Hidh Road London, W45YA.
                       </div>
                     </div>
                     <div class="col-sm-6 col-md-3	col-lg-3	col-xs-12">
-                      <div class="opt_flex__item horizontally-center opt-txt__body2 opt_lbl_quaternary opt_color_quaternary_lbl status">
-                       Status
+                      <div class="opt_flex__item horizontally-center opt-txt__body2 opt-txt__secondary text-truncate">
+                        Instruction
                       </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3	col-lg-3	col-xs-12">
                       <div class="opt_flex__item horizontally-center opt-txt__body1-small opt-txt__secondary text-truncate">
-                        Media
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa
                       </div>
-                    </div>
-                    <div class="col-sm-6 col-md-3	col-lg-3	col-xs-12">
-                      <div class="opt_flex__item opt-txt__align-right">
-                        <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">edit</i></button>
-                        <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">delete</i></button>
+                      <div class="opt_flex__item horizontally-center opt-txt__secondary opt-txt__body2 text-truncate">
+                        26-Dec-2018
                       </div>
                     </div>
                   </div>
-                </mat-panel-title>
-              </mat-expansion-panel-header>
-              <div class="row">
-                <div class="col-sm-6 col-md-3	col-lg-3	col-xs-12">
-                  <div class="opt_flex--container">
-                    <div class="opt_flex__item des-box">
-                      <div class="opt-txt__body2 opt-fontweight--bold opt-txt__body2 text-truncate"> +8134567800 </div>
-                      <div class="opt-txt__body1-small opt-txt__secondary">noreply@programus.co.uk</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-6 col-md-3	col-lg-3	col-xs-12">
-                  <div class="opt_flex__item horizontally-center opt-txt__body2 opt-txt__secondary text-truncate">
-                    344 Chiswick Hidh Road London, W45YA.
-                  </div>
-                </div>
-                <div class="col-sm-6 col-md-3	col-lg-3	col-xs-12">
-                  <div class="opt_flex__item horizontally-center opt-txt__body2 opt-txt__secondary text-truncate">
-                    Instruction
-                  </div>
-                </div>
-                <div class="col-sm-6 col-md-3	col-lg-3	col-xs-12">
-                  <div class="opt_flex__item horizontally-center opt-txt__body1-small opt-txt__secondary text-truncate">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa
-                  </div>
-                  <div class="opt_flex__item horizontally-center opt-txt__secondary opt-txt__body2 text-truncate">
-                    26-Dec-2018
-                  </div>
-                </div>
-              </div>
             </mat-expansion-panel>
           </mat-accordion>
 
