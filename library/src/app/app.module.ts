@@ -120,6 +120,7 @@ import { OptDocumentPopoverComponent } from './opt-document-popover/opt-document
 import { OptInvoiceGeneratorComponent } from './opt-invoice-generator/opt-invoice-generator.component';
 import { OptItemModalPopoversComponent } from './opt-item-modal-popovers/opt-item-modal-popovers.component';
 import { OptQuestionnairePopupComponent } from './opt-questionnaire-popup/opt-questionnaire-popup.component';
+import { OptDocumentSelectPopupComponent } from './opt-document-select-popup/opt-document-select-popup.component';
 
 
 
@@ -175,6 +176,7 @@ const appRoutes: Routes = [
   { path: 'opt-document-popover', component: OptDocumentPopoverComponent},
   { path: 'opt-invoice-generator', component: OptInvoiceGeneratorComponent},
   { path: 'opt-questionnaire-popup', component: OptQuestionnairePopupComponent},
+  { path: 'opt-document-select-popup', component: OptDocumentSelectPopupComponent},
 
   { path: 'opt-pageloader', component: OptPageloaderComponent},
 
@@ -283,6 +285,7 @@ export class DemoMaterialModule {}
     OptDocumentPopoverComponent,
     OptInvoiceGeneratorComponent,
     OptQuestionnairePopupComponent,
+    OptDocumentSelectPopupComponent,
 // OptDocumentSelectComponent,
     OptBookingDetailsFullPageComponent,
     OptItemCartComponent,

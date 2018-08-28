@@ -17,6 +17,7 @@ import {OptReprintPopupComponent} from "../opt-reprint-popup/opt-reprint-popup.c
 import {OptTaskPopupComponent} from "../opt-task-popup/opt-task-popup.component";
 import {OptInvoiceGeneratorComponent} from "../opt-invoice-generator/opt-invoice-generator.component";
 import {OptQuestionnairePopupComponent} from "../opt-questionnaire-popup/opt-questionnaire-popup.component";
+import {OptDocumentSelectPopupComponent} from "../opt-document-select-popup/opt-document-select-popup.component";
 
 @Component({
   selector: 'app-opt-popup-window',
@@ -188,6 +189,15 @@ export class OptPopupWindowComponent implements OnInit {
   public  openQuestionnairePopup(){
     this.dialog.open(OptQuestionnairePopupComponent,{
       data: {name:'Questionnaire'},
+      panelClass:'custom-dialog-container',
+      height: 'auto',
+      width: '60%'
+    });
+
+  }
+  public  openDocumentSelectPopup(){
+    this.dialog.open(OptDocumentSelectPopupComponent,{
+      data: {name:'Document Select'},
       panelClass:'custom-dialog-container',
       height: 'auto',
       width: '60%'
