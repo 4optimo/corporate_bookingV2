@@ -1026,6 +1026,10 @@
   }
   &_invoice-generator-popup{
     .invoice-generator-wrapper{
+      .invoice-panel-close{
+        cursor: pointer;
+        color:#909cac;
+      }
       .invoice-header{
         padding:24px;
         .header-row{
@@ -1163,6 +1167,96 @@
       }
       .mat-checkbox-inner-container{
         margin-right: 15px;
+      }
+    }
+  }
+  &_questionnaire-popup{
+    .questionnaire-wrapper{
+      .questionnaire-toggle{
+        color:#f5766c;
+        .opt_flex--container{
+          min-height: 50px;
+        }
+        .mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-thumb{
+          background-color:#f5766c ;
+        }
+      }
+      .questionnaire-accordion{
+        padding:24px;
+        .mat-accordion{
+          flex-grow: 1;
+        }
+        .mat-expansion-panel-header-title{
+          .row{
+            flex-grow: 1;
+            align-items: center;
+            display: flex;
+          }
+          .questionnaire-red-icon{
+            background-color:#f5766c;
+            border-radius: 16px;
+            color:$white;
+            padding: 6px;
+            font-size: 20px;
+          }
+          .questionnaire-blue-icon{
+            background-color:#27bfc2;
+            border-radius: 16px;
+            color:$white;
+            padding: 6px;
+            font-size: 20px;
+          }
+        }
+        mat-panel-title{
+          .opt_flex--container{
+            flex-direction: column;
+          }
+          p{
+            margin-bottom: 0px;
+          }
+          .required-mark{
+            color:#f5766c;
+            position: relative;
+            top: -4px;
+          }
+          .lbl{
+            padding: 7px 6px;
+            line-height: 1px;
+            margin-top:5px;
+          }
+        }
+      }
+      .accordion-content{
+        mat-form-field{
+          flex-grow: 1;
+        }
+        .opt_counter{
+          mat-form-field{
+            width: 40px;
+            padding: 4px 4px 0px 4px;
+          }
+        }
+        .counter-section-wrapper{
+          .opt_flex--container{
+            max-height: 43px;
+          }
+        }
+        .questionnaire-radio-group{
+          mat-radio-group{
+            display: flex;
+            flex-direction: column;
+          }
+          mat-radio-button{
+            line-height: 30px;
+          }
+        }
+      }
+      .questionnaire-button{
+        padding-right:24px;
+        margin-bottom: 20px;
+        .opt_flex__item{
+          justify-content: flex-end;
+        }
       }
     }
   }
