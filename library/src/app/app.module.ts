@@ -218,6 +218,7 @@ const appRoutes: Routes = [
     MatToolbarModule,
     MatTooltipModule,
     ScrollDispatchModule
+
   ],
 })
 export class DemoMaterialModule {}
@@ -285,7 +286,6 @@ export class DemoMaterialModule {}
 // OptDocumentSelectComponent,
     OptBookingDetailsFullPageComponent,
     OptItemCartComponent,
-    OptItemModalPopoversComponent,
 
     RoutingProjectComponent,
     TypographyComponent,
