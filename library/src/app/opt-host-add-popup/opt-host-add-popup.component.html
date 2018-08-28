@@ -233,8 +233,8 @@
 
                 <div class="opt_flex--container opt-txt__secondary special-instruction padding-top">
                   <div class="opt_flex__item opt-txt__body2-small">Special Instructions</div>
-                  <button mat-button  y-position="before" [matMenuTriggerFor]="filter_by" class=" panel-action-btn-icon"><i class="material-icons opt_color_icon_font">filter_list</i></button>
-                  <mat-menu #filter_by="matMenu">
+                  <button mat-button  [matMenuTriggerFor]="filter_by"  class=" panel-action-btn-icon"><i class="material-icons opt_color_icon_font">filter_list</i></button>
+                  <mat-menu #filter_by="matMenu" [overlapTrigger]="false" xPosition="before">
                     <button mat-menu-item class="opt-txt__body2 opt-txt__secondary">Special Instruction</button>
                     <button mat-menu-item  class="opt-txt__body2 opt-txt__secondary">Catering Notes</button>
                   </mat-menu>

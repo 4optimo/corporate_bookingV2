@@ -956,13 +956,13 @@
                     <div class="col-xs-12 col-sm-6 col-md-5	col-lg-5">
                       <div class="opt_flex--container">
                         <div class="opt_flex__item tc-flex-item__center">
-                          <div class="opt-txt__body2 opt-link--primary text-truncate"><div [matMenuTriggerFor]="menu" class="address"> 3509 Chimney Road Drive, UK </div></div>
-                          <mat-menu #menu="matMenu">
-                            <span class="opt-txt__secondary opt-txt__body2">Invoice Addresses</span>
-                            <button mat-menu-item>Anglr House, 1 Postley Road, Kempston</button>
-                            <span class="opt-txt__secondary opt-txt__body2">Booking Addresses</span>
-                            <button mat-menu-item>Anglr House, 1 Postley Road, Kempston</button>
-                            <span class="opt-txt__body2">--New Addresses--</span>
+                          <div class="opt-txt__body2 opt-link--primary text-truncate"><div [matMenuTriggerFor]="edit_address" class="address"> 3509 Chimney Road Drive, UK </div></div>
+                          <mat-menu #edit_address="matMenu">
+                            <div class=" opt__subtitle-2-small opt-txt__secondary opt-txt__body2">Invoice Address</div>
+                            <button mat-menu-item class="opt-txt__body1-small">Anglr House, 1 Postley Road, Kempston </button>
+                            <h5 class="opt-txt__secondary opt-txt__body2">Booking Address</h5>
+                            <button mat-menu-item class="opt-txt__body1-small">Anglr House, 1 Postley Road, Kempston</button>
+                            <h5 class="opt-txt__body2">--New Addresses--</h5>
                           </mat-menu>
 
                           <div class="opt_flex__item horizontally-center">
@@ -1081,7 +1081,7 @@
               </div>
               <!--Content-->
               <mat-accordion>
-                <mat-expansion-panel #myPanel5 [disabled]="true" class="opt-expand--line payments-list-item opt-pay" >
+                <mat-expansion-panel #myPanel5 [disabled]="true" class="opt-expand--line payments-list-item" >
                   <mat-expansion-panel-header collapsedHeight=".collapsedHeight" expandedHeight=".expandedHeight"  >
                     <div class="opt_expand--container">
                       <mat-panel-title>
@@ -1172,7 +1172,7 @@
               </mat-accordion>
 
               <mat-accordion>
-                <mat-expansion-panel #myPanel6 [disabled]="true" class="opt-expand--line payments-list-item opt-pay" >
+                <mat-expansion-panel #myPanel6 [disabled]="true" class="opt-expand--line payments-list-item" >
                   <mat-expansion-panel-header collapsedHeight=".collapsedHeight" expandedHeight=".expandedHeight"  >
                     <div class="opt_expand--container">
                       <mat-panel-title>
@@ -1315,7 +1315,7 @@
 
                 <!--Content-->
 
-                <div class="opt_flex--container deliverables-list-item opt-deli">
+                <div class="opt_flex--container deliverables-list-item">
                   <div class="opt_flex__item horizontally-center">
                     <div class="row">
                       <div class="col-xs-12 col-sm-6 col-md-3	col-lg-3">
@@ -1354,7 +1354,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="opt_flex--container deliverables-list-item opt-deli">
+                <div class="opt_flex--container deliverables-list-item">
                   <div class="opt_flex__item horizontally-center">
                     <div class="row">
                       <div class="col-xs-12 col-sm-6 col-md-3	col-lg-3">
@@ -1393,7 +1393,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="opt_flex--container deliverables-list-item opt-deli">
+                <div class="opt_flex--container deliverables-list-item">
                   <div class="opt_flex__item horizontally-center">
                     <div class="row">
                       <div class="col-xs-12 col-sm-6 col-md-3	col-lg-3">
@@ -1465,7 +1465,7 @@
 
 
                 <!--Content-->
-                <div class="opt_flex--container dispatch-list-item opt-dis">
+                <div class="opt_flex--container dispatch-list-item ">
                   <div class="opt_flex__item horizontally-center">
                     <div class="row">
                       <div class="col-xs-12 col-sm-6 col-md-3	col-lg-3">
@@ -1516,7 +1516,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="opt_flex--container dispatch-list-item opt-dis">
+                <div class="opt_flex--container dispatch-list-item ">
                   <div class="opt_flex__item horizontally-center">
                     <div class="row">
                       <div class="col-xs-12 col-sm-6 col-md-3	col-lg-3">
@@ -1560,7 +1560,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="opt_flex--container dispatch-list-item opt-dis">
+                <div class="opt_flex--container dispatch-list-item ">
                   <div class="opt_flex__item horizontally-center">
                     <div class="row">
                       <div class="col-xs-12 col-sm-6 col-md-3	col-lg-3">
@@ -1637,7 +1637,8 @@
               </div>
               <div class="col-xs-12 col-sm-12 col-md-5	col-lg-4 just-content-end">
                 <div class="header_row--action-wrapper btn-group">
-                  <button mat-icon-button	class="btn-icon"><i class="material-icons opt_color_icon_font">redeem</i></button>
+
+                  <button mat-button class="btn-icon-text"><i class="material-icons opt_color_icon_font">redeem</i> <span class="btn-text opt-txt__secondary hidden-sm">Redeem</span></button>
                   <button mat-button class="btn-icon-text"><i class="material-icons opt_color_icon_font">add</i> <span class="btn-text opt-txt__secondary hidden-sm">Add</span></button>
                   <button mat-button class="btn-icon-text"><i class="material-icons opt_color_icon_font">delete</i> <span class="btn-text opt-txt__secondary hidden-sm">Delete</span></button>
                 </div>
@@ -1647,7 +1648,7 @@
 
           <!--****1st row*****-->
           <mat-accordion>
-          <mat-expansion-panel #myPanel7 [disabled]="true" class="opt-expand--line host-list-item opt-host" >
+          <mat-expansion-panel #myPanel7 [disabled]="true" class="opt-expand--line host-list-item" >
             <mat-expansion-panel-header collapsedHeight=".collapsedHeight" expandedHeight=".expandedHeight"  >
               <div class="opt_expand--container">
                 <mat-panel-title >
@@ -1657,7 +1658,7 @@
                         <div class="opt_flex--container data-cadge">
                           <div class="opt_flex__item chck-box horizontally-center"> <mat-checkbox></mat-checkbox> </div>
                           <div class="opt_flex__item des-box">
-                            <div class="opt-txt__body2 opt-fontweight--bold opt-txt__body2 text-truncate"> Gold Ticket Bo Package</div>
+                            <div class="opt-txt__body2 opt-fontweight--bold opt-txt__body2 text-truncate"> Gold Ticket Bo Package <i class="opt-txt__body1-small icn-number">5</i></div>
                             <div class="opt-txt__body1-small opt-txt__secondary">26-Dec-2018</div>
                           </div>
                         </div>
@@ -1739,7 +1740,7 @@
 
           <!--****2nd row*****-->
           <mat-accordion>
-            <mat-expansion-panel #myPanel8 [disabled]="true" class="opt-expand--line host-list-item opt-host" >
+            <mat-expansion-panel #myPanel8 [disabled]="true" class="opt-expand--line host-list-item" >
               <mat-expansion-panel-header collapsedHeight=".collapsedHeight" expandedHeight=".expandedHeight"  >
                 <div class="opt_expand--container">
                   <mat-panel-title >
@@ -1749,7 +1750,7 @@
                           <div class="opt_flex--container data-cadge">
                             <div class="opt_flex__item chck-box horizontally-center"> <mat-checkbox></mat-checkbox> </div>
                             <div class="opt_flex__item des-box">
-                              <div class="opt-txt__body2 opt-fontweight--bold opt-txt__body2 text-truncate"> Gold Ticket Bo Package</div>
+                              <div class="opt-txt__body2 opt-fontweight--bold opt-txt__body2 text-truncate"> No FS Category Available</div>
                               <div class="opt-txt__body1-small opt-txt__secondary">26-Dec-2018</div>
                             </div>
                           </div>
