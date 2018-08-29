@@ -9,9 +9,13 @@
             </div>
           </div>
           <div class="opt_flex__item test-inner-expand">
-            <div class="title">
+            <!--<div class="title">
               <h1 mat-dialog-title class="opt__heading-1"> Host</h1>
               <p class="opt-txt__body1">Create a new Host</p>
+            </div>-->
+            <div class="modal_header--title">
+              <p class="modal_title">Host</p>
+              <p class="modal_subtitle">Create a new Host</p>
             </div>
           </div>
           <div class="opt_flex__item--inherit test-inner-2">
@@ -38,9 +42,10 @@
                   <h1 class="opt__subtitle-2">Host Information</h1>
                 </mat-expansion-panel-header>
                 <div class="row">
-                  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
                     <div class="opt_flex--container host-info padding-top">
                       <div class="opt_flex__item">
+                        <!--===Search for an existing Customer===-->
                         <mat-form-field>
                           <input matInput placeholder="Client Name" value="" >
                           <mat-icon matSuffix><i class="material-icons">search</i></mat-icon>
@@ -53,7 +58,7 @@
                 <div class="opt_flex--container padding-top">
                   <div class="opt_flex__item">
                     <div class="row">
-                      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4  no-pad-left">
+                      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4  no-pad-left">
                         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                           <mat-form-field>
                             <mat-select placeholder="Title" [(ngModel)]="selectedValue1" name="Mr" required>
@@ -69,12 +74,12 @@
                           </mat-form-field>
                         </div>
                       </div>
-                      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
                        <mat-form-field>
                           <input matInput placeholder="Last Name" value="">
                         </mat-form-field>
                       </div>
-                      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
                         <mat-form-field>
                           <input matInput placeholder="Company Name" value="">
                         </mat-form-field>
@@ -87,10 +92,11 @@
           </section>
         </div>
 
+        <!--====Contact Details===-->
         <div class="contact-details">
           <section class="opt-section__heading">
             <mat-accordion>
-              <mat-expansion-panel #myPanel2 class="section-heading __main" expanded>
+              <mat-expansion-panel #myPanel2 class="padding-top-expansion section-heading __main" expanded>
                 <mat-expansion-panel-header class="__title" >
                   <h1 class="opt__subtitle-2">Contact Details</h1>
                 </mat-expansion-panel-header>
@@ -98,17 +104,17 @@
                   <div class="opt_flex__item">
                     <div class="row">
                       <!-- ========== Contact Details 1st row =========-->
-                      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
                         <mat-form-field>
                           <input matInput placeholder="Post Code" value="">
                         </mat-form-field>
                       </div>
-                      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
                         <mat-form-field>
                           <input matInput placeholder="Email" value="">
                         </mat-form-field>
                       </div>
-                      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
                         <mat-form-field>
                           <input matInput placeholder="Office Telephone" value="">
                         </mat-form-field>
@@ -120,17 +126,17 @@
                   <div class="opt_flex__item">
                     <div class="row">
                       <!-- ========== Contact Details 2nd row =========-->
-                      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
                         <mat-form-field>
                           <input matInput placeholder="Street" value="">
                         </mat-form-field>
                       </div>
-                      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
                         <mat-form-field>
                           <input matInput placeholder="Mobile" value="">
                         </mat-form-field>
                       </div>
-                      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
                         <mat-form-field>
                           <input matInput placeholder="Fax" value="">
                         </mat-form-field>
@@ -142,7 +148,7 @@
                 <div class="opt_flex--container padding-top">
                   <div class="opt_flex__item">
                     <div class="row">
-                      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4  no-pad-left">
+                      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4  no-pad-left">
                         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-6">
                           <mat-form-field>
                                 <input matInput placeholder="City" value="">
@@ -161,7 +167,7 @@
                 <div class="opt_flex--container padding-top">
                     <div class="opt_flex__item">
                       <div class="row">
-                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4  no-pad-left">
+                        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4  no-pad-left">
                           <div class="col-xs-12 col-sm-6 col-md-4 col-lg-6">
                             <mat-form-field>
                               <input matInput placeholder="Region/County" value="">
@@ -203,7 +209,7 @@
         <div class="package-details">
           <section class="opt-section__heading">
             <mat-accordion>
-              <mat-expansion-panel #myPanel2 class="section-heading __main" expanded>
+              <mat-expansion-panel #myPanel2 class="padding-top-expansion section-heading __main" expanded>
                 <mat-expansion-panel-header class="__title" >
                   <h1 class="opt__subtitle-2">Package</h1>
                 </mat-expansion-panel-header>
@@ -211,18 +217,18 @@
                   <div class="opt_flex__item">
                    <!-- ========== Package =========-->
                     <div class="row">
-                      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
                         <mat-form-field>
                           <input matInput placeholder="Package Name" value="Box Office Event 1 Ticket">
                         </mat-form-field>
                       </div>
-                      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
                         <mat-form-field>
                           <input matInput placeholder="Division" value="14-Feb-2018">
                           <mat-icon matSuffix><i class="material-icons">date_range</i></mat-icon>
                         </mat-form-field>
                       </div>
-                      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
                         <mat-form-field>
                           <input matInput placeholder="No of covers" value="2">
                         </mat-form-field>
@@ -233,8 +239,8 @@
 
                 <div class="opt_flex--container opt-txt__secondary special-instruction padding-top">
                   <div class="opt_flex__item opt-txt__body2-small">Special Instructions</div>
-                  <button mat-button  y-position="before" [matMenuTriggerFor]="filter_by" class=" panel-action-btn-icon"><i class="material-icons opt_color_icon_font">filter_list</i></button>
-                  <mat-menu #filter_by="matMenu">
+                  <button mat-button  [matMenuTriggerFor]="filter_by"  class=" panel-action-btn-icon"><i class="material-icons opt_color_icon_font">filter_list</i></button>
+                  <mat-menu #filter_by="matMenu" [overlapTrigger]="false" xPosition="before">
                     <button mat-menu-item class="opt-txt__body2 opt-txt__secondary">Special Instruction</button>
                     <button mat-menu-item  class="opt-txt__body2 opt-txt__secondary">Catering Notes</button>
                   </mat-menu>
@@ -256,7 +262,7 @@
         </div>
       </div>
       <br>
-      <div class="opt_flex--container">
+      <div class="opt_flex--container padding-top">
         <div class="opt_flex__item"></div>
         <div class="opt_flex__item--inherit">
           <button class="mat-btn-primary mat-button" (click)="close()">Save</button>
