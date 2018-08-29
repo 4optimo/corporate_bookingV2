@@ -164,7 +164,7 @@ export class OptPopupWindowComponent implements OnInit {
       data: {name:'Reprint Tickets/Badges/Passes'},
       panelClass:'custom-dialog-container',
       height: 'auto',
-      width: '60%'
+      width: '70%'
     });
 
   }
@@ -191,7 +191,7 @@ export class OptPopupWindowComponent implements OnInit {
       data: {name:'Questionnaire'},
       panelClass:'custom-dialog-container',
       height: 'auto',
-      width: '60%'
+      width: '70%'
     });
 
   }

@@ -778,6 +778,11 @@
     }
   }
   &_add-note-popup{
+    .opt_modal-header{
+      p{
+        margin-bottom: 5px;
+      }
+    }
     .opt-add-note-wrapper{
       .opt_modal-body{
         padding:0;
@@ -823,8 +828,13 @@
     }
   }
   &_reprint-popup{
+    i{
+      color:#909cac;
+    }
     .mat-expansion-panel{
       box-shadow: none !important;
+      border: 1px solid #e0e0e0;
+      border-bottom: none;
       .mat-expansion-panel-body{
         padding:0 24px 0;
       }
@@ -887,6 +897,14 @@
     }
   }
   &_task-popup{
+    i{
+      color:#909cac;
+    }
+    .opt_modal-header{
+      p{
+        margin-bottom: 5px;
+      }
+    }
     .opt-task-wrapper{
       .justify-right{
         justify-content: flex-end;
@@ -928,6 +946,9 @@
           .row{
             display: flex;
             align-items: center;
+          }
+          .opt-link--secondary{
+            cursor: pointer;
           }
         }
         .task-status{
@@ -1047,10 +1068,22 @@
           .opt_flex__item{
             justify-content: flex-end;
           }
+          .opt__heading-1{
+            margin-bottom: 5px;
+          }
+          .opt-txt__body1{
+            line-height: 15px;
+          }
         }
         .invoice-bio{
           flex-direction: column;
           border-right: 1px solid #e0e0e0;
+          .opt__heading-2{
+            margin-bottom: 5px;
+          }
+          .opt-txt__body1{
+            line-height: 15px;
+          }
         }
         .invoice-status{
           i{
@@ -1171,18 +1204,40 @@
     }
   }
   &_questionnaire-popup{
+    .opt_modal-header{
+      p{
+        margin-bottom: 5px;
+      }
+    }
     .questionnaire-wrapper{
+      padding:24px;
       .questionnaire-toggle{
         color:#f5766c;
         .opt_flex--container{
           min-height: 50px;
+          .opt_flex__item{
+            justify-content: flex-end;
+          }
         }
         .mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-thumb{
           background-color:#f5766c ;
         }
+        .opt-txt__body2{
+          @include respond-to('x-small') {
+            position: relative;
+            left: 0px;
+          }
+          @include respond-to('small') {
+            position: relative;
+            left: 0px;
+          }
+          @include respond-to('medium') {
+            position: relative;
+            left: 30px;
+          }
+        }
       }
       .questionnaire-accordion{
-        padding:24px;
         .mat-accordion{
           flex-grow: 1;
         }
@@ -1252,8 +1307,7 @@
         }
       }
       .questionnaire-button{
-        padding-right:24px;
-        margin-bottom: 20px;
+        margin: 20px 0;
         .opt_flex__item{
           justify-content: flex-end;
         }
@@ -1261,6 +1315,11 @@
     }
   }
   &_document-select-popup{
+    .opt_modal-header{
+      p{
+        margin-bottom: 5px;
+      }
+    }
     .p85{
       width:85%;
     }
@@ -1289,6 +1348,7 @@
     .document-select-content{
       padding: 24px;
       background-color: #fafafa;
+
       .opt_flex--container{
         min-height: 39px;
       }
@@ -1308,6 +1368,14 @@
           .list-button{
             .opt_flex__item{
               justify-content: flex-end;
+            }
+              .mat-btn-primary {
+                color: #4bb3fa !important;
+                text-align: center !important;
+                border: 1px solid #4bb3fa !important;
+              }
+            .mat-btn-primary:hover{
+              color:$white !important;
             }
           }
           .opt_flex--container:nth-child(1){
@@ -1329,35 +1397,17 @@
         }
         .list-icon{
           background-color:#27bfc2;
-          color:$white;
-          padding: 5px;
-          border-radius: 17px;
+          padding: 10px;
+          border-radius: 24px;
         }
       }
       .document-select-paginator{
         margin-top:20px;
+        .mat-paginator{
+          background-color: #fafafa;
+        }
         .opt_flex__item{
-          justify-content: center;
-        }
-        .paginator-number{
-          background-color: #e0e0e0;
-          border-radius: 15px;
-          font-size: 14px;
-          color: #ffffff;
-          width: 25px;
-          height: 25px;
-          display: flex;
-          align-items: center;
-          cursor: pointer;
-          margin-right: 5px;
-          span{
-            display: flex;
-            justify-content: center;
-            flex-grow: 1;
-          }
-        }
-        .paginator-highlight{
-          background-color:#4bb3fa ;
+          justify-content: flex-end;
         }
       }
     }

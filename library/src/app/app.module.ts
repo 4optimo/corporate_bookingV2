@@ -124,7 +124,6 @@ import { OptDocumentSelectPopupComponent } from './opt-document-select-popup/opt
 
 
 
-
 const appRoutes: Routes = [
   { path: 'opt-booking-list', component: OptBookingListComponent},
   { path: 'opt-booking-details', component: OptBookingDetailsComponent},
@@ -286,7 +285,6 @@ export class DemoMaterialModule {}
     OptInvoiceGeneratorComponent,
     OptQuestionnairePopupComponent,
     OptDocumentSelectPopupComponent,
-// OptDocumentSelectComponent,
     OptBookingDetailsFullPageComponent,
     OptItemCartComponent,
 
@@ -317,7 +315,7 @@ export class DemoMaterialModule {}
     NgMultiSelectDropDownModule,
     RouterModule.forRoot(appRoutes),
     NgxEditorModule,
-    TooltipModule.forRoot()
+    TooltipModule.forRoot(),
   ],
 
   entryComponents:[

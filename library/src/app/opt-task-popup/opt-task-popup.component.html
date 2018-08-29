@@ -30,19 +30,17 @@
             <div class="opt_flex__item header-left-section">
               <div class="bio-info">
                 <div class="opt_flex--container">
-                  <div class="opt_flex__item opt_flex__item--vcenter">
-                    <span class="opt-txt__body2-small">Mr. Peter Worth</span>
-                  </div>
-                  <div class="opt_flex__item opt_flex__item--vcenter justify-right">
-                    <i class="material-icons">info</i>
+                  <div class="opt_flex__item opt_flex__item--vcenter ">
+                    <mat-select [(value)]="selected" class="opt-booking-summary-select-lg">
+                      <mat-option value="option1">Mr. Joshua Colinsky</mat-option>
+                      <mat-option value="option2">Mr. Peter Worth</mat-option>
+                      <mat-option value="option3">Mr. Vitor Belfort</mat-option>
+                    </mat-select>
                   </div>
                 </div>
                 <div class="opt_flex--container">
                   <div class="opt_flex__item opt_flex__item--vcenter">
-                    <span class="opt-txt__tertiary opt-txt__body2-small">Coalfield Cricket Club</span>
-                  </div>
-                  <div class="opt_flex__item opt_flex__item--vcenter justify-right">
-                    <i class="material-icons">info</i>
+                    <a class="opt-link--secondary">Coalfield Cricket Club</a>
                   </div>
                 </div>
               </div>
@@ -176,7 +174,7 @@
               <div class="col-md-9">
                 <div class="opt_flex--container">
                   <div class="opt_flex__item opt_flex__item--vcenter">
-                    <h1>Task Details</h1>
+                    <h1 class="opt-txt__body2">Task Details</h1>
                   </div>
                 </div>
               </div>
@@ -211,7 +209,7 @@
                   <div class="opt_flex--container">
                     <div class="opt_flex__item opt_flex__item--vcenter">
                       <mat-form-field class="example-full-width">
-                        <input matInput placeholder="To" value="" required>
+                        <input class="opt-txt__body1" matInput placeholder="To" value="Allocated to" required>
                       </mat-form-field>
                     </div>
                   </div>
@@ -230,7 +228,7 @@
                   <div class="opt_flex--container">
                     <div class="opt_flex__item opt_flex__item--vcenter">
                       <mat-form-field class="example-full-width">
-                        <input matInput placeholder="Subject" value="" required>
+                        <input class="opt-txt__body1" matInput placeholder="Subject" value="Personal Training" required>
                       </mat-form-field>
                     </div>
                   </div>
