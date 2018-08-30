@@ -82,7 +82,7 @@
                         </div>
                       </ng-template>
                       <div class="opt_flex--container client-general-info">
-                        <div class="opt_flex__item  padding-left">
+                        <div class="opt_flex__item  ">
                           <mat-form-field class="example-full-width">
                             <input matInput placeholder="Name" value="" required>
                           </mat-form-field>
@@ -111,7 +111,7 @@
                             <!--<input matInput placeholder="Reference Code" value="" required>-->
                           <!--</mat-form-field>-->
                         <!--</div>-->
-                        <div class="opt_flex__item padding-left">
+                        <div class="opt_flex__item">
                           <mat-form-field class="example-full-width">
                             <input matInput [matDatepicker]="picker" placeholder="Date Registered">
                             <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
@@ -129,7 +129,7 @@
                             <input matInput placeholder="Company Registration No" value="" required>
                           </mat-form-field>
                         </div>
-                        <div class="opt_flex__item padding-left">
+                        <div class="opt_flex__item ">
                           <mat-form-field class="example-full-width">
                             <mat-select placeholder="Primary Client Category" [(ngModel)]="selectedValue1" name="currency" required>
                               <mat-option *ngFor="let currency of currencys" [value]="currency.value">
@@ -152,7 +152,7 @@
                             <input matInput placeholder="Address 1" value="" required>
                           </mat-form-field>
                         </div>
-                        <div class="opt_flex__item padding-left">
+                        <div class="opt_flex__item ">
                           <mat-form-field class="example-full-width">
                             <input matInput placeholder="Address 2" value="" required >
                           </mat-form-field>
@@ -167,7 +167,7 @@
                             <input matInput placeholder="Post Code" value="" required>
                           </mat-form-field>
                         </div>
-                        <div class="opt_flex__item padding-left">
+                        <div class="opt_flex__item">
                           <mat-form-field class="example-full-width">
                             <input matInput placeholder="City/ Town" value="" required>
                           </mat-form-field>
