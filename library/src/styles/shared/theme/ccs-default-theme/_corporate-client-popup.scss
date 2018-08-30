@@ -170,17 +170,6 @@
     }
 
 
-    .mat-slide-toggle-content {
-      font-size: 12px;
-
-    }
-    .mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-thumb {
-      background-color: $badge-success-bg;
-    }
-    .mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-bar {
-      background-color: #d0d4db;
-    }
-
     .pro-header {
       //display: flex;
 
@@ -1500,4 +1489,14 @@
   .ngx-editor-textarea{
     min-height: 150px !important;
   }
+}
+.mat-slide-toggle-content {
+  font-size: 12px;
+
+}
+.mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-thumb {
+  background-color: $badge-success-bg;
+}
+.mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-bar {
+  background-color: #d0d4db;
 }
