@@ -1,3 +1,52 @@
+.opt {
+  &_payment-modal {
+    .mat-dialog-title{
+      margin: 0 !important;
+    }
+    .icon__tabs {
+      .tab-icon-label {
+        padding-top: 10px;
+      }
+    }
+    .mat-dialog-content{
+      max-height: unset;
+      overflow: hidden;
+    }
+
+    .opt-section__heading {
+      .expand-outer-wrapper{
+        padding: 30px 0;
+        .expand-inner-wrapper {
+          padding: 25px 15px;
+          background-color: #f5f5f5;
+            &:first-child {
+              border-bottom: 1px solid #e0e0e0;
+          }
+          .mat-checkbox-label {
+            padding-left: 15px;
+          }
+        }
+      }
+    }
+    .billing-info-section, .notes-section {
+      .expand-outer-wrapper{
+        padding: 30px 0;
+        .billing-inner-wrapper {
+          padding: 15px;
+          border: 1px solid #e0e0e0;
+          .opt_flex__item {
+            padding: 15px;
+          }
+          .mat-form-field {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+
 .payment_modal{
   .mat-dialog-container{
     padding: 0;
