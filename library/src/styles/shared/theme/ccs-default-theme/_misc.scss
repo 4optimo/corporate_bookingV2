@@ -172,18 +172,11 @@
   &--depth__4{
     @include box_shadow(4);
   }
-
   &--depth__5{
     @include box_shadow(5);
   }
 
 }
-
-
-
-
-
-
 
 .icn-opt__small{
   font-size: 20px;
@@ -199,4 +192,8 @@
 
 [class^='icon-icn-']{
   font-size: 17px;
+}
+/*Global Classes*/
+button{
+  transition:0.3s !important;
 }
