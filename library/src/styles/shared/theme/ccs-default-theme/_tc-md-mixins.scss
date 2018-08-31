@@ -145,22 +145,22 @@
 
   @include respond-to('x-small') {
     font-size: 13px;
-    font-weight: 500;
+    font-weight: 700;
   }
 
   @include respond-to('small') {
     font-size: 13px;
-    font-weight: 500;
+    font-weight: 700;
   }
 
   @include respond-to('medium') {
     font-size: 13px;
-    font-weight: 500;
+    font-weight: 700;
   }
 
   @include respond-to('large') {
     font-size: 13px;
-    font-weight: 500;
+    font-weight: 700;
   }
 
   @if $usePreferred {

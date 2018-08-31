@@ -100,7 +100,7 @@ export class OptPopupWindowComponent implements OnInit {
       data: {name:'Email Document'},
       panelClass:'custom-dialog-container',
       height: 'auto',
-      width: '80%'
+      width: '60%'
       // DialogPosition : top
 
     });
