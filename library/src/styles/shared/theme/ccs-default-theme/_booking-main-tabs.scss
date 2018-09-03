@@ -4,6 +4,7 @@
       flex-grow: 1;
       background-color: #e4e8e9;
       padding: 35px 24px;
+      border-right: 1px solid #0000001f;
       &:not(.mat-tab-disabled){
         &.mat-tab-label-active{
           background-color: #fff;
@@ -11,6 +12,9 @@
         &:focus{
           background-color: #fff;
         }
+      }
+      &:last-child{
+        border-right: none;
       }
     }
   }
@@ -40,11 +44,11 @@
 .mat-button{
   &.mat-tab-label-button{
     background-color: $opt_color__tertiary;
-    min-width: unset;
+    min-width: 80px;
     padding: 7px;
     border-radius: 0;
     i{
-      font-size: 66px;
+      font-size: 57px;
       color: #fff;
     }
 
