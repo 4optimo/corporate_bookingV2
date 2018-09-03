@@ -842,6 +842,7 @@
       @include circle-icon(14px, $opt_status_confirmed-multiple, $opt_status_confirmed-multiple);
       font-size: 14px;
       color: $opt_color_white;
+      display: inline-block;
 
     }
     .status {
