@@ -50,7 +50,7 @@
 @mixin typo-display-2($colorContrast: false, $usePreferred: true) {
   @include typo-preferred-font($usePreferred);
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 500;
  /* line-height: 1.1em;*/
   line-height: 20px;
 
@@ -62,7 +62,7 @@
 @mixin typo-display-1($colorContrast: false, $usePreferred: true) {
   @include typo-preferred-font($usePreferred);
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 500;
   /*line-height: 1em;*/
   line-height: 18px;
 
@@ -145,22 +145,22 @@
 
   @include respond-to('x-small') {
     font-size: 13px;
-    font-weight: 700;
+    font-weight: 500;
   }
 
   @include respond-to('small') {
     font-size: 13px;
-    font-weight: 700;
+    font-weight: 500;
   }
 
   @include respond-to('medium') {
     font-size: 13px;
-    font-weight: 700;
+    font-weight: 500;
   }
 
   @include respond-to('large') {
     font-size: 13px;
-    font-weight: 700;
+    font-weight: 500;
   }
 
   @if $usePreferred {
