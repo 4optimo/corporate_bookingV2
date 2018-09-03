@@ -220,7 +220,7 @@
                                       <div class="opt-txt__caption	">06-Feb-2018</div>
                                     </mat-checkbox>
                                   </div>
-                                  <div class="opt_flex__item">
+                                  <div class="opt_flex__item price-value">
                                     <span class="opt-txt__body2-small">&pound;</span> 20
                                   </div>
                                 </div>
@@ -233,7 +233,7 @@
                                         <div class="opt-txt__caption	">06-Feb-2018</div>
                                       </mat-checkbox>
                                     </div>
-                                    <div class="opt_flex__item">
+                                    <div class="opt_flex__item price-value">
                                       <span class="opt-txt__body2-small">&pound;</span> 20
                                     </div>
                                   </div>
@@ -344,20 +344,7 @@
                                         <div class="opt-txt__caption	">06-Feb-2018</div>
                                       </mat-checkbox>
                                     </div>
-                                    <div class="opt_flex__item">
-                                      <span class="opt-txt__body2-small">&pound;</span> 20
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="expand-inner-wrapper">
-                                  <div class="opt_flex--container">
-                                    <div class="opt_flex__item">
-                                      <mat-checkbox>
-                                        <div class="opt-txt__body2-small">Casual Recreation Centre Hire</div>
-                                        <div class="opt-txt__caption	">06-Feb-2018</div>
-                                      </mat-checkbox>
-                                    </div>
-                                    <div class="opt_flex__item">
+                                    <div class="opt_flex__item price-value">
                                       <span class="opt-txt__body2-small">&pound;</span> 20
                                     </div>
                                   </div>
@@ -380,15 +367,66 @@
                                   <div class="opt_flex--container">
                                     <div class="opt_flex__item">
                                       <mat-form-field class="example-full-width">
-                                        <input matInput placeholder="Account" value="£50.00" required>
+                                        <input matInput placeholder="Name" value="£50.00" required>
                                       </mat-form-field>
                                     </div>
                                     <div class="opt_flex__item">
                                       <mat-form-field class="example-full-width">
-                                        <input matInput [matDatepicker]="picker1" placeholder="Paid On">
+                                        <input matInput [matDatepicker]="picker1" placeholder="Refund On">
                                         <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
                                         <mat-datepicker #picker1></mat-datepicker>
                                       </mat-form-field>
+                                    </div>
+                                  </div>
+                                  <div class="opt_flex--container">
+                                    <div class="opt_flex__item">
+                                      <mat-form-field class="example-full-width">
+                                        <mat-select placeholder="Select your credit card">
+                                          <mat-option *ngFor="" [value]="">
+                                          </mat-option>
+                                        </mat-select>
+                                      </mat-form-field>
+                                    </div>
+                                    <div class="opt_flex__item">
+                                      <mat-form-field class="example-full-width">
+                                        <input matInput placeholder="Amount" value="£108.86" required>
+                                      </mat-form-field>
+                                    </div>
+                                  </div>
+                                  <div class="opt_flex--container">
+                                    <div class="opt_flex__item  flex-nt-grow col-div p50">
+                                      <div class="opt_flex--container">
+                                        <div class="opt_flex__item">
+                                          <mat-form-field class="example-full-width">
+                                            <mat-select placeholder="Card Number (last 4 digits)">
+                                              <mat-option>Master Card</mat-option>
+                                            </mat-select>
+                                          </mat-form-field>
+                                        </div>
+                                        <div class="opt_flex__item--inherit flex-nt-grow img-wrapper">
+                                          <img src="../../assets/credit-card.png">
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="opt_flex--container">
+                                    <div class="opt_flex__item flex-nt-grow col-div">
+                                      <div class="opt_flex--container">
+                                        <div class="opt_flex__item p50">
+                                          <mat-form-field class="example-full-width">
+                                            <mat-select placeholder="Expiry Month">
+                                              <mat-option>February</mat-option>
+                                            </mat-select>
+                                          </mat-form-field>
+                                        </div>
+                                        <div class="opt_flex__item p50">
+                                          <mat-form-field class="example-full-width">
+                                            <mat-select placeholder="Expiry Year">
+                                              <mat-option>2020</mat-option>
+                                            </mat-select>
+                                          </mat-form-field>
+                                        </div>
+                                      </div>
                                     </div>
                                   </div>
                                 </div>
@@ -469,7 +507,7 @@
                                         <div class="opt-txt__caption	">06-Feb-2018</div>
                                       </mat-checkbox>
                                     </div>
-                                    <div class="opt_flex__item">
+                                    <div class="opt_flex__item price-value">
                                       <span class="opt-txt__body2-small">&pound;</span> 20
                                     </div>
                                   </div>
@@ -482,7 +520,7 @@
                                         <div class="opt-txt__caption	">06-Feb-2018</div>
                                       </mat-checkbox>
                                     </div>
-                                    <div class="opt_flex__item">
+                                    <div class="opt_flex__item price-value">
                                       <span class="opt-txt__body2-small">&pound;</span> 20
                                     </div>
                                   </div>
@@ -513,6 +551,13 @@
                                         <input matInput [matDatepicker]="picker2" placeholder="Paid On">
                                         <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
                                         <mat-datepicker #picker2></mat-datepicker>
+                                      </mat-form-field>
+                                    </div>
+                                  </div>
+                                  <div class="opt_flex--container">
+                                    <div class="opt_flex__item  flex-nt-grow">
+                                      <mat-form-field class="example-full-width">
+                                        <input matInput placeholder="Cheque Number" value="" required>
                                       </mat-form-field>
                                     </div>
                                   </div>
