@@ -78,7 +78,7 @@
       text-align: center !important;
     }
 
-      &--small {
+    &--small {
       @extend %btn-small;
         color: $opt-color_btn_outline !important;
         text-align: center !important;
@@ -107,18 +107,22 @@
         color: $opt_color_white !important;
         border: 1px solid  $opt_color_primary !important;
         text-align: center !important;
+        transition:1s !important;
       }
     }
     &_active{ /*Priary Active*/
       @extend %btn;
-      @include box_shadow(2);
-     // background-color: $opt_color_primary;
+      @include box_shadow(1);
+      background-color: $opt_color_primary;
       color: $opt_color_white !important;
       border: 1px solid  $opt_color_primary !important;
       text-align: center !important;
+      &:hover{
+        transition: 0.3s;  
+        background-color: #4bb3fa !important;
+      }
     }
   }
-
  /* &-secondary{ !*default*!
     @extend %btn;
     background-color: $opt_color_primary;

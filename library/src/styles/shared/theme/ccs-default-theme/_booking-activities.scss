@@ -106,7 +106,21 @@
 /* End of Expansion Panel Button Styles */
 
 .opt_booking__activity {
-
+  mat-horizontal-stepper{
+    .mat-fab.mat-accent{
+      background-color: #f6f6f6;
+      color:#909cac;
+      height: 65px;
+      width: 65px;
+      margin-top: 10px;
+      margin-bottom: 5px;
+      font-size: 34px;
+      box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.1), 0 1px 18px 0 rgba(0, 0, 0, 0.1);
+    }
+    [class^='icon-icn-']{
+      font-size: 34px;
+    }
+  }
   .row {
     display: flex;
     width: 100%;
@@ -117,7 +131,7 @@
     height: auto !important;
 
     &.mat-step-header {
-      width: 100px;
+      width: 111px;
       &:hover {
         background-color: transparent;
       }
@@ -173,11 +187,12 @@
   }
   .mat-step-label-selected {
     &.mat-step-label-active {
-      .activity-avatar-wrapper {
+      .activity-avatar-wrapper, .mat-fab.mat-accent {
         background-color: $opt_color_primary;
         i {
           color: $opt_color_white;
         }
+        box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12) !important;
       }
     }
     .activity-title {
@@ -194,6 +209,7 @@
     text-overflow: ellipsis;
     white-space: normal;
     overflow: hidden;
+    min-height: 40px;
   }
 
   .mat-expansion-panel-body {

@@ -695,7 +695,7 @@
       border-top: 2px solid $opt-border-color;
       border-bottom: 1px solid $opt-border-color;
       .opt_flex--container{
-        min-height: 50px;
+        min-height: 55px;
         display: flex;
       }
       p{
@@ -869,7 +869,7 @@
        flex-grow: 1;
        mat-expansion-panel-header{
          border-bottom: 1px solid #e0e0e0;
-         height: 55px !important;
+         //height: 55px !important;
        }
      }
      .reprint-accordion-row{
@@ -1310,6 +1310,17 @@
         margin: 20px 0;
         .opt_flex__item{
           justify-content: flex-end;
+        }
+      }
+      .list-label-margin{
+        @include respond-to('x-small') {
+          margin-left: -15px;
+        }
+        @include respond-to('small') {
+          margin-left: -15px;
+        }
+        @include respond-to('medium') {
+          margin-left: -30px;
         }
       }
     }
