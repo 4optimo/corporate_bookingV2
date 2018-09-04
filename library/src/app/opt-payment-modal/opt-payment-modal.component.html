@@ -215,17 +215,15 @@
                                 <div class="expand-inner-wrapper">
                                   <div class="opt_flex--container">
                                   <div class="opt_flex__item">
-                                    <mat-checkbox>
+                                    <mat-checkbox checked="true">
                                       <div class="opt-txt__body2-small">Casual Recreation Centre Hire</div>
                                       <div class="opt-txt__caption	">06-Feb-2018</div>
                                     </mat-checkbox>
                                   </div>
-                                  <div class="opt_flex__item">
+                                  <div class="opt_flex__item price-value">
                                     <span class="opt-txt__body2-small">&pound;</span> 20
                                   </div>
                                 </div>
-                                </div>
-                                <div class="expand-inner-wrapper">
                                   <div class="opt_flex--container">
                                     <div class="opt_flex__item">
                                       <mat-checkbox>
@@ -233,7 +231,7 @@
                                         <div class="opt-txt__caption	">06-Feb-2018</div>
                                       </mat-checkbox>
                                     </div>
-                                    <div class="opt_flex__item">
+                                    <div class="opt_flex__item price-value">
                                       <span class="opt-txt__body2-small">&pound;</span> 20
                                     </div>
                                   </div>
@@ -296,13 +294,13 @@
                         </mat-accordion>
                       </section>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 item-align">
                       <div class="balance_section">
                         <div class="balance_section--title">
                           Current Balance<!--Refund Payments-->
                         </div>
                         <div class="balance_section--balance">
-                          <span class="sup-mark">&pound;</span> 20
+                          <span class="sup-mark">&pound;</span> 20. <span class="opt__subtitle-2">86</span>
                         </div>
                         <div class="additional_info">
                           <ul class="balance_section--date_list">
@@ -338,27 +336,19 @@
                               <div class="expand-outer-wrapper">
                                 <div class="expand-inner-wrapper">
                                   <div class="opt_flex--container">
-                                    <div class="opt_flex__item">
+                                    <div class="opt_flex__item tc-flex-item__center">
                                       <mat-checkbox>
-                                        <div class="opt-txt__body2-small">Casual Recreation Centre Hire</div>
-                                        <div class="opt-txt__caption	">06-Feb-2018</div>
+                                        <div class="opt-txt__caption">
+                                          <span>BK00021</span> | <span>23-Jun-2018</span>
+                                        </div>
                                       </mat-checkbox>
                                     </div>
                                     <div class="opt_flex__item">
-                                      <span class="opt-txt__body2-small">&pound;</span> 20
+                                      <div class="opt-txt__body2-small flex-padding">Total Invoice</div>
+                                      <div class="opt-txt__caption flex-padding"><span class="opt-txt__body2-small">&pound;</span> 6,595.86</div>
                                     </div>
-                                  </div>
-                                </div>
-                                <div class="expand-inner-wrapper">
-                                  <div class="opt_flex--container">
-                                    <div class="opt_flex__item">
-                                      <mat-checkbox>
-                                        <div class="opt-txt__body2-small">Casual Recreation Centre Hire</div>
-                                        <div class="opt-txt__caption	">06-Feb-2018</div>
-                                      </mat-checkbox>
-                                    </div>
-                                    <div class="opt_flex__item">
-                                      <span class="opt-txt__body2-small">&pound;</span> 20
+                                    <div class="opt_flex__item price-value __link ">
+                                      <span class="opt-txt__body2-small">&pound;</span> 6,595.86
                                     </div>
                                   </div>
                                 </div>
@@ -380,15 +370,66 @@
                                   <div class="opt_flex--container">
                                     <div class="opt_flex__item">
                                       <mat-form-field class="example-full-width">
-                                        <input matInput placeholder="Account" value="£50.00" required>
+                                        <input matInput placeholder="Name" value="£50.00" required>
                                       </mat-form-field>
                                     </div>
                                     <div class="opt_flex__item">
                                       <mat-form-field class="example-full-width">
-                                        <input matInput [matDatepicker]="picker1" placeholder="Paid On">
+                                        <input matInput [matDatepicker]="picker1" placeholder="Refund On">
                                         <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
                                         <mat-datepicker #picker1></mat-datepicker>
                                       </mat-form-field>
+                                    </div>
+                                  </div>
+                                  <div class="opt_flex--container">
+                                    <div class="opt_flex__item">
+                                      <mat-form-field class="example-full-width">
+                                        <mat-select placeholder="Select your credit card">
+                                          <mat-option *ngFor="" [value]="">
+                                          </mat-option>
+                                        </mat-select>
+                                      </mat-form-field>
+                                    </div>
+                                    <div class="opt_flex__item">
+                                      <mat-form-field class="example-full-width">
+                                        <input matInput placeholder="Amount" value="£108.86" required>
+                                      </mat-form-field>
+                                    </div>
+                                  </div>
+                                  <div class="opt_flex--container">
+                                    <div class="opt_flex__item  flex-nt-grow col-div p50">
+                                      <div class="opt_flex--container">
+                                        <div class="opt_flex__item">
+                                          <mat-form-field class="example-full-width">
+                                            <mat-select placeholder="Card Number (last 4 digits)">
+                                              <mat-option>Master Card</mat-option>
+                                            </mat-select>
+                                          </mat-form-field>
+                                        </div>
+                                        <div class="opt_flex__item--inherit flex-nt-grow img-wrapper">
+                                          <img src="../../assets/credit-card.png">
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="opt_flex--container">
+                                    <div class="opt_flex__item flex-nt-grow col-div">
+                                      <div class="opt_flex--container">
+                                        <div class="opt_flex__item p50">
+                                          <mat-form-field class="example-full-width">
+                                            <mat-select placeholder="Expiry Month">
+                                              <mat-option>February</mat-option>
+                                            </mat-select>
+                                          </mat-form-field>
+                                        </div>
+                                        <div class="opt_flex__item p50">
+                                          <mat-form-field class="example-full-width">
+                                            <mat-select placeholder="Expiry Year">
+                                              <mat-option>2020</mat-option>
+                                            </mat-select>
+                                          </mat-form-field>
+                                        </div>
+                                      </div>
                                     </div>
                                   </div>
                                 </div>
@@ -420,13 +461,13 @@
                         </mat-accordion>
                       </section>
                     </div>
-                    <div class="col-md-3">
-                      <div class="balance_section">
+                    <div class="col-md-3 item-align">
+                      <div class="balance_section refund">
                         <div class="balance_section--title">
                           Current Balance<!--Refund Payments-->
                         </div>
                         <div class="balance_section--balance">
-                          <span class="sup-mark">&pound;</span> 20
+                          <span class="sup-mark">&pound;</span> 20.<span class="opt__subtitle-2">86</span>
                         </div>
                         <div class="additional_info">
                           <ul class="balance_section--date_list">
@@ -434,7 +475,9 @@
                             <li><span class="--date">06-Feb-2018</span> <span>+ <span class="sup-mark--mini">&pound;</span>80</span></li>
                             <li><span class="--date">06-Feb-2018</span> <span>+ <span class="sup-mark--mini">&pound;</span>80</span></li>
                           </ul>
-                          <p><strong>Note:</strong> Refund Receipts doubles up a credit if there is already a credit memo entered in the system.</p>
+                          <div class="opt-txt__body2">
+                            <p><strong>Note:</strong> Refund Receipts doubles up a credit if there is already a credit memo entered in the system.</p>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -469,12 +512,10 @@
                                         <div class="opt-txt__caption	">06-Feb-2018</div>
                                       </mat-checkbox>
                                     </div>
-                                    <div class="opt_flex__item">
+                                    <div class="opt_flex__item price-value">
                                       <span class="opt-txt__body2-small">&pound;</span> 20
                                     </div>
                                   </div>
-                                </div>
-                                <div class="expand-inner-wrapper">
                                   <div class="opt_flex--container">
                                     <div class="opt_flex__item">
                                       <mat-checkbox>
@@ -482,7 +523,7 @@
                                         <div class="opt-txt__caption	">06-Feb-2018</div>
                                       </mat-checkbox>
                                     </div>
-                                    <div class="opt_flex__item">
+                                    <div class="opt_flex__item price-value">
                                       <span class="opt-txt__body2-small">&pound;</span> 20
                                     </div>
                                   </div>
@@ -516,6 +557,13 @@
                                       </mat-form-field>
                                     </div>
                                   </div>
+                                  <div class="opt_flex--container">
+                                    <div class="opt_flex__item  flex-nt-grow">
+                                      <mat-form-field class="example-full-width">
+                                        <input matInput placeholder="Cheque Number" value="" required>
+                                      </mat-form-field>
+                                    </div>
+                                  </div>
                                 </div>
                               </div>
                             </div>
@@ -545,13 +593,13 @@
                         </mat-accordion>
                       </section>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 item-align">
                       <div class="balance_section">
                         <div class="balance_section--title">
                           Current Balance<!--Refund Payments-->
                         </div>
                         <div class="balance_section--balance">
-                          <span class="sup-mark">&pound;</span> 20
+                          <span class="sup-mark">&pound;</span> 20.<span class="opt__subtitle-2">86</span>
                         </div>
                         <div class="additional_info">
                           <ul class="balance_section--date_list">
@@ -569,14 +617,124 @@
                 <mat-tab>
                   <ng-template mat-tab-label>
                     <div class="tab-icon-wrapper">
-                      <i class="material-icons">people</i>
+                      <i class="material-icons">group</i>
                     </div>
                     <div class="tab-icon-label">
                       Contra
                     </div>
                   </ng-template>
-                  <h1>Terrible sushi restaurants</h1>
-                  <p>...</p>
+                  <div class="row">
+                    <div class="col-md-9">
+                      <section class="opt-section__heading">
+                        <mat-accordion>
+                          <mat-expansion-panel #myPanel2 class="section-heading __main">
+                            <mat-expansion-panel-header class="__title section-header" >
+                              <h1 class="opt-txt__body2">Select Invoice</h1>
+                            </mat-expansion-panel-header>
+
+                            <div class="select_invoice-section">
+                              <div class="expand-outer-wrapper">
+                                <div class="expand-inner-wrapper">
+                                  <div class="opt_flex--container">
+                                    <div class="opt_flex__item">
+                                      <mat-checkbox>
+                                        <div class="opt-txt__body2-small">Casual Recreation Centre Hire</div>
+                                        <div class="opt-txt__caption	">06-Feb-2018</div>
+                                      </mat-checkbox>
+                                    </div>
+                                    <div class="opt_flex__item price-value">
+                                      <span class="opt-txt__body2-small">&pound;</span> 20
+                                    </div>
+                                  </div>
+                                  <div class="opt_flex--container">
+                                    <div class="opt_flex__item">
+                                      <mat-checkbox>
+                                        <div class="opt-txt__body2-small">Casual Recreation Centre Hire</div>
+                                        <div class="opt-txt__caption	">06-Feb-2018</div>
+                                      </mat-checkbox>
+                                    </div>
+                                    <div class="opt_flex__item price-value">
+                                      <span class="opt-txt__body2-small">&pound;</span> 20
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                          </mat-expansion-panel>
+                        </mat-accordion>
+                      </section>
+                      <section class="opt-section__heading">
+                        <mat-accordion>
+                          <mat-expansion-panel #myPanel2 class="section-heading __main">
+                            <mat-expansion-panel-header class="__title section-header" >
+                              <h1 class="opt-txt__body2">Billing Info</h1>
+                            </mat-expansion-panel-header>
+                            <div class="billing-info-section">
+                              <div class="expand-outer-wrapper">
+                                <div class="billing-inner-wrapper">
+                                  <div class="opt_flex--container">
+                                    <div class="opt_flex__item">
+                                      <mat-form-field class="example-full-width">
+                                        <input matInput placeholder="Account" value="£50.00" required>
+                                      </mat-form-field>
+                                    </div>
+                                    <div class="opt_flex__item">
+                                      <mat-form-field class="example-full-width">
+                                        <input matInput [matDatepicker]="picker4" placeholder="Paid On">
+                                        <mat-datepicker-toggle matSuffix [for]="picker4"></mat-datepicker-toggle>
+                                        <mat-datepicker #picker4></mat-datepicker>
+                                      </mat-form-field>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </mat-expansion-panel>
+                        </mat-accordion>
+                      </section>
+                      <section class="opt-section__heading">
+                        <mat-accordion>
+                          <mat-expansion-panel #myPanel2 class="section-heading __main">
+                            <mat-expansion-panel-header class="__title section-header" >
+                              <h1 class="opt-txt__body2">Note</h1>
+                            </mat-expansion-panel-header>
+                            <div class="notes-section">
+                              <div class="expand-outer-wrapper">
+                                <div class="billing-inner-wrapper">
+                                  <div class="opt_flex--container">
+                                    <div class="opt_flex__item">
+                                      <mat-form-field class="example-full-width">
+                                        <textarea matInput placeholder="Booking Note"></textarea>
+                                      </mat-form-field>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </mat-expansion-panel>
+                        </mat-accordion>
+                      </section>
+                    </div>
+                    <div class="col-md-3 item-align">
+                      <div class="balance_section">
+                        <div class="balance_section--title">
+                          Current Balance<!--Refund Payments-->
+                        </div>
+                        <div class="balance_section--balance">
+                          <span class="sup-mark">&pound;</span> 20.<span class="opt__subtitle-2">86</span>
+                        </div>
+                        <div class="additional_info">
+                          <ul class="balance_section--date_list">
+                            <li><span class="--date">06-Feb-2018</span> <span>+ <span class="sup-mark--mini">&pound;</span>80</span></li>
+                            <li><span class="--date">06-Feb-2018</span> <span>+ <span class="sup-mark--mini">&pound;</span>80</span></li>
+                            <li><span class="--date">06-Feb-2018</span> <span>+ <span class="sup-mark--mini">&pound;</span>80</span></li>
+                          </ul>
+                          <p><strong>Note:</strong> Refund Receipts doubles up a credit if there is already a credit memo entered in the system.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </mat-tab>
                 <mat-tab>
                   <ng-template mat-tab-label>
@@ -587,8 +745,125 @@
                       BACS
                     </div>
                   </ng-template>
-                  <h1>Terrible sushi restaurants</h1>
-                  <p>...</p>
+                  <div class="row">
+                    <div class="col-md-9">
+                      <section class="opt-section__heading">
+                        <mat-accordion>
+                          <mat-expansion-panel #myPanel2 class="section-heading __main">
+                            <mat-expansion-panel-header class="__title section-header" >
+                              <h1 class="opt-txt__body2">Select Invoice</h1>
+                            </mat-expansion-panel-header>
+
+                            <div class="select_invoice-section">
+                              <div class="expand-outer-wrapper">
+                                <div class="expand-inner-wrapper">
+                                  <div class="opt_flex--container">
+                                    <div class="opt_flex__item">
+                                      <mat-checkbox>
+                                        <div class="opt-txt__body2-small">Casual Recreation Centre Hire</div>
+                                        <div class="opt-txt__caption	">06-Feb-2018</div>
+                                      </mat-checkbox>
+                                    </div>
+                                    <div class="opt_flex__item price-value">
+                                      <span class="opt-txt__body2-small">&pound;</span> 20
+                                    </div>
+                                  </div>
+                                  <div class="opt_flex--container">
+                                    <div class="opt_flex__item">
+                                      <mat-checkbox>
+                                        <div class="opt-txt__body2-small">Casual Recreation Centre Hire</div>
+                                        <div class="opt-txt__caption	">06-Feb-2018</div>
+                                      </mat-checkbox>
+                                    </div>
+                                    <div class="opt_flex__item price-value">
+                                      <span class="opt-txt__body2-small">&pound;</span> 20
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                          </mat-expansion-panel>
+                        </mat-accordion>
+                      </section>
+                      <section class="opt-section__heading">
+                        <mat-accordion>
+                          <mat-expansion-panel #myPanel2 class="section-heading __main">
+                            <mat-expansion-panel-header class="__title section-header" >
+                              <h1 class="opt-txt__body2">Billing Info</h1>
+                            </mat-expansion-panel-header>
+                            <div class="billing-info-section">
+                              <div class="expand-outer-wrapper">
+                                <div class="billing-inner-wrapper">
+                                  <div class="opt_flex--container">
+                                    <div class="opt_flex__item">
+                                      <mat-form-field class="example-full-width">
+                                        <input matInput placeholder="Amount" value="£150.00">
+                                      </mat-form-field>
+                                    </div>
+                                    <div class="opt_flex__item">
+                                      <mat-form-field class="example-full-width">
+                                        <input matInput [matDatepicker]="picker5" placeholder="Paid On">
+                                        <mat-datepicker-toggle matSuffix [for]="picker5"></mat-datepicker-toggle>
+                                        <mat-datepicker #picker5></mat-datepicker>
+                                      </mat-form-field>
+                                    </div>
+                                  </div>
+                                  <div class="opt_flex--container">
+                                    <div class="opt_flex__item  flex-nt-grow">
+                                      <mat-form-field class="example-full-width">
+                                        <input matInput placeholder="Reference Code" value="0001">
+                                      </mat-form-field>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </mat-expansion-panel>
+                        </mat-accordion>
+                      </section>
+                      <section class="opt-section__heading">
+                        <mat-accordion>
+                          <mat-expansion-panel #myPanel2 class="section-heading __main">
+                            <mat-expansion-panel-header class="__title section-header" >
+                              <h1 class="opt-txt__body2">Note</h1>
+                            </mat-expansion-panel-header>
+                            <div class="notes-section">
+                              <div class="expand-outer-wrapper">
+                                <div class="billing-inner-wrapper">
+                                  <div class="opt_flex--container">
+                                    <div class="opt_flex__item">
+                                      <mat-form-field class="example-full-width">
+                                        <textarea matInput placeholder="Booking Note"></textarea>
+                                      </mat-form-field>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </mat-expansion-panel>
+                        </mat-accordion>
+                      </section>
+                    </div>
+                    <div class="col-md-3 item-align">
+                      <div class="balance_section">
+                        <div class="balance_section--title">
+                          Current Balance<!--Refund Payments-->
+                        </div>
+                        <div class="balance_section--balance">
+                          <span class="sup-mark">&pound;</span> 20.<span class="opt__subtitle-2">86</span>
+                        </div>
+                        <div class="additional_info">
+                          <ul class="balance_section--date_list">
+                            <li><span class="--date">06-Feb-2018</span> <span>+ <span class="sup-mark--mini">&pound;</span>80</span></li>
+                            <li><span class="--date">06-Feb-2018</span> <span>+ <span class="sup-mark--mini">&pound;</span>80</span></li>
+                            <li><span class="--date">06-Feb-2018</span> <span>+ <span class="sup-mark--mini">&pound;</span>80</span></li>
+                          </ul>
+                          <p><strong>Note:</strong> Refund Receipts doubles up a credit if there is already a credit memo entered in the system.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </mat-tab>
                 <mat-tab>
                   <ng-template mat-tab-label>
@@ -618,12 +893,10 @@
                                         <div class="opt-txt__caption	">06-Feb-2018</div>
                                       </mat-checkbox>
                                     </div>
-                                    <div class="opt_flex__item">
+                                    <div class="opt_flex__item price-value">
                                       <span class="opt-txt__body2-small">&pound;</span> 20
                                     </div>
                                   </div>
-                                </div>
-                                <div class="expand-inner-wrapper">
                                   <div class="opt_flex--container">
                                     <div class="opt_flex__item">
                                       <mat-checkbox>
@@ -631,7 +904,7 @@
                                         <div class="opt-txt__caption	">06-Feb-2018</div>
                                       </mat-checkbox>
                                     </div>
-                                    <div class="opt_flex__item">
+                                    <div class="opt_flex__item price-value">
                                       <span class="opt-txt__body2-small">&pound;</span> 20
                                     </div>
                                   </div>
@@ -654,21 +927,21 @@
                                   <div class="opt_flex--container">
                                     <div class="opt_flex__item">
                                       <mat-form-field class="example-full-width">
-                                        <input matInput placeholder="Account" value="£50.00" required>
+                                        <input matInput placeholder="Amount" value="£150.00">
                                       </mat-form-field>
                                     </div>
                                     <div class="opt_flex__item">
                                       <mat-form-field class="example-full-width">
-                                        <input matInput [matDatepicker]="picker3" placeholder="Paid On">
-                                        <mat-datepicker-toggle matSuffix [for]="picker3"></mat-datepicker-toggle>
-                                        <mat-datepicker #picker3></mat-datepicker>
+                                        <input matInput [matDatepicker]="picker6" placeholder="Paid On">
+                                        <mat-datepicker-toggle matSuffix [for]="picker6"></mat-datepicker-toggle>
+                                        <mat-datepicker #picker6></mat-datepicker>
                                       </mat-form-field>
                                     </div>
                                   </div>
                                   <div class="opt_flex--container">
-                                    <div class="opt_flex__item p50">
+                                    <div class="opt_flex__item  flex-nt-grow">
                                       <mat-form-field class="example-full-width">
-                                        <input matInput placeholder="Cheque Number" value="">
+                                        <input matInput placeholder="Reference Code" value="0001">
                                       </mat-form-field>
                                     </div>
                                   </div>
@@ -701,13 +974,13 @@
                         </mat-accordion>
                       </section>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 item-align">
                       <div class="balance_section">
                         <div class="balance_section--title">
                           Current Balance<!--Refund Payments-->
                         </div>
                         <div class="balance_section--balance">
-                          <span class="sup-mark">&pound;</span> 20
+                          <span class="sup-mark">&pound;</span> 20.<span class="opt__subtitle-2">86</span>
                         </div>
                         <div class="additional_info">
                           <ul class="balance_section--date_list">
@@ -730,8 +1003,149 @@
                       Vouchers
                     </div>
                   </ng-template>
-                  <h1>Terrible sushi restaurants</h1>
-                  <p>...</p>
+                  <div class="row">
+                    <div class="col-md-9">
+                      <section class="opt-section__heading">
+                        <mat-accordion>
+                          <mat-expansion-panel #myPanel2 class="section-heading __main">
+                            <mat-expansion-panel-header class="__title section-header" >
+                              <h1 class="opt-txt__body2">Select Invoice</h1>
+                            </mat-expansion-panel-header>
+
+                            <div class="select_invoice-section">
+                              <div class="expand-outer-wrapper">
+                                <div class="expand-inner-wrapper">
+                                  <div class="opt_flex--container">
+                                    <div class="opt_flex__item">
+                                      <mat-checkbox>
+                                        <div class="opt-txt__body2-small">Casual Recreation Centre Hire</div>
+                                        <div class="opt-txt__caption	">06-Feb-2018</div>
+                                      </mat-checkbox>
+                                    </div>
+                                    <div class="opt_flex__item price-value">
+                                      <span class="opt-txt__body2-small">&pound;</span> 20
+                                    </div>
+                                  </div>
+                                  <div class="opt_flex--container">
+                                    <div class="opt_flex__item">
+                                      <mat-checkbox>
+                                        <div class="opt-txt__body2-small">Casual Recreation Centre Hire</div>
+                                        <div class="opt-txt__caption	">06-Feb-2018</div>
+                                      </mat-checkbox>
+                                    </div>
+                                    <div class="opt_flex__item price-value">
+                                      <span class="opt-txt__body2-small">&pound;</span> 20
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                          </mat-expansion-panel>
+                        </mat-accordion>
+                      </section>
+                      <section class="opt-section__heading">
+                        <mat-accordion>
+                          <mat-expansion-panel #myPanel2 class="section-heading __main">
+                            <mat-expansion-panel-header class="__title section-header" >
+                              <h1 class="opt-txt__body2">Billing Info</h1>
+                            </mat-expansion-panel-header>
+                            <div class="billing-info-section">
+                              <div class="expand-outer-wrapper">
+                                <div class="billing-inner-wrapper">
+                                  <div class="opt_flex--container">
+                                    <div class="opt_flex__item">
+                                      <mat-form-field class="example-full-width">
+                                        <input matInput placeholder="Voucher Number" value="394025" required>
+                                      </mat-form-field>
+                                    </div>
+                                    <div class="opt_flex__item">
+                                      <mat-form-field class="example-full-width">
+                                        <input matInput placeholder="Host Name" value="">
+                                      </mat-form-field>
+                                    </div>
+                                  </div>
+                                  <div class="opt_flex--container">
+                                    <div class="opt_flex__item">
+                                      <mat-form-field class="example-full-width">
+                                        <mat-select placeholder="Voucher Package">
+                                          <mat-option *ngFor="" [value]="">Voucher Package</mat-option>
+                                        </mat-select>
+                                      </mat-form-field>
+                                    </div>
+                                    <div class="opt_flex__item">
+                                      <mat-form-field class="example-full-width">
+                                        <input matInput placeholder="Package Price" value="">
+                                      </mat-form-field>
+                                    </div>
+                                  </div>
+                                  <div class="opt_flex--container">
+                                    <div class="opt_flex__item">
+                                      <mat-form-field class="example-full-width">
+                                        <input matInput [matDatepicker]="picker7" placeholder="Paid On">
+                                        <mat-datepicker-toggle matSuffix [for]="picker7"></mat-datepicker-toggle>
+                                        <mat-datepicker #picker7></mat-datepicker>
+                                      </mat-form-field>
+                                    </div>
+                                    <div class="opt_flex__item">
+                                      <mat-form-field class="example-full-width">
+                                        <input matInput [matDatepicker]="picker8" placeholder="Expire On">
+                                        <mat-datepicker-toggle matSuffix [for]="picker8"></mat-datepicker-toggle>
+                                        <mat-datepicker #picker8></mat-datepicker>
+                                      </mat-form-field>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </mat-expansion-panel>
+                        </mat-accordion>
+                      </section>
+                      <section class="opt-section__heading">
+                        <mat-accordion>
+                          <mat-expansion-panel #myPanel2 class="section-heading __main">
+                            <mat-expansion-panel-header class="__title section-header" >
+                              <h1 class="opt-txt__body2">Note</h1>
+                            </mat-expansion-panel-header>
+                            <div class="notes-section">
+                              <div class="expand-outer-wrapper">
+                                <div class="billing-inner-wrapper">
+                                  <div class="opt_flex--container">
+                                    <div class="opt_flex__item">
+                                      <mat-form-field class="example-full-width">
+                                        <textarea matInput placeholder="Booking Note"></textarea>
+                                      </mat-form-field>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </mat-expansion-panel>
+                        </mat-accordion>
+                      </section>
+                    </div>
+                    <div class="col-md-3 item-align">
+                      <div class="balance_section">
+                        <div class="balance_section--title">
+                          Current Balance<!--Refund Payments-->
+                        </div>
+                        <div class="balance_section--balance">
+                          <span class="sup-mark">&pound;</span> 20.<span class="opt__subtitle-2">86</span>
+                        </div>
+                        <div class="additional_info">
+                          <ul class="balance_section--date_list">
+                            <li><span class="--date">06-Feb-2018</span> <span>+ <span class="sup-mark--mini">&pound;</span>80</span></li>
+                            <li><span class="--date">06-Feb-2018</span> <span>+ <span class="sup-mark--mini">&pound;</span>80</span></li>
+                            <li><span class="--date">06-Feb-2018</span> <span>+ <span class="sup-mark--mini">&pound;</span>80</span></li>
+                          </ul>
+                          <p><strong>Note:</strong> Refund Receipts doubles up a credit if there is already a credit memo entered in the system.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="opt-txt__body2-small footer-section">
+                    <mat-checkbox>Check the Voucher Extension Letter</mat-checkbox>
+                  </div>
                 </mat-tab>
               </mat-tab-group>
             </div>
