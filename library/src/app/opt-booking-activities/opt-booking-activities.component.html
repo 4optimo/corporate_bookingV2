@@ -50,8 +50,8 @@
                     <mat-icon matSuffix><i class="material-icons mat-btn-icon-btn opt_color_icon_font icn-search">search</i></mat-icon>
                   </mat-form-field>
                   <div class="header_row--action-wrapper">
-                    <button mat-button class="btn-icon-text"><i class="material-icons opt_color_icon_font">note_add</i> <span class="btn-text hidden-sm opt-txt__secondary">Add Note</span></button>
-                    <button mat-button class="btn-icon-text"><i class="material-icons opt_color_icon_font">delete</i> <span class="btn-text hidden-sm  opt-txt__secondary">Delete</span></button>
+                    <button mat-button class="mat-btn-primary btn-icon-text"><i class="material-icons opt_color_icon_font">note_add</i> <span class="btn-text hidden-sm opt-txt__secondary">Add Note</span></button>
+                    <button mat-button class="mat-btn-primary btn-icon-text"><i class="material-icons opt_color_icon_font">delete</i> <span class="btn-text hidden-sm  opt-txt__secondary">Delete</span></button>
                   </div>
                 </div>
               </div>
@@ -1501,7 +1501,7 @@
                               <span class="opt-txt__body2">--New Addresses--</span>
                             </mat-menu>
                             <div class="opt_flex__item horizontally-center">
-                              <div class="opt_txt_color_tertiary opt-txt__body1-small"><div class="add-des text-truncate">Lorem ipsum dolor sit amet,consectetuer adipiscing elit</div></div>
+                              <div class="opt_txt_color_tertiary opt-txt__body1-small"><div class="text-truncate">Lorem ipsum dolor sit amet,consectetuer adipiscing elit</div></div>
                             </div>
 
                           </div>
@@ -1545,7 +1545,7 @@
                           <div class="opt_flex__item tc-flex-item__center">
                             <div class="opt-txt__body2 opt-link--primary text-truncate"><div class="address"> 3509 Chimney Road Drive, UK </div></div>
                             <div class="opt_flex__item horizontally-center">
-                              <div class="opt_txt_color_tertiary opt-txt__body1-small"><div class="add-des text-truncate">Lorem ipsum dolor sit amet,consectetuer adipiscing elit</div></div>
+                              <div class="opt_txt_color_tertiary opt-txt__body1-small"><div class="text-truncate">Lorem ipsum dolor sit amet,consectetuer adipiscing elit</div></div>
                             </div>
                           </div>
                         </div>
@@ -1589,7 +1589,7 @@
                           <div class="opt_flex__item tc-flex-item__center">
                             <div class="opt-txt__body2 opt-link--primary text-truncate"><div class="address"> 3509 Chimney Road Drive, UK </div></div>
                             <div class="opt_flex__item horizontally-center">
-                              <div class="opt_txt_color_tertiary opt-txt__body1-small"><div class="add-des text-truncate">Lorem ipsum dolor sit amet,consectetuer adipiscing elit</div></div>
+                              <div class="opt_txt_color_tertiary opt-txt__body1-small"><div class="text-truncate">Lorem ipsum dolor sit amet,consectetuer adipiscing elit</div></div>
                             </div>
                           </div>
                         </div>
@@ -1663,27 +1663,34 @@
                           </div>
                         </div>
                       </div>
-                      <div class="col-xs-12col-sm-6 col-md-3	col-lg-3">
+                      <div class="col-xs-12 col-sm-6 col-md-3	col-lg-3">
                         <div class="opt_flex--container data-cadge flex-direction">
                           <div class="opt_flex__item horizontally-center opt-txt__body2 text-truncate">
-                            HST174923
+                            HST174923 | 26-Dec-2018
                           </div>
                           <div class="opt_flex__item horizontally-center opt-txt__body1-small opt-txt__secondary text-truncate">
                             Ms.Belind Griffiths
                           </div>
                         </div>
                       </div>
-                      <div class="col-xs-12 col-sm-6 col-md-3	col-lg-1 col-lg-offset-3">
+                      <div class="col-xs-12 col-sm-6 col-md-3	col-lg-3">
                         <div class="opt_flex--container data-cadge flex-direction">
-                          <div class="opt_flex__item horizontally-center opt-txt__body2 opt_lbl_quaternary opt_color_quaternary_lbl status">
+                          <div class="opt_flex--container">
+                            <!-- temporary removed
+                         <div class="opt_flex__item horizontally-center opt-txt__body2 opt_lbl_quaternary opt_color_quaternary_lbl status">
                             Status
                           </div>
                           <div class="opt_flex__item horizontally-center opt-txt__body1-small opt-txt__secondary text-truncate">
                             Media
+                          </div>-->
+                            <div class="opt_flex__item symbol_icon field-icon horizontally-center"><i class="material-icons opt_color_icon_font">help_outline</i></div>
+                            <div class="opt_flex__item field-detail opt-txt__body1-small text-truncate opt-txt__secondary">
+                              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa
+                            </div>
                           </div>
                         </div>
                       </div>
-                      <div class="col-xs-12 col-sm-2 col-md-3	col-lg-2">
+                      <div class="col-xs-12 col-sm-2 col-md-3	col-lg-3">
                         <div class="opt_flex__item opt-txt__align-right data-cadge">
                           <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">edit</i></button>
                           <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">delete</i></button>
@@ -1718,19 +1725,22 @@
                   344 Chiswick Hidh Road London, W45YA.
                 </div>
               </div>
+              <!--temporary removed
               <div class="col-sm-6 col-md-3	col-lg-3	col-xs-12">
                 <div class="opt_flex__item horizontally-center opt-txt__body1-small text-truncate opt-txt__secondary">
                   Instruction
                 </div>
-              </div>
+              </div>-->
               <div class="col-sm-6 col-md-3	col-lg-3	col-xs-12">
                 <div class="opt_flex--container data-cadge">
-                  <div class="opt_flex__item horizontally-center opt-txt__body1-small opt-txt__secondary text-truncate">
+                  <div class="opt_flex__item symbol_icon field-icon horizontally-center"><i class="material-icons opt_color_icon_font"> note </i></div>
+                  <div class="opt_flex__item field-detail opt-txt__body1-small text-truncate opt-txt__secondary">
                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa
                   </div>
-                  <div class="opt_flex__item horizontally-center opt-txt__secondary opt-txt__body1-small text-truncate">
+                 <!-- Moved to header next to host ref
+                 <div class="opt_flex__item horizontally-center opt-txt__secondary opt-txt__body1-small text-truncate">
                     26-Dec-2018
-                  </div>
+                  </div>-->
                 </div>
               </div>
             </div>
@@ -1755,27 +1765,34 @@
                             </div>
                           </div>
                         </div>
-                        <div class="col-xs-12col-sm-6 col-md-3	col-lg-3">
+                        <div class="col-xs-12 col-sm-6 col-md-3	col-lg-3">
                           <div class="opt_flex--container data-cadge flex-direction">
                             <div class="opt_flex__item horizontally-center opt-txt__body2 text-truncate">
-                              HST174923
+                              HST174923 | 26-Dec-2018
                             </div>
                             <div class="opt_flex__item horizontally-center opt-txt__body1-small opt-txt__secondary text-truncate">
                               Ms.Belind Griffiths
                             </div>
                           </div>
                         </div>
-                        <div class="col-xs-12 col-sm-6 col-md-3	col-lg-1 col-lg-offset-3">
+                        <div class="col-xs-12 col-sm-6 col-md-3	col-lg-3">
                           <div class="opt_flex--container data-cadge flex-direction">
-                            <div class="opt_flex__item horizontally-center opt-txt__body2 opt_lbl_quaternary opt_color_quaternary_lbl status">
+                            <div class="opt_flex--container">
+                              <!-- temporary removed
+                           <div class="opt_flex__item horizontally-center opt-txt__body2 opt_lbl_quaternary opt_color_quaternary_lbl status">
                               Status
                             </div>
                             <div class="opt_flex__item horizontally-center opt-txt__body1-small opt-txt__secondary text-truncate">
                               Media
+                            </div>-->
+                              <div class="opt_flex__item symbol_icon field-icon horizontally-center"><i class="material-icons opt_color_icon_font">help_outline</i></div>
+                              <div class="opt_flex__item field-detail opt-txt__body1-small text-truncate opt-txt__secondary">
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa
+                              </div>
                             </div>
                           </div>
                         </div>
-                        <div class="col-xs-12 col-sm-2 col-md-3	col-lg-2">
+                        <div class="col-xs-12 col-sm-2 col-md-3	col-lg-3">
                           <div class="opt_flex__item opt-txt__align-right data-cadge">
                             <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">edit</i></button>
                             <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">delete</i></button>
@@ -1810,19 +1827,22 @@
                     344 Chiswick Hidh Road London, W45YA.
                   </div>
                 </div>
+                <!--temporary removed
                 <div class="col-sm-6 col-md-3	col-lg-3	col-xs-12">
                   <div class="opt_flex__item horizontally-center opt-txt__body1-small text-truncate opt-txt__secondary">
                     Instruction
                   </div>
-                </div>
+                </div>-->
                 <div class="col-sm-6 col-md-3	col-lg-3	col-xs-12">
                   <div class="opt_flex--container data-cadge">
-                    <div class="opt_flex__item horizontally-center opt-txt__body1-small opt-txt__secondary text-truncate">
+                    <div class="opt_flex__item symbol_icon field-icon horizontally-center"><i class="material-icons opt_color_icon_font"> note </i></div>
+                    <div class="opt_flex__item field-detail opt-txt__body1-small text-truncate opt-txt__secondary">
                       Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa
                     </div>
+                    <!-- Moved to header next to host ref
                     <div class="opt_flex__item horizontally-center opt-txt__secondary opt-txt__body1-small text-truncate">
-                      26-Dec-2018
-                    </div>
+                       26-Dec-2018
+                     </div>-->
                   </div>
                 </div>
               </div>
