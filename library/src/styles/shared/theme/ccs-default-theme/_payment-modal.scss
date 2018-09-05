@@ -31,11 +31,18 @@
               padding: 3px 0;
             }
           }
-          .mat-checkbox-checked {
-            .mat-checkbox-label {
-              font-color : #4bb3fa;
+          .mat-checkbox{
+            &.mat-checkbox-checked {
+              .mat-checkbox-label {
+                div {
+                  &:first-child {
+                    font-color : #4bb3fa;
+                  }
+                }
+              }
             }
           }
+
           .price-value {
             text-align: right;
             align-self: center;
