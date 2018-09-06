@@ -32,32 +32,31 @@
   display: inline-flex;
   .mat-button{
     &.btn-icon-text{
+      // @include respond-to('x-small') {
+      //   min-width: 47px;
+      //   padding: 5px;
+      //   margin: 5px;
+      // }
+      // @include respond-to('small') {
+      //   min-width: 47px;
+      //   padding: 5px;
+      //   margin: 5px;
+      // }
+      // @include respond-to('medium') {
+      //   padding: 6px 12px;
+      //   margin-right: 10px;
+      //   min-width: 88px;
+      // }
+      // @include respond-to('large') {
+      //   padding: 6px 12px;
+      //   margin-right: 10px;
+      //   min-width: 88px;
+      // }
 
-      @include respond-to('x-small') {
-        min-width: 47px;
-        padding: 5px;
-        margin: 5px;
-      }
-      @include respond-to('small') {
-        min-width: 47px;
-        padding: 5px;
-        margin: 5px;
-      }
-      @include respond-to('medium') {
-        padding: 6px 12px;
-        margin-right: 10px;
-        min-width: 88px;
-      }
-      @include respond-to('large') {
-        padding: 6px 12px;
-        margin-right: 10px;
-        min-width: 88px;
-      }
 
-
-      &:last-child{
-        margin-right: 0;
-      }
+      // &:last-child{
+      //   margin-right: 0;
+      // }
     }
   }
   .mat-icon-button{
@@ -168,6 +167,9 @@
       .mat-horizontal-content-container {
         background-color: #f9f9f9;
       }
+    }
+    .mat-button-wrapper{
+      align-items: center;
     }
   }
 
@@ -378,19 +380,19 @@
       }
       .text-truncate {
         display: inline-block;
-
-        @include respond-to('x-small') {
-          /*max-width: 110px;*/
-        }
-        @include respond-to('small') {
-          max-width: 300px;
-        }
-        @include respond-to('medium') {
-          max-width: 450px;
-        }
-        @include respond-to('large') {
-          max-width: 610px;
-        }
+        white-space: normal;
+        // @include respond-to('x-small') {
+        //   /*max-width: 110px;*/
+        // }
+        // @include respond-to('small') {
+        //   max-width: 300px;
+        // }
+        // @include respond-to('medium') {
+        //   max-width: 450px;
+        // }
+        // @include respond-to('large') {
+        //   max-width: 610px;
+        //}
       }
     }
 
