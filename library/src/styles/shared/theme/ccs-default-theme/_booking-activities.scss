@@ -30,6 +30,14 @@
 .header_row--action-wrapper {
   font-size: 0;
   display: inline-flex;
+  .btn-icon-text:hover{
+    .opt_color_icon_font{
+      color: $white !important;
+    }
+    span{
+      color: $white !important;
+    }
+  }
   .mat-button{
     &.btn-icon-text{
       // @include respond-to('x-small') {
@@ -57,7 +65,11 @@
       // &:last-child{
       //   margin-right: 0;
       // }
+      span{
+        color: #909cac;
+      }
     }
+    
   }
   .mat-icon-button{
     &.btn-icon{
