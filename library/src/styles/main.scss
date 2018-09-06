@@ -71,8 +71,8 @@ $bootstrap-sass-asset-helper: false;
 @import "./shared/theme/ccs-default-theme/item-details";
 @import "./shared/theme/ccs-default-theme/package-selection-modal";
 @import "./shared/theme/ccs-default-theme/booking-details-full-page";
-
-
+@import "./shared/theme/ccs-default-theme/item-modal-popovers";
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
 html,
 body{
   font-family: 'Roboto', sans-serif !important;

@@ -106,7 +106,7 @@ import { OptPackagePopupComponent } from './opt-package-popup/opt-package-popup.
 import {OptItemPopupComponent} from "./opt-item-popup/opt-item-popup.component";
 import { OptPackageCartComponent } from './opt-package-cart/opt-package-cart.component';
 import { OptDataTableComponent } from './opt-data-table/opt-data-table.component';
-import {OptHostAddPopupComponent} from "./opt-host-add-popup/opt-host-add-popup.component";
+import { OptHostAddPopupComponent} from "./opt-host-add-popup/opt-host-add-popup.component";
 import { OptAddNoteComponent } from './opt-add-note/opt-add-note.component';
 import { OptReprintPopupComponent } from './opt-reprint-popup/opt-reprint-popup.component';
 import { OptTaskPopupComponent } from './opt-task-popup/opt-task-popup.component';
@@ -118,7 +118,9 @@ import { OptModalPopoverComponent } from './opt-modal-popover/opt-modal-popover.
 import { OptTabbedPopoverComponent } from './opt-tabbed-popover/opt-tabbed-popover.component';
 import { OptDocumentPopoverComponent } from './opt-document-popover/opt-document-popover.component';
 import { OptInvoiceGeneratorComponent } from './opt-invoice-generator/opt-invoice-generator.component';
-
+import { OptItemModalPopoversComponent } from './opt-item-modal-popovers/opt-item-modal-popovers.component';
+import { OptQuestionnairePopupComponent } from './opt-questionnaire-popup/opt-questionnaire-popup.component';
+import { OptDocumentSelectPopupComponent } from './opt-document-select-popup/opt-document-select-popup.component';
 
 
 
@@ -172,6 +174,13 @@ const appRoutes: Routes = [
   { path: 'opt-tabbed-popover', component: OptTabbedPopoverComponent},
   { path: 'opt-document-popover', component: OptDocumentPopoverComponent},
   { path: 'opt-invoice-generator', component: OptInvoiceGeneratorComponent},
+  { path: 'opt-questionnaire-popup', component: OptQuestionnairePopupComponent},
+  { path: 'opt-document-select-popup', component: OptDocumentSelectPopupComponent},
+  { path: 'opt-item-modal-popovers', component: OptItemModalPopoversComponent},
+  { path: 'opt-booking-details-full-page', component: OptBookingDetailsFullPageComponent},
+  { path: 'opt-package-selection-modal', component: OptPackageSelectionModalComponent},
+  { path: 'opt-package-details', component: OptPackageDetailsComponent},
+
 
   { path: 'opt-pageloader', component: OptPageloaderComponent},
 
@@ -279,9 +288,11 @@ export class DemoMaterialModule {}
     OptTabbedPopoverComponent,
     OptDocumentPopoverComponent,
     OptInvoiceGeneratorComponent,
-// OptDocumentSelectComponent,
+    OptQuestionnairePopupComponent,
+    OptDocumentSelectPopupComponent,
     OptBookingDetailsFullPageComponent,
     OptItemCartComponent,
+    OptItemModalPopoversComponent,
 
     RoutingProjectComponent,
     TypographyComponent,
@@ -310,7 +321,7 @@ export class DemoMaterialModule {}
     NgMultiSelectDropDownModule,
     RouterModule.forRoot(appRoutes),
     NgxEditorModule,
-    TooltipModule.forRoot()
+    TooltipModule.forRoot(),
   ],
 
   entryComponents:[

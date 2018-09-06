@@ -30,35 +30,46 @@
 .header_row--action-wrapper {
   font-size: 0;
   display: inline-flex;
+  .btn-icon-text:hover{
+    .opt_color_icon_font{
+      color: $white !important;
+    }
+    span{
+      color: $white !important;
+    }
+  }
   .mat-button{
     &.btn-icon-text{
+      // @include respond-to('x-small') {
+      //   min-width: 47px;
+      //   padding: 5px;
+      //   margin: 5px;
+      // }
+      // @include respond-to('small') {
+      //   min-width: 47px;
+      //   padding: 5px;
+      //   margin: 5px;
+      // }
+      // @include respond-to('medium') {
+      //   padding: 6px 12px;
+      //   margin-right: 10px;
+      //   min-width: 88px;
+      // }
+      // @include respond-to('large') {
+      //   padding: 6px 12px;
+      //   margin-right: 10px;
+      //   min-width: 88px;
+      // }
 
-      @include respond-to('x-small') {
-        min-width: 47px;
-        padding: 5px;
-        margin: 5px;
-      }
-      @include respond-to('small') {
-        min-width: 47px;
-        padding: 5px;
-        margin: 5px;
-      }
-      @include respond-to('medium') {
-        padding: 6px 12px;
-        margin-right: 10px;
-        min-width: 88px;
-      }
-      @include respond-to('large') {
-        padding: 6px 12px;
-        margin-right: 10px;
-        min-width: 88px;
-      }
 
-
-      &:last-child{
-        margin-right: 0;
+      // &:last-child{
+      //   margin-right: 0;
+      // }
+      span{
+        color: #909cac;
       }
     }
+    
   }
   .mat-icon-button{
     &.btn-icon{
@@ -106,7 +117,26 @@
 /* End of Expansion Panel Button Styles */
 
 .opt_booking__activity {
-
+  mat-horizontal-stepper{
+    .mat-fab.mat-accent{
+      background-color: #f6f6f6;
+      color:#909cac;
+      height: 65px;
+      width: 65px;
+      margin-top: 10px;
+      margin-bottom: 5px;
+      font-size: 34px;
+      box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.1), 0 1px 18px 0 rgba(0, 0, 0, 0.1);
+    }
+    .mat-step-label:hover{
+      .mat-fab.mat-accent{
+        transform:translateY(-8px);
+      }
+    }
+    [class^='icon-icn-']{
+      font-size: 34px;
+    }
+  }
   .row {
     display: flex;
     width: 100%;
@@ -117,7 +147,7 @@
     height: auto !important;
 
     &.mat-step-header {
-      width: 100px;
+      width: 111px;
       &:hover {
         background-color: transparent;
       }
@@ -150,6 +180,9 @@
         background-color: #f9f9f9;
       }
     }
+    .mat-button-wrapper{
+      align-items: center;
+    }
   }
 
   .activity-avatar-wrapper {
@@ -173,11 +206,12 @@
   }
   .mat-step-label-selected {
     &.mat-step-label-active {
-      .activity-avatar-wrapper {
+      .activity-avatar-wrapper, .mat-fab.mat-accent {
         background-color: $opt_color_primary;
         i {
           color: $opt_color_white;
         }
+        box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12) !important;
       }
     }
     .activity-title {
@@ -194,6 +228,7 @@
     text-overflow: ellipsis;
     white-space: normal;
     overflow: hidden;
+    min-height: 40px;
   }
 
   .mat-expansion-panel-body {
@@ -212,20 +247,6 @@
   .horizontally-center {
     display: flex;
     align-items: center;
-  }
-
-  .note_list_item {
-    padding: 10px 0;
-    border-bottom: 1px solid #e0e0e0;
-    padding-left: 15px;
-
-    .row {
-      display: flex;
-      [class*=' col-'] {
-        display: flex;
-        align-items: center;
-      }
-    }
   }
 
   .mat-tab-body-content {
@@ -269,6 +290,14 @@
       margin-left: 20px;
     }
 
+  }
+
+  .half-width{
+    width :60px;
+  }
+
+  .full-width{
+    width: calc(100% - 60px);
   }
 
   .action-btn {
@@ -345,22 +374,40 @@
         max-width: 100%;
       }
     }
-    .text-truncate {
-      display: inline-block;
+    .note_list_item {
+      padding: 10px 0;
+      border-bottom: 1px solid #e0e0e0;
+      padding-left: 15px;
 
-      @include respond-to('x-small') {
-        max-width: 110px;
+      .opt_flex--container{
+        width: 100%;
       }
-      @include respond-to('small') {
-        max-width: 170px;
+
+      .row {
+        display: flex;
+        [class*=' col-'] {
+          display: flex;
+          align-items: center;
+        }
       }
-      @include respond-to('medium') {
-        max-width: 390px;
-      }
-      @include respond-to('large') {
-        max-width: 400px;
+      .text-truncate {
+        display: inline-block;
+        white-space: normal;
+        // @include respond-to('x-small') {
+        //   /*max-width: 110px;*/
+        // }
+        // @include respond-to('small') {
+        //   max-width: 300px;
+        // }
+        // @include respond-to('medium') {
+        //   max-width: 450px;
+        // }
+        // @include respond-to('large') {
+        //   max-width: 610px;
+        //}
       }
     }
+
   }
 
   .correspondence_entry {
@@ -374,6 +421,25 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+      }
+    }
+    .opt_flex--container{
+      width: 100%;
+    }
+    .text-truncate {
+      display: inline-block;
+
+      @include respond-to('x-small') {
+        /*max-width: 110px;*/
+      }
+      @include respond-to('small') {
+        max-width: 300px;
+      }
+      @include respond-to('medium') {
+        max-width: 450px;
+      }
+      @include respond-to('large') {
+        max-width: 610px;
       }
     }
   }
@@ -397,25 +463,7 @@
     }
   }
   .opt-dis, .opt-deli {
-    width: 100%;
-    margin: 0;
-    padding: 0;
 
-    .text-truncate {
-      display: inline-block;
-      @include respond-to('x-small') {
-        max-width: 130px;
-      }
-      @include respond-to('small') {
-        max-width: 270px;
-      }
-      @include respond-to('medium') {
-        max-width: 180px;
-      }
-      @include respond-to('large') {
-        max-width: 225px;
-      }
-    }
   }
 
   .schedule-list-item {
@@ -441,6 +489,13 @@
     width: 100%;
     margin: 0;
     padding: 0;
+
+    .mat-menu-panel{
+      .mat-menu-content{
+        padding: 8px;
+      }
+    }
+
 
     .text-truncate {
       display: inline-block;
@@ -475,15 +530,34 @@
       .mat-expansion-panel-body {
         padding: 10px 45px 16px 0;
       }
+
+
     }
     .symbol_icon {
       display: block;
     }
   }
 
+
+
+  .field-icon {
+    width: 25px;
+  }
+
+  .field-detail {
+    width: calc(100% - 25px);
+  }
   .payments-list-item {
     padding: 0;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid $opt_border-color;
+
+    .icn-right {
+      @include circle-icon(14px, $opt_color_frozen, $opt_color_frozen);
+      font-size: 14px;
+      color: $opt_color_white;
+      float: right;
+
+    }
 
     .row {
       margin: 0;
@@ -566,11 +640,67 @@
     //=========================================
 
   }
+  .deliverables-list-item {
 
-  .deliverables-list-item, .dispatch-list-item {
+
+    .field-icon {
+      width: 25px;
+    }
+
+    .field-detail {
+      width: calc(100% - 25px);
+    }
+
     padding: 5px 0;
     padding-left: 15px;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid $opt-border-color;
+
+
+
+    .row {
+      align-items: center;
+      margin: 0;
+      display: flex;
+      [class*=' col-'] {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+    }
+
+    .mat-expansion-panel-body {
+      padding: 10px 50px 16px 15px;
+    }
+    width: 100%;
+    margin: 0;
+
+    .text-truncate {
+      display: inline-block;
+      @include respond-to('x-small') {
+        max-width: 130px;
+      }
+      @include respond-to('small') {
+        max-width: 270px;
+      }
+      @include respond-to('medium') {
+        max-width: 180px;
+      }
+      @include respond-to('large') {
+        max-width: 225px;
+      }
+    }
+  }
+
+
+  .dispatch-list-item {
+    padding: 5px 0;
+    padding-left: 15px;
+    border-bottom: 1px solid $opt-border-color;
+
+    .crrnt-status {
+      background-color: inherit;
+
+    }
 
     .row {
       margin: 0;
@@ -585,23 +715,24 @@
     .mat-expansion-panel-body {
       padding: 10px 50px 16px 15px;
     }
-  }
 
-  .opt-dis {
-    .crrnt-status {
-      background-color: inherit;
+    width: 100%;
+    margin: 0;
 
-    }
-  }
-
-  .opt-deli {
-
-    .field-icon {
-      width: 25px;
-    }
-
-    .field-detail {
-      width: calc(100% - 25px);
+    .text-truncate {
+      display: inline-block;
+      @include respond-to('x-small') {
+        max-width: 130px;
+      }
+      @include respond-to('small') {
+        max-width: 270px;
+      }
+      @include respond-to('medium') {
+        max-width: 180px;
+      }
+      @include respond-to('large') {
+        max-width: 225px;
+      }
     }
 
   }
@@ -635,12 +766,32 @@
       .row {
         display: flex;
         height: 100%;
+        align-items: center;
 
         [class*=' col-'] {
           display: flex;
           flex-direction: column;
 
 
+        }
+      }
+      .opt_flex--container{
+        width: 100%;
+      }
+      .text-truncate {
+        display: inline-block;
+
+        @include respond-to('x-small') {
+          /*max-width: 110px;*/
+        }
+        @include respond-to('small') {
+          max-width: 300px;
+        }
+        @include respond-to('medium') {
+          max-width: 450px;
+        }
+        @include respond-to('large') {
+          max-width: 610px;
         }
       }
     }
@@ -697,7 +848,7 @@
       }
 
       .data-cadge{
-        height: 100%;
+        /*height: 100%;*/
         display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -778,22 +929,14 @@
     //=========================================
   }
 
-  .opt__sent, .opt-pay, .opt-host{
 
-    .icn-right {
-      @include circle-icon(14px, $opt_color_frozen, $opt_color_frozen);
-      font-size: 14px;
-      color: $opt_color_white;
-      float: right;
-
-    }
-  }
 
   .host {
     .icn-number {
-      @include circle-icon(20px, $opt_status_confirmed-multiple, $opt_status_confirmed-multiple);
+      @include circle-icon(14px, $opt_status_confirmed-multiple, $opt_status_confirmed-multiple);
       font-size: 14px;
       color: $opt_color_white;
+      display: inline-block;
 
     }
     .status {
@@ -806,8 +949,9 @@
 
   .host-list-item {
     //========styles for expansion ================
-    .row{
+    .row {
       align-items: center;
+    }
 
       .text-truncate {
 
@@ -829,7 +973,6 @@
         }
 
       }
-    }
     &.mat-expansion-panel {
       box-shadow: none;
       .mat-expansion-panel-header[aria-disabled=true] {

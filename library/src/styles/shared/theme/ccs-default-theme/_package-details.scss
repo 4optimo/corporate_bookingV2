@@ -189,6 +189,7 @@
       }
 
       .opt_counter__item{
+        width: 75px;
         padding-left: 57px;
         .opt_counter{
           .mat-form-field-infix{
@@ -307,6 +308,7 @@
       padding: 10px;
     }
     .opt_linked-packages{
+      background-color: white;
       margin: 0;
       padding: 0;
       .linked-package-text{

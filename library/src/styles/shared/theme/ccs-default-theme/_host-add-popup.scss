@@ -1,10 +1,66 @@
 .opt-host-add-popup{
-
-  mat-form-field{
-    max-width: 150px;
+  .modal_header--title{
+    height: 100%;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .modal_title{
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 1.4;
+      margin: 0;
+    }
+    .modal_subtitle{
+      font-size: 14px;
+      line-height: 14px;
+      margin: 0;
+    }
   }
 
+  .padding-top-expansion{
+    padding-top: 25px;
+  }
 
+  mat-form-field{
+    width: 100%;
+  }
+
+  .mat-expansion-panel{
+    border-bottom: none;
+  }
+
+  .padding-top{
+    padding-top: 10px;
+  }
+
+  .padding-right{
+    padding-right: 50px;
+  }
+
+  .no-padding{
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .special-instruction{
+    .panel-action-btn-icon{
+      &.mat-button{
+        padding: 3px;
+        height: auto;
+        width: auto;
+        min-width: unset;
+      }
+      i{
+        &.material-icons{
+          font-size: 18px;
+          line-height: 18px;
+          height: auto;
+          padding: 0;
+        }
+      }
+    }
+  }
 
   .add-more-section{
     padding: 10px;

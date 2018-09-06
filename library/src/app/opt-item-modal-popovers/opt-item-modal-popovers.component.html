@@ -1,0 +1,355 @@
+<div class="opt_item--multiple-timeslot opt--depth__2 ">
+  <div class="opt_flex--container">
+    <div class="opt_flex__item">
+      <mat-checkbox class="opt-txt__caption">05-Feb-2018</mat-checkbox>
+    </div>
+    <div class="opt_flex__item">
+      <mat-checkbox class="opt-txt__caption">12-Feb-2018</mat-checkbox>
+    </div>
+    <div class="opt_flex__item">
+      <mat-checkbox class="opt-txt__caption">24-Feb-2018</mat-checkbox>
+    </div>
+  </div>
+  <div class="opt_flex--container">
+    <div class="opt_flex__item">
+      <mat-checkbox class="opt-txt__caption">05-Feb-2018</mat-checkbox>
+    </div>
+    <div class="opt_flex__item">
+      <mat-checkbox class="opt-txt__caption">12-Feb-2018</mat-checkbox>
+    </div>
+    <div class="opt_flex__item">
+      <mat-checkbox class="opt-txt__caption">24-Feb-2018</mat-checkbox>
+    </div>
+  </div>
+  <div class="opt_flex--container">
+    <div class="opt_flex__item">
+      <mat-checkbox class="opt-txt__caption">05-Oct-2018</mat-checkbox>
+    </div>
+    <div class="opt_flex__item">
+      <mat-checkbox class="opt-txt__caption">05-Nov-2018</mat-checkbox>
+    </div>
+    <div class="opt_flex__item">
+      <mat-checkbox class="opt-txt__caption">05-Dec-2018</mat-checkbox>
+    </div>
+  </div>
+  <div class="select-all">
+    <mat-checkbox class="opt-txt__body1-small">Applicable for All Dates</mat-checkbox>
+  </div>
+</div>
+
+<div class="opt_config-popover opt--depth__2">
+  <div class="opt_flex--container">
+    <div class="opt_flex__item">
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="Facility/ Resource" value="Bus Stop Area">
+      </mat-form-field>
+    </div>
+    <div class="opt_flex__item">
+      <mat-form-field class="example-full-width">
+        <mat-select placeholder="Configuration">
+          <mat-option value="Bus Stop Area 1"></mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+  </div>
+</div>
+
+<div class="opt_package-details opt_booking__list opt_booking__detail">
+  <div class="opt_calendar-expand opt--depth__2">
+    <div class="outer-wrapper">
+      <div class="inner-wrapper opt_flex--container">
+        <div class="date-hover">
+          <div class="date-select">
+            <div>
+              <div (click)="picker.open()" class="opt_flex__item tc-flex-item__center">
+                <i class="material-icons">date_range</i>
+                <div>
+                  <mat-form-field class="example-full-width opt_flex__item date-field">
+                    <input matInput [matDatepicker]="picker" placeholder="">
+                    <mat-datepicker #picker></mat-datepicker>
+                  </mat-form-field>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="opt_flex__item time-slot-selection">
+          <div class="time-slot">
+            <div class="individual-row">
+              <div class="opt_flex--container tc-flex-item__center row">
+                <div class="col-sm-4 col-md-4	col-lg-4	col-xs-6">
+                  <div class="opt_flex__item tc-flex-item__center">
+                    <i class="material-icons opt-txt__secondary">access_time</i>
+                    <span class="opt__subtitle-1-small opt-txt__secondary">11:00 AM - 12:15 PM</span>
+                  </div>
+                </div>
+                <div class="col-sm-1 col-md-1	col-lg-1	col-xs-6">
+                  <div class="opt_flex__item opt__subtitle-1-small tc-flex-item__center">£10.00</div>
+                </div>
+                <div class="col-sm-3 col-md-3	col-lg-3	col-xs-6">
+                  <div class="opt_flex__item tc-flex-item__center availability-icon __last-few">
+                    <i class="material-icons">event_available</i>
+                    <span class="opt-txt__body2">10</span>
+                  </div>
+                </div>
+                <div class="col-sm-2  col-md-2	col-lg-2	col-xs-6">
+                  <div class="opt_flex__item opt_counter__item tc-flex-item__center">
+                    <div class="opt_counter">
+                      <div class="opt_flex--container ">
+                        <div class="opt_flex__item--inherit">
+                          <button mat-raised-button>+</button>
+                        </div>
+                        <div class="opt_flex__item--inherit  tc-flex-item__center">
+                          <form class="example-form">
+                            <mat-form-field class="">
+                              <input matInput value="10">
+                            </mat-form-field>
+                          </form>
+                        </div>
+                        <div class="opt_flex__item--inherit">
+                          <button mat-raised-button>-</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-2  col-md-2	col-lg-2	col-xs-6">
+                  <div class="price-align">
+                    <mat-form-field class="opt_flex__item opt__subtitle-2-small tc-flex-item__center tot_price opt-fontweight--bold	">
+                      <input matInput placeholder="" value="£100.00">
+                    </mat-form-field>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="time-slot">
+            <div class="individual-row">
+              <div class="opt_flex--container tc-flex-item__center row">
+                <div class="col-sm-4 col-md-4	col-lg-4	col-xs-6">
+                  <div class="opt_flex__item tc-flex-item__center">
+                    <i class="material-icons opt-txt__secondary">access_time</i>
+                    <span class="opt__subtitle-1-small opt-txt__secondary">11:00 AM - 12:15 PM</span>
+                  </div>
+                </div>
+                <div class="col-sm-1 col-md-1	col-lg-1	col-xs-6">
+                  <div class="opt_flex__item opt__subtitle-1-small tc-flex-item__center">£10.00</div>
+                </div>
+                <div class="col-sm-3 col-md-3	col-lg-3	col-xs-6">
+                  <div class="opt_flex__item tc-flex-item__center availability-icon __good-availability">
+                    <i class="material-icons">event_available</i>
+                    <span class="opt-txt__body2">6</span>
+                  </div>
+                </div>
+                <div class="col-sm-2  col-md-2	col-lg-2	col-xs-6">
+                  <div class="opt_flex__item opt_counter__item tc-flex-item__center">
+                    <div class="opt_counter">
+                      <div class="opt_flex--container ">
+                        <div class="opt_flex__item--inherit">
+                          <button mat-raised-button>+</button>
+                        </div>
+                        <div class="opt_flex__item--inherit  tc-flex-item__center">
+                          <form class="example-form">
+                            <mat-form-field class="">
+                              <input matInput value="1">
+                            </mat-form-field>
+                          </form>
+                        </div>
+                        <div class="opt_flex__item--inherit">
+                          <button mat-raised-button>-</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-2  col-md-2	col-lg-2	col-xs-6">
+                  <div class="price-align">
+                    <mat-form-field class="opt_flex__item opt__subtitle-2-small tc-flex-item__center tot_price opt-fontweight--bold	">
+                      <input matInput placeholder="" value="£10.00">
+                    </mat-form-field>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="time-slot">
+            <div class="individual-row">
+              <div class="opt_flex--container tc-flex-item__center row">
+                <div class="col-sm-4 col-md-4	col-lg-4	col-xs-6">
+                  <div class="opt_flex__item tc-flex-item__center">
+                    <i class="material-icons opt-txt__secondary">access_time</i>
+                    <span class="opt__subtitle-1-small opt-txt__secondary">11:00 AM - 12:15 PM</span>
+                  </div>
+                </div>
+                <div class="col-sm-1 col-md-1	col-lg-1	col-xs-6">
+                  <div class="opt_flex__item opt__subtitle-1-small tc-flex-item__center">£10.00</div>
+                </div>
+                <div class="col-sm-3 col-md-3	col-lg-3	col-xs-6">
+                  <div class="opt_flex__item tc-flex-item__center availability-icon __limited">
+                    <i class="material-icons">event_available</i>
+                    <span class="opt-txt__body2">7</span>
+                  </div>
+                </div>
+                <div class="col-sm-2  col-md-2	col-lg-2	col-xs-6">
+                  <div class="opt_flex__item opt_counter__item tc-flex-item__center">
+                    <div class="opt_counter">
+                      <div class="opt_flex--container ">
+                        <div class="opt_flex__item--inherit">
+                          <button mat-raised-button>+</button>
+                        </div>
+                        <div class="opt_flex__item--inherit  tc-flex-item__center">
+                          <form class="example-form">
+                            <mat-form-field class="">
+                              <input matInput value="3">
+                            </mat-form-field>
+                          </form>
+                        </div>
+                        <div class="opt_flex__item--inherit">
+                          <button mat-raised-button>-</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-2  col-md-2	col-lg-2	col-xs-6">
+                  <div class="price-align">
+                    <mat-form-field class="opt_flex__item opt__subtitle-2-small tc-flex-item__center tot_price opt-fontweight--bold	">
+                      <input matInput placeholder="" value="£30.00">
+                    </mat-form-field>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br><br>
+<div class="opt_package-details opt_booking__list opt_booking__detail opt_time-range">
+  <div class="opt_calendar-expand opt--depth__2">
+    <div class="outer-wrapper">
+      <div class="inner-wrapper opt_flex--container">
+        <div class="date-hover">
+          <div class="date-select">
+            <div>
+              <div (click)="picker1.open()" class="opt_flex__item tc-flex-item__center">
+                <i class="material-icons">date_range</i>
+                <div>
+                  <mat-form-field class="example-full-width opt_flex__item date-field">
+                    <input matInput [matDatepicker]="picker1" placeholder="">
+                    <mat-datepicker #picker1></mat-datepicker>
+                  </mat-form-field>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="opt_flex__item time-slot-selection">
+          <div class="time-slot">
+            <div class="individual-row">
+              <div class="opt_flex--container tc-flex-item__center row">
+                <div class="col-sm-6 col-md-6	col-lg-4	col-xs-6">
+                  <div class="opt_flex__item tc-flex-item__center">
+                    <i class="material-icons opt-txt__secondary">access_time</i>
+                    <span class="opt__subtitle-1-small opt-txt__secondary">09:30 AM - 11:30 AM</span>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-6	col-lg-8	col-xs-8">
+                  <div class="opt_flex__item opt__subtitle-1-small tc-flex-item__center">2 Hours</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="time-range">
+              <div class="opt_flex--container row">
+                <div class="opt_flex__item">
+                  <mat-form-field class="example-full-width">
+                    <input type="tel" matInput placeholder="Time" value="09:30 AM - 11:30 AM">
+
+                      <mat-icon matSuffix mat-button [matMenuTriggerFor]="menu"><i class="material-icons opt-txt__secondary">access_time</i></mat-icon>
+                    <mat-menu #menu="matMenu">
+                      <button mat-menu-item>09:00 AM - 09:30 AM</button>
+                      <button mat-menu-item>09:30 AM - 10:00 AM</button>
+                      <button mat-menu-item>10:00 AM - 10:30 AM</button>
+                      <button mat-menu-item>10:30 AM - 11:00 AM</button>
+                      <button mat-menu-item>11:00 AM - 11:30 AM</button>
+                      <button mat-menu-item>11:30 AM - 12:00 PM</button>
+                      <button mat-menu-item>12:00 PM - 12:30 PM</button>
+                      <button mat-menu-item>12:30 PM - 01:00 PM</button>
+
+                    </mat-menu>
+                  </mat-form-field>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br><br>
+<div class="opt_package-details opt_booking__list opt_booking__detail opt_time-range opt_user-time-slot">
+  <div class="opt_calendar-expand opt--depth__2">
+    <div class="outer-wrapper">
+      <div class="inner-wrapper opt_flex--container">
+        <div class="date-hover">
+          <div class="date-select">
+            <div>
+              <div (click)="picker2.open()" class="opt_flex__item tc-flex-item__center">
+                <i class="material-icons">date_range</i>
+                <div>
+                  <mat-form-field class="example-full-width opt_flex__item date-field">
+                    <input matInput [matDatepicker]="picker2" placeholder="">
+                    <mat-datepicker #picker2></mat-datepicker>
+                  </mat-form-field>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="opt_flex__item time-slot-selection">
+          <div class="time-slot">
+            <div class="individual-row">
+              <div class="opt_flex--container tc-flex-item__center row">
+                <div class="col-sm-6 col-md-6	col-lg-4	col-xs-6">
+                  <div class="opt_flex__item tc-flex-item__center">
+                    <i class="material-icons opt-txt__secondary">access_time</i>
+                    <span class="opt__subtitle-1-small opt-txt__secondary">09:30 AM - 11:30 AM</span>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-6	col-lg-8	col-xs-8">
+                  <div class="opt_flex__item opt__subtitle-1-small tc-flex-item__center">2 Hours</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="time-range">
+            <div class="opt_flex--container">
+              <div class="opt_flex__item row">
+                <div class="col-sm-6 col-md-6	col-lg-4	col-xs-8">
+                  <mat-form-field class="example-full-width">
+                    <input type="tel" matInput placeholder="Start Time" value="09:30 AM - 11:30 AM">
+                    <mat-icon matSuffix><i class="material-icons opt-txt__secondary">access_time</i></mat-icon>
+                  </mat-form-field>
+                </div>
+                <div class="col-sm-6 col-md-6	col-lg-4	col-xs-8">
+                  <mat-form-field class="example-full-width">
+                    <input type="tel" matInput placeholder="End Time" value="09:30 AM - 11:30 AM">
+                    <mat-icon matSuffix><i class="material-icons opt-txt__secondary">access_time</i></mat-icon>
+                  </mat-form-field>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

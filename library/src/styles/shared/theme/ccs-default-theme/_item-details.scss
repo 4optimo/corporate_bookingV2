@@ -9,6 +9,13 @@
         }
       }
     }
+    .opt_width-calc{
+      display: inline-block;
+      width: unset;
+    }
+    .ref_no {
+      padding-right: 2px;
+    }
   }
 
   .opt-header-section{
@@ -56,6 +63,10 @@
       line-height: 20px;
       font-weight: 500;
       display: inline-block;
+
+      position:  absolute;
+      right: -20px;
+
     }
   }
   .package-select-section{
@@ -99,6 +110,18 @@
       border: 1px solid lightgrey;
       &:focus, &:active, &:hover, &:visited{
         background-color: #4bb3fa !important;
+        color: white;
+        border: none;
+      }
+    }
+  }
+  .remove-btn{
+    padding-left: 5px;
+    .btn-select{
+      box-shadow: none !important;
+      border: 1px solid lightgrey;
+      &:focus, &:active, &:hover, &:visited{
+        background-color: #f5766c !important;
         color: white;
         border: none;
       }
