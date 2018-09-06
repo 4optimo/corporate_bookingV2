@@ -87,7 +87,7 @@
 
       &:hover{
         @include box_shadow (1);
-        background-color: $opt_color_primary;
+        background-color: $opt_color_primary !important;
         color: $opt_color_white !important;
         border: 1px solid  $opt_color_primary !important;
         text-align: center !important;
