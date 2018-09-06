@@ -147,7 +147,7 @@
 
     .mat-form-field{
       width: 100%;
-      padding-right: 20px;
+      //padding-right: 20px;
       font-size: 14px;
     }
 
@@ -285,9 +285,10 @@
         margin-right: 20px;
       }
       .mat-horizontal-stepper-content{
+        padding: 25px;
         .client-general-info{
-          padding-top: 30px;
-          padding-bottom: 15px;
+          //padding-top: 30px;
+          //padding-bottom: 15px;
         }
       }
       .mat-checkbox-layout {
@@ -568,10 +569,6 @@
     }
     .opt-section__heading{
       margin-bottom: 15px;
-    }
-
-    .padding-left{
-      padding-left: 20px;
     }
 
     .contact-type{
