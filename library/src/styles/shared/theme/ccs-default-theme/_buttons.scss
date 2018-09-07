@@ -62,7 +62,7 @@
     color: $opt-color_btn_outline !important;
     text-align: center !important;
     border: 1px solid $opt_color_btn_outline !important;
-
+    transition:0.3s !important;
     &:hover{
       @include box_shadow (1);
       background-color: $opt_color_btn_active;
@@ -102,24 +102,29 @@
 
       &_active{
         @extend %btn-small;
-        @include box_shadow(2);
+        @include box_shadow(1);
         background-color: $opt_color_primary;
         color: $opt_color_white !important;
         border: 1px solid  $opt_color_primary !important;
         text-align: center !important;
-        transition:1s !important;
+        transition:0.3s !important;
+        &:hover{
+          @include box_shadow (2);
+          background-color: $opt_color_primary;
+        }
       }
     }
     &_active{ /*Priary Active*/
       @extend %btn;
-      @include box_shadow(1);
+      @include box_shadow (1);
       background-color: $opt_color_primary;
       color: $opt_color_white !important;
       border: 1px solid  $opt_color_primary !important;
       text-align: center !important;
+       transition:0.3s !important;
       &:hover{
-        transition: 0.3s;  
-        background-color: #4bb3fa !important;
+        @include box_shadow (2);
+        background-color: $opt_color_primary;
       }
     }
   }
@@ -146,6 +151,7 @@
     border-color: $opt_color_btn_disabled;
     color:  $opt_color_btn_disabled !important;
     background-color: $opt_color_white;
+    transition:0.3s !important;
   }
   &-raised{
 
