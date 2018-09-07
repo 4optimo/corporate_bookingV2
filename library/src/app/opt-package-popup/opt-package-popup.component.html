@@ -451,10 +451,231 @@
             <span class="opt-txt__body2 ">10 Displayed.</span>
           </div>
         </div>
+
+        <!--final final-->
+        <div class="package-list">
+          <mat-accordion>
+                  <div class="opt_package-details opt_booking__list opt_booking__detail">
+                    <mat-accordion>
+                      <mat-expansion-panel #myPanel [disabled]="true" class="opt-expand--line">
+                        <mat-expansion-panel-header >
+                          <div class="opt_expand--container">
+                            <div class="opt_flex--container">
+                              <div class="opt_flex__item __expansion-lft--side">
+                                <div class="row opt_flex--container tc-flex-item__center ">
+                                  <div class="col-sm-8 col-md-4	col-lg-4	col-xs-12">
+                                    <mat-panel-title class="opt_flex--container tc-flex-item__center">
+                                      <div class="opt_flex__item--inherit ">
+                                        <div class="icon__cage">
+                                          <div class="opt_circle__bespoke">
+                                            <span class="icon-icn-package"> </span>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="opt_flex__item">
+                                        <div class="opt_width-calc">
+                                          <div class="opt-txt__body2-small ref_no">Chelsea Flower Show Hospitality</div>
+                                          <div>
+                                            <div class="opt_flex__item--inherit icon__cage __min">
+                                              <span class="icon-icn-item package-color--item"></span>
+                                              <span class="opt__subtitle-1-small opt-txt__secondary">12-Jan-2018 </span>
+                                              <span class="opt__subtitle-1-small opt-txt__secondary">| Event Name</span>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </mat-panel-title>
+                                  </div>
+                                  <div class="col-sm-4 col-md-1	col-lg-1	col-xs-12">
+                                    <mat-panel-description class="opt_flex--container">
+                                      <div class="middle-details">
+                                        <div class="opt_flex__item tc-flex-item__center opt-txt__body1-small">Unlimited</div>
+                                        <div class="opt_flex__item tc-flex-item__center opt-txt__caption __link">Adult</div>
+                                      </div>
+                                    </mat-panel-description>
+                                  </div>
+                                  <div class="col-sm-6 col-md-4	col-lg-4	col-xs-12">
+                                    <mat-panel-description class="opt_flex--container">
+                                      <div class="opt_flex__item tc-flex-item__center opt-txt__secondary opt__subtitle-2-small opt_unit__price">£92.19</div>
+                                      <div class="opt_flex__item opt_counter__item">
+                                        <div class="opt_counter">
+                                          <div class="opt_flex--container ">
+                                            <div class="opt_flex__item--inherit">
+                                              <button mat-raised-button>+</button>
+                                            </div>
+                                            <div class="opt_flex__item--inherit  tc-flex-item__center">
+                                              <form class="example-form">
+                                                <mat-form-field class="">
+                                                  <input matInput value="1">
+                                                </mat-form-field>
+                                              </form>
+                                            </div>
+                                            <div class="opt_flex__item--inherit">
+                                              <button mat-raised-button>-</button>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="opt_flex__item tc-flex-item__center opt-txt__caption opt_cover__range">
+                                        <span>
+                                          1 <i class="material-icons cover-icons opt-txt__tertiary">arrow_forward</i>6
+                                        </span>
+                                      </div>
+                                    </mat-panel-description>
+                                  </div>
+                                  <div class="col-sm-6  col-md-2	col-lg-2	col-xs-12  opt_price-section">
+                                    <mat-panel-description class="opt_flex--container">
+                                      <div class="opt_flex__item inc-label"><span class="lbl lbl__vat">Inc Vat</span></div>
+                                      <div class=" opt_flex__item opt-typo-subhead-2 price">£92.19
+                                        <div class="opt-txt__caption">Covers</div>
+                                      </div>
+                                      <div class="opt_flex__item  price--value__icon">
+                                        <span class="icon-coin-of-dollar"></span>
+                                      </div>
+                                    </mat-panel-description>
+                                  </div>
+                                  <div class="col-sm-12  col-md-1	col-lg-1	col-xs-12">
+                                    <mat-panel-description class="opt_flex--container">
+                                      <div mat-raised-button class="btn-color-default opt_flex__item opt-txt__light btn btn-select">
+                                        Add
+                                      </div>
+                                    </mat-panel-description>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="opt_flex__item __expansion-rgt--side">
+                                <div class="col tc-flex-item__center">
+                                  <div class="opt_flex__item action__button tc-flex-item__center">
+                                    <button class="down-arrow" mat-icon-button color="primary" (click)="expandPannel()"
+                                            [disableRipple]="true">
+                                      <mat-icon>{{matIcon}}</mat-icon>
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </mat-expansion-panel-header>
+
+                      </mat-expansion-panel>
+                    </mat-accordion>
+                  </div>
+          </mat-accordion>
+
+        </div>
+
+        <div class="opt_package-details opt_booking__list opt_booking__detail package-list">
+          <mat-accordion>
+            <mat-expansion-panel #myPanel [disabled]="true" class="opt-expand--line">
+              <mat-expansion-panel-header class="opt_width-define opt_expand__header first-outer-wrapper"
+                                          collapsedHeight=".collapsedHeight" expandedHeight=".expandedHeight">
+                <div class="opt_expand--container opt-item-details">
+                  <div class="opt_flex--container">
+                    <div class="opt_flex__item __expansion-lft--side">
+                      <div class="row opt_flex--container tc-flex-item__center ">
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                          <div class="opt_flex--container tc-flex-item__center first-col">
+                            <div class="opt_flex__item--inherit ">
+                              <div class="icon__cage">
+                                <div class="opt_circle__bespoke">
+                                  <span class="icon-icn-package"> </span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="opt_flex__item">
+                              <div class="opt_width-calc">
+                                <div class="opt-txt__body2-small ref_no">Chelsea Flower Show Hospitality</div>
+                                <div>
+                                  <div class="opt_flex__item--inherit icon__cage __min">
+                                    <span class="icon-icn-item package-color--item"></span>
+                                    <span class="opt__subtitle-1-small opt-txt__secondary">12-Jan-2018 </span>
+                                    <span class="opt__subtitle-1-small opt-txt__secondary">| Event Name</span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                          <div class="opt_flex--container">
+                            <div class="opt_flex__item--inherit">
+                              <div class="opt-txt__body1-small">Unlimited</div>
+                              <div class="opt-txt__caption __link" mat-button [matMenuTriggerFor]="menu">Adult</div>
+                              <mat-menu #menu="matMenu">
+                                <button mat-menu-item>Child</button>
+                              </mat-menu>
+                            </div>
+                            <div class="opt_flex__item tc-flex-item__center">
+                              <div class="opt_flex--container">
+                                <div class="opt_flex__item tc-flex-item__center opt-txt__secondary opt__subtitle-2-small opt_unit__price">£450.00</div>
+                                <div class="opt_flex__item tc-flex-item__center opt_counter__item">
+                                  <div class="opt_counter">
+                                    <div class="opt_flex--container ">
+                                      <div class="opt_flex__item--inherit">
+                                        <button mat-raised-button>+</button>
+                                      </div>
+                                      <div class="opt_flex__item--inherit  tc-flex-item__center">
+                                        <form class="example-form">
+                                          <mat-form-field class="">
+                                            <input matInput value="1">
+                                          </mat-form-field>
+                                        </form>
+                                      </div>
+                                      <div class="opt_flex__item--inherit">
+                                        <button mat-raised-button>-</button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="opt_flex__item tc-flex-item__center opt-txt__caption opt_cover__range">
+                                        <span>
+                                          1 <i class="material-icons cover-icons opt-txt__tertiary">arrow_forward</i>6
+                                        </span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                          <div class="opt_flex--container tc-flex-item__center item-price-wrapper">
+                            <div class="opt_flex__item--inherit">
+                              <span class="lbl lbl__vat">Inc Vat</span>
+                            </div>
+                            <div class=" opt_flex__item--inherit opt-typo-subhead-2 price opt_price-section">£92.19
+                              <div class="opt-txt__caption">Covers</div>
+                            </div>
+                            <div class="opt_flex__item--inherit"><span class="icon-coin-of-dollar"></span></div>
+                            <div class="add-btn">
+                              <button mat-raised-button class="btn-color-default opt-txt__caption btn btn-select mat-raised-button">
+                                Add
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="opt_flex__item __expansion-rgt--side">
+                      <div class="col tc-flex-item__center">
+                        <div class="opt_flex__item action__button tc-flex-item__center">
+                          <button class="down-arrow" mat-icon-button color="primary" (click)="expandPannel()"
+                                  [disableRipple]="true">
+                            <mat-icon>{{matIcon}}</mat-icon>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </mat-expansion-panel-header>
+            </mat-expansion-panel>
+          </mat-accordion>
+        </div>
+        <!--end end-->
       </div>
     </div>
   </div>
 </div>
+
 
 
 
