@@ -63,6 +63,16 @@
 
   .opt_expanded-view{
     margin-top: 20px;
+
+    .opt-txt__body1, .opt-txt__body2 {
+      line-height: 20px;
+    }
+    .opt-txt__light{
+      padding-bottom: 10px;
+    }
+    .row{
+      padding-bottom: 10px;
+    }
   }
 
   .mat-expanded{
@@ -279,8 +289,6 @@
 }
 
 
-
-
 .opt-client-list-full{
 
   .body-content {
@@ -298,10 +306,5 @@
 
   }
   }
-
-
-
-
-
 
 }
