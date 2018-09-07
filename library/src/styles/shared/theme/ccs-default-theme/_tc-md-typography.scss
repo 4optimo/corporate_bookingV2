@@ -2,7 +2,6 @@
 @import "tc-md-mixins";
 @import "variables";
 
-
 $base-text-color: #000;
 
 $color-base: $base-text-color;
@@ -479,7 +478,6 @@ p {
 .my-bordered-list .mdc-list-item:not(:first-child) {
   border-top: none;
 }
-
 //Font Weight
 
 .opt-fontweight{
@@ -799,3 +797,4 @@ p {
 //.material-icons {
 //  @include typo-icon;
 //}
+// Icon moon icon library set clasess
