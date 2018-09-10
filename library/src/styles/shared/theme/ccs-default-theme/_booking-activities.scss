@@ -18,14 +18,18 @@
 
 .symbol_icon{
   display: inline-block;
-  font-size: 16px;
+  font-size: 16px !important;
+  .icon-icn-invoice{
+    font-size: 12px !important;
+  }
   i{
+    font-size: 16px !important;
     &.material-icons{
-      font-size: 16px;
       line-height: 16px;
       height: auto;
     }
   }
+  
 }
 
 .header_row--action-wrapper {
@@ -139,9 +143,7 @@
     }
   }
   .row {
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
+   flex-grow: 1;
   }
 
   .mat-horizontal-stepper-header {
@@ -235,7 +237,6 @@
   .mat-expansion-panel-body {
     .mat-horizontal-content-container {
       padding: 15px 0px;
-      border-top: 2px solid #dce0e1;
       //background-color: #f9f9f9;
       font-size: 13px;
     }
@@ -251,18 +252,16 @@
   }
 
   .mat-tab-body-content {
-    .header-row {
-      padding: 10px 0 10px 15px;
-      .row {
-        margin: 0;
-      }
-    }
+    overflow: visible;
   }
 
   .header-row {
     border-bottom: 2px solid #e0e0e0;
-    padding-bottom: 15px;
-    padding-left: 15px;
+    border-top: 2px solid #e0e0e0;
+    min-height: 55px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
     .row {
       display: flex;
       [class*=' col-'] {
@@ -376,10 +375,11 @@
       }
     }
     .note_list_item {
-      padding: 10px 0;
       border-bottom: 1px solid #e0e0e0;
-      padding-left: 15px;
-
+      min-height: 50px;
+      display: flex;
+      align-items: center;
+      padding: 0 10px;
       .opt_flex--container{
         width: 100%;
       }
@@ -641,6 +641,12 @@
     //=========================================
 
   }
+  .payment-desc{
+    .text-truncate{
+      white-space: nowrap !important;
+      width: 250px;
+    }
+  }
   .deliverables-list-item {
 
 
@@ -780,7 +786,9 @@
         width: 100%;
       }
       .text-truncate {
-        display: inline-block;
+          white-space: normal;
+          display: flex;
+          align-items: center;
 
         @include respond-to('x-small') {
           /*max-width: 110px;*/
@@ -802,7 +810,7 @@
         box-shadow: none;
         .mat-expansion-panel-header[aria-disabled=true] {
           color: inherit;
-          padding: 0 15px;
+          padding: 0 0 0 10px;
         }
         .mat-expansion-panel-body{
           width: calc(100% - 30px);
@@ -810,10 +818,9 @@
         }
         &.mat-expanded {
           border-left: 4px solid #4db4fa;
-          box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12);
-          margin-bottom: 50px;
-          @include box_shadow(3);
+          box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
           padding: 0 10px;
+          transition: 0.3s;
           .mat-expansion-panel-header {
             padding: 10px 0;
             border-bottom: 1px dashed #4db4fa;
