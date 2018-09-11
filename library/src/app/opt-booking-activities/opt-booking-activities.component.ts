@@ -72,6 +72,7 @@ export class OptBookingActivitiesComponent implements OnInit{
     this.myPanel8.expandedChange.subscribe((data) => {
       this.matIcon8 = data ? 'keyboard_arrow_up' : 'keyboard_arrow_down';
     });
+
   }
   expandPannel1() {
     this.myPanel1.expanded = !this.myPanel1.expanded;
