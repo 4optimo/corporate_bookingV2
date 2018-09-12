@@ -15,7 +15,9 @@
     }
   }
 }
-
+.icon-small{
+  font-size: 10px !important;
+}
 .symbol_icon{
   display: inline-block;
   font-size: 16px !important;
@@ -29,7 +31,9 @@
       height: auto;
     }
   }
-  
+  [class^="icon-"]{
+    font-size: 14px !important;
+  }
 }
 
 .header_row--action-wrapper {
@@ -122,6 +126,15 @@
 /* End of Expansion Panel Button Styles */
 
 .opt_booking__activity {
+  .opt-txt__body1-small{
+    line-height: 15px;
+  }
+  .opt-txt__body2-small{
+    line-height: 20px;
+  }
+  .mat-checkbox-inner-container{
+    margin-right: 10px;
+  }
   mat-horizontal-stepper{
     .mat-fab.mat-accent{
       background-color: #f6f6f6;
@@ -468,7 +481,7 @@
     }
   }
   
-
+  
   .schedule-list-item {
     padding: 5px 15px;
     border-bottom: 1px solid #ddd;
@@ -555,6 +568,9 @@
     border-bottom: 1px solid $opt_border-color;
     .mat-expansion-panel-content{
       display: none;
+    }
+    .opt-txt__body2{
+      overflow: visible;
     }
     .icn-right {
       font-size: 14px;
@@ -843,7 +859,7 @@
             border-bottom: 1px dashed #4db4fa;
           }
           .mat-expansion-panel-content {
-            padding-top: 10px;
+            padding: 10px;
           }
         }
         .opt_expand--container {
@@ -896,6 +912,10 @@
       .mat-expansion-panel-header[aria-disabled=true] {
         color: inherit;
         padding: 0;
+      }
+      .mat-expansion-panel-header-title{
+        display: flex;
+        align-items: center;
       }
       .mat-expansion-panel-body{
         width: calc(100% - 30px);

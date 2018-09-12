@@ -29,11 +29,13 @@
               <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-7	col-lg-7">
                   <div class="opt_flex--container">
-                    <div class="opt_flex__item chck-box horizontally-center">
-                      <mat-checkbox></mat-checkbox>
+                    <div class="opt_flex__item horizontally-center">
+                      <mat-checkbox>
+                        <span class="opt-txt__body1">Select All</span>
+                      </mat-checkbox>
                     </div>
                     <div class="opt_flex__item des-box horizontally-center">
-                      <span> Select All
+                      <span>
                         <mat-form-field class="drp-dwn aligned_form_field">
                           <mat-select placeholder="Note Type">
                             <mat-option *ngFor="let food of foods" [value]="food.value">
@@ -70,8 +72,8 @@
                       <mat-checkbox></mat-checkbox>
                     </div>
                     <div class="opt_flex__item des-box ">
-                      <div class="opt-txt__body2-small opt-fontweight--bold"> Optimo User </div>
-                      <div class="opt-txt__secondary"> 04-Jan-2018 | <span class="symbol_icon"><i class="icon-dinner"></i></span></div>
+                      <div class="opt-txt__body2 opt-fontweight--bold"> Optimo User </div>
+                      <div class="opt-txt__secondary opt-txt__body1-small"> 04-Jan-2018 | <span class="symbol_icon"><i class="icon-dinner"></i></span></div>
                     </div>
                   </div>
                 </div>
@@ -97,8 +99,8 @@
                       <mat-checkbox></mat-checkbox>
                     </div>
                     <div class="opt_flex__item des-box">
-                      <div class="opt-txt__body2-small opt-fontweight--bold"> Optimo User </div>
-                      <div class="opt-txt__secondary"> 04-Jan-2018 | <span class="symbol_icon"><i class="material-icons">note</i></span></div>
+                      <div class="opt-txt__body2 opt-fontweight--bold"> Optimo User </div>
+                      <div class="opt-txt__secondary opt-txt__body1-small"> 04-Jan-2018 | <span class="symbol_icon"><i class="material-icons">note</i></span></div>
                     </div>
                   </div>
                 </div>
@@ -124,8 +126,8 @@
                       <mat-checkbox></mat-checkbox>
                     </div>
                     <div class="opt_flex__item des-box">
-                      <div class="opt-txt__body2-small opt-fontweight--bold"> Optimo User </div>
-                      <div class="opt-txt__secondary"> 04-Jan-2018 | <span class="symbol_icon"><i class="material-icons">directions_bus</i></span></div>
+                      <div class="opt-txt__body2 opt-fontweight--bold"> Optimo User </div>
+                      <div class="opt-txt__secondary opt-txt__body1-small"> 04-Jan-2018 | <span class="symbol_icon"><i class="material-icons">directions_bus</i></span></div>
                     </div>
                   </div>
                 </div>
@@ -169,10 +171,11 @@
               <div class="row">
                 <div class="col-sm-6 col-md-7	col-lg-8	col-xs-12">
                   <div class="opt_flex--container">
-                    <div class="opt_flex__item chck-box horizontally-center ">
-                      <mat-checkbox></mat-checkbox>
+                    <div class="opt_flex__item  horizontally-center ">
+                        <mat-checkbox>
+                            <span class="opt-txt__body1">Select All</span>
+                          </mat-checkbox>
                     </div>
-                    <div class="opt_flex__item des-box horizontally-center opt-txt__body2">Select All</div>
                   </div>
                 </div>
                 <div class="col-sm-6 col-md-5	col-lg-4	col-xs-12 just-content-end">
@@ -202,7 +205,7 @@
                                 <mat-checkbox></mat-checkbox>
                               </div>
                               <div class="opt_flex__item des-box">
-                                <div class="opt-txt__body2 opt-fontweight--bold text-truncate"> Our Delicious Meal
+                                <div class="opt-txt__body2 "> Our Delicious Meal
                                   Plans</div>
                                 <div class="opt-txt__body1-small"><span class="symbol_icon"><i class="material-icons mat-btn-icon-btn opt-txt__tertiary indicator-icon">attach_file</i></span>
                                   <span class="opt-txt__tertiary"> PDF </span>| v1.01 |<span class="opt-txt__secondary">04-Jan-2018</span></div>
@@ -213,7 +216,7 @@
                             <div class="opt_flex--container">
                               <div class="opt_flex__item data-cadge full-width">
                                 <div class="opt_flex--container">
-                                  <div class="opt_flex__item  opt-txt__body2 text-truncate p100">
+                                  <div class="opt_flex__item opt-txt__body2  text-truncate p100">
                                     Booking Confirmation
                                   </div>
                                   <div class="opt_flex__item opt-txt__body1-small opt-txt__secondary text-truncate p100">
@@ -251,7 +254,7 @@
                         <mat-checkbox></mat-checkbox>
                       </div>
                       <div class="opt_flex__item des-box">
-                        <div class="opt-txt__body1  text-truncate"> Our Delicious Meal Plans</div>
+                        <div class="opt-txt__body2"> Our Delicious Meal Plans</div>
                         <div class="opt-txt__body1-small"><span class="symbol_icon"><i class="material-icons mat-btn-icon-btn opt-txt__tertiary indicator-icon">attach_file</i></span><span
                             class="opt-txt__tertiary"> PDF </span>|v1.00 |<span class="opt-txt__secondary">04-Jan-2017</span></div>
                       </div>
@@ -289,7 +292,7 @@
                                 <mat-checkbox></mat-checkbox>
                               </div>
                               <div class="opt_flex__item des-box">
-                                <div class="opt-txt__body2 text-truncate"> Venue Hire Inquiry</div>
+                                <div class="opt-txt__body2 "> Venue Hire Inquiry</div>
                                 <div class="opt-txt__body1-small"><span class="symbol_icon"><i class="material-icons mat-btn-icon-btn opt-txt__tertiary indicator-icon">attach_file</i></span><span
                                     class="opt-txt__tertiary"> Doc </span>|v1.01 |<span class="opt-txt__secondary">04-Jan-2017</span></div>
                               </div>
@@ -299,7 +302,7 @@
                             <div class="opt_flex--container">
                               <div class="opt_flex__item data-cadge full-width">
                                 <div class="opt_flex--container">
-                                  <div class="opt_flex__item  opt-txt__body2 text-truncate p100">
+                                  <div class="opt_flex__item  opt-txt__body2  text-truncate p100">
                                     Booking Confirmation
                                   </div>
                                   <div class="opt_flex__item opt-txt__body1-small opt-txt__secondary text-truncate p100">
@@ -337,7 +340,7 @@
                         <mat-checkbox></mat-checkbox>
                       </div>
                       <div class="opt_flex__item des-box">
-                        <div class="opt-txt__body1  text-truncate"> Venue Hire Inquiry</div>
+                        <div class="opt-txt__body2 text-truncate"> Venue Hire Inquiry</div>
                         <div class="opt-txt__body1-small"><span class="symbol_icon"><i class="material-icons mat-btn-icon-btn opt-txt__tertiary indicator-icon">attach_file</i></span><span
                             class="opt-txt__tertiary"> Doc </span>|v1.01 |<span class="opt-txt__secondary">04-Jan-2017</span></div>
                       </div>
@@ -345,7 +348,7 @@
                   </div>
                   <div class="col-xs-12 col-sm-6 col-md-6	col-lg-4">
                     <div class="opt_flex--container data-cadge">
-                      <div class="opt_flex__item  opt-txt__body1 text-truncate">
+                      <div class="opt_flex__item  opt-txt__body2 text-truncate">
                         Booking Confirmation
                       </div>
                       <div class="opt_flex__item opt-txt__body1-small opt-txt__secondary text-truncate">
@@ -391,16 +394,15 @@
                   <!--Header-->
                   <div class="header-row">
                     <div class="row">
-                      <div class="col-xs-12 col-sm-12 col-md-7	col-lg-7">
-                        <div class="opt_flex--container">
-                          <div class="opt_flex__item chck-box horizontally-center">
-                            <mat-checkbox></mat-checkbox>
+                        <div class="col-sm-6 col-md-7	col-lg-8	col-xs-12">
+                            <div class="opt_flex--container">
+                              <div class="opt_flex__item  horizontally-center ">
+                                  <mat-checkbox>
+                                      <span class="opt-txt__body1">Select All</span>
+                                    </mat-checkbox>
+                              </div>
+                            </div>
                           </div>
-                          <div class="opt_flex__item des-box horizontally-center">
-                            <span>Select All</span>
-                          </div>
-                        </div>
-                      </div>
                       <div class="col-xs-12 col-sm-12 col-md-5	col-lg-5 just-content-end">
                         <div class="opt_flex__item--inherit horizontally-center action-btn">
                           <div class="header_row--action-wrapper">
@@ -424,16 +426,16 @@
                             <mat-checkbox></mat-checkbox>
                           </div>
                           <div class="opt_flex__item des-box ">
-                            <div class="opt-txt__body2-small opt-fontweight--bold"> No FS Category Available </div>
-                            <div class="opt-txt__secondary"> Document | V2.89</div>
+                            <div class="opt-txt__body2"> No FS Category Available </div>
+                            <div class="opt-txt__secondary opt-txt__body1-small"> Document | V2.89</div>
                           </div>
                         </div>
                       </div>
                       <div class="col-xs-12 col-sm-2 col-md-2	col-lg-2">
                         <div class="opt_flex--container">
                           <div class="opt_flex__item des-box ">
-                            <div class="opt-txt__body2-small opt-fontweight--bold">Received From </div>
-                            <div class="opt-txt__secondary"> 04-Jan-2018</div>
+                            <div class="opt-txt__body2">Received From </div>
+                            <div class="opt-txt__secondary opt-txt__body1-small"> 04-Jan-2018</div>
                           </div>
                         </div>
                       </div>
@@ -459,16 +461,16 @@
                             <mat-checkbox></mat-checkbox>
                           </div>
                           <div class="opt_flex__item des-box ">
-                            <div class="opt-txt__body2-small opt-fontweight--bold"> No FS Category Available </div>
-                            <div class="opt-txt__secondary"> Document | V2.89</div>
+                            <div class="opt-txt__body2"> No FS Category Available </div>
+                            <div class="opt-txt__secondary opt-txt__body1-small"> Document | V2.89</div>
                           </div>
                         </div>
                       </div>
                       <div class="col-xs-12 col-sm-2 col-md-2	col-lg-2">
                         <div class="opt_flex--container">
                           <div class="opt_flex__item des-box ">
-                            <div class="opt-txt__body2-small opt-fontweight--bold">Received From </div>
-                            <div class="opt-txt__secondary"> 04-Jan-2018</div>
+                            <div class="opt-txt__body2">Received From </div>
+                            <div class="opt-txt__secondary opt-txt__body1-small"> 04-Jan-2018</div>
                           </div>
                         </div>
                       </div>
@@ -494,8 +496,8 @@
                             <mat-checkbox></mat-checkbox>
                           </div>
                           <div class="opt_flex__item des-box ">
-                            <div class="opt-txt__body2-small opt-fontweight--bold"> Optimo User </div>
-                            <div class="opt-txt__secondary"> Email | V2.89 | <span class="symbol_icon"><i class="material-icons">note</i></span></div>
+                            <div class="opt-txt__body2"> Optimo User </div>
+                            <div class="opt-txt__secondary opt-txt__body1-small"> Email | V2.89 | <span class="symbol_icon"><i class="material-icons">note</i></span></div>
                           </div>
                         </div>
                       </div>
@@ -503,7 +505,7 @@
                         <div class="opt_flex--container">
                           <div class="opt_flex__item des-box ">
                             <div class="opt-txt__body2-small opt-fontweight--bold">Received From </div>
-                            <div class="opt-txt__secondary"> 04-Jan-2018</div>
+                            <div class="opt-txt__secondary opt-txt__body1-small"> 04-Jan-2018</div>
                           </div>
                         </div>
                       </div>
@@ -534,11 +536,10 @@
                     <div class="row">
                       <div class="col-xs-12 col-sm-12 col-md-7	col-lg-7">
                         <div class="opt_flex--container">
-                          <div class="opt_flex__item chck-box horizontally-center">
-                            <mat-checkbox></mat-checkbox>
-                          </div>
-                          <div class="opt_flex__item des-box horizontally-center">
-                            <span>Select All</span>
+                          <div class="opt_flex__item horizontally-center">
+                              <mat-checkbox>
+                                  <span class="opt-txt__body1">Select All</span>
+                                </mat-checkbox>
                           </div>
                         </div>
                       </div>
@@ -583,14 +584,12 @@
                                 </div>
                               </div>
                               <div class="col-sm-6 col-md-3	col-lg-4	col-xs-12">
+                                
                                 <div class="opt_flex--container data-cadge flex-direction">
-                                  <div class="opt_flex__item horizontally-center opt-txt__body2 text-truncate">
-                                    Package | <span class="symbol_icon"><i class="material-icons mat-btn-icon-btn opt_txt_color_tertiary  indicator-icon">image</i>
-                                    </span>
-                                  </div>
-                                  <div class="opt_flex__item horizontally-center opt-txt__body1-small opt-txt__secondary text-truncate">
-                                    04-Jan-2018 <i class="material-icons">arrow_right_alt</i>04-Jan-2018
-                                  </div>
+                                    <div class="opt_flex__item des-box ">
+                                        <div class="opt-txt__body2 opt-fontweight--bold">Package | <span class="symbol_icon"><i class="material-icons opt_txt_color_tertiary">note</i></span></div>
+                                        <div class="opt-txt__secondary opt-txt__body1-small"> 04-Jan-2018 <span class="symbol_icon"><i class="material-icons">arrow_right_alt</i></span>04-Jan-2018</div>
+                                      </div>
                                 </div>
                               </div>
                               <div class="col-sm-4 col-md-1	col-lg-1	col-xs-12">
@@ -600,10 +599,10 @@
                               </div>
                               <div class="col-sm-4 col-md-2 col-lg-2	col-xs-12">
                                 <div class="opt_flex--container data-cadge">
-                                  <div class="opt_flex__item horizontally-center opt-txt__body2 text-truncate">
+                                  <div class="opt_flex__item horizontally-center opt-txt__body2 text-truncate p100">
                                     <span class="symbol_icon"><i class="material-icons">call_made</i></span> Alex
                                   </div>
-                                  <div class="opt_flex__item horizontally-center opt-txt__body1-small opt-txt__secondary text-truncate">
+                                  <div class="opt_flex__item horizontally-center opt-txt__body1-small opt-txt__secondary text-truncate p100">
                                     <span class="symbol_icon"><i class="material-icons">call_received</i></span>
                                     harry@abc.com | Client
                                   </div>
@@ -647,13 +646,10 @@
                       </div>
                       <div class="col-sm-6 col-md-3	col-lg-4	col-xs-12">
                         <div class="opt_flex--container data-cadge flex-direction">
-                          <div class="opt_flex__item horizontally-center opt-txt__body2 text-truncate">
-                            Package | <span class="symbol_icon"><i class="material-icons mat-btn-icon-btn opt_txt_color_tertiary  indicator-icon">image</i>
-                            </span>
-                          </div>
-                          <div class="opt_flex__item horizontally-center opt-txt__body1-small opt-txt__secondary text-truncate">
-                            01-Jan-2018 <i class="material-icons">arrow_right_alt</i>02-Jan-2018
-                          </div>
+                            <div class="opt_flex__item des-box ">
+                                <div class="opt-txt__body2 opt-fontweight--bold">Package | <span class="symbol_icon"><i class="material-icons opt_txt_color_tertiary">note</i></span></div>
+                                <div class="opt-txt__secondary opt-txt__body1-small"> 04-Jan-2018 <span class="symbol_icon"><i class="material-icons">arrow_right_alt</i></span>04-Jan-2018</div>
+                              </div>
                         </div>
                       </div>
                       <div class="col-sm-4 col-md-1	col-lg-1	col-xs-12">
@@ -663,10 +659,10 @@
                       </div>
                       <div class="col-sm-4 col-md-2 col-lg-2	col-xs-12">
                         <div class="opt_flex--container data-cadge">
-                          <div class="opt_flex__item horizontally-center opt-txt__body2 text-truncate">
+                          <div class="opt_flex__item horizontally-center opt-txt__body2 text-truncate p100">
                             <span class="symbol_icon"><i class="material-icons">call_made</i></span> Alex
                           </div>
-                          <div class="opt_flex__item horizontally-center opt-txt__body1-small opt-txt__secondary text-truncate">
+                          <div class="opt_flex__item horizontally-center opt-txt__body1-small opt-txt__secondary text-truncate p100">
                             <span class="symbol_icon"><i class="material-icons">call_received</i></span> harry@abc.com
                             | Client
                           </div>
@@ -706,11 +702,10 @@
                               </div>
                               <div class="col-sm-6 col-md-3	col-lg-4	col-xs-12">
                                 <div class="opt_flex--container data-cadge flex-direction">
-                                  <div class="opt_flex__item horizontally-center opt-txt__body2 text-truncate"> Package
-                                  </div>
-                                  <div class="opt_flex__item horizontally-center opt-txt__body1-small opt-txt__secondary text-truncate">
-                                    04-Jan-2018 <i class="material-icons">arrow_right_alt</i>04-Jan-2018
-                                  </div>
+                                    <div class="opt_flex__item des-box ">
+                                        <div class="opt-txt__body2 opt-fontweight--bold">Package | <span class="symbol_icon"><i class="material-icons opt_txt_color_tertiary">note</i></span></div>
+                                        <div class="opt-txt__secondary opt-txt__body1-small"> 04-Jan-2018 <span class="symbol_icon"><i class="material-icons">arrow_right_alt</i></span>04-Jan-2018</div>
+                                      </div>
                                 </div>
                               </div>
                               <div class="col-sm-4 col-md-1	col-lg-1	col-xs-12">
@@ -720,10 +715,10 @@
                               </div>
                               <div class="col-sm-4 col-md-2 col-lg-2	col-xs-12">
                                 <div class="opt_flex--container data-cadge">
-                                  <div class="opt_flex__item horizontally-center opt-txt__body2 text-truncate">
+                                  <div class="opt_flex__item horizontally-center opt-txt__body2 text-truncate p100">
                                     <span class="symbol_icon"><i class="material-icons">call_made</i></span> Ahamad
                                   </div>
-                                  <div class="opt_flex__item horizontally-center opt-txt__body1-small opt-txt__secondary text-truncate">
+                                  <div class="opt_flex__item horizontally-center opt-txt__body1-small opt-txt__secondary text-truncate p100">
                                     <span class="symbol_icon"><i class="material-icons">call_received</i></span>
                                     rosy@abc.com | Client
                                   </div>
@@ -833,13 +828,11 @@
                         <div class="row">
                           <div class="col-xs-12 col-sm-12 col-md-7	col-lg-7">
                             <div class="opt_flex--container">
-                              <div class="opt_flex__item chck-box horizontally-center">
-                                <mat-checkbox></mat-checkbox>
-                              </div>
-                              <div class="opt_flex__item des-box horizontally-center">
-                                <span>Select All</span>
-                                <span class="cage_selected opt_txt_color_tertiary">1 Item</span>
-                              </div>
+                                <div class="opt_flex__item horizontally-center">
+                                    <mat-checkbox>
+                                        <span class="opt-txt__body1">Select All</span>
+                                      </mat-checkbox>
+                                </div>
                             </div>
                           </div>
                         </div>
@@ -853,8 +846,8 @@
                                 <mat-checkbox></mat-checkbox>
                               </div>
                               <div class="opt_flex__item des-box ">
-                                <div class="opt-txt__body2-small opt-fontweight--bold">Payment Term</div>
-                                <div class="opt-txt__secondary">80% | 19-Jan-2018</div>
+                                <div class="opt-txt__body2">Payment Term</div>
+                                <div class="opt-txt__secondary opt-txt__body1-small">80% | 19-Jan-2018</div>
                               </div>
                             </div>
                           </div>
@@ -877,7 +870,7 @@
                             <div class="col-xs-12 col-sm-3 col-md-3	col-lg-3">
                                 <div class="opt_flex--container">
                                   <div class="opt_flex__item des-box opt-txt__align-right">
-                                    <div class="opt-txt__body2-small">£108.85</div>
+                                    <div class="opt-txt__body2">£108.85</div>
                                     <div class="opt_txt_color_tertiary opt-txt__body1-small">Balance Due</div>
                                   </div>
                                 </div>
@@ -892,8 +885,8 @@
                                   <mat-checkbox></mat-checkbox>
                                 </div>
                                 <div class="opt_flex__item des-box ">
-                                  <div class="opt-txt__body2-small opt-fontweight--bold">Payment Term</div>
-                                  <div class="opt-txt__secondary">80% | 19-Jan-2018</div>
+                                  <div class="opt-txt__body2">Payment Term</div>
+                                  <div class="opt-txt__secondary opt-txt__body1-small">80% | 19-Jan-2018</div>
                                 </div>
                               </div>
                             </div>
@@ -901,7 +894,7 @@
                               <div class="opt_flex--container">
                                 <div class="opt_flex__item des-box opt-txt__align-right">
                                   <div class="opt-txt__body2 opt-fontweight--bold opt_txt_color_tertiary">Amount Due</div>
-                                  <div class=""> £50.00</div>
+                                  <div class="opt-txt__body2-small"> £50.00</div>
                                 </div>
                               </div>
                             </div>
@@ -909,14 +902,14 @@
                                 <div class="opt_flex--container">
                                   <div class="opt_flex__item des-box opt-txt__align-right">
                                     <div class="opt-txt__body2 opt-fontweight--bold opt_txt_color_tertiary">Paid Amount</div>
-                                    <div class="">£5660.00</div>
+                                    <div class="opt-txt__body2-small">£5660.00</div>
                                   </div>
                                 </div>
                               </div>
                               <div class="col-xs-12 col-sm-3 col-md-3	col-lg-3">
                                   <div class="opt_flex--container">
                                     <div class="opt_flex__item des-box opt-txt__align-right">
-                                      <div class="opt-txt__body2-small opt-fontweight--bold">£108.85</div>
+                                      <div class="opt-txt__body2 opt-fontweight--bold">£108.85</div>
                                       <div class="opt_txt_color_tertiary opt-txt__body1-small">Balance Due</div>
                                     </div>
                                   </div>
@@ -937,13 +930,12 @@
                         <div class="row">
                           <div class="col-xs-12 col-sm-12 col-md-7	col-lg-7">
                             <div class="opt_flex--container">
-                              <div class="opt_flex__item chck-box horizontally-center">
-                                <mat-checkbox></mat-checkbox>
-                              </div>
-                              <div class="opt_flex__item des-box horizontally-center">
-                                <span>Select All</span>
-                                <span class="cage_selected opt_txt_color_tertiary">1 Item</span>
-                              </div>
+                                <div class="opt_flex__item  horizontally-center ">
+                                    <mat-checkbox>
+                                        <span class="opt-txt__body1">Select All</span>
+                                      </mat-checkbox>
+                                      <span class="cage_selected opt_txt_color_tertiary">1 Item</span>
+                                </div>
                             </div>
                           </div>
                         </div>
@@ -957,22 +949,17 @@
                                 <mat-checkbox></mat-checkbox>
                               </div>
                               <div class="opt_flex__item des-box ">
-                                <div class="opt-txt__body2-small opt-fontweight--bold">092883 | Box Office Event 1 Item</div>
-                                <div class="opt-txt__secondary ">
-                                  <div class="symbol_icon">
-                                    <i class="icon-icn-invoice"></i>
-                                  </div>
-                                  <span class=""> | 19-Jan-2018</span>
+                                  <div class="opt-txt__body2 opt-fontweight--bold">092883 | Box Office Event 1 Item</div>
+                                  <div class="opt-txt__secondary opt-txt__body1-small"><span class=""><i class="icon-icn-invoice icon-small"></i></span> | 19-Jan-2018</div>
                                 </div>
-                              </div>
                             </div>
                           </div>
                           <div class="col-xs-12 col-sm-3 col-md-3	col-lg-3">
                             <div class="opt_flex--container">
-                              <div class="opt_flex__item des-box payment-desc">
-                                <p class="opt-txt__body2-small opt_txt_color_tertiary">3509 Chimney Road Drive, UK</p>
-                                <p class="opt_flex__item horizontally-center opt_txt_color_tertiary opt-txt__body1-small full-width text-truncate">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-                              </div>
+                                <div class="opt_flex__item des-box ">
+                                    <div class="opt-txt__body2 opt-link--primary">3509 Chimney Road Drive, UK</div>
+                                    <div class="opt-txt__secondary opt-txt__body1-small">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</div>
+                                  </div>
                             </div>
                           </div>
                           <div class="col-xs-12 col-sm-2 col-md-2	col-lg-2">
@@ -1016,13 +1003,12 @@
                     <div class="row">
                       <div class="col-xs-12 col-sm-12 col-md-7	col-lg-7">
                         <div class="opt_flex--container">
-                          <div class="opt_flex__item chck-box horizontally-center">
-                            <mat-checkbox></mat-checkbox>
-                          </div>
-                          <div class="opt_flex__item des-box horizontally-center">
-                            <span>Select All <span class="cage_selected opt_txt_color_tertiary">
-                                2 Items</span></span>
-                          </div>
+                            <div class="opt_flex__item  horizontally-center ">
+                                <mat-checkbox>
+                                    <span class="opt-txt__body1">Select All</span>
+                                  </mat-checkbox>
+                                  <span class="cage_selected opt_txt_color_tertiary">2 Item</span>
+                            </div>
                         </div>
                       </div>
                       <div class="col-xs-12 col-sm-12 col-md-5	col-lg-5 just-content-end">
@@ -1040,7 +1026,7 @@
                   <mat-expansion-panel #myPanel5 [disabled]="true" class="opt-expand--line payments-list-item">
                     <mat-expansion-panel-header collapsedHeight="55px" expandedHeight="55px">
                       <div class="opt_expand--container">
-                        <mat-panel-title>
+                        <mat-panel-title class="horizontally-center">
                           <div class="opt_flex__item __expansion-lft--side">
                             <div class="row">
                               <div class="col-xs-12 col-sm-3 col-md-3	col-lg-3">
@@ -1048,28 +1034,24 @@
                                   <div class="opt_flex__item chck-box tc-flex-item__center">
                                     <mat-checkbox></mat-checkbox>
                                   </div>
-                                  <div class="opt_flex__item des-box tc-flex-item__center">
-                                    <div class="opt-txt__body2-small 	opt-fontweight--bolder">
-                                      <div class="text-truncate"> PVY46 </div>
+                                  <div class="opt_flex__item des-box ">
+                                      <div class="opt-txt__body2 opt-fontweight--bold">PVY46 </div>
+                                      <div class="opt-txt__secondary opt-txt__body1-small"> Mode</div>
                                     </div>
-                                    <div class="opt_txt_color_tertiary opt-txt__body1-small text-truncate">Mode</div>
-                                  </div>
                                 </div>
                               </div>
                               <div class="col-xs-12 col-sm-4 col-md-5	col-lg-5">
                                 <div class="opt_flex--container">
-                                  <div class="opt_flex__item tc-flex-item__center">
-                                    <div class="opt-txt__body2">Host <i class="material-icons">arrow_right_alt</i> Host
-                                      Name </div>
-                                    <div class="opt-txt__body2 opt_txt_color_tertiary">Client <i class="material-icons">arrow_right_alt</i>
-                                      Client Name </div>
-                                  </div>
+                                    <div class="opt_flex__item des-box ">
+                                        <div class="opt-txt__body2">Host <span class="symbol_icon"><i class="material-icons">arrow_right_alt</i></span> Host Name </div>
+                                        <div class="opt-txt__secondary opt-txt__body1-small">Client <span class="symbol_icon"><i class="material-icons">arrow_right_alt</i></span>Client Name </div>
+                                      </div>
                                 </div>
                               </div>
                               <div class="col-xs-12 col-sm-2 col-md-1	col-lg-2">
                                 <div class="opt_flex--container">
                                   <div class="opt_flex__item tc-flex-item__center">
-                                    <div class="opt-txt__primary opt-txt__body1-small">Amount</div>
+                                    <div class="opt-txt__body2">Amount</div>
                                     <div class="opt_txt_color_tertiary opt-txt__body1-small">Voucher</div>
                                   </div>
                                 </div>
@@ -1100,7 +1082,7 @@
                       <div class="col-xs-12 col-sm-6 col-md-3	col-lg-3">
                         <div class="opt_flex--container data-cadge">
                           <div class="opt_flex__item  tc-flex-item__center padding-left">
-                            <div class="opt-txt__body2-small opt-fontweight--bold text-truncate"> Package Name</div>
+                            <div class="opt-txt__body2 text-truncate"> Package Name</div>
                             <div class="opt_txt_color_tertiary opt-txt__body1-small text-truncate">Voucher Expiry date</div>
                           </div>
                         </div>
@@ -1117,7 +1099,7 @@
                       <div class="col-xs-12 col-sm-4 col-md-1	col-lg-2">
                         <div class="opt_flex--container data-cadge">
                           <div class="opt_flex__item tc-flex-item__center">
-                            <div class="opt-txt__primary opt-txt__body1-small">Date</div>
+                            <div class="opt-txt__body2">Date</div>
                             <div class="opt_txt_color_tertiary opt-txt__body1-small">Notes</div>
                           </div>
                         </div>
@@ -1125,112 +1107,107 @@
                       <div class="col-xs-12 col-sm-4 col-md-3	col-lg-2">
                         <div class="opt_flex--container data-cadge">
                           <div class="opt_flex__item tc-flex-item__center">
-                            <div class="opt-txt__primary opt-txt__body1-small">Cancelled<i class="material-icons icn-right">close</i></div>
+                            <div class="opt-txt__body2">Cancelled<i class="material-icons icn-right">close</i></div>
                             <div class="opt_txt_color_tertiary opt-txt__body1-small">Original Payment</div>
                           </div>
                         </div>
                       </div>
                     </div>
                   </mat-expansion-panel>
-                </mat-accordion>
-
-                <mat-accordion>
                   <mat-expansion-panel #myPanel6 [disabled]="true" class="opt-expand--line payments-list-item">
-                    <mat-expansion-panel-header collapsedHeight="55px" expandedHeight="55px">
-                      <div class="opt_expand--container">
-                        <mat-panel-title>
-                          <div class="opt_flex__item __expansion-lft--side">
-                            <div class="row">
-                              <div class="col-xs-12 col-sm-3 col-md-3	col-lg-3">
-                                <div class="opt_flex--container">
-                                  <div class="opt_flex__item chck-box tc-flex-item__center">
-                                    <mat-checkbox></mat-checkbox>
-                                  </div>
-                                  <div class="opt_flex__item des-box tc-flex-item__center">
-                                    <div class="opt-txt__body2-small 	opt-fontweight--bolder">
-                                      <div class="text-truncate"> PVY46 </div>
+                      <mat-expansion-panel-header collapsedHeight="55px" expandedHeight="55px">
+                        <div class="opt_expand--container">
+                          <mat-panel-title class="horizontally-center">
+                            <div class="opt_flex__item __expansion-lft--side">
+                              <div class="row">
+                                <div class="col-xs-12 col-sm-3 col-md-3	col-lg-3">
+                                  <div class="opt_flex--container">
+                                    <div class="opt_flex__item chck-box tc-flex-item__center">
+                                      <mat-checkbox></mat-checkbox>
                                     </div>
-                                    <div class="opt_txt_color_tertiary opt-txt__body1-small text-truncate">Mode</div>
+                                    <div class="opt_flex__item des-box ">
+                                        <div class="opt-txt__body2 opt-fontweight--bold">PVY46 </div>
+                                        <div class="opt-txt__secondary opt-txt__body1-small"> Mode</div>
+                                      </div>
                                   </div>
                                 </div>
-                              </div>
-                              <div class="col-xs-12 col-sm-4 col-md-5	col-lg-5">
-                                <div class="opt_flex--container">
-                                  <div class="opt_flex__item tc-flex-item__center">
-                                    <div class="opt-txt__body2">Host <i class="material-icons">arrow_right_alt</i> Host
-                                      Name </div>
-                                    <div class="opt-txt__body2 opt_txt_color_tertiary">Client <i class="material-icons">arrow_right_alt</i>
-                                      Client Name </div>
+                                <div class="col-xs-12 col-sm-4 col-md-5	col-lg-5">
+                                  <div class="opt_flex--container">
+                                      <div class="opt_flex__item des-box ">
+                                          <div class="opt-txt__body2">Host <span class="symbol_icon"><i class="material-icons">arrow_right_alt</i></span> Host Name </div>
+                                          <div class="opt-txt__secondary opt-txt__body1-small">Client <span class="symbol_icon"><i class="material-icons">arrow_right_alt</i></span>Client Name </div>
+                                        </div>
                                   </div>
                                 </div>
-                              </div>
-                              <div class="col-xs-12 col-sm-2 col-md-1	col-lg-2">
-                                <div class="opt_flex--container">
-                                  <div class="opt_flex__item tc-flex-item__center">
-                                    <div class="opt-txt__primary opt-txt__body1-small">Amount</div>
-                                    <div class="opt_txt_color_tertiary opt-txt__body1-small">Voucher</div>
+                                <div class="col-xs-12 col-sm-2 col-md-1	col-lg-2">
+                                  <div class="opt_flex--container">
+                                    <div class="opt_flex__item tc-flex-item__center">
+                                      <div class="opt-txt__body2">Amount</div>
+                                      <div class="opt_txt_color_tertiary opt-txt__body1-small">Voucher</div>
+                                    </div>
                                   </div>
                                 </div>
-                              </div>
-                              <div class="col-xs-12 col-sm-3 col-md-3	col-lg-2">
-                                <div class="opt_flex__item opt-txt__align-right">
-                                  <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">edit</i></button>
-                                  <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">delete</i></button>
+                                <div class="col-xs-12 col-sm-3 col-md-3	col-lg-2">
+                                  <div class="opt_flex__item opt-txt__align-right">
+                                    <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">edit</i></button>
+                                    <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">delete</i></button>
+                                  </div>
                                 </div>
                               </div>
                             </div>
-                          </div>
-                          <div class="opt_flex__item __expansion-rgt--side">
-                            <div class="col tc-flex-item__center">
-                              <div class="opt_flex__item action__button tc-flex-item__center">
-                                <button class="down-arrow" mat-icon-button color="primary" (click)="expandPannel6()"
-                                  [disableRipple]="true">
-                                  <mat-icon class="opt_color_icon_font">{{matIcon6}}</mat-icon>
-                                </button>
+                            <div class="opt_flex__item __expansion-rgt--side">
+                              <div class="col tc-flex-item__center">
+                                <div class="opt_flex__item action__button tc-flex-item__center">
+                                  <button class="down-arrow" mat-icon-button color="primary" (click)="expandPannel6()"
+                                    [disableRipple]="true">
+                                    <mat-icon class="opt_color_icon_font">{{matIcon6}}</mat-icon>
+                                  </button>
+                                </div>
                               </div>
                             </div>
+                          </mat-panel-title>
+                        </div>
+                      </mat-expansion-panel-header>
+  
+                      <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-3	col-lg-3">
+                          <div class="opt_flex--container data-cadge">
+                            <div class="opt_flex__item  tc-flex-item__center padding-left">
+                              <div class="opt-txt__body2 text-truncate"> Package Name</div>
+                              <div class="opt_txt_color_tertiary opt-txt__body1-small text-truncate">Voucher Expiry date</div>
+                            </div>
                           </div>
-                        </mat-panel-title>
-                      </div>
-                    </mat-expansion-panel-header>
-
-                    <div class="row">
-                      <div class="col-xs-12 col-sm-6 col-md-3	col-lg-3">
-                        <div class="opt_flex--container data-cadge">
-                          <div class="opt_flex__item  tc-flex-item__center padding-left">
-                            <div class="opt-txt__body2-small opt-fontweight--bold text-truncate"> Package Name</div>
-                            <div class="opt_txt_color_tertiary opt-txt__body1-small text-truncate">Voucher Expiry date</div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-5	col-lg-5">
+                          <div class="opt_flex--container data-cadge">
+                            <div class="opt_flex__item tc-flex-item__center">
+                              <div class="opt-txt__body2">Extension Letter Checked By </div>
+                              <div class="opt-txt__body2 ">Extensioin Letter Checked By | <span class="opt_txt_color_tertiary">Taken
+                                  By</span> </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-1	col-lg-2">
+                          <div class="opt_flex--container data-cadge">
+                            <div class="opt_flex__item tc-flex-item__center">
+                              <div class="opt-txt__body2">Date</div>
+                              <div class="opt_txt_color_tertiary opt-txt__body1-small">Notes</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-3	col-lg-2">
+                          <div class="opt_flex--container data-cadge">
+                            <div class="opt_flex__item tc-flex-item__center">
+                              <div class="opt-txt__body2">Cancelled<i class="material-icons icn-right">close</i></div>
+                              <div class="opt_txt_color_tertiary opt-txt__body1-small">Original Payment</div>
+                            </div>
                           </div>
                         </div>
                       </div>
-                      <div class="col-xs-12 col-sm-6 col-md-5	col-lg-5">
-                        <div class="opt_flex--container data-cadge">
-                          <div class="opt_flex__item tc-flex-item__center">
-                            <div class="opt-txt__body2">Extension Letter Checked By </div>
-                            <div class="opt-txt__body2 ">Extensioin Letter Checked By | <span class="opt_txt_color_tertiary">Taken
-                                By</span> </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-xs-12 col-sm-4 col-md-1	col-lg-2">
-                        <div class="opt_flex--container data-cadge">
-                          <div class="opt_flex__item tc-flex-item__center">
-                            <div class="opt-txt__primary opt-txt__body1-small">Date</div>
-                            <div class="opt_txt_color_tertiary opt-txt__body1-small">Notes</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-xs-12 col-sm-4 col-md-3	col-lg-2">
-                        <div class="opt_flex--container data-cadge">
-                          <div class="opt_flex__item tc-flex-item__center">
-                            <div class="opt-txt__primary opt-txt__body1-small">Cancelled<i class="material-icons icn-right">close</i></div>
-                            <div class="opt_txt_color_tertiary opt-txt__body1-small">Original Payment</div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </mat-expansion-panel>
+                    </mat-expansion-panel>
                 </mat-accordion>
+
+                
               </mat-tab>
             </div>
           </mat-tab-group>
@@ -1260,12 +1237,11 @@
                     <div class="row">
                       <div class="col-xs-12 col-sm-12 col-md-7	col-lg-7">
                         <div class="opt_flex--container">
-                          <div class="opt_flex__item chck-box horizontally-center">
-                            <mat-checkbox></mat-checkbox>
-                          </div>
-                          <div class="opt_flex__item des-box horizontally-center">
-                            <span>Select All</span>
-                          </div>
+                            <div class="opt_flex__item  horizontally-center ">
+                                <mat-checkbox>
+                                    <span class="opt-txt__body1">Select All</span>
+                                  </mat-checkbox>
+                            </div>
                         </div>
                       </div>
                       <div class="col-xs-12 col-sm-12 col-md-5	col-lg-5 just-content-end">
@@ -1430,13 +1406,12 @@
                     <div class="row">
                       <div class="col-xs-12 col-sm-12 col-md-7	col-lg-7">
                         <div class="opt_flex--container">
-                          <div class="opt_flex__item chck-box horizontally-center">
-                            <mat-checkbox></mat-checkbox>
-                          </div>
-                          <div class="opt_flex__item des-box horizontally-center">
-                            <span>Select All</span>
-                            <span class="cage_selected opt_txt_color_tertiary">3 Items</span>
-                          </div>
+                            <div class="opt_flex__item  horizontally-center ">
+                                <mat-checkbox>
+                                    <span class="opt-txt__body1">Select All</span>
+                                  </mat-checkbox>
+                                  <span class="cage_selected opt_txt_color_tertiary">3 Item</span>
+                            </div>
                         </div>
                       </div>
                       <div class="col-xs-12 col-sm-12 col-md-5	col-lg-5 just-content-end">
@@ -1467,14 +1442,10 @@
                           <div class="opt_flex__item chck-box tc-flex-item__center">
                             <mat-checkbox></mat-checkbox>
                           </div>
-                          <div class="opt_flex__item des-box tc-flex-item__center">
-                            <div class="opt-txt__body2-small opt-fontweight--bold title_box">
-                              <div class="text-truncate">092883 | Country Stand Admission</div>
+                          <div class="opt_flex__item des-box ">
+                              <div class="opt-txt__body2 opt-fontweight--bold"> 092883 | Country Stand Admission </div>
+                              <div class="opt-txt__secondary opt-txt__body1-small"> Delivery Method | Box Office Collection</div>
                             </div>
-                            <div class="opt_txt_color_tertiary opt-txt__body1-small text-truncate">
-                              <div class="client_box">Delivery Method | Box Office Collection</div>
-                            </div>
-                          </div>
                         </div>
                       </div>
                       <div class="col-xs-12 col-sm-6 col-md-2	col-lg-2">
@@ -1492,9 +1463,10 @@
                       <div class="col-xs-12 col-sm-6 col-md-4	col-lg-4">
                         <div class="opt_flex--container">
                           <div class="opt_flex__item tc-flex-item__center">
-                            <div class="opt-txt__body2 opt-link--primary text-truncate">
-                              <div [matMenuTriggerFor]="menu" class="address"> 3509 Chimney Road Drive, UK </div>
-                            </div>
+                              <div class="opt_flex__item des-box ">
+                                  <div [matMenuTriggerFor]="menu" class="address opt-txt__body2 opt-fontweight--bold opt-link--primary"> 3509 Chimney Road Drive, UK </div>
+                                  <div class="opt-txt__secondary opt-txt__body1-small"> Lorem ipsum dolor sit amet,consectetuer adipiscing elit</div>
+                              </div>
                             <mat-menu #menu="matMenu">
                               <span class="opt-txt__secondary opt-txt__body2">Invoice Addresses</span>
                               <button mat-menu-item>Anglr House, 1 Postley Road, Kempston</button>
@@ -1502,11 +1474,6 @@
                               <button mat-menu-item>Anglr House, 1 Postley Road, Kempston</button>
                               <span class="opt-txt__body2">--New Addresses--</span>
                             </mat-menu>
-                            <div class="opt_flex__item horizontally-center">
-                              <div class="opt_txt_color_tertiary opt-txt__body1-small">
-                                <div class="text-truncate">Lorem ipsum dolor sit amet,consectetuer adipiscing elit</div>
-                              </div>
-                            </div>
 
                           </div>
                         </div>
@@ -1528,14 +1495,10 @@
                           <div class="opt_flex__item chck-box tc-flex-item__center">
                             <mat-checkbox></mat-checkbox>
                           </div>
-                          <div class="opt_flex__item des-box tc-flex-item__center">
-                            <div class="opt-txt__body2-small opt-fontweight--bold title_box">
-                              <div class="text-truncate">092883 | Country Stand Admission</div>
+                          <div class="opt_flex__item des-box ">
+                              <div class="opt-txt__body2 opt-fontweight--bold"> 092883 | Country Stand Admission </div>
+                              <div class="opt-txt__secondary opt-txt__body1-small"> Delivery Method | Box Office Collection</div>
                             </div>
-                            <div class="opt_txt_color_tertiary opt-txt__body1-small text-truncate">
-                              <div class="client_box">Delivery Method | Box Office Collection</div>
-                            </div>
-                          </div>
                         </div>
                       </div>
                       <div class="col-xs-12 col-sm-6 col-md-2	col-lg-2">
@@ -1552,16 +1515,10 @@
                       </div>
                       <div class="col-xs-12 col-sm-6 col-md-4	col-lg-4">
                         <div class="opt_flex--container">
-                          <div class="opt_flex__item tc-flex-item__center">
-                            <div class="opt-txt__body2 opt-link--primary text-truncate">
-                              <div class="address"> 3509 Chimney Road Drive, UK </div>
+                            <div class="opt_flex__item des-box ">
+                                <div class="opt-txt__body2 opt-fontweight--bold opt-link--primary"> 3509 Chimney Road Drive, UK </div>
+                                <div class="opt-txt__secondary opt-txt__body1-small"> Lorem ipsum dolor sit amet,consectetuer adipiscing elit</div>
                             </div>
-                            <div class="opt_flex__item horizontally-center">
-                              <div class="opt_txt_color_tertiary opt-txt__body1-small">
-                                <div class="text-truncate">Lorem ipsum dolor sit amet,consectetuer adipiscing elit</div>
-                              </div>
-                            </div>
-                          </div>
                         </div>
                       </div>
                       <div class="col-xs-12 col-sm-4 col-md-3	col-lg-3">
@@ -1582,13 +1539,10 @@
                           <div class="opt_flex__item chck-box tc-flex-item__center">
                             <mat-checkbox></mat-checkbox>
                           </div>
-                          <div class="opt_flex__item des-box tc-flex-item__center">
-                            <div class="opt-txt__body2-small opt-fontweight--bold title_box">092883 | Country Stand
-                              Admission</div>
-                            <div class="opt_txt_color_tertiary opt-txt__body1-small">
-                              <div class="client_box">Delivery Method | Box Office Collection</div>
+                          <div class="opt_flex__item des-box ">
+                              <div class="opt-txt__body2 opt-fontweight--bold"> 092883 | Country Stand Admission </div>
+                              <div class="opt-txt__secondary opt-txt__body1-small"> Delivery Method | Box Office Collection</div>
                             </div>
-                          </div>
                         </div>
                       </div>
                       <div class="col-xs-12 col-sm-6 col-md-2	col-lg-2">
@@ -1605,16 +1559,10 @@
                       </div>
                       <div class="col-xs-12 col-sm-6 col-md-4	col-lg-4">
                         <div class="opt_flex--container">
-                          <div class="opt_flex__item tc-flex-item__center">
-                            <div class="opt-txt__body2 opt-link--primary text-truncate">
-                              <div class="address"> 3509 Chimney Road Drive, UK </div>
+                            <div class="opt_flex__item des-box ">
+                                <div class="opt-txt__body2 opt-fontweight--bold opt-link--primary"> 3509 Chimney Road Drive, UK </div>
+                                <div class="opt-txt__secondary opt-txt__body1-small"> Lorem ipsum dolor sit amet,consectetuer adipiscing elit</div>
                             </div>
-                            <div class="opt_flex__item horizontally-center">
-                              <div class="opt_txt_color_tertiary opt-txt__body1-small">
-                                <div class="text-truncate">Lorem ipsum dolor sit amet,consectetuer adipiscing elit</div>
-                              </div>
-                            </div>
-                          </div>
                         </div>
                       </div>
                       <div class="col-xs-12 col-sm-4 col-md-3	col-lg-3">
@@ -1654,13 +1602,12 @@
                 <div class="row">
                   <div class="col-xs-12 col-sm-12 col-md-7	col-lg-7">
                     <div class="opt_flex--container">
-                      <div class="opt_flex__item chck-box horizontally-center">
-                        <mat-checkbox></mat-checkbox>
-                      </div>
-                      <div class="opt_flex__item des-box horizontally-center">
-                        <span>Select All</span>
-                        <span class="cage_selected opt_txt_color_tertiary">2 Items</span>
-                      </div>
+                        <div class="opt_flex__item  horizontally-center ">
+                            <mat-checkbox>
+                                <span class="opt-txt__body1">Select All</span>
+                              </mat-checkbox>
+                              <span class="cage_selected opt_txt_color_tertiary">2 Item</span>
+                        </div>
                     </div>
                   </div>
                   <div class="col-xs-12 col-sm-12 col-md-5	col-lg-5 just-content-end">
@@ -1692,21 +1639,18 @@
                               <div class="opt_flex__item chck-box horizontally-center">
                                 <mat-checkbox></mat-checkbox>
                               </div>
-                              <div class="opt_flex__item des-box">
-                                <div class="opt-txt__body2 opt-fontweight--bold opt-txt__body2 text-truncate"> Gold
-                                  Ticket Bo Package <i class="opt-txt__body1-small icn-number">5</i></div>
-                                <div class="opt-txt__body1-small opt-txt__secondary">26-Dec-2018</div>
+                              <div class="opt_flex__item des-box ">
+                                  <div class="opt-txt__body2 opt-fontweight--bold"> Gold Ticket Bo Package <i class="opt-txt__body1-small icn-number">5</i> </div>
+                                  <div class="opt-txt__secondary opt-txt__body1-small">26-Dec-2018</div>
                               </div>
                             </div>
                           </div>
                           <div class="col-xs-12 col-sm-6 col-md-3	col-lg-3">
                             <div class="opt_flex--container ">
-                              <div class="opt_flex__item horizontally-center opt-txt__body2 text-truncate p100">
-                                HST174923 | 26-Dec-2018
-                              </div>
-                              <div class="opt_flex__item horizontally-center opt-txt__body1-small opt-txt__secondary text-truncate p100">
-                                Ms.Belind Griffiths
-                              </div>
+                                <div class="opt_flex__item des-box ">
+                                    <div class="opt-txt__body2 opt-fontweight--bold"> HST174923 | 26-Dec-2018 </div>
+                                    <div class="opt-txt__secondary opt-txt__body1-small">Ms.Belind Griffiths</div>
+                                </div>
                             </div>
                           </div>
                           <div class="col-xs-12 col-sm-6 col-md-3	col-lg-3">
@@ -1748,17 +1692,16 @@
                     </mat-panel-title>
                   </div>
                 </mat-expansion-panel-header>
-                <div class="row">
+                <div class="row  horizontally-center ">
                   <div class="col-sm-6 col-md-3	col-lg-3	col-xs-12">
                     <div class="opt_flex--container">
-                      <div class="opt_flex__item padding-left">
-                        <div class="opt-txt__body2 opt-fontweight--bold opt-txt__body2 text-truncate"> +8134567800
+                        <div class="opt_flex__item des-box padding-left">
+                            <div class="opt-txt__body2 opt-fontweight--bold"> +8134567800</div>
+                            <div class="opt-txt__secondary opt-txt__body1-small">noreply@programus.co.uk</div>
                         </div>
-                        <div class="opt-txt__body1-small opt-txt__secondary">noreply@programus.co.uk</div>
-                      </div>
                     </div>
                   </div>
-                  <div class="col-sm-6 col-md-3	col-lg-3	col-xs-12">
+                  <div class="col-sm-6 col-md-3	col-lg-3	col-xs-12  horizontally-center ">
                     <div class="opt_flex__item horizontally-center opt-txt__body1-small text-truncate opt-txt__secondary">
                       344 Chiswick Hidh Road London, W45YA.
                     </div>
@@ -1785,115 +1728,108 @@
                   </div>
                 </div>
               </mat-expansion-panel>
-            </mat-accordion>
-
-
-            <!--****2nd row*****-->
-            <mat-accordion>
               <mat-expansion-panel #myPanel8 [disabled]="true" class="opt-expand--line host-list-item">
-                <mat-expansion-panel-header collapsedHeight="55px" expandedHeight="55px">
-                  <div class="opt_expand--container">
-                    <mat-panel-title>
-                      <div class="opt_flex__item __expansion-lft--side">
-                        <div class="row">
-                          <div class="col-xs-12 col-sm-6 col-md-3	col-lg-3">
-                            <div class="opt_flex--container data-cadge">
-                              <div class="opt_flex__item chck-box horizontally-center">
-                                <mat-checkbox></mat-checkbox>
-                              </div>
-                              <div class="opt_flex__item des-box">
-                                <div class="opt-txt__body2 opt-fontweight--bold opt-txt__body2 text-truncate"> No FS
-                                  Category Available</div>
-                                <div class="opt-txt__body1-small opt-txt__secondary">26-Dec-2018</div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-xs-12 col-sm-6 col-md-3	col-lg-3">
-                            <div class="opt_flex--container">
-                              <div class="opt_flex__item horizontally-center opt-txt__body2 text-truncate p100">
-                                HST174923 | 26-Dec-2018
-                              </div>
-                              <div class="opt_flex__item horizontally-center opt-txt__body1-small opt-txt__secondary text-truncate p100">
-                                Ms.Belind Griffiths
+                  <mat-expansion-panel-header collapsedHeight="55px" expandedHeight="55px">
+                    <div class="opt_expand--container">
+                      <mat-panel-title>
+                        <div class="opt_flex__item __expansion-lft--side">
+                          <div class="row">
+                            <div class="col-xs-12 col-sm-6 col-md-3	col-lg-3">
+                              <div class="opt_flex--container data-cadge">
+                                <div class="opt_flex__item chck-box horizontally-center">
+                                  <mat-checkbox></mat-checkbox>
+                                </div>
+                                <div class="opt_flex__item des-box ">
+                                    <div class="opt-txt__body2 opt-fontweight--bold"> Gold Ticket Bo Package </div>
+                                    <div class="opt-txt__secondary opt-txt__body1-small">26-Dec-2018</div>
+                                </div>
                               </div>
                             </div>
-                          </div>
-                          <div class="col-xs-12 col-sm-6 col-md-3	col-lg-3">
-                              <div class="opt_flex--container">
-                                <!-- temporary removed
+                            <div class="col-xs-12 col-sm-6 col-md-3	col-lg-3">
+                              <div class="opt_flex--container ">
+                                  <div class="opt_flex__item des-box ">
+                                      <div class="opt-txt__body2 opt-fontweight--bold"> HST174923 | 26-Dec-2018 </div>
+                                      <div class="opt-txt__secondary opt-txt__body1-small">Ms.Belind Griffiths</div>
+                                  </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-3	col-lg-3">
+                                <div class="opt_flex--container">
+                                  <!-- temporary removed
                            <div class="opt_flex__item horizontally-center opt-txt__body2 opt_lbl_quaternary opt_color_quaternary_lbl status">
                               Status
                             </div>
                             <div class="opt_flex__item horizontally-center opt-txt__body1-small opt-txt__secondary text-truncate">
                               Media
                             </div>-->
-                            <div class="opt_flex__item opt_flex__item--vcenter symbol_icon field-icon p100"><i class="material-icons opt_color_icon_font">info_outline</i></div>
-                            <div class="opt_flex__item opt_flex__item--vcenter field-detail opt-txt__body1-small text-truncate opt-txt__secondary p100">
-                              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
-                              dolor. Aenean massa
+                                  <div class="opt_flex__item opt_flex__item--vcenter symbol_icon field-icon p100"><i class="material-icons opt_color_icon_font">info_outline</i></div>
+                                  <div class="opt_flex__item opt_flex__item--vcenter field-detail opt-txt__body1-small text-truncate opt-txt__secondary p100">
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
+                                    dolor. Aenean massa
+                                  </div>
+                                </div>
                             </div>
-                              </div>
-                          </div>
-                          <div class="col-xs-12 col-sm-2 col-md-3	col-lg-3">
+                            <div class="col-xs-12 col-sm-2 col-md-3	col-lg-3">
                               <div class="opt_flex--container">
                                   <div class="opt_flex__item opt_flex__item--vcenter just-content-end">
                                       <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">edit</i></button>
                                       <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">delete</i></button>
                                     </div>
                               </div>
+                            </div>
                           </div>
                         </div>
-                      </div>
-                      <div class="opt_flex__item __expansion-rgt--side">
-                        <div class="col tc-flex-item__center">
-                          <div class="opt_flex__item action__button tc-flex-item__center">
-                            <button class="down-arrow" mat-icon-button color="primary" (click)="expandPannel8()"
-                              [disableRipple]="true">
-                              <mat-icon class="opt_color_icon_font">{{matIcon8}}</mat-icon>
-                            </button>
+                        <div class="opt_flex__item __expansion-rgt--side">
+                          <div class="col tc-flex-item__center">
+                            <div class="opt_flex__item action__button tc-flex-item__center">
+                              <button class="down-arrow" mat-icon-button color="primary" (click)="expandPannel8()"
+                                [disableRipple]="true">
+                                <mat-icon class="opt_color_icon_font">{{matIcon8}}</mat-icon>
+                              </button>
+                            </div>
                           </div>
                         </div>
-                      </div>
-                    </mat-panel-title>
-                  </div>
-                </mat-expansion-panel-header>
-                <div class="row">
-                  <div class="col-sm-6 col-md-3	col-lg-3	col-xs-12">
-                    <div class="opt_flex--container">
-                      <div class="opt_flex__item padding-left">
-                        <div class="opt-txt__body2 opt-fontweight--bold opt-txt__body2 text-truncate"> +8134567800
-                        </div>
-                        <div class="opt-txt__body1-small opt-txt__secondary">noreply@programus.co.uk</div>
+                      </mat-panel-title>
+                    </div>
+                  </mat-expansion-panel-header>
+                  <div class="row  horizontally-center ">
+                    <div class="col-sm-6 col-md-3	col-lg-3	col-xs-12">
+                      <div class="opt_flex--container">
+                          <div class="opt_flex__item des-box padding-left">
+                              <div class="opt-txt__body2 opt-fontweight--bold"> +8134567800</div>
+                              <div class="opt-txt__secondary opt-txt__body1-small">noreply@programus.co.uk</div>
+                          </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="col-sm-6 col-md-3	col-lg-3	col-xs-12">
-                    <div class="opt_flex__item horizontally-center opt-txt__body1-small text-truncate opt-txt__secondary">
-                      344 Chiswick Hidh Road London, W45YA.
+                    <div class="col-sm-6 col-md-3	col-lg-3	col-xs-12  horizontally-center ">
+                      <div class="opt_flex__item horizontally-center opt-txt__body1-small text-truncate opt-txt__secondary">
+                        344 Chiswick Hidh Road London, W45YA.
+                      </div>
                     </div>
-                  </div>
-                  <!--temporary removed
+                    <!--temporary removed
                 <div class="col-sm-6 col-md-3	col-lg-3	col-xs-12">
                   <div class="opt_flex__item horizontally-center opt-txt__body1-small text-truncate opt-txt__secondary">
                     Instruction
                   </div>
                 </div>-->
-                  <div class="col-sm-6 col-md-3	col-lg-3	col-xs-12">
-                    <div class="opt_flex--container data-cadge">
-                      <div class="opt_flex__item symbol_icon field-icon horizontally-center"><i class="icon-dinner opt_color_icon_font"></i></div>
-                      <div class="opt_flex__item field-detail opt-txt__body1-small text-truncate opt-txt__secondary">
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-                        Aenean massa
+                    <div class="col-sm-6 col-md-3	col-lg-3	col-xs-12">
+                      <div class="opt_flex--container data-cadge">
+                        <div class="opt_flex__item symbol_icon field-icon horizontally-center"><i class="icon-dinner opt_color_icon_font">
+                          </i></div>
+                        <div class="opt_flex__item field-detail opt-txt__body1-small text-truncate opt-txt__secondary">
+                          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                          Aenean massa
+                        </div>
+                        <!-- Moved to header next to host ref
+                   <div class="opt_flex__item horizontally-center opt-txt__secondary opt-txt__body1-small text-truncate">
+                      26-Dec-2018
+                    </div>-->
                       </div>
-                      <!-- Moved to header next to host ref
-                    <div class="opt_flex__item horizontally-center opt-txt__secondary opt-txt__body1-small text-truncate">
-                       26-Dec-2018
-                     </div>-->
                     </div>
                   </div>
-                </div>
-              </mat-expansion-panel>
+                </mat-expansion-panel>
             </mat-accordion>
+
 
 
           </div>
@@ -1920,7 +1856,7 @@
             <div class="header-row">
               <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-7	col-lg-7">
-                  <div class="opt__subtitle-2-small opt_txt_color_tertiary">3 items</div>
+                  <div class="opt-txt__body2 opt_txt_color_tertiary">3 items</div>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-5	col-lg-5 just-content-end">
                   <div class="header_row--action-wrapper btn-group">
