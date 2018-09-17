@@ -1,5 +1,7 @@
 $opt_color_white : #ffffff !default;
 
+$test-my : #d456ee;
+
 $red-50: #ffebee !default;
 $red-100: #ffcdd2 !default;
 $red-200: #ef9a9a !default;
@@ -15,7 +17,7 @@ $red-A200: #ff5252 !default;
 $red-A400: #ff1744 !default;
 $red-A700: #d50000 !default;
 $red: $red-700 !default;
-$red-danger: #f5766c !default;
+//$red-danger: #f5766c !default;
 
 
 $pink-50: #fce4ec !default;
@@ -326,3 +328,4 @@ $blue-grey: $blue-grey-500 !default;
 
 $black: #000000; $rgb-black: "0,0,0" !default;
 $white: #ffffff; $rgb-white: "255,255,255" !default;
+

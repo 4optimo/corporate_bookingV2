@@ -1,3 +1,5 @@
+@import "variables";
+
 .booking-summary {
   border-bottom: 1px solid $separator-border-color;
   color: #3b414d;
@@ -17,7 +19,7 @@
     }
   }
   &.__unavailable {
-    color: #fff;
+    color: $plain;
     .flex-row {
       .col {
         background-color: $badge-danger-bg;
@@ -27,21 +29,21 @@
       }
     }
     .field-icon{
-      color: #fff;
+      color: $plain;
     }
     .details .field .field-icon{
-      color: #fff;
+      color: $plain;
     }
     .font-style-01, .font-style-02, .font-style-03, .font-style-04, .font-style-05, .font-style-06, .font-style-07, .font-style-08{
-      color: #fff;
+      color: $plain;
     }
 
     .link.__default{
-      color: #fff;
+      color: $plain;
     }
 
     .btn.btn-icon{
-      color: #fff;
+      color: $plain;
     }
 
     .badge{
@@ -49,12 +51,12 @@
         background-color: $unavailable-state-dark-bg;
       }
       &.__danger{
-         background-color: #fff;
+         background-color: $plain;
          color: $unavailable-state-dark-bg;
        }
       &.__success{
-          background-color: #f5766c;
-          color: #fff;
+          background-color: $badge-middle-color;
+          color: $plain;
       }
     }
 
@@ -67,7 +69,7 @@
     }
 
     .mat-select *{
-      color: #fff;
+      color: $plain;
     }
   }
 
@@ -302,13 +304,13 @@
 .font-style-04 {
   font-size: 13px;
   font-weight: 500;
-  color: #27bfc2;
+  color: $opt_text_color_secondary;
 }
 
 .font-style-05 {
   font-size: 16px;
   font-weight: 500;
-  color: #27bfc2;
+  color: $opt_text_color_secondary;
 }
 
 .font-style-06 {
@@ -327,7 +329,7 @@
   text-decoration: underline;
   cursor: pointer;
   &.__default {
-    color: #27bfc2;
+    color: $opt_text_color_secondary;
     font-size: 12px;
     font-weight: 400;
   }
@@ -533,7 +535,7 @@ i {
 .opt-booking-summary-select-sm {
   &.themed{
     .mat-select-value{
-      color: #27bfc2;
+      color: $opt_text_color_secondary;
     }
   }
   &.emphd{
@@ -589,10 +591,13 @@ i {
     }
   }
   .warning{
-    color: $warning;
+    //color: $warning;
+    color: $badge-danger-bg;
     transition: all 0.4s ease-in-out;
     &:hover{
-      background-color: $warning;
+      //background-color: $warning;
+      background-color: $badge-danger-bg;
+
       color: $status-hover-font-color;
       transition: all 0.4s ease-in-out;
     }

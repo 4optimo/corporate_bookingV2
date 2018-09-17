@@ -1,0 +1,85 @@
+/*!
+ =========================================================
+ * Corporate booking V4
+ =========================================================
+ * Product Page:
+ * Copyright 2018 Programus Limited
+ * License  Programus Limited
+ =========================================================
+ * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+*/
+$bootstrap-sass-asset-helper: false;
+
+@import "variables";
+
+@import "bootstrap/stylesheets/bootstrap";
+@import "icon-fonts";
+@import "reset";
+@import "mixins/mixins";
+@import "mixins/flexbox";
+
+@import "misc";
+@import "tc-md-typography";
+@import "alerts";
+@import "booking-summary";
+@import "price-popup";
+////@import "./shared/theme/ccs-default-theme/document-select";
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+@import "themeChange";
+@import "theming-material-components";
+
+//@import "./shared/theme/ccs-default-theme/card";
+@import "buttons";
+@import "information";
+//@import "./shared/theme/ccs-default-theme/pop-up";
+@import "booking-details";
+@import "booking-payment";
+@import "booking-main-tabs";
+@import "opt-booking-list";
+@import "opt-section__heading";
+@import "popup-modal";
+@import "booking-list-expand";
+@import "corporate-client-tabs";
+@import "client-list";
+//@import "./shared/theme/ccs-default-theme/tooltip";
+@import "search-panel";
+@import "booking-activities";
+@import "corporate-client-popup";
+@import "chip";
+@import "fab";
+@import "opt-item-popup";
+
+@import "booking-main-tabs";
+
+@import "vendor/AdminLTE";
+@import "vendor/skin-blue";
+@import "vendor/AdminLTE-Override";
+
+@import "library";
+@import "chip-input";
+@import "label";
+@import "color-classes";
+@import "buttons";
+@import "opt_pageloader";
+@import "collection-dispatch-list";
+@import "payment-modal";
+@import "data-table";
+@import "host-add-popup";
+@import "success";
+@import "font/font-awesome/scss/font-awesome.scss";
+@import "item-details";
+@import "package-selection-modal";
+@import "booking-details-full-page";
+@import "package-details";
+@import "item-modal-popovers";
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+html,
+body{
+  font-family: 'Roboto', sans-serif !important;
+}
+
+
+
+
+

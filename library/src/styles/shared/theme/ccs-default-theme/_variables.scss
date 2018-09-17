@@ -6,26 +6,52 @@ $font-family-sans-serif: 'Roboto', 'Helvetica', 'Arial', sans-serif !default;
 $font-family-serif: 'Roboto Slab', 'Times New Roman', serif !default;
 $font-family-rubik:  'Rubik', sans-serif;
 
-
-
-$prefix :'opt_';
-
-
 //<! TO be removed>===============================================================================================
-$ci-bg--color:red;
+$ci-bg--color: #fcff77;
+$opt_color_white : #ffffff;
+$opt-color_black: #000000;
+$opt_color_accent : #7a8aea;
 $ci-col-hover:green;
 $primary:blue;
-
-
-
-
-$opt_color__primary :#4bb3fa;
-$opt_color__secondary :#27bfc2;
+$plain : $opt_color_white !default;
 $opt_color__tertiary :#f5c70e;
 
 
+$test: gray;
+$prefix :'opt_';
 
-$opt_color_white : #ffffff;
+//optimo brand and color codes .....................
+
+$opt_color_primary :#4bb3fa;
+$opt_color_secondary :#27bfc2;
+$opt_color_tertiary :#f5c70e;
+$opt_color_quaternary :#333e47;
+
+
+$background : $test;
+$white-icon: $plain;
+
+//state colors..............
+$no-color--state: #f5766c !default;
+$active-color--state: $green-700 !default;
+$mute-color--state: $grey-700 !default;
+$firm-color--state: $blue-700 !default;
+$alert-color--state: $yellow-700 !default;
+$definite-color--state: $blue-grey-700 !default;
+$quote-color--state: $brown-700 !default;
+$success-color--state:#27bfc2;
+$cancelled-status: #0000;
+$red-danger: $no-color--state;
+
+//<! OPT_ALERT>===================================================================================================
+//$warning : $red-danger;
+//$success : $teal-400;
+
+$opt_color__primary :#4bb3fa;
+$opt_color__secondary :#27bfc2;
+//$opt_color__tertiary :#f5c70e;
+
+
 
 
 
@@ -36,7 +62,7 @@ $cancelled-status: black;
 $confirmed-status: yellow;
 $confirmed-multiple: blue;
 $provisional: red;
-$warning: purple;
+//$warning: purple;
 $tentative: brown;
 $provisional-multiple:grey;
 /*End of Business Colors*/
@@ -63,7 +89,7 @@ $opt-text-color__quaternary:#4bb3fa;
 
 //Link Colours..............................................
 $opt-link-color__primary:#3a424d;
-$opt-link-color__secondary:#27bfc2;
+$opt-link-color__secondary:#27bfc2 !default;
 
 //Border line color.........................................
 $opt-border-color:#e0e0e0;
@@ -72,16 +98,6 @@ $opt-border-color:#e0e0e0;
 //button colors..............
 $opt-btn-color-default : #91a0ad;
 
-
-//state colors..............
-$no-color--state: #f4493c !default;
-$active-color--state: $green-700 !default;
-$mute-color--state: $grey-700 !default;
-$firm-color--state: $blue-700 !default;
-$alert-color--state: $yellow-700 !default;
-$definite-color--state: $blue-grey-700 !default;
-$quote-color--state: $brown-700 !default;
-$success-color--state:#27bfc2;
 
 
 
@@ -128,21 +144,22 @@ $central-content-body-color: $white-color !default;
 
 $central-page-summery-lbl-border-color: #d6d6d6 !default;
 
-$font-color:                 #66615b !default;
+$font-color:#66615b !default;
 
 /* Booking Summary */
-$badge-danger-bg : #f5766c;
-$badge-success-bg : #27bfc2;
+$badge-danger-bg : #f5766c !default;
+//$badge-success-bg : #27bfc2;
 $badge-default-bg : #fff;
 $badge-undefined-bg : #909cac;
 $badge-font-color : #fff;
-$badge-font-color_danger : #b6605a;
+$badge-font-color_danger : #b6605a !default;
+$badge-middle-color: $no-color--state;
+$unavailable-state-bg : #f5766c !default;
+$unavailable-state-dark-bg : #b1554e !default;
+$badge-middle-color: $no-color--state !default;
 
-$unavailable-state-bg : #f5766c;
-$unavailable-state-dark-bg : #b1554e;
-
-$default-state-bg : #fff;
-$default-state-dark-bg : #f5f5f5;
+$default-state-bg : #fff !default;
+$default-state-dark-bg : #f5f5f5 !default;
 
 $separator-border-color: #d3d6d9;
 
@@ -169,16 +186,8 @@ $fab-toggle-bg: red;
 //======================================================
 //                    NEW
 //======================================================
-//optimo brand and color codes .....................
-
-$opt_color_primary :#4bb3fa;
-$opt_color_secondary :#27bfc2;
-$opt_color_tertiary :#f5c70e;
-$opt_color_quaternary :#333e47;
 
 
-$opt_color_white : #ffffff;
-$opt_color_accent : #7a8aea;
 
 /*$opt_color_footer :#454f58;*/
 
@@ -198,11 +207,12 @@ $opt_status_provisional_multiple:#9c27b0;
 
 //==========Text Colors================
 $opt_text_color_primary:#3a424d;
-$opt_text_color_secondary :$opt_color_secondary;
+$opt_text_color_secondary :$opt_color_secondary !default;
 $opt_text_color_tertiary: #909cac;
-$opt_text-color_quaternary:$opt_color_primary;
+$opt_text-color_quaternary:$opt_color_primary !default;
 $opt_text_color_error :#af564e;
 
+$badge-success-bg: $opt_color_secondary !default;
 
 
 
@@ -224,6 +234,6 @@ $opt-border-color:#e0e0e0;
 $fa-font-path: "./shared/theme/ccs-default-theme/font/font-awesome/fonts";
 
 // Variables from classes
-$danger_color : #f5766c;
-$success_color : #26a69a;
-$plain_color : white;
+//$danger_color : #f5766c;
+//$success_color : #26a69a;
+//$plain_color : white;
