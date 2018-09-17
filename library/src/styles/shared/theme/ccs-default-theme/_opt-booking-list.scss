@@ -66,13 +66,13 @@
           }
         }
         .opt-txt__body2-small{
-          line-height: 20px;
+          line-height: 15px;
         }
         .opt-txt__body2-small{
-          line-height: 20px;
+          line-height: 15px;
         }
         .opt-txt__caption{
-          line-height: 20px;
+          line-height: 15px;
         }
       }
       .__expansion-rgt--side{
@@ -236,10 +236,10 @@
     text-align: right;
     align-self: center;
     //padding-right: 23px;
-    .attach_money-icon,.file_copy-icon,.launch-icon{
+    mat-icon{
       color: #909cac;
       //padding: 5px;
-      font-size: 25px;
+      font-size: 20px !important;
       //padding-top: 10px;
     }
   }
@@ -542,6 +542,7 @@ margin-right: 0;
   .opt-section__heading{
   .mat-expansion-indicator{
     line-height: 1;
+    margin-right: 10px;
   }
 
   .mat-expansion-panel.mat-expanded .mat-expansion-panel-content {

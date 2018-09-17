@@ -197,7 +197,10 @@
       }
     }
     .mat-button-wrapper{
+      display: flex;
+      justify-content: center;
       align-items: center;
+      min-height: 22px;
     }
   }
 
@@ -402,6 +405,7 @@
 
       .row {
         display: flex;
+        overflow: hidden;
         [class*=' col-'] {
           display: flex;
           align-items: center;

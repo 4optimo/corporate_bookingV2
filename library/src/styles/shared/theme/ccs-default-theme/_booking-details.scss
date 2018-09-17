@@ -58,7 +58,43 @@
   }
 
   &_booking__detail {
-
+    .lft_btn_cage{
+      .mat-checkbox-label{
+        position: relative;
+        top:0.7px;
+      }
+      _:-ms-lang(x), .mat-checkbox-label { 
+        position: relative;
+        top: -3px;
+      }
+    }
+    .tbl_head{
+      .no-padding-right{
+        padding-right: 0;
+      }
+      button{
+        i{
+          padding-right: 3px;
+        }
+      }
+    }
+    
+    button{
+      i{
+        font-size: 14px;
+      }
+      .mat-button-wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 22px;
+      }
+    }
+    btn-group {
+      i{
+        padding-right: 3px;
+      }
+    }
     .opt_date_range{
 
       .mat-form-field{
@@ -156,7 +192,6 @@
     .mat-accordion{
 
       >.mat-expansion-panel{
-        border-left: 4px solid #fff;
         box-shadow: none;
 
       }
@@ -169,8 +204,8 @@
         &.opt-expand--line.mat-expanded{
           border-left: 4px solid #4bb3fa;
           margin-bottom: 50px;
-          @include box_shadow(3);
-
+          box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+          transition: 0.3s;
         }
 
 
@@ -225,9 +260,8 @@
         color: inherit;
       }
       .mat-expansion-panel-header {
-        padding: 0px;
-        margin-left: 4px;
-        margin-right: 4px;
+        padding: 0 8px;
+        margin-left: 8px;
 
 
 
@@ -277,7 +311,7 @@
       }
 
       .mat-checkbox-layout {
-        margin-left: 15px;
+        margin-left: 7px;
       }
 
     }
@@ -418,6 +452,15 @@
 
 
 
+}
+.mat-menu-item{
+  .mat-icon{
+    margin-right: -5px !important;
+    vertical-align: text-top !important;
+  }
+  .material-icons{
+    font-size: 14px !important;
+  }
 }
 .action__button {
   flex: 1;
@@ -646,7 +689,9 @@
     border-bottom: 1px solid #e3e3e3;
     margin-left: 15px;
     margin-right: 15px;
-
+    h2.opt__heading-2{
+      line-height: 40px;
+    }
     &:last-child {
       border-bottom: none;
     }
@@ -681,7 +726,12 @@
 
     i {
       color: #fff;
+      font-size: 17px;
     }
+    position: relative;
+    top: 2px;
+    height: 27px;
+    width: 27px;
   }
 
 
@@ -696,6 +746,7 @@
 
   i {
     color: #fff;
+    font-size: 17px;
   }
 }
 
@@ -795,9 +846,11 @@
 }
 .mat-menu-content{
   .mat-menu-item{
+    line-height: 40px;
+    height: 40px;
     .mat-icon{
       .icon-icn-package, .icon-icn-item{
-        font-size: 22px !important;
+        font-size: 14px !important;
         vertical-align: text-top;      }
     }
   }

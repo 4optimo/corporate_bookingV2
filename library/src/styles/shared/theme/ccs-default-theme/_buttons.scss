@@ -2,17 +2,15 @@
 .mat-button{
   line-height: inherit !important;
   &.btn-icon-text{
-    border: 1px solid #abb5bf;
     background-color: #fff;
-    border-radius: 5px;
     margin-right: 4px;
     font-size: 12px;
     span{
       color: #333;
       i{
         color: #909cac;
-        padding-right: 5px;
-        font-size: 16px;
+        padding-right: 3px;
+        font-size: 14px;
         margin-top: -2px;
       }
     }
@@ -83,8 +81,13 @@
         color: $opt-color_btn_outline !important;
         text-align: center !important;
         border: 1px solid $opt_color_btn_outline !important;
-
-
+        font-size: 12px !important;
+      .mat-button-wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 22px;
+      }
       &:hover{
         @include box_shadow (1);
         background-color: $opt_color_primary !important;
@@ -108,6 +111,7 @@
         border: 1px solid  $opt_color_primary !important;
         text-align: center !important;
         transition:0.3s !important;
+        font-size: 12px;
         &:hover{
           @include box_shadow (2);
           background-color: $opt_color_primary;
