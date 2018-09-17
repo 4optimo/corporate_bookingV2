@@ -6,7 +6,7 @@
   }
 }
 .opt_booking__list{
-  $danger_color: #f2705b;
+  //$danger_color: #f2705b;
   $plain_color : white;
   $border_color: #b7b7b7;
   $expanded_line: #4bb3fa;
@@ -193,7 +193,7 @@
 
 &_circle{
   &__cancelled{
-    @include circle-icon(45px, $danger_color, $danger_color);
+    @include circle-icon(45px, #f2705b, #f2705b);
     //padding-top: 2px;
     line-height: 12px;
     .date{

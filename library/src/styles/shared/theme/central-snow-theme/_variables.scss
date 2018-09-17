@@ -1,0 +1,154 @@
+@import 'colors';
+
+
+// Typograrephy
+$font-family-sans-serif: 'Roboto', 'Helvetica', 'Arial', sans-serif !default;
+$font-family-serif: 'Roboto Slab', 'Times New Roman', serif !default;
+$font-family-rubik:  'Rubik', sans-serif;
+
+$opt-color_black: #000000;
+
+
+$prefix :'opt_';
+
+$white-icon: $opt-color_black;
+$plain: $opt-color_black;
+
+//status colors..............
+$no-color--state: #f4493c;
+$active-color--state: $green-700 !default;
+$mute-color--state: $grey-700 !default;
+$firm-color--state: $blue-700 !default;
+$alert-color--state: $yellow-700 !default;
+$definite-color--state: $blue-grey-700 !default;
+$quote-color--state: $brown-700 !default;
+$success-color--state:#27bfc2;
+$red-danger:$no-color--state;
+
+//<! OPT_ALERT>===================================================================================================
+//$warning: $yellow-600;
+//$success : $teal-400;
+
+//<! TO be removed>===============================================================================================
+$ci-bg--color:red;
+$ci-col-hover:green;
+$primary:blue;
+
+// Typography
+$font-family-sans-serif: 'Roboto', 'Helvetica', 'Arial', sans-serif !default;
+$font-family-serif: 'Roboto Slab', 'Times New Roman', serif !default;
+$font-family-rubik:  'Rubik', sans-serif;
+
+
+//optimo theme and color codes .....................
+
+$opt_color_primary :#f5c70e;
+$opt_color_secondary :#27bfc2;
+$opt_color_tertiary :#4bb3fa;
+$opt_color_quaternary :#333e47;
+
+
+//button colors----------------------
+$btn-active-color:$active-color--state;
+$btn-frozen-color:$no-color--state;
+
+//Border line color.........................................
+$opt-border-color:#e0e0e0;
+
+//Link Colours..............................................
+$opt-link-color__primary:#3a424d;
+$opt-link-color__secondary:#f5c70e;
+
+//==========Text Colors================
+$opt_text_color_primary:#3a424d;
+$opt_text_color_secondary :$opt_color_primary;
+$opt_text_color_tertiary: #909cac;
+$opt_text-color_quaternary:$opt_color_secondary;
+$opt_text_color_error :#af564e;
+
+$badge-success-bg: $opt_color_primary;
+
+/* Business Colors */
+$status-hover-font-color: #fff;
+$cancelled-status: #000;
+$confirmed-status: yellow;
+$confirmed-multiple: blue;
+$provisional: red;
+//$warning: purple;
+$tentative: brown;
+$provisional-multiple:grey;
+
+
+//======================================================
+//                    NEW
+//======================================================
+//optimo brand and color codes .....................
+
+$opt_color_primary :#4bb3fa;
+$opt_color_secondary :#27bfc2;
+$opt_color_tertiary :#f5c70e;
+$opt_color_quaternary :#333e47;
+
+
+
+/*$opt_color_footer :#454f58;*/
+
+
+
+//========== Status colors=================
+$opt_status_confirmed : $opt_color_secondary;
+$opt_status_cancelled : #f5766c;
+$opt_status_confirmed-multiple:#607d8b;
+$opt_status_provisional : #00bcd4;
+$opt_status_warning :#ff9800;
+$opt_status_tentative :#673ab7;
+$opt_status_provisional_multiple:#9c27b0;
+
+
+
+
+
+//=========Button Colors=================
+$opt_color_btn_default:$opt_color_white;
+$opt_color_btn_active:$opt-color_primary;
+$opt_color_btn_disabled:#ebebeb;
+$opt_color_btn_outline : #91a0ad;
+$opt_color_icon_font:$opt_text_color_tertiary;
+$opt_color_fab: $opt_color_accent;
+$opt_color_mini_fab: $opt_color_secondary ;
+$opt_color_frozen : $opt_status_cancelled;
+
+
+//Border line color.........................................
+$opt-border-color:#e0e0e0;
+
+//---Font Awesome variable--
+$fa-font-path: "./shared/theme/ccs-default-theme/font/font-awesome/fonts";
+
+// Variables from classes
+//$danger_color : #f5766c;
+//$success_color : #26a69a;
+//$plain_color : white;
+
+
+/* Booking Summary */
+$badge-danger-bg : $cyan-600;
+//$badge-success-bg : #27bfc2;
+$badge-default-bg : #fff;
+$badge-undefined-bg : #909cac;
+$badge-font-color : #fff;
+$badge-font-color_danger : #b6605a;
+$badge-middle-color: $no-color--state;
+$unavailable-state-bg : $cyan-600;
+$unavailable-state-dark-bg : $cyan-900;
+$badge-middle-color: $opt-color_primary;
+
+$default-state-bg : $grey-200;
+$default-state-dark-bg : $grey-400;
+
+$separator-border-color: #d3d6d9;
+
+$primary-theme-font : $opt_color__primary;
+$secondary-theme-font : $opt_color__secondary;
+/* End of Booking Summary*/
+

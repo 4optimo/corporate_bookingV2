@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" id="theme-change">
 <head>
   <meta charset="utf-8">
   <title>Library</title>
@@ -22,13 +22,15 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!-- End of AdminLTE -->
 </head>
-<body class="hold-transition opt-skin sidebar-mini">
+<body class="hold-transition opt-skin sidebar-mini" >
+
+<button onclick="myTheme()">Change Theme</button>
+
 <!--<div class="container-fluid">-->
   <!--<div class="">-->
     <app-root></app-root>
   <!--</div>-->
 <!--</div>-->
-
 
 <!-- jQuery 3 -->
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -42,5 +44,12 @@
      user experience. -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="assets/AdminLTE.js"></script>
+
 </body>
 </html>
+<script>
+  function myTheme() {
+    var element = document.getElementById("theme-change");
+    element.classList.toggle("snow");
+  }
+</script>

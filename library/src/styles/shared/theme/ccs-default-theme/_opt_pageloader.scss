@@ -1,4 +1,4 @@
-
+$gray-001 : #6e6e6e;
 .page-loader-msg{
   @include box_shadow (2);
   background-color: #fff;
@@ -8,11 +8,11 @@
     margin: 50px;
     font-size: 50px;
     font-weight: 200;
-    color: #6e6e6e;
+    color: $gray-001;
   }
   p{
     margin-bottom: 20px;
-    color: #6e6e6e;
+    color: $gray-001;
     font-size: 18px;
     margin-bottom: 30px;
   }
