@@ -30,7 +30,6 @@
 
   &_expand--container {
     width: 100%;
-    padding: 0 10px;
     >.row{
 
 
@@ -260,8 +259,7 @@
         color: inherit;
       }
       .mat-expansion-panel-header {
-        padding: 0 8px;
-        margin-left: 8px;
+        padding: 0;
 
 
 

@@ -53,3 +53,18 @@
 .affix {
   position: fixed;
 }
+
+//Global classes
+.opt{
+  &-width-full{
+    width: 100%;
+  }
+  &-no-padding{
+    padding:0;
+  }
+  &-no-horizontal-padding{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+

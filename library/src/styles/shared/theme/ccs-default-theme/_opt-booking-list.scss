@@ -1,3 +1,10 @@
+.opt{
+  &_booking__detail{
+    .opt_expand--container{
+      padding:0 8px;
+    }
+  }
+}
 .opt_booking__list{
   $danger_color: #f2705b;
   $plain_color : white;
@@ -80,9 +87,15 @@
         .down-arrow{
           height: auto;
           width: auto;
+          .mat-button-wrapper{
+            min-height: 55px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
         }
         .mat-icon-button{
-          line-height: 50px;
+          line-height: 42px;
         }
       }
     }

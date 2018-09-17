@@ -47,9 +47,6 @@
 
   .mat-accordion .mat-expansion-panel.opt-expand--line.mat-expanded{
     transition: all 0.3s ease;
-    margin-bottom: 50px;
-    margin-top: 50px;
-    @include box_shadow(3);
 
 
 
@@ -132,6 +129,9 @@
           font-size: 30px;
         }
       }
+      i{
+        line-height: 40px !important;
+      }
     }
     &__corporate{
       @include circle-icon(45px, #27bfc2, #27bfc2);
@@ -143,6 +143,9 @@
         .material-icons{
           font-size: 30px;
         }
+      }
+      i{
+        line-height: 40px !important;
       }
     }
   }

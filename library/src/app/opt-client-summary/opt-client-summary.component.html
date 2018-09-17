@@ -2,7 +2,7 @@
   <mat-accordion>
     <mat-expansion-panel #myPanel1 [disabled]="true" class="opt-expand--line" >
       <mat-expansion-panel-header class="opt_width-define opt_expand__header" collapsedHeight=".collapsedHeight" expandedHeight=".expandedHeight"  >
-        <div class="opt_expand--container" >
+        <div class="opt_expand--container opt_flex__item--vcenter" >
 
           <div class="opt_flex__item __expansion-lft--side">
             <div class="row opt_flex--container tc-flex-item__center ">
@@ -47,18 +47,16 @@
                   <span class="opt-txt__body2-small"> 556 Chiswick High Road London, W4 5YA, Australia </span>
                 </mat-panel-description>
               </div>
-              <div class="col-sm-12  col-md-2	col-lg-2	col-xs-12 ">
-                <mat-panel-description class="opt_flex--container opt_price-section">
+              <div class="col-sm-12  col-md-2	col-lg-2	col-xs-12">
+                <mat-panel-description class="opt_flex--container opt_price-section just-content-end">
                   <!--<div class="opt_flex__item"></div>-->
                   <!--<div class=" opt_flex__item opt-typo-subhead-2 price"></div>-->
-                  <div mat-raised-button class="btn-color-default opt_flex__item opt-txt__light btn btn-select">
-                    Select
-                  </div>
+                  <button mat-button class="mat-btn-primary--small opt-width-full" >Select</button>
                 </mat-panel-description>
               </div>
             </div>
           </div>
-          <div class="opt_flex__item __expansion-rgt--side">
+          <div class="opt_flex__item just-content-end">
             <div class="tc-flex-item__center">
               <div class="opt_flex__item action__button tc-flex-item__center">
                 <button class="down-arrow" mat-icon-button color="primary" (click)="expandPannel()"
@@ -277,7 +275,7 @@
 
     <mat-expansion-panel #myPanel2 [disabled]="true" class="opt-expand--line" >
       <mat-expansion-panel-header class="opt_width-define opt_expand__header" collapsedHeight=".collapsedHeight" expandedHeight=".expandedHeight"  >
-        <div class="opt_expand--container" >
+        <div class="opt_expand--container opt_flex__item--vcenter" >
 
           <div class="opt_flex__item __expansion-lft--side">
             <div class="row opt_flex--container tc-flex-item__center ">
@@ -323,17 +321,15 @@
                 </mat-panel-description>
               </div>
               <div class="col-sm-12  col-md-2	col-lg-2	col-xs-12 ">
-                <mat-panel-description class="opt_flex--container opt_price-section">
+                <mat-panel-description class="opt_flex--container opt_price-section just-content-end">
                   <!--<div class="opt_flex__item"></div>-->
                   <!--<div class=" opt_flex__item opt-typo-subhead-2 price"></div>-->
-                  <div mat-raised-button class="btn-color-default opt_flex__item opt-txt__light btn btn-select">
-                    Select
-                  </div>
+                  <button mat-button class="mat-btn-primary--small opt-width-full" >Select</button>
                 </mat-panel-description>
               </div>
             </div>
           </div>
-          <div class="opt_flex__item __expansion-rgt--side">
+          <div class="opt_flex__item just-content-end">
             <div class="tc-flex-item__center">
               <div class="opt_flex__item action__button tc-flex-item__center">
                 <button class="down-arrow" mat-icon-button color="primary" (click)="expandPannel2()"
