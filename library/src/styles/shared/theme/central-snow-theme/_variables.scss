@@ -14,6 +14,7 @@ $prefix :'opt_';
 $white-icon: $opt-color_black;
 $plain: $opt-color_black;
 
+
 //status colors..............
 $no-color--state: #f4493c;
 $active-color--state: $green-700 !default;
@@ -60,9 +61,9 @@ $opt-link-color__primary:#3a424d;
 $opt-link-color__secondary:#f5c70e;
 
 //==========Text Colors================
-$opt_text_color_primary:#3a424d;
+$opt_text_color_primary: #909cac;
 $opt_text_color_secondary :$opt_color_primary;
-$opt_text_color_tertiary: #909cac;
+$opt_text_color_tertiary: #3a424d;
 $opt_text-color_quaternary:$opt_color_secondary;
 $opt_text_color_error :#af564e;
 
@@ -121,6 +122,8 @@ $opt_color_frozen : $opt_status_cancelled;
 
 //Border line color.........................................
 $opt-border-color:#e0e0e0;
+$opt_border_color_default: $opt-color_black;
+
 
 //---Font Awesome variable--
 $fa-font-path: "./shared/theme/ccs-default-theme/font/font-awesome/fonts";
@@ -132,7 +135,7 @@ $fa-font-path: "./shared/theme/ccs-default-theme/font/font-awesome/fonts";
 
 
 /* Booking Summary */
-$badge-danger-bg : $cyan-600;
+$badge-danger-bg : $no-color--state;
 //$badge-success-bg : #27bfc2;
 $badge-default-bg : #fff;
 $badge-undefined-bg : #909cac;
@@ -140,15 +143,19 @@ $badge-font-color : #fff;
 $badge-font-color_danger : #b6605a;
 $badge-middle-color: $no-color--state;
 $unavailable-state-bg : $cyan-600;
-$unavailable-state-dark-bg : $cyan-900;
+$unavailable-state-dark-bg :$red-A700;
 $badge-middle-color: $opt-color_primary;
 
 $default-state-bg : $grey-200;
-$default-state-dark-bg : $grey-400;
+$default-state-dark-bg : $grey-300;
 
-$separator-border-color: #d3d6d9;
+$default_mat_icon_color: #d0d4db;
+$separator-border-color: $opt_color_white;
+
+$summary_themed_color: #f9d630;
 
 $primary-theme-font : $opt_color__primary;
 $secondary-theme-font : $opt_color__secondary;
 /* End of Booking Summary*/
 
+$booking_summary_color: $opt_text_color_primary;

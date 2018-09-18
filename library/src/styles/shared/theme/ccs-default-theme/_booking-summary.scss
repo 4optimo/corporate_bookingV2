@@ -2,12 +2,12 @@
 
 .booking-summary {
   border-bottom: 1px solid $separator-border-color;
-  color: #3b414d;
+  color: $booking_summary_color;
   .flex-row {
     .col {
       background-color: $default-state-bg;
       &:nth-child(2) {
-        border-right: 1px dashed #ccc;
+        border-right: 1px dashed $opt_border-color_default;
         background-color: $default-state-dark-bg;
       }
       @include respond-to('x-small') {
@@ -105,7 +105,7 @@
     }
     .field {
       .field-icon {
-        color: #909cac;
+        color: $opt_text_color_tertiary;
       }
     }
   }
@@ -135,7 +135,13 @@
       }
     }
   }
-  
+  .mat-select-value {
+    color: $opt_text_color_primary ;
+  }
+  .mat-select-arrow{
+    color: $opt_text_color_primary;
+  }
+
 }
 .mat-select-panel .mat-option{
   height: 40px !important;
@@ -150,7 +156,7 @@
   }
   &.danger{
     i{
-      color: #f5766c;
+      color: $no-color--state;
     }
   }
 }
@@ -282,7 +288,7 @@
 .font-style-01 {
   font-size: 18px;
   font-weight: 500;
-  color: #3a424d;
+  color: $opt_text_color_primary;
 }
 
 .font-style-01.__success {
@@ -292,13 +298,13 @@
 .font-style-02 {
   font-size: 11px;
   font-weight: 400;
-  color: #3a424d;
+  color: $primary-theme-font;
 }
 
 .font-style-03 {
   font-size: 11px;
   font-weight: 400;
-  color: #909cac;
+  color: $opt_text_color_tertiary;
 }
 
 .font-style-04 {
@@ -316,13 +322,13 @@
 .font-style-06 {
   font-size: 12px;
   font-weight: 400;
-  color: #333e47;
+  color: $opt_color_quaternary;
 }
 
 .font-style-07 {
   font-size: 14px;
   font-weight: 500;
-  color: #909cac;
+  color: $opt_text_color_tertiary;
 }
 
 .link {
@@ -358,7 +364,7 @@ i {
   &.btn-icon {
     background-color: transparent;
     padding: 0;
-    color: #d3d6d9;
+    color: $separator-border-color;
     align-items: center;
     box-shadow: none;
 
@@ -370,13 +376,13 @@ i {
   }
 
   &.btn-taptoadd{
-    border: 1px dashed #d0d4db;
+    border: 1px dashed $default_mat_icon_color;
     background-color: transparent;
     border-radius: 50%;
     padding: 10px;
 
     i.material-icons{
-      color: #d0d4db;
+      color: $default_mat_icon_color;
       font-size: 45px;
     }
 
@@ -387,9 +393,9 @@ i {
       }
     }
     &.themed{
-      border-color: #f9d630;
+      border-color: $summary_themed_color;
       i.material-icons{
-        color: #f9d630;
+        color: $summary_themed_color;
       }
     }
 
@@ -402,7 +408,7 @@ i {
   align-items: center;
   flex-direction: column;
   p{
-    color: #909cac;
+    color: $opt_text_color_tertiary;
     font-weight: 400;
     margin: 10px 0 0 0;
   }
@@ -414,7 +420,7 @@ i {
   }
   &.themed{
     p{
-      color: #f9d630;
+      color: $summary_themed_color;
     }
   }
 }
