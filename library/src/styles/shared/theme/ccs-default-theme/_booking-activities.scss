@@ -110,7 +110,7 @@
 }
 
 .history_list_item{
-  padding: 5px 10px;
+  padding: 10px 10px;
   border-bottom: 1px solid #e0e0e0;
   .row{
     display: flex;
@@ -200,7 +200,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      min-height: 22px;
+      min-height: 23px;
     }
   }
 
@@ -278,8 +278,20 @@
     display: flex;
     align-items: center;
     padding: 0 10px;
+    .row-block{
+      display: block !important;
+      @include respond-to('x-small') {
+        padding: 10px 0;
+      }
+      @include respond-to('small') {
+        padding: 10px 0;
+      }
+      @include respond-to('medium') {
+        padding: 0;
+      }
+    }
     .row {
-      display: flex;
+      display: inline-flex;
       [class*=' col-'] {
         display: flex;
         align-items: center;
@@ -325,6 +337,9 @@
 
   .icn-search {
     padding: 0;
+    font-size: 16px;
+    position: relative;
+    top:8px;
   }
 
   .indicator-icon {
@@ -388,8 +403,10 @@
       @include respond-to('x-small') {
         max-width: 100px;
       }
-
       @include respond-to('small') {
+        max-width: 100px;
+      }
+      @include respond-to('medium') {
         max-width: 100%;
       }
     }
@@ -398,7 +415,7 @@
       min-height: 50px;
       display: flex;
       align-items: center;
-      padding: 0 10px;
+      padding: 10px 10px;
       .opt_flex--container{
         width: 100%;
       }
@@ -692,7 +709,7 @@
       width: calc(100% - 25px);
     }
 
-    padding: 5px 0;
+    padding: 10px 0;
     border-bottom: 1px solid $opt-border-color;
 
 
@@ -700,7 +717,16 @@
     .row {
       align-items: center;
       margin: 0;
-      display: flex;
+      @include respond-to('small') {
+        display: block;
+      }
+
+      @include respond-to('medium') {
+        display: flex;
+      }
+      @include respond-to('large') {
+        display: flex;
+      }
       [class*=' col-'] {
         display: flex;
         flex-direction: column;
@@ -734,9 +760,23 @@
   
 
   .dispatch-list-item {
-    padding: 5px 0;
+    padding: 10px 0;
     border-bottom: 1px solid $opt-border-color;
-
+    .row-block{
+      
+      @include respond-to('x-small') {
+        padding: 10px 0;
+        display: block !important;
+      }
+      @include respond-to('small') {
+        padding: 10px 0;
+        display: block !important;
+      }
+      @include respond-to('medium') {
+        padding: 0;
+        display: flex !important;
+      }
+    }
     .crrnt-status {
       background-color: inherit;
 
@@ -1072,6 +1112,9 @@
         .__expansion-rgt--side{
           justify-content: flex-end;
           width: 40px;
+          display: flex;
+          align-items: center;
+          min-height: 55px;
           .down-arrow{
             height: auto;
             width: auto;
