@@ -20,7 +20,7 @@ $opt_color__tertiary :#f5c70e;
 $test: gray;
 $prefix :'opt_';
 
-//optimo brand and color codes .....................
+//optimo theme and color codes .....................
 
 $opt_color_primary :#4bb3fa;
 $opt_color_secondary :#27bfc2;
@@ -30,6 +30,8 @@ $opt_color_quaternary :#333e47;
 
 $background : $test;
 $white-icon: $plain;
+
+$booking_summary_color: #3b414d !default;
 
 //state colors..............
 $no-color--state: #f5766c !default;
@@ -161,7 +163,10 @@ $badge-middle-color: $no-color--state !default;
 $default-state-bg : #fff !default;
 $default-state-dark-bg : #f5f5f5 !default;
 
-$separator-border-color: #d3d6d9;
+$default_mat_icon_color: #d0d4db;
+$separator-border-color: #d3d6d9 !default;
+
+$summary_themed_color: #f9d630;
 
 $primary-theme-font : $opt_color__primary;
 $secondary-theme-font : $opt_color__secondary;
@@ -206,7 +211,7 @@ $opt_status_provisional_multiple:#9c27b0;
 
 
 //==========Text Colors================
-$opt_text_color_primary:#3a424d;
+$opt_text_color_primary:#3a424d !default;
 $opt_text_color_secondary :$opt_color_secondary !default;
 $opt_text_color_tertiary: #909cac;
 $opt_text-color_quaternary:$opt_color_primary !default;
@@ -229,6 +234,7 @@ $opt_color_frozen : $opt_status_cancelled;
 
 //Border line color.........................................
 $opt-border-color:#e0e0e0;
+$opt_border_color_default: #ccc;
 
 //---Font Awesome variable--
 $fa-font-path: "./shared/theme/ccs-default-theme/font/font-awesome/fonts";
