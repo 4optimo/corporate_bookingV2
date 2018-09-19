@@ -1,6 +1,7 @@
+@import "variables";
+
 .opt_modal-content {
-  $popup_heading_color : #f9d632;
-  $icon_color : #909cac;
+
 
   max-height: 95vh;
 
@@ -22,7 +23,7 @@
         padding-right: 25px;
         i {
           font-size: 35px;
-          color: white;
+          color: $popup_main_icon;
         }
 
       }
@@ -51,7 +52,7 @@
       .inner-action{
         align-self: center;
         padding-right: 24px;
-        color: $icon_color;
+        color: $popup_icon_color;
 
         button{
           -webkit-appearance: none;
@@ -86,7 +87,7 @@
     &::-webkit-scrollbar-thumb {
       border-radius: 10px;
       -webkit-box-shadow: inset 0 0 6px gray;
-      background-color: $icon_color;
+      background-color: $popup_icon_color;
     }
 
   }

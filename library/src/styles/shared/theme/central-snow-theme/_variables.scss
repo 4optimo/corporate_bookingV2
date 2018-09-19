@@ -30,6 +30,9 @@ $red-danger:$no-color--state;
 //$warning: $yellow-600;
 //$success : $teal-400;
 
+$opt_color__primary :$success-color--state;
+$opt_color__secondary :#27bfc2;
+
 //<! TO be removed>===============================================================================================
 $ci-bg--color:red;
 $ci-col-hover:green;
@@ -41,14 +44,6 @@ $font-family-serif: 'Roboto Slab', 'Times New Roman', serif !default;
 $font-family-rubik:  'Rubik', sans-serif;
 
 
-//optimo theme and color codes .....................
-
-$opt_color_primary :#f5c70e;
-$opt_color_secondary :#27bfc2;
-$opt_color_tertiary :#4bb3fa;
-$opt_color_quaternary :#333e47;
-
-
 //button colors----------------------
 $btn-active-color:$active-color--state;
 $btn-frozen-color:$no-color--state;
@@ -56,18 +51,36 @@ $btn-frozen-color:$no-color--state;
 //Border line color.........................................
 $opt-border-color:#e0e0e0;
 
+//text colours..............................................
+$opt-text-color__primary:#909cac;
+$opt-text-color__secondary:#3a424d;
+$opt-text-color__tertiary:#27bfc2;
+$opt-text-color__quaternary:#4bb3fa;
+
+
+//======================================================
+//                    NEW
+//======================================================
+//optimo brand and color codes .....................
+
+$opt_color_primary :#E91E63;
+$opt_color_secondary :#673AB7;
+$opt_color_tertiary :#FF5722;
+$opt_color_quaternary :#333e47;
+
 //Link Colours..............................................
 $opt-link-color__primary:#3a424d;
-$opt-link-color__secondary:#f5c70e;
+$opt-link-color__secondary:$opt_color_tertiary;
+
 
 //==========Text Colors================
 $opt_text_color_primary: #909cac;
-$opt_text_color_secondary :$opt_color_primary;
+$opt_text_color_secondary :$opt_color_tertiary;
 $opt_text_color_tertiary: #3a424d;
 $opt_text-color_quaternary:$opt_color_secondary;
 $opt_text_color_error :#af564e;
 
-$badge-success-bg: $opt_color_primary;
+$badge-success-bg: $opt_color_tertiary;
 
 /* Business Colors */
 $status-hover-font-color: #fff;
@@ -80,15 +93,6 @@ $tentative: brown;
 $provisional-multiple:grey;
 
 
-//======================================================
-//                    NEW
-//======================================================
-//optimo brand and color codes .....................
-
-$opt_color_primary :#4bb3fa;
-$opt_color_secondary :#27bfc2;
-$opt_color_tertiary :#f5c70e;
-$opt_color_quaternary :#333e47;
 
 
 
@@ -135,27 +139,33 @@ $fa-font-path: "./shared/theme/ccs-default-theme/font/font-awesome/fonts";
 
 
 /* Booking Summary */
-$badge-danger-bg : $no-color--state;
+$badge-danger-bg : #D1C4E9;
 //$badge-success-bg : #27bfc2;
 $badge-default-bg : #fff;
 $badge-undefined-bg : #909cac;
 $badge-font-color : #fff;
 $badge-font-color_danger : #b6605a;
-$badge-middle-color: $no-color--state;
-$unavailable-state-bg : $cyan-600;
-$unavailable-state-dark-bg :$red-A700;
-$badge-middle-color: $opt-color_primary;
+$badge-middle-color: $opt_color_secondary;
+$unavailable-state-bg : $opt_color_secondary;
+$unavailable-state-dark-bg :$opt_status_tentative;
 
-$default-state-bg : $grey-200;
-$default-state-dark-bg : $grey-300;
+$default-state-bg : $grey-100;
+$default-state-dark-bg : $grey-200;
 
 $default_mat_icon_color: #d0d4db;
-$separator-border-color: $opt_color_white;
+$separator-border-color: $opt-border-color;
 
-$summary_themed_color: #f9d630;
+$summary_themed_color: $teal-900;
 
 $primary-theme-font : $opt_color__primary;
 $secondary-theme-font : $opt_color__secondary;
 /* End of Booking Summary*/
 
 $booking_summary_color: $opt_text_color_primary;
+
+$popup_heading_color : $summary_themed_color;
+$popup_icon_color : $opt-text-color__secondary;
+$popup_main_icon: $opt_color_black;
+
+$light_background: $teal-50;
+$light_background_header: $teal-200;

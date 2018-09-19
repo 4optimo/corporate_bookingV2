@@ -111,7 +111,7 @@ $central-brand-primary :red;
 $white-color:#fff;
 $fab:#7a8aea;
 $btn-disabled:#c8c8c8;
-$icon-font--color:#909cac;
+$icon-font--color:$opt-text-color__secondary;
 
 $lbl-vat--color:#eee;
 $lbl__price-details:#90a4ae;
@@ -152,7 +152,7 @@ $font-color:#66615b !default;
 $badge-danger-bg : #f5766c !default;
 //$badge-success-bg : #27bfc2;
 $badge-default-bg : #fff;
-$badge-undefined-bg : #909cac;
+$badge-undefined-bg : $opt-text-color__secondary;
 $badge-font-color : #fff;
 $badge-font-color_danger : #b6605a !default;
 $badge-middle-color: $no-color--state;
@@ -243,3 +243,10 @@ $fa-font-path: "./shared/theme/ccs-default-theme/font/font-awesome/fonts";
 //$danger_color : #f5766c;
 //$success_color : #26a69a;
 //$plain_color : white;
+
+$popup_heading_color : $summary_themed_color !default;
+$popup_icon_color : $opt-text-color__secondary !default;
+$popup_main_icon: $opt_color_white !default;
+
+$light_background: #f1f5f8 !default;
+$light_background_header: #cbdfec !default;

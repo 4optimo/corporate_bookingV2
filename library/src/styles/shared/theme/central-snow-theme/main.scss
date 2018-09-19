@@ -19,6 +19,9 @@ $bootstrap-sass-asset-helper: false;
   @import '../ccs-default-theme/alerts';
   @import '../ccs-default-theme/booking-summary';
   @import '../ccs-default-theme/tc-md-typography';
+  @import '../ccs-default-theme/popup-modal';
+  @import '../ccs-default-theme/corporate-client-popup';
+
 
   //body {
   //  background-color: $test-my !important;
