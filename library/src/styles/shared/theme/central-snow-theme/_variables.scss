@@ -13,6 +13,7 @@ $prefix :'opt_';
 
 $white-icon: $opt-color_black;
 $plain: $opt-color_black;
+$circle_icon: #f0f6fa;
 
 
 //status colors..............
@@ -25,6 +26,8 @@ $definite-color--state: $blue-grey-700 !default;
 $quote-color--state: $brown-700 !default;
 $success-color--state:#27bfc2;
 $red-danger:$no-color--state;
+$success_action :$success-color--state;
+
 
 //<! OPT_ALERT>===================================================================================================
 //$warning: $yellow-600;
@@ -50,6 +53,10 @@ $btn-frozen-color:$no-color--state;
 
 //Border line color.........................................
 $opt-border-color:#e0e0e0;
+$opt-border-color_light: #d9d9d9;
+$opt-border-color_darker: $grey-600;
+$opt-border-color_lighter: #b7b7b7;
+
 
 //text colours..............................................
 $opt-text-color__primary:#909cac;
@@ -63,8 +70,8 @@ $opt-text-color__quaternary:#4bb3fa;
 //======================================================
 //optimo brand and color codes .....................
 
-$opt_color_primary :#E91E63;
-$opt_color_secondary :#673AB7;
+$opt_color_primary :#673AB7;
+$opt_color_secondary :#E91E63;
 $opt_color_tertiary :#FF5722;
 $opt_color_quaternary :#333e47;
 
@@ -75,10 +82,10 @@ $opt-link-color__secondary:$opt_color_tertiary;
 
 //==========Text Colors================
 $opt_text_color_primary: #909cac;
-$opt_text_color_secondary :$opt_color_tertiary;
+$opt_text_color_secondary : $opt_color_tertiary;
 $opt_text_color_tertiary: #3a424d;
-$opt_text-color_quaternary:$opt_color_secondary;
-$opt_text_color_error :#af564e;
+$opt_text-color_quaternary: $opt_color_secondary;
+$opt_text_color_error : #af564e;
 
 $badge-success-bg: $opt_color_tertiary;
 
@@ -163,9 +170,10 @@ $secondary-theme-font : $opt_color__secondary;
 
 $booking_summary_color: $opt_text_color_primary;
 
-$popup_heading_color : $summary_themed_color;
+$popup_heading_color : $opt_color_tertiary;
 $popup_icon_color : $opt-text-color__secondary;
 $popup_main_icon: $opt_color_black;
 
-$light_background: $teal-50;
-$light_background_header: $teal-200;
+$light_background: $purple-50;
+$lighter_background: #fafafa;
+$light_background_header: $purple-200;

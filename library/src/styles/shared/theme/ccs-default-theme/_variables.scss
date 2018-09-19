@@ -22,14 +22,15 @@ $prefix :'opt_';
 
 //optimo theme and color codes .....................
 
-$opt_color_primary :#4bb3fa;
-$opt_color_secondary :#27bfc2;
-$opt_color_tertiary :#f5c70e;
+$opt_color_primary :#4bb3fa !default;
+$opt_color_secondary :#27bfc2 !default;
+$opt_color_tertiary :#f5c70e !default;
 $opt_color_quaternary :#333e47;
 
 
 $background : $test;
 $white-icon: $plain;
+$circle_icon: #f0f6fa !default;
 
 $booking_summary_color: #3b414d !default;
 
@@ -44,6 +45,7 @@ $quote-color--state: $brown-700 !default;
 $success-color--state:#27bfc2;
 $cancelled-status: #0000;
 $red-danger: $no-color--state;
+$success_action :#69f0ae !default;
 
 //<! OPT_ALERT>===================================================================================================
 //$warning : $red-danger;
@@ -94,7 +96,11 @@ $opt-link-color__primary:#3a424d;
 $opt-link-color__secondary:#27bfc2 !default;
 
 //Border line color.........................................
-$opt-border-color:#e0e0e0;
+$opt-border-color:#e0e0e0 !default;
+$opt-border-color_light: #d9d9d9 !default;
+$opt-border-color_darker: #ababab !default;
+$opt-border-color_lighter: #b7b7b7 !default;
+
 
 
 //button colors..............
@@ -163,7 +169,7 @@ $badge-middle-color: $no-color--state !default;
 $default-state-bg : #fff !default;
 $default-state-dark-bg : #f5f5f5 !default;
 
-$default_mat_icon_color: #d0d4db;
+$default_mat_icon_color: #d0d4db !default;
 $separator-border-color: #d3d6d9 !default;
 
 $summary_themed_color: #f9d630;
@@ -213,7 +219,7 @@ $opt_status_provisional_multiple:#9c27b0;
 //==========Text Colors================
 $opt_text_color_primary:#3a424d !default;
 $opt_text_color_secondary :$opt_color_secondary !default;
-$opt_text_color_tertiary: #909cac;
+$opt_text_color_tertiary: #909cac !default;
 $opt_text-color_quaternary:$opt_color_primary !default;
 $opt_text_color_error :#af564e;
 
@@ -249,4 +255,5 @@ $popup_icon_color : $opt-text-color__secondary !default;
 $popup_main_icon: $opt_color_white !default;
 
 $light_background: #f1f5f8 !default;
+$lighter_background: #fafafa !default;
 $light_background_header: #cbdfec !default;
