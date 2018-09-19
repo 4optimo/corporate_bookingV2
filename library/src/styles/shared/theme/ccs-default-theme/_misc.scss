@@ -197,3 +197,20 @@
 button{
   transition:0.3s !important;
 }
+.opt{
+  &-width-full{
+    width: 100%;
+  }
+  &-no-padding{
+    padding:0;
+  }
+  &-no-horizontal-padding{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+.mat-menu-panel{
+  .mat-menu-content{
+    padding: 10px;
+  }
+}

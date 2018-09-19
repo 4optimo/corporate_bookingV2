@@ -81,11 +81,6 @@
   }
   .mat-icon-button{
     &.btn-icon{
-      i{
-        &.material-icons{
-          /*color: #97a3b1;*/
-        }
-      }
       margin-right: 10px;
     }
   }
@@ -277,6 +272,9 @@
     display: flex;
     align-items: center;
     padding: 0 10px;
+    .mat-checkbox-layout .mat-checkbox-label {
+      line-height: 20px;
+    }
     .row-block{
       display: block !important;
       @include respond-to('x-small') {
@@ -309,7 +307,7 @@
   }
 
   .chck-box {
-    width: 40px;
+    width: 20px;
     display: flex;
     align-items: center;
   }
@@ -399,6 +397,8 @@
     }
     .note-search {
       margin-right: 15px;
+      position: relative;
+      bottom: 2.5px;
       @include respond-to('x-small') {
         max-width: 100px;
       }
@@ -528,7 +528,7 @@
 
     .mat-menu-panel{
       .mat-menu-content{
-        padding: 8px;
+        padding: 10px;
       }
     }
 

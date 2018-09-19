@@ -87,9 +87,6 @@
       align-self: stretch;
       height: 50%;
 
-      .half{
-
-      }
 
       &.border-line{
         height: 1px;
@@ -213,8 +210,6 @@
   }
   .field-detail {
     flex-grow: 1;
-  }
-  .field-options {
   }
   &:last-child {
     margin-bottom: 0;
@@ -530,10 +525,6 @@ i {
     font-size: 18px;
     font-weight: 500;
   }
-  .mat-option{
-    .mat-option-text{
-    }
-  }
 }
 
 .opt-booking-summary-select-sm {
@@ -550,10 +541,6 @@ i {
   .mat-select-value{
   font-size: 12px;
   font-weight: 400;
-  }
-  .mat-option{
-    .mat-option-text{
-    }
   }
 }
 
