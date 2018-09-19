@@ -1,3 +1,5 @@
+@import "variables";
+
 .opt-corporate-client{
 
   mat-label{
@@ -63,7 +65,7 @@
     }
     .mat-expansion-panel-body{
       //padding: 20px 10px !important;
-      background-color: #f0f6fa;
+      background-color: $light_background;
 
     }
   }
@@ -185,7 +187,7 @@
       .pro-main-wrapper {
         flex-grow: 1;
         margin-right: 0;
-        background-color: #f1f5f8;
+        background-color: $light_background;
         .btn-taptoadd {
           background-color: white;
         }
@@ -201,7 +203,7 @@
       }
       .pro-sub-wrapper {
         padding: 15px;
-        background-color: #f1f5f8;
+        background-color: $light_background;
         justify-content: center;
 
         .form-data {
@@ -332,7 +334,7 @@
 
       .delivery-method{
         text-align: right;
-        border-bottom: 2px solid #00b0ff;
+        border-bottom: 2px solid $opt_color__primary;
         padding: 3px;
 
         margin-top: 30px;
@@ -473,12 +475,12 @@
 
 
         &.mat-expanded{
-          background-color: #f1f5f8;
+          background-color: $light_background;
           .mat-expansion-panel-header{
-            background-color: #f1f5f8;
+            background-color: $light_background;
           }
           &:focus, &:active, &:hover, &:visited{
-            background-color: #f1f5f8;
+            background-color: $light_background;
           }
         }
 
@@ -576,7 +578,7 @@
 
     .contact-type{
       //margin: 10px;
-      background-color: #f1f5f8;
+      background-color: $light_background;
       border: 1px solid #b6b8b9;
       margin-bottom: 15px;
     }
@@ -652,11 +654,11 @@
     .mat-horizontal-stepper-header {
       &.mat-step-header{
         &.cdk-mouse-focused{
-          border-bottom: 2px solid #00b0ff;
+          border-bottom: 2px solid $opt_color__primary;
         }
       }
       .mat-step-icon {
-        background-color: #00b0ff;
+        background-color: $opt_color__primary;
         color: #fff;
       }
     }
@@ -665,7 +667,7 @@
       margin: 0 24px;
       justify-content: center;
       border-radius: 5px 5px 0 0;
-      background-color: #cbdfec;
+      background-color: $light_background_header;
     }
     .mat-horizontal-stepper-content{
       background-color: white;
@@ -794,7 +796,7 @@
         border-bottom: 1px solid #e0e0e0;
         margin-bottom: 20px;
         h1{
-          border-bottom: 4px solid #00b0ff;
+          border-bottom: 4px solid $opt_color__primary;
           line-height: 44px;
           padding-left: 3px;
           padding-right: 3px;
