@@ -1449,6 +1449,18 @@
     flex-grow: 1;
     margin-bottom: 20px;
   }
+  button{
+    .mat-button-wrapper{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 23px;
+    }
+    i{
+      font-size: 17px !important;
+      padding-right: 5px;
+    }
+  }
 }
 .task-to-popup{
   padding:24px;
