@@ -13,10 +13,11 @@
     padding: 2px 5px;
     font-weight: 500;
     color: $opt_color_white;
+    line-height: 20px;
   }
   .opt_lbl{
 
-
+    
     &_primary{
       @extend %lbl;
       height: 30px;

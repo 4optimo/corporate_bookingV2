@@ -6,6 +6,14 @@
   }
 }
 .opt_booking__list{
+  .opt_booking__detail{
+    .icon__cage{
+      width: 72px !important;
+    }
+    .tbl_head{
+      margin-left: -13px;
+    }
+  } 
   //$danger_color: #f2705b;
   $plain_color : white;
   $border_color: #b7b7b7;
@@ -355,10 +363,6 @@
       .__title {
           padding: 0 !important;
         }
-      .section-header {
-        min-height: 45px;
-        height: 48px !important;
-      }
     }
   }
   //end
@@ -467,9 +471,7 @@ margin-right: 0;
 }
 .mat-expansion-panel-header {
   padding: 0;
-  margin-left: 4px;
-  margin-right: 4px;
-  height: auto;
+  height: 55px;
 
   .opt_expand--container{
     .mat-expansion-panel-header-description{
@@ -556,6 +558,9 @@ margin-right: 0;
   .mat-expansion-indicator{
     line-height: 1;
     margin-right: 10px;
+    display: flex;
+    align-items: center;
+    min-height: 55px;
   }
 
   .mat-expansion-panel.mat-expanded .mat-expansion-panel-content {

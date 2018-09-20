@@ -61,6 +61,7 @@
     text-align: center !important;
     border: 1px solid $opt_color_btn_outline !important;
     transition:0.3s !important;
+    background-color: #fff;
     &:hover{
       @include box_shadow (1);
       background-color: $opt_color_btn_active;
