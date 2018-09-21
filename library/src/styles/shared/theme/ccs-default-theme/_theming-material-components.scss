@@ -1,3 +1,4 @@
+@import "variables";
 //Theming the mat-radio-btn
 
 .mat-progress-bar-fill::after {
@@ -5,7 +6,7 @@
 }
 
 .opt_booking__list .opt_booking__detail .mat-progress-bar-fill {
-  background-color: #eee !important;
+  background-color: $lbl-vat--color !important;
 }
 
 button{
@@ -22,11 +23,11 @@ button{
       background: rgba(27, 142, 241, .4) !important;
 
       &:hover{
-        color: #fff;
+        color: $opt_color_white;
       }
 
       button.mat-icon-button.btn-color-default {
-        color: #fff !important;
+        color: $opt_color_white !important;
       }
     }
 

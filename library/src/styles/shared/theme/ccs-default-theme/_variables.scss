@@ -26,11 +26,14 @@ $opt_color_primary :#4bb3fa !default;
 $opt_color_secondary :#27bfc2 !default;
 $opt_color_tertiary :#f5c70e !default;
 $opt_color_quaternary :#333e47;
+$opt_color_type: #8f44ad !default;
 
 
-$background : $test;
+//$background : $test;
 $white-icon: $plain;
 $circle_icon: #f0f6fa !default;
+$icon_dark: #b8bcbf !default;
+$icon_darker: #a7aaaf !default;
 
 $booking_summary_color: #3b414d !default;
 
@@ -46,6 +49,9 @@ $success-color--state:#27bfc2;
 $cancelled-status: #0000;
 $red-danger: $no-color--state;
 $success_action :#69f0ae !default;
+$refund_status : #fbd46b !default;
+$refund_status_darker :#ffb200 !default;
+
 
 //<! OPT_ALERT>===================================================================================================
 //$warning : $red-danger;
@@ -99,6 +105,7 @@ $opt-link-color__secondary:#27bfc2 !default;
 $opt-border-color:#e0e0e0 !default;
 $opt-border-color_light: #d9d9d9 !default;
 $opt-border-color_darker: #ababab !default;
+$opt-border-color_darkest: #77818a !default;
 $opt-border-color_lighter: #b7b7b7 !default;
 
 
@@ -119,7 +126,7 @@ $fab:#7a8aea;
 $btn-disabled:#c8c8c8;
 $icon-font--color:$opt-text-color__secondary;
 
-$lbl-vat--color:#eee;
+$lbl-vat--color:#eee !default;
 $lbl__price-details:#90a4ae;
 
 
@@ -212,7 +219,8 @@ $opt_status_provisional : #00bcd4;
 $opt_status_warning :#ff9800;
 $opt_status_tentative :#673ab7;
 $opt_status_provisional_multiple:#9c27b0;
-
+$opt_status_good_availability : #2c95dc !default;
+$opt_status_few_availability : #f44336 !default;
 
 
 
@@ -252,11 +260,14 @@ $fa-font-path: "./shared/theme/ccs-default-theme/font/font-awesome/fonts";
 
 $popup_heading_color : $summary_themed_color !default;
 $popup_icon_color : $opt-text-color__secondary !default;
+$icon_color_darker: #393c41 !default;
 $popup_main_icon: $opt_color_white !default;
 
 $light_background: #f1f5f8 !default;
 $lighter_background: #fafafa !default;
 $light_background_header: #cbdfec !default;
+$background-color: #e3e3e3 !default;
+$dark_background: #343e47 !default;
 
 $doc-des: #263238 !default;
 $doc-sub: #78909c !default;

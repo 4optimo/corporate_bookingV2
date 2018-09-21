@@ -25,6 +25,10 @@ $bootstrap-sass-asset-helper: false;
   @import '../ccs-default-theme/document-select';
   @import '../ccs-default-theme/host-add-popup';
   @import '../ccs-default-theme/questionnaire';
+  @import '../ccs-default-theme/theming-material-components';
+  @import '../ccs-default-theme/package-details';
+  @import '../ccs-default-theme/item-details';
+  @import '../ccs-default-theme/payment-modal';
 
 
   //body {

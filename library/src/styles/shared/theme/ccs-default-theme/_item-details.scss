@@ -1,3 +1,5 @@
+@import "variables";
+
 .opt-item-details{
   &.opt_modal-content {
     .opt_modal-header {
@@ -5,7 +7,7 @@
     .test-inner {
       .inner-icon-black {
         i {
-          color: white;
+          color: $opt_color_white;
         }
       }
     }
@@ -20,7 +22,7 @@
 
   .opt-header-section{
     margin: -24px;
-    background-color: #e4e8e9;
+    background-color: $background-color;
     padding: 24px 24px 1px;
     .opt-search-panel-wrapper {
       margin: -15px;
@@ -40,7 +42,7 @@
     .icon-icn-item {
       font-size: 24px;
       line-height: 45px;
-      color: white;
+      color: $opt_color_white;
     }
   }
   .additional-features{
@@ -54,9 +56,9 @@
     padding-left: 5px;
     .notification_count{
       font-size: 12px;
-      background-color: #909cac;
+      background-color: $opt-text-color__secondary;
       border-radius: 50%;
-      color: #ffff;
+      color: $opt_color_white;
       width: 20px;
       height: 20px;
       text-align: center;
@@ -72,14 +74,14 @@
   .package-select-section{
     padding: 10px 0 2px;
     fieldset{
-      border: 1px dashed #8f9fac;
+      border: 1px dashed $opt-border-color_darker;
       padding: 15px 15px 0;
       margin-top: 30px;
-      background-color: white;
+      background-color: $opt_color_white;
       legend {
         display: inline-block;
         width: auto;
-        background-color: #e4e8e9;
+        background-color: $background-color;
         padding: 2px 15px;
       }
     }
@@ -107,10 +109,10 @@
     padding-left: 5px;
     .btn-select{
       box-shadow: none !important;
-      border: 1px solid lightgrey;
+      border: 1px solid $separator-border-color;
       &:focus, &:active, &:hover, &:visited{
-        background-color: #4bb3fa !important;
-        color: white;
+        background-color: $opt_color_primary !important;
+        color: $opt_color_white;
         border: none;
       }
     }
@@ -119,10 +121,10 @@
     padding-left: 5px;
     .btn-select{
       box-shadow: none !important;
-      border: 1px solid lightgrey;
+      border: 1px solid $separator-border-color;
       &:focus, &:active, &:hover, &:visited{
-        background-color: #f5766c !important;
-        color: white;
+        background-color: $no-color--state !important;
+        color: $opt_color_white;
         border: none;
       }
     }
