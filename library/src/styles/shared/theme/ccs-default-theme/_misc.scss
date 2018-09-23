@@ -213,6 +213,15 @@ button{
   font-size: 13px !important;
   font-weight: 400 !important;
 }
+.mat-menu-content{
+  button:hover{
+    color: #ffffff !important;
+  }
+}
+.mat-menu-item:hover{
+  background-color: #4bb3fa !important;
+  color: #ffffff !important;
+}
 .opt-text-danger{
   color:#f5766c;
 }
@@ -225,4 +234,10 @@ button{
   span{
     line-height: 24px;
   }
+}
+.mat-autocomplete-panel{
+  max-width: 250px !important;
+}
+mat-expansion-panel-header{
+  border-bottom: 1px solid #eeeeee;
 }

@@ -14,7 +14,7 @@
       .mat-expansion-panel-header {
         -webkit-transition: background-color 0.5s ease;
         transition: background-color 0.5s ease;
-        background-color: $background-color;
+        background-color: #ECEFF1;
       }
     }
   }
@@ -62,7 +62,9 @@
 }
 
 .opt_package-details{
-
+  .opt_expand--container{
+    padding: 0 5px 0 5px !important;
+  }
   &.opt_booking__list{
     &.opt_booking__detail{
       .opt_counter{
@@ -109,7 +111,13 @@
     }
     .icon__cage{
       &.__multi-buttons{
-        padding-left: 75px!important;
+        padding-left: 52px!important;
+        [class^='icon-icn-']{
+          font-size: 14px !important;
+        }
+        .material-icons{
+          font-size: 17px;
+        }
       }
     }
   }
@@ -344,6 +352,9 @@
     .package-list{
       padding-top: 30px;
       flex-grow: 1;
+      .mat-expansion-panel-content{
+        box-shadow: none;
+      }
     }
     .package-alert-section{
       min-height: 80px;
@@ -351,10 +362,10 @@
       .icon{
         color: $opt-border-color_darker;
         font-size: 50px;
-        padding-left: 30px;
+        padding-left: 10px;
       }
       .text{
-        padding-left: 60px;
+        padding-left: 10px;
       }
     }
     .footer{
