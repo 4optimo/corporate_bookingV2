@@ -1,12 +1,64 @@
 $gray-001 : #6e6e6e;
+
+
+.opt_loading{
+
+  background-color: #fff;
+
+  .page-wrap{
+    padding: 80px;
+    border: 1px dotted #eee;
+    @include box_shadow (2);
+  }
+}
+
 .page-loader-msg{
   @include box_shadow (2);
   background-color: #fff;
   padding: 80px;
 
+  &.error{
+
+
+    background-image: url("assets/oops.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 650px;
+
+    h1{
+      margin: 350px 50px 20px 50px;
+      font-size: 25px;
+      font-weight: 200;
+      color: #000;
+
+    }
+    p {
+      margin-bottom: 50px;
+    }
+
+    button{
+
+
+      background-color: #2dbff9;
+
+      &:hover{
+        @include box_shadow (2);
+      }
+
+      padding: 8px 15px;
+      border: 0;
+
+      a{
+        color: #fff !important;
+        font-size: 12px;
+      }
+    }
+  }
+
+
   h1{
     margin: 50px;
-    font-size: 50px;
+    font-size: 25px;
     font-weight: 200;
     color: $gray-001;
   }

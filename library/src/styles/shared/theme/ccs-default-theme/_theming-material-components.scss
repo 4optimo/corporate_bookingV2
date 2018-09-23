@@ -9,6 +9,9 @@
   background-color: $lbl-vat--color !important;
 }
 
+
+
+
 button{
   &.mat-icon-button{
     &.btn-color-default{
@@ -31,6 +34,15 @@ button{
       }
     }
 
+  }
+}
+.page-loader-msg{
+  &.error {
+    button {
+      @include border-radius(50px) ;
+
+
+    }
   }
 }
 

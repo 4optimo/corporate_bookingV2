@@ -76,6 +76,8 @@ import {OptChipComponent} from './opt-chip/opt-chip.component';
 // import { OptDocumentSelectComponent } from './opt-document-select/opt-document-select.component';
 // import { OptEventLog } from './opt-document-select/opt-document-select.component';
 // import { OptUpload } from './opt-document-select/opt-document-select.component';
+
+
 import { OptBookingPaymentComponent} from './opt-booking-payment/opt-booking-payment.component';
 
 import { NgMultiSelectDropDownModule } from 'ng-multiselect-dropdown';
@@ -121,6 +123,8 @@ import { OptInvoiceGeneratorComponent } from './opt-invoice-generator/opt-invoic
 import { OptItemModalPopoversComponent } from './opt-item-modal-popovers/opt-item-modal-popovers.component';
 import { OptQuestionnairePopupComponent } from './opt-questionnaire-popup/opt-questionnaire-popup.component';
 import { OptDocumentSelectPopupComponent } from './opt-document-select-popup/opt-document-select-popup.component';
+import { OptErrorPageComponent } from './opt-error--page/opt-error--page.component';
+import { OptLoadingScreenComponent } from './opt-loading--screen/opt-loading--screen.component';
 
 
 
@@ -180,9 +184,9 @@ const appRoutes: Routes = [
   { path: 'opt-booking-details-full-page', component: OptBookingDetailsFullPageComponent},
   { path: 'opt-package-selection-modal', component: OptPackageSelectionModalComponent},
   { path: 'opt-package-details', component: OptPackageDetailsComponent},
-
-
+  { path: 'app-opt-error--page', component: OptErrorPageComponent},
   { path: 'opt-pageloader', component: OptPageloaderComponent},
+  { path: 'opt-loading--screen', component: OptLoadingScreenComponent},
 
   { path: '', redirectTo:'/opt-booking-summary', pathMatch:'full'},
   { path: '**', redirectTo:'/opt-booking-summary', pathMatch: 'full'}
@@ -226,6 +230,7 @@ const appRoutes: Routes = [
     ScrollDispatchModule
 
   ],
+  declarations: [OptErrorPageComponent, OptLoadingScreenComponent],
 })
 export class DemoMaterialModule {}
 
