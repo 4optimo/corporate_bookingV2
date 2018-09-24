@@ -1,3 +1,4 @@
+@import "variables";
 /* Expansion Panel Button Styles */
 .panel-action-btn-icon{
   &.mat-button{
@@ -40,10 +41,10 @@
   display: inline-flex;
   .btn-icon-text:hover{
     .opt_color_icon_font{
-      color: $white !important;
+      color: $opt_color_white !important;
     }
     span{
-      color: $white !important;
+      color: $opt_color_white !important;
     }
   }
   .mat-button{
@@ -74,7 +75,7 @@
       //   margin-right: 0;
       // }
       span{
-        color: #909cac;
+        color: $opt-text-color__secondary;
       }
     }
 
@@ -105,7 +106,7 @@
 
 .history_list_item{
   padding: 10px 10px;
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 1px solid $opt-border-color;
   .row{
     display: flex;
     [class*=' col-']{
@@ -131,8 +132,8 @@
   }
   mat-horizontal-stepper{
     .mat-fab.mat-accent{
-      background-color: #f6f6f6;
-      color:#909cac;
+      background-color: $background-color_light;
+      color: $opt-text-color__secondary;
       height: 65px;
       width: 65px;
       margin-top: 10px;
@@ -182,9 +183,9 @@
       padding-bottom: 15px;
     }
     &.shaded {
-      background-color: #f9f9f9;
+      background-color: $background-color_light;
       .mat-horizontal-stepper-header-container {
-        background-color: #f9f9f9;
+        background-color: $background-color_light;
       }
       .mat-horizontal-content-container {
         background-color: #f9f9f9;
@@ -205,17 +206,17 @@
     width: 65px;
     height: 65px;
     margin: 0 auto;
-    background-color: #f6f6f6;
+    background-color: $background-color_light;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     i {
       font-size: 40px;
-      color: #909cac;
+      color: $opt-text-color__secondary;
     }
 
   }
 
   .activity-availability {
-    color: #909cac;
+    color: $opt-text-color__secondary;
     font-size: 11px;
   }
   .mat-step-label-selected {
@@ -235,7 +236,7 @@
     }
   }
   .activity-title {
-    color: #909cac;
+    color: $opt-text-color__secondary;
     font-size: 15px;
     font-weight: 500;
     -ms-text-overflow: ellipsis;
@@ -267,8 +268,8 @@
   }
 
   .header-row {
-    border-bottom: 2px solid #e0e0e0;
-    border-top: 2px solid #e0e0e0;
+    border-bottom: 2px solid $opt-border-color;
+    border-top: 2px solid $opt-border-color;
     min-height: 55px;
     display: flex;
     align-items: center;
@@ -411,7 +412,7 @@
       }
     }
     .note_list_item {
-      border-bottom: 1px solid #e0e0e0;
+      border-bottom: 1px solid $opt-border-color;
       min-height: 50px;
       display: flex;
       align-items: center;
@@ -449,7 +450,7 @@
 
   .correspondence_entry {
     padding: 5px 0;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid $opt-border-color_light;
     padding-left: 15px;
     .row {
       margin: 0;
@@ -483,7 +484,7 @@
 
   .correspondence_entry-sent {
     padding: 5px 0;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid $opt-border-color_light;
 
     .row {
       margin: 0;
@@ -500,11 +501,11 @@
       padding: 10px 50px 16px 15px;
     }
   }
-  
-  
+
+
   .schedule-list-item {
     padding: 5px 15px;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid $opt-border-color_light;
 
     .row {
       margin: 0;
@@ -551,7 +552,7 @@
 
     &.invoice-list-item {
       padding: 5px 15px;
-      border-bottom: 1px solid #ddd;
+      border-bottom: 1px solid $opt-border-color_light;
 
       .row {
         margin: 0;
@@ -597,7 +598,7 @@
       color: $opt_color_white;
       float: right;
       padding: 2px;
-      background-color: #f5766c;
+      background-color: $no-color--state;
       border-radius: 50%;
       position: relative;
       left: 45px;
@@ -627,14 +628,14 @@
         padding-left: 0;
       }
       &.mat-expanded {
-        border-left: 4px solid #4db4fa;
+        border-left: 4px solid $opt_color_primary;
         box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12);
         margin-bottom: 50px;
         padding: 0;
         transition: 0.3s;
         .mat-expansion-panel-header {
           padding: 10px 0;
-          border-bottom: 1px dashed #4db4fa;
+          border-bottom: 1px dashed $opt_color_primary;
         }
         .mat-expansion-panel-content {
           display: block !important;
@@ -756,13 +757,13 @@
       }
     }
   }
-  
+
 
   .dispatch-list-item {
     padding: 10px 0;
     border-bottom: 1px solid $opt-border-color;
     .row-block{
-      
+
       @include respond-to('x-small') {
         padding: 10px 0;
         display: block !important;
@@ -788,7 +789,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding:0 10px; 
+        padding:0 10px;
       }
     }
 
@@ -841,7 +842,7 @@
   .documents {
     .documents_list_item {
       padding: 0;
-      border-bottom: 1px solid #e0e0e0;
+      border-bottom: 1px solid $opt-border-color;
       .header-height{
         height: auto !important;
         padding: 10px !important;
@@ -893,13 +894,13 @@
           padding-left: 0;
         }
         &.mat-expanded {
-          border-left: 4px solid #4db4fa;
+          border-left: 4px solid $opt_color_primary;
           box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
           padding: 0 10px;
           transition: 0.3s;
           .mat-expansion-panel-header {
             padding: 10px 0;
-            border-bottom: 1px dashed #4db4fa;
+            border-bottom: 1px dashed $opt_color_primary;
           }
           .mat-expansion-panel-content {
             padding: 10px;
@@ -966,14 +967,14 @@
         padding-left: 0;
       }
       &.mat-expanded {
-        border-left: 4px solid #4db4fa;
+        border-left: 4px solid $opt_color_primary;
         box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12);
         margin-bottom: 50px;
         padding: 0;
         transition: 0.3s;
         .mat-expansion-panel-header {
           padding: 10px 0;
-          border-bottom: 1px dashed #4db4fa;
+          border-bottom: 1px dashed $opt_color_primary;
         }
         .mat-expansion-panel-content {
           padding-top: 10px;
@@ -1083,14 +1084,14 @@
         padding-left: 0;
       }
       &.mat-expanded {
-        border-left: 4px solid #4db4fa;
+        border-left: 4px solid $opt_color_primary;
         box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12);
         margin-bottom: 50px;
         padding: 0 10px;
         transition: 0.3s;
         .mat-expansion-panel-header {
           padding: 10px 0;
-          border-bottom: 1px dashed #4db4fa;
+          border-bottom: 1px dashed $opt_color_primary;
         }
         .mat-expansion-panel-content {
           padding-top: 10px;

@@ -13,6 +13,6 @@
    border-bottom-left-radius: $radius;
 }
 @mixin border-left-radius($radius) {
-  border-bottom-left-radius: $radius;
-     border-top-left-radius: $radius;
+  border-bottom-left-radius: $radius !important;
+     border-top-left-radius: $radius !important;
 }
