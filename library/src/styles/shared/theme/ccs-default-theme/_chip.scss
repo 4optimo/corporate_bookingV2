@@ -1,3 +1,5 @@
+@import "variables";
+
 .opt {
   &_chip {
     display: flex;
@@ -15,7 +17,7 @@
       flex-direction: column;
     }
     .opt_chip--wrapper {
-      background-color: #e0e0e0;
+      background-color: $opt-border-color;
       min-width: 100px;
 
       font-weight: 400;
@@ -28,11 +30,11 @@
       //border: 1px solid gray;
 
       &:hover{
-        color: #fff;
-        background-color: #03a9f4;
+        color: $opt_color_white;
+        background-color: $background-color_hover;
 
         i{
-          color: #fff;
+          color: $opt_color_white;
         }
       }
 
@@ -43,7 +45,7 @@
           font-size: 25px!important;
 
           margin-right: 2px;
-          color: #8b8b8b;
+          color: $icon-color;
         }
 
 
@@ -58,15 +60,15 @@
 
 
         li{
-          color: black;
+          color: $opt_color_black;
         }
 
 
         .selected-item{
-          color:#535353 !important;
+          color: $opt-link-color !important;
 
           a{
-            color:#535353 !important;
+            color: $opt-link-color !important;
           }
 
         }
@@ -113,7 +115,7 @@
 
     input{
       outline: none;
-      color: black;
+      color: $opt_color_black;
       :active{
         display: none;
       }

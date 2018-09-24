@@ -6,7 +6,7 @@ $font-family-sans-serif: 'Roboto', 'Helvetica', 'Arial', sans-serif !default;
 $font-family-serif: 'Roboto Slab', 'Times New Roman', serif !default;
 $font-family-rubik:  'Rubik', sans-serif;
 
-$opt-color_black: #000000;
+$opt-color_black: #000;
 
 
 $prefix :'opt_';
@@ -62,6 +62,8 @@ $opt-border-color_light: #d9d9d9;
 $opt-border-color_darker: $grey-600;
 $opt-border-color_darkest: #77818a;
 $opt-border-color_lighter: #b7b7b7;
+$table_border: #b9a7f3;
+$table_border_secondary : #d7d7eb;
 
 
 //button colors..............
@@ -109,6 +111,7 @@ $opt_color_quaternary :#333e47;
 //Link Colours..............................................
 $opt-link-color__primary:#3a424d;
 $opt-link-color__secondary:$opt_color_tertiary;
+$opt-link-color: #534a30;
 
 
 //==========Text Colors================
@@ -117,6 +120,8 @@ $opt_text_color_secondary : $opt_color_tertiary;
 $opt_text_color_tertiary: #3a424d;
 $opt_text-color_quaternary: $opt_color_secondary;
 $opt_text_color_error : #af564e;
+$opt_text_color: #6f6f6f;
+
 
 $badge-success-bg: $opt_color_tertiary;
 
@@ -195,6 +200,9 @@ $default-state-dark-bg : $grey-200;
 
 $default_mat_icon_color: #d0d4db;
 $separator-border-color: $opt-border-color;
+$icon-color: #8b8876;
+$chip_set_default: #47463e;
+
 
 $summary_themed_color: $teal-900;
 
@@ -214,6 +222,15 @@ $font-color:#66615b !default;
 
 /* End of Booking Summary*/
 
+/*Floating Action Buttons */
+$fab-cancel-state : purple;
+$fab-payment-state : purple;
+$fab-task-state : purple;
+$fab-refund-state : purple;
+$fab-invoice-state : purple;
+$fab-toggle-bg: purple;
+/* End of Floating Action Buttons */
+
 $booking_summary_color: $opt_text_color_primary;
 
 $popup_heading_color : $opt_color_tertiary;
@@ -227,9 +244,20 @@ $lighter_background: #fafafa;
 $light_background_header: $purple-200;
 $background-color: #e3e3e3;
 $dark_background: #011047;
+$background-color_hover_default: #453e41;
+$background-color_hover: #9703f4;
+$expansion_header_color: #f0f1e8;
+$expansion_header_secondary: #f4f4f4;
+$table_background-color: #feeffd;
+$liner_gradient_background: #e7e9ff;
+$loader_background_color: #c94af9;
 
+$floating_button: #4a4355;
 
-$lbl-vat--color:#eee !default;
+$lbl-vat--color:#eee;
 $lbl__price-details:#90a4ae;
+
+$chip_default_color: #2f3444;
+
 
 $opt_line_default: #332e22;

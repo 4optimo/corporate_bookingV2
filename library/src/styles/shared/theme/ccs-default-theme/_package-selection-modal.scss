@@ -1,5 +1,7 @@
+@import "variables";
+
 .opt-package-selection-modal{
-  background-color: white;
+  background-color: $opt_color_white;
   margin: 10px;
   mat-checkbox{
     padding-right: 15px;
@@ -17,7 +19,7 @@
     }
     .body-top{
       padding: 0 0 30px 15px;
-      border-bottom: 2px solid lightgray;
+      border-bottom: 2px solid $opt_border-color_tertiary;
       .no-of-packages {
         padding-left: 40px;
       }
@@ -31,7 +33,7 @@
     }
     .packages{
       padding: 15px;
-      border-bottom: 1px solid lightgray;
+      border-bottom: 1px solid $opt_border-color_tertiary;
     }
   }
 }

@@ -1,8 +1,10 @@
+@import "variables";
+
 .opt-client-list-full, .opt-booking-list-full{
-  background-color: #fafafa;
+  background-color: $lighter_background;
 
   .filter-section{
-    border-bottom: 3px solid #e1e1e1;
+    border-bottom: 3px solid $opt-border-color;
     .filter-padding-left{
       padding-left: 20px;
     }
