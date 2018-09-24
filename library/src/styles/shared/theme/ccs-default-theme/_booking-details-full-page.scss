@@ -1,8 +1,9 @@
+@import "variables";
 .opt{
   &_booking-details-full{
     .content-wrapper{
       padding: 0 !important;
-      background-color: white !important;
+      background-color: $opt_color_white !important;
     }
     .opt_alert{
       padding: 40px !important;

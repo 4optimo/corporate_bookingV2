@@ -1,3 +1,5 @@
+@import "variables";
+
 .payment-category-header{
   .mat-form-field-infix{
     border-top: 0;
@@ -37,14 +39,14 @@
 }
 
 .payment-inner{
-  border: 1px solid #ddd;
+  border: 1px solid $opt_border-color_tertiary;
   height: 100%;
 }
 
 .payment-category-header{
-  background-color: #f9f9f9;
+  background-color: $central-summary-header;
   padding: 15px;
-  border-bottom: 2px solid #ddd;
+  border-bottom: 2px solid $opt_border-color_tertiary;
   .payment-category-title{
     font-size: 14px;
     color: $primary-theme-font;
@@ -58,7 +60,7 @@
 
 .payment-detail-field{
   margin-bottom: 5px;
-  border-bottom: 1px solid #d9d9d9;
+  border-bottom: 1px solid $opt-border-color_light;
   &:last-child{
     margin-bottom: 0;
   }
@@ -74,7 +76,7 @@
     }
     h5{
       font-size: 13px;
-      color: #abb5bf;
+      color: $opt-border-color_darker;
     }
     p{
       font-size: 12px;
@@ -83,7 +85,7 @@
     }
     .themed{
       h5, p{
-        color: #27bfc2;
+        color: $package-color--product;
       }
     }
   }
@@ -92,19 +94,19 @@
     min-height: 37px;
     &.unsuccessful{
       background-color: rgba(245,118,108,0.3);
-      border-bottom: 1px solid #f5766c;
+      border-bottom: 1px solid $no-color--state;
       p{
-        color: #f5766c;
+        color: $no-color--state;
         &:last-child{
-          color: #f5766c;
+          color: $no-color--state;
           span{
-            color: #333;
+            color: $opt_line_default;
           }
         }
       }
       .payment-status-inner{
         &:before{
-          border-left-color: #f5766c;
+          border-left-color: $no-color--state;
         }
       }
     }
@@ -118,7 +120,7 @@
         height: 0;
         border-top: 8px solid transparent;
         border-bottom: 8px solid transparent;
-        border-left: 10px solid #27bfc2;
+        border-left: 10px solid $package-color--product;
         left: 0;
         top: 50%;
         transform: translateY(-50%);
@@ -136,9 +138,9 @@
       &:last-child{
         font-size: 14px;
         font-weight: 600;
-        color: #27bfc2;
+        color: $package-color--product;
         span{
-          color: #4bb3fa;
+          color: $opt_text_color_primary;
           font-weight: 500;
         }
       }
@@ -149,21 +151,21 @@
 .cancellation-policy-wrapper{
   .cancellation-policy-item{
     padding: 10px;
-    border-bottom: 1px dashed #d9d9d9;
+    border-bottom: 1px dashed $opt-border-color_light;
     p{
       margin: 0;
-      color: #3b414d;
+      color: $booking_summary_color;
       line-height: 1.4;
       span{
         font-weight: 500;
         &.cancellation-period{
-          color: #27bfc2;
+          color: $package-color--product;
         }
         &.cancellation-time{
 
         }
         &.cancellation-policy-pct{
-          color: #27bfc2;
+          color: $package-color--product;
         }
       }
     }

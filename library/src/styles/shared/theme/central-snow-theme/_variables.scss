@@ -45,6 +45,7 @@ $ci-bg--color:red;
 $ci-col-hover:green;
 $primary:blue;
 
+
 // Typography
 $font-family-sans-serif: 'Roboto', 'Helvetica', 'Arial', sans-serif !default;
 $font-family-serif: 'Roboto Slab', 'Times New Roman', serif !default;
@@ -56,7 +57,7 @@ $btn-active-color:$active-color--state;
 $btn-frozen-color:$no-color--state;
 
 //Border line color.........................................
-$opt-border-color:#e0e0e0;
+$opt-border-color: #e0e0d9;
 $opt-border-color_light: #d9d9d9;
 $opt-border-color_darker: $grey-600;
 $opt-border-color_darkest: #77818a;
@@ -144,7 +145,7 @@ $opt_status_confirmed-multiple:#607d8b;
 $opt_status_provisional : #00bcd4;
 $opt_status_warning :#ff9800;
 $opt_status_tentative :#673ab7;
-$opt_status_provisional_multiple:#9c27b0;
+$opt_status_provisional_multiple: #b0064f;
 $opt_status_good_availability : #dcdc4d;
 $opt_status_few_availability : #6b0412;
 
@@ -166,6 +167,7 @@ $opt_color_frozen : $opt_status_cancelled;
 //Border line color.........................................
 $opt-border-color:#e0e0e0;
 $opt_border_color_default: $opt-color_black;
+$opt_border-color_tertiary: #ddd;
 
 
 //---Font Awesome variable--
@@ -202,7 +204,7 @@ $secondary-theme-font : $opt_color__secondary;
 //Header and Summary Header
 $central-header: $central-brand-primary;
 $central-header-content-color: $white-color;
-$central-summary-header: #f9f9f9 !default;
+$central-summary-header: #f9f9f9;
 $central-content-body-color: $white-color !default;
 
 $central-page-summery-lbl-border-color: #d6d6d6 !default;
@@ -229,3 +231,5 @@ $dark_background: #011047;
 
 $lbl-vat--color:#eee !default;
 $lbl__price-details:#90a4ae;
+
+$opt_line_default: #332e22;

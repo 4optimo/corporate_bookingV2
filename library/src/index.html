@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en" id="theme-change">
 <head>
+
   <meta charset="utf-8">
   <title>Library</title>
 
@@ -24,7 +25,18 @@
 </head>
 <body class="hold-transition opt-skin sidebar-mini" >
 
-<button onclick="myTheme()">Change Theme</button>
+<!--<button class="mat-icon-button changeTheme" onclick="myTheme()">-->
+  <!--<i class="material-icons">-->
+  <!--track_changes-->
+  <!--</i>-->
+<!--</button>-->
+
+<!--<button mat-button mat-icon-button [matMenuTriggerFor]="matMenu">Menu</button>-->
+<!--<mat-menu #menu="matMenu">-->
+  <!--<button mat-menu-item>Item 1</button>-->
+  <!--<button mat-menu-item>Item 2</button>-->
+<!--</mat-menu>-->
+
 
 <!--<div class="container-fluid">-->
   <!--<div class="">-->
@@ -48,8 +60,12 @@
 </body>
 </html>
 <script>
-  function myTheme() {
+  function myTheme1() {
     var element = document.getElementById("theme-change");
-    element.classList.toggle("snow");
+    element.classList.remove("snow");
+  }
+  function myTheme2() {
+    var element = document.getElementById("theme-change");
+    element.classList.add("snow");
   }
 </script>

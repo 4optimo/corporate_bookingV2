@@ -1,15 +1,17 @@
+@import "variables";
+
 .booking-main-tab-group{
   .mat-tab-labels{
     .mat-tab-label{
       flex-grow: 1;
-      background-color: #e4e8e9;
+      background-color: $background-color;
       padding: 35px 24px;
       &:not(.mat-tab-disabled){
         &.mat-tab-label-active{
-          background-color: #fff;
+          background-color: $opt_color_white;
         }
         &:focus{
-          background-color: #fff;
+          background-color: $opt_color_white;
         }
       }
     }
@@ -39,7 +41,7 @@
 
 .mat-button{
   &.mat-tab-label-button{
-    background-color: $opt_color__tertiary;
+    background-color: $opt_color_tertiary;
     min-width: unset;
     padding: 7px;
     border-radius: 0;
@@ -47,7 +49,7 @@
     min-height: 71px;
     i{
       font-size: 55px;
-      color: #fff;
+      color: $opt_color_white;
     }
 
   }
@@ -60,7 +62,7 @@
     text-align: center;
     padding: 0 5px;
     min-height: 70px;
-    color: #ccc;
+    color: $opt_border_color_default;
     .mat-menu-item-icon{
       padding-bottom: 5px;
     }
@@ -81,19 +83,19 @@
       transition: all 0.2s ease-in-out;
     }
     &:hover{
-      background-color: #fff;
+      background-color: $opt_color_white;
       &:before{
-        background-color: $opt_color__primary;
+        background-color: $opt_color_primary;
         transition: all 0.2s ease-in-out;
       }
       .mat-menu-item-icon{
         i{
-          color: $opt_color__primary;
+          color: $opt_color_primary;
           transition: all 0.2s ease-in-out;
         }
       }
       .mat-menu-item-label{
-        color: $opt_color__primary;
+        color: $opt_color_primary;
         transition: all 0.2s ease-in-out;
       }
     }

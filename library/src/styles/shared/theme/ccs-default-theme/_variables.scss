@@ -13,8 +13,8 @@ $opt-color_black: #000000;
 $opt_color_accent : #7a8aea;
 $ci-col-hover:green;
 $primary:blue;
-$plain : $opt_color_white !default;
-$opt_color__tertiary :#f5c70e;
+$plain : $opt_color_white;
+$opt_color__tertiary : #f58616;
 
 
 $test: gray;
@@ -112,7 +112,7 @@ $opt-border-color_lighter: #b7b7b7 !default;
 
 //button colors..............
 $opt-btn-color-default : #91a0ad;
-
+$opt_line_default: #333 !default;
 
 
 
@@ -214,11 +214,11 @@ $fab-toggle-bg: red;
 //========== Status colors=================
 $opt_status_confirmed : $opt_color_secondary;
 $opt_status_cancelled : #f5766c;
-$opt_status_confirmed-multiple:#607d8b;
+$opt_status_confirmed-multiple:#607d8b !default;
 $opt_status_provisional : #00bcd4;
 $opt_status_warning :#ff9800;
 $opt_status_tentative :#673ab7;
-$opt_status_provisional_multiple:#9c27b0;
+$opt_status_provisional_multiple:#9c27b0 !default;
 $opt_status_good_availability : #2c95dc !default;
 $opt_status_few_availability : #f44336 !default;
 
@@ -247,8 +247,10 @@ $opt_color_frozen : $opt_status_cancelled;
 
 
 //Border line color.........................................
-$opt-border-color:#e0e0e0;
-$opt_border_color_default: #ccc;
+$opt-border-color:#e0e0e0 !default;
+$opt_border_color_default: #ccc !default;
+$opt_border-color_tertiary: #ddd !default;
+
 
 //---Font Awesome variable--
 $fa-font-path: "./shared/theme/ccs-default-theme/font/font-awesome/fonts";
