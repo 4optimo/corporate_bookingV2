@@ -130,7 +130,7 @@ $lbl-vat--color:#eee !default;
 $lbl__price-details:#90a4ae;
 
 
-$package-color--product: #27bfc2;
+$package-color--product: #27bfc2 !default;
 $package-color--type: #f5c70e;
 
 
@@ -263,6 +263,7 @@ $popup_icon_color : $opt-text-color__secondary !default;
 $icon_color_darker: #393c41 !default;
 $popup_main_icon: $opt_color_white !default;
 
+$background-color_light: #f6f6f6 !default;
 $light_background: #f1f5f8 !default;
 $lighter_background: #fafafa !default;
 $light_background_header: #cbdfec !default;
