@@ -262,6 +262,7 @@
         .date-select{
           &:hover{
             background-color: $opt_status_good_availability;
+            transition: 0.3s;
             .material-icons{
               color: $opt_color_white;
             }
