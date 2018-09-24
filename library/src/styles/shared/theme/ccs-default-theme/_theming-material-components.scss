@@ -10,7 +10,9 @@
 }
 
 
-
+.mat-progress-spinner circle, .mat-spinner circle {
+  stroke: #f3ce27;
+}
 
 button{
   &.mat-icon-button{

@@ -230,7 +230,7 @@ const appRoutes: Routes = [
     ScrollDispatchModule
 
   ],
-  declarations: [OptErrorPageComponent, OptLoadingScreenComponent],
+
 })
 export class DemoMaterialModule {}
 
@@ -238,6 +238,8 @@ export class DemoMaterialModule {}
 
   declarations: [
     Opt404Component,
+    OptErrorPageComponent,
+    OptLoadingScreenComponent,
     OptPageloaderComponent,
     AppComponent,
     OptChipDatePickerComponent,
