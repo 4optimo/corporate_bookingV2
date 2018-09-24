@@ -1,3 +1,5 @@
+@import "variables";
+
 .opt-section__heading{
 
 .section-heading{
@@ -17,8 +19,8 @@
       .mat-content{
 
         >h1{
-          border-bottom: 4px solid #00b0ff;
-          line-height: 44px;
+          border-bottom: 4px solid $opt_color_primary;
+          line-height: 50px;
           padding-left: 3px;
           padding-right: 3px;
         }

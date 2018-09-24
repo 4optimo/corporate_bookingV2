@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" id="theme-change">
 <head>
   <meta charset="utf-8">
   <title>Library</title>
@@ -9,7 +9,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
 
   <!-- AdminLTE -->
   <base href="/">
@@ -19,18 +18,19 @@
   <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
   <!--<link rel="stylesheet" type="text/css" href="../library/src/styles/vendor/AdminLTE.css">-->
   <!--<link rel="stylesheet" type="text/css" href="styles/vendor/skin-blue.css">-->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+  <!--<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700">-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
   <!-- End of AdminLTE -->
 </head>
-<body class="hold-transition opt-skin sidebar-mini">
+<body class="hold-transition opt-skin sidebar-mini" >
+
+<button onclick="myTheme()">Change Theme</button>
+
 <!--<div class="container-fluid">-->
   <!--<div class="">-->
     <app-root></app-root>
   <!--</div>-->
 <!--</div>-->
-
 
 <!-- jQuery 3 -->
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -44,5 +44,12 @@
      user experience. -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="assets/AdminLTE.js"></script>
+
 </body>
 </html>
+<script>
+  function myTheme() {
+    var element = document.getElementById("theme-change");
+    element.classList.toggle("snow");
+  }
+</script>

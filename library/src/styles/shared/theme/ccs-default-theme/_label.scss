@@ -1,38 +1,50 @@
 
   %lbl{
-    height: 30px;
+   /* height: 30px;
     width: auto;
     text-align: center;
     border-radius: 5px;
     font-size: 12px;
     padding: inherit;
     font-weight: 500;
-    color:$opt_color_white;
+    color:$opt_color_white;*/
+    border-radius: (3px);
+    font-size: 12px;
+    padding: 2px 5px;
+    font-weight: 500;
+    color: $opt_color_white;
+    line-height: 20px;
   }
   .opt_lbl{
 
+    
     &_primary{
       @extend %lbl;
       height: 30px;
       font-weight: 500;
     //  background-color:lighten( $opt_color_quaternary , 60% );
     //  color:$opt_text_color_primary;
+      background-color: #cfd7dd !important;
+      color: #3a424d;
 
     }
     &_secondary{
       @extend %lbl;
       //background-color:$opt_color_primary;
-
+      background-color: #4bb3fa;
+      color: #ffffff;  
     }
     &_tertiary{
       @extend %lbl;
       //background-color:$opt_text_color_tertiary;
-
+      background-color: #3a424d;
+      color: #ffffff; 
     }
     &_quaternary{
       @extend %lbl;
       //background-color:$opt_color_secondary;
-
+      background-color: #27bfc2;
+      color: #ffffff;
     }
   }
 

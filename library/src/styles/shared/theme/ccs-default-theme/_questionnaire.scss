@@ -1,3 +1,5 @@
+@import "variables";
+
 .opt {
   &_questionnaire {
 
@@ -7,8 +9,8 @@
 
     .circle-icon{
       &.__individual--blue{
-          background-color: #4cb2fa;
-        color: #ffffff;
+        background-color: $opt_color_primary;
+        color: $opt_color_white;
       }
     }
 
@@ -20,7 +22,6 @@
           flex-direction: row;
         }
       }
-
     }
 
     .example-container > * {

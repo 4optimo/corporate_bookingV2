@@ -1,12 +1,11 @@
-
 import { AppComponent } from './app.component';
 import {CdkTableModule} from '@angular/cdk/table';
 import {HttpClientModule} from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {HttpModule} from '@angular/http';
-
-
+import { NgxEditorModule } from 'ngx-editor';
+import { TooltipModule } from 'ngx-bootstrap/tooltip';
 import {
   MatAutocompleteModule,
   MatButtonModule,
@@ -77,6 +76,8 @@ import {OptChipComponent} from './opt-chip/opt-chip.component';
 // import { OptDocumentSelectComponent } from './opt-document-select/opt-document-select.component';
 // import { OptEventLog } from './opt-document-select/opt-document-select.component';
 // import { OptUpload } from './opt-document-select/opt-document-select.component';
+
+
 import { OptBookingPaymentComponent} from './opt-booking-payment/opt-booking-payment.component';
 
 import { NgMultiSelectDropDownModule } from 'ng-multiselect-dropdown';
@@ -97,6 +98,33 @@ import { OptChipSelectComponent } from './opt-chip-select/opt-chip-select.compon
 import { OptPricePopupComponent } from './opt-price-popup/opt-price-popup.component';
 import { OptPageloaderComponent } from './opt-pageloader/opt-pageloader.component';
 import { Opt404Component } from './opt-404/opt-404.component';
+import { OptPackageDetailsComponent } from './opt-package-details/opt-package-details.component';
+import { OptCollectionDispatchPopupComponent } from './opt-collection-dispatch-popup/opt-collection-dispatch-popup.component';
+import { OptCollectionDispatchListComponent } from './opt-collection-dispatch-list/opt-collection-dispatch-list.component';
+import { OptEmailDocumentPopupComponent } from './opt-email-document-popup/opt-email-document-popup.component';
+import { OptTicketScanPopupComponent } from './opt-ticket-scan-popup/opt-ticket-scan-popup.component';
+import { OptPaymentModalComponent } from './opt-payment-modal/opt-payment-modal.component';
+import { OptPackagePopupComponent } from './opt-package-popup/opt-package-popup.component';
+import {OptItemPopupComponent} from "./opt-item-popup/opt-item-popup.component";
+import { OptPackageCartComponent } from './opt-package-cart/opt-package-cart.component';
+import { OptDataTableComponent } from './opt-data-table/opt-data-table.component';
+import { OptHostAddPopupComponent} from "./opt-host-add-popup/opt-host-add-popup.component";
+import { OptAddNoteComponent } from './opt-add-note/opt-add-note.component';
+import { OptReprintPopupComponent } from './opt-reprint-popup/opt-reprint-popup.component';
+import { OptTaskPopupComponent } from './opt-task-popup/opt-task-popup.component';
+import { OptPackageSelectionModalComponent } from './opt-package-selection-modal/opt-package-selection-modal.component';
+import { OptSuccessComponent } from './opt-success/opt-success.component';
+import { OptBookingDetailsFullPageComponent } from './opt-booking-details-full-page/opt-booking-details-full-page.component';
+import { OptItemCartComponent } from './opt-item-cart/opt-item-cart.component';
+import { OptModalPopoverComponent } from './opt-modal-popover/opt-modal-popover.component';
+import { OptTabbedPopoverComponent } from './opt-tabbed-popover/opt-tabbed-popover.component';
+import { OptDocumentPopoverComponent } from './opt-document-popover/opt-document-popover.component';
+import { OptInvoiceGeneratorComponent } from './opt-invoice-generator/opt-invoice-generator.component';
+import { OptItemModalPopoversComponent } from './opt-item-modal-popovers/opt-item-modal-popovers.component';
+import { OptQuestionnairePopupComponent } from './opt-questionnaire-popup/opt-questionnaire-popup.component';
+import { OptDocumentSelectPopupComponent } from './opt-document-select-popup/opt-document-select-popup.component';
+import { OptErrorPageComponent } from './opt-error--page/opt-error--page.component';
+import { OptLoadingScreenComponent } from './opt-loading--screen/opt-loading--screen.component';
 
 
 
@@ -130,10 +158,35 @@ const appRoutes: Routes = [
   { path: 'typography', component: TypographyComponent},
   { path: 'opt-chip-select', component: OptChipSelectComponent},
   { path: 'opt-booking-payment', component: OptBookingPaymentComponent},
+  { path: 'opt-collection-dispatch-popup', component: OptCollectionDispatchPopupComponent},
+  { path: 'opt-collection-dispatch-list', component: OptCollectionDispatchListComponent},
+  { path: 'opt-email-document-popup', component: OptEmailDocumentPopupComponent},
+  { path: 'opt-ticket-scan-popup', component: OptTicketScanPopupComponent},
+  { path: 'opt-payment-modal', component: OptPaymentModalComponent},
+  { path: 'opt-package-popup', component: OptPackagePopupComponent},
   { path: 'app-opt-404', component: Opt404Component},
-
-
-   { path: 'opt-pageloader', component: OptPageloaderComponent},
+  { path: 'app-package-details', component: OptPackageDetailsComponent},
+  { path: 'opt-host-add-popup', component: OptHostAddPopupComponent},
+  { path: 'opt-add-note-popup', component: OptAddNoteComponent},
+  { path: 'opt-reprint-popup', component: OptReprintPopupComponent},
+  { path: 'opt-task-popup', component: OptTaskPopupComponent},
+  { path: 'opt-success', component: OptSuccessComponent},
+  { path: 'opt-booking-details-full-page', component: OptBookingDetailsFullPageComponent},
+  { path: 'opt-package-cart', component: OptPackageCartComponent},
+  { path: 'opt-item-cart', component: OptItemCartComponent},
+  { path: 'opt-modal-popover', component: OptModalPopoverComponent},
+  { path: 'opt-tabbed-popover', component: OptTabbedPopoverComponent},
+  { path: 'opt-document-popover', component: OptDocumentPopoverComponent},
+  { path: 'opt-invoice-generator', component: OptInvoiceGeneratorComponent},
+  { path: 'opt-questionnaire-popup', component: OptQuestionnairePopupComponent},
+  { path: 'opt-document-select-popup', component: OptDocumentSelectPopupComponent},
+  { path: 'opt-item-modal-popovers', component: OptItemModalPopoversComponent},
+  { path: 'opt-booking-details-full-page', component: OptBookingDetailsFullPageComponent},
+  { path: 'opt-package-selection-modal', component: OptPackageSelectionModalComponent},
+  { path: 'opt-package-details', component: OptPackageDetailsComponent},
+  { path: 'app-opt-error--page', component: OptErrorPageComponent},
+  { path: 'opt-pageloader', component: OptPageloaderComponent},
+  { path: 'opt-loading--screen', component: OptLoadingScreenComponent},
 
   { path: '', redirectTo:'/opt-booking-summary', pathMatch:'full'},
   { path: '**', redirectTo:'/opt-booking-summary', pathMatch: 'full'}
@@ -178,12 +231,6 @@ const appRoutes: Routes = [
 
   ],
 
-
-
-
-
-
-
 })
 export class DemoMaterialModule {}
 
@@ -191,6 +238,8 @@ export class DemoMaterialModule {}
 
   declarations: [
     Opt404Component,
+    OptErrorPageComponent,
+    OptLoadingScreenComponent,
     OptPageloaderComponent,
     AppComponent,
     OptChipDatePickerComponent,
@@ -226,10 +275,35 @@ export class DemoMaterialModule {}
     OptIndividualClientPopupComponent,
     OptChipSelectComponent,
     OptPricePopupComponent,
-    // OptDocumentSelectComponent,
+    OptPackageDetailsComponent,
+    OptCollectionDispatchPopupComponent,
+    OptCollectionDispatchListComponent,
+    OptEmailDocumentPopupComponent,
+    OptTicketScanPopupComponent,
+    OptPaymentModalComponent,
+    OptPackagePopupComponent,
+    OptItemPopupComponent,
+    OptPackageCartComponent,
+    OptDataTableComponent,
+    OptHostAddPopupComponent,
+    OptAddNoteComponent,
+    OptReprintPopupComponent,
+    OptTaskPopupComponent,
+    OptPackageSelectionModalComponent,
+    OptSuccessComponent,
+    OptModalPopoverComponent,
+    OptTabbedPopoverComponent,
+    OptDocumentPopoverComponent,
+    OptInvoiceGeneratorComponent,
+    OptQuestionnairePopupComponent,
+    OptDocumentSelectPopupComponent,
+    OptBookingDetailsFullPageComponent,
+    OptItemCartComponent,
+    OptItemModalPopoversComponent,
 
     RoutingProjectComponent,
     TypographyComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -252,10 +326,23 @@ export class DemoMaterialModule {}
     MatInputModule,
     ScrollDispatchModule,
     NgMultiSelectDropDownModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    NgxEditorModule,
+    TooltipModule.forRoot(),
   ],
 
-  entryComponents:[OptPopupModalComponent, OptPopupWindowComponent, OptClientPopupComponent, OptIndividualClientPopupComponent],
+  entryComponents:[
+    OptPopupModalComponent,
+    OptPopupWindowComponent,
+    OptClientPopupComponent,
+    OptIndividualClientPopupComponent,
+    OptPaymentModalComponent,
+    OptPackagePopupComponent,
+    OptItemPopupComponent,
+    OptPackageCartComponent,
+    OptDataTableComponent
+  ],
+
   providers: [{provide: APP_BASE_HREF, useValue : '/' }],
 
   bootstrap: [AppComponent],

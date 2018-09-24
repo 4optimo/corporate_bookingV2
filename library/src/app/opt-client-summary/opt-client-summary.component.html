@@ -2,7 +2,7 @@
   <mat-accordion>
     <mat-expansion-panel #myPanel1 [disabled]="true" class="opt-expand--line" >
       <mat-expansion-panel-header class="opt_width-define opt_expand__header" collapsedHeight=".collapsedHeight" expandedHeight=".expandedHeight"  >
-        <div class="opt_expand--container" >
+        <div class="opt_expand--container opt_flex__item--vcenter" >
 
           <div class="opt_flex__item __expansion-lft--side">
             <div class="row opt_flex--container tc-flex-item__center ">
@@ -29,7 +29,7 @@
                 <mat-panel-description class="opt_flex--container tc-flex-item__center type">
                     <div class="middle-details">
                       <!--<div class="opt-txt__caption space-between">Ernst & Young </div>-->
-                      <div><span class="opt-txt__body1-small lbl lbl__vat">Individual</span></div>
+                      <div><span class="opt_lbl_primary">Individual</span></div>
                     </div>
                 </mat-panel-description>
               </div>
@@ -47,18 +47,16 @@
                   <span class="opt-txt__body2-small"> 556 Chiswick High Road London, W4 5YA, Australia </span>
                 </mat-panel-description>
               </div>
-              <div class="col-sm-12  col-md-2	col-lg-2	col-xs-12 ">
-                <mat-panel-description class="opt_flex--container opt_price-section">
+              <div class="col-sm-12  col-md-2	col-lg-2	col-xs-12">
+                <mat-panel-description class="opt_flex--container opt_price-section just-content-end">
                   <!--<div class="opt_flex__item"></div>-->
                   <!--<div class=" opt_flex__item opt-typo-subhead-2 price"></div>-->
-                  <div mat-raised-button class="btn-color-default opt_flex__item opt-txt__light btn btn-select">
-                    Select
-                  </div>
+                  <button mat-button class="mat-btn-primary--small opt-width-full" >Select</button>
                 </mat-panel-description>
               </div>
             </div>
           </div>
-          <div class="opt_flex__item __expansion-rgt--side">
+          <div class="opt_flex__item just-content-end">
             <div class="tc-flex-item__center">
               <div class="opt_flex__item action__button tc-flex-item__center">
                 <button class="down-arrow" mat-icon-button color="primary" (click)="expandPannel()"
@@ -68,12 +66,15 @@
               </div>
             </div>
           </div>
-        </div>
 
+        </div>
 
       </mat-expansion-panel-header>
 
       <div class="opt_expand--container">
+        <div class="loadding--cage" >
+          <mat-progress-bar mode="query"></mat-progress-bar>
+        </div>
         <div class="row">
           <div class="opt_expand-header opt_flex--container tc-flex-item__center">
             <div class="col-sm-8 opt_flex__item"></div>
@@ -127,9 +128,7 @@
               <div class="opt_flex__item">
                 <div class="opt_width-calc">
                   <div class="opt-txt__body2 ref_no">Note</div>
-                  <div>
-                    <div class="opt-txt__light">Aeneam commodo ligula eget dolor.</div>
-                  </div>
+                  <div class="opt-txt__body1 opt-txt__secondary">Aeneam commodo ligula eget dolor.</div>
                 </div>
               </div>
         </div>
@@ -148,17 +147,15 @@
               </div>
               <div class="opt_flex__item">
                 <div class="opt_width-calc">
-                  <div class="opt-txt__light">Designation</div>
-                  <div>
-                    <div class="opt-txt__body1">Account Manager</div>
-                  </div>
+                  <div class="opt-txt__body1 opt-txt__secondary">Designation</div>
+                  <div class="opt-txt__body1">Account Manager</div>
                 </div>
               </div>
             </div>
           </div>
           <div class="col-sm-5 col-md-5	col-lg-5 col-xs-12">
             <div class="opt_flex--container tc-flex-item__center">
-              <div class="opt_flex__item--inherit sm-padding">
+              <div class="opt_flex__item--inherit">
                 <span class="lbl lbl__vat __active">Active</span>
               </div>
             </div>
@@ -185,17 +182,17 @@
         </div>
         <div class="row">
           <div class="col-sm-4 col-md-4	col-lg-4 col-xs-12">
-            <div class="opt_flex--container tc-flex-item__center">
+            <div class="opt_flex--container">
               <div class="opt_flex__item add-padding">
-                <div class="opt-txt__light">Alternative Address</div>
-                <div class="opt-txt__body1 contact-address">71, Pilgrim Avenue, Chevy Chas</div>
+                  <div class="opt-txt__body1 opt-txt__secondary">Alternative Address</div>
+                  <div class="opt-txt__body1 contact-address">71, Pilgrim Avenue, Chevy Chas</div>
               </div>
             </div>
           </div>
           <div class="col-sm-3 col-md-3	col-lg-3 col-xs-12">
-            <div class="opt_flex--container tc-flex-item__center">
-              <div class="opt_flex__item sm-padding">
-                <div class="opt-txt__light">Alternative Email</div>
+            <div class="opt_flex--container">
+              <div class="opt_flex__item">
+                <div class="opt-txt__body1 opt-txt__secondary">Alternative Email</div>
                 <div class="opt-txt__body1">jone@glcouncil.com</div>
               </div>
             </div>
@@ -203,8 +200,8 @@
           <div class="col-sm-5 col-md-5	col-lg-5 col-xs-12">
             <div class="row" style="width: 100%">
               <div class="col-sm-6 col-md-6	col-lg-6	col-xl-6 col-xs-12">
-                <div class="opt_flex__item sm-padding">
-                      <div class="opt-txt__light">Telephone</div>
+                <div class="opt_flex__item ">
+                      <div class="opt-txt__body1 opt-txt__secondary">Telephone</div>
                       <div class="opt-txt__body1">+44 70 17425511</div>
                     </div>
                     <!--<div class="opt_flex__item">-->
@@ -212,8 +209,8 @@
                       <!--<div class="opt-txt__body1">+44 70 17425511</div>-->
                 </div>
                 <div class="col-sm-6 col-md-6	col-lg-6	col-xl-6 col-xs-12">
-                  <div class="opt_flex__item sm-padding">
-                    <div class="opt-txt__light">Web</div>
+                  <div class="opt_flex__item">
+                    <div class="opt-txt__body1 opt-txt__secondary">Web</div>
                     <div class="opt-txt__body1">www.glcouncil.com</div></div>
                 </div>
               </div>
@@ -223,14 +220,14 @@
         <!--<div class="opt_flex&#45;&#45;container">-->
           <div class="row">
             <div class="col-md-offset-4 col-md-3 col-sm-offset-4 col-sm-3">
-              <div class="opt_flex__item sm-padding">
-                <div class="opt-txt__light">Fax</div>
+              <div class="opt_flex__item">
+                <div class="opt-txt__body1 opt-txt__secondary">Fax</div>
                 <div class="opt-txt__body1">+44 70 17425511</div>
               </div>
             </div>
             <div class="col-md-3 col-sm-3">
-              <div class="opt_flex__item sm-padding">
-                <div class="opt-txt__light">Mobile</div>
+              <div class="opt_flex__item">
+                <div class="opt-txt__body1 opt-txt__secondary">Mobile</div>
                 <div class="opt-txt__body1">+44 70 17425511</div>
               </div>
             </div>
@@ -262,7 +259,7 @@
           <div class="col-sm-12 col-md-12	col-lg-12	col-xl-12 col-xs-12">
             <div class="opt_flex--container tc-flex-item__center">
               <div class="opt_flex__item add-padding">
-                <div class="opt-txt__light">Currency</div>
+                <div class="opt-txt__body1 opt-txt__secondary">Currency</div>
                 <div class="opt-txt__body1">United States Dollars</div>
               </div>
             </div>
@@ -274,7 +271,7 @@
 
     <mat-expansion-panel #myPanel2 [disabled]="true" class="opt-expand--line" >
       <mat-expansion-panel-header class="opt_width-define opt_expand__header" collapsedHeight=".collapsedHeight" expandedHeight=".expandedHeight"  >
-        <div class="opt_expand--container" >
+        <div class="opt_expand--container opt_flex__item--vcenter" >
 
           <div class="opt_flex__item __expansion-lft--side">
             <div class="row opt_flex--container tc-flex-item__center ">
@@ -301,7 +298,7 @@
                 <mat-panel-description class="opt_flex--container tc-flex-item__center type">
                   <div class="middle-details">
                     <div class="opt-txt__caption space-between">Ernst & Young </div>
-                    <div><span class="opt-txt__body1-small lbl lbl__vat">Corporate</span></div>
+                    <div><span class="opt_lbl_primary">Corporate</span></div>
                   </div>
                 </mat-panel-description>
               </div>
@@ -320,17 +317,15 @@
                 </mat-panel-description>
               </div>
               <div class="col-sm-12  col-md-2	col-lg-2	col-xs-12 ">
-                <mat-panel-description class="opt_flex--container opt_price-section">
+                <mat-panel-description class="opt_flex--container opt_price-section just-content-end">
                   <!--<div class="opt_flex__item"></div>-->
                   <!--<div class=" opt_flex__item opt-typo-subhead-2 price"></div>-->
-                  <div mat-raised-button class="btn-color-default opt_flex__item opt-txt__light btn btn-select">
-                    Select
-                  </div>
+                  <button mat-button class="mat-btn-primary--small opt-width-full" >Select</button>
                 </mat-panel-description>
               </div>
             </div>
           </div>
-          <div class="opt_flex__item __expansion-rgt--side">
+          <div class="opt_flex__item just-content-end">
             <div class="tc-flex-item__center">
               <div class="opt_flex__item action__button tc-flex-item__center">
                 <button class="down-arrow" mat-icon-button color="primary" (click)="expandPannel2()"
@@ -346,6 +341,9 @@
       </mat-expansion-panel-header>
 
       <div class="opt_expand--container">
+        <div class="loadding--cage" >
+          <mat-progress-bar mode="query"></mat-progress-bar>
+        </div>
         <div class="row">
           <div class="opt_expand-header opt_flex--container tc-flex-item__center">
             <div class="col-sm-8 opt_flex__item"></div>
@@ -399,9 +397,7 @@
               <div class="opt_flex__item">
                 <div class="opt_width-calc">
                   <div class="opt-txt__body2 ref_no">Note</div>
-                  <div>
-                    <div class="opt-txt__light">Aeneam commodo ligula eget dolor.</div>
-                  </div>
+                  <div class="opt-txt__body1 opt-txt__secondary">Aeneam commodo ligula eget dolor.</div>
                 </div>
               </div>
             </div>
@@ -420,17 +416,15 @@
               </div>
               <div class="opt_flex__item">
                 <div class="opt_width-calc">
-                  <div class="opt-txt__light">Designation</div>
-                  <div>
+                    <div class="opt-txt__body1 opt-txt__secondary">Designation</div>
                     <div class="opt-txt__body1">Account Manager</div>
-                  </div>
                 </div>
               </div>
             </div>
           </div>
           <div class="col-sm-5 col-md-5	col-lg-5 col-xs-12">
             <div class="opt_flex--container tc-flex-item__center">
-              <div class="opt_flex__item--inherit sm-padding">
+              <div class="opt_flex__item--inherit">
                 <span class="lbl lbl__vat __active">Active</span>
               </div>
             </div>
@@ -457,17 +451,17 @@
         </div>
         <div class="row">
           <div class="col-sm-4 col-md-4	col-lg-4 col-xs-12">
-            <div class="opt_flex--container tc-flex-item__center">
+            <div class="opt_flex--container">
               <div class="opt_flex__item add-padding">
-                <div class="opt-txt__light">Alternative Address</div>
+                <div class="opt-txt__body1 opt-txt__secondary">Alternative Address</div>
                 <div class="opt-txt__body1 contact-address">71, Pilgrim Avenue, Chevy Chas</div>
               </div>
             </div>
           </div>
           <div class="col-sm-3 col-md-3	col-lg-3 col-xs-12">
-            <div class="opt_flex--container tc-flex-item__center">
-              <div class="opt_flex__item sm-padding">
-                <div class="opt-txt__light">Alternative Email</div>
+            <div class="opt_flex--container">
+              <div class="opt_flex__item">
+                <div class="opt-txt__body1 opt-txt__secondary">Alternative Email</div>
                 <div class="opt-txt__body1">jone@glcouncil.com</div>
               </div>
             </div>
@@ -475,8 +469,8 @@
           <div class="col-sm-5 col-md-5	col-lg-5 col-xs-12">
             <div class="row" style="width: 100%">
               <div class="col-sm-6 col-md-6	col-lg-6	col-xl-6 col-xs-12">
-                <div class="opt_flex__item sm-padding">
-                  <div class="opt-txt__light">Telephone</div>
+                <div class="opt_flex__item">
+                  <div class="opt-txt__body1 opt-txt__secondary">Telephone</div>
                   <div class="opt-txt__body1">+44 70 17425511</div>
                 </div>
                 <!--<div class="opt_flex__item">-->
@@ -484,8 +478,8 @@
                 <!--<div class="opt-txt__body1">+44 70 17425511</div>-->
               </div>
               <div class="col-sm-6 col-md-6	col-lg-6	col-xl-6 col-xs-12">
-                <div class="opt_flex__item sm-padding">
-                  <div class="opt-txt__light">Web</div>
+                <div class="opt_flex__item">
+                  <div class="opt-txt__body1 opt-txt__secondary">Web</div>
                   <div class="opt-txt__body1">www.glcouncil.com</div></div>
               </div>
             </div>
@@ -495,14 +489,14 @@
         <!--<div class="opt_flex&#45;&#45;container">-->
         <div class="row">
           <div class="col-md-offset-4 col-md-3 col-sm-offset-4 col-sm-3">
-            <div class="opt_flex__item sm-padding">
-              <div class="opt-txt__light">Fax</div>
+            <div class="opt_flex__item">
+              <div class="opt-txt__body1 opt-txt__secondary">Fax</div>
               <div class="opt-txt__body1">+44 70 17425511</div>
             </div>
           </div>
           <div class="col-md-3 col-sm-3">
-            <div class="opt_flex__item sm-padding">
-              <div class="opt-txt__light">Mobile</div>
+            <div class="opt_flex__item">
+              <div class="opt-txt__body1 opt-txt__secondary">Mobile</div>
               <div class="opt-txt__body1">+44 70 17425511</div>
             </div>
           </div>
@@ -534,7 +528,7 @@
           <div class="col-sm-12 col-md-12	col-lg-12	col-xl-12 col-xs-12">
             <div class="opt_flex--container tc-flex-item__center">
               <div class="opt_flex__item add-padding">
-                <div class="opt-txt__light">Currency</div>
+                <div class="opt-txt__body1 opt-txt__secondary">Currency</div>
                 <div class="opt-txt__body1">United States Dollars</div>
               </div>
             </div>

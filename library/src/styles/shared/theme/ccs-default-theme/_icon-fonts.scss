@@ -92,14 +92,19 @@ $icn-font--url:'./shared/theme/ccs-default-theme/font/fonts-icon/';
 .icon-trolley:before {
   content: "\e91a";
 }
-.icon-server:before {
-  content: "\e90f";
-  color: #a7a9ac;
-}
 .icon-server2:before {
   content: "\e91b";
 }
 .icon-earth-globe:before {
   content: "\e90d";
+}
+.icon-credit-note:before {
+  content: "\e90f";
+}
+.icon-dinner:before {
+  content: "\e910";
+}
+.icon-add-booking:before {
+  content: "\e90a";
 }
 //End of Booking Activities Icons

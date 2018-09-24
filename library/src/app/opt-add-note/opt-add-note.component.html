@@ -1,0 +1,212 @@
+<div class="opt_modal-content opt_add-note-popup">
+  <div class="mat-dialog-content">
+    <div class="opt_modal-header ">
+      <div class="test opt--depth__1">
+        <div class="opt_flex--container test-wrapper">
+          <div class="opt_flex__item--inherit test-inner">
+            <div class="inner-icon">
+              <i class="material-icons">note_add</i>
+            </div>
+          </div>
+          <div class="opt_flex__item test-inner-expand">
+            <div class="title">
+              <h1 mat-dialog-title>{{data.name}}</h1>
+              <p class="opt-txt__body2-small">There are a few different types of notes</p>
+            </div>
+          </div>
+          <div class="opt_flex__item--inherit test-inner-2">
+            <div class="inner-action">
+              <button class="material-icons icon1">launch</button>
+              <button class="material-icons icon2" (click)="close()">close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="opt-add-note-wrapper">
+      <div class="opt_modal-body">
+        <div class="mat-dialog-content">
+          <div class="row">
+            <div class="col-md-12">
+              <mat-tab-group class="icon__tabs" [disableRipple]="true">
+                <mat-tab>
+                  <ng-template mat-tab-label>
+                    <div class="tab-icon-wrapper">
+                      <i class="material-icons">note</i>
+                    </div>
+                    <div class="tab__icon_label">
+                      Note
+                    </div>
+                  </ng-template>
+                  <div class="add-note-header">
+                    <div class="row">
+                      <div class="col-md-9">
+                        <div class="opt_flex--container">
+                          <div class="opt_flex__item opt_flex__item--vcenter">
+                            <h1 class="opt-txt__body2	">General Note</h1>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-3 note-header-checkbox">
+                        <div class="opt_flex--container">
+                          <div class="opt_flex__item opt_flex__item--vcenter">
+                            <p class="opt-txt__body2-small">Make as Special Request</p>
+                            <mat-checkbox></mat-checkbox>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="opt-text-editor">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="opt_flex--container">
+                          <div class="opt_flex__item">
+                            <app-ngx-editor [placeholder]="'Enter text here...'" [spellcheck]="true" [(ngModel)]="htmlContent"></app-ngx-editor>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </mat-tab>
+                <mat-tab>
+                  <ng-template mat-tab-label>
+                    <div class="tab-icon-wrapper">
+                      <i class="material-icons">restaurant</i>
+                    </div>
+                    <div class="tab__icon_label">
+                      Catering
+                    </div>
+                  </ng-template>
+                  <div class="add-note-header">
+                    <div class="row">
+                      <div class="col-md-9">
+                        <div class="opt_flex--container">
+                          <div class="opt_flex__item opt_flex__item--vcenter">
+                            <h1 class="opt-txt__body2	">Catering Note</h1>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-3 note-header-checkbox">
+                        <div class="opt_flex--container">
+                          <div class="opt_flex__item opt_flex__item--vcenter">
+                            <p class="opt-txt__body2-small">Make as Special Request</p>
+                            <mat-checkbox></mat-checkbox>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="opt-text-editor">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="opt_flex--container">
+                          <div class="opt_flex__item">
+                            <app-ngx-editor [placeholder]="'Enter text here...'" [spellcheck]="true" [(ngModel)]="htmlContent"></app-ngx-editor>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </mat-tab>
+                <mat-tab>
+                  <ng-template mat-tab-label>
+                    <div class="tab-icon-wrapper">
+                      <i class="material-icons">directions_bus</i>
+                    </div>
+                    <div class="tab__icon_label">
+                      Mobility/Delivery
+                    </div>
+                  </ng-template>
+                  <div class="add-note-header">
+                    <div class="row">
+                      <div class="col-md-9">
+                        <div class="opt_flex--container">
+                          <div class="opt_flex__item opt_flex__item--vcenter">
+                            <h1 class="opt-txt__body2	">Mobility/Delivery Note</h1>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-3 note-header-checkbox">
+                        <div class="opt_flex--container">
+                          <div class="opt_flex__item opt_flex__item--vcenter">
+                            <p class="opt-txt__body2-small">Make as Special Request</p>
+                            <mat-checkbox></mat-checkbox>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="opt-text-editor">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="opt_flex--container">
+                          <div class="opt_flex__item">
+                            <app-ngx-editor [placeholder]="'Enter text here...'" [spellcheck]="true" [(ngModel)]="htmlContent"></app-ngx-editor>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </mat-tab>
+                <mat-tab>
+                  <ng-template mat-tab-label>
+                    <div class="tab-icon-wrapper">
+                      <i class="material-icons">folder_special</i>
+                    </div>
+                    <div class="tab__icon_label">
+                      Special
+                    </div>
+                  </ng-template>
+                  <div class="add-note-header">
+                    <div class="row">
+                      <div class="col-md-9">
+                        <div class="opt_flex--container">
+                          <div class="opt_flex__item opt_flex__item--vcenter">
+                            <h1 class="opt-txt__body2	">Special Note</h1>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-3 note-header-checkbox">
+                        <div class="opt_flex--container">
+                          <div class="opt_flex__item opt_flex__item--vcenter">
+                            <p class="opt-txt__body2-small">Make as Special Request</p>
+                            <mat-checkbox></mat-checkbox>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="opt-text-editor">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="opt_flex--container">
+                          <div class="opt_flex__item">
+                            <app-ngx-editor [placeholder]="'Enter text here...'" [spellcheck]="true" [(ngModel)]="htmlContent"></app-ngx-editor>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </mat-tab>
+              </mat-tab-group>
+            </div>
+          </div>
+          <div class="note-button-row">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item opt_flex__item--vcenter">
+                    <button class="mat-btn-primary mat-button" (click)="close()">Cancel</button>
+                    <button class="mat-btn-primary mat-button" (click)="close()">Save</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

@@ -1,3 +1,5 @@
+$opt_color_white : #ffffff !default;
+
 $red-50: #ffebee !default;
 $red-100: #ffcdd2 !default;
 $red-200: #ef9a9a !default;
@@ -13,6 +15,7 @@ $red-A200: #ff5252 !default;
 $red-A400: #ff1744 !default;
 $red-A700: #d50000 !default;
 $red: $red-700 !default;
+$red-danger: #f5766c !default;
 
 
 $pink-50: #fce4ec !default;

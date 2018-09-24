@@ -1,11 +1,11 @@
-@import "colors";
+@import "variables";
 
 .card{
-  background-color: $white;
-  border-bottom: 1px solid $grey-300;
+  background-color: $opt_color_white;
+  border-bottom: 1px solid $opt-border-color;
   margin: 10px;
   .row{
-    font-family: 'Rubik', sans-serif;
+    //font-family: 'Rubik', sans-serif;
     font-weight: 500;
     font-size: medium;
 
@@ -15,11 +15,11 @@
     }
 
     .doc-des{
-      color: $blue-grey-900;
+      color: $doc-des;
     }
 
     .doc-sub{
-      color: $blue-grey-A400;
+      color: $doc-sub;
     }
   }
 }
@@ -27,17 +27,17 @@
 
 
 .btn-addTo {
-  background-color: $white;
-  color: $blue-400;
+  background-color: $opt_color_white;
+  color: $opt_color_primary;
   width: 25%;
-  border: 1px solid $blue-400;
+  border: 1px solid $opt_color_primary;
   @include border-radius(4px);
   padding: 5px;
   margin: 14px;
 
     &:active, &:focus, &:visited, &:active:focus, &:hover {
-      background-color: $blue-400;
-      color: $white;
+      background-color: $opt_color_primary;
+      color: $opt_color_white;
     }
   }
 

@@ -1,5 +1,5 @@
 .opt_booking__list_expand{
-  $danger_color: #f2705b;
+  //$danger_color: #f2705b;
   $plain_color : white;
   $border_color: #b7b7b7;
   $expanded_line: #4bb3fa;
@@ -16,7 +16,7 @@
     &_expand--container {
       width: 100%;
       color: black;
-
+      
       >.row{
 
 
@@ -34,7 +34,7 @@
     }
 
     &_circle{
-      @include circle-icon(40px, $danger_color, $danger_color);
+      @include circle-icon(40px, #f2705b, #f2705b);
       padding-top: 2px;
       line-height: 12px;
       .date{
@@ -53,7 +53,7 @@
     &_width-calc{
       //position: absolute;
       //left: 80px;
-      width: calc(100% - 60px);
+      width: calc(100% - 10px);
       //padding: 5px;
       //text-align: left;
       padding-left: 20px;

@@ -1,0 +1,79 @@
+.opt_item--multiple-timeslot{
+  background-color: white;
+  margin: 10px;
+  .opt_flex__item{
+    flex-basis: calc(100% / 3);
+    flex-grow: 1;
+    padding: 10px 0;
+    border-bottom: 1px dashed #909cac;
+    margin: 10px 50px 10px 50px;
+  }
+  .flex-container{
+    justify-content: space-around;
+    padding-left: 20px;
+    margin: 10px;
+  }
+  .select-all{
+    padding: 20px 10px 20px 50px;
+  }
+}
+
+.opt_config-popover{
+  background-color: white;
+  margin: 10px;
+  max-width: 500px;
+  .mat-form-field{
+    width: 100%;
+  }
+  .opt_flex__item{
+    flex-basis: calc(100% / 2);
+    flex-grow: 1;
+    padding: 10px 0;
+    margin: 20px;
+  }
+  .flex-container{
+    justify-content: space-around;
+    padding-left: 20px;
+    margin: 10px;
+  }
+}
+
+.opt_time-range{
+  .outer-wrapper{
+    overflow: hidden !important;
+  }
+  .time-range{
+    .opt_flex--container{
+      min-height: 94px;
+      align-items: flex-end;
+    }
+    .opt_flex__item{
+      padding-left: 30px;
+      .mat-form-field-suffix{
+        padding: 5px;
+      }
+    }
+  }
+}
+
+.opt_user-time-slot{
+  .outer-wrapper{
+    overflow: hidden !important;
+  }
+}
+.mat-form-field-infix{
+  font-size: 12px;
+}
+.price-align {
+  text-align: right;
+}
+.opt_calendar-expand {
+  .time-slot-selection {
+    .tot_price{
+      font-weight: 600;
+      .mat-form-field-infix {
+        width: 70px;
+      }
+    }
+  }
+}

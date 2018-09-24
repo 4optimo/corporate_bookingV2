@@ -3,9 +3,9 @@
 <div class="opt_booking__list">
   <mat-accordion>
     <mat-expansion-panel #myPanel [disabled]="true" class="opt-expand--line">
-      <mat-expansion-panel-header class="opt_width-define opt_expand__header first-outer-wrapper"
-                                  collapsedHeight=".collapsedHeight" expandedHeight=".expandedHeight">        <div class="opt_expand--container">
-          <div class="opt_flex--container">
+      <mat-expansion-panel-header class="opt_width-define opt_expand__header first-outer-wrapper" collapsedHeight="55px" expandedHeight="55px">
+        <div class="opt_expand--container">
+          <div class="opt_flex--container opt opt_flex__item--vcenter">
             <div class="opt_flex__item __expansion-lft--side">
               <div class="row opt_flex--container tc-flex-item__center ">
                 <div class="col-sm-6 col-md-4	col-lg-4	col-xs-12">
@@ -41,12 +41,10 @@
                 <div class="col-sm-12  col-md-4	col-lg-4	col-xs-12  opt_price-section">
                   <mat-panel-description class="opt_flex--container">
                     <!--<div class="price-details">-->
-                    <div class="opt_flex__item"><span class="lbl lbl__vat">Inc Vat</span></div>
+                    <div class="opt_flex__item"><span class="opt_lbl_primary">Inc Vat</span></div>
                     <div class=" opt_flex__item opt-typo-subhead-2 price">£300.00</div>
                     <!--<div class="opt_flex__item opt-txt__light btn btn-select">Select</div>-->
-                    <div mat-raised-button class="btn-color-default opt_flex__item opt-txt__light btn btn-select">
-                      Select
-                    </div>
+                    <button mat-button class="mat-btn-primary--small">Select</button>
                     <!--</div>-->
                   </mat-panel-description>
                 </div>
@@ -186,9 +184,9 @@ library purpose only
       <mat-accordion>
         <mat-expansion-panel #myPanel [disabled]="true" class="opt-expand--line">
           <mat-expansion-panel-header class="opt_width-define opt_expand__header first-outer-wrapper"
-                                      collapsedHeight=".collapsedHeight" expandedHeight=".expandedHeight">
+          collapsedHeight="55px" expandedHeight="55px">
             <div class="opt_expand--container">
-              <div class="opt_flex--container">
+              <div class="opt_flex--container opt_flex__item--vcenter">
                 <div class="opt_flex__item __expansion-lft--side">
                   <div class="row opt_flex--container tc-flex-item__center ">
                     <div class="col-sm-6 col-md-4	col-lg-4	col-xs-12">
@@ -214,8 +212,8 @@ library purpose only
                     <div class="col-sm-6 col-md-4	col-lg-4	col-xs-12">
                       <mat-panel-description class="opt_flex--container">
                         <div class="middle-details">
-                          <div class="opt_flex__item tc-flex-item__center opt-txt__body1-small">5-JAN-18 | <span
-                            class="opt-txt__body2-small"> Personal Training Bookings</span></div>
+                          <div class="opt_flex__item tc-flex-item__center opt-txt__body1">5-JAN-18 | <span
+                            class="opt-txt__body2"> Personal Training Bookings</span></div>
                           <div><span class="opt-txt__body1-small">Corporate </span>| <span
                             class="opt-txt__tertiary opt-txt__body1-small">Confirmed</span></div>
                         </div>

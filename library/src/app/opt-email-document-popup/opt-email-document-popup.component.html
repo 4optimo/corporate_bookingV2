@@ -1,0 +1,173 @@
+<div class="opt_modal-content opt-corporate-client">
+  <div class="mat-dialog-content">
+    <div class="opt_modal-header ">
+      <div class="test opt--depth__1">
+        <div class="opt_flex--container test-wrapper">
+          <div class="opt_flex__item--inherit test-inner">
+            <div class="inner-icon-black">
+              <i class="material-icons">email</i>
+            </div>
+          </div>
+          <div class="opt_flex__item test-inner-expand">
+            <div class="title">
+              <h1 mat-dialog-title>{{data.name}}</h1>
+            </div>
+          </div>
+          <div class="opt_flex__item--inherit test-inner-2">
+            <div class="inner-action">
+              <button class="material-icons icon1">launch</button>
+              <button class="material-icons icon2" (click)="close()">close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="opt_modal-body">
+
+      <!--modal body start-->
+      <div class="opt_email-document-popup opt_corporate-client-popup">
+        <div class="opt_flex--container">
+          <div class="opt_flex__item">
+            <div class="row">
+              <div class="col-xs-2 col-sm-1 col-md-1 email-document-label">
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item opt_flex__item--vcenter">
+                    <mat-label class="opt-txt__body2-small">From</mat-label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-10 col-sm-11 col-md-11">
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item padding-left">
+                    <mat-form-field class="example-full-width">
+                      <input class="opt-txt__body2" matInput value="eric@webcon.com" required>
+                    </mat-form-field>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-2 col-sm-1 col-md-1 email-document-label">
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item opt_flex__item--vcenter">
+                    <mat-label class="opt-txt__body2-small">To</mat-label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-10 col-sm-11 col-md-11">
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item padding-left">
+                    <mat-form-field class="example-full-width">
+                      <input class="opt-txt__body2-small" matInput value="eric@webcon.com" required>
+                    </mat-form-field>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-2 col-sm-1 col-md-1 email-document-label">
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item opt_flex__item--vcenter">
+                    <mat-label class="opt-txt__body2-small">CC</mat-label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-10 col-sm-11 col-md-11">
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item padding-left">
+                    <mat-form-field class="example-full-width">
+                      <input class="opt-txt__body2-small" matInput placeholder="Enter email address">
+                    </mat-form-field>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-2 col-sm-1 col-md-1 email-document-label">
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item opt_flex__item--vcenter">
+                    <mat-label class="opt-txt__body2-small">Bcc</mat-label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-10 col-sm-11 col-md-11">
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item padding-left">
+                    <mat-form-field class="example-full-width">
+                      <input class="opt-txt__body2-small" matInput placeholder="Enter email address">
+                    </mat-form-field>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-2 col-sm-1 col-md-1 email-document-label">
+                <div class="opt_flex--container opt_flex__item--vcenter">
+                  <div class="opt_flex__item">
+                    <mat-label class="opt-txt__body2-small">Subject</mat-label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-10 col-sm-11 col-md-11">
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item padding-left">
+                    <mat-form-field class="example-full-width">
+                      <input class="opt-txt__body2-small" matInput value="Registration Confirmation To Awesome">
+                    </mat-form-field>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-2 col-sm-1 col-md-1 email-document-label">
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item opt_flex__item--vcenter">
+                    <mat-label class="opt-txt__body2-small">File</mat-label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-9 col-sm-10 col-md-10">
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item padding-left">
+                    <mat-form-field class="example-full-width">
+                      <input class="opt-txt__body2-small" matInput>
+                    </mat-form-field>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-1 col-sm-1 col-md-1 opt-txt__right">
+                <button mat-mini-fab class="mat-btn-mini-fab opt_color_mini_fab">
+                  <i class="material-icons">attach_file</i>
+                </button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="opt-text-editor">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="opt_flex--container">
+              <div class="opt_flex__item">
+                <app-ngx-editor [placeholder]="'Enter text here...'" [spellcheck]="true" [(ngModel)]="htmlContent"></app-ngx-editor>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="opt_flex--container">
+        <div class="opt_flex__item"></div>
+        <div class="opt_flex__item--inherit">
+          <button class="mat-btn-primary mat-button" (click)="close()">Send</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+

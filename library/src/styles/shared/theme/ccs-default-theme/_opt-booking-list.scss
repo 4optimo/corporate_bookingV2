@@ -1,11 +1,26 @@
+.opt{
+  &_booking__detail{
+    .opt_expand--container{
+      padding:0 8px;
+    }
+  }
+}
 .opt_booking__list{
-  $danger_color: #f2705b;
+  .opt_booking__detail{
+    .icon__cage{
+      width: 72px !important;
+    }
+    .tbl_head{
+      margin-left: -13px;
+    }
+  } 
+  //$danger_color: #f2705b;
   $plain_color : white;
   $border_color: #b7b7b7;
   $expanded_line: #4bb3fa;
   $line_color: #d9d9d9;
 
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  //font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 
 
   .tbl_head{
@@ -66,13 +81,13 @@
           }
         }
         .opt-txt__body2-small{
-          line-height: 20px;
+          line-height: 15px;
         }
         .opt-txt__body2-small{
-          line-height: 20px;
+          line-height: 15px;
         }
         .opt-txt__caption{
-          line-height: 20px;
+          line-height: 15px;
         }
       }
       .__expansion-rgt--side{
@@ -80,9 +95,15 @@
         .down-arrow{
           height: auto;
           width: auto;
+          .mat-button-wrapper{
+            min-height: 55px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
         }
         .mat-icon-button{
-          line-height: 50px;
+          line-height: 42px;
         }
       }
     }
@@ -180,7 +201,7 @@
 
 &_circle{
   &__cancelled{
-    @include circle-icon(45px, $danger_color, $danger_color);
+    @include circle-icon(45px, #f2705b, #f2705b);
     //padding-top: 2px;
     line-height: 12px;
     .date{
@@ -217,7 +238,8 @@
 &_width-calc{
   //position: absolute;
   //left: 80px;
-  width: calc(100% - 60px);
+  position: relative;
+  width: calc(100% - 10px);
   //padding: 5px;
   //text-align: left;
   padding-left: 15px;
@@ -228,17 +250,17 @@
 
 &_expand-header {
   background-color: #f4f4f4;
-  height: 55px;
+  min-height: 55px;
   margin-top: 2px;
 
   .expand-icon{
     text-align: right;
     align-self: center;
     //padding-right: 23px;
-    .attach_money-icon,.file_copy-icon,.launch-icon{
+    mat-icon{
       color: #909cac;
       //padding: 5px;
-      font-size: 25px;
+      font-size: 20px !important;
       //padding-top: 10px;
     }
   }
@@ -341,10 +363,6 @@
       .__title {
           padding: 0 !important;
         }
-      .section-header {
-        min-height: 45px;
-        height: 48px !important;
-      }
     }
   }
   //end
@@ -453,9 +471,7 @@ margin-right: 0;
 }
 .mat-expansion-panel-header {
   padding: 0;
-  margin-left: 4px;
-  margin-right: 4px;
-  height: auto;
+  height: 55px;
 
   .opt_expand--container{
     .mat-expansion-panel-header-description{
@@ -541,6 +557,10 @@ margin-right: 0;
   .opt-section__heading{
   .mat-expansion-indicator{
     line-height: 1;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    min-height: 55px;
   }
 
   .mat-expansion-panel.mat-expanded .mat-expansion-panel-content {

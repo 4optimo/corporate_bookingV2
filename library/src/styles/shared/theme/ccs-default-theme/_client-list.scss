@@ -47,9 +47,6 @@
 
   .mat-accordion .mat-expansion-panel.opt-expand--line.mat-expanded{
     transition: all 0.3s ease;
-    margin-bottom: 50px;
-    margin-top: 50px;
-    @include box_shadow(3);
 
 
 
@@ -63,6 +60,16 @@
 
   .opt_expanded-view{
     margin-top: 20px;
+
+    .opt-txt__body1, .opt-txt__body2 {
+      line-height: 1.5;
+    }
+    .opt-txt__light{
+      padding-bottom: 5px;
+    }
+    .row{
+      padding-bottom: 10px;
+    }
   }
 
   .mat-expanded{
@@ -122,6 +129,9 @@
           font-size: 30px;
         }
       }
+      i{
+        line-height: 40px !important;
+      }
     }
     &__corporate{
       @include circle-icon(45px, #27bfc2, #27bfc2);
@@ -134,6 +144,9 @@
           font-size: 30px;
         }
       }
+      i{
+        line-height: 40px !important;
+      }
     }
   }
 
@@ -142,9 +155,11 @@
   }
 
   .add-padding{
-    padding-left: 45px;
+    padding-left: 40px;
   }
-
+  .opt_width-calc{
+    padding-left: 10px !important;
+  }
   .icon-add-booking2{
     font-size: 24px;
   }
@@ -278,30 +293,3 @@
 
 }
 
-
-
-
-.opt-client-list-full{
-
-  .body-content {
-    .ng-star-inserted{
-      &:first-child {
-    .row_client {
-      .mat-expanded{
-
-        margin-top: 0px;
-      }
-
-      }
-
-    }
-
-  }
-  }
-
-
-
-
-
-
-}
