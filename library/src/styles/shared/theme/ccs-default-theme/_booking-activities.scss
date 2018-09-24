@@ -188,6 +188,7 @@
       }
       .mat-horizontal-content-container {
         background-color: #f9f9f9;
+        overflow: visible;
       }
     }
     .mat-button-wrapper{
@@ -421,7 +422,6 @@
 
       .row {
         display: flex;
-        overflow: hidden;
         [class*=' col-'] {
           display: flex;
           align-items: center;
