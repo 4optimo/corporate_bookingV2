@@ -216,15 +216,30 @@ button{
 }
 .mat-menu-content{
   button:hover{
+    transition: 0.3s;
     color: $opt_color_white !important;
     mat-icon{
       color: $opt_color_white !important;
     }
   }
 }
+mat-option:hover{
+  background-color: #4bb3fa !important;
+  color: $opt_color_white !important;
+  transition: 0.3s;
+}
 .mat-menu-item:hover{
   background-color: #4bb3fa !important;
   color: $opt_color_white !important;
+  transition: 0.3s;
+  .mat-menu-item-icon{
+    .material-icons{
+      color: $opt_color_white !important;
+    }
+  }
+  .mat-menu-item-label{
+    color: $opt_color_white !important;
+  }
 }
 .opt-text-danger{
   color: $no-color--state;
