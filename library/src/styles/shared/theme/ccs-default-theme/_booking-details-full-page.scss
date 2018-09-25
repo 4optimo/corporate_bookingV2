@@ -20,5 +20,19 @@
     .opt_booking-payments-section{
       padding: 20px 25px;
     }
+    .payments-list-item{
+      .mat-expansion-panel-body{
+        padding: 0 18px 16px 0px !important;
+      }
+      .mat-expansion-panel-header{
+        padding: 10px 10px 10px 0  !important;
+      }
+    }
+    .mat-expansion-panel-header-title{
+      margin-right: 0;
+    }
+    .padding-left{
+      padding-left: 45px;
+    } 
   }
 }
