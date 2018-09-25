@@ -1,4 +1,4 @@
-
+@import "variables";
   %lbl{
    /* height: 30px;
     width: auto;
@@ -17,34 +17,34 @@
   }
   .opt_lbl{
 
-    
+
     &_primary{
       @extend %lbl;
       height: 30px;
       font-weight: 500;
     //  background-color:lighten( $opt_color_quaternary , 60% );
     //  color:$opt_text_color_primary;
-      background-color: #cfd7dd !important;
-      color: #3a424d;
+      background-color: $light_background_header !important;
+      color: $opt-text-color__primary;
 
     }
     &_secondary{
       @extend %lbl;
       //background-color:$opt_color_primary;
-      background-color: #4bb3fa;
-      color: #ffffff;  
+      background-color: $opt_color_primary;
+      color: $opt_color_white;
     }
     &_tertiary{
       @extend %lbl;
       //background-color:$opt_text_color_tertiary;
-      background-color: #3a424d;
-      color: #ffffff; 
+      background-color: $opt-text-color__primary;
+      color: $opt_color_white;
     }
     &_quaternary{
       @extend %lbl;
       //background-color:$opt_color_secondary;
-      background-color: #27bfc2;
-      color: #ffffff;
+      background-color: $opt_color_secondary;
+      color: $opt_color_white;
     }
   }
 

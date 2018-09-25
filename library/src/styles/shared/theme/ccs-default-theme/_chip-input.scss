@@ -1,12 +1,13 @@
+@import "variables";
 .opt_chip {
-  color: #444;
-  background-color: #fff;
+  color: $chip_default_color;
+  background-color: $opt_color_white;
   .dropdown-cage{
     position: absolute;
     max-width: 250px;
     height: auto;
     //border: 1px solid #454545;
-    background-color: #fff;
+    background-color: $opt_color_white;
     @include box_shadow(3);
     padding: 3px;
     min-height: 51px;
@@ -15,7 +16,7 @@
 
   input{
     font-size: 14px;
-    color: #797979;
+    color: $chip_set_default;
     padding-left: 10px;
 
 

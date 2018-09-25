@@ -1,3 +1,4 @@
+@import "variables";
 .inner-table-input{
   .mat-form-field-infix{
   padding: 0;
@@ -22,11 +23,11 @@
     flex: 1 0 100px;
   }
   .mat-header-row{
-    background-color: #f6f6f6;
+    background-color: $background-color_light;
     min-height: 45px;
   .mat-header-cell{
     font-size: 14px;
-    color: #333;
+    color: $opt_line_default;
     &:first-child{
       flex: 1 0 250px;
     }
@@ -50,19 +51,19 @@
 
 .package-details-wrapper{
   .package-name{
-    color: #333;
+    color: $opt_line_default;
     font-weight: 500;
     padding-left: 2px;
   }
   .package-extra-details{
     .package-icon{
       i{
-        color: $opt_color__secondary;
+        color: $opt_color_secondary;
       }
     }
     .package-extra-icon{
       i{
-        color: $opt_color__tertiary;
+        color: $opt_color_tertiary;
       }
     }
     .package-date-name{

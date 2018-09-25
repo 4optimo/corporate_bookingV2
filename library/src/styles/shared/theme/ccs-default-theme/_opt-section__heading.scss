@@ -11,9 +11,9 @@
 
     .__title{
       &:hover{
-        background-color: white;
+        background-color: $opt_color_white;
       }
-      border-bottom: 1px solid #e1e1e1;
+      border-bottom: 1px solid $opt-border-color;
       padding: 0 24px 0px 0px;
 
       .mat-content{

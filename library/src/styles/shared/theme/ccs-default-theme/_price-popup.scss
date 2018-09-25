@@ -1,6 +1,8 @@
+@import "variables";
+
 .btn-pp {
-    background-color: #91a0ad;
-    color: #ffffff;
+    background-color: $opt-btn-color-default;
+    color: $opt_color_white;
     border-radius: 50%;
     font-size: x-large;
     padding: 0;
@@ -10,8 +12,8 @@
 
     &:active, &:focus, &:visited, &:active:focus, &:hover{
       outline: none;
-      background-color: #ffffff;
-      color: #49b4fc;
+      background-color: $opt_color_white;
+      color: $opt_color_primary;
     }
 
   }
@@ -20,7 +22,7 @@
 .price-modal {
     font-size: 12px;
     font-weight: 500;
-    color: #adb6bf;
+    color: $opt-text-color__secondary;
     display: inline-block;
     width:188px;
     z-index: 1;
@@ -33,7 +35,7 @@
     width: 10px;
     position: absolute;
     pointer-events: none;
-    border: 1px solid #ffffff;
+    border: 1px solid $opt_color_white;
     /*border: solid red;*/
     margin-left: 10px;
 
@@ -43,13 +45,13 @@
 
   &:after {
     border-color: rgba(136, 183, 213, 0);
-    border-right-color: #ffffff;
+    border-right-color: $opt_color_white;
     border-width: 10px;
     margin-top: -13%;
   }
   &:before {
     border-color: rgba(194, 225, 245, 0);
-    border-right-color: #c2e1f5;
+    border-right-color: $table_border_secondary;
     border-width: 56px;
     margin-top: -56px;
   }
@@ -76,7 +78,7 @@
         text-align: right;
         border: none !important;
         width: 100%;
-        color: #3b414d;
+        color: $booking_summary_color;
 
 
 

@@ -1,3 +1,5 @@
+@import "variables";
+
 .fab-overlay{
   position: fixed;
   right: 25px;
@@ -17,8 +19,8 @@
       visibility: hidden;
       span{
         display: inline-block;
-        background-color: #555555;
-        color: #fff;
+        background-color: $floating_button;
+        color: $opt_color_white;
         -webkit-border-radius: 4px;
         -moz-border-radius: 4px;
         border-radius: 4px;
@@ -37,13 +39,13 @@
         position: absolute;
         right: -1px;
         top: -1px;
-        background-color: $opt_color__secondary;
+        background-color: $opt_color_secondary;
         -webkit-border-radius: 50%;
         -moz-border-radius: 50%;
         border-radius: 50%;
         i{
           font-size: 22px;
-          color: #fff;
+          color: $opt_color_white;
         }
       }
     }
@@ -63,8 +65,8 @@
         text-align: right;
         span{
           display: inline-block;
-          background-color: #555555;
-          color: #fff;
+          background-color: $floating_button;
+          color: $opt_color_white;
           -webkit-border-radius: 4px;
           -moz-border-radius: 4px;
           border-radius: 4px;

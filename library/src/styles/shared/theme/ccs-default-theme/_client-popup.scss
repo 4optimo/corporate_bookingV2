@@ -1,3 +1,5 @@
+@import "variables";
+
 .opt_client-search{
   .opt_modal-content{
     overflow: auto;
@@ -7,13 +9,13 @@
 
       .search-panel-wrapper {
         min-width: 30px;
-        background-color: #e4e8e9;
+        background-color: $background-color;
         padding: 24px;
         .opt_search-panel {
-          background-color: white;
+          background-color: $opt_color_white;
           border: none;
           .btn{
-            border: 1px solid #fff;
+            border: 1px solid $opt_color_white;
 
           }
 
