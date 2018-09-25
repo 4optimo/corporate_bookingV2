@@ -13,10 +13,12 @@
 .opt_additional-info{
   padding: 0 15px;
   //padding: 30px 30px 30px 30px;
-
+  .mat-menu-content{
+    padding: 8px;
+  }
   .btn {
     &.btn-icon {
-      border: 1px solid $opt-border-color_light;
+      border: none;
     }
   }
   .example-form {
