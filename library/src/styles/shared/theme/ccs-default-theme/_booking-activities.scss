@@ -195,7 +195,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      min-height: 22px;
+      min-height: 23px;
     }
   }
 
@@ -955,6 +955,7 @@
       .mat-expansion-panel-header[aria-disabled=true] {
         color: inherit;
         padding: 0;
+        border-bottom: none;
       }
       .mat-expansion-panel-header-title{
         display: flex;
