@@ -217,6 +217,9 @@ button{
 .mat-menu-content{
   button:hover{
     color: $opt_color_white !important;
+    mat-icon{
+      color: $opt_color_white !important;
+    }
   }
 }
 .mat-menu-item:hover{
@@ -241,4 +244,10 @@ button{
 }
 mat-expansion-panel-header{
   border-bottom: 1px solid #eeeeee;
+}
+.mat-content{
+  overflow: visible !important;
+}
+.mat-button-focus-overlay{
+  display: none;
 }

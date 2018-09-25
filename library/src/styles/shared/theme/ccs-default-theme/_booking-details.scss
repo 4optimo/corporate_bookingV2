@@ -58,6 +58,7 @@
   }
 
   &_booking__detail {
+    overflow: hidden;
     .lft_btn_cage{
       .mat-checkbox-label{
         position: relative;
@@ -75,6 +76,7 @@
       button{
         i{
           padding-right: 3px;
+          margin-top: -2px;
         }
       }
     }
