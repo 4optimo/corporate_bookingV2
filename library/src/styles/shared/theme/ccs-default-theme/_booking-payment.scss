@@ -39,10 +39,12 @@
 }
 
 .payment-inner{
-  border: 1px solid $opt_border-color_tertiary;
   height: 100%;
 }
+.payment-term-wrapper{
+  border-right: 1px solid $opt_border-color_tertiary;
 
+}
 .payment-category-header{
   background-color: $central-summary-header;
   padding: 15px;
