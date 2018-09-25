@@ -233,7 +233,7 @@
 
     .hobbies-tab, .preferences-tab, .marketing-tab, .general-tab {
       .opt_additional-info {
-        padding: 0 15px;
+        padding: 15px 15px 0;
         .opt_flex__item {
           .mat-checkbox-layout {
             padding-bottom: 15px;
@@ -1516,7 +1516,7 @@
 .opt_flex--container{
   &.three_col_grid{
     justify-content: space-between !important;
-    .opt_flex__item{
+    >.opt_flex__item{
       flex-grow: 0 !important;
       flex-basis: calc(95% / 3) !important;
     }
@@ -1524,7 +1524,7 @@
   &.three_col_grid_two{
     justify-content: space-between !important;
     align-items: center;
-    .opt_flex__item{
+    >.opt_flex__item{
       flex-grow: 0 !important;
       flex-basis: calc(95% / 3) !important;
       &:first-child{
@@ -1539,7 +1539,7 @@
   .opt_flex--container{
     &.three_col_grid{
       justify-content: space-between !important;
-      .opt_flex__item{
+      >.opt_flex__item{
         flex-grow: 0 !important;
         flex-basis: calc(97% / 2) !important;
       }
@@ -1547,7 +1547,7 @@
     &.three_col_grid_two{
       justify-content: space-between !important;
       align-items: center;
-      .opt_flex__item{
+      >.opt_flex__item{
         flex-grow: 0 !important;
         flex-basis: 100% !important;
         &:first-child{
@@ -1563,7 +1563,7 @@
   .opt_flex--container{
     &.three_col_grid{
       justify-content: space-between !important;
-      .opt_flex__item{
+      >.opt_flex__item{
         flex-grow: 0 !important;
         flex-basis: 100% !important;
       }
