@@ -1,8 +1,10 @@
+@import "variables";
+
 .opt_alert{
 
-  $danger_color : #f5766c;
-  $success_color : #26a69a;
-  $plain_color : white;
+  //$danger_color : #f5766c;
+  //$success_color : #26a69a;
+  //$plain_color : white;
 
   border-radius: 5px;
 
@@ -11,26 +13,30 @@
     }
 
     &_container{
-      &.__success {
-        background-color: $success_color;
-      }
-      &.__danger {
-        background-color: $danger_color;
-      }
+
       padding: 20px;
       //background-color: #f5766c;
       min-height: 80px;
       width: 100%;
       display: flex;
+      color: $plain;
+
+      &.__success {
+        background-color: $success-color--state;
+      }
+      &.__warning-alert {
+        background-color: $red-danger;
+      }
+
 
       .verticalLine {
-        border-right: thin solid $plain_color;
+        border-right: thin solid $plain;
         .opt_alert--icon {
           display: flex;
           >.material-icons {
             align-self: center;
             height: 100%;
-            color: $plain_color;
+            color: $plain;
             font-size: 55px;
             padding-right: 20px;
 
@@ -46,7 +52,7 @@
       .opt_close--icon{
         //align-self: self-start;
         .btn-icon{
-          color: $plain_color;
+          color: $white-icon;
           //font-size: 30px;
         }
       }
@@ -55,7 +61,7 @@
       .text-content{
         padding-left: 20px;
         align-self: center;
-        color: $plain_color;
+        color: $plain;
         .text1{
           font-size: 20px;
           white-space: normal !important;

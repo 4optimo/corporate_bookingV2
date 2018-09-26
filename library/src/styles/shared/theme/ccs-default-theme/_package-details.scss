@@ -1,3 +1,5 @@
+@import "variables";
+
 .opt_package-popup{
 
   .opt_booking__list {
@@ -12,7 +14,7 @@
       .mat-expansion-panel-header {
         -webkit-transition: background-color 0.5s ease;
         transition: background-color 0.5s ease;
-        background-color: #ECEFF1;
+        background-color: $expansion_header_color;
       }
     }
   }
@@ -20,13 +22,13 @@
   .opt_calendar-expand {
     width: 900px;
     position: absolute;
-    background-color: #fff;
+    background-color: $opt_color_white;
     z-index: 999;
   }
   .opt_linked-packages {
     width: 1053px;
     position: absolute;
-    background-color: #fff;
+    background-color: $opt_color_white;
     z-index: 999;
     left: -353px;
   }
@@ -36,7 +38,7 @@
     visibility: visible;
   }
   .opt-search-panel-wrapper{
-    background-color: #e4e8e9;
+    background-color: $background-color;
     margin: -24px;
   }
   .html-code{
@@ -45,7 +47,7 @@
   .icon-icn-package{
     font-size: 24px;
     line-height: 45px;
-    color: white;
+    color: $opt_color_white;
   }
   .top-label{
     padding: 20px 15px;
@@ -60,7 +62,9 @@
 }
 
 .opt_package-details{
-
+  .opt_expand--container{
+    padding: 0 5px 0 5px !important;
+  }
   &.opt_booking__list{
     &.opt_booking__detail{
       .opt_counter{
@@ -71,11 +75,17 @@
   .icon__cage{
     .opt_circle{
       &__bespoke{
-        @include circle-icon(45px, #27bfc2, #27bfc2);
+        @include circle-icon(45px, $opt_color_secondary, $opt_color_secondary);
       }
       &__standard{
-        @include circle-icon(45px, #8f44ad, #8f44ad);
+        @include circle-icon(45px, $opt_color_type, $opt_color_type);
       }
+    }
+  }
+  .opt-typo-subhead-2 {
+    &.price {
+      font-weight: 600;
+      padding-left: 10px;
     }
   }
   .price--value__icon{
@@ -101,7 +111,13 @@
     }
     .icon__cage{
       &.__multi-buttons{
-        padding-left: 75px!important;
+        padding-left: 52px!important;
+        [class^='icon-icn-']{
+          font-size: 14px !important;
+        }
+        .material-icons{
+          font-size: 17px;
+        }
       }
     }
   }
@@ -157,6 +173,7 @@
   .opt_linked-packages{
     margin: 0 10px;
     padding:10px;
+    background-color: $opt_color_white;
 
     .outer-wrapper{
       overflow-y: scroll;
@@ -169,7 +186,7 @@
       &::-webkit-scrollbar-track {
         -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
         border-radius: 10px;
-        background-color: #e3e3e3!important;
+        background-color: $background-color!important;
       }
 
       &::-webkit-scrollbar-thumb {
@@ -178,7 +195,7 @@
       }
 
       .inner-wrapper{
-        border-bottom: 1px dashed lightgrey;
+        border-bottom: 1px dashed $separator-border-color;
         padding: 15px;
         &:last-child{
           border-bottom: none;
@@ -189,6 +206,7 @@
       }
 
       .opt_counter__item{
+        width: 75px;
         padding-left: 57px;
         .opt_counter{
           .mat-form-field-infix{
@@ -200,7 +218,7 @@
         margin: 0 3px;
       }
       .linked-icon{
-        color: darkgray;
+        color: $opt-border-color_darker;
         padding-right: 20px;
       }
     }
@@ -209,7 +227,7 @@
   .opt_calendar-expand{
     margin: 0 10px;
     padding:10px;
-
+    background-color: $opt_color_white;
 
     .outer-wrapper {
       overflow-y: scroll;
@@ -222,7 +240,7 @@
       &::-webkit-scrollbar-track {
         -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
         border-radius: 10px;
-        background-color: #e3e3e3!important;
+        background-color: $background-color!important;
       }
 
       &::-webkit-scrollbar-thumb {
@@ -232,7 +250,7 @@
 
       .time-slot{
         padding: 0 15px;
-        border-bottom: 1px dashed lightgrey;
+        border-bottom: 1px dashed $separator-border-color;
         &:last-child{
           border-bottom: none;
         }
@@ -243,25 +261,26 @@
         }
         .date-select{
           &:hover{
-            background-color: #2c95dc;
+            background-color: $opt_status_good_availability;
+            transition: 0.3s;
             .material-icons{
-              color: white;
+              color: $opt_color_white;
             }
             .mat-form-field-underline{
-              background-color: white;
+              background-color: $opt_color_white;
             }
           }
-          background-color: #f9f9f9;
+          background-color: $central-summary-header;
           text-align: center;
           display: flex;
           flex-direction: column!important;
           align-items: center!important;
           justify-content: center!important;
           min-height: 150px;
-          border: 1px dashed darkgray;
+          border: 1px dashed $opt-border-color_darker;
           padding: 20px;
           .material-icons{
-            color: lightgray;
+            color: $separator-border-color;
             font-size: 40px;
             padding-bottom: 25px;
           }
@@ -286,13 +305,13 @@
         }
         .availability-icon{
           &.__last-few{
-            color: #f44336;
+            color: $opt_status_few_availability;
           }
           &.__good-availability{
-            color: #2c95dc;
+            color: $opt_status_good_availability;
           }
           &.__limited{
-            color: #9c27b0;
+            color: $opt_status_provisional_multiple;
           }
         }
       }
@@ -301,21 +320,23 @@
   }
 
   .linked-calendar-both{
+    background-color: $opt_color_white;
     margin: 10px;
     .opt_calendar-expand{
       margin: 0;
       padding: 10px;
     }
     .opt_linked-packages{
+      background-color: $opt_color_white;
       margin: 0;
       padding: 0;
       .linked-package-text{
         padding: 20px;
       }
       .outer-wrapper{
-        border-top: 2px solid lightgray;
+        border-top: 2px solid $separator-border-color;
         overflow: hidden;
-        background-color: #f9f9f9;
+        background-color: $central-summary-header;
       }
     }
   }
@@ -323,7 +344,7 @@
 }
 
 .opt_cart{
-  background-color: white;
+  background-color: $opt_color_white;
   .opt_cart-wrapper{
     display: flex;
     flex-direction: column;
@@ -332,21 +353,24 @@
     .package-list{
       padding-top: 30px;
       flex-grow: 1;
+      .mat-expansion-panel-content{
+        box-shadow: none;
+      }
     }
     .package-alert-section{
       min-height: 80px;
-      background-color: #e3e3e3;
+      background-color: $background-color;
       .icon{
-        color: darkgray;
+        color: $opt-border-color_darker;
         font-size: 50px;
-        padding-left: 30px;
+        padding-left: 10px;
       }
       .text{
-        padding-left: 60px;
+        padding-left: 10px;
       }
     }
     .footer{
-      border-top: 2px solid lightgray;
+      border-top: 2px solid $separator-border-color;
       margin-top: 80px;
       .bottom-section{
         padding: 20px;
@@ -355,8 +379,8 @@
     }
     .btn-select{
       &:focus, &:active, &:hover, &:visited{
-        background-color: #f5766c !important;
-        color: white;
+        background-color: $no-color--state !important;
+        color: $opt_color_white;
         border: none;
       }
     }
@@ -368,7 +392,7 @@
       .loop-class{
         &:first-child {
           .mat-expansion-panel-header {
-            border-top: 2px solid lightgray;
+            border-top: 2px solid $separator-border-color;
           }
         }
       }
@@ -385,30 +409,30 @@
   }
   .inner-icon-black{
     .icon-icn-package{
-      color: white!important;
+      color: $opt_color_white!important;
     }
   }
   .inner-action{
     .cart-wrapper{
-      border-right: 1px solid lightgray;
+      border-right: 1px solid $separator-border-color;
       display: inline-block;
       padding: 0 15px;
       position:  relative;
       .notification_count{
         position:  absolute;
         font-size: 10px;
-        background-color: #ddd;
+        background-color: $default-state-dark-bg;
         padding: 3px;
         border-radius: 50%;
         top: -4px;
         right: 5px;
-        color: #000;
+        color: $opt_color_black;
       }
     }
   }
   .opt_package-popup{
     &.opt_modal-body{
-      background-color: #f8f8f8;
+      background-color: $default-state-dark-bg;
     }
   }
 }
@@ -418,11 +442,11 @@
     position:  relative;
     .notification_count{
       font-size: 10px;
-      background-color: #ddd;
+      background-color: $default-state-dark-bg;
       padding: 3px;
       border-radius: 50%;
       right: 5px;
-      color: #000;
+      color: $opt_color_black;
     }
   }
 }

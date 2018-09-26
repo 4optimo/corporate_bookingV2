@@ -1,6 +1,8 @@
+@import "variables";
+
 .opt-section__heading{
   box-shadow: none;
-  background: white;
+  background: $opt_color_white;
 }
 .opt_corporate-client-tabs{
 
@@ -8,10 +10,8 @@
 
 
     .mat-expansion-panel-header {
-      min-height: 48px;
-
       &:hover{
-        background: white;
+        background: $opt_color_white;
       }
     }
   }

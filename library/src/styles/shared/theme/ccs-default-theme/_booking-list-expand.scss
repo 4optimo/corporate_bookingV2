@@ -1,9 +1,7 @@
+@import "variables";
+
 .opt_booking__list_expand{
-  $danger_color: #f2705b;
-  $plain_color : white;
-  $border_color: #b7b7b7;
-  $expanded_line: #4bb3fa;
-  $line_color: #d9d9d9;
+  //$danger_color: #f2705b;
 
   .opt{
 
@@ -34,17 +32,17 @@
     }
 
     &_circle{
-      @include circle-icon(40px, $danger_color, $danger_color);
+      @include circle-icon(40px, $no-color--state, $no-color--state);
       padding-top: 2px;
       line-height: 12px;
       .date{
         font-size: 14px;
         font-weight: bold;
-        color: $plain_color;
+        color: $opt_color_white;
       }
       .month_year{
         font-size: 9px;
-        color: $plain_color;
+        color: $opt_color_white;
         font-weight: normal;
       }
     }
@@ -53,7 +51,7 @@
     &_width-calc{
       //position: absolute;
       //left: 80px;
-      width: calc(100% - 60px);
+      width: calc(100% - 10px);
       //padding: 5px;
       //text-align: left;
       padding-left: 20px;
@@ -81,11 +79,11 @@
     }
 
     .__include-package_line{
-      border-top:1px solid $line_color ;
+      border-top:1px solid $opt-border-color_light ;
     }
 
     .__new-items_line{
-      border-top:1px dashed $expanded_line;
+      border-top:1px dashed $opt_color_primary;
     }
   }
 
@@ -95,23 +93,23 @@
 
     .btn {
       &.btn-select {
-        border: 1px solid $border_color;
+        border: 1px solid $opt-border-color_lighter;
         //outline-color: #0000;
         //border-radius: 4px;
         //background-color: $btn-active-color;
 
         i {
-          color: $plain_color;
+          color: $opt_color_white;
         }
       }
       &.btn__frozen {
-        border: 1px solid $border_color;
+        border: 1px solid $opt-border-color_lighter;
         //outline-color: #0000;
         //border-radius: 4px;
         background-color: $btn-frozen-color;
 
         i {
-          color: $plain_color;
+          color: $opt_color_white;
         }
       }
     }
@@ -122,7 +120,7 @@
       color: inherit;
     }
     .mat-expansion-panel.opt-expand--line.mat-expanded{
-      border-left: 4px solid $expanded_line;
+      border-left: 4px solid $opt_color_primary;
     }
     .mat-expansion-panel-header {
       padding: 0;

@@ -1,8 +1,9 @@
+@import "variables";
 .opt{
   &_booking-details-full{
     .content-wrapper{
       padding: 0 !important;
-      background-color: white !important;
+      background-color: $opt_color_white !important;
     }
     .opt_alert{
       padding: 40px !important;
@@ -15,9 +16,27 @@
     }
     .opt_booking-activities-section{
       padding: 20px 25px;
+
+      .mat-expansion-panel:not([class*=mat-elevation-z]){
+        box-shadow: none;
+      }
     }
     .opt_booking-payments-section{
       padding: 20px 25px;
+    }
+    .payments-list-item{
+      .mat-expansion-panel-body{
+        padding: 0 18px 16px 0px !important;
+      }
+      .mat-expansion-panel-header{
+        padding: 10px 10px 10px 0  !important;
+      }
+    }
+    .mat-expansion-panel-header-title{
+      margin-right: 0;
+    }
+    .padding-left{
+      padding-left: 45px;
     }
   }
 }

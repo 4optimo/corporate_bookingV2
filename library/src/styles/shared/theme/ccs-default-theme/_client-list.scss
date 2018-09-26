@@ -1,8 +1,6 @@
+@import "variables";
+
 .opt_client__list{
-
-
-
-
 
   //.ma7t-expansion-panel {
   //  &:not([class*=mat-elevation-z]) {
@@ -23,7 +21,7 @@
     &:hover{
       .mat-expansion-panel-header{
         transition: background-color 0.5s ease;
-        background-color: #ECEFF1;
+        background-color: $expansion_header_color;
 
       }
 
@@ -36,7 +34,7 @@
       //}
 
       .mat-expansion-panel-content{
-        background-color: #fff;
+        background-color: $opt_color_white;
       }
 
     }
@@ -47,9 +45,6 @@
 
   .mat-accordion .mat-expansion-panel.opt-expand--line.mat-expanded{
     transition: all 0.3s ease;
-    margin-bottom: 50px;
-    margin-top: 50px;
-    @include box_shadow(3);
 
 
 
@@ -63,6 +58,16 @@
 
   .opt_expanded-view{
     margin-top: 20px;
+
+    .opt-txt__body1, .opt-txt__body2 {
+      line-height: 1.5;
+    }
+    .opt-txt__light{
+      padding-bottom: 5px;
+    }
+    .row{
+      padding-bottom: 10px;
+    }
   }
 
   .mat-expanded{
@@ -112,27 +117,33 @@
     //padding-top: 0;
 
     &__individual{
-      @include circle-icon(45px,#9c27b0,#9c27b0);
+      @include circle-icon(45px,$opt_status_provisional_multiple,$opt_status_provisional_multiple);
       padding-top: 2px;
       line-height: 12px;
       .client-type{
         text-align: center;
-        color: white;
+        color: $opt_color_white;
         .material-icons{
           font-size: 30px;
         }
       }
+      i{
+        line-height: 40px !important;
+      }
     }
     &__corporate{
-      @include circle-icon(45px, #27bfc2, #27bfc2);
+      @include circle-icon(45px, $opt_color_secondary, $opt_color_secondary);
       padding-top: 2px;
       line-height: 12px;
       .client-type{
         text-align: center;
-        color: white;
+        color: $opt_color_white;
         .material-icons{
           font-size: 30px;
         }
+      }
+      i{
+        line-height: 40px !important;
       }
     }
   }
@@ -142,15 +153,18 @@
   }
 
   .add-padding{
-    padding-left: 45px;
+    padding-left: 40px;
   }
-
-  .icon-add-booking2{
+  .opt_width-calc{
+    padding-left: 10px !important;
+  }
+  .icon-add-booking{
     font-size: 24px;
+    line-height: 19px !important;
   }
 
   mat-icon{
-    color: #909cac;
+    color: $opt_text_color_tertiary;
   }
 
   .mat-expansion-panel {
@@ -258,50 +272,23 @@
     padding-left: 15px;
     padding-right: 15px;
     &.__active{
-      background-color: #27BFC2;
-      color: white;
-      border: 1px solid #27BFC2;
+      background-color: $opt_color_secondary;
+      color: $opt_color_white;
+      border: 1px solid $opt_color_secondary;
     }
     &.__selected{
-      background-color: #00b0ff;
-      color: white;
-      border: 1px solid #00b0ff;
+      background-color: $background-color_hover;
+      color: $opt_color_white;
+      border: 1px solid $background-color_hover;
 
     }
     &.__normal{
-      background-color: #909CAC;
-      color: white;
-      border: 1px solid #909CAC;
+      background-color: $opt_text_color_tertiary;
+      color: $opt_color_white;
+      border: 1px solid $opt_text_color_tertiary;
 
     }
   }
 
 }
 
-
-
-
-.opt-client-list-full{
-
-  .body-content {
-    .ng-star-inserted{
-      &:first-child {
-    .row_client {
-      .mat-expanded{
-
-        margin-top: 0px;
-      }
-
-      }
-
-    }
-
-  }
-  }
-
-
-
-
-
-
-}

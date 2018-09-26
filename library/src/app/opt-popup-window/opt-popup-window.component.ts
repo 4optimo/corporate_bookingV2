@@ -16,6 +16,8 @@ import { OptAddNoteComponent } from '../opt-add-note/opt-add-note.component';
 import {OptReprintPopupComponent} from "../opt-reprint-popup/opt-reprint-popup.component";
 import {OptTaskPopupComponent} from "../opt-task-popup/opt-task-popup.component";
 import {OptInvoiceGeneratorComponent} from "../opt-invoice-generator/opt-invoice-generator.component";
+import {OptQuestionnairePopupComponent} from "../opt-questionnaire-popup/opt-questionnaire-popup.component";
+import {OptDocumentSelectPopupComponent} from "../opt-document-select-popup/opt-document-select-popup.component";
 
 @Component({
   selector: 'app-opt-popup-window',
@@ -38,7 +40,7 @@ export class OptPopupWindowComponent implements OnInit {
   public openCorporateClientPopup(){
     this.dialog.open(OptCorporateClientPopupComponent,{
       data: {name:'New Corporate Client'},
-      panelClass:'custom-dialog-container',
+      panelClass:['custom-dialog-container', 'w80modal'],
       height: 'auto',
       width: '80%'
       // DialogPosition : top
@@ -50,7 +52,7 @@ export class OptPopupWindowComponent implements OnInit {
   public  openClientPopup(){
     this.dialog.open(OptClientPopupComponent,{
       data: {name:'Client Search'},
-      panelClass:'custom-dialog-container',
+      panelClass:['custom-dialog-container', 'w90modal'],
       height: '90%',
       width: '90%'
 
@@ -61,9 +63,9 @@ export class OptPopupWindowComponent implements OnInit {
   public  openIndividualClientPopup(){
     this.dialog.open(OptIndividualClientPopupComponent,{
       data: {name:'New Individual Client'},
-      panelClass:'custom-dialog-container',
+      panelClass:['custom-dialog-container', 'w80modal'],
       height: 'auto',
-      width: '90%'
+      width: '80%'
 
     });
 
@@ -73,7 +75,7 @@ export class OptPopupWindowComponent implements OnInit {
   public openCollectionDispatchPopup(){
     this.dialog.open(OptCollectionDispatchPopupComponent,{
       data: {name:'Collection/Dispatch'},
-      panelClass:'custom-dialog-container',
+      panelClass:['custom-dialog-container', 'w80modal'],
       height: 'auto',
       width: '80%'
       // DialogPosition : top
@@ -85,7 +87,7 @@ export class OptPopupWindowComponent implements OnInit {
   public openPaymentsPopup(){
     this.dialog.open(OptPaymentModalComponent,{
       data: {name:'Payment'},
-      panelClass:'payment_modal',
+      panelClass:['payment_modal', 'w80modal'],
       height: '80%',
       width: '80%'
       // DialogPosition : top
@@ -96,9 +98,9 @@ export class OptPopupWindowComponent implements OnInit {
   public openEmailDocumentPopup(){
     this.dialog.open(OptEmailDocumentPopupComponent,{
       data: {name:'Email Document'},
-      panelClass:'custom-dialog-container',
+      panelClass:['custom-dialog-container', 'w60modal'],
       height: 'auto',
-      width: '80%'
+      width: '60%'
       // DialogPosition : top
 
     });
@@ -107,7 +109,7 @@ export class OptPopupWindowComponent implements OnInit {
   public openTicketScanPopup(){
     this.dialog.open(OptTicketScanPopupComponent,{
       data: {name:'Ticket Scan'},
-      panelClass:'custom-dialog-container',
+      panelClass:['custom-dialog-container', 'w80modal'],
       height: 'auto',
       width: '80%'
       // DialogPosition : top
@@ -119,7 +121,7 @@ export class OptPopupWindowComponent implements OnInit {
   public openPackagePopup(){
     this.dialog.open(OptPackagePopupComponent,{
       data: {name:'Package Search'},
-      panelClass:'custom-dialog-container',
+      panelClass:['custom-dialog-container', 'w80modal'],
       height: 'auto',
       width: '80%'
       // DialogPosition : top
@@ -131,7 +133,7 @@ export class OptPopupWindowComponent implements OnInit {
   public openItemPopup(){
     this.dialog.open(OptItemPopupComponent,{
       data: {name:'Item Search'},
-      panelClass:'custom-dialog-container',
+      panelClass:['custom-dialog-container', 'w80modal'],
       height: 'auto',
       width: '80%'
       // DialogPosition : top
@@ -142,16 +144,16 @@ export class OptPopupWindowComponent implements OnInit {
 
   public  openDialog(){
     this.dialog.open(OptHostAddPopupComponent,{
-      panelClass:'custom-dialog-container',
+      panelClass:['custom-dialog-container', 'w80modal'],
       height: 'auto',
-      width: '60%'
+      width: '80%'
     });
 
   }
   public  openAddNotePopup(){
     this.dialog.open(OptAddNoteComponent,{
       data: {name:'Notes'},
-      panelClass:'custom-dialog-container',
+      panelClass:['custom-dialog-container', 'w60modal'],
       height: 'auto',
       width: '60%'
     });
@@ -160,16 +162,16 @@ export class OptPopupWindowComponent implements OnInit {
   public  openReprintPopup(){
     this.dialog.open(OptReprintPopupComponent,{
       data: {name:'Reprint Tickets/Badges/Passes'},
-      panelClass:'custom-dialog-container',
+      panelClass:['custom-dialog-container', 'w70modal'],
       height: 'auto',
-      width: '60%'
+      width: '70%'
     });
 
   }
   public  openTaskPopup(){
     this.dialog.open(OptTaskPopupComponent,{
       data: {name:'Booking Task'},
-      panelClass:'custom-dialog-container',
+      panelClass:['custom-dialog-container', 'w70modal'],
       height: 'auto',
       width: '70%'
     });
@@ -178,9 +180,27 @@ export class OptPopupWindowComponent implements OnInit {
   public  openInvoicePopup(){
     this.dialog.open(OptInvoiceGeneratorComponent,{
       data: {name:'Invoice Generator'},
-      panelClass:'custom-dialog-container',
+      panelClass:['custom-dialog-container', 'w70modal'],
       height: 'auto',
       width: '70%'
+    });
+
+  }
+  public  openQuestionnairePopup(){
+    this.dialog.open(OptQuestionnairePopupComponent,{
+      data: {name:'Questionnaire'},
+      panelClass:['custom-dialog-container', 'w70modal'],
+      height: 'auto',
+      width: '70%'
+    });
+
+  }
+  public  openDocumentSelectPopup(){
+    this.dialog.open(OptDocumentSelectPopupComponent,{
+      data: {name:'Document Select'},
+      panelClass:['custom-dialog-container', 'w60modal'],
+      height: 'auto',
+      width: '60%'
     });
 
   }

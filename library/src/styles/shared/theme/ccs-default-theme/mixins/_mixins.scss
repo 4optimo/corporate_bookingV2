@@ -1,9 +1,9 @@
 
 @mixin border-radius($radius) {
-  -webkit-border-radius: $radius;
-  -moz-border-radius: $radius;
-  -ms-border-radius: $radius;
-  border-radius: $radius;
+  -webkit-border-radius: $radius !important;
+  -moz-border-radius: $radius !important;
+  -ms-border-radius: $radius !important;
+  border-radius: $radius !important;
 }
 
 
@@ -46,9 +46,6 @@ $breakpoints-typography: (
   }
 
 }
-
-
-
 
 @mixin circle-icon($ci-size,$ci-bg--color,$ci-col-hover) {
   width: $ci-size;

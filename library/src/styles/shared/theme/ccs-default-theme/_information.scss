@@ -1,11 +1,26 @@
+@import "variables";
+
+.cancellation_policy {
+  .mat-menu-content{
+    .mat-menu-item {
+      white-space: normal !important;
+      line-height: 22px !important;
+      height: auto !important;
+    }
+  }
+}
+
 .opt_additional-info{
-  $icon_color : #909cac;
-  $plain_color : white;
-  $icon_hover: #4bb3fa;
-
-  padding: 30px 30px 30px 30px;
-
-
+  padding: 15px 15px 0;
+  //padding: 30px 30px 30px 30px;
+  .mat-menu-content{
+    padding: 8px;
+  }
+  .btn {
+    &.btn-icon {
+      border: 1px solid $opt-border-color_lighter;
+    }
+  }
   .example-form {
     min-width: 150px;
     max-width: 500px;
@@ -60,8 +75,8 @@
       align-items: center;
       //border: 1px solid #b7b7b7;
       &:hover{
-        background-color: $icon_hover;
-        color: $plain_color;
+        background-color: $opt_color_primary;
+        color: $opt_color_white;
       }
 
     }
@@ -91,13 +106,13 @@
         font-size: 50px;
       }
       &.color {
-        color: $icon_color;
+        color: $opt_text_color_tertiary;
         &.active {
-          color: $plain_color;
+          color: $opt_color_white;
           @include box_shadow (3);
         }
         &:hover{
-          color: $plain_color;
+          color: $opt_color_white;
         }
       }
     }

@@ -1,8 +1,17 @@
+@import "variables";
+
 .opt_paginator{
   &_mat-paginator{
     &.-page-size{
       display: none;
     }
+  }
+  .mat-icon-button{
+    width: 28px !important;
+    height: 28px !important;
+  }
+  .mat-paginator-range-label {
+    margin: 0 24px 0 24px;
   }
 }
 

@@ -22,8 +22,8 @@
       <mat-list-item role="listitem"><a routerLink="/opt-alert" mat-button color="primary">Alert</a></mat-list-item>
 
         <mat-list-item role="listitem"><a routerLink="/app-opt-404" mat-button color="primary">404</a></mat-list-item>
-
-
+        <mat-list-item role="listitem"><a routerLink="/app-opt-error--page" mat-button color="primary">	Error UI Widget</a></mat-list-item>
+        <mat-list-item role="listitem"><a routerLink="/opt-loading--screen" mat-button color="primary">Processing  Widget</a></mat-list-item>
       <!--B-->
       <mat-list-item role="listitem"><a routerLink="/opt-booking-activities" mat-button color="primary">Booking Activity</a></mat-list-item>
       <mat-list-item role="listitem"><a routerLink="/opt-booking-details" mat-button color="primary">Booking Details</a></mat-list-item>
@@ -68,22 +68,35 @@
         <mat-list-item role="listitem"  class="main-link"><i class="material-icons">keyboard_arrow_right</i> <a routerLink="/opt-booking-details-full-page" mat-button color="primary">Booking Details Full Page</a></mat-list-item>
         <mat-list-item role="listitem"><a routerLink="/opt-package-cart" mat-button color="primary">Package Cart</a></mat-list-item>
         <mat-list-item role="listitem"><a routerLink="/opt-item-cart" mat-button color="primary">Item Cart</a></mat-list-item>
-
-      </mat-list>
-
-
-  </mat-drawer>
-
-  <div class="example-sidenav-content">
+        <mat-list-item role="listitem"><a routerLink="/opt-item-modal-popovers" mat-button color="primary">Item Modal Popovers</a></mat-list-item>
+        <mat-list-item role="listitem"><a routerLink="/opt-booking-details-full-page" mat-button color="primary">Booking Details Full Page</a></mat-list-item>
+        <mat-list-item role="listitem"><a routerLink="/opt-package-details" mat-button color="primary">Package Modal Popovers</a></mat-list-item>
+        <mat-list-item role="listitem"><a routerLink="/opt-package-selection-modal" mat-button color="primary">Package Selection Popover[Item Search]</a></mat-list-item>
 
 
-    <div class="wrapper-tmp">
+        </mat-list>
 
-      <button mat-mini-fab type="button" mat-button (click)="drawer.toggle()">
-        <i class="material-icons">
-          art_track
-        </i>
-      </button>
+
+        </mat-drawer>
+
+        <div class="example-sidenav-content">
+
+
+          <div class="wrapper-tmp">
+
+            <button mat-mini-fab type="button" mat-button (click)="drawer.toggle()">
+              <i class="material-icons">
+                art_track
+              </i>
+            </button>
+
+            <button mat-mini-fab class="matbtn-right" [matMenuTriggerFor]="menu"><i class="material-icons">
+              favorite
+            </i></button>
+            <mat-menu #menu="matMenu" >
+              <button mat-menu-item  onclick="myTheme1()">Default Theme</button>
+              <button mat-menu-item  onclick="myTheme2()">Snow Theme</button>
+      </mat-menu>
 
 
       <div class="container-tmp">

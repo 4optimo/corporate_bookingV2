@@ -2,7 +2,6 @@
 @import "tc-md-mixins";
 @import "variables";
 
-
 $base-text-color: #000;
 
 $color-base: $base-text-color;
@@ -246,7 +245,7 @@ fieldset.demo{
     background-color: #eee;
     border: 1px solid #ccc;
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 500;
   }
   margin-bottom: 20px;
 
@@ -371,16 +370,13 @@ p {
   @include typo-caption;
   font-style: normal;
   color: #909cac;
-
-
-
-  &__link{
-    @include typo-caption;
-    font-style: normal;
-    line-height: 16px;
-    text-decoration: underline;
-
-  }
+}
+.opt-txt__link{
+  @include typo-caption;
+  font-style: normal;
+  line-height: 16px;
+  color: #27bfc2;
+  text-decoration: none;
 }
 
 
@@ -392,7 +388,7 @@ p {
   &-small{
     @include typo-body-2;
     @extend %tc-ellipsis;
-    font-size: 12px;
+    font-size: 12px !important;
   }
 
   &-large{
@@ -482,7 +478,6 @@ p {
 .my-bordered-list .mdc-list-item:not(:first-child) {
   border-top: none;
 }
-
 //Font Weight
 
 .opt-fontweight{
@@ -802,3 +797,4 @@ p {
 //.material-icons {
 //  @include typo-icon;
 //}
+// Icon moon icon library set clasess

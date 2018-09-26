@@ -146,7 +146,37 @@ html {
       }
     }
   }*/
-
+  .icons-tab-header{
+    padding-left: 20px;
+    padding-right: 20px;
+    h1{
+      margin-bottom: 20px;
+    }
+  }
+  .icon-box-wrapper{
+    flex-wrap: wrap;
+    .icon-set-item{
+      min-width: 310px;
+      max-width: 318px;
+      margin: 20px;
+      height: auto;
+      background-color: #f9f9f9;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      .opt_flex--container{
+        flex-direction: column;
+        i{
+          font-size: 34px;
+        }
+        .opt_flex__item{
+          margin-bottom: 10px;
+          justify-content: center;
+          display: flex;
+        }
+      }
+    }
+  }
   h1.opt__heading-1 {
     margin-top: 50px;
 
@@ -163,7 +193,6 @@ html {
       width: 30%;
     }
   }
-
 }
 
 

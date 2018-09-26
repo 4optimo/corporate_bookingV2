@@ -1,11 +1,13 @@
+@import "variables";
+
 .booking-summary {
   border-bottom: 1px solid $separator-border-color;
-  color: #3b414d;
+  color: $booking_summary_color;
   .flex-row {
     .col {
       background-color: $default-state-bg;
       &:nth-child(2) {
-        border-right: 1px dashed #ccc;
+        border-right: 1px dashed $opt_border-color_default;
         background-color: $default-state-dark-bg;
       }
       @include respond-to('x-small') {
@@ -17,7 +19,7 @@
     }
   }
   &.__unavailable {
-    color: #fff;
+    color: $plain;
     .flex-row {
       .col {
         background-color: $badge-danger-bg;
@@ -27,21 +29,21 @@
       }
     }
     .field-icon{
-      color: #fff;
+      color: $plain;
     }
     .details .field .field-icon{
-      color: #fff;
+      color: $plain;
     }
     .font-style-01, .font-style-02, .font-style-03, .font-style-04, .font-style-05, .font-style-06, .font-style-07, .font-style-08{
-      color: #fff;
+      color: $plain;
     }
 
     .link.__default{
-      color: #fff;
+      color: $plain;
     }
 
     .btn.btn-icon{
-      color: #fff;
+      color: $plain;
     }
 
     .badge{
@@ -49,12 +51,12 @@
         background-color: $unavailable-state-dark-bg;
       }
       &.__danger{
-         background-color: #fff;
+         background-color: $plain;
          color: $unavailable-state-dark-bg;
        }
       &.__success{
-          background-color: #f5766c;
-          color: #fff;
+          background-color: $badge-middle-color;
+          color: $plain;
       }
     }
 
@@ -67,7 +69,7 @@
     }
 
     .mat-select *{
-      color: #fff;
+      color: $plain;
     }
   }
 
@@ -85,9 +87,6 @@
       align-self: stretch;
       height: 50%;
 
-      .half{
-
-      }
 
       &.border-line{
         height: 1px;
@@ -103,7 +102,7 @@
     }
     .field {
       .field-icon {
-        color: #909cac;
+        color: $opt_text_color_tertiary;
       }
     }
   }
@@ -133,8 +132,30 @@
       }
     }
   }
-}
+  .mat-select-value {
+    color: $opt_text_color_primary ;
+  }
+  .mat-select-arrow{
+    color: $opt_text_color_primary;
+  }
 
+}
+.booking-status-menu, .icon-text-menu{
+  .mat-menu-content{
+    padding: 0;
+    font-size: 13px !important;
+    span{
+      font-size: 13px !important;
+      padding-left: 5px !important;
+    }
+  }
+}
+.mat-select-panel .mat-option{
+  height: 40px !important;
+}
+.mat-option-text{
+  @extend .opt-txt__body1;
+}
 .booking-status-icon{
   display: none;
   i{
@@ -142,7 +163,7 @@
   }
   &.danger{
     i{
-      color: #f5766c;
+      color: $no-color--state;
     }
   }
 }
@@ -152,9 +173,6 @@
   flex-direction: row;
   flex-wrap: nowrap;
   height: 100%;
-  .profile__image, .profile__details {
-
-  }
   .profile__image {
     display: flex;
     flex-direction: column;
@@ -172,6 +190,7 @@
     justify-content: space-between;
     align-items: stretch;
     align-content: space-between;
+    flex-grow: 1;
     .telephone-field{
       margin-top: 5px;
     }
@@ -201,8 +220,6 @@
   }
   .field-detail {
     flex-grow: 1;
-  }
-  .field-options {
   }
   &:last-child {
     margin-bottom: 0;
@@ -266,18 +283,15 @@
   &.regular{
     font-weight: 400;
   }
-  &.medium{
-    font-weight: 500;
-  }
   &.bold{
-    font-weight: 700;
+    font-weight: 500;
   }
 }
 
 .font-style-01 {
   font-size: 18px;
   font-weight: 500;
-  color: #3a424d;
+  color: $opt_text_color_primary;
 }
 
 .font-style-01.__success {
@@ -287,44 +301,44 @@
 .font-style-02 {
   font-size: 11px;
   font-weight: 400;
-  color: #3a424d;
+  color: $primary-theme-font;
 }
 
 .font-style-03 {
   font-size: 11px;
   font-weight: 400;
-  color: #909cac;
+  color: $opt_text_color_tertiary;
 }
 
 .font-style-04 {
   font-size: 13px;
   font-weight: 500;
-  color: #27bfc2;
+  color: $opt_text_color_secondary;
 }
 
 .font-style-05 {
   font-size: 16px;
   font-weight: 500;
-  color: #27bfc2;
+  color: $opt_text_color_secondary;
 }
 
 .font-style-06 {
   font-size: 12px;
   font-weight: 400;
-  color: #333e47;
+  color: $opt_color_quaternary;
 }
 
 .font-style-07 {
   font-size: 14px;
   font-weight: 500;
-  color: #909cac;
+  color: $opt_text_color_tertiary;
 }
 
 .link {
   text-decoration: underline;
   cursor: pointer;
   &.__default {
-    color: #27bfc2;
+    color: $opt_text_color_secondary;
     font-size: 12px;
     font-weight: 400;
   }
@@ -353,7 +367,7 @@ i {
   &.btn-icon {
     background-color: transparent;
     padding: 0;
-    color: #d3d6d9;
+    color: $separator-border-color;
     align-items: center;
     box-shadow: none;
 
@@ -365,13 +379,13 @@ i {
   }
 
   &.btn-taptoadd{
-    border: 1px dashed #d0d4db;
+    border: 1px dashed $default_mat_icon_color;
     background-color: transparent;
     border-radius: 50%;
     padding: 10px;
 
     i.material-icons{
-      color: #d0d4db;
+      color: $default_mat_icon_color;
       font-size: 45px;
     }
 
@@ -382,9 +396,9 @@ i {
       }
     }
     &.themed{
-      border-color: #f9d630;
+      border-color: $summary_themed_color;
       i.material-icons{
-        color: #f9d630;
+        color: $summary_themed_color;
       }
     }
 
@@ -397,7 +411,7 @@ i {
   align-items: center;
   flex-direction: column;
   p{
-    color: #909cac;
+    color: $opt_text_color_tertiary;
     font-weight: 400;
     margin: 10px 0 0 0;
   }
@@ -409,7 +423,7 @@ i {
   }
   &.themed{
     p{
-      color: #f9d630;
+      color: $summary_themed_color;
     }
   }
 }
@@ -473,7 +487,7 @@ i {
   }
 
   .opt_flex--container{
-
+    margin-bottom: 5px !important;
     &.parent-width{
       margin: 0 -15px;
       //margin-bottom: 3px;
@@ -521,16 +535,12 @@ i {
     font-size: 18px;
     font-weight: 500;
   }
-  .mat-option{
-    .mat-option-text{
-    }
-  }
 }
 
 .opt-booking-summary-select-sm {
   &.themed{
     .mat-select-value{
-      color: #27bfc2;
+      color: $opt_text_color_secondary;
     }
   }
   &.emphd{
@@ -541,10 +551,6 @@ i {
   .mat-select-value{
   font-size: 12px;
   font-weight: 400;
-  }
-  .mat-option{
-    .mat-option-text{
-    }
   }
 }
 
@@ -586,10 +592,13 @@ i {
     }
   }
   .warning{
-    color: $warning;
+    //color: $warning;
+    color: $badge-danger-bg;
     transition: all 0.4s ease-in-out;
     &:hover{
-      background-color: $warning;
+      //background-color: $warning;
+      background-color: $badge-danger-bg;
+
       color: $status-hover-font-color;
       transition: all 0.4s ease-in-out;
     }

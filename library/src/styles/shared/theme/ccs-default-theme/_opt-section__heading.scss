@@ -1,3 +1,5 @@
+@import "variables";
+
 .opt-section__heading{
 
 .section-heading{
@@ -9,16 +11,16 @@
 
     .__title{
       &:hover{
-        background-color: white;
+        background-color: $opt_color_white;
       }
-      border-bottom: 1px solid #e1e1e1;
+      border-bottom: 1px solid $opt-border-color;
       padding: 0 24px 0px 0px;
 
       .mat-content{
 
         >h1{
-          border-bottom: 4px solid #00b0ff;
-          line-height: 44px;
+          border-bottom: 4px solid $opt_color_primary;
+          line-height: 50px;
           padding-left: 3px;
           padding-right: 3px;
         }
