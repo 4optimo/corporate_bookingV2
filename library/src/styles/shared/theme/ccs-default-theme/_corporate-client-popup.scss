@@ -801,6 +801,7 @@
           line-height: 44px;
           padding-left: 3px;
           padding-right: 3px;
+          font-weight: 600 !important;
         }
       }
       p{
@@ -1116,12 +1117,18 @@
           .row{
             flex-grow: 1;
           }
+          .opt_flex--container{
+            min-height: 43px;
+          }
           .value-col{
-            min-height: 48px;
+            min-height: 43px;
             flex-direction: column;
             .opt_flex__item{
               justify-content: flex-end;
             }
+          }
+          .mat-checkbox-layout .mat-checkbox-label {
+            line-height: 20px;
           }
         }
         span{
@@ -1214,6 +1221,10 @@
     }
     .questionnaire-wrapper{
       padding:24px;
+      margin-top:50px;
+      .mat-expansion-panel-body{
+        padding-top: 15px;
+      }
       .questionnaire-toggle{
         color: $no-color--state;
         .opt_flex--container{
@@ -1340,6 +1351,7 @@
     .document-select-header{
       padding: 24px;
       background-color: $default-state-dark-bg;
+      margin-top: 60px;
       .opt-search-panel-wrapper{
         background-color: $default-state-dark-bg !important;
       }
@@ -1595,3 +1607,13 @@
     }
   }
 }
+.opt-item-search{
+  .opt_flex--container:nth-child(1) {
+    align-items: inherit !important;
+  }
+  mat-accordion{
+    .opt_flex--container:nth-child(1) {
+      align-items: center !important;
+    }
+  }
+} 

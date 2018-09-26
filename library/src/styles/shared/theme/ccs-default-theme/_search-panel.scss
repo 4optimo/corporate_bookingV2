@@ -18,7 +18,7 @@
       width:calc(100% - 5px);
       position: absolute;
       height: calc(100% - 5px);
-      z-index: 9999;
+      z-index: 9998;
       background: -moz-linear-gradient(top, rgba(238,238,238,0.8) 0%, rgba(238,238,238,0.8) 1%, rgba(238,238,238,0.8) 100%); /* FF3.6-15 */
       background: -webkit-linear-gradient(top, rgba(238,238,238,0.8) 0%,rgba(238,238,238,0.8) 1%,rgba(238,238,238,0.8) 100%); /* Chrome10-25,Safari5.1-6 */
       background: linear-gradient(to bottom, rgba(238,238,238,0.8) 0%,rgba(238,238,238,0.8) 1%,rgba(238,238,238,0.8) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
@@ -95,6 +95,9 @@
       .mat-menu-item{
         .material-icons{
           padding-right: 20px;
+        }
+        .mat-menu-item:hover{
+          color: #ffffff;
         }
       }
     }
