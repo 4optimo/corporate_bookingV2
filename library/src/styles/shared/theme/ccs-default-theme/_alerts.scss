@@ -22,7 +22,10 @@
       color: $plain;
 
       &.__success {
-        background-color: $success-color--state;
+        background-color: $success_action;
+      }
+      &.__error {
+        background-color: $opt_color_tertiary;
       }
       &.__warning-alert {
         background-color: $red-danger;
