@@ -1,14 +1,15 @@
 @import "variables";
+
 .mat-button{
   line-height: inherit !important;
   &.btn-icon-text{
-    background-color: #fff;
+    background-color: $opt_color_white;
     margin-right: 4px;
     font-size: 12px;
     span{
-      color: #333;
+      color: $opt_line_default;
       i{
-        color: #909cac;
+        color: $opt_text_color_tertiary;
         padding-right: 3px;
         font-size: 14px;
         margin-top: -2px;
@@ -61,7 +62,7 @@
     text-align: center !important;
     border: 1px solid $opt_color_btn_outline !important;
     transition:0.3s !important;
-    background-color: #fff;
+    background-color: $opt_color_white;
     &:hover{
       @include box_shadow (1);
       background-color: $opt_color_btn_active;

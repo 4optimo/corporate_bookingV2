@@ -1,11 +1,13 @@
+@import "variables";
+
 .opt_item--multiple-timeslot{
-  background-color: white;
+  background-color: $opt_color_white;
   margin: 10px;
   .opt_flex__item{
     flex-basis: calc(100% / 3);
     flex-grow: 1;
     padding: 10px 0;
-    border-bottom: 1px dashed #909cac;
+    border-bottom: 1px dashed $opt_text_color_tertiary;
     margin: 10px 50px 10px 50px;
   }
   .flex-container{
@@ -19,7 +21,7 @@
 }
 
 .opt_config-popover{
-  background-color: white;
+  background-color: $opt_color_white;
   margin: 10px;
   max-width: 500px;
   .mat-form-field{

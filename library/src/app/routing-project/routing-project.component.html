@@ -74,21 +74,29 @@
         <mat-list-item role="listitem"><a routerLink="/opt-package-selection-modal" mat-button color="primary">Package Selection Popover[Item Search]</a></mat-list-item>
 
 
-      </mat-list>
+        </mat-list>
 
 
-  </mat-drawer>
+        </mat-drawer>
 
-  <div class="example-sidenav-content">
+        <div class="example-sidenav-content">
 
 
-    <div class="wrapper-tmp">
+          <div class="wrapper-tmp">
 
-      <button mat-mini-fab type="button" mat-button (click)="drawer.toggle()">
-        <i class="material-icons">
-          art_track
-        </i>
-      </button>
+            <button mat-mini-fab type="button" mat-button (click)="drawer.toggle()">
+              <i class="material-icons">
+                art_track
+              </i>
+            </button>
+
+            <button mat-mini-fab class="matbtn-right" [matMenuTriggerFor]="menu"><i class="material-icons">
+              favorite
+            </i></button>
+            <mat-menu #menu="matMenu" >
+              <button mat-menu-item  onclick="myTheme1()">Default Theme</button>
+              <button mat-menu-item  onclick="myTheme2()">Snow Theme</button>
+      </mat-menu>
 
 
       <div class="container-tmp">

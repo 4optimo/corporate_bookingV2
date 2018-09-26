@@ -15,6 +15,8 @@ $bootstrap-sass-asset-helper: false;
 
 .snow {
   @import 'variables';
+  @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
 
   @import '../ccs-default-theme/alerts';
   @import '../ccs-default-theme/booking-summary';
@@ -31,6 +33,39 @@ $bootstrap-sass-asset-helper: false;
   @import '../ccs-default-theme/payment-modal';
   @import '../ccs-default-theme/booking-activities';
   @import '../ccs-default-theme/booking-details';
+  @import '../ccs-default-theme/booking-details-full-page';
+  @import '../ccs-default-theme/booking-list-expand';
+  @import '../ccs-default-theme/booking-main-tabs';
+  @import '../ccs-default-theme/booking-payment';
+  @import '../ccs-default-theme/buttons';
+  @import '../ccs-default-theme/card';
+  @import '../ccs-default-theme/chip';
+  @import '../ccs-default-theme/chip-input';
+  @import '../ccs-default-theme/client-list';
+  @import '../ccs-default-theme/client-popup';
+  @import '../ccs-default-theme/collection-dispatch-list';
+  @import '../ccs-default-theme/color-classes';
+  @import '../ccs-default-theme/corporate-client-tabs';
+  @import '../ccs-default-theme/data-table';
+  @import '../ccs-default-theme/fab';
+  @import '../ccs-default-theme/full-pages';
+  @import '../ccs-default-theme/icon-fonts';
+  @import '../ccs-default-theme/information';
+  @import '../ccs-default-theme/item-modal-popovers';
+  @import '../ccs-default-theme/label';
+  @import '../ccs-default-theme/misc';
+  @import '../ccs-default-theme/library';
+  @import '../ccs-default-theme/opt-adv-price-edit';
+  @import '../ccs-default-theme/opt-booking-list';
+  @import '../ccs-default-theme/opt_pageloader';
+  @import '../ccs-default-theme/package-selection-modal';
+  @import '../ccs-default-theme/paginator';
+  @import '../ccs-default-theme/price-popup';
+  @import '../ccs-default-theme/search-panel';
+  @import '../ccs-default-theme/success';
+  //@import '../ccs-default-theme/tab-panel';
+  @import '../ccs-default-theme/theming-material-components';
+  @import '../ccs-default-theme/tooltip';
 
 
 

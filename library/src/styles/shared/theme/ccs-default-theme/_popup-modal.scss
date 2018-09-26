@@ -1,9 +1,79 @@
 @import "variables";
 
+.w60modal{
+  .opt_modal-content{
+    .mat-dialog-content{
+      position: relative;
+      .opt_modal-header{
+        border-radius: 4px 4px 0 0;
+        position: fixed;
+        width: 60%;
+        z-index: 9999;
+        background-color: #fff;
+        opacity: 1;
+      }
+      .opt_modal-body{
+        margin-top: 60px;
+      }
+    }
+  }
+}
+
+.w70modal{
+  .opt_modal-content{
+    .mat-dialog-content{
+      position: relative;
+      .opt_modal-header{
+        border-radius: 4px 4px 0 0;
+        position: fixed;
+        width: 70%;
+        z-index: 9999;
+        background-color: #fff;
+        opacity: 1;
+      }
+      .opt_modal-body{
+        margin-top: 60px;
+      }
+    }
+  }
+}
+
+.w90modal{
+  .opt_modal-content{
+    .mat-dialog-content{
+      position: relative;
+      .opt_modal-header{
+        border-radius: 4px 4px 0 0;
+        position: fixed;
+        width: 90%;
+        z-index: 9999;
+        background-color: #fff;
+        opacity: 1;
+      }
+      .opt_modal-body{
+        margin-top: 60px;
+      }
+    }
+  }
+}
+
 .opt_modal-content {
-
-
   max-height: 95vh;
+
+  .mat-dialog-content{
+    position: relative;
+    .opt_modal-header{
+      border-radius: 4px 4px 0 0;
+      position: fixed;
+      width: 80%;
+      z-index: 9999;
+      background-color: #fff;
+      opacity: 1;
+    }
+    .opt_modal-body{
+      margin-top: 60px;
+    }
+  }
 
   .opt_modal-header {
     margin-bottom: 3px;
@@ -17,6 +87,7 @@
     .test-inner {
       background-color: $popup_heading_color;
       display: flex;
+      border-radius: 4px 0 0 0;
       .inner-icon{
         align-self: center;
         padding-left: 25px;

@@ -1,7 +1,9 @@
+@import "variables";
+
 .card {
        width: 100%;
        height: 95px;
-       background: #f4f4f4;
+       background: $lighter_background;
        -webkit-transition: all 250ms;
        -moz-transition: all 250ms;
        transition: all 250ms;

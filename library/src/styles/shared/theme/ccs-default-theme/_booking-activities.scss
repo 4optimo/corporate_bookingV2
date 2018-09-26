@@ -121,6 +121,9 @@
 /* End of Expansion Panel Button Styles */
 
 .opt_booking__activity {
+  .main-padding-top{
+    padding-top: 40px;
+  }
   .opt-txt__body1-small{
     line-height: 15px;
   }
@@ -188,14 +191,14 @@
         background-color: $background-color_light;
       }
       .mat-horizontal-content-container {
-        background-color: $background-color_light;
+        background-color: #f9f9f9;
       }
     }
     .mat-button-wrapper{
       display: flex;
       justify-content: center;
       align-items: center;
-      min-height: 22px;
+      min-height: 23px;
     }
   }
 
@@ -422,7 +425,6 @@
 
       .row {
         display: flex;
-        overflow: hidden;
         [class*=' col-'] {
           display: flex;
           align-items: center;
@@ -483,7 +485,6 @@
   }
 
   .correspondence_entry-sent {
-    padding: 5px 0;
     border-bottom: 1px solid $opt-border-color_light;
 
     .row {
@@ -622,6 +623,7 @@
       .mat-expansion-panel-header[aria-disabled=true] {
         color: inherit;
         padding: 0;
+        height: 55px;
       }
       .mat-expansion-panel-body{
         width: calc(100% - 30px);
@@ -680,7 +682,7 @@
       }
 
       .padding-left{
-        padding-left:40px;
+        padding-left:30px;
       }
       .opt-txt__primary{
         overflow: visible;
@@ -956,6 +958,8 @@
       .mat-expansion-panel-header[aria-disabled=true] {
         color: inherit;
         padding: 0;
+        border-bottom: none;
+        height: 55px;
       }
       .mat-expansion-panel-header-title{
         display: flex;

@@ -1,4 +1,5 @@
 // clear div
+@import "variables";
 .clear-fix {
   &:after {
     content: "";
@@ -19,13 +20,13 @@
 .opt_edit__popup{
   position: absolute;
   height: 200px;
-  border: 1px solid red;
+  border: 1px solid $provisional;
   width: 100px;
-  background-color: #00bfa5;
+  background-color: $package-color--product;
 }
 ::-webkit-scrollbar {
   width: 6px;
-  background-color: #F5F5F5;
+  background-color: $default-state-dark-bg;
 }
 
 ::-webkit-scrollbar-track {
@@ -215,15 +216,33 @@ button{
 }
 .mat-menu-content{
   button:hover{
-    color: #ffffff !important;
+    transition: 0.3s;
+    color: $opt_color_white !important;
+    mat-icon{
+      color: $opt_color_white !important;
+    }
   }
+}
+mat-option:hover{
+  background-color: #4bb3fa !important;
+  color: $opt_color_white !important;
+  transition: 0.3s;
 }
 .mat-menu-item:hover{
   background-color: #4bb3fa !important;
-  color: #ffffff !important;
+  color: $opt_color_white !important;
+  transition: 0.3s;
+  .mat-menu-item-icon{
+    .material-icons{
+      color: $opt_color_white !important;
+    }
+  }
+  .mat-menu-item-label{
+    color: $opt_color_white !important;
+  }
 }
 .opt-text-danger{
-  color:#f5766c;
+  color: $no-color--state;
 }
 .badge{
   span{
@@ -232,7 +251,7 @@ button{
 }
 .mat-checkbox-label{
   span{
-    line-height: 24px;
+    line-height: 20px;
   }
 }
 .mat-autocomplete-panel{
@@ -240,4 +259,13 @@ button{
 }
 mat-expansion-panel-header{
   border-bottom: 1px solid #eeeeee;
+}
+.mat-content{
+  overflow: visible !important;
+}
+.mat-button-focus-overlay{
+  display: none;
+}
+.mat-tab-group.mat-primary .mat-ink-bar{
+  background-color: #4bb3fa !important;
 }

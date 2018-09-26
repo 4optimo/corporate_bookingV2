@@ -14,7 +14,7 @@
       .mat-expansion-panel-header {
         -webkit-transition: background-color 0.5s ease;
         transition: background-color 0.5s ease;
-        background-color: #ECEFF1;
+        background-color: $expansion_header_color;
       }
     }
   }
@@ -262,6 +262,7 @@
         .date-select{
           &:hover{
             background-color: $opt_status_good_availability;
+            transition: 0.3s;
             .material-icons{
               color: $opt_color_white;
             }
