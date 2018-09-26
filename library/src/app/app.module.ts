@@ -125,6 +125,8 @@ import { OptQuestionnairePopupComponent } from './opt-questionnaire-popup/opt-qu
 import { OptDocumentSelectPopupComponent } from './opt-document-select-popup/opt-document-select-popup.component';
 import { OptErrorPageComponent } from './opt-error--page/opt-error--page.component';
 import { OptLoadingScreenComponent } from './opt-loading--screen/opt-loading--screen.component';
+import { OptShipmentScreenComponent } from './opt-shipment-screen/opt-shipment-screen.component';
+import { OptDispatchAddNewAddressComponent } from './opt-dispatch-add-new-address/opt-dispatch-add-new-address.component';
 
 
 
@@ -230,6 +232,7 @@ const appRoutes: Routes = [
     ScrollDispatchModule
 
   ],
+  declarations: [OptShipmentScreenComponent, OptDispatchAddNewAddressComponent],
 
 })
 export class DemoMaterialModule {}
