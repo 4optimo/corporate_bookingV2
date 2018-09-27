@@ -128,6 +128,9 @@ import { OptLoadingScreenComponent } from './opt-loading--screen/opt-loading--sc
 import { OptShipmentScreenComponent } from './opt-shipment-screen/opt-shipment-screen.component';
 import { OptDispatchAddNewAddressComponent } from './opt-dispatch-add-new-address/opt-dispatch-add-new-address.component';
 import { OptToastMessageComponent } from './opt-toast-message/opt-toast-message.component';
+import { OptErrorMessageComponent } from './opt-error-message/opt-error-message.component';
+import { OptWarningMessageComponent } from './opt-warning-message/opt-warning-message.component';
+import { OptSuccessMessageComponent } from './opt-success-message/opt-success-message.component';
 
 
 
@@ -191,6 +194,9 @@ const appRoutes: Routes = [
   { path: 'opt-pageloader', component: OptPageloaderComponent},
   { path: 'opt-loading--screen', component: OptLoadingScreenComponent},
   { path: 'opt-toast-message', component: OptToastMessageComponent},
+  { path: 'opt-error-message', component: OptErrorMessageComponent},
+  { path: 'opt-warning-message', component: OptWarningMessageComponent},
+  { path: 'opt-success-message', component: OptSuccessMessageComponent},
 
   { path: '', redirectTo:'/opt-booking-summary', pathMatch:'full'},
   { path: '**', redirectTo:'/opt-booking-summary', pathMatch: 'full'}
@@ -305,6 +311,9 @@ export class DemoMaterialModule {}
     OptBookingDetailsFullPageComponent,
     OptItemCartComponent,
     OptToastMessageComponent,
+    OptErrorMessageComponent,
+    OptWarningMessageComponent,
+    OptSuccessMessageComponent,
     OptItemModalPopoversComponent,
 
     RoutingProjectComponent,
