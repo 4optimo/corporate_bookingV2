@@ -127,6 +127,7 @@ import { OptErrorPageComponent } from './opt-error--page/opt-error--page.compone
 import { OptLoadingScreenComponent } from './opt-loading--screen/opt-loading--screen.component';
 import { OptShipmentScreenComponent } from './opt-shipment-screen/opt-shipment-screen.component';
 import { OptDispatchAddNewAddressComponent } from './opt-dispatch-add-new-address/opt-dispatch-add-new-address.component';
+import { OptToastMessageComponent } from './opt-toast-message/opt-toast-message.component';
 
 
 
@@ -189,6 +190,7 @@ const appRoutes: Routes = [
   { path: 'app-opt-error--page', component: OptErrorPageComponent},
   { path: 'opt-pageloader', component: OptPageloaderComponent},
   { path: 'opt-loading--screen', component: OptLoadingScreenComponent},
+  { path: 'opt-toast-message', component: OptToastMessageComponent},
 
   { path: '', redirectTo:'/opt-booking-summary', pathMatch:'full'},
   { path: '**', redirectTo:'/opt-booking-summary', pathMatch: 'full'}
@@ -302,6 +304,7 @@ export class DemoMaterialModule {}
     OptDocumentSelectPopupComponent,
     OptBookingDetailsFullPageComponent,
     OptItemCartComponent,
+    OptToastMessageComponent,
     OptItemModalPopoversComponent,
 
     RoutingProjectComponent,
