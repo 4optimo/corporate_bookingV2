@@ -228,6 +228,19 @@
             font-size: 11px;
           }
         }
+
+        &.invalid-drag{
+          .btn-taptoadd{
+            border-width: 2px;
+            border-color: red;
+          }
+        }
+        &.valid-drag{
+          .btn-taptoadd{
+            border-width: 2px;
+            border-color: green;
+          }
+        }
       }
     }
 
@@ -1616,4 +1629,4 @@
       align-items: center !important;
     }
   }
-} 
+}
