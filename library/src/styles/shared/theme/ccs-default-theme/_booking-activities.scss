@@ -250,7 +250,7 @@
 
   .mat-expansion-panel-body {
     .mat-horizontal-content-container {
-      padding: 15px 0px;
+      padding: 15px 0;
       //background-color: #f9f9f9;
       font-size: 13px;
     }
@@ -425,6 +425,7 @@
 
       .row {
         display: flex;
+        width: 100%;
         [class*=' col-'] {
           display: flex;
           align-items: center;
