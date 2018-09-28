@@ -22,7 +22,7 @@
       color: $plain;
 
       &.__success {
-        background-color: $success_action;
+        background-color: $success_action_new;
       }
       &.__error {
         background-color: $opt_color_tertiary;
@@ -83,7 +83,7 @@
   }
 .opt-toast-message{
   button{
-    border:none !important; 
+    border:none !important;
   }
   .btn-error{
     background-color: $red-danger;
