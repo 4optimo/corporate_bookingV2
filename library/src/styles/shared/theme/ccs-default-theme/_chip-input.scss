@@ -11,7 +11,7 @@
     @include box_shadow(3);
     padding: 3px;
     min-height: 51px;
-
+    z-index: 1;
   }
 
   input{
