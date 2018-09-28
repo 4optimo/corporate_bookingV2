@@ -87,23 +87,23 @@
   }
   .btn-error{
     background-color: $red-danger;
-    color: #ffffff !important;
+    color: $opt_color_white !important;
     &:hover{
       background-color: $red-danger !important;
     }
   }
   .btn-warning{
     background-color: $opt_color_tertiary;
-    color: #ffffff !important;
+    color: $opt_color_white !important;
     &:hover{
       background-color: $opt_color_tertiary !important;
     }
   }
   .btn-success{
-    background-color: $success_action;
-    color: #ffffff !important;
+    background-color: $success_action_new;
+    color: $opt_color_white !important;
     &:hover{
-      background-color: $success_action !important;
+      background-color: $success_action_new !important;
     }
   }
 }
