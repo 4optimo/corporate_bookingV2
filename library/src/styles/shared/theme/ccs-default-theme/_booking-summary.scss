@@ -10,9 +10,6 @@
         border-right: 1px dashed $opt_border-color_default;
         background-color: $default-state-dark-bg;
       }
-      &:nth-child(3) {
-        padding-bottom: 8px !important;
-      }
       @include respond-to('x-small') {
         flex-direction: column;
       }
@@ -493,7 +490,14 @@ i {
   .opt-txt__caption{
     line-height: 1.45;
   }
-
+  .tax-label{
+    position: relative;
+    bottom: 1px;
+  }
+  .net-label{
+    position: relative;
+    top: 5px;
+  }
   .opt_flex--container{
     &.parent-width{
       margin: 0 -15px;
@@ -514,7 +518,8 @@ i {
 
     &:last-child{
       .badge{
-        margin-top: 3px;
+        position: relative;
+        top: 3px;
       }
     }
 
