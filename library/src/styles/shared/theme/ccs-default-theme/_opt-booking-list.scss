@@ -13,7 +13,9 @@
     }
     .tbl_head{
       margin-left: -13px;
+      padding-left: 25px;
     }
+
   }
   //$danger_color: #f2705b;
 
@@ -561,7 +563,7 @@ margin-right: 0;
   }
 
   .mat-expansion-panel.mat-expanded .mat-expansion-panel-content {
-    box-shadow: none;
+    //box-shadow: none;
   }
 }
 

@@ -10,6 +10,9 @@
         border-right: 1px dashed $opt_border-color_default;
         background-color: $default-state-dark-bg;
       }
+      &:nth-child(3) {
+        padding-bottom: 8px !important;
+      }
       @include respond-to('x-small') {
         flex-direction: column;
       }
@@ -81,6 +84,7 @@
     justify-content: space-between;
     align-items: stretch;
     align-content: space-between;
+    line-height: 28px;
     .flex-horizontal {
       order: 0;
       flex: 1 1 auto;
@@ -104,6 +108,10 @@
       .field-icon {
         color: $opt_text_color_tertiary;
       }
+    }
+    .referrer-label{
+      position: relative;
+      top:5px;
     }
   }
 
@@ -487,7 +495,6 @@ i {
   }
 
   .opt_flex--container{
-    margin-bottom: 5px !important;
     &.parent-width{
       margin: 0 -15px;
       //margin-bottom: 3px;

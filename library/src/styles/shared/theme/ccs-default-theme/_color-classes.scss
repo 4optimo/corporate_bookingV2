@@ -166,7 +166,9 @@
   &_color_icon_font{
     color: $opt_color_icon_font !important ;
   }
-
+  &_color_icon_danger{
+    color: $red-danger !important ;
+  }
   &_color_fab{
     background-color: $opt_color_fab;
     color: $opt_color_white;
