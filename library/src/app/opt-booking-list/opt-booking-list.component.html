@@ -32,7 +32,23 @@
                   <mat-panel-description class="opt_flex--container">
                     <div class="middle-details">
                       <div class="opt_flex__item opt_flex__item--vcenter tc-flex-item__center opt-txt__body1-small"><span class="opt-txt__body2-small">5-JAN-18 | </span><span
-                        class="opt-txt__body2-small  opt-pre-whitespace"> Advertising Board Booking </span><span><i class="material-icons color small opt_color_icon_font">info</i></span></div>
+                        class="opt-txt__body2-small  opt-pre-whitespace"> Advertising Board Booking </span>
+                        <span [matMenuTriggerFor]="menu"><i class="material-icons color small opt_color_icon_font">info</i></span>
+                        <mat-menu #menu="matMenu" class="info-popover">
+                          <div class="opt_flex--container">
+                            <div class="opt_flex__item">
+                              <div class="opt_flex--container info-popover-item">
+                                <div class="opt_flex__item"><span><i class="material-icons color small opt_color_icon_danger">info</i></span></div>
+                                <div class="opt_flex__item"><span class="opt-txt__body1">Outstanding payments exists for the events</span></div>
+                              </div>
+                              <div class="opt_flex--container info-popover-item">
+                                  <div class="opt_flex__item"><span><i class="material-icons color small opt_color_icon_danger">info</i></span></div>
+                                  <div class="opt_flex__item"><span class="opt-txt__body1">Outstanding payments exists for the events</span></div>
+                                </div>
+                            </div>
+                          </div>
+                        </mat-menu>
+                      </div>
                       <div><span class="opt-txt__body1-small">Corporate |</span><span class="opt-txt__body1-small opt-txt__secondary"> Art Studio |</span> <span
                         class="opt-txt__tertiary opt-txt__body1-small"> Confirmed</span></div>
                     </div>
@@ -169,7 +185,23 @@
                     <mat-panel-description class="opt_flex--container">
                       <div class="middle-details">
                         <div class="opt_flex__item opt_flex__item--vcenter tc-flex-item__center opt-txt__body1-small"><span class="opt-txt__body2-small">5-JAN-18 | </span><span
-                          class="opt-txt__body2-small opt-pre-whitespace"> Personal Training Bookings </span><span><i class="material-icons color small opt_color_icon_danger">info</i></span></div>
+                          class="opt-txt__body2-small opt-pre-whitespace"> Personal Training Bookings </span>
+                          <span [matMenuTriggerFor]="menu"><i class="material-icons color small small opt_color_icon_danger">info</i></span>
+                        <mat-menu #menu="matMenu" class="info-popover">
+                          <div class="opt_flex--container">
+                            <div class="opt_flex__item">
+                              <div class="opt_flex--container info-popover-item">
+                                <div class="opt_flex__item"><span><i class="material-icons color small opt_color_icon_danger">info</i></span></div>
+                                <div class="opt_flex__item"><span class="opt-txt__body1">Outstanding payments exists for the events</span></div>
+                              </div>
+                              <div class="opt_flex--container info-popover-item">
+                                  <div class="opt_flex__item"><span><i class="material-icons color small opt_color_icon_danger">info</i></span></div>
+                                  <div class="opt_flex__item"><span class="opt-txt__body1">Outstanding payments exists for the events</span></div>
+                                </div>
+                            </div>
+                          </div>
+                        </mat-menu>
+                        </div>
                         <div><span class="opt-txt__body1-small">Partners |</span><span class="opt-txt__body1-small opt-txt__secondary"> Meeting Room |</span> <span
                           class="opt-txt__tertiary opt-txt__body1-small"> Cancelled</span></div>
                       </div>

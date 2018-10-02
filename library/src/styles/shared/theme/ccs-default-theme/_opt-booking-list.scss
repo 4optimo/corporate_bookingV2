@@ -1,3 +1,4 @@
+
 @import "variables";
 .opt{
   &_booking__detail{
@@ -7,6 +8,7 @@
   }
 }
 .opt_booking__list{
+  
   .opt_booking__detail{
     .icon__cage{
       width: 72px !important;
@@ -498,7 +500,7 @@ margin-right: 0;
       }
     }
     .middle-details{
-
+      
       @include respond-to('x-small') {
         padding-left: 65px;
         width: 100%;
@@ -567,4 +569,52 @@ margin-right: 0;
   }
 }
 
+}
+.info-popover{
+  padding: 0 10px;
+  .info-popover-item{
+    padding: 10px;
+    color: $red-danger;
+    &:nth-child(1){
+      border-bottom: 1px solid #eeeeee;
+    }
+    .opt-txt__body1{
+      white-space: inherit;
+    }
+    i{
+      padding-right: 5px;
+    }
+  }
+}
+.filter-popover{
+  padding: 0 10px;
+  max-width: 400px !important;
+  min-width: 300px !important;
+  align-items: center;
+  .filter-popover-item{
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #eeeeee;
+    .opt-txt__body1{
+      white-space: inherit;
+    }
+    i{
+      padding-right: 5px;
+    }
+    &:nth-last-child(1){
+      border-bottom: none !important;
+    }
+  }
+  .toggle-label{
+    vertical-align: middle !important;
+  }
+  mat-slide-toggle{
+    vertical-align: middle;
+  }
+  .mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-bar {
+    background-color: rgba(16,157,86,.5);
+}
+  .mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-thumb{
+    background-color: $success_action_new;
+  }
 }

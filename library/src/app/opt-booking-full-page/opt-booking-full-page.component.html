@@ -235,7 +235,46 @@
             <p class="opt-txt__body2">300+ Booking Found</p>
           </div>
           <div class="opt_flex__item opt-txt__align-right">
-            <button mat-button class="panel-action-btn-icon"><i class="material-icons opt_color_icon_font ">filter_list</i></button>
+            <button mat-button class="panel-action-btn-icon"><i class="material-icons opt_color_icon_font " [matMenuTriggerFor]="menu">filter_list</i></button>
+            <mat-menu #menu="matMenu" class="filter-popover">
+                <div class="opt_flex--container" (click)="$event.stopPropagation();">
+                  <div class="opt_flex__item">
+                    <div class="opt_flex--container filter-popover-item">
+                      <div class="opt_flex__item opt_flex__item">
+                        <span><i class="material-icons color small opt-txt__tertiary">check_circle</i></span>
+                        <span class="opt-txt__body1">Booking reference</span>
+                      </div>
+                      <div class="opt_flex__item opt-txt__align-right">
+                        <span class="opt-txt__body1"><mat-slide-toggle checked="true"></mat-slide-toggle>
+                          <span class="toggle-label">Ascending</span>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="opt_flex--container filter-popover-item">
+                        <div class="opt_flex__item opt_flex__item">
+                          <span><i class="material-icons color small opt-txt__tertiary">check_circle</i></span>
+                          <span class="opt-txt__body1">Booking date</span>
+                        </div>
+                        <div class="opt_flex__item opt-txt__align-right">
+                          <span class="opt-txt__body1"><mat-slide-toggle ></mat-slide-toggle>
+                            <span class="toggle-label">Descending</span>
+                          </span>
+                        </div>
+                      </div>
+                      <div class="opt_flex--container filter-popover-item">
+                          <div class="opt_flex__item opt_flex__item">
+                            <span><i class="material-icons color small opt-txt__tertiary">check_circle</i></span>
+                            <span class="opt-txt__body1">Event start date</span>
+                          </div>
+                          <div class="opt_flex__item opt-txt__align-right">
+                            <span class="opt-txt__body1"><mat-slide-toggle></mat-slide-toggle>
+                              <span class="toggle-label">Descending</span>
+                            </span>
+                          </div>
+                        </div>
+                  </div>
+                </div>
+              </mat-menu>
           </div>
         </div>
       </div>
