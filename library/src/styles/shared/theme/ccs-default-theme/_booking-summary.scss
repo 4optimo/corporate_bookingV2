@@ -568,67 +568,67 @@ i {
 
 .booking-status-menu{
   .cancelled{
-    color: $cancelled-status;
+    color: $red-danger;
     transition: all 0.4s ease-in-out;
     &:hover{
-      background-color: $cancelled-status;
+      background-color: $red-danger !important;
       color: $status-hover-font-color;
       transition: all 0.4s ease-in-out;
     }
   }
   .confirmed{
-    color: $confirmed-status;
+    color: $success_action_new;
     transition: all 0.4s ease-in-out;
     &:hover{
-      background-color: $confirmed-status;
+      background-color: $success_action_new !important;
       color: $status-hover-font-color;
       transition: all 0.4s ease-in-out;
     }
   }
   .confirmed-multiple{
-    color: $confirmed-multiple;
+    color: #000000;
     transition: all 0.4s ease-in-out;
     &:hover{
-      background-color: $confirmed-multiple;
+      background-color: $confirmed-multiple !important;
       color: $status-hover-font-color;
       transition: all 0.4s ease-in-out;
     }
   }
   .provisional{
-    color: $provisional;
+    color:$opt_color_secondary;
     transition: all 0.4s ease-in-out;
     &:hover{
-      background-color: $provisional;
+      background-color:$opt_color_secondary !important;
       color: $status-hover-font-color;
       transition: all 0.4s ease-in-out;
     }
   }
   .warning{
     //color: $warning;
-    color: $badge-danger-bg;
+    color: $opt_status_warning;
     transition: all 0.4s ease-in-out;
     &:hover{
       //background-color: $warning;
-      background-color: $badge-danger-bg;
+      background-color: $opt_status_warning !important;
 
       color: $status-hover-font-color;
       transition: all 0.4s ease-in-out;
     }
   }
   .tentative{
-    color: $tentative;
+    color: $opt_status_tentative;
     transition: all 0.4s ease-in-out;
     &:hover{
-      background-color: $tentative;
+      background-color: $opt_status_tentative !important;
       color: $status-hover-font-color;
       transition: all 0.4s ease-in-out;
     }
   }
   .provisional-multiple{
-    color: $provisional-multiple;
+    color: $opt_status_provisional_multiple;
     transition: all 0.4s ease-in-out;
     &:hover{
-      background-color: $provisional-multiple;
+      background-color: $opt_status_provisional_multiple !important;
       color: $status-hover-font-color;
       transition: all 0.4s ease-in-out;
     }
