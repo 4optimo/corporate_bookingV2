@@ -812,10 +812,8 @@
     &.blocked{
       i{
         color: $no-color--state;
+        
       }
-    }
-    i{
-      color: $lbl__price-details;
     }
     span{
       vertical-align: middle;
@@ -846,6 +844,9 @@
   }
 }
 .mat-menu-content{
+  button:hover{
+    color: $opt_color_white;
+  }
   .mat-menu-item{
     line-height: 40px;
     height: 40px;
