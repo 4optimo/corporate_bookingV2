@@ -197,6 +197,8 @@ const appRoutes: Routes = [
   { path: 'opt-error-message', component: OptErrorMessageComponent},
   { path: 'opt-warning-message', component: OptWarningMessageComponent},
   { path: 'opt-success-message', component: OptSuccessMessageComponent},
+  { path: 'opt-dispatch-add-new-address', component: OptDispatchAddNewAddressComponent},
+  { path: 'opt-shipment-screen', component: OptShipmentScreenComponent},
 
   { path: '', redirectTo:'/opt-booking-summary', pathMatch:'full'},
   { path: '**', redirectTo:'/opt-booking-summary', pathMatch: 'full'}
@@ -240,7 +242,7 @@ const appRoutes: Routes = [
     ScrollDispatchModule
 
   ],
-  declarations: [OptShipmentScreenComponent, OptDispatchAddNewAddressComponent],
+  declarations: [],
 
 })
 export class DemoMaterialModule {}
@@ -315,6 +317,8 @@ export class DemoMaterialModule {}
     OptWarningMessageComponent,
     OptSuccessMessageComponent,
     OptItemModalPopoversComponent,
+    OptDispatchAddNewAddressComponent,
+    OptShipmentScreenComponent,
 
     RoutingProjectComponent,
     TypographyComponent,
