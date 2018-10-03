@@ -586,10 +586,10 @@ i {
     }
   }
   .confirmed-multiple{
-    color: #000000;
+    color: $opt_status_confirmed-multiple;
     transition: all 0.4s ease-in-out;
     &:hover{
-      background-color: $confirmed-multiple !important;
+      background-color: $opt_status_confirmed-multiple !important;
       color: $status-hover-font-color;
       transition: all 0.4s ease-in-out;
     }
