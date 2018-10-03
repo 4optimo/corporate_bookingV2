@@ -1630,3 +1630,21 @@
     }
   }
 }
+
+.opt_add_new_address{
+  .main_wrapper{
+    padding: 20px 5px;
+    .opt_flex--container {
+      &.three_col_grid {
+        justify-content: space-between !important;
+        > .opt_flex__item {
+          flex-grow: 0 !important;
+          flex-basis: calc(95% / 3) !important;
+          >.example-full-width{
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
