@@ -693,6 +693,43 @@
     .mat-stepper-horizontal-line{
       flex: none;
     }
+    .doc-results-wrapper{
+      background-color: $grey-200;
+      padding: 15px;
+      .mat-paginator-page-size-select{
+        width:56px !important;
+      }
+      .document-count{
+        margin: 0 10px 10px;
+      }
+      .doc-result-item{
+        border-bottom: 1px solid $grey-200;
+        background-color: $opt_color_white;
+        padding: 10px;
+        .row{
+          display: flex;
+          align-items: center;
+        }
+        .doc-icon-margin{
+          margin-left: -15px;
+        }
+        .list-icon{
+          background-color: $opt_color__secondary;
+          padding: 10px;
+          border-radius: 24px;
+          color: #ffffff;
+        }
+        .doc-desc{
+          white-space: normal;
+          line-height: 15px;
+        }
+        .symbol_icon{
+          padding-right: 3px;
+          position: relative;
+          bottom: 2px;
+        }
+      }
+    }
   }
   &_email-document-popup{
     .email-document-label{
