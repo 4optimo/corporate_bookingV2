@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AdditionalInformationComponent implements OnInit {
   selectedValue: string;
-
+  selected = 'option1';
   currencys = [
     {value: 'british-0', viewValue: 'British Pound-£'},
     {value: 'america-1', viewValue: 'Pizza'},
@@ -28,7 +28,7 @@ export class AdditionalInformationComponent implements OnInit {
     {value: 'radio-7', viewValue: 'Radio'}
   ];
   function_sheets= [
-    {value: 'multiple-0', viewValue: 'Multiple'},
+    {value: 'multiple-0', viewValue: 'Pending'},
     {value: 'multiple-1', viewValue: 'Pizza'},
     {value: 'multiple-2', viewValue: 'Tacos'}
   ];

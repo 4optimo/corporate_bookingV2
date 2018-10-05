@@ -58,6 +58,13 @@
   }
   .package-wrapper{
     padding-top: 40px;
+    .mat-slide-toggle{
+      margin-left: 10px;
+    }
+    i{
+      font-size: 17px;
+      padding-right: 5px;
+    }
   }
 }
 

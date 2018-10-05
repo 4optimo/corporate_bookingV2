@@ -18,6 +18,8 @@ import {OptTaskPopupComponent} from "../opt-task-popup/opt-task-popup.component"
 import {OptInvoiceGeneratorComponent} from "../opt-invoice-generator/opt-invoice-generator.component";
 import {OptQuestionnairePopupComponent} from "../opt-questionnaire-popup/opt-questionnaire-popup.component";
 import {OptDocumentSelectPopupComponent} from "../opt-document-select-popup/opt-document-select-popup.component";
+import {OptDispatchAddNewAddressComponent} from "../opt-dispatch-add-new-address/opt-dispatch-add-new-address.component";
+import {OptShipmentScreenComponent} from "../opt-shipment-screen/opt-shipment-screen.component";
 
 @Component({
   selector: 'app-opt-popup-window',
@@ -201,6 +203,26 @@ export class OptPopupWindowComponent implements OnInit {
       panelClass:['custom-dialog-container', 'w60modal'],
       height: 'auto',
       width: '60%'
+    });
+
+  }
+  public openAddNewAddressPopup(){
+    this.dialog.open(OptDispatchAddNewAddressComponent,{
+      data: {name:'Add New Address'},
+      panelClass:['custom-dialog-container', 'w60modal'],
+      height: 'auto',
+      width: '60%'
+      // DialogPosition : top
+
+    });
+
+  }
+  public  openShipmentPopup(){
+    this.dialog.open(OptShipmentScreenComponent,{
+      data: {name:'Shipment Information'},
+      panelClass:['custom-dialog-container', 'w70modal'],
+      height: 'auto',
+      width: '70%'
     });
 
   }

@@ -45,9 +45,9 @@
 
   .mat-accordion .mat-expansion-panel.opt-expand--line.mat-expanded{
     transition: all 0.3s ease;
-
-
-
+    margin-bottom: 10px! important;
+    margin-top: 10px! important;
+    @include box_shadow(3);
   }
 
 
@@ -290,5 +290,20 @@
     }
   }
 
+}
+
+.opt-client-list-full{
+  position: relative;
+  .body-content {
+    .ng-star-inserted{
+      &:first-child {
+        .row_client {
+          .mat-expanded{
+            margin-top: 0px;
+          }
+        }
+      }
+    }
+  }
 }
 

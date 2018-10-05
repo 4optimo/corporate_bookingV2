@@ -233,13 +233,13 @@
     }
     .activity-title {
       color: $opt_color_primary;
-      font-size: 15px;
+      font-size: 14px;
       font-weight: 500;
     }
   }
   .activity-title {
     color: $opt-text-color__secondary;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 500;
     -ms-text-overflow: ellipsis;
     text-overflow: ellipsis;
@@ -250,7 +250,7 @@
 
   .mat-expansion-panel-body {
     .mat-horizontal-content-container {
-      padding: 15px 0px;
+      padding: 15px 0;
       //background-color: #f9f9f9;
       font-size: 13px;
     }
@@ -425,6 +425,7 @@
 
       .row {
         display: flex;
+        width: 100%;
         [class*=' col-'] {
           display: flex;
           align-items: center;

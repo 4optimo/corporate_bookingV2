@@ -1,0 +1,75 @@
+<div class="opt_modal-content opt_add_new_address">
+  <div class="mat-dialog-content">
+    <div class="opt_modal-header ">
+      <div class="test opt--depth__1">
+        <div class="opt_flex--container test-wrapper">
+          <div class="opt_flex__item--inherit test-inner">
+            <div class="inner-icon-black">
+              <i class="material-icons">contacts</i>
+            </div>
+          </div>
+          <div class="opt_flex__item test-inner-expand">
+            <div class="title">
+              <h1 mat-dialog-title>{{data.name}}</h1>
+            </div>
+          </div>
+          <div class="opt_flex__item--inherit test-inner-2">
+            <div class="inner-action">
+              <button class="material-icons icon1">launch</button>
+              <button class="material-icons icon2" (click)="close()">close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="opt_modal-body">
+
+      <!--modal body start-->
+      <div class="main_wrapper">
+        <div class="opt_flex--container three_col_grid">
+          <div class="opt_flex__item">
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="Post Code" value="75022">
+            </mat-form-field>
+          </div>
+          <div class="opt_flex__item">
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="Address" value="3509 Chimney Road Drive" required>
+            </mat-form-field>
+          </div>
+          <div class="opt_flex__item">
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="Country" value="United State" required>
+            </mat-form-field>
+          </div>
+        </div>
+        <div class="opt_flex--container three_col_grid">
+          <div class="opt_flex__item">
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="City/ Town" value="">
+            </mat-form-field>
+          </div>
+          <div class="opt_flex__item">
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="Region/ Country" value="">
+            </mat-form-field>
+          </div>
+          <div class="opt_flex__item">
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="opt_flex--container">
+        <div class="opt_flex__item"></div>
+        <div class="opt_flex__item--inherit">
+          <button class="mat-btn-primary mat-button" (click)="close()">Add</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+

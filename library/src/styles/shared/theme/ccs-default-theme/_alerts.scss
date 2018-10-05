@@ -14,7 +14,7 @@
 
     &_container{
 
-      padding: 20px;
+      padding: 8px;
       //background-color: #f5766c;
       min-height: 80px;
       width: 100%;
@@ -22,7 +22,7 @@
       color: $plain;
 
       &.__success {
-        background-color: $success_action;
+        background-color: $success_action_new;
       }
       &.__error {
         background-color: $opt_color_tertiary;
@@ -41,7 +41,7 @@
             height: 100%;
             color: $plain;
             font-size: 55px;
-            padding-right: 20px;
+            padding: 0 10px 0 5px;
 
           }
           //  .close {
@@ -81,7 +81,32 @@
 
 
   }
-
+.opt-toast-message{
+  button{
+    border:none !important;
+  }
+  .btn-error{
+    background-color: $red-danger;
+    color: $opt_color_white !important;
+    &:hover{
+      background-color: $red-danger !important;
+    }
+  }
+  .btn-warning{
+    background-color: $opt_color_tertiary;
+    color: $opt_color_white !important;
+    &:hover{
+      background-color: $opt_color_tertiary !important;
+    }
+  }
+  .btn-success{
+    background-color: $success_action_new;
+    color: $opt_color_white !important;
+    &:hover{
+      background-color: $success_action_new !important;
+    }
+  }
+}
 
 
 
