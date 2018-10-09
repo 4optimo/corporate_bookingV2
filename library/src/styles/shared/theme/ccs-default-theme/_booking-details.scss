@@ -437,6 +437,7 @@
         }
 
       }
+
     }
     .booking-details-tabs{
       padding: 15px;
@@ -514,7 +515,22 @@
 
 }
 
-
+.price-popover{
+  .mat-form-field-infix{
+    padding: 0 !important;
+    border-top: none !important;
+    max-width: 100px !important;
+  }
+  .mat-form-field-wrapper{
+    padding-bottom: 0 !important;
+  }
+  .mat-form-field-underline{
+    bottom: unset !important;
+  }
+  .mat-input-element{
+    text-align: right;
+  }
+}
 
 
 .lbl {
@@ -847,7 +863,7 @@
     &.blocked{
       i{
         color: $no-color--state;
-        
+
       }
     }
     span{
