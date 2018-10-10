@@ -58,6 +58,9 @@
   }
 
   &_booking__detail {
+    mat-icon{
+      color: $opt_text_color_tertiary;
+    }
     overflow: hidden;
     .lft_btn_cage{
       .mat-checkbox-label{
@@ -516,6 +519,9 @@
 }
 
 .price-popover{
+  .filter-popover-item {
+    border-bottom: none !important;
+  }
   .mat-form-field-infix{
     padding: 0 !important;
     border-top: none !important;
@@ -599,7 +605,7 @@
       }
 
       &.separator__line--dotted{
-        border-top: 1px dashed $opt-border-color_light;
+        border-top: 1px dashed $opt_color_primary !important;
       }
 
 
@@ -906,5 +912,13 @@
         font-size: 14px !important;
         vertical-align: text-top;      }
     }
+  }
+}
+.mat-datepicker-toggle{
+  .mat-button-ripple {
+    top: -1px !important;
+    left: -4px !important;
+    right: 2px !important;
+    bottom: -1px !important;
   }
 }
