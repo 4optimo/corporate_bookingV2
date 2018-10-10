@@ -611,6 +611,16 @@ margin-right: 0;
 }
 
 }
+.opt-booking-list-full{
+  .opt_booking__list, .opt_paginator{
+    margin:0 -15px;
+  }
+  .filter-section{
+    margin-left: -15px;
+    margin-right: -5px;
+  }
+
+}
 .info-popover{
   padding: 0 10px;
   .info-popover-item{
