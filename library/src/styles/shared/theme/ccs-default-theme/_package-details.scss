@@ -442,7 +442,13 @@
       background-color: $default-state-dark-bg;
     }
   }
+  .opt_item-popup{
+    &.opt_modal-body{
+      background-color: $default-state-dark-bg;
+    }
+  }
 }
+
 
 .opt_item-popup{
   .ref_no{
