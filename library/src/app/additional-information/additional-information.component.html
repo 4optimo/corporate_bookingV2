@@ -93,9 +93,11 @@
           <div class="btn icon opt_flex__item--inherit"  mat-button [matMenuTriggerFor]="menu">
             <i class="btn btn-icon"><i class="material-icons color small">info_outline</i></i>
           </div>
-          <mat-menu #menu="matMenu" class="cancellation_policy">
-            <span class="opt-txt__secondary opt-txt__body2">Cancellation Policy</span>
-            <button mat-menu-item >Lorem ipsum dolor sit amet, consectetus adipiccing elit. Vestibulum sugitits, ttortor sit amet vestibulumn efficiturm nisi enim sed nisl.</button>
+          <mat-menu #menu="matMenu" class="cancellation_policy filter-popover">
+            <div (click)="$event.stopPropagation();">
+              <span class="opt-txt__secondary opt-txt__body2">Cancellation Policy</span>
+              <span mat-menu-item >Lorem ipsum dolor sit amet, consectetus adipiccing elit. Vestibulum sugitits, ttortor sit amet vestibulumn efficiturm nisi enim sed nisl.</span>
+            </div>
           </mat-menu>
         </div>
       </form>
@@ -136,9 +138,11 @@
           <div class="btn icon opt_flex__item--inherit"   mat-button [matMenuTriggerFor]="menu1">
             <button class="btn btn-icon"><i class="material-icons color small">info_outline</i></button>
           </div>
-          <mat-menu #menu1="matMenu" class="cancellation_policy">
-            <span class="opt-txt__secondary opt-txt__body2">Cancellation Policy</span>
-            <button mat-menu-item >Lorem ipsum dolor sit amet, consectetus adipiccing elit. Vestibulum sugitits, ttortor sit amet vestibulumn efficiturm nisi enim sed nisl.</button>
+          <mat-menu #menu1="matMenu" class="cancellation_policy filter-popover">
+            <div (click)="$event.stopPropagation();">
+              <span class="opt-txt__secondary opt-txt__body2">Cancellation Policy</span>
+              <span mat-menu-item >Lorem ipsum dolor sit amet, consectetus adipiccing elit. Vestibulum sugitits, ttortor sit amet vestibulumn efficiturm nisi enim sed nisl.</span>
+            </div>
           </mat-menu>
         </div>
       </form>

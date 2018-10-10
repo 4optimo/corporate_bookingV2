@@ -58,6 +58,9 @@
   }
 
   &_booking__detail {
+    mat-icon{
+      color: $opt_text_color_tertiary;
+    }
     overflow: hidden;
     .lft_btn_cage{
       .mat-checkbox-label{
@@ -437,6 +440,7 @@
         }
 
       }
+
     }
     .booking-details-tabs{
       padding: 15px;
@@ -514,7 +518,25 @@
 
 }
 
-
+.price-popover{
+  .filter-popover-item {
+    border-bottom: none !important;
+  }
+  .mat-form-field-infix{
+    padding: 0 !important;
+    border-top: none !important;
+    max-width: 100px !important;
+  }
+  .mat-form-field-wrapper{
+    padding-bottom: 0 !important;
+  }
+  .mat-form-field-underline{
+    bottom: unset !important;
+  }
+  .mat-input-element{
+    text-align: right;
+  }
+}
 
 
 .lbl {
@@ -583,7 +605,7 @@
       }
 
       &.separator__line--dotted{
-        border-top: 1px dashed $opt-border-color_light;
+        border-top: 1px dashed $opt_color_primary !important;
       }
 
 
@@ -847,7 +869,7 @@
     &.blocked{
       i{
         color: $no-color--state;
-        
+
       }
     }
     span{
@@ -890,5 +912,13 @@
         font-size: 14px !important;
         vertical-align: text-top;      }
     }
+  }
+}
+.mat-datepicker-toggle{
+  .mat-button-ripple {
+    top: -1px !important;
+    left: -4px !important;
+    right: 2px !important;
+    bottom: -1px !important;
   }
 }

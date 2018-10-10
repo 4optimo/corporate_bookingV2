@@ -40,19 +40,19 @@
               <i class="material-icons">add</i>Add</button>
             <mat-menu #menu="matMenu">
               <button mat-menu-item class="opt-txt__body1">
-                <mat-icon><span class="icon-icn-package"></span></mat-icon>
+                <mat-icon  matTooltip="ToolTip"><span class="icon-icn-package"></span></mat-icon>
                 <span>Package</span>
               </button>
               <button mat-menu-item class="opt-txt__body1">
-                <mat-icon><span class="icon-icn-item"></span></mat-icon>
+                <mat-icon  matTooltip="ToolTip"><span class="icon-icn-item"></span></mat-icon>
                 <span>Up-sell</span>
               </button>
               <button mat-menu-item class="opt-txt__body1">
-                <mat-icon>date_range</mat-icon>
+                <mat-icon  matTooltip="ToolTip">date_range</mat-icon>
                 <span>Discount</span>
               </button>
               <button mat-menu-item class="opt-txt__body1">
-                <mat-icon>monetization_on</mat-icon>
+                <mat-icon matTooltip="ToolTip">monetization_on</mat-icon>
                 <span>Go to Calendar</span>
               </button>
             </mat-menu>
@@ -209,39 +209,67 @@
                           </div>
                           <div class="opt_flex__item  price--value__icon">
                             <span [matMenuTriggerFor]="menu" class="icon-coin-of-dollar"></span>
-                            <mat-menu #menu="matMenu">
-                              <div class="price-popup">
-                                <div mat-menu-item>
-                                  <span class="opt-txt__caption price-category">Net</span>
-                                  <span class="opt-txt__body2-small price-value">£445.30</span>
-                                </div>
-                                <div mat-menu-item>
-                                  <span class="opt-txt__caption price-category">Tax</span>
-                                  <span class="opt-txt__body2-small price-value">£2,334.00</span>
-                                </div>
-                                <div mat-menu-item>
-                                  <span class="opt-txt__caption price-category">Gross</span>
-                                  <span class="opt-txt__body2-small price-value">£2,334.00</span>
-                                </div>
-                                <div mat-menu-item>
-                                  <span class="opt-txt__caption price-category">Margin</span>
-                                  <span class="opt-txt__body2-small price-value">£2,334.00</span>
-                                </div>
-                                <div mat-menu-item>
-                                  <span class="opt-txt__caption price-category">Estimate Cost</span>
-                                  <span class="opt-txt__body2-small price-value">
-                                    <div class="opt_flex__item--inherit price--value__input">
+                            <mat-menu #menu="matMenu" class="filter-popover price-popover">
+                              <div class="opt_flex--container" (click)="$event.stopPropagation();">
+                                <div class="opt_flex__item price--values">
+                                  <div class="opt_flex--container filter-popover-item">
+                                    <div class="opt_flex__item opt_flex__item">
+                                      <span class="opt-txt__body1">Net</span>
+                                    </div>
+                                    <div class="opt_flex__item--inherit opt-txt__align-right price--value__input">
+                                        <mat-form-field class="">
+                                          <input class="opt-txt__body1 opt-txt__secondary" matInput value="&pound;19875.89">
+                                        </mat-form-field>
+                                    </div>
+                                  </div>
+                                  <div class="opt_flex--container filter-popover-item">
+                                    <div class="opt_flex__item opt_flex__item">
+                                      <span class="opt-txt__body1">Tax</span>
+                                    </div>
+                                    <div class="opt_flex__item--inherit opt-txt__align-right price--value__input">
                                       <form class="example-form">
                                         <mat-form-field class="">
-                                          <input class="opt-txt__body2" matInput value="£19875.89" placeholder="£19875.89">
+                                          <input class="opt-txt__body1 opt-txt__secondary" matInput value="&pound;19875.89">
                                         </mat-form-field>
                                       </form>
                                     </div>
-                                  </span>
-                                </div>
-                                <div mat-menu-item>
-                                  <span class="opt-txt__caption price-category">Actual Cost</span>
-                                  <span class="opt-txt__body2-small price-value">£2,334.00</span>
+                                  </div>
+                                  <div class="opt_flex--container filter-popover-item">
+                                    <div class="opt_flex__item opt_flex__item">
+                                      <span class="opt-txt__body1">Gross</span>
+                                    </div>
+                                    <div class="opt_flex__item--inherit opt-txt__align-right price--value__input">
+                                      <form class="example-form">
+                                        <mat-form-field class="">
+                                          <input class="opt-txt__body1 opt-txt__secondary" matInput value="&pound;19875.89">
+                                        </mat-form-field>
+                                      </form>
+                                    </div>
+                                  </div>
+                                  <div class="opt_flex--container filter-popover-item">
+                                    <div class="opt_flex__item opt_flex__item">
+                                      <span class="opt-txt__body1">Margin</span>
+                                    </div>
+                                    <div class="opt_flex__item opt-txt__align-right">
+                                      <span class="opt-txt__body1 opt-txt__secondary">&pound;55.00</span>
+                                    </div>
+                                  </div>
+                                  <div class="opt_flex--container filter-popover-item">
+                                    <div class="opt_flex__item opt_flex__item">
+                                      <span class="opt-txt__body1">Estimate Cost</span>
+                                    </div>
+                                    <div class="opt_flex__item opt-txt__align-right">
+                                      <span class="opt-txt__body1 opt-txt__secondary">&pound;1555.00</span>
+                                    </div>
+                                  </div>
+                                  <div class="opt_flex--container filter-popover-item">
+                                    <div class="opt_flex__item opt_flex__item">
+                                      <span class="opt-txt__body1">Actual Cost</span>
+                                    </div>
+                                    <div class="opt_flex__item opt-txt__align-right">
+                                      <span class="opt-txt__body1 opt-txt__secondary">&pound;55.00</span>
+                                    </div>
+                                  </div>
                                 </div>
                               </div>
                             </mat-menu>
@@ -322,7 +350,7 @@
                       </i>
                     </button>
 
-                    <button mat-icon-button class="btn-color-default">
+                    <button mat-icon-button class="btn-color-default" matTooltip="ToolTip">
                       <span class="icon-icn-clipboard  "> </span>
                     </button>
 
@@ -431,7 +459,71 @@
                               </form>
                             </div>
                             <div class="opt_flex__item  price--value__icon">
-                              <span class="icon-coin-of-dollar"></span>
+                              <span [matMenuTriggerFor]="menu" class="icon-coin-of-dollar"></span>
+                              <mat-menu #menu="matMenu" class="filter-popover price-popover">
+                                <div class="opt_flex--container" (click)="$event.stopPropagation();">
+                                  <div class="opt_flex__item price--values">
+                                    <div class="opt_flex--container filter-popover-item">
+                                      <div class="opt_flex__item opt_flex__item">
+                                        <span class="opt-txt__body1">Net</span>
+                                      </div>
+                                      <div class="opt_flex__item--inherit opt-txt__align-right price--value__input">
+                                        <mat-form-field class="">
+                                          <input class="opt-txt__body1 opt-txt__secondary" matInput value="&pound;19875.89">
+                                        </mat-form-field>
+                                      </div>
+                                    </div>
+                                    <div class="opt_flex--container filter-popover-item">
+                                      <div class="opt_flex__item opt_flex__item">
+                                        <span class="opt-txt__body1">Tax</span>
+                                      </div>
+                                      <div class="opt_flex__item--inherit opt-txt__align-right price--value__input">
+                                        <form class="example-form">
+                                          <mat-form-field class="">
+                                            <input class="opt-txt__body1 opt-txt__secondary" matInput value="&pound;19875.89">
+                                          </mat-form-field>
+                                        </form>
+                                      </div>
+                                    </div>
+                                    <div class="opt_flex--container filter-popover-item">
+                                      <div class="opt_flex__item opt_flex__item">
+                                        <span class="opt-txt__body1">Gross</span>
+                                      </div>
+                                      <div class="opt_flex__item--inherit opt-txt__align-right price--value__input">
+                                        <form class="example-form">
+                                          <mat-form-field class="">
+                                            <input class="opt-txt__body1 opt-txt__secondary" matInput value="&pound;19875.89">
+                                          </mat-form-field>
+                                        </form>
+                                      </div>
+                                    </div>
+                                    <div class="opt_flex--container filter-popover-item">
+                                      <div class="opt_flex__item opt_flex__item">
+                                        <span class="opt-txt__body1">Margin</span>
+                                      </div>
+                                      <div class="opt_flex__item opt-txt__align-right">
+                                        <span class="opt-txt__body1 opt-txt__secondary">&pound;55.00</span>
+                                      </div>
+                                    </div>
+                                    <div class="opt_flex--container filter-popover-item">
+                                      <div class="opt_flex__item opt_flex__item">
+                                        <span class="opt-txt__body1">Estimate Cost</span>
+                                      </div>
+                                      <div class="opt_flex__item opt-txt__align-right">
+                                        <span class="opt-txt__body1 opt-txt__secondary">&pound;1555.00</span>
+                                      </div>
+                                    </div>
+                                    <div class="opt_flex--container filter-popover-item">
+                                      <div class="opt_flex__item opt_flex__item">
+                                        <span class="opt-txt__body1">Actual Cost</span>
+                                      </div>
+                                      <div class="opt_flex__item opt-txt__align-right">
+                                        <span class="opt-txt__body1 opt-txt__secondary">&pound;55.00</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </mat-menu>
                             </div>
                           </div>
                           <div class="opt_flex--container tc-flex-item__center">
@@ -473,23 +565,23 @@
                       <div class="opt_flex--container tc-flex-item__center __data">
                         <div class="opt_flex__item icon__cage __multi-buttons">
 
-                          <button mat-icon-button class="btn-color-default">
+                          <button mat-icon-button class="btn-color-default" matTooltip="Seat Allocation">
                             <span class="icon-icn-office-big-chair  "> </span>
                           </button>
 
-                          <button mat-icon-button class="btn-color-default">
+                          <button mat-icon-button class="btn-color-default" matTooltip="Table Allocation">
                             <span class="icon-icn-table"> </span>
                           </button>
 
-                          <button mat-icon-button class="btn-color-default">
+                          <button mat-icon-button class="btn-color-default" matTooltip="Configuration">
                             <span class="icon-icn-settings-work-tool  "> </span>
                           </button>
 
-                          <button mat-icon-button class="btn-color-default">
+                          <button mat-icon-button class="btn-color-default" matTooltip="Document">
                             <span class="icon-icn-file-fill  "> </span>
                           </button>
 
-                          <button mat-icon-button class="btn-color-default">
+                          <button mat-icon-button class="btn-color-default" matTooltip="Invoice">
                             <span class="icon-icn-invoice  "> </span>
                           </button>
 
@@ -635,8 +727,71 @@
                             </div>
                             <div class="opt_flex__item  price--value__icon">
 
-                              <a class=""><span class="icon-coin-of-dollar"></span></a>
-
+                              <span [matMenuTriggerFor]="menu" class="icon-coin-of-dollar"></span>
+                              <mat-menu #menu="matMenu" class="filter-popover price-popover">
+                                <div class="opt_flex--container" (click)="$event.stopPropagation();">
+                                  <div class="opt_flex__item price--values">
+                                    <div class="opt_flex--container filter-popover-item">
+                                      <div class="opt_flex__item opt_flex__item">
+                                        <span class="opt-txt__body1">Net</span>
+                                      </div>
+                                      <div class="opt_flex__item--inherit opt-txt__align-right price--value__input">
+                                        <mat-form-field class="">
+                                          <input class="opt-txt__body1 opt-txt__secondary" matInput value="&pound;19875.89">
+                                        </mat-form-field>
+                                      </div>
+                                    </div>
+                                    <div class="opt_flex--container filter-popover-item">
+                                      <div class="opt_flex__item opt_flex__item">
+                                        <span class="opt-txt__body1">Tax</span>
+                                      </div>
+                                      <div class="opt_flex__item--inherit opt-txt__align-right price--value__input">
+                                        <form class="example-form">
+                                          <mat-form-field class="">
+                                            <input class="opt-txt__body1 opt-txt__secondary" matInput value="&pound;19875.89">
+                                          </mat-form-field>
+                                        </form>
+                                      </div>
+                                    </div>
+                                    <div class="opt_flex--container filter-popover-item">
+                                      <div class="opt_flex__item opt_flex__item">
+                                        <span class="opt-txt__body1">Gross</span>
+                                      </div>
+                                      <div class="opt_flex__item--inherit opt-txt__align-right price--value__input">
+                                        <form class="example-form">
+                                          <mat-form-field class="">
+                                            <input class="opt-txt__body1 opt-txt__secondary" matInput value="&pound;19875.89">
+                                          </mat-form-field>
+                                        </form>
+                                      </div>
+                                    </div>
+                                    <div class="opt_flex--container filter-popover-item">
+                                      <div class="opt_flex__item opt_flex__item">
+                                        <span class="opt-txt__body1">Margin</span>
+                                      </div>
+                                      <div class="opt_flex__item opt-txt__align-right">
+                                        <span class="opt-txt__body1 opt-txt__secondary">&pound;55.00</span>
+                                      </div>
+                                    </div>
+                                    <div class="opt_flex--container filter-popover-item">
+                                      <div class="opt_flex__item opt_flex__item">
+                                        <span class="opt-txt__body1">Estimate Cost</span>
+                                      </div>
+                                      <div class="opt_flex__item opt-txt__align-right">
+                                        <span class="opt-txt__body1 opt-txt__secondary">&pound;1555.00</span>
+                                      </div>
+                                    </div>
+                                    <div class="opt_flex--container filter-popover-item">
+                                      <div class="opt_flex__item opt_flex__item">
+                                        <span class="opt-txt__body1">Actual Cost</span>
+                                      </div>
+                                      <div class="opt_flex__item opt-txt__align-right">
+                                        <span class="opt-txt__body1 opt-txt__secondary">&pound;55.00</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </mat-menu>
                             </div>
                           </div>
                           <div class="opt_flex--container tc-flex-item__center">
@@ -680,23 +835,23 @@
                       <div class="opt_flex--container tc-flex-item__center __data">
                         <div class="opt_flex__item icon__cage __multi-buttons">
 
-                          <button mat-icon-button class="btn-color-default">
-                            <span class="icon-icn-office-big-chair    "> </span>
+                          <button mat-icon-button class="btn-color-default" matTooltip="Seat Allocation">
+                            <span class="icon-icn-office-big-chair"> </span>
                           </button>
 
-                          <button mat-icon-button class="btn-color-default">
+                          <button mat-icon-button class="btn-color-default" matTooltip="Table Allocation">
                             <span class="icon-icn-table"> </span>
                           </button>
 
-                          <button mat-icon-button class="btn-color-default">
+                          <button mat-icon-button class="btn-color-default" matTooltip="Configuration">
                             <span class="icon-icn-settings-work-tool  "> </span>
                           </button>
 
-                          <button mat-icon-button class="btn-color-default">
+                          <button mat-icon-button class="btn-color-default" matTooltip="Document">
                             <span class="icon-icn-file-fill  "> </span>
                           </button>
 
-                          <button mat-icon-button class="btn-color-default">
+                          <button mat-icon-button class="btn-color-default" matTooltip="Invoice">
                             <span class="icon-icn-invoice  "> </span>
                           </button>
 
