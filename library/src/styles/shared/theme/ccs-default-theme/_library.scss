@@ -91,7 +91,15 @@ html {
 
   .comp-wrap {
     background-color: #e1e1e1;
-    padding: 25px;
+    @include respond-to('small') {
+      padding: 0px;
+    }
+    @include respond-to('medium') {
+      padding: 25px;
+    }
+    @include respond-to('large') {
+      padding: 25px;
+    }
 
   }
 }
