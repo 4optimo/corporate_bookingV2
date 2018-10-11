@@ -476,6 +476,20 @@
             color:$opt_color_white ;
           }
         }
+        .opt-txt__body2{
+          @include respond-to('x-small') {
+            display: none;
+          }
+          @include respond-to('medium') {
+            display: block;
+          }
+        }
+        @include respond-to('x-small') {
+          margin-bottom: 10px;
+        }
+        @include respond-to('medium') {
+          margin-bottom: 0;
+        }
       }
     }
   }
@@ -503,6 +517,7 @@
     font-size: 14px !important;
   }
 }
+
 .action__button {
   flex: 1;
   @include respond-to('x-small') {
@@ -922,3 +937,4 @@
     bottom: -1px !important;
   }
 }
+
