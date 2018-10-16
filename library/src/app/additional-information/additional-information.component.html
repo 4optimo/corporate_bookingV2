@@ -152,6 +152,13 @@
           </mat-select>
         </mat-form-field>
     </div>
+    <div class="opt_flex__item">
+      <mat-form-field class="example-full-width">
+        <input matInput [matDatepicker]="picker" placeholder="Expiry Date">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+    </div>
   </div>
 </div>
 

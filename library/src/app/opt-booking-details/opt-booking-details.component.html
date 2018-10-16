@@ -351,7 +351,23 @@
                     </button>
 
                     <button mat-icon-button class="btn-color-default" matTooltip="ToolTip">
-                      <span class="icon-icn-clipboard  "> </span>
+                      <span [matMenuTriggerFor]="menu1" class="icon-icn-clipboard  "> </span>
+                      <mat-menu #menu1="matMenu" class="filter-popover price-popover">
+                        <div class="opt_flex--container" (click)="$event.stopPropagation();">
+                          <div class="opt_flex__item price--values">
+                            <div class="opt_flex--container filter-popover-item">
+                              <div class="opt_flex__item--inherit opt-txt__align-right price--value__input">
+                              <mat-form-field class="">
+                                <input class="opt-txt__body1 opt-txt__secondary" matInput value="Sample Input">
+                              </mat-form-field>
+                            </div>
+                              <div class="opt_flex__item--inherit opt-txt__align-right price--value__input">
+                                <button mat-button class="mat-btn-primary--small">Save</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </mat-menu>
                     </button>
 
 
