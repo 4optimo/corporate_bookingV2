@@ -160,7 +160,6 @@
         flex-basis: 0;
 
       }
-
     }
   }
 
@@ -428,7 +427,7 @@
       .notification_count{
         position:  absolute;
         font-size: 10px;
-        background-color: $default-state-dark-bg;
+        background-color: $icon_dark;
         padding: 3px;
         border-radius: 50%;
         top: -4px;
