@@ -98,7 +98,21 @@
             </div>
           </div>
           <div class="field">
-            <div class="opt-txt__body1 field-inner opt-txt__caption opt-txt__primary">20-Jan-2018 | 10:00 PM</div>
+            <!--<mat-form-field>-->
+              <!--<input matInput [matDatepicker]="picker" placeholder="Expiry Date">-->
+              <!--<mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>-->
+              <!--<mat-datepicker #picker></mat-datepicker>-->
+            <!--</mat-form-field>-->
+
+            <div class="opt-txt__body1 field-inner opt-txt__caption opt-txt__primary date_selection">
+              <mat-form-field class="example-full-width" (click)="$event.stopPropagation();">
+                <input class="opt-txt__body2" matInput [matDatepicker]="picker" value="Call center" readonly="true">
+                <!--<input matInput [matDatepicker]="picker" value="20-Jan-2018">-->
+                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+              </mat-form-field>
+              <span>| 10:00 PM </span>
+            </div>
             <div class="field-inner">
               <div class="badge __success __uppercase mini-badge">
                   <span>Confirmed Booking</span>
