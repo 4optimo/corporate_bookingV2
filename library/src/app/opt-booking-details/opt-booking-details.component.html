@@ -364,34 +364,24 @@
 
                     <button mat-icon-button class="btn-color-default" matTooltip="ToolTip">
                       <span [matMenuTriggerFor]="menu1" class="icon-icn-clipboard  "> </span>
-                      <mat-menu #menu1="matMenu" class="filter-popover price-popover">
+                      <mat-menu #menu1="matMenu" class="filter-popover">
                         <div class="opt_flex--container" (click)="$event.stopPropagation();">
-                          <div class="opt_flex__item price--values">
-                            <div class="opt_flex--container filter-popover-item">
-                              <div class="opt_flex__item--inherit opt-txt__align-right price--value__input">
-                              <mat-form-field class="">
-                                <input class="opt-txt__body1 opt-txt__secondary" matInput value="Sample Input">
-                              </mat-form-field>
-                            </div>
-                              <div class="opt_flex__item--inherit opt-txt__align-right price--value__input">
-                                <button mat-button class="mat-btn-primary--small">Save</button>
-                              </div>
-                            </div>
+                          <div class="opt_flex__item">
+                            <mat-form-field>
+                              <input class="opt-txt__body1 opt-txt__secondary" matInput value="Sample Input">
+                            </mat-form-field>
+                          </div>
+                          <div class="opt_flex__item--inherit opt-txt__align-right price--value__input tc-flex-item__center">
+                            <button mat-button class="mat-btn-primary--small">Save</button>
                           </div>
                         </div>
                       </mat-menu>
                     </button>
-
-
                   </div>
                 </div>
-
-
               </div>
             </div>
-
           </div>
-
 
           <!--/// sub packages details ..................................-->
 
@@ -436,10 +426,8 @@
                           <div class="opt-txt__body1 __link"> 20-Jan-2018</div>
                         </div>
                       </div>
-
                     </div>
                     <div class="col-sm-12	col-md-5	col-lg-5	col-xl-5">
-
                       <div class="opt_flex--container tc-flex-item__center __bold __item--value">
                         <div class="opt_flex__item">
                           <div class="opt-txt__body1 __link __bold">£92.19</div>
@@ -462,7 +450,6 @@
                               </div>
                             </div>
                           </div>
-
                           <!--display none start-->
                           <div class="opt_flex__item opt_unit-price">
                             <!--<span class="opt-txt__body2 __bold">£150.00</span>-->
@@ -471,11 +458,7 @@
                           </div>
                           <!--display none end-->
                         </div>
-
-
                         <div class="opt_flex__item price--values">
-
-
                           <div class="opt_flex--container tc-flex-item__center">
                             <div class="opt_flex__item"><span class="opt_lbl_primary">inc Vat</span>
                             </div>
@@ -578,13 +561,8 @@
 
 
               </mat-expansion-panel-header>
-
-
               <!--<mat-panel-description>-->
-
-
               <!--This is a summary of the content1-->
-
               <div class="expansion-panel_body __inner_body ">
                 <div class="__data">
                   <div class="row">
