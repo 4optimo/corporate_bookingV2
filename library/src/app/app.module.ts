@@ -243,7 +243,7 @@ const appRoutes: Routes = [
     ScrollDispatchModule
 
   ],
-  declarations: [OptCancelBookingComponent],
+  declarations: [],
 
 })
 export class DemoMaterialModule {}
@@ -320,6 +320,7 @@ export class DemoMaterialModule {}
     OptItemModalPopoversComponent,
     OptDispatchAddNewAddressComponent,
     OptShipmentScreenComponent,
+    OptCancelBookingComponent,
 
     RoutingProjectComponent,
     TypographyComponent,
@@ -360,7 +361,8 @@ export class DemoMaterialModule {}
     OptPackagePopupComponent,
     OptItemPopupComponent,
     OptPackageCartComponent,
-    OptDataTableComponent
+    OptDataTableComponent,
+    OptCancelBookingComponent
   ],
 
   providers: [{provide: APP_BASE_HREF, useValue : '/' }],
