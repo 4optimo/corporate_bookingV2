@@ -182,86 +182,89 @@
     .mat-expansion-panel-header {
       height: auto !important;
     }
-    .clearfix {
-      padding-bottom: 10px;
-    }
+    //.clearfix {
+    //  padding-bottom: 10px;
+    //}
     //.opt_flex__item {
     //  @include respond-to('medium') {
     //    padding-bottom: 10px;
     //  }
     //}
-    .type{
-      @include respond-to('x-small') {
-        padding-left: 0;
-        //padding-bottom: 10px;
-      }
-      @include respond-to('small') {
-        padding-left: 0;
-      }
-    }
+  //  .type{
+  //    @include respond-to('x-small') {
+  //      padding-left: 0;
+  //      //padding-bottom: 10px;
+  //    }
+  //    @include respond-to('small') {
+  //      padding-left: 0;
+  //    }
+  //  }
     .address-client-summary{
-      span:nth-child(2){
-        padding-left: 5px;
-      }
-
-      @include respond-to('x-small') {
-        padding-left: 65px;
-        .opt-txt__body1, opt-txt__body2{
-            white-space: normal !important;
-        }
-        //padding-bottom: 10px;
-      }
-      @include respond-to('small') {
-        padding-left: 0;
-        .opt-txt__body1, opt-txt__body2{
-            white-space: normal !important;
-          }
-
+      //span:nth-child(2){
+      //  padding-left: 5px;
+      span {
+        white-space: normal !important;
       }
     }
-    .address{
-      @include respond-to('x-small') {
-        padding-left: 65px;
-        //padding-bottom: 10px;
-        .opt-txt__body1, opt-txt__body2{
-          white-space: normal !important;
-        }
-
-      }
-      @include respond-to('small') {
-        padding-left: 0;
-        .opt-txt__body1, opt-txt__body2{
-          white-space: normal !important;
-        }
-
-      }
-    }
-    .email-phone {
-      @include respond-to('x-small') {
-        padding-left: 0;
-        //padding-bottom: 10px;
-      }
-      @include respond-to('small') {
-        padding-left: 65px;
-      }
-      @include respond-to('medium') {
-        padding-left: 0;
-      }
-    }
-  }
-
-  .contact-address{
-    white-space: normal;
-  }
-  .sm-padding{
-    @include respond-to('x-small') {
-      padding-left: 65px;
-      //padding-top: 10px;
-    }
-    @include respond-to('small') {
-      padding-left: 0;
-      padding-top: 10px;
-    }
+  //
+  //    @include respond-to('x-small') {
+  //      padding-left: 65px;
+  //      .opt-txt__body1, opt-txt__body2{
+  //          white-space: normal !important;
+  //      }
+  //      //padding-bottom: 10px;
+  //    }
+  //    @include respond-to('small') {
+  //      padding-left: 0;
+  //      .opt-txt__body1, opt-txt__body2{
+  //          white-space: normal !important;
+  //        }
+  //
+  //    }
+  //  }
+  //  .address{
+  //    @include respond-to('x-small') {
+  //      padding-left: 65px;
+  //      //padding-bottom: 10px;
+  //      .opt-txt__body1, opt-txt__body2{
+  //        white-space: normal !important;
+  //      }
+  //
+  //    }
+  //    @include respond-to('small') {
+  //      padding-left: 0;
+  //      .opt-txt__body1, opt-txt__body2{
+  //        white-space: normal !important;
+  //      }
+  //
+  //    }
+  //  }
+  //  .email-phone {
+  //    @include respond-to('x-small') {
+  //      padding-left: 0;
+  //      //padding-bottom: 10px;
+  //    }
+  //    @include respond-to('small') {
+  //      padding-left: 65px;
+  //    }
+  //    @include respond-to('medium') {
+  //      padding-left: 0;
+  //    }
+  //  }
+  //}
+  //
+  //.contact-address{
+  //  white-space: normal;
+  //}
+  //.sm-padding{
+  //  @include respond-to('x-small') {
+  //    padding-left: 65px;
+  //    //padding-top: 10px;
+  //  }
+  //  @include respond-to('small') {
+  //    padding-left: 0;
+  //    padding-top: 10px;
+  //  }
   }
 
   .lbl{
