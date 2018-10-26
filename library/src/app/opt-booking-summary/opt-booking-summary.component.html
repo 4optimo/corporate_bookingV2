@@ -121,7 +121,7 @@
             <div class="field-options">
               <button mat-icon-button [matMenuTriggerFor]="bookingStatus" class="btn btn-icon"><i class="material-icons small">more_vert</i></button>
               <mat-menu #bookingStatus="matMenu" class="booking-status-menu">
-                <button mat-menu-item class="cancelled">Cancel Booking</button>
+                <button mat-menu-item class="cancelled" (click)="openDialog()">Cancel Booking</button>
                 <button mat-menu-item class="confirmed">Confirmed Booking</button>
                 <button mat-menu-item class="confirmed-multiple">Confirmed Multiple</button>
                 <button mat-menu-item class="provisional">Provisional</button>

@@ -39,7 +39,7 @@
     .tbl_head:nth-child(2){
       display: none;
     }
-    
+
     .mat-expansion-panel{
       .__data {
         display: none;
@@ -141,6 +141,7 @@
         width: calc(100% - 40px);
         .opt_flex--container{
           flex-wrap: wrap;
+          justify-content: flex-end;
           .mat-expansion-panel-header-title{
             flex-wrap: nowrap;
           }
@@ -316,7 +317,7 @@
 &_expand-header {
   background-color: $expansion_header_secondary;
   min-height: 55px;
-  
+
 
   .expand-icon{
     text-align: right;
@@ -564,7 +565,7 @@ margin-right: 0;
       }
     }
     .middle-details{
-      
+
       @include respond-to('x-small') {
         padding-left: 65px;
         width: 100%;
