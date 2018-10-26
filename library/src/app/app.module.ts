@@ -131,6 +131,7 @@ import { OptToastMessageComponent } from './opt-toast-message/opt-toast-message.
 import { OptErrorMessageComponent } from './opt-error-message/opt-error-message.component';
 import { OptWarningMessageComponent } from './opt-warning-message/opt-warning-message.component';
 import { OptSuccessMessageComponent } from './opt-success-message/opt-success-message.component';
+import { OptCancelBookingComponent } from './opt-cancel-booking/opt-cancel-booking.component';
 
 
 
@@ -242,7 +243,7 @@ const appRoutes: Routes = [
     ScrollDispatchModule
 
   ],
-  declarations: [],
+  declarations: [OptCancelBookingComponent],
 
 })
 export class DemoMaterialModule {}
