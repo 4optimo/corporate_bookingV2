@@ -58,37 +58,6 @@
   }
 
   &_booking__detail {
-    .header-block{
-      border-right: 1px solid #909cac;
-    }
-    .frozen-badge{
-      i{
-        font-size: 14px;
-      }
-    }
-    .frozen-status-btn{
-      i{
-        color:#909cac !important;
-      }
-      .mat-button-wrapper{
-        position: relative;
-        left: 20px;
-      }
-      .mat-menu-item{
-        color:#909cac !important;
-        i{
-          color:#909cac !important;
-        }
-        &:hover{
-          i{
-            color: #ffffff;
-          }
-        }
-      }
-    }
-    mat-icon{
-      color: $opt_text_color_tertiary;
-    }
     overflow: hidden;
     .lft_btn_cage{
       .mat-checkbox-label{
