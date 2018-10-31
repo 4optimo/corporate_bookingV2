@@ -132,6 +132,7 @@ import { OptErrorMessageComponent } from './opt-error-message/opt-error-message.
 import { OptWarningMessageComponent } from './opt-warning-message/opt-warning-message.component';
 import { OptSuccessMessageComponent } from './opt-success-message/opt-success-message.component';
 import { OptCancelBookingComponent } from './opt-cancel-booking/opt-cancel-booking.component';
+import { OptCounterComponent } from './opt-counter/opt-counter.component';
 
 
 
@@ -200,6 +201,7 @@ const appRoutes: Routes = [
   { path: 'opt-success-message', component: OptSuccessMessageComponent},
   { path: 'opt-dispatch-add-new-address', component: OptDispatchAddNewAddressComponent},
   { path: 'opt-shipment-screen', component: OptShipmentScreenComponent},
+  { path: 'opt-counter', component: OptCounterComponent},
 
   { path: '', redirectTo:'/opt-booking-summary', pathMatch:'full'},
   { path: '**', redirectTo:'/opt-booking-summary', pathMatch: 'full'}
@@ -243,7 +245,6 @@ const appRoutes: Routes = [
     ScrollDispatchModule
 
   ],
-  declarations: [],
 
 })
 export class DemoMaterialModule {}
@@ -321,6 +322,7 @@ export class DemoMaterialModule {}
     OptDispatchAddNewAddressComponent,
     OptShipmentScreenComponent,
     OptCancelBookingComponent,
+    OptCounterComponent,
 
     RoutingProjectComponent,
     TypographyComponent,
