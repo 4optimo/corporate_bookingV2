@@ -87,6 +87,7 @@
 .tc-flex-item__center{
   align-self: center !important;
   align-items: center;
+  -ms-flex-pack: center;
 }
 .tc-flex-just__right{
   justify-content: flex-end !important;
@@ -104,6 +105,8 @@
 
 .opt_flex__row{
   display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
