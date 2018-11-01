@@ -404,9 +404,36 @@
       }
     }
   }
-
+  
 }
-
+//Message popover styles
+.message-popover-wrapper{
+  .mat-expansion-panel{
+    .mat-expansion-panel-header{
+      .row{
+        width: 100% !important;
+      }
+    }
+    .mat-expansion-panel-body{
+      padding:0px;
+    }
+    .mat-expansion-panel{
+      box-shadow: none;
+      .mat-expansion-panel-body{
+        .row{
+          width: auto;
+        }
+        padding: 10px 24px 16px;
+        .opt_flex__item{
+          min-height: 20px;
+        }
+      }
+    }
+  }
+  .message-popover-btn{
+    margin-top: 20px;
+  }
+}
 .opt_cart{
   background-color: $opt_color_white;
   .opt_cart-wrapper{
