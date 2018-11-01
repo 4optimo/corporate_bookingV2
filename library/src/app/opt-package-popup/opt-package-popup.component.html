@@ -71,7 +71,6 @@
                                 </div>
                                 </div>
 
-
                               </div>
                             </div>
                             <div class="opt_flex__item">
@@ -375,25 +374,29 @@
                             </div>
                             <div class="opt_flex__item tc-flex-item__center">
                               <div class="opt_flex--container">
+                                <div class="opt_flex__item--inherit">
+                                  <div class="lbl lbl__vat opt_lbl_primary">Inc Vat</div>
+                                </div>
                                 <div class="opt_flex__item tc-flex-item__center opt-txt__secondary opt__subtitle-2-small opt_unit__price">£450.00</div>
                                 <div class="opt_flex__item tc-flex-item__center opt_counter__item">
-                                  <div class="opt_counter">
-                                    <div class="opt_flex--container ">
-                                      <div class="opt_flex__item--inherit">
-                                        <button mat-raised-button>-</button>
-                                      </div>
-                                      <div class="opt_flex__item--inherit  tc-flex-item__center">
-                                        <form class="example-form">
-                                          <mat-form-field class="">
-                                            <input matInput value="1">
-                                          </mat-form-field>
-                                        </form>
-                                      </div>
-                                      <div class="opt_flex__item--inherit">
-                                        <button mat-raised-button>+</button>
-                                      </div>
-                                    </div>
-                                  </div>
+                                  <!--<div class="opt_counter">-->
+                                    <!--<div class="opt_flex&#45;&#45;container ">-->
+                                      <!--<div class="opt_flex__item&#45;&#45;inherit">-->
+                                        <!--<button mat-raised-button>-</button>-->
+                                      <!--</div>-->
+                                      <!--<div class="opt_flex__item&#45;&#45;inherit  tc-flex-item__center">-->
+                                        <!--<form class="example-form">-->
+                                          <!--<mat-form-field class="">-->
+                                            <!--<input matInput value="1">-->
+                                          <!--</mat-form-field>-->
+                                        <!--</form>-->
+                                      <!--</div>-->
+                                      <!--<div class="opt_flex__item&#45;&#45;inherit">-->
+                                        <!--<button mat-raised-button>+</button>-->
+                                      <!--</div>-->
+                                    <!--</div>-->
+                                  <!--</div>-->
+                                  <app-opt-counter></app-opt-counter>
                                 </div>
                                 <div class="opt_flex__item--inherit tc-flex-item__center opt-txt__caption opt_cover__range">
                                   <span>
@@ -406,6 +409,9 @@
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
                           <div class="opt_flex--container tc-flex-item__center item-price-wrapper">
+                            <div class="opt_flex__item">
+                              <app-opt-counter></app-opt-counter>
+                            </div>
                             <div class="opt_flex__item--inherit">
                               <div class="lbl lbl__vat opt_lbl_primary">Inc Vat</div>
                             </div>
