@@ -88,6 +88,7 @@
     }
   }
   .icon__cage{
+    width: auto;
     .opt_circle{
       &__private{
         position: relative;
@@ -96,19 +97,20 @@
           position: absolute;
           @include circle-icon(17px, $opt_color_tertiary, $opt_color_tertiary);
           top: -3px;
-          left: 32px;
-          .__standard {
-            .opt_circle__sub{
-              display: none;
+          right: -3px;
+        }
+        &.__bespoke {
+          .icon-icn-package{
+            &:before{
+              content: '\e916';
             }
           }
-          .__bespoke {
-            i{
-              vertical-align: middle;
-              text-align: center;
-              font-size: 14px;
-            }
+          .opt_circle__sub{
+            display: inline-block;
           }
+        }
+        .opt_circle__sub{
+          display: none;
         }
       }
       &__public{
@@ -118,18 +120,25 @@
           position: absolute;
           @include circle-icon(17px, $opt_color_tertiary, $opt_color_tertiary);
           top: -3px;
-          left: 32px;
+          right: -3px;
           .__standard {
             .opt_circle__sub{
               display: none;
             }
           }
-          .__bespoke {
-            i{
-              vertical-align: middle;
-              text-align: center;
+        }
+        &.__bespoke {
+          .icon-icn-package{
+            &:before{
+              content: '\e916';
             }
           }
+          .opt_circle__sub{
+            display: inline-block;
+          }
+        }
+        .opt_circle__sub{
+          display: none;
         }
       }
 
