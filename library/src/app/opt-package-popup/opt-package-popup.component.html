@@ -381,7 +381,9 @@
                                 <div class="opt_flex__item--inherit item1">
                                   <div class="lbl lbl__vat opt_lbl_primary">Inc Vat</div>
                                 </div>
-                                <div class="opt_flex__item item2 tc-flex-item__center opt-txt__secondary opt__subtitle-2-small opt_unit__price">
+                                <div class="opt_flex__item width-calculate">
+                                  <div class="opt_flex--container">
+                                    <div class="opt_flex__item item2 tc-flex-item__center opt-txt__secondary opt__subtitle-2-small opt_unit__price">
                                   £450.00
                                   <div class="opt_flex__item--inherit tc-flex-item__center opt-txt__caption opt_cover__range">
                                   <span>
@@ -391,26 +393,28 @@
                                 </div>
                                 <div class="opt_flex__item item3 tc-flex-item__center opt_counter__item">
                                   <!--<div class="opt_counter">-->
-                                    <!--<div class="opt_flex&#45;&#45;container ">-->
-                                      <!--<div class="opt_flex__item&#45;&#45;inherit">-->
-                                        <!--<button mat-raised-button>-</button>-->
-                                      <!--</div>-->
-                                      <!--<div class="opt_flex__item&#45;&#45;inherit  tc-flex-item__center">-->
-                                        <!--<form class="example-form">-->
-                                          <!--<mat-form-field class="">-->
-                                            <!--<input matInput value="1">-->
-                                          <!--</mat-form-field>-->
-                                        <!--</form>-->
-                                      <!--</div>-->
-                                      <!--<div class="opt_flex__item&#45;&#45;inherit">-->
-                                        <!--<button mat-raised-button>+</button>-->
-                                      <!--</div>-->
-                                    <!--</div>-->
+                                  <!--<div class="opt_flex&#45;&#45;container ">-->
+                                  <!--<div class="opt_flex__item&#45;&#45;inherit">-->
+                                  <!--<button mat-raised-button>-</button>-->
+                                  <!--</div>-->
+                                  <!--<div class="opt_flex__item&#45;&#45;inherit  tc-flex-item__center">-->
+                                  <!--<form class="example-form">-->
+                                  <!--<mat-form-field class="">-->
+                                  <!--<input matInput value="1">-->
+                                  <!--</mat-form-field>-->
+                                  <!--</form>-->
+                                  <!--</div>-->
+                                  <!--<div class="opt_flex__item&#45;&#45;inherit">-->
+                                  <!--<button mat-raised-button>+</button>-->
+                                  <!--</div>-->
+                                  <!--</div>-->
                                   <!--</div>-->
                                   <app-opt-counter></app-opt-counter>
                                 </div>
                                 <div class="opt_flex__item item4">
                                   <app-opt-counter></app-opt-counter>
+                                </div>
+                                  </div>
                                 </div>
                               </div>
                             </div>
@@ -419,39 +423,43 @@
                         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
                           <div class="opt_flex--container tc-flex-item__center item-price-wrapper">
 
-                            <div class="opt_flex__item--inherit">
+                            <div class="opt_flex__item--inherit item1">
                               <div class="lbl lbl__vat opt_lbl_primary">Inc Vat</div>
                             </div>
-                            <div class=" opt_flex__item opt-typo-subhead-2 price opt_price-section">£589392.19
+                            <div class="opt_flex__item price-section">
+                              <div class="opt_flex--container">
+                                <div class=" opt_flex__item item2 opt-typo-subhead-2 price opt_price-section">£589392.19
                               <div class="opt-txt__caption">Covers</div>
                             </div>
-                            <div class="opt_flex__item">
-                              <span [matMenuTriggerFor]="menu" class="icon-coin-of-dollar"></span>
-                              <mat-menu #menu="matMenu" class="filter-popover price-popover">
-                              <div class="opt_flex--container" (click)="$event.stopPropagation();">
-                                <div class="opt_flex__item price--values">
-                                  <div class="opt_flex--container filter-popover-item">
-                                    <div class="opt_flex__item opt_flex__item">
-                                      <span class="opt-txt__body1">Fixed Price</span>
-                                    </div>
-                                    <div class="opt_flex__item opt-txt__align-right">
-                                      <span class="opt-txt__body1 opt-txt__secondary">&pound;55.00</span>
+                                <div class="opt_flex__item item3">
+                                  <span [matMenuTriggerFor]="menu" class="icon-coin-of-dollar"></span>
+                                  <mat-menu #menu="matMenu" class="filter-popover price-popover">
+                                  <div class="opt_flex--container" (click)="$event.stopPropagation();">
+                                    <div class="opt_flex__item price--values">
+                                      <div class="opt_flex--container filter-popover-item">
+                                        <div class="opt_flex__item opt_flex__item">
+                                          <span class="opt-txt__body1">Fixed Price</span>
+                                        </div>
+                                        <div class="opt_flex__item opt-txt__align-right">
+                                          <span class="opt-txt__body1 opt-txt__secondary">&pound;55.00</span>
+                                        </div>
+                                      </div>
+                                      <div class="opt_flex--container filter-popover-item">
+                                        <div class="opt_flex__item opt_flex__item">
+                                          <span class="opt-txt__body1">Variable Price</span>
+                                        </div>
+                                        <div class="opt_flex__item opt-txt__align-right">
+                                          <span class="opt-txt__body1 opt-txt__secondary">&pound;1555.00</span>
+                                        </div>
+                                      </div>
                                     </div>
                                   </div>
-                                  <div class="opt_flex--container filter-popover-item">
-                                    <div class="opt_flex__item opt_flex__item">
-                                      <span class="opt-txt__body1">Variable Price</span>
-                                    </div>
-                                    <div class="opt_flex__item opt-txt__align-right">
-                                      <span class="opt-txt__body1 opt-txt__secondary">&pound;1555.00</span>
-                                    </div>
-                                  </div>
+                                </mat-menu>
                                 </div>
-                              </div>
-                            </mat-menu>
+                                  </div>
                             </div>
                             <div class="add-btn">
-                              <button mat-button class="mat-btn-primary--small">Add</button>
+                              <button mat-button class="mat-btn-primary--small item4">Add</button>
                             </div>
                           </div>
                         </div>

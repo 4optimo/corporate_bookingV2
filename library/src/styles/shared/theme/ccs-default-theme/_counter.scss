@@ -2,7 +2,8 @@
   padding: 0 30px;
     width: 30px;
     .counter-label{
-        margin-bottom: 2px;
+      margin-bottom: 2px;
+      content: 'Attendees';
     }
     .opt_flex--container{
       flex-wrap: nowrap !important;
@@ -18,7 +19,7 @@
       }
     }
     .input-wrapper{
-        background-color: #f5f5f5;
+        background-color: $separator-border-color;
         border-radius: 13px;
         padding: 10px;
         height: 20px;
