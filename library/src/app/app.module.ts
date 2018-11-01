@@ -5,6 +5,8 @@ import { NgModule } from '@angular/core';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {HttpModule} from '@angular/http';
 import { NgxEditorModule } from 'ngx-editor';
+import { NgxPopper } from 'angular-popper';
+import {NgxPopperModule} from 'ngx-popper';
 import { TooltipModule } from 'ngx-bootstrap/tooltip';
 import {
   MatAutocompleteModule,
@@ -352,6 +354,8 @@ export class DemoMaterialModule {}
     RouterModule.forRoot(appRoutes),
     NgxEditorModule,
     TooltipModule.forRoot(),
+    NgxPopper,
+    NgxPopperModule,
   ],
 
   entryComponents:[
