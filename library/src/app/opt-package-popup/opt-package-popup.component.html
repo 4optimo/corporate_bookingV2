@@ -97,7 +97,11 @@
                         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
                           <div class="opt_flex--container">
                             <div class="opt_flex__item--inherit">
-                              <div class="opt-txt__body1-small">Unlimited</div>
+                              <div class="opt_flex__item tc-flex-item__center availability-icon __last-few">
+                                <i class="material-icons">event_available</i>
+                                <span class="opt-txt__body2">10</span>
+                              </div>
+                              <!--<div class="opt-txt__body1-small">Unlimited</div>-->
                               <div class="opt-txt__caption __link" mat-button [matMenuTriggerFor]="linkedpackages">Adult</div>
                               <mat-menu #linkedpackages="matMenu" class="opt_package-details">
                                   <div class="linked-calendar-both opt--depth__2">
@@ -377,7 +381,14 @@
                                 <div class="opt_flex__item--inherit">
                                   <div class="lbl lbl__vat opt_lbl_primary">Inc Vat</div>
                                 </div>
-                                <div class="opt_flex__item tc-flex-item__center opt-txt__secondary opt__subtitle-2-small opt_unit__price">£450.00</div>
+                                <div class="opt_flex__item tc-flex-item__center opt-txt__secondary opt__subtitle-2-small opt_unit__price">
+                                  £450.00
+                                  <div class="opt_flex__item--inherit tc-flex-item__center opt-txt__caption opt_cover__range">
+                                  <span>
+                                    1 <i class="material-icons cover-icons opt-txt__tertiary">arrow_forward</i>6
+                                  </span>
+                                </div>
+                                </div>
                                 <div class="opt_flex__item tc-flex-item__center opt_counter__item">
                                   <!--<div class="opt_counter">-->
                                     <!--<div class="opt_flex&#45;&#45;container ">-->
@@ -398,10 +409,8 @@
                                   <!--</div>-->
                                   <app-opt-counter></app-opt-counter>
                                 </div>
-                                <div class="opt_flex__item--inherit tc-flex-item__center opt-txt__caption opt_cover__range">
-                                  <span>
-                                    1 <i class="material-icons cover-icons opt-txt__tertiary">arrow_forward</i>6
-                                  </span>
+                                <div class="opt_flex__item">
+                                  <app-opt-counter></app-opt-counter>
                                 </div>
                               </div>
                             </div>
@@ -409,13 +418,11 @@
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
                           <div class="opt_flex--container tc-flex-item__center item-price-wrapper">
-                            <div class="opt_flex__item">
-                              <app-opt-counter></app-opt-counter>
-                            </div>
+
                             <div class="opt_flex__item--inherit">
                               <div class="lbl lbl__vat opt_lbl_primary">Inc Vat</div>
                             </div>
-                            <div class=" opt_flex__item opt-typo-subhead-2 price opt_price-section">£92.19
+                            <div class=" opt_flex__item opt-typo-subhead-2 price opt_price-section">£589392.19
                               <div class="opt-txt__caption">Covers</div>
                             </div>
                             <div class="opt_flex__item">
