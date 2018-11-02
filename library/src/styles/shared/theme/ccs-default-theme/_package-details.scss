@@ -307,7 +307,7 @@
       //overflow-x: hidden;
 
       .time-slot{
-        padding: 0 15px;
+        padding: 8px 15px;
         border-bottom: 1px dashed $separator-border-color;
         &:last-child{
           border-bottom: none;
@@ -446,6 +446,8 @@
 }
 //Message popover styles
 .message-popover-wrapper{
+  padding: 15px;
+  background-color: $opt_color_white;
   .mat-expansion-panel{
     .mat-expansion-panel-header{
       .row{
