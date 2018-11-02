@@ -16,7 +16,9 @@
           <div class="opt_flex__item--inherit test-inner-2">
             <div class="inner-action">
               <div class="cart-wrapper">
-                <button class="material-icons" (click)="toggleChild()">add_alert</button>
+                <button class="material-icons" [popper]="popper3Content"
+                [popperTrigger]="'click'" [popperHideOnClickOutside]="true" popperPlacement="'bottom'"
+                [popperAppendTo]="'body'">add_alert</button>
                 <!--<div><app-opt-package-cart [showMePartially]="showVar"></app-opt-package-cart></div>-->
                 <div class="notification_count">99</div>
               </div>
@@ -102,7 +104,7 @@
                                   </div>
                                 </div>
                                 <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
-                                  <div class="opt_flex--container width-define">
+                                  <div class="opt_flex--container width-define unset-wrap">
                                     <div class="opt_flex__item--inherit default-item">
                                       <div class="opt_flex__item tc-flex-item__center availability-icon __last-few">
                                         <i class="material-icons">event_available</i>
@@ -395,7 +397,7 @@
                                           <div class="lbl lbl__vat opt_lbl_primary">Inc Vat</div>
                                         </div>
                                         <div class="opt_flex__item width-calculate">
-                                          <div class="opt_flex--container">
+                                          <div class="opt_flex--container  just-content-start">
                                             <div class="opt_flex__item item2 tc-flex-item__center opt__subtitle-2-small opt_unit__price">
                                               £450.00
                                               <div class="opt_flex__item--inherit tc-flex-item__center opt-txt__caption opt_cover__range">
@@ -1649,6 +1651,9 @@
         </div>
       </div>
     </div>
+  </popper-content>
+  <popper-content #popper3Content>
+    <app-opt-package-cart></app-opt-package-cart>
   </popper-content>
 </div>
 
