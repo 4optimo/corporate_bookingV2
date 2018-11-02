@@ -42,7 +42,8 @@
               <mat-slide-toggle>Create time slot if not exists</mat-slide-toggle>
             </div>
             <div class="opt_flex__item--inherit opt-txt__body2-small">
-              <mat-checkbox>Show selected items only</mat-checkbox>
+              <!--<mat-checkbox >Show selected items only</mat-checkbox>-->
+              <mat-slide-toggle class="opt_flex__item--inherit opt-txt__body2-small">Show selected items only</mat-slide-toggle>
             </div>
           </div>
           <div class="package-list">
@@ -433,12 +434,12 @@
                                     <div class="opt_flex__item--inherit item1">
                                       <div class="lbl lbl__vat opt_lbl_primary">Inc Vat</div>
                                     </div>
-                                    <div class="opt_flex__item price-section">
+                                    <div class="opt_flex__item package-price-section">
                                       <div class="opt_flex--container">
                                         <div class=" opt_flex__item item2 opt-typo-subhead-2 price opt_price-section">£589392.19
                                           <div class="opt-txt__caption">Covers</div>
                                         </div>
-                                        <div class="opt_flex__item item3">
+                                        <div class="opt_flex__item--inherit item3">
                                           <span [matMenuTriggerFor]="menu" class="icon-coin-of-dollar"></span>
                                           <mat-menu #menu="matMenu" class="filter-popover price-popover">
                                             <div class="opt_flex--container" (click)="$event.stopPropagation();">
