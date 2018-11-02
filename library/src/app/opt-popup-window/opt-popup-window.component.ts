@@ -54,9 +54,9 @@ export class OptPopupWindowComponent implements OnInit {
   public  openClientPopup(){
     this.dialog.open(OptClientPopupComponent,{
       data: {name:'Client Search'},
-      panelClass:['custom-dialog-container', 'w90modal'],
-      height: '90%',
-      width: '90%'
+      panelClass:['custom-dialog-container', 'w80modal'],
+      height: 'auto',
+      width: '80%'
 
     });
 
@@ -123,11 +123,10 @@ export class OptPopupWindowComponent implements OnInit {
   public openPackagePopup(){
     this.dialog.open(OptPackagePopupComponent,{
       data: {name:'Package Search'},
-      panelClass:['custom-dialog-container', 'w80modal'],
+      panelClass:['custom-dialog-container', 'w80modal', 'package_search_modal'],
       height: 'auto',
-      width: '80%'
+      width: 'auto'
       // DialogPosition : top
-
     });
 
   }

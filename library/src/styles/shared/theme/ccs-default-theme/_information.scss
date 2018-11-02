@@ -66,21 +66,18 @@
     //  }
     //}
     &.btn-icon {
-      margin-top: 10px;
+      //margin-top: 10px;
       line-height: 2px;
-
       background-color: transparent;
       padding: 0;
       //color: #f5766c;
       align-items: center;
-      //border: 1px solid #b7b7b7;
+      border: 1px solid #b7b7b7;
       &:hover{
         background-color: $opt_color_primary;
         color: $opt_color_white;
       }
-
     }
-
   }
 
 

@@ -41,6 +41,7 @@ $bootstrap-sass-asset-helper: false;
 @import "popup-modal";
 @import "booking-list-expand";
 @import "corporate-client-tabs";
+@import "client-popup";
 @import "client-list";
 //@import "./shared/theme/ccs-default-theme/tooltip";
 @import "search-panel";
@@ -73,6 +74,7 @@ $bootstrap-sass-asset-helper: false;
 @import "booking-details-full-page";
 @import "package-details";
 @import "paginator";
+@import "counter";
 @import "item-modal-popovers";
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
 html,
@@ -80,6 +82,14 @@ body{
   font-family: 'Roboto', sans-serif !important;
 }
 
+.ngxp__container{
+  padding: 0 !important;
+  border: none !important;
+  z-index: 9999 !important;
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75) !important;
+  left: 20px !important;
+  top: 10px !important;
+}
 
 
 

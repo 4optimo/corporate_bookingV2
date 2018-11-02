@@ -26,6 +26,7 @@
     "angular-animate": "^1.6.10",
     "angular-bootstrap-md": "^6.2.2",
     "angular-hammer": "^2.2.0",
+    "angular-popper": "^2.0.0",
     "angular2-datetimepicker": "^1.1.1",
     "chart.js": "^2.5.0",
     "classlist.js": "^1.1.20150312",
@@ -37,6 +38,8 @@
     "ng-pick-datetime": "^6.0.16",
     "ngx-bootstrap": "^3.0.1",
     "ngx-editor": "^3.3.0",
+    "ngx-popper": "^5.1.7",
+    "popper.js": "^1.14.4",
     "rxjs": "^5.5.6",
     "web-animations-js": "^2.3.1",
     "zone.js": "^0.8.19"

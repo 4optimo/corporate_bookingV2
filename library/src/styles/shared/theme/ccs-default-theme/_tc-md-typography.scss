@@ -230,7 +230,9 @@ text-overflow: ellipsis;
   &__right{
         text-align: right;
   }
-
+  &__left{
+    text-align: left;
+  }
 
   &__center{
     text-align: center;

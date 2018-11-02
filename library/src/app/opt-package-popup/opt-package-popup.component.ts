@@ -30,6 +30,11 @@ export class OptPackagePopupComponent implements OnInit {
   public close(){
     this.matDialogRef.close();
   }
+
+  public maximize(){
+    alert('efaea');
+  }
+
   @ViewChild('myPanel') myPanel: MatExpansionPanel;
   matIcon = 'keyboard_arrow_down' || 'keyboard_arrow_up';
 

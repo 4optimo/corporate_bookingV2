@@ -5,6 +5,8 @@ import { NgModule } from '@angular/core';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {HttpModule} from '@angular/http';
 import { NgxEditorModule } from 'ngx-editor';
+import { NgxPopper } from 'angular-popper';
+import {NgxPopperModule} from 'ngx-popper';
 import { TooltipModule } from 'ngx-bootstrap/tooltip';
 import {
   MatAutocompleteModule,
@@ -131,6 +133,8 @@ import { OptToastMessageComponent } from './opt-toast-message/opt-toast-message.
 import { OptErrorMessageComponent } from './opt-error-message/opt-error-message.component';
 import { OptWarningMessageComponent } from './opt-warning-message/opt-warning-message.component';
 import { OptSuccessMessageComponent } from './opt-success-message/opt-success-message.component';
+import { OptCancelBookingComponent } from './opt-cancel-booking/opt-cancel-booking.component';
+import { OptCounterComponent } from './opt-counter/opt-counter.component';
 
 
 
@@ -199,6 +203,7 @@ const appRoutes: Routes = [
   { path: 'opt-success-message', component: OptSuccessMessageComponent},
   { path: 'opt-dispatch-add-new-address', component: OptDispatchAddNewAddressComponent},
   { path: 'opt-shipment-screen', component: OptShipmentScreenComponent},
+  { path: 'opt-counter', component: OptCounterComponent},
 
   { path: '', redirectTo:'/opt-booking-summary', pathMatch:'full'},
   { path: '**', redirectTo:'/opt-booking-summary', pathMatch: 'full'}
@@ -242,7 +247,6 @@ const appRoutes: Routes = [
     ScrollDispatchModule
 
   ],
-  declarations: [],
 
 })
 export class DemoMaterialModule {}
@@ -319,6 +323,8 @@ export class DemoMaterialModule {}
     OptItemModalPopoversComponent,
     OptDispatchAddNewAddressComponent,
     OptShipmentScreenComponent,
+    OptCancelBookingComponent,
+    OptCounterComponent,
 
     RoutingProjectComponent,
     TypographyComponent,
@@ -348,6 +354,8 @@ export class DemoMaterialModule {}
     RouterModule.forRoot(appRoutes),
     NgxEditorModule,
     TooltipModule.forRoot(),
+    NgxPopper,
+    NgxPopperModule,
   ],
 
   entryComponents:[
@@ -359,7 +367,8 @@ export class DemoMaterialModule {}
     OptPackagePopupComponent,
     OptItemPopupComponent,
     OptPackageCartComponent,
-    OptDataTableComponent
+    OptDataTableComponent,
+    OptCancelBookingComponent
   ],
 
   providers: [{provide: APP_BASE_HREF, useValue : '/' }],

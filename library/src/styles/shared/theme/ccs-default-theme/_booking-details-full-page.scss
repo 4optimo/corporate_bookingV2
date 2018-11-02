@@ -1,7 +1,6 @@
 @import "variables";
 .opt{
   &_booking-details-full{
-
     h1,h2,h3,h4,h5,h6{
       font-family: 'Roboto', sans-serif !important;
     }
@@ -10,7 +9,8 @@
       background-color: $opt_color_white !important;
     }
     .opt_alert{
-      padding: 40px !important;
+      padding: 15px !important;
+      margin: 50px 0;
     }
     .opt_additional-details-section{
       padding: 10px 25px;
@@ -44,10 +44,10 @@
     }
   }
   .booking-list-fab{
-    span{
-      position: absolute;
-    bottom: 40px;
-    right: 50px;
-    }
+    position: fixed;
+  z-index: 9999;
+  bottom: 25px;
+  right: 25px;
   }
 }
+  

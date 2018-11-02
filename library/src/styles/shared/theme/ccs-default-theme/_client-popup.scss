@@ -6,19 +6,22 @@
 
     .opt_modal-body {
       padding: 0;
-
+      background-color: $default-state-dark-bg;
       .search-panel-wrapper {
         min-width: 30px;
-        background-color: $background-color;
-        padding: 24px;
-        .opt_search-panel {
-          background-color: $opt_color_white;
-          border: none;
-          .btn{
-            border: 1px solid $opt_color_white;
-
+        //background-color: $background-color;
+        padding: 24px 24px 0;
+        .opt-search-panel-wrapper {
+          margin: -25px -25px 0 -25px;
+          padding: 15px 15px 15px 15px;
+          background-color: $background-color;
+          .opt_search-panel {
+            background-color: $opt_color_white;
+            border: none;
+            .btn {
+              border: 1px solid $opt_color_white;
+            }
           }
-
         }
       }
       .opt-client-list-full {

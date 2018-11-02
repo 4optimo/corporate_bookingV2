@@ -9,6 +9,7 @@
       &:nth-child(2) {
         border-right: 1px dashed $opt_border-color_default;
         background-color: $default-state-dark-bg;
+        //border-top: 1px dashed $opt_border-color_default;
       }
       @include respond-to('x-small') {
         flex-direction: column;
@@ -142,6 +143,21 @@
   }
   .mat-select-arrow{
     color: $opt_text_color_primary;
+  }
+
+//  new changes
+  .date_selection {
+    .mat-form-field-suffix {
+      .mat-icon-button {
+        vertical-align: middle !important;
+      }
+    }
+    .mat-form-field-underline {
+      height: 0px;
+    }
+    .mat-form-field-infix{
+      max-width: 100px;
+    }
   }
 
 }
@@ -388,7 +404,7 @@ i {
     background-color: transparent;
     border-radius: 50%;
     padding: 10px;
-
+    width: 120px;
     i.material-icons{
       color: $default_mat_icon_color;
       font-size: 45px;
@@ -642,3 +658,6 @@ i {
     }
   }
 }
+
+
+

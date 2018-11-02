@@ -23,8 +23,11 @@
     }
   }
   .opt_booking__detail{
+    .package-name{
+      margin-left: -20px;
+    }
     .icon__cage{
-      width: 72px !important;
+      //width: 70px !important;
     }
     .tbl_head{
       margin-left: -13px;
@@ -36,7 +39,7 @@
     .tbl_head:nth-child(2){
       display: none;
     }
-    
+
     .mat-expansion-panel{
       .__data {
         display: none;
@@ -47,12 +50,32 @@
       .price--value__icon{
         display: none;
       }
+      .opt_lbl_primary{
+        position: relative;
+        left: -20px;
+      }
       .mat-expansion-panel{
         .action__button{
           display: none;
         }
         mat-expansion-panel-header{
           padding-right: 15px;
+          .__time--cage{
+            padding-right: 0;
+          }
+          .opt_lbl_primary{
+            position: relative;
+            top: 10px;
+            @include respond-to('small') {
+              left: -43px;
+            }
+            @include respond-to('medium') {
+              left: -35px;
+            }
+            @include respond-to('large') {
+              left: -35px;
+            }
+          }
         }
       }
     }
@@ -118,6 +141,7 @@
         width: calc(100% - 40px);
         .opt_flex--container{
           flex-wrap: wrap;
+          justify-content: flex-end;
           .mat-expansion-panel-header-title{
             flex-wrap: nowrap;
           }
@@ -185,7 +209,7 @@
       padding-top: 15px;
 
       .row {
-        margin-left: -70px;
+        //margin-left: -70px;
       }
       //.price--values {
       //  .lbl__vat {
@@ -212,7 +236,7 @@
         display: none;
       }
       .mat-accordion .mat-expansion-panel .mat-expansion-panel-body .__multi-buttons{
-        padding-left: 60px;
+        //padding-left: 60px;
       }
     }
 
@@ -293,7 +317,7 @@
 &_expand-header {
   background-color: $expansion_header_secondary;
   min-height: 55px;
-  
+
 
   .expand-icon{
     text-align: right;
@@ -541,7 +565,7 @@ margin-right: 0;
       }
     }
     .middle-details{
-      
+
       @include respond-to('x-small') {
         padding-left: 65px;
         width: 100%;
@@ -609,6 +633,16 @@ margin-right: 0;
     //box-shadow: none;
   }
 }
+
+}
+.opt-booking-list-full{
+  .opt_booking__list, .opt_paginator{
+    margin:0 -15px;
+  }
+  .filter-section{
+    margin-left: -15px;
+    margin-right: -5px;
+  }
 
 }
 .info-popover{

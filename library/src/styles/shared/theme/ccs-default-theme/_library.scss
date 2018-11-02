@@ -91,8 +91,12 @@ html {
 
   .comp-wrap {
     background-color: #e1e1e1;
-    padding: 25px;
-
+    @include respond-to('x-small') {
+      padding: 0;
+    }
+    @include respond-to('medium') {
+      padding: 25px;
+    }
   }
 }
 

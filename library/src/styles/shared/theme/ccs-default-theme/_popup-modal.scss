@@ -1,5 +1,13 @@
 @import "variables";
 
+.custom-dialog-container{
+  &.package_search_modal{
+    height: auto !important;
+    width: 80% !important;
+    margin: auto !important;
+  }
+}
+
 .w60modal{
   .opt_modal-content{
     .mat-dialog-content{

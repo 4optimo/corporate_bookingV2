@@ -1,0 +1,78 @@
+.counter-wrapper{
+  padding: 0 30px;
+    width: 30px;
+    .counter-label{
+      margin-bottom: 2px;
+      content: 'Attendees';
+    }
+    .opt_flex--container{
+      flex-wrap: nowrap !important;
+      flex-direction: column;
+    }
+    .mat-form-field{
+        width: 100%;
+        position: relative;
+        bottom: 10px;
+        height: 30px;
+      .mat-form-field-underline {
+        display: none;
+      }
+    }
+    .input-wrapper{
+        background-color: $separator-border-color;
+        border-radius: 13px;
+        padding: 10px;
+        height: 20px;
+        width: 50px;
+        transition: width .3s;
+        .opt_flex--container{
+            flex-direction: row;
+            .opt_flex__item{
+                width: 100%;
+            }
+            .circle-done{
+                border-radius: 50%;
+                width: 15px;
+                height: 15px;
+                background: #ffffff;
+                position: relative;
+                bottom: 15px;
+                left:8px;
+                cursor: pointer;
+                display: none;
+                justify-content: right !important;
+                &:hover{
+                    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+                    transition: .3s;
+                }
+                &:active{
+                    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+                    transition: .3s;
+                }
+                i{
+                    font-size: 14px;
+                    color: $opt_color__primary;
+                    transition: transform 1s;
+                    &:hover{
+                        color: $success_action_new;
+                    }
+                }
+            }
+        }
+        &:hover{
+            background-color: $opt_color_primary;
+            color: white;
+            width: 65px;
+            transition: width .3s linear;
+            .circle-done{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .mat-form-field{
+              width: 100%;
+            }
+        }
+    }
+
+}

@@ -4,7 +4,7 @@
       <mat-expansion-panel-header class="opt_width-define opt_expand__header" collapsedHeight=".collapsedHeight" expandedHeight=".expandedHeight"  >
         <div class="opt_expand--container">
           <div class="row">
-          <div class="col-sm-6 col-md-3	col-lg-3 col-xs-12">
+          <div class="col-sm-3 col-md-3	col-lg-3 col-xs-3">
             <mat-panel-title class="opt_flex--container tc-flex-item__center">
               <div class="opt_flex__item--inherit ">
                 <div class="icon__cage">
@@ -23,7 +23,7 @@
               </div>
             </mat-panel-title>
           </div>
-          <div class="col-sm-6 col-md-2	col-lg-2 col-xs-12">
+          <div class="col-sm-2 col-md-2	col-lg-2 col-xs-2">
             <mat-panel-description class="opt_flex--container tc-flex-item__center type">
               <div class="opt_flex__item">
                 <div class="opt-txt__light space-between">Ernst & Young </div>
@@ -31,8 +31,8 @@
               </div>
             </mat-panel-description>
           </div>
-          <div class="clearfix visible-sm"></div>
-          <div class="col-sm-6 col-md-2	col-lg-2 col-xs-12">
+          <!--<div class="clearfix visible-sm"></div>-->
+          <div class="col-sm-2 col-md-2	col-lg-2 col-xs-2">
             <mat-panel-description class="opt_flex--container tc-flex-item__center email-phone">
                 <div class="opt_flex__item">
                   <div class="opt-txt__light">david@gmail.com</div>
@@ -40,23 +40,31 @@
                 </div>
             </mat-panel-description>
           </div>
-          <div class="col-sm-6 col-md-3	col-lg-3 col-xs-12">
+          <div class="col-sm-5 col-md-5	col-lg-5 col-xs-5">
             <mat-panel-description class="opt_flex--container address">
                 <div class="opt_flex__item tc-flex-item__center">
                     <span class="opt-txt__body2"> 556 </span><span class="opt-txt__body1">Chiswick High Road London, W4 5YA, Australia </span>
                 </div>
+                <div class="opt_flex__item--inherit opt_price-section tc-flex-item__center">
+                  <div mat-raised-button class="btn-color-default opt-txt__light btn btn-select">Select</div>
+                    <div class="action__button">
+                    <button mat-icon-button color="primary" (click)="expandPannel()" [disableRipple]="true" >
+                      <mat-icon>{{matIcon1}}</mat-icon>
+                    </button>
+                  </div>
+                </div>
             </mat-panel-description>
           </div>
-          <div class="col-sm-12  col-md-2	col-lg-2 col-xs-12">
-            <mat-panel-description class="opt_flex--container opt_price-section">
-              <div mat-raised-button class="btn-color-default opt_flex__item opt-txt__light btn btn-select">Select</div>
-              <div class="opt_flex__item action__button">
-                <button mat-icon-button color="primary" (click)="expandPannel()" [disableRipple]="true" >
-                  <mat-icon>{{matIcon1}}</mat-icon>
-                </button>
-              </div>
-            </mat-panel-description>
-          </div>
+          <!--<div class="col-sm-12  col-md-2	col-lg-2 col-xs-12">-->
+            <!--<mat-panel-description class="opt_flex&#45;&#45;container opt_price-section">-->
+              <!--<div mat-raised-button class="btn-color-default opt_flex__item opt-txt__light btn btn-select">Select</div>-->
+              <!--<div class="opt_flex__item action__button">-->
+                <!--<button mat-icon-button color="primary" (click)="expandPannel()" [disableRipple]="true" >-->
+                  <!--<mat-icon>{{matIcon1}}</mat-icon>-->
+                <!--</button>-->
+              <!--</div>-->
+            <!--</mat-panel-description>-->
+          <!--</div>-->
           </div>
         </div>
       </mat-expansion-panel-header>
