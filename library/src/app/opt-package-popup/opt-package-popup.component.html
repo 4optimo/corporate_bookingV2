@@ -42,7 +42,8 @@
               <mat-slide-toggle>Create time slot if not exists</mat-slide-toggle>
             </div>
             <div class="opt_flex__item--inherit opt-txt__body2-small">
-              <mat-checkbox>Show selected items only</mat-checkbox>
+              <!--<mat-checkbox >Show selected items only</mat-checkbox>-->
+              <mat-slide-toggle class="opt_flex__item--inherit opt-txt__body2-small">Show selected items only</mat-slide-toggle>
             </div>
           </div>
           <div class="package-list">
@@ -438,12 +439,12 @@
                                     <!-- <div class="opt_flex__item--inherit item1">
                                       <div class="lbl lbl__vat opt_lbl_primary">Inc Vat</div>
                                     </div> -->
-                                    <div class="opt_flex__item price-section">
-                                      <div class="opt_flex--container">
-                                        <div class=" opt_flex__item item2 opt-typo-subhead-2 price opt_price-section">£589392.19
+                                    <div class="opt_flex__item package-price-section">
+                                      <div class="opt_flex--container just-content-start">
+                                        <div class=" opt_flex__item--inherit item2 opt-typo-subhead-2 price opt_price-section">£589392.19
                                           <div class="opt-txt__caption">Covers</div>
                                         </div>
-                                        <div class="opt_flex__item item3">
+                                        <div class="opt_flex__item--inherit item3">
                                           <span [matMenuTriggerFor]="menu" class="icon-coin-of-dollar"></span>
                                           <mat-menu #menu="matMenu" class="filter-popover price-popover">
                                             <div class="opt_flex--container" (click)="$event.stopPropagation();">
@@ -525,7 +526,7 @@
                                 </button>
 
                                 <!--calendar expand start-->
-                                <div class="opt_calendar-expand opt--depth__2" style="display: none">
+                                <!-- <div class="opt_calendar-expand opt--depth__2" style="display: none">
                                   <div class="outer-wrapper">
                                     <div class="inner-wrapper opt_flex--container">
                                       <div class="date-hover">
@@ -686,7 +687,7 @@
                                       </div>
                                     </div>
                                   </div>
-                                </div>
+                                </div> -->
                                 <!--end the calendar expand-->
 
                                 <span mat-icon-button class="btn-color-default">
@@ -1650,5 +1651,7 @@
     </div>
   </popper-content>
 </div>
+
+
 
 
