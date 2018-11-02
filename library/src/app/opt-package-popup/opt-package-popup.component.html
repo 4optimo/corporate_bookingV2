@@ -79,7 +79,7 @@
                                         <div class="opt-txt__body2-small ref_no">Chelsea Flower Show Hospitality</div>
                                         <div>
                                           <div class="opt_flex__item--inherit icon__cage __min">
-                                            <span class="icon-icn-item package-color--item"></span>
+                                            <span class="icon-icn-item package-color--item  package-font-12"></span>
                                             <span class="opt__subtitle-1-small opt-txt__secondary">12-Jan-2018 </span>
                                             <span class="opt__subtitle-1-small opt-txt__secondary">
                                               <mat-form-field class="package-date--edit">
@@ -88,6 +88,11 @@
                                                 <mat-datepicker #picker2></mat-datepicker>
                                               </mat-form-field>
                                             </span>
+                                            <button mat-icon-button class="btn-color-default  opt__subtitle-1-small opt-txt__secondary" [popper]="popper2Content"
+                                            [popperTrigger]="'click'" [popperHideOnClickOutside]="true" popperPlacement="'bottom'"
+                                            [popperAppendTo]="'body'" style="display:none;">
+                                                <span class="material-icons package-font-12">date_range</span>
+                                              </button>
                                             <span class="opt__subtitle-1-small opt-txt__secondary">| Event Name</span>
                                           </div>
                                         </div>
@@ -95,7 +100,7 @@
                                     </div>
                                   </div>
                                 </div>
-                                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                                <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
                                   <div class="opt_flex--container width-define">
                                     <div class="opt_flex__item--inherit default-item">
                                       <div class="opt_flex__item tc-flex-item__center availability-icon __last-few">
@@ -427,12 +432,12 @@
                                     </div>
                                   </div>
                                 </div>
-                                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
                                   <div class="opt_flex--container tc-flex-item__center item-price-wrapper">
 
-                                    <div class="opt_flex__item--inherit item1">
+                                    <!-- <div class="opt_flex__item--inherit item1">
                                       <div class="lbl lbl__vat opt_lbl_primary">Inc Vat</div>
-                                    </div>
+                                    </div> -->
                                     <div class="opt_flex__item price-section">
                                       <div class="opt_flex--container">
                                         <div class=" opt_flex__item item2 opt-typo-subhead-2 price opt_price-section">£589392.19
