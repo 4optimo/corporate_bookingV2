@@ -135,6 +135,7 @@ import { OptWarningMessageComponent } from './opt-warning-message/opt-warning-me
 import { OptSuccessMessageComponent } from './opt-success-message/opt-success-message.component';
 import { OptCancelBookingComponent } from './opt-cancel-booking/opt-cancel-booking.component';
 import { OptCounterComponent } from './opt-counter/opt-counter.component';
+import { OptTripleToggleComponent } from './opt-triple-toggle/opt-triple-toggle.component';
 
 
 
@@ -247,6 +248,7 @@ const appRoutes: Routes = [
     ScrollDispatchModule
 
   ],
+  declarations: [OptTripleToggleComponent],
 
 })
 export class DemoMaterialModule {}
