@@ -2,7 +2,7 @@
   padding: 0 30px;
     width: 30px;
     .counter-label{
-      //margin-bottom: 2px;
+      margin-bottom: 2px;
       content: 'Attendees';
       font-size: 11px !important;
     }
@@ -12,6 +12,10 @@
     .opt_flex--container{
       flex-wrap: nowrap !important;
       flex-direction: column;
+    }
+    .mat-form-field-infix {
+      padding: 0 !important;
+      border-top: 0 !important;
     }
     .mat-form-field{
         width: 100%;

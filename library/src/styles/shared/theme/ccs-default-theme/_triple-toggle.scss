@@ -1,6 +1,17 @@
 .opt-triple-toggle{
   .toggle-wrapper{
     padding: 2px;
+    .opt_flex--container {
+      .opt_flex__item {
+        .opt_package-popup {
+          .top-label {
+            .opt_flex__item {
+              padding-left: 0 !important;
+            }
+          }
+        }
+      }
+    }
     .switch-toggle{
       border-radius: 25px;
       max-width: 65px;
@@ -15,15 +26,6 @@
         height: 24px !important;
         width: 24px !important;
         border-color: darkgray;
-      }
-      .opt_flex__item {
-        .opt_package-popup {
-          .top-label {
-            .opt_flex__item {
-              padding-left: 0 !important;
-            }
-          }
-        }
       }
 
       label{
