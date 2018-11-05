@@ -250,7 +250,6 @@ const appRoutes: Routes = [
     ScrollDispatchModule
 
   ],
-  declarations: [OptTripleToggleComponent],
 
 })
 export class DemoMaterialModule {}
@@ -329,6 +328,7 @@ export class DemoMaterialModule {}
     OptShipmentScreenComponent,
     OptCancelBookingComponent,
     OptCounterComponent,
+    OptTripleToggleComponent,
 
     RoutingProjectComponent,
     TypographyComponent,
