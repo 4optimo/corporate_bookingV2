@@ -205,6 +205,8 @@ const appRoutes: Routes = [
   { path: 'opt-dispatch-add-new-address', component: OptDispatchAddNewAddressComponent},
   { path: 'opt-shipment-screen', component: OptShipmentScreenComponent},
   { path: 'opt-counter', component: OptCounterComponent},
+  { path: 'opt-triple-toggle', component: OptTripleToggleComponent},
+
 
   { path: '', redirectTo:'/opt-booking-summary', pathMatch:'full'},
   { path: '**', redirectTo:'/opt-booking-summary', pathMatch: 'full'}
