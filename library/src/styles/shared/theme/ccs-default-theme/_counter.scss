@@ -2,8 +2,12 @@
   padding: 0 30px;
     width: 30px;
     .counter-label{
-      margin-bottom: 2px;
+      //margin-bottom: 2px;
       content: 'Attendees';
+      font-size: 11px !important;
+    }
+    .opt_txt_status_cancelled{
+      font-size: 10px;
     }
     .opt_flex--container{
       flex-wrap: nowrap !important;

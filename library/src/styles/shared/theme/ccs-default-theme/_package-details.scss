@@ -71,7 +71,7 @@
     }
     i{
       font-size: 17px;
-      padding-right: 5px;
+      //padding-right: 5px;
     }
   }
 }
@@ -485,7 +485,7 @@
     min-height: 500px;
     padding: 10px;
     .package-list{
-      padding-top: 30px;
+      //padding-top: 30px;
       flex-grow: 1;
       .mat-expansion-panel-content{
         box-shadow: none;
@@ -533,19 +533,19 @@
     }
   }
 }
-
-.opt_modal-content{
-  .package-date--edit{
-    .mat-input-infix {
-      display: none;
-    }
-    .mat-input-element{
-      display: none;
-    }
-    .mat-input-underline{
-      display: none;
-    }
+.package-date--edit{
+  .mat-input-infix {
+    display: none;
   }
+  .mat-input-element{
+    display: none;
+  }
+  .mat-input-underline{
+    display: none;
+  }
+}
+.opt_modal-content{
+
   .opt_booking__list {
 
     .opt_width-calc {
@@ -651,7 +651,7 @@
       width: calc(100% - 50px);
       .item2{
         width: 33%;
-        padding-right: 70px;
+        padding-right: 60px;
       }
       .item3{
         width:25%;
