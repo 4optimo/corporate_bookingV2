@@ -1,23 +1,29 @@
+<!--<div class="opt-triple-toggle">-->
+  <!--<div class="toggle-wrapper">-->
+    <!--<div class="opt_flex&#45;&#45;container">-->
+      <!--<div class="opt_flex__item&#45;&#45;inherit">-->
+        <!--<div class="switch-toggle">-->
+          <!--<input id="hour" name="view" type="radio" class="cancel" onclick="cancel()">-->
+          <!--<label for="hour" onclick="" class="states cancel"></label>-->
+
+          <!--<input id="day" name="view" type="radio" checked>-->
+          <!--<label for="day" onclick="" class="states"></label>-->
+
+          <!--<input id="week" name="view" type="radio" class="active" onclick="active()">-->
+          <!--<label for="week" onclick="" class="states"></label>-->
+
+          <!--<a class="btn btn-primary"></a>-->
+        <!--</div>-->
+      <!--</div>-->
+    <!--</div>-->
+  <!--</div>-->
+<!--</div>-->
+
+
 <div class="opt-triple-toggle">
-  <div class="toggle-wrapper">
-    <div class="opt_flex--container">
-      <div class="opt_flex__item--inherit">
-        <div class="switch-toggle">
-          <input id="hour3" name="view3" type="radio">
-          <label for="hour3" onclick="" class="states"></label>
-
-          <input id="day4" name="view3" type="radio" checked>
-          <label for="day4" onclick="" class="states"></label>
-
-          <input id="week5" name="view3" type="radio">
-          <label for="week5" onclick="" class="states"></label>
-
-          <a class="btn btn-primary"></a>
-        </div>
-      </div>
-    </div>
-  </div>
+  <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+    <mat-button-toggle value="on">On</mat-button-toggle>
+    <mat-button-toggle value="default">Default</mat-button-toggle>
+    <mat-button-toggle value="off">Off</mat-button-toggle>
+  </mat-button-toggle-group>
 </div>
-
-
-
