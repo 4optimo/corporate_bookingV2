@@ -1,8 +1,11 @@
-<h1 mat-dialog-title></h1>
-<div mat-dialog-content>
-  <p>Are you sure you want to cancel this booking?</p>
-</div>
-<div mat-dialog-actions>
-  <button mat-button (click)="onNoClick()">No Thanks</button>
-  <button mat-button [mat-dialog-close]>Ok</button>
-</div>
+<div class="conf-message-wrapper">
+    <div mat-dialog-content>
+        <i class="material-icons">info</i>
+        <p class="opt-txt__body1">Are you sure you want to cancel this booking?</p>
+      </div>
+      <div mat-dialog-actions>
+          <button mat-button class="mat-btn-primary--small" (click)="onNoClick()">No, dont cancel</button>
+          <button mat-button class="mat-btn-primary--small" [mat-dialog-close]>Yes, cancel</button>
+      </div>
+</div><h1 mat-dialog-title></h1>
+
