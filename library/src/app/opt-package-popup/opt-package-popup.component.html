@@ -409,18 +409,18 @@
                                             </div>
                                             <div class="opt_flex__item item3 tc-flex-item__center opt_counter__item">
                                               <!--<div class="opt_counter">-->
-                                              <!--<div class="opt_flex&#45;&#45;container ">-->
-                                              <!--<div class="opt_flex__item&#45;&#45;inherit">-->
+                                              <!--<div class="opt_flex--container ">-->
+                                              <!--<div class="opt_flex__item--inherit">-->
                                               <!--<button mat-raised-button>-</button>-->
                                               <!--</div>-->
-                                              <!--<div class="opt_flex__item&#45;&#45;inherit  tc-flex-item__center">-->
+                                              <!--<div class="opt_flex__item--inherit  tc-flex-item__center">-->
                                               <!--<form class="example-form">-->
                                               <!--<mat-form-field class="">-->
                                               <!--<input matInput value="1">-->
                                               <!--</mat-form-field>-->
                                               <!--</form>-->
                                               <!--</div>-->
-                                              <!--<div class="opt_flex__item&#45;&#45;inherit">-->
+                                              <!--<div class="opt_flex__item--inherit">-->
                                               <!--<button mat-raised-button>+</button>-->
                                               <!--</div>-->
                                               <!--</div>-->
@@ -712,11 +712,11 @@
                   </mat-accordion>
                 </div>
             <mat-accordion>
-              <mat-expansion-panel [disabled]="true" class="package_expansion_panel">
-                <mat-expansion-panel-header>
-                    <div class="opt_flex--container" style="width: 100%;">
+              <mat-expansion-panel #myPanel [disabled]="true" class="package_expansion_panel">
+                <mat-expansion-panel-header collapsedHeight="56px" expandedHeight="56px">
+                    <div class="opt_flex--container outer" style="width: 100%;">
                       <div class="opt_flex__item">
-                        <div class="opt_flex--container">
+                        <div class="opt_flex--container inner">
                           <div class="opt_flex__item--inherit">
                             <div class="package_main_details">
                               <div class="package_icon">
@@ -762,12 +762,12 @@
                             </div>
                           </div>
                           <div class="opt_flex__item--inherit">
-                            <div class="solo_wrapper">
+                            <div class="solo_wrapper fixed_width">
                               <app-opt-counter></app-opt-counter>
                             </div>
                           </div>
                           <div class="opt_flex__item--inherit">
-                            <div class="solo_wrapper">
+                            <div class="solo_wrapper fixed_width">
                               <app-opt-counter></app-opt-counter>
                             </div>
                           </div>
@@ -780,11 +780,11 @@
                               </div>
                             </div>
                           </div>
-                          <div class="opt_flex__item--inherit">
-                            <div class="solo_wrapper">
-                              <button mat-button class="mat-btn-primary--small item4">Add</button>
-                            </div>
-                          </div>
+                        </div>
+                      </div>
+                      <div class="opt_flex__item--inherit">
+                        <div class="solo_wrapper">
+                          <button mat-button class="mat-btn-primary--small item4">Add</button>
                         </div>
                       </div>
                       <div class="opt_flex__item--inherit">
@@ -797,6 +797,220 @@
                       </div>
                     </div>
                 </mat-expansion-panel-header>
+                <div class="opt_expand--container">
+                <div class="row opt_flex--container tc-flex-item__center">
+                <div class="col-sm-6 col-md-5	col-lg-5	col-xs-12">
+                <div class="opt_flex--container row tc-flex-item__center __data">
+                <div class="opt_flex__item icon__cage __multi-buttons tc-flex-item__center">
+                <button mat-icon-button class="btn-color-default">
+                <span class="icon-icn-item"> </span>
+                </button>
+                <button mat-icon-button class="btn-color-default">
+                <span class="icon-icn-office-big-chair"> </span>
+                </button>
+
+                <button mat-icon-button class="btn-color-default">
+                <span class="icon-icn-table"> </span>
+                </button>
+
+                <button mat-icon-button class="btn-color-default" [popper]="popper2Content"
+                [popperTrigger]="'click'" [popperHideOnClickOutside]="true" popperPlacement="'bottom'"
+                [popperAppendTo]="'body'">
+                <span class="material-icons"> date_range</span>
+                </button>
+
+                <button mat-icon-button class="btn-color-default">
+                <span class="material-icons">domain</span>
+                </button>
+
+                <button mat-icon-button class="btn-color-default">
+                <span class="material-icons">local_activity</span>
+                </button>
+
+                <button mat-icon-button class="btn-color-default">
+                <span class="material-icons">local_parking</span>
+                </button>
+
+                <!--calendar expand start-->
+                <!-- <div class="opt_calendar-expand opt--depth__2" style="display: none">
+                <div class="outer-wrapper">
+                <div class="inner-wrapper opt_flex--container">
+                <div class="date-hover">
+                <div class="date-select">
+                <div>
+                <div (click)="picker.open()" class="opt_flex__item tc-flex-item__center">
+                <i class="material-icons">date_range</i>
+                <div>
+                <mat-form-field class="example-full-width opt_flex__item date-field">
+                <input matInput [matDatepicker]="picker" placeholder="">
+                <mat-datepicker #picker></mat-datepicker>
+                </mat-form-field>
+                </div>
+                </div>
+                </div>
+                </div>
+                </div>
+
+                <div class="opt_flex__item time-slot-selection">
+                <div class="time-slot">
+                <div class="individual-row">
+                <div class="opt_flex--container tc-flex-item__center row">
+                <div class="col-sm-4 col-md-4	col-lg-4	col-xs-6">
+                <div class="opt_flex__item tc-flex-item__center">
+                <i class="material-icons opt-txt__secondary">access_time</i>
+                <span class="opt__subtitle-1-small opt-txt__secondary">11:00 AM -
+                12:15 PM</span>
+                </div>
+                </div>
+                <div class="col-sm-1 col-md-1	col-lg-1	col-xs-6">
+                <div class="opt_flex__item opt__subtitle-1-small tc-flex-item__center">£10.00</div>
+                </div>
+                <div class="col-sm-3 col-md-3	col-lg-3	col-xs-6">
+                <div class="opt_flex__item tc-flex-item__center availability-icon __last-few">
+                <i class="material-icons">event_available</i>
+                <span class="opt-txt__body2">10</span>
+                </div>
+                </div>
+                <div class="col-sm-2  col-md-2	col-lg-2	col-xs-6">
+                <div class="opt_flex__item opt_counter__item tc-flex-item__center">
+                <div class="opt_counter">
+                <div class="opt_flex--container ">
+                <div class="opt_flex__item--inherit">
+                <button mat-raised-button>-</button>
+                </div>
+                <div class="opt_flex__item--inherit  tc-flex-item__center">
+                <form class="example-form">
+                <mat-form-field class="">
+                <input matInput value="10">
+                </mat-form-field>
+                </form>
+                </div>
+                <div class="opt_flex__item--inherit">
+                <button mat-raised-button>+</button>
+                </div>
+                </div>
+                </div>
+                </div>
+                </div>
+                <div class="col-sm-2  col-md-2	col-lg-2	col-xs-6">
+                <div class="opt_flex__item opt__subtitle-2-small tc-flex-item__center __link">£100.00</div>
+                </div>
+                </div>
+                </div>
+                </div>
+                <div class="time-slot">
+                <div class="individual-row">
+                <div class="opt_flex--container tc-flex-item__center row">
+                <div class="col-sm-4 col-md-4	col-lg-4	col-xs-6">
+                <div class="opt_flex__item tc-flex-item__center">
+                <i class="material-icons opt-txt__secondary">access_time</i>
+                <span class="opt__subtitle-1-small opt-txt__secondary">11:00 AM -
+                12:15 PM</span>
+                </div>
+                </div>
+                <div class="col-sm-1 col-md-1	col-lg-1	col-xs-6">
+                <div class="opt_flex__item opt__subtitle-1-small tc-flex-item__center">£10.00</div>
+                </div>
+                <div class="col-sm-3 col-md-3	col-lg-3	col-xs-6">
+                <div class="opt_flex__item tc-flex-item__center availability-icon __good-availability">
+                <i class="material-icons">event_available</i>
+                <span class="opt-txt__body2">6</span>
+                </div>
+                </div>
+                <div class="col-sm-2  col-md-2	col-lg-2	col-xs-6">
+                <div class="opt_flex__item opt_counter__item tc-flex-item__center">
+                <div class="opt_counter">
+                <div class="opt_flex--container ">
+                <div class="opt_flex__item--inherit">
+                <button mat-raised-button>-</button>
+                </div>
+                <div class="opt_flex__item--inherit  tc-flex-item__center">
+                <form class="example-form">
+                <mat-form-field class="">
+                <input matInput value="1">
+                </mat-form-field>
+                </form>
+                </div>
+                <div class="opt_flex__item--inherit">
+                <button mat-raised-button>+</button>
+                </div>
+                </div>
+                </div>
+                </div>
+                </div>
+                <div class="col-sm-2  col-md-2	col-lg-2	col-xs-6">
+                <div class="opt_flex__item opt__subtitle-2-small tc-flex-item__center __link">£10.00</div>
+                </div>
+                </div>
+                </div>
+                </div>
+                <div class="time-slot">
+                <div class="individual-row">
+                <div class="opt_flex--container tc-flex-item__center row">
+                <div class="col-sm-4 col-md-4	col-lg-4	col-xs-6">
+                <div class="opt_flex__item tc-flex-item__center">
+                <i class="material-icons opt-txt__secondary">access_time</i>
+                <span class="opt__subtitle-1-small opt-txt__secondary">11:00 AM -
+                12:15 PM</span>
+                </div>
+                </div>
+                <div class="col-sm-1 col-md-1	col-lg-1	col-xs-6">
+                <div class="opt_flex__item opt__subtitle-1-small tc-flex-item__center">£10.00</div>
+                </div>
+                <div class="col-sm-3 col-md-3	col-lg-3	col-xs-6">
+                <div class="opt_flex__item tc-flex-item__center availability-icon __limited">
+                <i class="material-icons">event_available</i>
+                <span class="opt-txt__body2">7</span>
+                </div>
+                </div>
+                <div class="col-sm-2  col-md-2	col-lg-2	col-xs-6">
+                <div class="opt_flex__item opt_counter__item tc-flex-item__center">
+                <div class="opt_counter">
+                <div class="opt_flex--container ">
+                <div class="opt_flex__item--inherit">
+                <button mat-raised-button>-</button>
+                </div>
+                <div class="opt_flex__item--inherit  tc-flex-item__center">
+                <form class="example-form">
+                <mat-form-field class="">
+                <input matInput value="3">
+                </mat-form-field>
+                </form>
+                </div>
+                <div class="opt_flex__item--inherit">
+                <button mat-raised-button>+</button>
+                </div>
+                </div>
+                </div>
+                </div>
+                </div>
+                <div class="col-sm-2  col-md-2	col-lg-2	col-xs-6">
+                <div class="opt_flex__item opt__subtitle-2-small tc-flex-item__center __link">£30.00</div>
+                </div>
+                </div>
+                </div>
+                </div>
+                </div>
+                </div>
+                </div>
+                </div> -->
+                <!--end the calendar expand-->
+
+                <span mat-icon-button class="btn-color-default">
+                <span class="material-icons">help</span>
+                </span>
+
+                </div>
+                </div>
+                </div>
+                <div class="col-sm-6 col-md-7	col-lg-7 col-xs-12 package-expand-description ">
+                <div class="tc-flex-item__center">
+                <div class="opt-txt__caption">Quisque in dolor hendrerit, dignissim lacus non, accumsan
+                nisl. Duis sollicitudin convallis magna.</div>
+                </div>
+                </div>
+                </div>
+                </div>
               </mat-expansion-panel>
             </mat-accordion>
                 <!--<div class="opt_package-details opt_booking__list opt_booking__detail">-->

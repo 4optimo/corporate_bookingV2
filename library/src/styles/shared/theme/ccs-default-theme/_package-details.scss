@@ -2,8 +2,8 @@
 
 .mat-icon-button{
   &.down-arrow{
-    height: auto;
-    width: auto;
+    height: 100%;
+    width: 100%;
     line-height: 1;
   }
 }
@@ -27,6 +27,7 @@
   .three_div_combo{
     display: flex;
     flex-direction: column;
+    align-items: flex-end;
   }
 
   &.reverse{
@@ -51,6 +52,9 @@
   height: 100%;
   align-items: center;
   padding: 0 15px;
+  &.fixed_width{
+    width: 100px;
+  }
 }
 
 mat-expansion-panel{
@@ -59,6 +63,19 @@ mat-expansion-panel{
     margin-top: 10px;
     .mat-expansion-panel-header{
       padding: 5px;
+
+      .opt_flex--container{
+        &.inner{
+          .opt_flex__item--inherit{
+            flex-shrink: 0;
+          }
+        }
+        &.outer{
+          .opt_flex__item--inherit{
+          }
+        }
+      }
+
       &[aria-disabled=true]{
         color: inherit;
       }
@@ -76,6 +93,7 @@ mat-expansion-panel{
         display: flex;
         justify-content: center;
         border-radius: 50%;
+        flex-shrink: 0;
       }
       .package_details{
         padding: 0 15px;
@@ -155,7 +173,7 @@ mat-expansion-panel{
       margin-left: 10px;
     }
     i{
-      font-size: 17px;
+      font-size: 12px;
       //padding-right: 5px;
     }
   }
