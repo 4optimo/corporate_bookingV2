@@ -437,8 +437,58 @@
         }
 
       }
-    }
 
+    }
+    .booking-details-tabs{
+      padding: 15px;
+      margin: 10px 0px;
+      background-color: $opt_color_white ;
+      color:$opt-text-color__secondary;
+      .button-wrapper{
+        height: 100px;
+        background-color:$default-state-dark-bg;
+        width: 100%;
+        .opt_flex--container{
+          flex-direction: column;
+          height: 100%;
+          align-items: center;
+          .opt_flex--container{
+            .opt_flex__item:nth-child(1){
+              margin-bottom: 5px;
+            }
+          }
+        }
+        i{
+          font-size: 34px;
+          color:$opt-text-color__secondary;
+        }
+        &:hover{
+          cursor: pointer;
+          background-color: $opt_color_primary;
+          color:$opt_color_white ;
+          box-shadow:0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+          transition: 0.3s;
+          i{
+            font-size: 34px;
+            color:$opt_color_white ;
+          }
+        }
+        .opt-txt__body2{
+          @include respond-to('x-small') {
+            display: none;
+          }
+          @include respond-to('medium') {
+            display: block;
+          }
+        }
+        @include respond-to('x-small') {
+          margin-bottom: 10px;
+        }
+        @include respond-to('medium') {
+          margin-bottom: 0;
+        }
+      }
+    }
   }
 
   &_expand__header {
@@ -464,6 +514,7 @@
     font-size: 14px !important;
   }
 }
+
 .action__button {
   flex: 1;
   @include respond-to('x-small') {
@@ -479,7 +530,25 @@
 
 }
 
-
+.price-popover{
+  .filter-popover-item {
+    border-bottom: none !important;
+  }
+  .mat-form-field-infix{
+    padding: 0 !important;
+    border-top: none !important;
+    max-width: 100px !important;
+  }
+  .mat-form-field-wrapper{
+    padding-bottom: 0 !important;
+  }
+  .mat-form-field-underline{
+    bottom: unset !important;
+  }
+  .mat-input-element{
+    text-align: right;
+  }
+}
 
 
 .lbl {
@@ -513,7 +582,7 @@
 }
 
 .loadding--cage {
-  margin-left: -15px;
+  margin-left: 0;
   margin-right: -15px;
 }
 
@@ -548,7 +617,7 @@
       }
 
       &.separator__line--dotted{
-        border-top: 1px dashed $opt-border-color_light;
+        border-top: 1px dashed $opt_color_primary !important;
       }
 
 
@@ -812,10 +881,8 @@
     &.blocked{
       i{
         color: $no-color--state;
+
       }
-    }
-    i{
-      color: $lbl__price-details;
     }
     span{
       vertical-align: middle;
@@ -846,6 +913,9 @@
   }
 }
 .mat-menu-content{
+  button:hover{
+    color: $opt_color_white;
+  }
   .mat-menu-item{
     line-height: 40px;
     height: 40px;
@@ -856,3 +926,12 @@
     }
   }
 }
+.mat-datepicker-toggle{
+  .mat-button-ripple {
+    top: -1px !important;
+    left: -4px !important;
+    right: 2px !important;
+    bottom: -1px !important;
+  }
+}
+

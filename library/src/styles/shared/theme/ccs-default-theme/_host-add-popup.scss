@@ -1,6 +1,11 @@
 @import "variables";
 
 .opt-host-add-popup{
+  .opt_modal-header{
+    p{
+      margin-bottom: 5px !important;
+    }
+  }
   .modal_header--title{
     height: 100%;
     padding: 0 15px;
@@ -19,11 +24,14 @@
       margin: 0;
     }
   }
-
   .padding-top-expansion{
     padding-top: 25px;
   }
-
+  .package-details{
+    .padding-top{
+      padding-top: 25px;
+    }
+  }
   mat-form-field{
     width: 100%;
   }
@@ -100,7 +108,7 @@
       padding: 1px 1px;
       background-color: $opt-border-color_lighter;
       right: 15px;
-      top: 0;
+      top: -12px;
       i.material-icons{
         font-size: 18px;
       }

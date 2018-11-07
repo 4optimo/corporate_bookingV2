@@ -87,6 +87,8 @@
 .tc-flex-item__center{
   align-self: center !important;
   align-items: center;
+  -ms-flex-pack: center;
+  vertical-align: middle;
 }
 .tc-flex-just__right{
   justify-content: flex-end !important;
@@ -104,6 +106,8 @@
 
 .opt_flex__row{
   display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
@@ -153,8 +157,7 @@
     @include flex-direction(row);
     @include flex-wrap(nowrap);
     @include align-content(stretch);
-    @include align-items(flex-start);
-    }
+    @include align-items(flex-start);}
   // Add one of the following classes to any html element to achieve a desired depth of the shadow
 
 
@@ -268,4 +271,24 @@ mat-expansion-panel-header{
 }
 .mat-tab-group.mat-primary .mat-ink-bar{
   background-color: #4bb3fa !important;
+}
+.mat-snack-bar-container{
+  background: none;
+  width: 100% !important;
+  max-width: 100% !important;
+  width: 100% !important;
+  position: absolute;
+  left: 0;
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Roboto', sans-serif !important;
+}
+.opt-pre-whitespace{
+  white-space: pre !important;
+}
+.opt-fd-col{
+  flex-direction: column;
+}
+.mat-select{
+  line-height: 16px;
 }

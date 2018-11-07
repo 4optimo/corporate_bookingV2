@@ -28,7 +28,7 @@
             </div>
           </div>
           <div class="opt_flex--container telephone-field">
-            <div class="opt_flex__item--inherit">
+            <div class="opt_flex__item--inherit opt_flex__item--vcenter">
               <div class="label-icon"><i class="material-icons small">phone</i></div>
             </div>
             <div class="opt_flex__item">
@@ -40,7 +40,7 @@
             </div>
           </div>
           <div class="opt_flex--container email-field">
-            <div class="opt_flex__item--inherit">
+            <div class="opt_flex__item--inherit opt_flex__item--vcenter">
               <div class="label-icon"><i class="material-icons small">email</i></div>
             </div>
             <div class="opt_flex__item">
@@ -93,12 +93,26 @@
             <div class="field-options">
               <button mat-icon-button [matMenuTriggerFor]="bookingFrozen" class="btn btn-icon"><i class="material-icons small">more_vert</i></button>
               <mat-menu #bookingFrozen="matMenu" class="icon-text-menu">
-                <button mat-menu-item class="danger"><i class="material-icons">flag</i> <span>Booking Frozen Status</span></button>
+                <button mat-menu-item class="danger"><i class="material-icons  opt_color_icon_font">flag</i> <span>Booking Frozen Status</span></button>
               </mat-menu>
             </div>
           </div>
           <div class="field">
-            <div class="opt-txt__body1 field-inner opt-txt__caption opt-txt__primary">10:00 PM | 20-Jan-2018</div>
+            <!--<mat-form-field>-->
+              <!--<input matInput [matDatepicker]="picker" placeholder="Expiry Date">-->
+              <!--<mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>-->
+              <!--<mat-datepicker #picker></mat-datepicker>-->
+            <!--</mat-form-field>-->
+
+            <div class="opt-txt__body1 field-inner opt-txt__caption opt-txt__primary date_selection">
+              <mat-form-field class="example-full-width" (click)="$event.stopPropagation();">
+                <input class="opt-txt__body2" matInput [matDatepicker]="picker" value="Call center" readonly="true">
+                <!--<input matInput [matDatepicker]="picker" value="20-Jan-2018">-->
+                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+              </mat-form-field>
+              <span>| 10:00 PM </span>
+            </div>
             <div class="field-inner">
               <div class="badge __success __uppercase mini-badge">
                   <span>Confirmed Booking</span>
@@ -107,7 +121,7 @@
             <div class="field-options">
               <button mat-icon-button [matMenuTriggerFor]="bookingStatus" class="btn btn-icon"><i class="material-icons small">more_vert</i></button>
               <mat-menu #bookingStatus="matMenu" class="booking-status-menu">
-                <button mat-menu-item class="cancelled">Cancel Booking</button>
+                <button mat-menu-item class="cancelled" (click)="openCancelBooking()">Cancel Booking</button>
                 <button mat-menu-item class="confirmed">Confirmed Booking</button>
                 <button mat-menu-item class="confirmed-multiple">Confirmed Multiple</button>
                 <button mat-menu-item class="provisional">Provisional</button>
@@ -136,7 +150,7 @@
                 <mat-option value="option2">Coalfield Cricket Club</mat-option>
                 <mat-option value="option3">Silverstone Racing Track</mat-option>
               </mat-select>
-              <div class="opt-txt__caption opt-txt__primary">Referrer</div>
+              <div class="opt-txt__caption opt-txt__primary  referrer-label">Referrer</div>
               <mat-select [(value)]="selected" class="opt-booking-summary-select-sm emphd">
                 <mat-option value="option1">Mr. Vitor Belfort</mat-option>
                 <mat-option value="option2">Mr. Peter Worth</mat-option>
@@ -200,8 +214,8 @@
         </div>
         <div class="opt_flex--container">
           <div class="opt_flex__item">
-            <div class="opt-txt__caption opt-txt__primary"><span class="opt-txt__body1 opt-txt__secondary right-spacer-padding">Tax</span><span class="opt-txt__caption opt-txt__primary right-spacer-padding">:</span><span class="opt-txt__body2">&pound; 0.00</span></div>
-            <div class="opt-txt__caption opt-txt__primary"><span class="opt-txt__body1 opt-txt__secondary right-spacer-padding">Net</span><span class="opt-txt__caption opt-txt__primary right-spacer-padding">:</span><span class="opt-txt__body2">&pound; 0.00</span></div>
+            <div class="opt-txt__caption opt-txt__primary tax-label"><span class="opt-txt__body1 opt-txt__secondary right-spacer-padding">Tax</span><span class="opt-txt__caption opt-txt__primary right-spacer-padding">:</span><span class="opt-txt__body2">&pound; 0.00</span></div>
+            <div class="opt-txt__caption opt-txt__primary net-label"><span class="opt-txt__body1 opt-txt__secondary right-spacer-padding">Net</span><span class="opt-txt__caption opt-txt__primary right-spacer-padding">:</span><span class="opt-txt__body2">&pound; 0.00</span></div>
           </div>
           <div class="opt_flex__item">
             <div class="opt-txt__body2  opt-text-danger">&pound; 100.06</div>
@@ -341,12 +355,12 @@
                   <div class="field-inner">
                     <span class="font-style-05">BN000769</span>
                   </div>
-                  <div class="field-options">
+                  <!-- <div class="field-options">
                     <button mat-icon-button [matMenuTriggerFor]="bookingFrozen" class="btn btn-icon"><i class="material-icons small">more_vert</i></button>
                     <mat-menu #bookingFrozen="matMenu" class="icon-text-menu">
-                      <button mat-menu-item class="danger"><i class="material-icons">flag</i> <span>Booking Frozen Status</span></button>
+                      <button mat-menu-item class="danger"><i class="material-icons  opt_color_icon_font">flag</i> <span>Booking Frozen Status</span></button>
                     </mat-menu>
-                  </div>
+                  </div> -->
                 </div>
                 <div class="field">
                   <div class="opt-txt__body1 field-inner opt-txt__caption opt-txt__primary">10:00 PM | 20-Jan-2018</div>

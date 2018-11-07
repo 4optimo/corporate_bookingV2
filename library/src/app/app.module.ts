@@ -5,6 +5,8 @@ import { NgModule } from '@angular/core';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {HttpModule} from '@angular/http';
 import { NgxEditorModule } from 'ngx-editor';
+import { NgxPopper } from 'angular-popper';
+import {NgxPopperModule} from 'ngx-popper';
 import { TooltipModule } from 'ngx-bootstrap/tooltip';
 import {
   MatAutocompleteModule,
@@ -125,6 +127,14 @@ import { OptQuestionnairePopupComponent } from './opt-questionnaire-popup/opt-qu
 import { OptDocumentSelectPopupComponent } from './opt-document-select-popup/opt-document-select-popup.component';
 import { OptErrorPageComponent } from './opt-error--page/opt-error--page.component';
 import { OptLoadingScreenComponent } from './opt-loading--screen/opt-loading--screen.component';
+import { OptShipmentScreenComponent } from './opt-shipment-screen/opt-shipment-screen.component';
+import { OptDispatchAddNewAddressComponent } from './opt-dispatch-add-new-address/opt-dispatch-add-new-address.component';
+import { OptToastMessageComponent } from './opt-toast-message/opt-toast-message.component';
+import { OptErrorMessageComponent } from './opt-error-message/opt-error-message.component';
+import { OptWarningMessageComponent } from './opt-warning-message/opt-warning-message.component';
+import { OptSuccessMessageComponent } from './opt-success-message/opt-success-message.component';
+import { OptCancelBookingComponent } from './opt-cancel-booking/opt-cancel-booking.component';
+import { OptCounterComponent } from './opt-counter/opt-counter.component';
 
 
 
@@ -187,6 +197,13 @@ const appRoutes: Routes = [
   { path: 'app-opt-error--page', component: OptErrorPageComponent},
   { path: 'opt-pageloader', component: OptPageloaderComponent},
   { path: 'opt-loading--screen', component: OptLoadingScreenComponent},
+  { path: 'opt-toast-message', component: OptToastMessageComponent},
+  { path: 'opt-error-message', component: OptErrorMessageComponent},
+  { path: 'opt-warning-message', component: OptWarningMessageComponent},
+  { path: 'opt-success-message', component: OptSuccessMessageComponent},
+  { path: 'opt-dispatch-add-new-address', component: OptDispatchAddNewAddressComponent},
+  { path: 'opt-shipment-screen', component: OptShipmentScreenComponent},
+  { path: 'opt-counter', component: OptCounterComponent},
 
   { path: '', redirectTo:'/opt-booking-summary', pathMatch:'full'},
   { path: '**', redirectTo:'/opt-booking-summary', pathMatch: 'full'}
@@ -299,7 +316,15 @@ export class DemoMaterialModule {}
     OptDocumentSelectPopupComponent,
     OptBookingDetailsFullPageComponent,
     OptItemCartComponent,
+    OptToastMessageComponent,
+    OptErrorMessageComponent,
+    OptWarningMessageComponent,
+    OptSuccessMessageComponent,
     OptItemModalPopoversComponent,
+    OptDispatchAddNewAddressComponent,
+    OptShipmentScreenComponent,
+    OptCancelBookingComponent,
+    OptCounterComponent,
 
     RoutingProjectComponent,
     TypographyComponent,
@@ -329,6 +354,8 @@ export class DemoMaterialModule {}
     RouterModule.forRoot(appRoutes),
     NgxEditorModule,
     TooltipModule.forRoot(),
+    NgxPopper,
+    NgxPopperModule,
   ],
 
   entryComponents:[
@@ -340,7 +367,8 @@ export class DemoMaterialModule {}
     OptPackagePopupComponent,
     OptItemPopupComponent,
     OptPackageCartComponent,
-    OptDataTableComponent
+    OptDataTableComponent,
+    OptCancelBookingComponent
   ],
 
   providers: [{provide: APP_BASE_HREF, useValue : '/' }],

@@ -1,4 +1,4 @@
-<div class="opt_modal-content opt-item-details">
+<div class="opt_modal-content opt-item-details opt-item-search">
   <div class="mat-dialog-content">
     <div class="opt_modal-header ">
       <div class="test opt--depth__1">
@@ -22,14 +22,13 @@
               <button class="material-icons icon1">launch</button>
               <button class="material-icons icon2" (click)="close()">close</button>
             </div>
-
           </div>
         </div>
       </div>
     </div>
-    <div class="opt_modal-body">
+    <div class="opt_modal-body opt_package-popup">
       <!--modal body start-->
-      <div class="opt_package-popup">
+      <div class="">
         <div class="opt-header-section">
           <app-opt-search-panel></app-opt-search-panel>
           <div class="package-select-section">
@@ -78,11 +77,11 @@
 
         <div class="package-wrapper">
           <div class="top-label opt_flex--container">
-            <div class="opt_flex__item opt-txt__secondary opt-txt__body2">30 Items</div>
-            <div class="opt_flex__item--inherit opt-txt__body2-small">
+            <div class="opt_flex__item  opt_flex__item--vcenter opt-txt__secondary opt-txt__body2">30 Items</div>
+            <div class="opt_flex__item--inherit opt_flex__item--vcenter opt-txt__body1">
               <mat-checkbox>Show selected items only</mat-checkbox>
             </div>
-            <div class="opt_flex__item--inherit opt-txt__body2-small">
+            <div class="opt_flex__item--inherit  opt_flex__item--vcenter opt-txt__body1">
               <i class="material-icons opt-txt__secondary">live_help</i>
               Smart App Off <mat-slide-toggle></mat-slide-toggle>
             </div>
@@ -253,7 +252,7 @@
           <mat-accordion>
             <mat-expansion-panel #myPanel [disabled]="true" class="opt-expand--line">
               <mat-expansion-panel-header class="opt_width-define opt_expand__header first-outer-wrapper"
-                                          collapsedHeight=".collapsedHeight" expandedHeight=".expandedHeight">
+                                          collapsedHeight="55px" expandedHeight="55px">
                 <div class="opt_expand--container">
                   <div class="opt_flex--container item-details">
                     <div class="opt_flex__item __expansion-lft--side">
@@ -300,7 +299,7 @@
                               <div class="opt_counter">
                                 <div class="opt_flex--container ">
                                   <div class="opt_flex__item--inherit">
-                                    <button mat-raised-button>+</button>
+                                    <button mat-raised-button>-</button>
                                   </div>
                                   <div class="opt_flex__item--inherit  tc-flex-item__center">
                                     <form class="example-form">
@@ -310,7 +309,7 @@
                                     </form>
                                   </div>
                                   <div class="opt_flex__item--inherit">
-                                    <button mat-raised-button>-</button>
+                                    <button mat-raised-button>+</button>
                                   </div>
                                 </div>
                               </div>
@@ -320,18 +319,82 @@
                         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
                           <div class="opt_flex--container tc-flex-item__center item-price-wrapper">
                             <div class="opt_flex__item--inherit">
-                              <div class="lbl lbl__vat">Inc Vat</div>
+                              <div class="lbl lbl__vat  opt_lbl_primary">Inc Vat</div>
                             </div>
-                            <div class=" opt_flex__item--inherit opt_price-section">
+                            <div class=" opt_flex__item opt_price-section">
                               <mat-form-field class="example-full-width opt-typo-subhead-2 price">
                                 <input matInput placeholder="" value=" £450.00">
                               </mat-form-field>
                             </div>
-                            <div class="opt_flex__item--inherit"><span class="icon-coin-of-dollar"></span></div>
+                            <div class="opt_flex__item">
+                              <span [matMenuTriggerFor]="menu" class="icon-coin-of-dollar"></span>
+                              <mat-menu #menu="matMenu" class="filter-popover price-popover">
+                                <div class="opt_flex--container" (click)="$event.stopPropagation();">
+                                  <div class="opt_flex__item price--values">
+                                    <div class="opt_flex--container filter-popover-item">
+                                      <div class="opt_flex__item opt_flex__item">
+                                        <span class="opt-txt__body1">Net</span>
+                                      </div>
+                                      <div class="opt_flex__item--inherit opt-txt__align-right price--value__input">
+                                        <mat-form-field class="">
+                                          <input class="opt-txt__body1 opt-txt__secondary" matInput value="&pound;19875.89">
+                                        </mat-form-field>
+                                      </div>
+                                    </div>
+                                    <div class="opt_flex--container filter-popover-item">
+                                      <div class="opt_flex__item opt_flex__item">
+                                        <span class="opt-txt__body1">Tax</span>
+                                      </div>
+                                      <div class="opt_flex__item--inherit opt-txt__align-right price--value__input">
+                                        <form class="example-form">
+                                          <mat-form-field class="">
+                                            <input class="opt-txt__body1 opt-txt__secondary" matInput value="&pound;19875.89">
+                                          </mat-form-field>
+                                        </form>
+                                      </div>
+                                    </div>
+                                    <div class="opt_flex--container filter-popover-item">
+                                      <div class="opt_flex__item opt_flex__item">
+                                        <span class="opt-txt__body1">Gross</span>
+                                      </div>
+                                      <div class="opt_flex__item--inherit opt-txt__align-right price--value__input">
+                                        <form class="example-form">
+                                          <mat-form-field class="">
+                                            <input class="opt-txt__body1 opt-txt__secondary" matInput value="&pound;19875.89">
+                                          </mat-form-field>
+                                        </form>
+                                      </div>
+                                    </div>
+                                    <div class="opt_flex--container filter-popover-item">
+                                      <div class="opt_flex__item opt_flex__item">
+                                        <span class="opt-txt__body1">Margin</span>
+                                      </div>
+                                      <div class="opt_flex__item opt-txt__align-right">
+                                        <span class="opt-txt__body1 opt-txt__secondary">&pound;55.00</span>
+                                      </div>
+                                    </div>
+                                    <div class="opt_flex--container filter-popover-item">
+                                      <div class="opt_flex__item opt_flex__item">
+                                        <span class="opt-txt__body1">Estimate Cost</span>
+                                      </div>
+                                      <div class="opt_flex__item opt-txt__align-right">
+                                        <span class="opt-txt__body1 opt-txt__secondary">&pound;1555.00</span>
+                                      </div>
+                                    </div>
+                                    <div class="opt_flex--container filter-popover-item">
+                                      <div class="opt_flex__item opt_flex__item">
+                                        <span class="opt-txt__body1">Actual Cost</span>
+                                      </div>
+                                      <div class="opt_flex__item opt-txt__align-right">
+                                        <span class="opt-txt__body1 opt-txt__secondary">&pound;55.00</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </mat-menu>
+                            </div>
                             <div class="add-btn">
-                              <button mat-raised-button class="btn-color-default opt-txt__caption btn btn-select">
-                                Add
-                              </button>
+                              <button mat-button class="mat-btn-primary--small">Add</button>
                             </div>
                           </div>
                         </div>
