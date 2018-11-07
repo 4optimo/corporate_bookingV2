@@ -15,7 +15,8 @@ export class OptBookingSummaryComponent implements OnInit {
   public openCancelBooking(){
     this.dialog.open(OptCancelBookingComponent,{
       panelClass:'custom-dialog-container',
-      height: '100px',
+      height: 'auto',
+      minHeight: '100px',
       width: '30%'
     });
 
