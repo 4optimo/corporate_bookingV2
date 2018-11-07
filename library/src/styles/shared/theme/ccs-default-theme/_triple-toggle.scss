@@ -1,67 +1,99 @@
-.opt-triple-toggle{
-  padding: 5px;
-  //.toggle-wrapper{
-  //  padding: 2px;
-  //  .opt_flex--container {
-  //    .opt_flex__item {
-  //      .opt_package-popup {
-  //        .top-label {
-  //          .opt_flex__item {
-  //            padding-left: 0 !important;
-  //          }
-  //        }
-  //      }
-  //    }
-  //  }
-  //  .switch-toggle{
-  //    border-radius: 25px;
-  //    max-width: 65px;
-  //    border: 1px solid lightgray;
-  //    background-color: lightgray;
-  //    height: 15px;
-  //    position: relative;
-  //    transform: translate(-50%, -50%);
-  //    .btn{
-  //      background-color: darkgray;
-  //      border-radius: 50%;
-  //      height: 20px !important;
-  //      width: 20px !important;
-  //      border-color: darkgray;
-  //    }
-  //    label{
-  //      outline: none !important;
-  //    }
-  //    .states{
-  //      width: 5px !important;
-  //      padding: 10px !important;
-  //      color: white;
-  //      outline: none;
-  //    }
-  //    a{
-  //      position: absolute;
-  //      //left: 68.66%;
-  //      top: -23%;
-  //    }
-  //    .cancel {
-  //      option:checked{
-  //        a{
-  //          background-color: red;
-  //        }
-  //      }
-  //    }
-  //    //.active {
-  //    //  background-color: #999;
-  //    //  input[type=radio]:checked+a {
-  //    //    /* Or `#a1:checked+label` if you only want it for that input */
-  //    //    background-color: green;
-  //    //  }
-  //    //}
-  //  }
-  //}
-  .mat-button-toggle-label-content {
-    line-height: 25px;
+// .opt-triple-toggle{
+//   padding: 5px;
+//.toggle-wrapper{
+//  padding: 2px;
+//  .opt_flex--container {
+//    .opt_flex__item {
+//      .opt_package-popup {
+//        .top-label {
+//          .opt_flex__item {
+//            padding-left: 0 !important;
+//          }
+//        }
+//      }
+//    }
+//  }
+//  .switch-toggle{
+//    border-radius: 25px;
+//    max-width: 65px;
+//    border: 1px solid lightgray;
+//    background-color: lightgray;
+//    height: 15px;
+//    position: relative;
+//    transform: translate(-50%, -50%);
+//    .btn{
+//      background-color: darkgray;
+//      border-radius: 50%;
+//      height: 20px !important;
+//      width: 20px !important;
+//      border-color: darkgray;
+//    }
+//    label{
+//      outline: none !important;
+//    }
+//    .states{
+//      width: 5px !important;
+//      padding: 10px !important;
+//      color: white;
+//      outline: none;
+//    }
+//    a{
+//      position: absolute;
+//      //left: 68.66%;
+//      top: -23%;
+//    }
+//    .cancel {
+//      option:checked{
+//        a{
+//          background-color: red;
+//        }
+//      }
+//    }
+//    //.active {
+//    //  background-color: #999;
+//    //  input[type=radio]:checked+a {
+//    //    /* Or `#a1:checked+label` if you only want it for that input */
+//    //    background-color: green;
+//    //  }
+//    //}
+//  }
+//}
+//   .mat-button-toggle-label-content {
+//     line-height: 25px;
+//     font-size: 11px;
+//     font-family: roboto;
+//   }
+// }
+
+.opt-triple-toggle {
+  font-family: 'Roboto', sans-serif !important;
+
+  > label {
+    font-size: 12px;
+    display: block;
+    padding-bottom: 3px;
+    letter-spacing: 1px;
+  }
+  .mat-button-toggle {
+    background-color: #fff;
+    color: #333;
     font-size: 11px;
-    font-family: roboto;
+    .mat-button-toggle-label-content {
+      padding: 8px 16px;
+      line-height: 1;
+    }
+    &.cdk-focused {
+      &.cdk-program-focused {
+        color: #fff;
+        opacity: 1;
+        .mat-button-toggle-focus-overlay {
+          background-color: transparent;
+        }
+      }
+    }
+    &.mat-button-toggle-checked {
+      background-color: #4bb3fa;
+      color: #fff;
+    }
   }
 }
-
