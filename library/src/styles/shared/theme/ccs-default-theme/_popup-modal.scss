@@ -8,6 +8,20 @@
   }
 }
 
+@media(max-width: 1024px){
+  .custom-dialog-container{
+    &.package_search_modal{
+      height: 100% !important;
+      width: 100% !important;
+      margin: auto !important;
+      max-width: unset !important;
+      .opt_modal-header{
+        width: 100% !important;
+      }
+    }
+  }
+}
+
 .w60modal{
   .opt_modal-content{
     .mat-dialog-content{

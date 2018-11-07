@@ -135,6 +135,7 @@ import { OptWarningMessageComponent } from './opt-warning-message/opt-warning-me
 import { OptSuccessMessageComponent } from './opt-success-message/opt-success-message.component';
 import { OptCancelBookingComponent } from './opt-cancel-booking/opt-cancel-booking.component';
 import { OptCounterComponent } from './opt-counter/opt-counter.component';
+import { OptTripleToggleComponent } from './opt-triple-toggle/opt-triple-toggle.component';
 
 
 
@@ -204,6 +205,8 @@ const appRoutes: Routes = [
   { path: 'opt-dispatch-add-new-address', component: OptDispatchAddNewAddressComponent},
   { path: 'opt-shipment-screen', component: OptShipmentScreenComponent},
   { path: 'opt-counter', component: OptCounterComponent},
+  { path: 'opt-triple-toggle', component: OptTripleToggleComponent},
+
 
   { path: '', redirectTo:'/opt-booking-summary', pathMatch:'full'},
   { path: '**', redirectTo:'/opt-booking-summary', pathMatch: 'full'}
@@ -325,6 +328,7 @@ export class DemoMaterialModule {}
     OptShipmentScreenComponent,
     OptCancelBookingComponent,
     OptCounterComponent,
+    OptTripleToggleComponent,
 
     RoutingProjectComponent,
     TypographyComponent,
