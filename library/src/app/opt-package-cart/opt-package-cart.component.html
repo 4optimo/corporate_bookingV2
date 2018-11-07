@@ -28,16 +28,19 @@
                                       <span class="icon-icn-package"></span>
                                     </div>
                                     <div class="package_details">
-                                      <div class="opt-txt__body2-small package_title">
+                                      <div class="opt-txt__body2-small package_title" style="line-height: 18px;">
                                         Chelsea Flower Show Hospitality
                                       </div>
                                       <div class="package_additional_info">
                                         <span class="icon-icn-item package-color--item  package-font-12"></span>
                                         <span class="opt__subtitle-1-small opt-txt__secondary">12-Jan-2018 - 15 Jan 2018</span>
-
-                                        <button mat-icon-button class="btn-color-default  opt__subtitle-1-small opt-txt__secondary" style="height:auto;width:auto;line-height:1;">
-                                          <span class="material-icons package-font-12">date_range</span>
-                                        </button>
+                                        <span class="opt__subtitle-1-small opt-txt__secondary" style="display: inline-block;">
+                                  <mat-form-field class="package-date--edit">
+                                  <input matInput [matDatepicker]="picker2" placeholder="">
+                                  <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+                                  <mat-datepicker #picker2></mat-datepicker>
+                                  </mat-form-field>
+                                  </span>
                                         <span class="opt__subtitle-1-small opt-txt__secondary">| Event Name</span>
                                       </div>
                                     </div>
@@ -45,9 +48,9 @@
                                 </div>
                                 <div class="opt_flex__item--inherit">
                                   <div class="dual_line_details">
-                                    <div class="availability-icon __last-few">
+                                    <div class="availability-icon __last-few" style="font-size: 0;">
                                       <i class="material-icons">event_available</i>
-                                      <span class="opt-txt__body2">10</span>
+                                      <span class="opt-txt__body2" style="vertical-align:middle;">10</span>
                                     </div>
                                     <!--<div class="opt-txt__body1-small">Unlimited</div>-->
                                     <div class="opt-txt__caption __link" [popper]="popper1Content" [popperTrigger]="'click'"
@@ -75,11 +78,34 @@
                                 <div class="opt_flex__item--inherit">
                                   <div class="solo_wrapper fixed_width">
                                     <app-opt-counter></app-opt-counter>
+                                    <div style="font-size:10px;color:#e74c3c;margin-top:3px;white-space:nowrap;">Error message goes here...</div>
                                   </div>
                                 </div>
                                 <div class="opt_flex__item--inherit">
                                   <div class="three_div_wrapper reverse">
-                                    <div class="three_div_solo"><span class="icon-coin-of-dollar"></span></div>
+                                    <div [matMenuTriggerFor]="menu" class="three_div_solo"><span class="icon-coin-of-dollar"></span></div>
+                                    <mat-menu #menu="matMenu" class="filter-popover price-popover">
+                                      <div class="opt_flex--container" (click)="$event.stopPropagation();">
+                                        <div class="opt_flex__item price--values">
+                                          <div class="opt_flex--container filter-popover-item">
+                                            <div class="opt_flex__item opt_flex__item">
+                                              <span class="opt-txt__body1">Fixed Price</span>
+                                            </div>
+                                            <div class="opt_flex__item opt-txt__align-right">
+                                              <span class="opt-txt__body1 opt-txt__secondary">&pound;55.00</span>
+                                            </div>
+                                          </div>
+                                          <div class="opt_flex--container filter-popover-item">
+                                            <div class="opt_flex__item opt_flex__item">
+                                              <span class="opt-txt__body1">Variable Price</span>
+                                            </div>
+                                            <div class="opt_flex__item opt-txt__align-right">
+                                              <span class="opt-txt__body1 opt-txt__secondary">&pound;1555.00</span>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </mat-menu>
                                     <div class="three_div_combo">
                                       <div class="item2 opt-typo-subhead-2 price opt_price-section" style="padding-left: 0;">£589392.19</div>
                                       <div class="opt-txt__caption">Covers</div>
@@ -90,7 +116,7 @@
                             </div>
                             <div class="opt_flex__item--inherit">
                               <div class="solo_wrapper">
-                                <button mat-button class="mat-btn-primary--small item4">Remove</button>
+                                <button mat-button class="mat-btn-primary--small item4">Add</button>
                               </div>
                             </div>
                             <div class="opt_flex__item--inherit">
@@ -103,40 +129,49 @@
                             </div>
                           </div>
                         </mat-expansion-panel-header>
-                        <div class="opt_flex--container">
+                        <div class="opt_flex--container al_cen">
                           <div class="opt_flex__item--inherit">
-                            <button mat-icon-button class="btn-color-default">
-                              <span class="icon-icn-item"> </span>
-                            </button>
-                            <button mat-icon-button class="btn-color-default">
-                              <span class="icon-icn-office-big-chair"> </span>
-                            </button>
+                            <div class="icon_btn_group">
+                              <button mat-icon-button class="btn-color-default">
+                                <span class="icon-icn-item"> </span>
+                              </button>
+                              <button mat-icon-button class="btn-color-default">
+                                <span class="icon-icn-office-big-chair"> </span>
+                              </button>
 
-                            <button mat-icon-button class="btn-color-default">
-                              <span class="icon-icn-table"> </span>
-                            </button>
+                              <button mat-icon-button class="btn-color-default">
+                                <span class="icon-icn-table"> </span>
+                              </button>
 
-                            <button mat-icon-button class="btn-color-default" [popper]="popper2Content"
-                                    [popperTrigger]="'click'" [popperHideOnClickOutside]="true" popperPlacement="'bottom'"
-                                    [popperAppendTo]="'body'">
-                              <span class="material-icons"> date_range</span>
-                            </button>
+                              <button mat-icon-button class="btn-color-default" [popper]="popper2Content"
+                                      [popperTrigger]="'click'" [popperHideOnClickOutside]="true" popperPlacement="'bottom'"
+                                      [popperAppendTo]="'body'">
+                                <span class="material-icons"> date_range</span>
+                              </button>
 
-                            <button mat-icon-button class="btn-color-default">
-                              <span class="material-icons">domain</span>
-                            </button>
+                              <button mat-icon-button class="btn-color-default">
+                                <span class="material-icons">domain</span>
+                              </button>
 
-                            <button mat-icon-button class="btn-color-default">
-                              <span class="material-icons">local_activity</span>
-                            </button>
+                              <button mat-icon-button class="btn-color-default">
+                                <span class="material-icons">local_activity</span>
+                              </button>
 
-                            <button mat-icon-button class="btn-color-default">
-                              <span class="material-icons">local_parking</span>
-                            </button>
+                              <button mat-icon-button class="btn-color-default">
+                                <span class="material-icons">local_parking</span>
+                              </button>
+
+                              <button mat-icon-button class="btn-color-default" [disableRipple]="true" style="cursor:default;">
+                                <span class="material-icons">help</span>
+                              </button>
+                            </div>
                           </div>
                           <div class="opt_flex__item">
-                            <div class="opt-txt__caption">Quisque in dolor hendrerit, dignissim lacus non, accumsan
-                              nisl. Duis sollicitudin convallis magna.</div>
+                            <div class="text_solo_wrapper">
+                              <div class="opt-txt__caption">Quisque in dolor hendrerit, dignissim lacus non, accumsan
+                                nisl. Duis sollicitudin convallis magna.
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </mat-expansion-panel>

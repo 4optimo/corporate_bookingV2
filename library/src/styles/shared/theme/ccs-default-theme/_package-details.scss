@@ -8,6 +8,30 @@
   }
 }
 
+.opt_flex--container{
+  &.al_cen{
+    align-items: center;
+  }
+}
+
+.icon_btn_group{
+  padding-right: 15px;
+  .btn-color-default{
+    span{
+      font-size: 17px;
+      &.material-icons{
+        font-size: 18px;
+        vertical-align: middle;
+        transform: rotate(0.03deg);
+      }
+    }
+  }
+}
+
+.text_solo_wrapper{
+  padding: 0 15px;
+}
+
 .dflex{
   display: flex;
   height: 100%;
@@ -52,6 +76,8 @@
   height: 100%;
   align-items: center;
   padding: 0 15px;
+  flex-direction: column;
+  justify-content: center;
   &.fixed_width{
     width: 100px;
   }
@@ -79,6 +105,9 @@ mat-expansion-panel{
       &[aria-disabled=true]{
         color: inherit;
       }
+    }
+    .mat-expansion-panel-body{
+      padding: 8px 5px;
     }
     .package_main_details{
       display: flex;
