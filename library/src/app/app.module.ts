@@ -207,6 +207,7 @@ const appRoutes: Routes = [
   { path: 'opt-shipment-screen', component: OptShipmentScreenComponent},
   { path: 'opt-counter', component: OptCounterComponent},
   { path: 'opt-triple-toggle', component: OptTripleToggleComponent},
+  { path: 'opt-double-toggle', component: OptDoubleToggleComponent},
 
 
   { path: '', redirectTo:'/opt-booking-summary', pathMatch:'full'},
@@ -251,7 +252,6 @@ const appRoutes: Routes = [
     ScrollDispatchModule
 
   ],
-  declarations: [OptDoubleToggleComponent],
 
 })
 export class DemoMaterialModule {}
@@ -331,6 +331,7 @@ export class DemoMaterialModule {}
     OptCancelBookingComponent,
     OptCounterComponent,
     OptTripleToggleComponent,
+    OptDoubleToggleComponent,
 
     RoutingProjectComponent,
     TypographyComponent,
