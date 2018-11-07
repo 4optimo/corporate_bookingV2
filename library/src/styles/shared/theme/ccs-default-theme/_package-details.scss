@@ -86,7 +86,7 @@
 mat-expansion-panel{
   &.package_expansion_panel{
     box-shadow: none !important;
-    margin-top: 10px;
+    //margin-top: 10px;
     .mat-expansion-panel-header{
       padding: 5px;
 
@@ -106,9 +106,13 @@ mat-expansion-panel{
         color: inherit;
       }
     }
+    //.mat-expansion-panel-content{
+    //  box-shadow:0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    //}
     .mat-expansion-panel-body{
       padding: 8px 5px;
     }
+
     .package_main_details{
       display: flex;
       flex-direction: row;
@@ -126,6 +130,13 @@ mat-expansion-panel{
       }
       .package_details{
         padding: 0 15px;
+      }
+    }
+
+    &.mat-expanded{
+      margin-bottom: 50px;
+      .mat-expansion-panel-content{
+        box-shadow:0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
       }
     }
   }

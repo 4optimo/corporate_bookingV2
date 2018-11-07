@@ -12,12 +12,9 @@
         </div>
       </div>
 
-      <div class="package-list">
-        <mat-accordion>
-                <div *ngFor="let a of packageCartListArray; let index = index" class="loop-class">
-                  <div class="opt_booking__list  package-list">
+      <div class="">
                     <mat-accordion>
-                      <mat-expansion-panel #myPanel [disabled]="true" class="package_expansion_panel">
+                      <mat-expansion-panel #myPanel [disabled]="true" *ngFor="let a of packageCartListArray; let index = index" class="loop-class package_expansion_panel">
                         <mat-expansion-panel-header collapsedHeight="56px" expandedHeight="56px">
                           <div class="opt_flex--container outer" style="width: 100%;">
                             <div class="opt_flex__item">
@@ -176,7 +173,6 @@
                         </div>
                       </mat-expansion-panel>
                     </mat-accordion>
-                  </div>
                   <!--<div class="opt_package-details opt_booking__list opt_booking__detail">-->
                   <!--<mat-accordion>-->
                   <!--<mat-expansion-panel #myPanel [disabled]="true" class="opt-expand&#45;&#45;line">-->
@@ -567,9 +563,6 @@
                   <!--</mat-expansion-panel>-->
                   <!--</mat-accordion>-->
                   <!--</div>-->
-                </div>
-        </mat-accordion>
-
       </div>
 
       <div class="footer">
