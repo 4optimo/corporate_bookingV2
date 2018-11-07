@@ -72,7 +72,7 @@
                               </div>
                               <div class="package_additional_info">
                                 <span class="icon-icn-item package-color--item  package-font-12"></span>
-                                <span class="opt__subtitle-1-small opt-txt__secondary">12-Jan-2018 - 15 Jan 2018</span>
+                                <span class="opt-txt__caption __link">12-Jan-2018 - 15 Jan 2018</span>
                                 <span class="opt__subtitle-1-small opt-txt__secondary">| Event Name</span>
                               </div>
                             </div>
@@ -118,7 +118,7 @@
                         <div class="opt_flex__item--inherit">
                           <div class="three_div_wrapper reverse">
                             <div [matMenuTriggerFor]="menu" class="three_div_solo"><span class="icon-coin-of-dollar"></span></div>
-                            <mat-menu #menu="matMenu" class="filter-popover price-popover">
+                            <mat-menu #menu="matMenu" class="price-popover">
                               <div class="opt_flex--container" (click)="$event.stopPropagation();">
                                 <div class="opt_flex__item price--values">
                                   <div class="opt_flex--container filter-popover-item">
@@ -225,7 +225,7 @@
                               </div>
                               <div class="package_additional_info">
                                 <span class="icon-icn-item package-color--item  package-font-12"></span>
-                                <span class="opt__subtitle-1-small opt-txt__secondary">12-Jan-2018 - 15 Jan 2018</span>
+                                <span class="opt-txt__caption __link">12-Jan-2018 - 15 Jan 2018</span>
                                 <span class="opt__subtitle-1-small opt-txt__secondary">| Event Name</span>
                               </div>
                             </div>
@@ -356,7 +356,7 @@
                               </div>
                               <div class="package_additional_info">
                                 <span class="icon-icn-item package-color--item  package-font-12"></span>
-                                <span class="opt__subtitle-1-small opt-txt__secondary">12-Jan-2018 - 15 Jan 2018</span>
+                                <span class="opt-txt__caption __link">12-Jan-2018 - 15 Jan 2018</span>
                                 <span class="opt__subtitle-1-small opt-txt__secondary">| Event Name</span>
                               </div>
                             </div>
@@ -825,17 +825,21 @@
                   <div class="opt_flex--container tc-flex-item__center row">
                     <div class="col-sm-6 col-md-6	col-lg-6	col-xs-6">
                       <div class="opt_flex__item tc-flex-item__center">
-                        <mat-form-field class="example-full-width">
-                          <input type="tel" matInput placeholder="Time" value="09:30 AM" multiple="true">
-                          <mat-icon matSuffix>access_time</mat-icon>
+                        <mat-form-field>
+                          <input matInput [matDatepicker]="picker10" placeholder="Start Date" value="11-Aug-2018">
+                          <mat-datepicker-toggle matSuffix [for]="picker10"></mat-datepicker-toggle>
+                          <mat-datepicker #picker10></mat-datepicker>
                         </mat-form-field>
                       </div>
                     </div>
                     <div class="col-sm-6 col-md-6	col-lg-6	col-xs-6">
-                      <mat-form-field class="example-full-width">
-                        <input type="tel" matInput placeholder="Time" value="11:30 AM" multiple="true">
-                        <mat-icon matSuffix>access_time</mat-icon>
-                      </mat-form-field>
+                      <div class="opt_flex__item tc-flex-item__center">
+                        <mat-form-field>
+                          <input matInput [matDatepicker]="picker11" placeholder="End Date">
+                          <mat-datepicker-toggle matSuffix [for]="picker11"></mat-datepicker-toggle>
+                          <mat-datepicker #picker11></mat-datepicker>
+                        </mat-form-field>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -845,21 +849,17 @@
                   <div class="opt_flex--container tc-flex-item__center row">
                     <div class="col-sm-6 col-md-6	col-lg-6	col-xs-6">
                       <div class="opt_flex__item tc-flex-item__center">
-                        <mat-form-field>
-                          <input matInput [matDatepicker]="picker10" placeholder="Choose a date" value="11-Aug-2018">
-                          <mat-datepicker-toggle matSuffix [for]="picker10"></mat-datepicker-toggle>
-                          <mat-datepicker #picker10></mat-datepicker>
+                        <mat-form-field class="example-full-width">
+                          <input type="tel" matInput placeholder="Start Time" value="09:30 AM" multiple="true">
+                          <mat-icon matSuffix>access_time</mat-icon>
                         </mat-form-field>
                       </div>
                     </div>
                     <div class="col-sm-6 col-md-6	col-lg-6	col-xs-6">
-                      <div class="opt_flex__item tc-flex-item__center">
-                        <mat-form-field>
-                          <input matInput [matDatepicker]="picker11" placeholder="Choose a date">
-                          <mat-datepicker-toggle matSuffix [for]="picker11"></mat-datepicker-toggle>
-                          <mat-datepicker #picker11></mat-datepicker>
-                        </mat-form-field>
-                      </div>
+                      <mat-form-field class="example-full-width">
+                        <input type="tel" matInput placeholder="End Time" value="11:30 AM" multiple="true">
+                        <mat-icon matSuffix>access_time</mat-icon>
+                      </mat-form-field>
                     </div>
                   </div>
                 </div>
