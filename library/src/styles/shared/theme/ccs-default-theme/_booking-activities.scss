@@ -453,7 +453,24 @@
         //}
       }
     }
-
+    .show-less{
+      //color: red !important;
+      max-height: 150px;
+      transition: 0.3s;
+    }
+    .show-more{
+      min-height: 150px;
+      position: absolute;
+      background-color: #f6f6f6;
+      box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.1), 0 1px 18px 0 rgba(0, 0, 0, 0.1);
+      padding: 10px;
+      z-index: 999;
+      transition: 0.3s;
+    }
+    .read-toggle{
+      color: $opt_color__primary;
+      cursor: pointer;
+    }
   }
 
   .correspondence_entry {

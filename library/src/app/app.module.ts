@@ -137,6 +137,7 @@ import { OptCancelBookingComponent } from './opt-cancel-booking/opt-cancel-booki
 import { OptCounterComponent } from './opt-counter/opt-counter.component';
 import { OptTripleToggleComponent } from './opt-triple-toggle/opt-triple-toggle.component';
 import { OptDoubleToggleComponent } from './opt-double-toggle/opt-double-toggle.component';
+import { OptMessageDialogComponent } from './opt-message-dialog/opt-message-dialog.component';
 
 
 
@@ -208,7 +209,7 @@ const appRoutes: Routes = [
   { path: 'opt-counter', component: OptCounterComponent},
   { path: 'opt-triple-toggle', component: OptTripleToggleComponent},
   { path: 'opt-double-toggle', component: OptDoubleToggleComponent},
-
+  { path: 'opt-message-dialog', component: OptMessageDialogComponent},
 
   { path: '', redirectTo:'/opt-booking-summary', pathMatch:'full'},
   { path: '**', redirectTo:'/opt-booking-summary', pathMatch: 'full'}
@@ -332,6 +333,7 @@ export class DemoMaterialModule {}
     OptCounterComponent,
     OptTripleToggleComponent,
     OptDoubleToggleComponent,
+    OptMessageDialogComponent,
 
     RoutingProjectComponent,
     TypographyComponent,
