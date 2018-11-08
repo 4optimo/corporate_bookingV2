@@ -524,7 +524,9 @@ mat-expansion-panel {
     .outer-wrapper {
       //overflow-y: auto;
       //overflow-x: hidden;
-
+      .error_msg{
+        padding: 10px;
+      }
       .time-slot {
         // padding: 8px 15px;
         border-bottom: 1px dashed $separator-border-color;
@@ -540,7 +542,7 @@ mat-expansion-panel {
           .edit_area {
             padding: 0 20px;
           }
-          max-height: 130px;
+          max-height: 167px;
           &::-webkit-scrollbar {
             width: 5px;
           }
