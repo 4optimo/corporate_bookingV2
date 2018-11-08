@@ -92,6 +92,23 @@
     width: 100px;
   }
 }
+.add_button{
+  position: relative;
+  display: flex;
+  .add_icon{
+    position: absolute;
+    background-color: #f9d630;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15px;
+    width: 15px;
+    color: white;
+    top: 5px;
+    right: 10px;
+  }
+}
 
 mat-expansion-panel {
   &.package_expansion_panel {
