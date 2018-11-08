@@ -294,7 +294,7 @@ mat-expansion-panel {
 
 .opt_package-details {
   .align-content {
-    margin-left: 140px;
+    // margin-left: 140px;
   }
   .opt_expand--container {
     padding: 0 5px 0 5px !important;
@@ -513,7 +513,9 @@ mat-expansion-panel {
       }
     }
   }
-
+  .date_section{
+    padding: 10px 10px 30px;
+  }
   .opt_calendar-expand {
     margin: 0;
     padding: 10px;
@@ -524,7 +526,7 @@ mat-expansion-panel {
       //overflow-x: hidden;
 
       .time-slot {
-        padding: 8px 15px;
+        // padding: 8px 15px;
         border-bottom: 1px dashed $separator-border-color;
         &:last-child {
           border-bottom: none;
@@ -534,6 +536,7 @@ mat-expansion-panel {
         .time-slot-selection {
           overflow-y: auto;
           padding: 0 15px;
+          background-color: $light_background;
           .edit_area {
             padding: 0 20px;
           }
@@ -620,6 +623,8 @@ mat-expansion-panel {
   }
   .individual-row {
     //padding: 15px;
+    height: 55px;
+    line-height: 55px;
     .material-icons {
       //padding-right: 15px;
     }
