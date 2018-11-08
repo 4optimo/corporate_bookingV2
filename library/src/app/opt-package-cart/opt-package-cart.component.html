@@ -16,115 +16,111 @@
                     <mat-accordion>
                       <mat-expansion-panel #myPanel [disabled]="true" *ngFor="let a of packageCartListArray; let index = index" class="loop-class package_expansion_panel">
                         <mat-expansion-panel-header collapsedHeight="56px" expandedHeight="56px">
-                          <div class="opt_flex--container outer" style="width: 100%;">
-                            <div class="opt_flex__item">
-                              <div class="opt_flex--container inner">
-                                <div class="opt_flex__item--inherit">
-                                  <div class="package_main_details">
-                                    <div class="package_icon">
-                                      <span class="icon-icn-package"></span>
-                                    </div>
-                                    <div class="package_details">
-                                      <div class="opt-txt__body2-small package_title" style="line-height: 18px;">
-                                        Chelsea Flower Show Hospitality
-                                      </div>
-                                      <div class="package_additional_info">
-                                        <span class="icon-icn-item package-color--item  package-font-12"></span>
-                                        <span class="opt__subtitle-1-small opt-txt__secondary">12-Jan-2018 - 15 Jan 2018</span>
-                                        <span class="opt__subtitle-1-small opt-txt__secondary" style="display: inline-block;">
-                                  <mat-form-field class="package-date--edit">
-                                  <input matInput [matDatepicker]="picker2" placeholder="">
-                                  <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
-                                  <mat-datepicker #picker2></mat-datepicker>
-                                  </mat-form-field>
-                                  </span>
-                                        <span class="opt__subtitle-1-small opt-txt__secondary">| Event Name</span>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="opt_flex__item--inherit">
-                                  <div class="dual_line_details">
-                                    <div class="availability-icon __last-few" style="font-size: 0;">
-                                      <i class="material-icons">event_available</i>
-                                      <span class="opt-txt__body2" style="vertical-align:middle;">10</span>
-                                    </div>
-                                    <!--<div class="opt-txt__body1-small">Unlimited</div>-->
-                                    <div class="opt-txt__caption __link" [popper]="popper1Content" [popperTrigger]="'click'"
-                                         [popperHideOnClickOutside]="true" popperPlacement="'bottom'" [popperAppendTo]="'body'">Adult</div>
-                                  </div>
-                                </div>
-                                <div class="opt_flex__item--inherit">
-                                  <div class="three_div_wrapper">
-                                    <div class="three_div_solo">
-                                      <div class="lbl lbl__vat opt_lbl_primary" style="height:auto;line-height:1;">Inc Vat</div>
-                                    </div>
-                                    <div class="three_div_combo">
-                                      <div class="item2 tc-flex-item__center opt-txt__body2-small ref_no opt_unit__price">&pound; 450.00</div>
-                                      <div>
-                                        <span class="opt-txt__caption">1 <i class="material-icons cover-icons opt-txt__tertiary">arrow_forward</i>6</span>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="opt_flex__item--inherit">
-                                  <div class="solo_wrapper fixed_width">
-                                    <app-opt-counter></app-opt-counter>
-                                  </div>
-                                </div>
-                                <div class="opt_flex__item--inherit">
-                                  <div class="solo_wrapper fixed_width">
-                                    <app-opt-counter></app-opt-counter>
-                                    <div style="font-size:10px;color:#e74c3c;margin-top:3px;white-space:nowrap;">Error message goes here...</div>
-                                  </div>
-                                </div>
-                                <div class="opt_flex__item--inherit">
-                                  <div class="three_div_wrapper reverse">
-                                    <div [matMenuTriggerFor]="menu" class="three_div_solo"><span class="icon-coin-of-dollar"></span></div>
-                                    <mat-menu #menu="matMenu" class="filter-popover price-popover">
-                                      <div class="opt_flex--container" (click)="$event.stopPropagation();">
-                                        <div class="opt_flex__item price--values">
-                                          <div class="opt_flex--container filter-popover-item">
-                                            <div class="opt_flex__item opt_flex__item">
-                                              <span class="opt-txt__body1">Fixed Price</span>
-                                            </div>
-                                            <div class="opt_flex__item opt-txt__align-right">
-                                              <span class="opt-txt__body1 opt-txt__secondary">&pound;55.00</span>
-                                            </div>
+                            <div class="opt_flex--container outer" style="width: 100%;">
+                                <div class="opt_flex__item">
+                                  <div class="opt_flex--container inner">
+                                    <div class="opt_flex__item--inherit">
+                                      <div class="package_main_details">
+                                        <div class="package_icon" matTooltip="Private standard Package">
+                                          <span class="icon-icn-package"></span>
+                                          <div class="add_icon"><i class="material-icons">add</i></div>
+                                        </div>
+                                        <div class="package_details">
+                                          <div class="opt-txt__body2-small package_title" style="line-height: 18px;">
+                                            Chelsea Flower Show Hospitality
                                           </div>
-                                          <div class="opt_flex--container filter-popover-item">
-                                            <div class="opt_flex__item opt_flex__item">
-                                              <span class="opt-txt__body1">Variable Price</span>
-                                            </div>
-                                            <div class="opt_flex__item opt-txt__align-right">
-                                              <span class="opt-txt__body1 opt-txt__secondary">&pound;1555.00</span>
-                                            </div>
+                                          <div class="package_additional_info">
+                                            <span class="icon-icn-item package-color--item  package-font-12" matTooltip="Upsell"></span>
+                                            <span class="opt-txt__caption __link">12-Jan-2018 - 15 Jan 2018</span>
+                                            <span class="opt__subtitle-1-small opt-txt__secondary">| Event Name</span>
                                           </div>
                                         </div>
                                       </div>
-                                    </mat-menu>
-                                    <div class="three_div_combo">
-                                      <div class="item2 opt-typo-subhead-2 price opt_price-section" style="padding-left: 0;">£589392.19</div>
-                                      <div class="opt-txt__caption">Covers</div>
+                                    </div>
+                                    <div class="opt_flex__item--inherit">
+                                      <div class="dual_line_details">
+                                        <div class="availability-icon __last-few" style="font-size: 0;">
+                                          <i class="material-icons">event_available</i>
+                                          <span class="opt-txt__body2" style="vertical-align:middle;">10</span>
+                                        </div>
+                                        <!--<div class="opt-txt__body1-small">Unlimited</div>-->
+                                        <div class="opt-txt__caption __link" [popper]="popper1Content" [popperTrigger]="'click'"
+                                          [popperHideOnClickOutside]="true" popperPlacement="'bottom'" [popperAppendTo]="'body'">Adult</div>
+                                      </div>
+                                    </div>
+                                    <div class="opt_flex__item--inherit">
+                                      <div class="three_div_wrapper">
+                                        <div class="three_div_solo">
+                                          <div class="lbl lbl__vat opt_lbl_primary" style="height:auto;line-height:1;">Inc Vat</div>
+                                        </div>
+                                        <div class="three_div_combo">
+                                          <div class="item2 tc-flex-item__center opt-txt__body2-small ref_no opt_unit__price">&pound;
+                                            450.00</div>
+                                          <div>
+                                            <span class="opt-txt__caption">1 <i class="material-icons cover-icons opt-txt__tertiary">arrow_forward</i>6</span>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="opt_flex__item--inherit">
+                                      <div class="solo_wrapper fixed_width">
+                                        <app-opt-counter></app-opt-counter>
+                                      </div>
+                                    </div>
+                                    <div class="opt_flex__item--inherit">
+                                      <div class="solo_wrapper fixed_width">
+                                        <app-opt-counter></app-opt-counter>
+                                        <div style="font-size:10px;color:#e74c3c;margin-top:3px;white-space:nowrap;">Error message
+                                          goes here...</div>
+                                      </div>
+                                    </div>
+                                    <div class="opt_flex__item--inherit">
+                                      <div class="three_div_wrapper reverse">
+                                        <div [matMenuTriggerFor]="menu" class="three_div_solo"><span class="icon-coin-of-dollar"></span></div>
+                                        <mat-menu #menu="matMenu" class="price-popover">
+                                          <div class="opt_flex--container" (click)="$event.stopPropagation();">
+                                            <div class="opt_flex__item price--values">
+                                              <div class="opt_flex--container filter-popover-item">
+                                                <div class="opt_flex__item opt_flex__item">
+                                                  <span class="opt-txt__body1">Fixed Price</span>
+                                                </div>
+                                                <div class="opt_flex__item opt-txt__align-right">
+                                                  <span class="opt-txt__body1 opt-txt__secondary">&pound;55.00</span>
+                                                </div>
+                                              </div>
+                                              <div class="opt_flex--container filter-popover-item">
+                                                <div class="opt_flex__item opt_flex__item">
+                                                  <span class="opt-txt__body1">Variable Price</span>
+                                                </div>
+                                                <div class="opt_flex__item opt-txt__align-right">
+                                                  <span class="opt-txt__body1 opt-txt__secondary">&pound;1555.00</span>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </mat-menu>
+                                        <div class="three_div_combo">
+                                          <div class="item2 opt-typo-subhead-2 price opt_price-section" style="padding-left: 0;">£589392.19</div>
+                                          <div class="opt-txt__caption">Covers</div>
+                                        </div>
+                                      </div>
                                     </div>
                                   </div>
                                 </div>
+                                <div class="opt_flex__item--inherit">
+                                  <div class="solo_wrapper">
+                                    <button mat-button class="mat-btn-remove--small item4">Remove</button>
+                                  </div>
+                                </div>
+                                <div class="opt_flex__item--inherit">
+                                  <div class="dflex">
+                                    <button class="down-arrow" mat-icon-button color="primary" (click)="expandPannel()"
+                                      [disableRipple]="true">
+                                      <mat-icon>keyboard_arrow_down</mat-icon>
+                                    </button>
+                                  </div>
+                                </div>
                               </div>
-                            </div>
-                            <div class="opt_flex__item--inherit">
-                              <div class="solo_wrapper">
-                                <button mat-button class="mat-btn-primary--small item4">Add</button>
-                              </div>
-                            </div>
-                            <div class="opt_flex__item--inherit">
-                              <div class="dflex">
-                                <button class="down-arrow" mat-icon-button color="primary" (click)="expandPannel()"
-                                        [disableRipple]="true">
-                                  <mat-icon>{{matIcon}}</mat-icon>
-                                </button>
-                              </div>
-                            </div>
-                          </div>
                         </mat-expansion-panel-header>
                         <div class="opt_flex--container al_cen">
                           <div class="opt_flex__item--inherit">

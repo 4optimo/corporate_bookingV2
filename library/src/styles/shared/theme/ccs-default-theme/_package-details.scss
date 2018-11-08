@@ -92,6 +92,14 @@
     width: 100px;
   }
 }
+button{
+  .remove_button{
+    :hover{
+      background-color: $no-color--state;
+    }
+  }
+}
+
 .add_button{
   position: relative;
   display: flex;
