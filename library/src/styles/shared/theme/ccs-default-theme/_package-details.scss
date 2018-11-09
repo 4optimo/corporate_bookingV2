@@ -1,5 +1,14 @@
 @import "variables";
 
+.opt_package-details {
+  .mat-tab-group {
+    margin-top: 30px;
+    .mat-tab-header {
+      display: none;
+    }
+  }
+}
+
 .mat-icon-button {
   &.down-arrow {
     height: 100%;
