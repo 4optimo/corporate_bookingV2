@@ -296,4 +296,15 @@ h1,h2,h3,h4,h5,h6{
 //Confirmation message dialog styles
 .conf-message-wrapper{
   padding:20px;
+  min-height: 90px;
+  .mat-dialog-actions{
+    padding-bottom: 0px;
+  }
+  p{
+    margin-bottom: 0;
+  }
+  .opt_flex--container{
+    min-height: 24px;
+    width: 100%;
+  }
 }
