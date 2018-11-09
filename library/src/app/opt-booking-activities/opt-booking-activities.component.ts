@@ -28,18 +28,18 @@ export class OptBookingActivitiesComponent implements OnInit{
     this.status3 = !this.status3;       
   }
 
-// readtxt1: boolean=false;
-// readtxt2: boolean=false;
-// readtxt3: boolean=false;
-// readToggle1(){
-//   this.readtxt1 = !this.readtxt1;       
-// }
-// readToggle2(){
-//   this.readtxt2 = !this.readtxt2;       
-// }
-// readToggle3(){
-//   this.readtxt3 = !this.readtxt3;       
-// }
+readtxt1: boolean=false;
+readtxt2: boolean=false;
+readtxt3: boolean=false;
+readToggle1(){
+  this.readtxt1 = !this.readtxt1;       
+}
+readToggle2(){
+  this.readtxt2 = !this.readtxt2;       
+}
+readToggle3(){
+  this.readtxt3 = !this.readtxt3;       
+}
 
 
   constructor(public dialog: MatDialog)  { }

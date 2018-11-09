@@ -136,7 +136,8 @@
     line-height: 20px;
   }
   .mat-checkbox-inner-container{
-    margin-right: 10px;
+    margin-right: 20px;
+    margin-left: 10px;
   }
   mat-horizontal-stepper{
     .mat-fab.mat-accent{
@@ -324,6 +325,7 @@
 
   .des-box {
     width: calc(100% - 40px);
+    padding-left:20px;
     .cage_selected {
       margin-left: 20px;
     }
@@ -454,6 +456,9 @@
         //}
       }
     }
+    // .row-desc{
+    //   cursor: pointer;
+    // }
     .show-less{
       max-height: 150px;
       transition: 0.3s;
@@ -462,7 +467,6 @@
         max-height: 30px;
       }
       &:hover{
-        cursor: pointer;
         background-color: #f6f6f6;
       }
     }
@@ -474,16 +478,15 @@
       padding: 10px;
       z-index: 999;
       transition: 0.3s;
-      cursor: pointer;
       .row{
         min-height: 150px;
         align-items: baseline;
       }
     }
-    // .read-toggle{
-    //   color: $opt_color__primary;
-    //   cursor: pointer;
-    // }
+    .read-toggle{
+      color: $opt_color__primary;
+      cursor: pointer;
+    }
   }
 
   .correspondence_entry {
