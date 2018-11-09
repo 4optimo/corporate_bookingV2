@@ -136,7 +136,8 @@
     line-height: 20px;
   }
   .mat-checkbox-inner-container{
-    margin-right: 10px;
+    margin-right: 20px;
+    margin-left: 10px;
   }
   mat-horizontal-stepper{
     .mat-fab.mat-accent{
@@ -277,6 +278,7 @@
   .header-row {
     border-bottom: 2px solid $opt-border-color;
     border-top: 2px solid $opt-border-color;
+    background-color: $opt_color_white;
     min-height: 55px;
     display: flex;
     align-items: center;
@@ -323,6 +325,7 @@
 
   .des-box {
     width: calc(100% - 40px);
+    padding-left:20px;
     .cage_selected {
       margin-left: 20px;
     }
@@ -453,7 +456,37 @@
         //}
       }
     }
-
+    // .row-desc{
+    //   cursor: pointer;
+    // }
+    .show-less{
+      max-height: 150px;
+      transition: 0.3s;
+      background-color: $opt_color_white;
+      .row-desc{
+        max-height: 30px;
+      }
+      &:hover{
+        background-color: #f6f6f6;
+      }
+    }
+    .show-more{
+      min-height: 150px;
+      position: relative;
+      background-color: $opt_color_white;
+      box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.1), 0 1px 18px 0 rgba(0, 0, 0, 0.1);
+      padding: 10px;
+      z-index: 999;
+      transition: 0.3s;
+      .row{
+        min-height: 150px;
+        align-items: baseline;
+      }
+    }
+    .read-toggle{
+      color: $opt_color__primary;
+      cursor: pointer;
+    }
   }
 
   .correspondence_entry {

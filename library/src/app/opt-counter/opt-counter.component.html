@@ -1,5 +1,5 @@
 <div class="counter-wrapper">
-  <div class="opt_flex--container">
+  <div class="opt_flex--container al_cen">
     <div class="opt_flex__item counter-label">
       <span class="opt-txt__body1-small">Count</span>
     </div>
@@ -7,8 +7,16 @@
       <div class="input-wrapper">
         <div class="opt_flex--container">
             <div class="opt_flex__item">
-                <mat-form-field class="">
+                <!-- <mat-form-field class="">
                     <input matInput placeholder="" value="10">
+                </mat-form-field> -->
+                <mat-form-field class="example-full-width">
+                  <input type="text" placeholder="" value="10" aria-label="Assignee" matInput [formControl]="myControl" [matAutocomplete]="auto">
+                  <mat-autocomplete #auto="matAutocomplete" [displayWith]="displayFn">
+                    <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+                      {{option.name}}
+                    </mat-option>
+                  </mat-autocomplete>
                 </mat-form-field>
             </div>
             <div class="opt_flex__item">
@@ -20,4 +28,7 @@
       </div>
     </div>
   </div>
+  <!--<div class="error_msg">-->
+    <!--<div class="opt_txt_status_cancelled">Error Msg</div>-->
+  <!--</div>-->
 </div>

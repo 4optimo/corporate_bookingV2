@@ -1,7 +1,8 @@
 import {Component, OnInit, ViewChild} from '@angular/core';
 import {ModalContentComponent} from "../modal-content/modal-content.component";
 import {MatExpansionPanel} from "@angular/material";
-
+import {MatDialog} from "@angular/material";
+import {OptMessageDialogComponent} from "../opt-message-dialog/opt-message-dialog.component";
 @Component({
   selector: 'app-opt-booking-activities',
   templateUrl: './opt-booking-activities.component.html',
@@ -13,6 +14,45 @@ export class OptBookingActivitiesComponent implements OnInit{
     {value: 'pizza-1', viewValue: 'Pizza'},
     {value: 'tacos-2', viewValue: 'Tacos'}
   ];
+
+  status1: boolean = false;
+  status2: boolean = false;
+  status3: boolean = false;
+  clickEvent1(){
+    this.status1 = !this.status1;       
+  }
+  clickEvent2(){
+    this.status2 = !this.status2;       
+  }
+  clickEvent3(){
+    this.status3 = !this.status3;       
+  }
+
+readtxt1: boolean=false;
+readtxt2: boolean=false;
+readtxt3: boolean=false;
+readToggle1(){
+  this.readtxt1 = !this.readtxt1;       
+}
+readToggle2(){
+  this.readtxt2 = !this.readtxt2;       
+}
+readToggle3(){
+  this.readtxt3 = !this.readtxt3;       
+}
+
+
+  constructor(public dialog: MatDialog)  { }
+
+  public openDeleteItem(){
+    this.dialog.open(OptMessageDialogComponent,{
+      panelClass:'custom-dialog-container',
+      height: 'auto',
+      minHeight: '100px',
+      width: '30%'
+    });
+
+  }
 
   @ViewChild('myPanel1') myPanel1: MatExpansionPanel;
   matIcon1 = 'keyboard_arrow_down' || 'keyboard_arrow_up';
