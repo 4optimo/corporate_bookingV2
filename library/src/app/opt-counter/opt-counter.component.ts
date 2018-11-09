@@ -4,7 +4,7 @@ import {Observable} from 'rxjs';
 import {map, startWith} from 'rxjs/operators';
 
 export interface User {
-  name: 'string';
+  name: string;
 }
 
 @Component({
