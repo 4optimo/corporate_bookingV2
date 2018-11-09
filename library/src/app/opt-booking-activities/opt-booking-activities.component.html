@@ -56,7 +56,7 @@
                     <div class="header_row--action-wrapper">
                       <button mat-button class="mat-btn-primary--small btn-icon-text"><i class="material-icons opt_color_icon_font">note_add</i>
                         <span class="btn-text hidden-sm opt-txt__secondary">Add Note</span></button>
-                      <button mat-button class="mat-btn-primary--small btn-icon-text"><i class="material-icons opt_color_icon_font">delete</i>
+                      <button mat-button class="mat-btn-primary--small btn-icon-text"><i class="material-icons opt_color_icon_font" (click)="openDeleteItem()">delete</i>
                         <span class="btn-text hidden-sm  opt-txt__secondary">Delete</span></button>
                     </div>
                   </div>
@@ -64,7 +64,7 @@
               </div>
             </div>
             <!--Content-->
-            <div class="note_list_item">
+            <div class="note_list_item" [ngClass]="status1 ? 'show-more' : 'show-less'" (click)="clickEvent1()">
               <div class="row">
                 <div class="col-xs-12 col-sm-4 col-md-3	col-lg-3">
                   <div class="opt_flex--container">
@@ -80,10 +80,11 @@
                 </div>
                 <div class="col-xs-12 col-sm-8 col-md-9	col-lg-9">
                   <div class="opt_flex--container">
-                      <div class="opt_flex__item horizontally-center opt_txt_color_tertiary opt-txt__body1-small full-width text-truncate"  [ngClass]="status1 ? 'show-more' : 'show-less'">Lorem
+                      <div class="opt_flex__item horizontally-center opt_txt_color_tertiary opt-txt__body1-small full-width text-truncate row-desc">Lorem
                           ipsum dolor sit amet, consectetuer adipiscing elit.
                           Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
-                          parturient montes, nascetur ridiculus mus.<span class="read-toggle" (click)="readToggle1()" (click)="clickEvent1()"> {{ readtxt1 ? 'Show less' : 'Show more' }}</span>
+                          parturient montes, nascetur ridiculus mus.
+                          <!-- <span class="read-toggle" (click)="readToggle1()" (click)="clickEvent1()"> {{ readtxt1 ? 'Show less' : 'Show more' }}</span> -->
                         </div>
                     <div class="opt_flex__item opt_flex__item--vcenter just-content-end">
                       <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">edit</i></button>
@@ -93,7 +94,7 @@
                 </div>
               </div>
             </div>
-            <div class="note_list_item">
+            <div class="note_list_item" [ngClass]="status2 ? 'show-more' : 'show-less'" (click)="clickEvent2()">
               <div class="row">
                 <div class="col-xs-12 col-sm-4 col-md-3	col-lg-3">
                   <div class="opt_flex--container">
@@ -109,10 +110,11 @@
                 </div>
                 <div class="col-xs-12 col-sm-8 col-md-9	col-lg-9">
                   <div class="opt_flex--container">
-                    <div class="opt_flex__item horizontally-center opt_txt_color_tertiary opt-txt__body1-small full-width text-truncate"  [ngClass]="status2 ? 'show-more' : 'show-less'">Lorem
+                    <div class="opt_flex__item horizontally-center opt_txt_color_tertiary opt-txt__body1-small full-width text-truncate row-desc">Lorem
                       ipsum dolor sit amet, consectetuer adipiscing elit.
                       Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
-                      parturient montes, nascetur ridiculus mus.<span class="read-toggle" (click)="readToggle2()" (click)="clickEvent2()"> {{ readtxt2 ? 'Show less' : 'Show more' }}</span>
+                      parturient montes, nascetur ridiculus mus.
+                      <!-- <span class="read-toggle" (click)="readToggle2()" (click)="clickEvent2()"> {{ readtxt2 ? 'Show less' : 'Show more' }}</span> -->
                     </div>
                     <div class="opt_flex__item opt_flex__item--vcenter just-content-end">
                       <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">edit</i></button>
@@ -122,7 +124,7 @@
                 </div>
               </div>
             </div>
-            <div class="note_list_item">
+            <div class="note_list_item" [ngClass]="status3 ? 'show-more' : 'show-less'" (click)="clickEvent3()">
               <div class="row">
                 <div class="col-xs-12 col-sm-4 col-md-3	col-lg-3">
                   <div class="opt_flex--container">
@@ -138,14 +140,15 @@
                 </div>
                 <div class="col-xs-12 col-sm-8 col-md-9	col-lg-9">
                   <div class="opt_flex--container">
-                      <div class="opt_flex__item horizontally-center opt_txt_color_tertiary opt-txt__body1-small full-width text-truncate"  [ngClass]="status3 ? 'show-more' : 'show-less'">Lorem
+                      <div class="opt_flex__item horizontally-center opt_txt_color_tertiary opt-txt__body1-small full-width text-truncate row-desc">Lorem
                           ipsum dolor sit amet, consectetuer adipiscing elit.
                           Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
-                          parturient montes, nascetur ridiculus mus.<span class="read-toggle" (click)="readToggle3()" (click)="clickEvent3()"> {{ readtxt3 ? 'Show less' : 'Show more' }}</span>
+                          parturient montes, nascetur ridiculus mus.
+                          <!-- <span class="read-toggle" (click)="readToggle3()" (click)="clickEvent3()"> {{ readtxt3 ? 'Show less' : 'Show more' }}</span> -->
                         </div>
                     <div class="opt_flex__item opt_flex__item--vcenter just-content-end">
                       <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">edit</i></button>
-                      <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">delete</i></button>
+                      <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font" (click)="openDeleteItem()">delete</i></button>
                     </div>
                   </div>
                 </div>
