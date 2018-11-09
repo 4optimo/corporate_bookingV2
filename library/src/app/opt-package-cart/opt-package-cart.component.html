@@ -1,564 +1,1041 @@
 <div class=" opt_cart">
-  <!--<div *ngIf="showMePartially">-->
+  <!-- <div *ngIf="showMePartially"> -->
   <div class="opt_package-details opt_package-popup opt_booking__detail">
-
     <div class="opt_cart-wrapper opt--depth__2">
       <div class="package-alert-section opt_flex--container">
         <div class="opt_flex__item--inherit tc-flex-item__center">
           <i class="material-icons icon">add_alert</i>
         </div>
         <div class="opt_flex__item tc-flex-item__center text">
-          <span class="opt__subtitle-2">4 Packages</span><span class="opt-txt__body1"> in Your Cart</span>
+          <span class="opt__subtitle-2">4 Packages</span
+          ><span class="opt-txt__body1"> in Your Cart</span>
         </div>
       </div>
 
       <div class="">
-                    <mat-accordion>
-                      <mat-expansion-panel #myPanel [disabled]="true" *ngFor="let a of packageCartListArray; let index = index" class="loop-class package_expansion_panel">
-                        <mat-expansion-panel-header collapsedHeight="56px" expandedHeight="56px">
-                            <div class="opt_flex--container outer" style="width: 100%;">
-                                <div class="opt_flex__item">
-                                  <div class="opt_flex--container inner">
-                                    <div class="opt_flex__item--inherit">
-                                      <div class="package_main_details">
-                                        <div class="package_icon" matTooltip="Private standard Package">
-                                          <span class="icon-icn-package"></span>
-                                          <div class="add_icon"><i class="material-icons">add</i></div>
-                                        </div>
-                                        <div class="package_details">
-                                          <div class="opt-txt__body2-small package_title" style="line-height: 18px;">
-                                            Chelsea Flower Show Hospitality
-                                          </div>
-                                          <div class="package_additional_info">
-                                            <span class="icon-icn-item package-color--item  package-font-12" matTooltip="Upsell"></span>
-                                            <span class="opt-txt__caption __link">12-Jan-2018 - 15 Jan 2018</span>
-                                            <span class="opt__subtitle-1-small opt-txt__secondary">| Event Name</span>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="opt_flex__item--inherit">
-                                      <div class="dual_line_details">
-                                        <div class="availability-icon __last-few" style="font-size: 0;">
-                                          <i class="material-icons">event_available</i>
-                                          <span class="opt-txt__body2" style="vertical-align:middle;">10</span>
-                                        </div>
-                                        <!--<div class="opt-txt__body1-small">Unlimited</div>-->
-                                        <div class="opt-txt__caption __link" [popper]="popper1Content" [popperTrigger]="'click'"
-                                          [popperHideOnClickOutside]="true" popperPlacement="'bottom'" [popperAppendTo]="'body'">Adult</div>
-                                      </div>
-                                    </div>
-                                    <div class="opt_flex__item--inherit">
-                                      <div class="three_div_wrapper">
-                                        <div class="three_div_solo">
-                                          <div class="lbl lbl__vat opt_lbl_primary" style="height:auto;line-height:1;">Inc Vat</div>
-                                        </div>
-                                        <div class="three_div_combo">
-                                          <div class="item2 tc-flex-item__center opt-txt__body2-small ref_no opt_unit__price">&pound;
-                                            450.00</div>
-                                          <div>
-                                            <span class="opt-txt__caption">1 <i class="material-icons cover-icons opt-txt__tertiary">arrow_forward</i>6</span>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="opt_flex__item--inherit">
-                                      <div class="solo_wrapper fixed_width">
-                                        <app-opt-counter></app-opt-counter>
-                                      </div>
-                                    </div>
-                                    <div class="opt_flex__item--inherit">
-                                      <div class="solo_wrapper fixed_width">
-                                        <app-opt-counter></app-opt-counter>
-                                        <div style="font-size:10px;color:#e74c3c;margin-top:3px;white-space:nowrap;">Error message
-                                          goes here...</div>
-                                      </div>
-                                    </div>
-                                    <div class="opt_flex__item--inherit">
-                                      <div class="three_div_wrapper reverse">
-                                        <div [matMenuTriggerFor]="menu" class="three_div_solo"><span class="icon-coin-of-dollar"></span></div>
-                                        <mat-menu #menu="matMenu" class="price-popover">
-                                          <div class="opt_flex--container" (click)="$event.stopPropagation();">
-                                            <div class="opt_flex__item price--values">
-                                              <div class="opt_flex--container filter-popover-item">
-                                                <div class="opt_flex__item opt_flex__item">
-                                                  <span class="opt-txt__body1">Fixed Price</span>
-                                                </div>
-                                                <div class="opt_flex__item opt-txt__align-right">
-                                                  <span class="opt-txt__body1 opt-txt__secondary">&pound;55.00</span>
-                                                </div>
-                                              </div>
-                                              <div class="opt_flex--container filter-popover-item">
-                                                <div class="opt_flex__item opt_flex__item">
-                                                  <span class="opt-txt__body1">Variable Price</span>
-                                                </div>
-                                                <div class="opt_flex__item opt-txt__align-right">
-                                                  <span class="opt-txt__body1 opt-txt__secondary">&pound;1555.00</span>
-                                                </div>
-                                              </div>
-                                            </div>
-                                          </div>
-                                        </mat-menu>
-                                        <div class="three_div_combo">
-                                          <div class="item2 opt-typo-subhead-2 price opt_price-section" style="padding-left: 0;">£589392.19</div>
-                                          <div class="opt-txt__caption">Covers</div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
+        <mat-accordion>
+          <mat-expansion-panel
+            #myPanel
+            [disabled]="true"
+            *ngFor="let a of packageCartListArray; let index = index"
+            class="loop-class package_expansion_panel"
+          >
+            <mat-expansion-panel-header
+              collapsedHeight="56px"
+              expandedHeight="56px"
+            >
+              <div class="opt_flex--container outer" style="width: 100%;">
+                <div class="opt_flex__item">
+                  <div class="opt_flex--container inner">
+                    <div class="opt_flex__item--inherit">
+                      <div class="package_main_details">
+                        <div
+                          class="package_icon"
+                          matTooltip="Private standard Package"
+                        >
+                          <span class="icon-icn-package"></span>
+                          <div class="add_icon">
+                            <i class="material-icons">add</i>
+                          </div>
+                        </div>
+                        <div class="package_details">
+                          <div
+                            class="opt-txt__body2-small package_title"
+                            style="line-height: 18px;"
+                          >
+                            Chelsea Flower Show Hospitality
+                          </div>
+                          <div class="package_additional_info">
+                            <span
+                              class="icon-icn-item package-color--item  package-font-12"
+                              matTooltip="Upsell"
+                            ></span>
+                            <span class="opt-txt__caption __link"
+                              >12-Jan-2018 - 15 Jan 2018</span
+                            >
+                            <span
+                              class="opt__subtitle-1-small opt-txt__secondary"
+                              >| Event Name</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="opt_flex__item--inherit">
+                      <div class="dual_line_details">
+                        <div
+                          class="availability-icon __last-few"
+                          style="font-size: 0;"
+                        >
+                          <i class="material-icons">event_available</i>
+                          <span
+                            class="opt-txt__body2"
+                            style="vertical-align:middle;"
+                            >10</span
+                          >
+                        </div>
+                        <!--
+                          <div class="opt-txt__body1-small">Unlimited</div>
+                        -->
+                        <div
+                          class="opt-txt__caption __link"
+                          [popper]="popper1Content"
+                          [popperTrigger]="'click'"
+                          [popperHideOnClickOutside]="true"
+                          popperPlacement="'bottom'"
+                          [popperAppendTo]="'body'"
+                        >
+                          Adult
+                        </div>
+                      </div>
+                    </div>
+                    <div class="opt_flex__item--inherit">
+                      <div class="three_div_wrapper">
+                        <div class="three_div_solo">
+                          <div
+                            class="lbl lbl__vat opt_lbl_primary"
+                            style="height:auto;line-height:1;"
+                          >
+                            Inc Vat
+                          </div>
+                        </div>
+                        <div class="three_div_combo">
+                          <div
+                            class="item2 tc-flex-item__center opt-txt__body2-small ref_no opt_unit__price"
+                          >
+                            &pound; 450.00
+                          </div>
+                          <div>
+                            <span class="opt-txt__caption"
+                              >1
+                              <i
+                                class="material-icons cover-icons opt-txt__tertiary"
+                                >arrow_forward</i
+                              >6</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="opt_flex__item--inherit">
+                      <div class="solo_wrapper fixed_width">
+                        <app-opt-counter></app-opt-counter>
+                      </div>
+                    </div>
+                    <div class="opt_flex__item--inherit">
+                      <div class="solo_wrapper fixed_width">
+                        <app-opt-counter></app-opt-counter>
+                        <div
+                          style="font-size:10px;color:#e74c3c;margin-top:3px;white-space:nowrap;"
+                        >
+                          Error message goes here...
+                        </div>
+                      </div>
+                    </div>
+                    <div class="opt_flex__item--inherit">
+                      <div class="three_div_wrapper reverse">
+                        <div [matMenuTriggerFor]="menu" class="three_div_solo">
+                          <span class="icon-coin-of-dollar"></span>
+                        </div>
+                        <mat-menu #menu="matMenu" class="price-popover">
+                          <div
+                            class="opt_flex--container"
+                            (click)="$event.stopPropagation()"
+                          >
+                            <div class="opt_flex__item price--values">
+                              <div
+                                class="opt_flex--container filter-popover-item"
+                              >
+                                <div class="opt_flex__item opt_flex__item">
+                                  <span class="opt-txt__body1"
+                                    >Fixed Price</span
+                                  >
                                 </div>
-                                <div class="opt_flex__item--inherit">
-                                  <div class="solo_wrapper">
-                                    <button mat-button class="mat-btn-remove--small item4">Remove</button>
-                                  </div>
-                                </div>
-                                <div class="opt_flex__item--inherit">
-                                  <div class="dflex">
-                                    <button class="down-arrow" mat-icon-button color="primary" (click)="expandPannel()"
-                                      [disableRipple]="true">
-                                      <mat-icon>keyboard_arrow_down</mat-icon>
-                                    </button>
-                                  </div>
+                                <div
+                                  class="opt_flex__item opt-txt__align-right"
+                                >
+                                  <span
+                                    class="opt-txt__body1 opt-txt__secondary"
+                                    >&pound;55.00</span
+                                  >
                                 </div>
                               </div>
-                        </mat-expansion-panel-header>
-                        <div class="opt_flex--container al_cen">
-                          <div class="opt_flex__item--inherit">
-                            <div class="icon_btn_group">
-                              <button mat-icon-button class="btn-color-default">
-                                <span class="icon-icn-item"> </span>
-                              </button>
-                              <button mat-icon-button class="btn-color-default">
-                                <span class="icon-icn-office-big-chair"> </span>
-                              </button>
-
-                              <button mat-icon-button class="btn-color-default">
-                                <span class="icon-icn-table"> </span>
-                              </button>
-
-                              <button mat-icon-button class="btn-color-default" [popper]="popper2Content"
-                                      [popperTrigger]="'click'" [popperHideOnClickOutside]="true" popperPlacement="'bottom'"
-                                      [popperAppendTo]="'body'">
-                                <span class="material-icons"> date_range</span>
-                              </button>
-
-                              <button mat-icon-button class="btn-color-default">
-                                <span class="material-icons">domain</span>
-                              </button>
-
-                              <button mat-icon-button class="btn-color-default">
-                                <span class="material-icons">local_activity</span>
-                              </button>
-
-                              <button mat-icon-button class="btn-color-default">
-                                <span class="material-icons">local_parking</span>
-                              </button>
-
-                              <button mat-icon-button class="btn-color-default" [disableRipple]="true" style="cursor:default;">
-                                <span class="material-icons">help</span>
-                              </button>
+                              <div
+                                class="opt_flex--container filter-popover-item"
+                              >
+                                <div class="opt_flex__item opt_flex__item">
+                                  <span class="opt-txt__body1"
+                                    >Variable Price</span
+                                  >
+                                </div>
+                                <div
+                                  class="opt_flex__item opt-txt__align-right"
+                                >
+                                  <span
+                                    class="opt-txt__body1 opt-txt__secondary"
+                                    >&pound;1555.00</span
+                                  >
+                                </div>
+                              </div>
                             </div>
                           </div>
-                          <div class="opt_flex__item">
-                            <div class="text_solo_wrapper">
-                              <div class="opt-txt__caption">Quisque in dolor hendrerit, dignissim lacus non, accumsan
-                                nisl. Duis sollicitudin convallis magna.
+                        </mat-menu>
+                        <div class="three_div_combo">
+                          <div
+                            class="item2 opt-typo-subhead-2 price opt_price-section"
+                            style="padding-left: 0;"
+                          >
+                            £589392.19
+                          </div>
+                          <div class="opt-txt__caption">Covers</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="opt_flex__item--inherit">
+                  <div class="solo_wrapper">
+                    <button mat-button class="mat-btn-remove--small item4">
+                      Remove
+                    </button>
+                  </div>
+                </div>
+                <div class="opt_flex__item--inherit">
+                  <div class="dflex">
+                    <button
+                      class="down-arrow"
+                      mat-icon-button
+                      color="primary"
+                      (click)="expandPannel()"
+                      [disableRipple]="true"
+                    >
+                      <mat-icon>keyboard_arrow_down</mat-icon>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </mat-expansion-panel-header>
+            <div class="opt_flex--container al_cen">
+              <div class="opt_flex__item--inherit">
+                <div class="icon_btn_group">
+                  <button mat-icon-button class="btn-color-default">
+                    <span class="icon-icn-item"> </span>
+                  </button>
+                  <button mat-icon-button class="btn-color-default">
+                    <span class="icon-icn-office-big-chair"> </span>
+                  </button>
+
+                  <button mat-icon-button class="btn-color-default">
+                    <span class="icon-icn-table"> </span>
+                  </button>
+
+                  <button
+                    mat-icon-button
+                    class="btn-color-default"
+                    [popper]="popper2Content"
+                    [popperTrigger]="'click'"
+                    [popperHideOnClickOutside]="true"
+                    popperPlacement="'bottom'"
+                    [popperAppendTo]="'body'"
+                  >
+                    <span class="material-icons"> date_range</span>
+                  </button>
+
+                  <button mat-icon-button class="btn-color-default">
+                    <span class="material-icons">domain</span>
+                  </button>
+
+                  <button mat-icon-button class="btn-color-default">
+                    <span class="material-icons">local_activity</span>
+                  </button>
+
+                  <button mat-icon-button class="btn-color-default">
+                    <span class="material-icons">local_parking</span>
+                  </button>
+
+                  <button
+                    mat-icon-button
+                    class="btn-color-default"
+                    [disableRipple]="true"
+                    style="cursor:default;"
+                  >
+                    <span class="material-icons">help</span>
+                  </button>
+                </div>
+              </div>
+              <div class="opt_flex__item">
+                <div class="text_solo_wrapper">
+                  <div class="opt-txt__caption">
+                    Quisque in dolor hendrerit, dignissim lacus non, accumsan
+                    nisl. Duis sollicitudin convallis magna.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </mat-expansion-panel>
+        </mat-accordion>
+        <!--
+          <div class="opt_package-details opt_booking__list opt_booking__detail">
+        -->
+        <!-- <mat-accordion> -->
+        <!--
+          <mat-expansion-panel #myPanel [disabled]="true" class="opt-expand&#45;&#45;line">
+        -->
+        <!--
+          <mat-expansion-panel-header class="opt_width-define opt_expand__header first-outer-wrapper"
+        -->
+        <!--
+          collapsedHeight=".collapsedHeight" expandedHeight=".expandedHeight">
+        -->
+        <!-- <div class="opt_expand&#45;&#45;container"> -->
+        <!-- <div class="opt_flex&#45;&#45;container"> -->
+        <!-- <div class="opt_flex__item __expansion-lft&#45;&#45;side"> -->
+        <!--
+          <div class="row opt_flex&#45;&#45;container tc-flex-item__center ">
+        -->
+        <!-- <div class="col-sm-8 col-md-4	col-lg-4	col-xs-12"> -->
+        <!--
+          <mat-panel-title class="opt_flex&#45;&#45;container tc-flex-item__center">
+        -->
+        <!-- <div class="opt_flex__item&#45;&#45;inherit "> -->
+        <!-- <div class="icon__cage"> -->
+        <!-- <div class="opt_circle__bespoke"> -->
+        <!-- <span class="icon-icn-package"> </span> -->
+        <!-- </div> -->
+        <!-- </div> -->
+        <!-- </div> -->
+        <!-- <div class="opt_flex__item"> -->
+        <!-- <div class="opt_width-calc"> -->
+        <!--
+          <div class="opt-txt__body2-small ref_no">Chelsea Flower Show Hospitality</div>
+        -->
+        <!-- <div> -->
+        <!-- <div class="opt_flex__item&#45;&#45;inherit icon__cage __min"> -->
+        <!-- <span class="icon-icn-item package-color&#45;&#45;item"></span> -->
+        <!--
+          <span class="opt__subtitle-1-small opt-txt__secondary">12-Jan-2018 </span>
+        -->
+        <!--
+          <span class="opt__subtitle-1-small opt-txt__secondary">| Event Name</span>
+        -->
+        <!-- </div> -->
+        <!-- </div> -->
+        <!-- </div> -->
+        <!-- </div> -->
+        <!-- </mat-panel-title> -->
+        <!-- </div> -->
+        <!-- <div class="col-sm-4 col-md-1	col-lg-1	col-xs-12"> -->
+        <!-- <mat-panel-description class="opt_flex&#45;&#45;container"> -->
+        <!-- <div class="middle-details"> -->
+        <!--
+          <div class="opt_flex__item tc-flex-item__center opt-txt__body1-small">Unlimited</div>
+        -->
+        <!--
+          <div class="opt_flex__item tc-flex-item__center opt-txt__caption __link">Adult</div>
+        -->
+
+        <!-- &lt;!&ndash;link package popover start&ndash;&gt; -->
+        <!--
+          &lt;!&ndash;<div class="opt_linked-packages opt&#45;&#45;depth__2 ">&ndash;&gt;
+        -->
+        <!-- &lt;!&ndash;<div class="outer-wrapper">&ndash;&gt; -->
+        <!-- &lt;!&ndash;<div class="inner-wrapper">&ndash;&gt; -->
+        <!--
+          &lt;!&ndash;<div class="opt_flex&#45;&#45;container tc-flex-item__center individual-row  row">&ndash;&gt;
+        -->
+        <!--
+          &lt;!&ndash;<div class="col-sm-5 col-md-4	col-lg-4	col-xs-4">&ndash;&gt;
+        -->
+        <!--
+          &lt;!&ndash;<div class="opt_flex__item tc-flex-item__center">&ndash;&gt;
+        -->
+        <!--
+          &lt;!&ndash;<i class="icon-add-booking2 linked-icon"></i>&ndash;&gt;
+        -->
+        <!--
+          &lt;!&ndash;<span class="opt__subtitle-2-small opt-txt__secondary">Child</span>&ndash;&gt;
+        -->
+        <!-- &lt;!&ndash;</div>&ndash;&gt; -->
+        <!-- &lt;!&ndash;</div>&ndash;&gt; -->
+        <!--
+          &lt;!&ndash;<div class="col-sm-3 col-md-3	col-lg-3	col-xs-3">&ndash;&gt;
+        -->
+        <!--
+          &lt;!&ndash;<div class="opt_flex__item opt-txt__body2 tc-flex-item__center">£90.00</div>&ndash;&gt;
+        -->
+        <!-- &lt;!&ndash;</div>&ndash;&gt; -->
+        <!--
+          &lt;!&ndash;<div class="col-sm-3  col-md-3	col-lg-3	col-xs-3">&ndash;&gt;
+        -->
+        <!--
+          &lt;!&ndash;<div class="opt_flex__item opt_counter__item tc-flex-item__center">&ndash;&gt;
+        -->
+        <!-- &lt;!&ndash;<div class="opt_counter">&ndash;&gt; -->
+        <!--
+          &lt;!&ndash;<div class="opt_flex&#45;&#45;container ">&ndash;&gt;
+        -->
+        <!--
+          &lt;!&ndash;<div class="opt_flex__item&#45;&#45;inherit">&ndash;&gt;
+        -->
+        <!-- &lt;!&ndash;<button mat-raised-button>+</button>&ndash;&gt; -->
+        <!-- &lt;!&ndash;</div>&ndash;&gt; -->
+        <!--
+          &lt;!&ndash;<div class="opt_flex__item&#45;&#45;inherit  tc-flex-item__center">&ndash;&gt;
+        -->
+        <!-- &lt;!&ndash;<form class="example-form">&ndash;&gt; -->
+        <!-- &lt;!&ndash;<mat-form-field class="">&ndash;&gt; -->
+        <!-- &lt;!&ndash;<input matInput value="1">&ndash;&gt; -->
+        <!-- &lt;!&ndash;</mat-form-field>&ndash;&gt; -->
+        <!-- &lt;!&ndash;</form>&ndash;&gt; -->
+        <!-- &lt;!&ndash;</div>&ndash;&gt; -->
+        <!--
+          &lt;!&ndash;<div class="opt_flex__item&#45;&#45;inherit">&ndash;&gt;
+        -->
+        <!-- &lt;!&ndash;<button mat-raised-button>-</button>&ndash;&gt; -->
+        <!-- &lt;!&ndash;</div>&ndash;&gt; -->
+        <!-- &lt;!&ndash;</div>&ndash;&gt; -->
+        <!-- &lt;!&ndash;</div>&ndash;&gt; -->
+        <!-- &lt;!&ndash;</div>&ndash;&gt; -->
+        <!-- &lt;!&ndash;</div>&ndash;&gt; -->
+        <!--
+          &lt;!&ndash;<div class="col-sm-2  col-md-2	col-lg-2	col-xs-2">&ndash;&gt;
+        -->
+        <!--
+          &lt;!&ndash;<div class="opt_flex__item opt__subtitle-2-small tc-flex-item__center">£180.00</div>&ndash;&gt;
+        -->
+        <!-- &lt;!&ndash;</div>&ndash;&gt; -->
+        <!-- &lt;!&ndash;</div>&ndash;&gt; -->
+        <!-- &lt;!&ndash;</div>&ndash;&gt; -->
+        <!-- &lt;!&ndash;<div class="inner-wrapper">&ndash;&gt; -->
+        <!--
+          &lt;!&ndash;<div class="opt_flex&#45;&#45;container tc-flex-item__center individual-row  row">&ndash;&gt;
+        -->
+        <!--
+          &lt;!&ndash;<div class="col-sm-4 col-md-4	col-lg-4	col-xs-4">&ndash;&gt;
+        -->
+        <!-- &lt;!&ndash;<div class="opt_flex__item">&ndash;&gt; -->
+        <!--
+          &lt;!&ndash;<i class="icon-add-booking2 linked-icon "></i>&ndash;&gt;
+        -->
+        <!--
+          &lt;!&ndash;<span class="opt__subtitle-2-small opt-txt__secondary">Senior (+65)</span>&ndash;&gt;
+        -->
+        <!-- &lt;!&ndash;</div>&ndash;&gt; -->
+        <!-- &lt;!&ndash;</div>&ndash;&gt; -->
+        <!--
+          &lt;!&ndash;<div class="col-sm-3 col-md-3	col-lg-3	col-xs-3">&ndash;&gt;
+        -->
+        <!--
+          &lt;!&ndash;<div class="opt_flex__item opt-txt__body2">£90.00</div>&ndash;&gt;
+        -->
+        <!-- &lt;!&ndash;</div>&ndash;&gt; -->
+        <!--
+          &lt;!&ndash;<div class="col-sm-3  col-md-3	col-lg-3	col-xs-3">&ndash;&gt;
+        -->
+        <!--
+          &lt;!&ndash;<div class="opt_flex__item opt_counter__item">&ndash;&gt;
+        -->
+        <!-- &lt;!&ndash;<div class="opt_counter">&ndash;&gt; -->
+        <!--
+          &lt;!&ndash;<div class="opt_flex&#45;&#45;container ">&ndash;&gt;
+        -->
+        <!--
+          &lt;!&ndash;<div class="opt_flex__item&#45;&#45;inherit">&ndash;&gt;
+        -->
+        <!-- &lt;!&ndash;<button mat-raised-button>+</button>&ndash;&gt; -->
+        <!-- &lt;!&ndash;</div>&ndash;&gt; -->
+        <!--
+          &lt;!&ndash;<div class="opt_flex__item&#45;&#45;inherit  tc-flex-item__center">&ndash;&gt;
+        -->
+        <!-- &lt;!&ndash;<form class="example-form">&ndash;&gt; -->
+        <!-- &lt;!&ndash;<mat-form-field class="">&ndash;&gt; -->
+        <!-- &lt;!&ndash;<input matInput value="1">&ndash;&gt; -->
+        <!-- &lt;!&ndash;</mat-form-field>&ndash;&gt; -->
+        <!-- &lt;!&ndash;</form>&ndash;&gt; -->
+        <!-- &lt;!&ndash;</div>&ndash;&gt; -->
+        <!--
+          &lt;!&ndash;<div class="opt_flex__item&#45;&#45;inherit">&ndash;&gt;
+        -->
+        <!-- &lt;!&ndash;<button mat-raised-button>-</button>&ndash;&gt; -->
+        <!-- &lt;!&ndash;</div>&ndash;&gt; -->
+        <!-- &lt;!&ndash;</div>&ndash;&gt; -->
+        <!-- &lt;!&ndash;</div>&ndash;&gt; -->
+        <!-- &lt;!&ndash;</div>&ndash;&gt; -->
+        <!-- &lt;!&ndash;</div>&ndash;&gt; -->
+        <!--
+          &lt;!&ndash;<div class="col-sm-2  col-md-2	col-lg-2	col-xs-2">&ndash;&gt;
+        -->
+        <!--
+          &lt;!&ndash;<div class="opt_flex__item opt__subtitle-2-small">£180.00</div>&ndash;&gt;
+        -->
+        <!-- &lt;!&ndash;</div>&ndash;&gt; -->
+        <!-- &lt;!&ndash;</div>&ndash;&gt; -->
+        <!-- &lt;!&ndash;</div>&ndash;&gt; -->
+        <!-- &lt;!&ndash;</div>&ndash;&gt; -->
+        <!-- &lt;!&ndash;</div>&ndash;&gt; -->
+        <!-- &lt;!&ndash;popover end&ndash;&gt; -->
+
+        <!-- </div> -->
+        <!-- </mat-panel-description> -->
+        <!-- </div> -->
+        <!-- <div class="col-sm-6 col-md-4	col-lg-4	col-xs-12"> -->
+        <!-- <mat-panel-description class="opt_flex&#45;&#45;container"> -->
+        <!--
+          <div class="opt_flex__item tc-flex-item__center opt-txt__secondary opt__subtitle-2-small opt_unit__price">£92.19</div>
+        -->
+        <!-- <div class="opt_flex__item opt_counter__item"> -->
+        <!-- <div class="opt_counter"> -->
+        <!-- <div class="opt_flex&#45;&#45;container "> -->
+        <!-- <div class="opt_flex__item&#45;&#45;inherit"> -->
+        <!-- <button mat-raised-button>+</button> -->
+        <!-- </div> -->
+        <!--
+          <div class="opt_flex__item&#45;&#45;inherit  tc-flex-item__center">
+        -->
+        <!-- <form class="example-form"> -->
+        <!-- <mat-form-field class=""> -->
+        <!-- <input matInput value="1"> -->
+        <!-- </mat-form-field> -->
+        <!-- </form> -->
+        <!-- </div> -->
+        <!-- <div class="opt_flex__item&#45;&#45;inherit"> -->
+        <!-- <button mat-raised-button>-</button> -->
+        <!-- </div> -->
+        <!-- </div> -->
+        <!-- </div> -->
+        <!-- </div> -->
+        <!--
+          <div class="opt_flex__item tc-flex-item__center opt-txt__caption opt_cover__range">
+        -->
+        <!-- <span> -->
+        <!--
+          1 <i class="material-icons cover-icons opt-txt__tertiary">arrow_forward</i>6
+        -->
+        <!-- </span> -->
+        <!-- </div> -->
+        <!-- </mat-panel-description> -->
+        <!-- </div> -->
+        <!--
+          <div class="col-sm-6  col-md-2	col-lg-2	col-xs-12  opt_price-section">
+        -->
+        <!-- <mat-panel-description class="opt_flex&#45;&#45;container"> -->
+        <!--
+          <div class="opt_flex__item inc-label"><span class="lbl lbl__vat">Inc Vat</span></div>
+        -->
+        <!-- <div class=" opt_flex__item opt-typo-subhead-2 price">£92.19 -->
+        <!-- <div class="opt-txt__caption">Covers</div> -->
+        <!-- </div> -->
+        <!-- <div class="opt_flex__item  price&#45;&#45;value__icon"> -->
+        <!-- <span class="icon-coin-of-dollar"></span> -->
+        <!-- </div> -->
+        <!-- </mat-panel-description> -->
+        <!-- </div> -->
+        <!-- <div class="col-sm-12  col-md-1	col-lg-1	col-xs-12"> -->
+        <!-- <mat-panel-description class="opt_flex&#45;&#45;container"> -->
+        <!--
+          <div mat-raised-button class="btn-color-default opt_flex__item opt-txt__light btn btn-select">
+        -->
+        <!-- Add -->
+        <!-- </div> -->
+        <!-- </mat-panel-description> -->
+        <!-- </div> -->
+        <!-- </div> -->
+        <!-- </div> -->
+        <!-- <div class="opt_flex__item __expansion-rgt&#45;&#45;side"> -->
+        <!-- <div class="col tc-flex-item__center"> -->
+        <!--
+          <div class="opt_flex__item action__button tc-flex-item__center">
+        -->
+        <!--
+          <button class="down-arrow" mat-icon-button color="primary" (click)="expandPannel()"
+        -->
+        <!-- [disableRipple]="true"> -->
+        <!-- <mat-icon>{{matIcon}}</mat-icon> -->
+        <!-- </button> -->
+        <!-- </div> -->
+        <!-- </div> -->
+        <!-- </div> -->
+        <!-- </div> -->
+        <!-- </div> -->
+        <!-- </mat-expansion-panel-header> -->
+
+        <!-- <div class="opt_expand&#45;&#45;container"> -->
+        <!-- <div class="opt_flex&#45;&#45;container"> -->
+        <!-- <div class="opt_flex__item"> -->
+        <!--
+          <div class="row opt_flex&#45;&#45;container tc-flex-item__center">
+        -->
+        <!-- <div class="col-sm-6 col-md-4	col-lg-4	col-xs-12"> -->
+        <!--
+          <div class="opt_flex&#45;&#45;container row tc-flex-item__center __data">
+        -->
+        <!-- <div class="opt_flex__item icon__cage __multi-buttons"> -->
+
+        <!-- <button mat-icon-button class="btn-color-default"> -->
+        <!-- <span class="icon-icn-item"> </span> -->
+        <!-- </button> -->
+
+        <!-- <button mat-icon-button class="btn-color-default"> -->
+        <!-- <span class="icon-icn-office-big-chair"> </span> -->
+        <!-- </button> -->
+
+        <!-- <button mat-icon-button class="btn-color-default"> -->
+        <!-- <span class="icon-icn-table"> </span> -->
+        <!-- </button> -->
+
+        <!-- <button mat-icon-button class="btn-color-default"> -->
+        <!-- <span class="material-icons"> date_range</span> -->
+        <!-- </button> -->
+
+        <!-- &lt;!&ndash;calendar expand start&ndash;&gt; -->
+        <!-- <div class="opt_calendar-expand opt&#45;&#45;depth__2"> -->
+        <!-- <div class="outer-wrapper"> -->
+        <!-- <div class="inner-wrapper opt_flex&#45;&#45;container"> -->
+        <!-- <div class="date-hover"> -->
+        <!-- <div class="date-select"> -->
+        <!-- <div> -->
+        <!--
+          <div (click)="picker.open()" class="opt_flex__item tc-flex-item__center">
+        -->
+        <!-- <i class="material-icons">date_range</i> -->
+        <!-- <div> -->
+        <!--
+          <mat-form-field class="example-full-width opt_flex__item date-field">
+        -->
+        <!-- <input matInput [matDatepicker]="picker" placeholder=""> -->
+        <!-- <mat-datepicker #picker></mat-datepicker> -->
+        <!-- </mat-form-field> -->
+        <!-- </div> -->
+        <!-- </div> -->
+        <!-- </div> -->
+        <!-- </div> -->
+        <!-- </div> -->
+
+        <!-- <div class="opt_flex__item time-slot-selection"> -->
+        <!-- <div class="time-slot"> -->
+        <!-- <div class="individual-row"> -->
+        <!--
+          <div class="opt_flex&#45;&#45;container tc-flex-item__center row">
+        -->
+        <!-- <div class="col-sm-4 col-md-4	col-lg-4	col-xs-6"> -->
+        <!-- <div class="opt_flex__item tc-flex-item__center"> -->
+        <!-- <i class="material-icons opt-txt__secondary">access_time</i> -->
+        <!--
+          <span class="opt__subtitle-1-small opt-txt__secondary">11:00 AM - 12:15 PM</span>
+        -->
+        <!-- </div> -->
+        <!-- </div> -->
+        <!-- <div class="col-sm-1 col-md-1	col-lg-1	col-xs-6"> -->
+        <!--
+          <div class="opt_flex__item opt__subtitle-1-small tc-flex-item__center">£10.00</div>
+        -->
+        <!-- </div> -->
+        <!-- <div class="col-sm-3 col-md-3	col-lg-3	col-xs-6"> -->
+        <!--
+          <div class="opt_flex__item tc-flex-item__center availability-icon __last-few">
+        -->
+        <!-- <i class="material-icons">event_available</i> -->
+        <!-- <span class="opt-txt__body2">10</span> -->
+        <!-- </div> -->
+        <!-- </div> -->
+        <!-- <div class="col-sm-2  col-md-2	col-lg-2	col-xs-6"> -->
+        <!--
+          <div class="opt_flex__item opt_counter__item tc-flex-item__center">
+        -->
+        <!-- <div class="opt_counter"> -->
+        <!-- <div class="opt_flex&#45;&#45;container "> -->
+        <!-- <div class="opt_flex__item&#45;&#45;inherit"> -->
+        <!-- <button mat-raised-button>+</button> -->
+        <!-- </div> -->
+        <!--
+          <div class="opt_flex__item&#45;&#45;inherit  tc-flex-item__center">
+        -->
+        <!-- <form class="example-form"> -->
+        <!-- <mat-form-field class=""> -->
+        <!-- <input matInput value="10"> -->
+        <!-- </mat-form-field> -->
+        <!-- </form> -->
+        <!-- </div> -->
+        <!-- <div class="opt_flex__item&#45;&#45;inherit"> -->
+        <!-- <button mat-raised-button>-</button> -->
+        <!-- </div> -->
+        <!-- </div> -->
+        <!-- </div> -->
+        <!-- </div> -->
+        <!-- </div> -->
+        <!-- <div class="col-sm-2  col-md-2	col-lg-2	col-xs-6"> -->
+        <!--
+          <div class="opt_flex__item opt__subtitle-2-small tc-flex-item__center __link">£100.00</div>
+        -->
+        <!-- </div> -->
+        <!-- </div> -->
+        <!-- </div> -->
+        <!-- </div> -->
+        <!-- <div class="time-slot"> -->
+        <!-- <div class="individual-row"> -->
+        <!--
+          <div class="opt_flex&#45;&#45;container tc-flex-item__center row">
+        -->
+        <!-- <div class="col-sm-4 col-md-4	col-lg-4	col-xs-6"> -->
+        <!-- <div class="opt_flex__item tc-flex-item__center"> -->
+        <!-- <i class="material-icons opt-txt__secondary">access_time</i> -->
+        <!--
+          <span class="opt__subtitle-1-small opt-txt__secondary">11:00 AM - 12:15 PM</span>
+        -->
+        <!-- </div> -->
+        <!-- </div> -->
+        <!-- <div class="col-sm-1 col-md-1	col-lg-1	col-xs-6"> -->
+        <!--
+          <div class="opt_flex__item opt__subtitle-1-small tc-flex-item__center">£10.00</div>
+        -->
+        <!-- </div> -->
+        <!-- <div class="col-sm-3 col-md-3	col-lg-3	col-xs-6"> -->
+        <!--
+          <div class="opt_flex__item tc-flex-item__center availability-icon __good-availability">
+        -->
+        <!-- <i class="material-icons">event_available</i> -->
+        <!-- <span class="opt-txt__body2">6</span> -->
+        <!-- </div> -->
+        <!-- </div> -->
+        <!-- <div class="col-sm-2  col-md-2	col-lg-2	col-xs-6"> -->
+        <!--
+          <div class="opt_flex__item opt_counter__item tc-flex-item__center">
+        -->
+        <!-- <div class="opt_counter"> -->
+        <!-- <div class="opt_flex&#45;&#45;container "> -->
+        <!-- <div class="opt_flex__item&#45;&#45;inherit"> -->
+        <!-- <button mat-raised-button>+</button> -->
+        <!-- </div> -->
+        <!--
+          <div class="opt_flex__item&#45;&#45;inherit  tc-flex-item__center">
+        -->
+        <!-- <form class="example-form"> -->
+        <!-- <mat-form-field class=""> -->
+        <!-- <input matInput value="1"> -->
+        <!-- </mat-form-field> -->
+        <!-- </form> -->
+        <!-- </div> -->
+        <!-- <div class="opt_flex__item&#45;&#45;inherit"> -->
+        <!-- <button mat-raised-button>-</button> -->
+        <!-- </div> -->
+        <!-- </div> -->
+        <!-- </div> -->
+        <!-- </div> -->
+        <!-- </div> -->
+        <!-- <div class="col-sm-2  col-md-2	col-lg-2	col-xs-6"> -->
+        <!--
+          <div class="opt_flex__item opt__subtitle-2-small tc-flex-item__center __link">£10.00</div>
+        -->
+        <!-- </div> -->
+        <!-- </div> -->
+        <!-- </div> -->
+        <!-- </div> -->
+        <!-- <div class="time-slot"> -->
+        <!-- <div class="individual-row"> -->
+        <!--
+          <div class="opt_flex&#45;&#45;container tc-flex-item__center row">
+        -->
+        <!-- <div class="col-sm-4 col-md-4	col-lg-4	col-xs-6"> -->
+        <!-- <div class="opt_flex__item tc-flex-item__center"> -->
+        <!-- <i class="material-icons opt-txt__secondary">access_time</i> -->
+        <!--
+          <span class="opt__subtitle-1-small opt-txt__secondary">11:00 AM - 12:15 PM</span>
+        -->
+        <!-- </div> -->
+        <!-- </div> -->
+        <!-- <div class="col-sm-1 col-md-1	col-lg-1	col-xs-6"> -->
+        <!--
+          <div class="opt_flex__item opt__subtitle-1-small tc-flex-item__center">£10.00</div>
+        -->
+        <!-- </div> -->
+        <!-- <div class="col-sm-3 col-md-3	col-lg-3	col-xs-6"> -->
+        <!--
+          <div class="opt_flex__item tc-flex-item__center availability-icon __limited">
+        -->
+        <!-- <i class="material-icons">event_available</i> -->
+        <!-- <span class="opt-txt__body2">7</span> -->
+        <!-- </div> -->
+        <!-- </div> -->
+        <!-- <div class="col-sm-2  col-md-2	col-lg-2	col-xs-6"> -->
+        <!--
+          <div class="opt_flex__item opt_counter__item tc-flex-item__center">
+        -->
+        <!-- <div class="opt_counter"> -->
+        <!-- <div class="opt_flex&#45;&#45;container "> -->
+        <!-- <div class="opt_flex__item&#45;&#45;inherit"> -->
+        <!-- <button mat-raised-button>+</button> -->
+        <!-- </div> -->
+        <!--
+          <div class="opt_flex__item&#45;&#45;inherit  tc-flex-item__center">
+        -->
+        <!-- <form class="example-form"> -->
+        <!-- <mat-form-field class=""> -->
+        <!-- <input matInput value="3"> -->
+        <!-- </mat-form-field> -->
+        <!-- </form> -->
+        <!-- </div> -->
+        <!-- <div class="opt_flex__item&#45;&#45;inherit"> -->
+        <!-- <button mat-raised-button>-</button> -->
+        <!-- </div> -->
+        <!-- </div> -->
+        <!-- </div> -->
+        <!-- </div> -->
+        <!-- </div> -->
+        <!-- <div class="col-sm-2  col-md-2	col-lg-2	col-xs-6"> -->
+        <!--
+          <div class="opt_flex__item opt__subtitle-2-small tc-flex-item__center __link">£30.00</div>
+        -->
+        <!-- </div> -->
+        <!-- </div> -->
+        <!-- </div> -->
+        <!-- </div> -->
+        <!-- </div> -->
+        <!-- </div> -->
+        <!-- </div> -->
+        <!-- </div> -->
+        <!-- &lt;!&ndash;end the calendar expand&ndash;&gt; -->
+
+        <!-- <button mat-icon-button class="btn-color-default"> -->
+        <!-- <span class="material-icons">help</span> -->
+        <!-- </button> -->
+
+        <!-- </div> -->
+        <!-- </div> -->
+        <!-- </div> -->
+        <!--
+          <div class="col-sm-6 col-md-8	col-lg-8 col-xs-12 package-expand-description ">
+        -->
+        <!-- <div class="tc-flex-item__center"> -->
+        <!--
+          <div class="opt-txt__caption">Quisque in dolor hendrerit, dignissim lacus non, accumsan nisl. Duis sollicitudin convallis magna.</div>
+        -->
+        <!-- </div> -->
+        <!-- </div> -->
+        <!-- </div> -->
+        <!-- </div> -->
+        <!-- </div> -->
+        <!-- </div> -->
+        <!-- </mat-expansion-panel> -->
+        <!-- </mat-accordion> -->
+        <!-- </div> -->
+        <mat-expansion-panel
+          #myPanel
+          [disabled]="true"
+          class="package_expansion_panel"
+        >
+          <mat-expansion-panel-header
+            collapsedHeight="56px"
+            expandedHeight="56px"
+          >
+            <div class="opt_flex--container outer" style="width: 100%;">
+              <div class="opt_flex__item" style="pointer-events: none;">
+                <div class="opt_flex--container inner">
+                  <div class="opt_flex__item--inherit">
+                    <div class="package_main_details">
+                      <div
+                        class="package_icon"
+                        matTooltip="Private standard Package"
+                      >
+                        <span class="icon-icn-package"></span>
+                        <div class="add_icon">
+                          <i class="material-icons">add</i>
+                        </div>
+                      </div>
+                      <div class="package_details">
+                        <div
+                          class="opt-txt__body2-small package_title"
+                          style="line-height: 18px;"
+                        >
+                          Chelsea Flower Show Hospitality
+                        </div>
+                        <div class="package_additional_info">
+                          <span
+                            class="icon-icn-item package-color--item  package-font-12"
+                            matTooltip="Upsell"
+                          ></span>
+                          <span class="opt-txt__caption"
+                            >12-Jan-2018 - 15 Jan 2018</span
+                          >
+                          <span class="opt__subtitle-1-small opt-txt__secondary"
+                            >| Event Name</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="opt_flex__item--inherit">
+                    <div class="dual_line_details">
+                      <div
+                        class="availability-icon __last-few"
+                        style="font-size: 0;"
+                      >
+                        <i class="material-icons">event_available</i>
+                        <span
+                          class="opt-txt__body2"
+                          style="vertical-align:middle;"
+                          >10</span
+                        >
+                      </div>
+                      <!-- <div class="opt-txt__body1-small">Unlimited</div> -->
+                      <div class="opt-txt__caption">Adult</div>
+                    </div>
+                  </div>
+                  <div class="opt_flex__item--inherit">
+                    <div class="three_div_wrapper">
+                      <div class="three_div_solo">
+                        <div
+                          class="lbl lbl__vat opt_lbl_primary"
+                          style="height:auto;line-height:1;"
+                        >
+                          Inc Vat
+                        </div>
+                      </div>
+                      <div class="three_div_combo">
+                        <div
+                          class="item2 tc-flex-item__center opt-txt__body2-small ref_no opt_unit__price"
+                        >
+                          &pound; 450.00
+                        </div>
+                        <div>
+                          <span class="opt-txt__caption"
+                            >1
+                            <i
+                              class="material-icons cover-icons opt-txt__tertiary"
+                              >arrow_forward</i
+                            >6</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="opt_flex__item--inherit">
+                    <div class="solo_wrapper fixed_width">
+                      <app-opt-counter></app-opt-counter>
+                    </div>
+                  </div>
+                  <div class="opt_flex__item--inherit">
+                    <div class="solo_wrapper fixed_width">
+                      <app-opt-counter></app-opt-counter>
+                    </div>
+                  </div>
+                  <div class="opt_flex__item--inherit">
+                    <div class="three_div_wrapper reverse">
+                      <div [matMenuTriggerFor]="menu" class="three_div_solo">
+                        <span class="icon-coin-of-dollar"></span>
+                      </div>
+                      <mat-menu #menu="matMenu" class="price-popover">
+                        <div
+                          class="opt_flex--container"
+                          (click)="$event.stopPropagation()"
+                        >
+                          <div class="opt_flex__item price--values">
+                            <div
+                              class="opt_flex--container filter-popover-item"
+                            >
+                              <div class="opt_flex__item opt_flex__item">
+                                <span class="opt-txt__body1">Fixed Price</span>
+                              </div>
+                              <div class="opt_flex__item opt-txt__align-right">
+                                <span class="opt-txt__body1 opt-txt__secondary"
+                                  >&pound;55.00</span
+                                >
+                              </div>
+                            </div>
+                            <div
+                              class="opt_flex--container filter-popover-item"
+                            >
+                              <div class="opt_flex__item opt_flex__item">
+                                <span class="opt-txt__body1"
+                                  >Variable Price</span
+                                >
+                              </div>
+                              <div class="opt_flex__item opt-txt__align-right">
+                                <span class="opt-txt__body1 opt-txt__secondary"
+                                  >&pound;1555.00</span
+                                >
                               </div>
                             </div>
                           </div>
                         </div>
-                      </mat-expansion-panel>
-                    </mat-accordion>
-                  <!--<div class="opt_package-details opt_booking__list opt_booking__detail">-->
-                  <!--<mat-accordion>-->
-                  <!--<mat-expansion-panel #myPanel [disabled]="true" class="opt-expand&#45;&#45;line">-->
-                  <!--<mat-expansion-panel-header class="opt_width-define opt_expand__header first-outer-wrapper"-->
-                  <!--collapsedHeight=".collapsedHeight" expandedHeight=".expandedHeight">-->
-                  <!--<div class="opt_expand&#45;&#45;container">-->
-                  <!--<div class="opt_flex&#45;&#45;container">-->
-                  <!--<div class="opt_flex__item __expansion-lft&#45;&#45;side">-->
-                  <!--<div class="row opt_flex&#45;&#45;container tc-flex-item__center ">-->
-                  <!--<div class="col-sm-8 col-md-4	col-lg-4	col-xs-12">-->
-                  <!--<mat-panel-title class="opt_flex&#45;&#45;container tc-flex-item__center">-->
-                  <!--<div class="opt_flex__item&#45;&#45;inherit ">-->
-                  <!--<div class="icon__cage">-->
-                  <!--<div class="opt_circle__bespoke">-->
-                  <!--<span class="icon-icn-package"> </span>-->
-                  <!--</div>-->
-                  <!--</div>-->
-                  <!--</div>-->
-                  <!--<div class="opt_flex__item">-->
-                  <!--<div class="opt_width-calc">-->
-                  <!--<div class="opt-txt__body2-small ref_no">Chelsea Flower Show Hospitality</div>-->
-                  <!--<div>-->
-                  <!--<div class="opt_flex__item&#45;&#45;inherit icon__cage __min">-->
-                  <!--<span class="icon-icn-item package-color&#45;&#45;item"></span>-->
-                  <!--<span class="opt__subtitle-1-small opt-txt__secondary">12-Jan-2018 </span>-->
-                  <!--<span class="opt__subtitle-1-small opt-txt__secondary">| Event Name</span>-->
-                  <!--</div>-->
-                  <!--</div>-->
-                  <!--</div>-->
-                  <!--</div>-->
-                  <!--</mat-panel-title>-->
-                  <!--</div>-->
-                  <!--<div class="col-sm-4 col-md-1	col-lg-1	col-xs-12">-->
-                  <!--<mat-panel-description class="opt_flex&#45;&#45;container">-->
-                  <!--<div class="middle-details">-->
-                  <!--<div class="opt_flex__item tc-flex-item__center opt-txt__body1-small">Unlimited</div>-->
-                  <!--<div class="opt_flex__item tc-flex-item__center opt-txt__caption __link">Adult</div>-->
+                      </mat-menu>
+                      <div class="three_div_combo">
+                        <div
+                          class="item2 opt-typo-subhead-2 price opt_price-section"
+                          style="padding-left: 0;"
+                        >
+                          £589392.19
+                        </div>
+                        <div class="opt-txt__caption">Covers</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="opt_flex__item--inherit">
+                <div class="dflex">
+                  <button
+                    class="down-arrow"
+                    mat-icon-button
+                    color="primary"
+                    (click)="expandPannel()"
+                    [disableRipple]="true"
+                  >
+                    <mat-icon>keyboard_arrow_down</mat-icon>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </mat-expansion-panel-header>
+          <div class="opt_flex--container al_cen">
+            <div class="opt_flex__item--inherit">
+              <div class="icon_btn_group">
+                <button mat-icon-button class="btn-color-default">
+                  <span class="icon-icn-item"> </span>
+                </button>
+                <button mat-icon-button class="btn-color-default">
+                  <span class="icon-icn-office-big-chair"> </span>
+                </button>
 
-                  <!--&lt;!&ndash;link package popover start&ndash;&gt;-->
-                  <!--&lt;!&ndash;<div class="opt_linked-packages opt&#45;&#45;depth__2 ">&ndash;&gt;-->
-                  <!--&lt;!&ndash;<div class="outer-wrapper">&ndash;&gt;-->
-                  <!--&lt;!&ndash;<div class="inner-wrapper">&ndash;&gt;-->
-                  <!--&lt;!&ndash;<div class="opt_flex&#45;&#45;container tc-flex-item__center individual-row  row">&ndash;&gt;-->
-                  <!--&lt;!&ndash;<div class="col-sm-5 col-md-4	col-lg-4	col-xs-4">&ndash;&gt;-->
-                  <!--&lt;!&ndash;<div class="opt_flex__item tc-flex-item__center">&ndash;&gt;-->
-                  <!--&lt;!&ndash;<i class="icon-add-booking2 linked-icon"></i>&ndash;&gt;-->
-                  <!--&lt;!&ndash;<span class="opt__subtitle-2-small opt-txt__secondary">Child</span>&ndash;&gt;-->
-                  <!--&lt;!&ndash;</div>&ndash;&gt;-->
-                  <!--&lt;!&ndash;</div>&ndash;&gt;-->
-                  <!--&lt;!&ndash;<div class="col-sm-3 col-md-3	col-lg-3	col-xs-3">&ndash;&gt;-->
-                  <!--&lt;!&ndash;<div class="opt_flex__item opt-txt__body2 tc-flex-item__center">£90.00</div>&ndash;&gt;-->
-                  <!--&lt;!&ndash;</div>&ndash;&gt;-->
-                  <!--&lt;!&ndash;<div class="col-sm-3  col-md-3	col-lg-3	col-xs-3">&ndash;&gt;-->
-                  <!--&lt;!&ndash;<div class="opt_flex__item opt_counter__item tc-flex-item__center">&ndash;&gt;-->
-                  <!--&lt;!&ndash;<div class="opt_counter">&ndash;&gt;-->
-                  <!--&lt;!&ndash;<div class="opt_flex&#45;&#45;container ">&ndash;&gt;-->
-                  <!--&lt;!&ndash;<div class="opt_flex__item&#45;&#45;inherit">&ndash;&gt;-->
-                  <!--&lt;!&ndash;<button mat-raised-button>+</button>&ndash;&gt;-->
-                  <!--&lt;!&ndash;</div>&ndash;&gt;-->
-                  <!--&lt;!&ndash;<div class="opt_flex__item&#45;&#45;inherit  tc-flex-item__center">&ndash;&gt;-->
-                  <!--&lt;!&ndash;<form class="example-form">&ndash;&gt;-->
-                  <!--&lt;!&ndash;<mat-form-field class="">&ndash;&gt;-->
-                  <!--&lt;!&ndash;<input matInput value="1">&ndash;&gt;-->
-                  <!--&lt;!&ndash;</mat-form-field>&ndash;&gt;-->
-                  <!--&lt;!&ndash;</form>&ndash;&gt;-->
-                  <!--&lt;!&ndash;</div>&ndash;&gt;-->
-                  <!--&lt;!&ndash;<div class="opt_flex__item&#45;&#45;inherit">&ndash;&gt;-->
-                  <!--&lt;!&ndash;<button mat-raised-button>-</button>&ndash;&gt;-->
-                  <!--&lt;!&ndash;</div>&ndash;&gt;-->
-                  <!--&lt;!&ndash;</div>&ndash;&gt;-->
-                  <!--&lt;!&ndash;</div>&ndash;&gt;-->
-                  <!--&lt;!&ndash;</div>&ndash;&gt;-->
-                  <!--&lt;!&ndash;</div>&ndash;&gt;-->
-                  <!--&lt;!&ndash;<div class="col-sm-2  col-md-2	col-lg-2	col-xs-2">&ndash;&gt;-->
-                  <!--&lt;!&ndash;<div class="opt_flex__item opt__subtitle-2-small tc-flex-item__center">£180.00</div>&ndash;&gt;-->
-                  <!--&lt;!&ndash;</div>&ndash;&gt;-->
-                  <!--&lt;!&ndash;</div>&ndash;&gt;-->
-                  <!--&lt;!&ndash;</div>&ndash;&gt;-->
-                  <!--&lt;!&ndash;<div class="inner-wrapper">&ndash;&gt;-->
-                  <!--&lt;!&ndash;<div class="opt_flex&#45;&#45;container tc-flex-item__center individual-row  row">&ndash;&gt;-->
-                  <!--&lt;!&ndash;<div class="col-sm-4 col-md-4	col-lg-4	col-xs-4">&ndash;&gt;-->
-                  <!--&lt;!&ndash;<div class="opt_flex__item">&ndash;&gt;-->
-                  <!--&lt;!&ndash;<i class="icon-add-booking2 linked-icon "></i>&ndash;&gt;-->
-                  <!--&lt;!&ndash;<span class="opt__subtitle-2-small opt-txt__secondary">Senior (+65)</span>&ndash;&gt;-->
-                  <!--&lt;!&ndash;</div>&ndash;&gt;-->
-                  <!--&lt;!&ndash;</div>&ndash;&gt;-->
-                  <!--&lt;!&ndash;<div class="col-sm-3 col-md-3	col-lg-3	col-xs-3">&ndash;&gt;-->
-                  <!--&lt;!&ndash;<div class="opt_flex__item opt-txt__body2">£90.00</div>&ndash;&gt;-->
-                  <!--&lt;!&ndash;</div>&ndash;&gt;-->
-                  <!--&lt;!&ndash;<div class="col-sm-3  col-md-3	col-lg-3	col-xs-3">&ndash;&gt;-->
-                  <!--&lt;!&ndash;<div class="opt_flex__item opt_counter__item">&ndash;&gt;-->
-                  <!--&lt;!&ndash;<div class="opt_counter">&ndash;&gt;-->
-                  <!--&lt;!&ndash;<div class="opt_flex&#45;&#45;container ">&ndash;&gt;-->
-                  <!--&lt;!&ndash;<div class="opt_flex__item&#45;&#45;inherit">&ndash;&gt;-->
-                  <!--&lt;!&ndash;<button mat-raised-button>+</button>&ndash;&gt;-->
-                  <!--&lt;!&ndash;</div>&ndash;&gt;-->
-                  <!--&lt;!&ndash;<div class="opt_flex__item&#45;&#45;inherit  tc-flex-item__center">&ndash;&gt;-->
-                  <!--&lt;!&ndash;<form class="example-form">&ndash;&gt;-->
-                  <!--&lt;!&ndash;<mat-form-field class="">&ndash;&gt;-->
-                  <!--&lt;!&ndash;<input matInput value="1">&ndash;&gt;-->
-                  <!--&lt;!&ndash;</mat-form-field>&ndash;&gt;-->
-                  <!--&lt;!&ndash;</form>&ndash;&gt;-->
-                  <!--&lt;!&ndash;</div>&ndash;&gt;-->
-                  <!--&lt;!&ndash;<div class="opt_flex__item&#45;&#45;inherit">&ndash;&gt;-->
-                  <!--&lt;!&ndash;<button mat-raised-button>-</button>&ndash;&gt;-->
-                  <!--&lt;!&ndash;</div>&ndash;&gt;-->
-                  <!--&lt;!&ndash;</div>&ndash;&gt;-->
-                  <!--&lt;!&ndash;</div>&ndash;&gt;-->
-                  <!--&lt;!&ndash;</div>&ndash;&gt;-->
-                  <!--&lt;!&ndash;</div>&ndash;&gt;-->
-                  <!--&lt;!&ndash;<div class="col-sm-2  col-md-2	col-lg-2	col-xs-2">&ndash;&gt;-->
-                  <!--&lt;!&ndash;<div class="opt_flex__item opt__subtitle-2-small">£180.00</div>&ndash;&gt;-->
-                  <!--&lt;!&ndash;</div>&ndash;&gt;-->
-                  <!--&lt;!&ndash;</div>&ndash;&gt;-->
-                  <!--&lt;!&ndash;</div>&ndash;&gt;-->
-                  <!--&lt;!&ndash;</div>&ndash;&gt;-->
-                  <!--&lt;!&ndash;</div>&ndash;&gt;-->
-                  <!--&lt;!&ndash;popover end&ndash;&gt;-->
+                <button mat-icon-button class="btn-color-default">
+                  <span class="icon-icn-table"> </span>
+                </button>
 
-                  <!--</div>-->
-                  <!--</mat-panel-description>-->
-                  <!--</div>-->
-                  <!--<div class="col-sm-6 col-md-4	col-lg-4	col-xs-12">-->
-                  <!--<mat-panel-description class="opt_flex&#45;&#45;container">-->
-                  <!--<div class="opt_flex__item tc-flex-item__center opt-txt__secondary opt__subtitle-2-small opt_unit__price">£92.19</div>-->
-                  <!--<div class="opt_flex__item opt_counter__item">-->
-                  <!--<div class="opt_counter">-->
-                  <!--<div class="opt_flex&#45;&#45;container ">-->
-                  <!--<div class="opt_flex__item&#45;&#45;inherit">-->
-                  <!--<button mat-raised-button>+</button>-->
-                  <!--</div>-->
-                  <!--<div class="opt_flex__item&#45;&#45;inherit  tc-flex-item__center">-->
-                  <!--<form class="example-form">-->
-                  <!--<mat-form-field class="">-->
-                  <!--<input matInput value="1">-->
-                  <!--</mat-form-field>-->
-                  <!--</form>-->
-                  <!--</div>-->
-                  <!--<div class="opt_flex__item&#45;&#45;inherit">-->
-                  <!--<button mat-raised-button>-</button>-->
-                  <!--</div>-->
-                  <!--</div>-->
-                  <!--</div>-->
-                  <!--</div>-->
-                  <!--<div class="opt_flex__item tc-flex-item__center opt-txt__caption opt_cover__range">-->
-                  <!--<span>-->
-                  <!--1 <i class="material-icons cover-icons opt-txt__tertiary">arrow_forward</i>6-->
-                  <!--</span>-->
-                  <!--</div>-->
-                  <!--</mat-panel-description>-->
-                  <!--</div>-->
-                  <!--<div class="col-sm-6  col-md-2	col-lg-2	col-xs-12  opt_price-section">-->
-                  <!--<mat-panel-description class="opt_flex&#45;&#45;container">-->
-                  <!--<div class="opt_flex__item inc-label"><span class="lbl lbl__vat">Inc Vat</span></div>-->
-                  <!--<div class=" opt_flex__item opt-typo-subhead-2 price">£92.19-->
-                  <!--<div class="opt-txt__caption">Covers</div>-->
-                  <!--</div>-->
-                  <!--<div class="opt_flex__item  price&#45;&#45;value__icon">-->
-                  <!--<span class="icon-coin-of-dollar"></span>-->
-                  <!--</div>-->
-                  <!--</mat-panel-description>-->
-                  <!--</div>-->
-                  <!--<div class="col-sm-12  col-md-1	col-lg-1	col-xs-12">-->
-                  <!--<mat-panel-description class="opt_flex&#45;&#45;container">-->
-                  <!--<div mat-raised-button class="btn-color-default opt_flex__item opt-txt__light btn btn-select">-->
-                  <!--Add-->
-                  <!--</div>-->
-                  <!--</mat-panel-description>-->
-                  <!--</div>-->
-                  <!--</div>-->
-                  <!--</div>-->
-                  <!--<div class="opt_flex__item __expansion-rgt&#45;&#45;side">-->
-                  <!--<div class="col tc-flex-item__center">-->
-                  <!--<div class="opt_flex__item action__button tc-flex-item__center">-->
-                  <!--<button class="down-arrow" mat-icon-button color="primary" (click)="expandPannel()"-->
-                  <!--[disableRipple]="true">-->
-                  <!--<mat-icon>{{matIcon}}</mat-icon>-->
-                  <!--</button>-->
-                  <!--</div>-->
-                  <!--</div>-->
-                  <!--</div>-->
-                  <!--</div>-->
-                  <!--</div>-->
-                  <!--</mat-expansion-panel-header>-->
+                <button mat-icon-button class="btn-color-default">
+                  <span class="material-icons"> date_range</span>
+                </button>
 
-                  <!--<div class="opt_expand&#45;&#45;container">-->
-                  <!--<div class="opt_flex&#45;&#45;container">-->
-                  <!--<div class="opt_flex__item">-->
-                  <!--<div class="row opt_flex&#45;&#45;container tc-flex-item__center">-->
-                  <!--<div class="col-sm-6 col-md-4	col-lg-4	col-xs-12">-->
-                  <!--<div class="opt_flex&#45;&#45;container row tc-flex-item__center __data">-->
-                  <!--<div class="opt_flex__item icon__cage __multi-buttons">-->
+                <button mat-icon-button class="btn-color-default">
+                  <span class="material-icons">domain</span>
+                </button>
 
-                  <!--<button mat-icon-button class="btn-color-default">-->
-                  <!--<span class="icon-icn-item"> </span>-->
-                  <!--</button>-->
+                <button mat-icon-button class="btn-color-default">
+                  <span class="material-icons">local_activity</span>
+                </button>
 
-                  <!--<button mat-icon-button class="btn-color-default">-->
-                  <!--<span class="icon-icn-office-big-chair"> </span>-->
-                  <!--</button>-->
+                <button mat-icon-button class="btn-color-default">
+                  <span class="material-icons">local_parking</span>
+                </button>
 
-                  <!--<button mat-icon-button class="btn-color-default">-->
-                  <!--<span class="icon-icn-table"> </span>-->
-                  <!--</button>-->
-
-                  <!--<button mat-icon-button class="btn-color-default">-->
-                  <!--<span class="material-icons"> date_range</span>-->
-                  <!--</button>-->
-
-                  <!--&lt;!&ndash;calendar expand start&ndash;&gt;-->
-                  <!--<div class="opt_calendar-expand opt&#45;&#45;depth__2">-->
-                  <!--<div class="outer-wrapper">-->
-                  <!--<div class="inner-wrapper opt_flex&#45;&#45;container">-->
-                  <!--<div class="date-hover">-->
-                  <!--<div class="date-select">-->
-                  <!--<div>-->
-                  <!--<div (click)="picker.open()" class="opt_flex__item tc-flex-item__center">-->
-                  <!--<i class="material-icons">date_range</i>-->
-                  <!--<div>-->
-                  <!--<mat-form-field class="example-full-width opt_flex__item date-field">-->
-                  <!--<input matInput [matDatepicker]="picker" placeholder="">-->
-                  <!--<mat-datepicker #picker></mat-datepicker>-->
-                  <!--</mat-form-field>-->
-                  <!--</div>-->
-                  <!--</div>-->
-                  <!--</div>-->
-                  <!--</div>-->
-                  <!--</div>-->
-
-                  <!--<div class="opt_flex__item time-slot-selection">-->
-                  <!--<div class="time-slot">-->
-                  <!--<div class="individual-row">-->
-                  <!--<div class="opt_flex&#45;&#45;container tc-flex-item__center row">-->
-                  <!--<div class="col-sm-4 col-md-4	col-lg-4	col-xs-6">-->
-                  <!--<div class="opt_flex__item tc-flex-item__center">-->
-                  <!--<i class="material-icons opt-txt__secondary">access_time</i>-->
-                  <!--<span class="opt__subtitle-1-small opt-txt__secondary">11:00 AM - 12:15 PM</span>-->
-                  <!--</div>-->
-                  <!--</div>-->
-                  <!--<div class="col-sm-1 col-md-1	col-lg-1	col-xs-6">-->
-                  <!--<div class="opt_flex__item opt__subtitle-1-small tc-flex-item__center">£10.00</div>-->
-                  <!--</div>-->
-                  <!--<div class="col-sm-3 col-md-3	col-lg-3	col-xs-6">-->
-                  <!--<div class="opt_flex__item tc-flex-item__center availability-icon __last-few">-->
-                  <!--<i class="material-icons">event_available</i>-->
-                  <!--<span class="opt-txt__body2">10</span>-->
-                  <!--</div>-->
-                  <!--</div>-->
-                  <!--<div class="col-sm-2  col-md-2	col-lg-2	col-xs-6">-->
-                  <!--<div class="opt_flex__item opt_counter__item tc-flex-item__center">-->
-                  <!--<div class="opt_counter">-->
-                  <!--<div class="opt_flex&#45;&#45;container ">-->
-                  <!--<div class="opt_flex__item&#45;&#45;inherit">-->
-                  <!--<button mat-raised-button>+</button>-->
-                  <!--</div>-->
-                  <!--<div class="opt_flex__item&#45;&#45;inherit  tc-flex-item__center">-->
-                  <!--<form class="example-form">-->
-                  <!--<mat-form-field class="">-->
-                  <!--<input matInput value="10">-->
-                  <!--</mat-form-field>-->
-                  <!--</form>-->
-                  <!--</div>-->
-                  <!--<div class="opt_flex__item&#45;&#45;inherit">-->
-                  <!--<button mat-raised-button>-</button>-->
-                  <!--</div>-->
-                  <!--</div>-->
-                  <!--</div>-->
-                  <!--</div>-->
-                  <!--</div>-->
-                  <!--<div class="col-sm-2  col-md-2	col-lg-2	col-xs-6">-->
-                  <!--<div class="opt_flex__item opt__subtitle-2-small tc-flex-item__center __link">£100.00</div>-->
-                  <!--</div>-->
-                  <!--</div>-->
-                  <!--</div>-->
-                  <!--</div>-->
-                  <!--<div class="time-slot">-->
-                  <!--<div class="individual-row">-->
-                  <!--<div class="opt_flex&#45;&#45;container tc-flex-item__center row">-->
-                  <!--<div class="col-sm-4 col-md-4	col-lg-4	col-xs-6">-->
-                  <!--<div class="opt_flex__item tc-flex-item__center">-->
-                  <!--<i class="material-icons opt-txt__secondary">access_time</i>-->
-                  <!--<span class="opt__subtitle-1-small opt-txt__secondary">11:00 AM - 12:15 PM</span>-->
-                  <!--</div>-->
-                  <!--</div>-->
-                  <!--<div class="col-sm-1 col-md-1	col-lg-1	col-xs-6">-->
-                  <!--<div class="opt_flex__item opt__subtitle-1-small tc-flex-item__center">£10.00</div>-->
-                  <!--</div>-->
-                  <!--<div class="col-sm-3 col-md-3	col-lg-3	col-xs-6">-->
-                  <!--<div class="opt_flex__item tc-flex-item__center availability-icon __good-availability">-->
-                  <!--<i class="material-icons">event_available</i>-->
-                  <!--<span class="opt-txt__body2">6</span>-->
-                  <!--</div>-->
-                  <!--</div>-->
-                  <!--<div class="col-sm-2  col-md-2	col-lg-2	col-xs-6">-->
-                  <!--<div class="opt_flex__item opt_counter__item tc-flex-item__center">-->
-                  <!--<div class="opt_counter">-->
-                  <!--<div class="opt_flex&#45;&#45;container ">-->
-                  <!--<div class="opt_flex__item&#45;&#45;inherit">-->
-                  <!--<button mat-raised-button>+</button>-->
-                  <!--</div>-->
-                  <!--<div class="opt_flex__item&#45;&#45;inherit  tc-flex-item__center">-->
-                  <!--<form class="example-form">-->
-                  <!--<mat-form-field class="">-->
-                  <!--<input matInput value="1">-->
-                  <!--</mat-form-field>-->
-                  <!--</form>-->
-                  <!--</div>-->
-                  <!--<div class="opt_flex__item&#45;&#45;inherit">-->
-                  <!--<button mat-raised-button>-</button>-->
-                  <!--</div>-->
-                  <!--</div>-->
-                  <!--</div>-->
-                  <!--</div>-->
-                  <!--</div>-->
-                  <!--<div class="col-sm-2  col-md-2	col-lg-2	col-xs-6">-->
-                  <!--<div class="opt_flex__item opt__subtitle-2-small tc-flex-item__center __link">£10.00</div>-->
-                  <!--</div>-->
-                  <!--</div>-->
-                  <!--</div>-->
-                  <!--</div>-->
-                  <!--<div class="time-slot">-->
-                  <!--<div class="individual-row">-->
-                  <!--<div class="opt_flex&#45;&#45;container tc-flex-item__center row">-->
-                  <!--<div class="col-sm-4 col-md-4	col-lg-4	col-xs-6">-->
-                  <!--<div class="opt_flex__item tc-flex-item__center">-->
-                  <!--<i class="material-icons opt-txt__secondary">access_time</i>-->
-                  <!--<span class="opt__subtitle-1-small opt-txt__secondary">11:00 AM - 12:15 PM</span>-->
-                  <!--</div>-->
-                  <!--</div>-->
-                  <!--<div class="col-sm-1 col-md-1	col-lg-1	col-xs-6">-->
-                  <!--<div class="opt_flex__item opt__subtitle-1-small tc-flex-item__center">£10.00</div>-->
-                  <!--</div>-->
-                  <!--<div class="col-sm-3 col-md-3	col-lg-3	col-xs-6">-->
-                  <!--<div class="opt_flex__item tc-flex-item__center availability-icon __limited">-->
-                  <!--<i class="material-icons">event_available</i>-->
-                  <!--<span class="opt-txt__body2">7</span>-->
-                  <!--</div>-->
-                  <!--</div>-->
-                  <!--<div class="col-sm-2  col-md-2	col-lg-2	col-xs-6">-->
-                  <!--<div class="opt_flex__item opt_counter__item tc-flex-item__center">-->
-                  <!--<div class="opt_counter">-->
-                  <!--<div class="opt_flex&#45;&#45;container ">-->
-                  <!--<div class="opt_flex__item&#45;&#45;inherit">-->
-                  <!--<button mat-raised-button>+</button>-->
-                  <!--</div>-->
-                  <!--<div class="opt_flex__item&#45;&#45;inherit  tc-flex-item__center">-->
-                  <!--<form class="example-form">-->
-                  <!--<mat-form-field class="">-->
-                  <!--<input matInput value="3">-->
-                  <!--</mat-form-field>-->
-                  <!--</form>-->
-                  <!--</div>-->
-                  <!--<div class="opt_flex__item&#45;&#45;inherit">-->
-                  <!--<button mat-raised-button>-</button>-->
-                  <!--</div>-->
-                  <!--</div>-->
-                  <!--</div>-->
-                  <!--</div>-->
-                  <!--</div>-->
-                  <!--<div class="col-sm-2  col-md-2	col-lg-2	col-xs-6">-->
-                  <!--<div class="opt_flex__item opt__subtitle-2-small tc-flex-item__center __link">£30.00</div>-->
-                  <!--</div>-->
-                  <!--</div>-->
-                  <!--</div>-->
-                  <!--</div>-->
-                  <!--</div>-->
-                  <!--</div>-->
-                  <!--</div>-->
-                  <!--</div>-->
-                  <!--&lt;!&ndash;end the calendar expand&ndash;&gt;-->
-
-                  <!--<button mat-icon-button class="btn-color-default">-->
-                  <!--<span class="material-icons">help</span>-->
-                  <!--</button>-->
-
-                  <!--</div>-->
-                  <!--</div>-->
-                  <!--</div>-->
-                  <!--<div class="col-sm-6 col-md-8	col-lg-8 col-xs-12 package-expand-description ">-->
-                  <!--<div class="tc-flex-item__center">-->
-                  <!--<div class="opt-txt__caption">Quisque in dolor hendrerit, dignissim lacus non, accumsan nisl. Duis sollicitudin convallis magna.</div>-->
-                  <!--</div>-->
-                  <!--</div>-->
-                  <!--</div>-->
-                  <!--</div>-->
-                  <!--</div>-->
-                  <!--</div>-->
-                  <!--</mat-expansion-panel>-->
-                  <!--</mat-accordion>-->
-                  <!--</div>-->
+                <button
+                  mat-icon-button
+                  class="btn-color-default"
+                  [disableRipple]="true"
+                  style="cursor:default;"
+                >
+                  <span class="material-icons">help</span>
+                </button>
+              </div>
+            </div>
+            <div class="opt_flex__item">
+              <div class="text_solo_wrapper">
+                <div class="opt-txt__caption">
+                  Quisque in dolor hendrerit, dignissim lacus non, accumsan
+                  nisl. Duis sollicitudin convallis magna.
+                </div>
+              </div>
+            </div>
+          </div>
+        </mat-expansion-panel>
       </div>
 
       <div class="footer">
@@ -570,7 +1047,6 @@
         </div>
       </div>
     </div>
-
   </div>
-  <!--</div>-->
+  <!-- </div> -->
 </div>
