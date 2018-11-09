@@ -818,17 +818,13 @@
         <!-- </mat-expansion-panel> -->
         <!-- </mat-accordion> -->
         <!-- </div> -->
-        <mat-expansion-panel
-          #myPanel
-          [disabled]="true"
-          class="package_expansion_panel"
-        >
+        <mat-expansion-panel #myPanel [disabled]="true" class="package_expansion_panel readonly_package">
           <mat-expansion-panel-header
             collapsedHeight="56px"
             expandedHeight="56px"
           >
             <div class="opt_flex--container outer" style="width: 100%;">
-              <div class="opt_flex__item" style="pointer-events: none;">
+              <div class="opt_flex__item">
                 <div class="opt_flex--container inner">
                   <div class="opt_flex__item--inherit">
                     <div class="package_main_details">
