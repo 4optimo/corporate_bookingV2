@@ -1,4 +1,138 @@
 <div class="opt_modal-content opt-item-details opt-item-search">
+  <popper-content #pricing_options>
+    <div class="pricing_options_wrapper">
+      <div class="allocation_period_details">
+        <div class="allocation_dates">Allocation Period: <span>12th June 2018</span></div>
+        <div class="allocation_duration">8.00am to 3.00pm</div>
+      </div>
+      <div class="pricing_options">
+        <div class="auto_generated">
+          <mat-radio-button class="mini_radio" value="1" name="priceGroup">Auto Generated Price Types</mat-radio-button>
+          <div class="price_types_wrapper">
+            <div class="price_types inner">
+              <div class="pricing_title">Off Peak - Halfday</div>
+              <div class="pricing_calc">$50.00 x 1</div>
+              <div class="pricing_total">$50.00</div>
+            </div>
+            <div class="price_types inner">
+              <div class="pricing_title">Off Peak - Hourly</div>
+              <div class="pricing_calc">$20.00 x 2</div>
+              <div class="pricing_total">$40.00</div>
+            </div>
+            <div class="price_types inner">
+              <div class="pricing_title">Peak - Hourly</div>
+              <div class="pricing_calc">$30.00 x 1</div>
+              <div class="pricing_total">$30.00</div>
+            </div>
+          </div>
+        </div>
+        <div class="customized_pricing_options">
+          <mat-radio-button class="mini_radio" value="1" name="priceGroup">Change Price Type to</mat-radio-button>
+          <div class="pricing_groups">
+            <div class="price_types_wrapper">
+              <div class="price_types outer">
+                <div>
+                  Off Peak
+                </div>
+                <div class="price_types inner">
+                  <div class="pricing_title">
+                    <mat-radio-button class="mini_radio" value="1" name="pricetype1">Halfday</mat-radio-button>
+                  </div>
+                  <div class="pricing_calc">
+                    <div>
+                      $50.00
+                    </div>
+                    <div>
+                      <mat-form-field class="mini_select">
+                        <mat-select>
+                          <mat-option>1</mat-option>
+                          <mat-option>2</mat-option>
+                          <mat-option>3</mat-option>
+                          <mat-option>4</mat-option>
+                        </mat-select>
+                      </mat-form-field>
+                    </div>
+                  </div>
+                  <div class="pricing_total"></div>
+                </div>
+                <div class="price_types inner">
+                  <div class="pricing_title">
+                    <mat-radio-button class="mini_radio" value="1" name="pricetype1">Hourly</mat-radio-button>
+                  </div>
+                  <div class="pricing_calc">
+                    <div>
+                      $50.00
+                    </div>
+                    <div>
+                      <mat-form-field class="mini_select">
+                        <mat-select>
+                          <mat-option>1</mat-option>
+                          <mat-option>2</mat-option>
+                          <mat-option>3</mat-option>
+                          <mat-option>4</mat-option>
+                        </mat-select>
+                      </mat-form-field>
+                    </div>
+                  </div>
+                  <div class="pricing_total">$140.00</div>
+                </div>
+              </div>
+              <div class="price_types outer">
+                <div>
+                  Peak
+                </div>
+                <div class="price_types inner">
+                  <div class="pricing_title">
+                    <mat-radio-button class="mini_radio" value="1" name="pricetype2">Halfday</mat-radio-button>
+                  </div>
+                  <div class="pricing_calc">
+                    <div>
+                      $50.00
+                    </div>
+                    <div>
+                      <mat-form-field class="mini_select">
+                        <mat-select>
+                          <mat-option>1</mat-option>
+                          <mat-option>2</mat-option>
+                          <mat-option>3</mat-option>
+                          <mat-option>4</mat-option>
+                        </mat-select>
+                      </mat-form-field>
+                    </div>
+                  </div>
+                  <div class="pricing_total"></div>
+                </div>
+                <div class="price_types inner">
+                  <div class="pricing_title">
+                    <mat-radio-button class="mini_radio" value="1" name="pricetype2">Hourly</mat-radio-button>
+                  </div>
+                  <div class="pricing_calc">
+                    <div>
+                      $50.00
+                    </div>
+                    <div>
+                      <mat-form-field class="mini_select">
+                        <mat-select>
+                          <mat-option>1</mat-option>
+                          <mat-option>2</mat-option>
+                          <mat-option>3</mat-option>
+                          <mat-option>4</mat-option>
+                        </mat-select>
+                      </mat-form-field>
+                    </div>
+                  </div>
+                  <div class="pricing_total"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="popover_actions">
+        <button mat-button class="mat-btn-primary--small mat-button">Update</button>
+      </div>
+    </div>
+  </popper-content>
   <div class="mat-dialog-content">
     <div class="opt_modal-header ">
       <div class="test opt--depth__1">
@@ -76,395 +210,347 @@
         </div>
 
         <div class="package-wrapper">
-          <div class="top-label opt_flex--container">
+          <div class="top-label opt_flex--container al_flend">
             <div class="opt_flex__item  opt_flex__item--vcenter opt-txt__secondary opt-txt__body2">30 Items</div>
-            <div class="opt_flex__item--inherit opt_flex__item--vcenter opt-txt__body1">
-              <mat-checkbox>Show selected items only</mat-checkbox>
+            <div class="opt_flex__item--inherit">
+              <app-opt-triple-toggle></app-opt-triple-toggle>
             </div>
-            <div class="opt_flex__item--inherit  opt_flex__item--vcenter opt-txt__body1">
-              <i class="material-icons opt-txt__secondary">live_help</i>
-              Smart App Off <mat-slide-toggle></mat-slide-toggle>
-            </div>
-          </div>
-
-          <div class="">
-
-            <!--<mat-accordion>-->
-                <!--<div *ngFor="let a of itemListArray; let index = index">-->
-                  <!--<div class="opt_package-details opt_booking__list opt_booking__detail">-->
-                      <!--<mat-accordion>-->
-                        <!--<mat-expansion-panel #myPanel [disabled]="true" class="opt-expand&#45;&#45;line">-->
-                          <!--<mat-expansion-panel-header class="opt_width-define opt_expand__header first-outer-wrapper"-->
-                                                      <!--collapsedHeight=".collapsedHeight" expandedHeight=".expandedHeight">-->
-                            <!--<div class="opt_expand&#45;&#45;container">-->
-                              <!--<div class="opt_flex&#45;&#45;container item-details">-->
-                                <!--<div class="opt_flex__item __expansion-lft&#45;&#45;side">-->
-                                  <!--<div class="row opt_flex&#45;&#45;container tc-flex-item__center ">-->
-                                    <!--<div class="col-sm-8 col-md-4	col-lg-4	col-xs-12">-->
-                                      <!--<mat-panel-title class="opt_flex&#45;&#45;container tc-flex-item__center first-col">-->
-                                        <!--<div class="opt_flex__item&#45;&#45;inherit ">-->
-                                          <!--<div class="icon__cage">-->
-                                            <!--<div class="opt_circle__confirmed">-->
-                                              <!--<span class="icon-icn-item"> </span>-->
-                                            <!--</div>-->
-                                          <!--</div>-->
-                                        <!--</div>-->
-                                        <!--<div class="opt_flex__item">-->
-                                          <!--<div class="opt_width-calc">-->
-                                            <!--<div class="opt-txt__body2-small ref_no">-->
-                                              <!--<span>BTX15GV - Child Classic Sunday</span>-->
-                                              <!--<span class="notification_count">10</span>-->
-                                            <!--</div>-->
-                                            <!--<div>-->
-                                              <!--<div class="opt_flex__item&#45;&#45;inherit additional-features">-->
-                                                <!--<span class="material-icons package-color&#45;&#45;product">gamepad</span>-->
-                                                <!--<span class="opt__subtitle-1-small opt-txt__secondary">| Alnut Park </span>-->
-                                              <!--</div>-->
-                                            <!--</div>-->
-                                          <!--</div>-->
-                                        <!--</div>-->
-                                      <!--</mat-panel-title>-->
-                                    <!--</div>-->
-                                    <!--<div class="col-sm-4 col-md-1	col-lg-1	col-xs-12">-->
-                                      <!--<mat-panel-description class="opt_flex&#45;&#45;container">-->
-                                        <!--<div class="middle-details">-->
-                                          <!--<div class="opt_flex__item tc-flex-item__center opt-txt__body1-small">Unlimited</div>-->
-                                          <!--<div class="opt_flex__item tc-flex-item__center opt-txt__caption __link">Half Day</div>-->
-                                        <!--</div>-->
-                                      <!--</mat-panel-description>-->
-                                    <!--</div>-->
-                                    <!--<div class="col-sm-6 col-md-3	col-lg-3	col-xs-12">-->
-                                      <!--<mat-panel-description class="opt_flex&#45;&#45;container">-->
-                                        <!--<div class="opt_flex__item tc-flex-item__center opt-txt__secondary opt__subtitle-2-small opt_unit__price">£450.00</div>-->
-                                        <!--<div class="opt_flex__item opt_counter__item">-->
-                                          <!--<div class="opt_counter">-->
-                                            <!--<div class="opt_flex&#45;&#45;container ">-->
-                                              <!--<div class="opt_flex__item&#45;&#45;inherit">-->
-                                                <!--<button mat-raised-button>+</button>-->
-                                              <!--</div>-->
-                                              <!--<div class="opt_flex__item&#45;&#45;inherit  tc-flex-item__center">-->
-                                                <!--<form class="example-form">-->
-                                                  <!--<mat-form-field class="">-->
-                                                    <!--<input matInput value="1">-->
-                                                  <!--</mat-form-field>-->
-                                                <!--</form>-->
-                                              <!--</div>-->
-                                              <!--<div class="opt_flex__item&#45;&#45;inherit">-->
-                                                <!--<button mat-raised-button>-</button>-->
-                                              <!--</div>-->
-                                            <!--</div>-->
-                                          <!--</div>-->
-                                        <!--</div>-->
-                                      <!--</mat-panel-description>-->
-                                    <!--</div>-->
-                                    <!--<div class="col-sm-6  col-md-3	col-lg-3	col-xs-12">-->
-                                      <!--<mat-panel-description class="opt_flex&#45;&#45;container item-price-wrapper">-->
-                                        <!--<div class="opt_flex__item&#45;&#45;inherit"><span class="lbl lbl__vat">Inc Vat</span></div>-->
-                                        <!--<div class=" opt_flex__item&#45;&#45;inherit opt_price-section">-->
-                                          <!--<mat-form-field class="example-full-width opt-typo-subhead-2 price">-->
-                                            <!--<input matInput placeholder="" value=" £450.00">-->
-                                          <!--</mat-form-field>-->
-                                         <!--</div>-->
-                                        <!--<div class="opt_flex__item"><span class="icon-coin-of-dollar"></span></div>-->
-                                      <!--</mat-panel-description>-->
-                                    <!--</div>-->
-                                    <!--<div class="col-sm-12  col-md-1	col-lg-1	col-xs-12">-->
-                                      <!--<mat-panel-description class="opt_flex&#45;&#45;container">-->
-                                        <!--<div mat-raised-button class="btn-color-default opt_flex__item opt-txt__light btn btn-select">-->
-                                          <!--Add-->
-                                        <!--</div>-->
-                                      <!--</mat-panel-description>-->
-                                    <!--</div>-->
-                                  <!--</div>-->
-                                <!--</div>-->
-                                <!--<div class="opt_flex__item __expansion-rgt&#45;&#45;side">-->
-                                  <!--<div class="col tc-flex-item__center">-->
-                                    <!--<div class="opt_flex__item action__button tc-flex-item__center">-->
-                                      <!--<button class="down-arrow" mat-icon-button color="primary" (click)="expandPannel()"-->
-                                              <!--[disableRipple]="true">-->
-                                        <!--<mat-icon>{{matIcon}}</mat-icon>-->
-                                      <!--</button>-->
-                                    <!--</div>-->
-                                  <!--</div>-->
-                                <!--</div>-->
-                              <!--</div>-->
-                            <!--</div>-->
-                          <!--</mat-expansion-panel-header>-->
-
-                          <!--<div class="opt_expand&#45;&#45;container">-->
-                            <!--<div class="opt_flex&#45;&#45;container item-details">-->
-                              <!--<div class="opt_flex__item">-->
-                                <!--<div class="row opt_flex&#45;&#45;container tc-flex-item__center">-->
-                                  <!--<div class="col-sm-6 col-md-4	col-lg-4	col-xs-12">-->
-                                    <!--<div class="opt_flex&#45;&#45;container row tc-flex-item__center __data">-->
-                                      <!--<div class="opt_flex__item icon__cage __multi-buttons">-->
-
-                                        <!--<button mat-icon-button class="btn-color-default">-->
-                                          <!--<i class="material-icons"> date_range</i>-->
-                                        <!--</button>-->
-
-                                        <!--<button mat-icon-button class="btn-color-default">-->
-                                          <!--<i class="icon-icn-office-big-chair  "> </i>-->
-                                        <!--</button>-->
-
-                                        <!--<button mat-icon-button class="btn-color-default">-->
-                                          <!--<i class="icon-icn-table"> </i>-->
-                                        <!--</button>-->
-
-                                        <!--<button mat-icon-button class="btn-color-default">-->
-                                          <!--<i class="material-icons"> settings</i>-->
-                                        <!--</button>-->
-
-                                        <!--<button mat-icon-button class="btn-color-default">-->
-                                          <!--<i class="material-icons">help</i>-->
-                                        <!--</button>-->
-
-                                        <!--<button mat-icon-button class="btn btn__frozen">-->
-                                          <!--<i class="material-icons">layers</i>-->
-                                        <!--</button>-->
-
-                                      <!--</div>-->
-                                    <!--</div>-->
-                                  <!--</div>-->
-                                  <!--<div class="col-sm-6 col-md-8	col-lg-8 col-xs-12 package-expand-description ">-->
-                                    <!--<div class="tc-flex-item__center">-->
-                                      <!--<div class="opt-txt__caption">Quisque in dolor hendrerit, dignissim lacus non, accumsan nisl. Duis sollicitudin convallis magna.</div>-->
-                                    <!--</div>-->
-                                  <!--</div>-->
-                                <!--</div>-->
-                              <!--</div>-->
-                            <!--</div>-->
-                          <!--</div>-->
-                        <!--</mat-expansion-panel>-->
-                      <!--</mat-accordion>-->
-                  <!--</div>-->
-                <!--</div>-->
-            <!--</mat-accordion>-->
-
           </div>
         </div>
 
 
         <mat-accordion>
-        <div *ngFor="let a of itemListArray; let index = index">
+          <div>
+            <!-- *ngFor="let a of itemListArray; let index = index" -->
 
-        <div class="opt_package-details opt_booking__list opt_booking__detail">
-          <mat-accordion>
-            <mat-expansion-panel #myPanel [disabled]="true" class="opt-expand--line">
-              <mat-expansion-panel-header class="opt_width-define opt_expand__header first-outer-wrapper"
-                                          collapsedHeight="55px" expandedHeight="55px">
-                <div class="opt_expand--container">
-                  <div class="opt_flex--container item-details">
-                    <div class="opt_flex__item __expansion-lft--side">
-                      <div class="row opt_flex--container tc-flex-item__center ">
-                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                          <div class="opt_flex--container tc-flex-item__center first-col">
-                            <div class="opt_flex__item--inherit ">
-                              <div class="icon__cage">
-                                <div class="opt_circle__confirmed">
-                                  <span class="icon-icn-item"> </span>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="opt_flex__item">
-                              <div class="opt_width-calc">
-                                <div class="opt-txt__body2-small ref_no">
-                                  <span>BTX15GV - Child Classic Sunday</span>
-                                  <span class="notification_count">10</span>
-                                </div>
-                                <div>
-                                  <div class="opt_flex__item--inherit additional-features">
-                                    <span class="material-icons package-color--product">gamepad</span>
-                                    <span class="opt__subtitle-1-small opt-txt__secondary">| Alnut Park </span>
+            <div class="opt_package-details opt_booking__list opt_booking__detail">
+              <mat-accordion>
+                <mat-expansion-panel #myPanel [disabled]="true" class="opt-expand--line">
+                  <mat-expansion-panel-header class="opt_width-define opt_expand__header first-outer-wrapper"
+                    collapsedHeight="55px" expandedHeight="55px">
+                    <div class="opt_expand--container">
+                      <div class="opt_flex--container item-details">
+                        <div class="opt_flex__item __expansion-lft--side">
+                          <div class="row opt_flex--container tc-flex-item__center ">
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                              <div class="opt_flex--container tc-flex-item__center first-col">
+                                <div class="opt_flex__item--inherit ">
+                                  <div class="icon__cage">
+                                    <div class="opt_circle__confirmed">
+                                      <span class="icon-icn-item"> </span>
+                                    </div>
                                   </div>
                                 </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                          <div class="opt_flex--container">
-                            <div class="opt_flex__item--inherit">
-                              <div class="opt-txt__body1-small">Unlimited</div>
-                              <div class="opt-txt__caption __link" mat-button [matMenuTriggerFor]="menu">Half Day</div>
-                              <mat-menu #menu="matMenu">
-                                <button mat-menu-item>Full Day</button>
-                                <button mat-menu-item>Half Day</button>
-                                <button mat-menu-item>Session</button>
-                              </mat-menu>
-                            </div>
-
-                            <div class="opt_flex__item tc-flex-item__center opt-txt__secondary opt__subtitle-2-small opt_unit__price">£450.00</div>
-                            <div class="opt_flex__item tc-flex-item__center opt_counter__item">
-                              <div class="opt_counter">
-                                <div class="opt_flex--container ">
-                                  <div class="opt_flex__item--inherit">
-                                    <button mat-raised-button>-</button>
-                                  </div>
-                                  <div class="opt_flex__item--inherit  tc-flex-item__center">
-                                    <form class="example-form">
-                                      <mat-form-field class="">
-                                        <input matInput value="1">
-                                      </mat-form-field>
-                                    </form>
-                                  </div>
-                                  <div class="opt_flex__item--inherit">
-                                    <button mat-raised-button>+</button>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                          <div class="opt_flex--container tc-flex-item__center item-price-wrapper">
-                            <div class="opt_flex__item--inherit">
-                              <div class="lbl lbl__vat  opt_lbl_primary">Inc Vat</div>
-                            </div>
-                            <div class=" opt_flex__item opt_price-section">
-                              <mat-form-field class="example-full-width opt-typo-subhead-2 price">
-                                <input matInput placeholder="" value=" £450.00">
-                              </mat-form-field>
-                            </div>
-                            <div class="opt_flex__item">
-                              <span [matMenuTriggerFor]="menu" class="icon-coin-of-dollar"></span>
-                              <mat-menu #menu="matMenu" class="filter-popover price-popover">
-                                <div class="opt_flex--container" (click)="$event.stopPropagation();">
-                                  <div class="opt_flex__item price--values">
-                                    <div class="opt_flex--container filter-popover-item">
-                                      <div class="opt_flex__item opt_flex__item">
-                                        <span class="opt-txt__body1">Net</span>
-                                      </div>
-                                      <div class="opt_flex__item--inherit opt-txt__align-right price--value__input">
-                                        <mat-form-field class="">
-                                          <input class="opt-txt__body1 opt-txt__secondary" matInput value="&pound;19875.89">
-                                        </mat-form-field>
+                                <div class="opt_flex__item">
+                                  <div class="opt_width-calc">
+                                    <div class="opt-txt__body2-small ref_no">
+                                      <span>BTX15GV - Child Classic Sunday</span>
+                                      <span class="notification_count">10</span>
+                                    </div>
+                                    <div>
+                                      <div class="opt_flex__item--inherit additional-features">
+                                        <span class="material-icons package-color--product">gamepad</span>
+                                        <span class="opt__subtitle-1-small opt-txt__secondary"> | Alnut Park </span>
+                                        <span class="opt__subtitle-1-small opt-txt__secondary"> | 12-Jan-2018</span>
                                       </div>
                                     </div>
-                                    <div class="opt_flex--container filter-popover-item">
-                                      <div class="opt_flex__item opt_flex__item">
-                                        <span class="opt-txt__body1">Tax</span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                              <div class="opt_flex--container">
+                                <div class="opt_flex__item--inherit">
+                                  <div class="opt-txt__body1-small">Unlimited</div>
+                                  <div class="opt-txt__caption __link" mat-button [matMenuTriggerFor]="menu">Half Day</div>
+                                  <mat-menu #menu="matMenu">
+                                    <button mat-menu-item>Full Day</button>
+                                    <button mat-menu-item>Half Day</button>
+                                    <button mat-menu-item>Session</button>
+                                  </mat-menu>
+                                </div>
+
+                                <div class="opt_flex__item tc-flex-item__center opt-txt__secondary opt__subtitle-2-small opt_unit__price">£450.00</div>
+                                <div class="opt_flex__item tc-flex-item__center opt_counter__item">
+                                  <div class="opt_counter">
+                                    <div class="opt_flex--container ">
+                                      <div class="opt_flex__item--inherit">
+                                        <button mat-raised-button>-</button>
                                       </div>
-                                      <div class="opt_flex__item--inherit opt-txt__align-right price--value__input">
+                                      <div class="opt_flex__item--inherit  tc-flex-item__center">
                                         <form class="example-form">
                                           <mat-form-field class="">
-                                            <input class="opt-txt__body1 opt-txt__secondary" matInput value="&pound;19875.89">
+                                            <input matInput value="1">
                                           </mat-form-field>
                                         </form>
                                       </div>
-                                    </div>
-                                    <div class="opt_flex--container filter-popover-item">
-                                      <div class="opt_flex__item opt_flex__item">
-                                        <span class="opt-txt__body1">Gross</span>
-                                      </div>
-                                      <div class="opt_flex__item--inherit opt-txt__align-right price--value__input">
-                                        <form class="example-form">
-                                          <mat-form-field class="">
-                                            <input class="opt-txt__body1 opt-txt__secondary" matInput value="&pound;19875.89">
-                                          </mat-form-field>
-                                        </form>
-                                      </div>
-                                    </div>
-                                    <div class="opt_flex--container filter-popover-item">
-                                      <div class="opt_flex__item opt_flex__item">
-                                        <span class="opt-txt__body1">Margin</span>
-                                      </div>
-                                      <div class="opt_flex__item opt-txt__align-right">
-                                        <span class="opt-txt__body1 opt-txt__secondary">&pound;55.00</span>
-                                      </div>
-                                    </div>
-                                    <div class="opt_flex--container filter-popover-item">
-                                      <div class="opt_flex__item opt_flex__item">
-                                        <span class="opt-txt__body1">Estimate Cost</span>
-                                      </div>
-                                      <div class="opt_flex__item opt-txt__align-right">
-                                        <span class="opt-txt__body1 opt-txt__secondary">&pound;1555.00</span>
-                                      </div>
-                                    </div>
-                                    <div class="opt_flex--container filter-popover-item">
-                                      <div class="opt_flex__item opt_flex__item">
-                                        <span class="opt-txt__body1">Actual Cost</span>
-                                      </div>
-                                      <div class="opt_flex__item opt-txt__align-right">
-                                        <span class="opt-txt__body1 opt-txt__secondary">&pound;55.00</span>
+                                      <div class="opt_flex__item--inherit">
+                                        <button mat-raised-button>+</button>
                                       </div>
                                     </div>
                                   </div>
                                 </div>
-                              </mat-menu>
+                              </div>
                             </div>
-                            <div class="add-btn">
-                              <button mat-button class="mat-btn-primary--small">Add</button>
+                            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                              <div class="opt_flex--container tc-flex-item__center item-price-wrapper">
+                                <div class="opt_flex__item--inherit">
+                                  <div class="lbl lbl__vat  opt_lbl_primary">Inc Vat</div>
+                                </div>
+                                <div class=" opt_flex__item opt_price-section">
+                                  <mat-form-field class="example-full-width opt-typo-subhead-2 price">
+                                    <input matInput placeholder="" value=" £450.00">
+                                  </mat-form-field>
+                                </div>
+                                <div class="opt_flex__item">
+                                  <span [matMenuTriggerFor]="menu" class="icon-coin-of-dollar"></span>
+                                  <mat-menu #menu="matMenu" class="filter-popover price-popover">
+                                    <div class="opt_flex--container" (click)="$event.stopPropagation();">
+                                      <div class="opt_flex__item price--values">
+                                        <div class="opt_flex--container filter-popover-item">
+                                          <div class="opt_flex__item opt_flex__item">
+                                            <span class="opt-txt__body1">Net</span>
+                                          </div>
+                                          <div class="opt_flex__item--inherit opt-txt__align-right price--value__input">
+                                            <mat-form-field class="">
+                                              <input class="opt-txt__body1 opt-txt__secondary" matInput value="&pound;19875.89">
+                                            </mat-form-field>
+                                          </div>
+                                        </div>
+                                        <div class="opt_flex--container filter-popover-item">
+                                          <div class="opt_flex__item opt_flex__item">
+                                            <span class="opt-txt__body1">Tax</span>
+                                          </div>
+                                          <div class="opt_flex__item--inherit opt-txt__align-right price--value__input">
+                                            <form class="example-form">
+                                              <mat-form-field class="">
+                                                <input class="opt-txt__body1 opt-txt__secondary" matInput value="&pound;19875.89">
+                                              </mat-form-field>
+                                            </form>
+                                          </div>
+                                        </div>
+                                        <div class="opt_flex--container filter-popover-item">
+                                          <div class="opt_flex__item opt_flex__item">
+                                            <span class="opt-txt__body1">Gross</span>
+                                          </div>
+                                          <div class="opt_flex__item--inherit opt-txt__align-right price--value__input">
+                                            <form class="example-form">
+                                              <mat-form-field class="">
+                                                <input class="opt-txt__body1 opt-txt__secondary" matInput value="&pound;19875.89">
+                                              </mat-form-field>
+                                            </form>
+                                          </div>
+                                        </div>
+                                        <div class="opt_flex--container filter-popover-item">
+                                          <div class="opt_flex__item opt_flex__item">
+                                            <span class="opt-txt__body1">Margin</span>
+                                          </div>
+                                          <div class="opt_flex__item opt-txt__align-right">
+                                            <span class="opt-txt__body1 opt-txt__secondary">&pound;55.00</span>
+                                          </div>
+                                        </div>
+                                        <div class="opt_flex--container filter-popover-item">
+                                          <div class="opt_flex__item opt_flex__item">
+                                            <span class="opt-txt__body1">Estimate Cost</span>
+                                          </div>
+                                          <div class="opt_flex__item opt-txt__align-right">
+                                            <span class="opt-txt__body1 opt-txt__secondary">&pound;1555.00</span>
+                                          </div>
+                                        </div>
+                                        <div class="opt_flex--container filter-popover-item">
+                                          <div class="opt_flex__item opt_flex__item">
+                                            <span class="opt-txt__body1">Actual Cost</span>
+                                          </div>
+                                          <div class="opt_flex__item opt-txt__align-right">
+                                            <span class="opt-txt__body1 opt-txt__secondary">&pound;55.00</span>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </mat-menu>
+                                </div>
+                                <div class="add-btn">
+                                  <button mat-button class="mat-btn-primary--small">Add</button>
+                                </div>
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+                        <div class="opt_flex__item __expansion-rgt--side">
+                          <div class="col tc-flex-item__center">
+                            <div class="opt_flex__item action__button tc-flex-item__center">
+                              <button class="down-arrow" mat-icon-button color="primary" (click)="expandPannel()"
+                                [disableRipple]="true">
+                                <mat-icon>{{matIcon}}</mat-icon>
+                              </button>
                             </div>
                           </div>
                         </div>
-
                       </div>
                     </div>
-                    <div class="opt_flex__item __expansion-rgt--side">
-                      <div class="col tc-flex-item__center">
-                        <div class="opt_flex__item action__button tc-flex-item__center">
-                          <button class="down-arrow" mat-icon-button color="primary" (click)="expandPannel()"
-                                  [disableRipple]="true">
-                            <mat-icon>{{matIcon}}</mat-icon>
-                          </button>
+                  </mat-expansion-panel-header>
+
+                  <div class="opt_expand--container">
+                    <div class="opt_flex--container item-details">
+                      <div class="opt_flex__item">
+                        <div class="row opt_flex--container tc-flex-item__center">
+                          <div class="col-sm-6 col-md-4	col-lg-4	col-xs-12">
+                            <div class="opt_flex--container row tc-flex-item__center __data">
+                              <div class="opt_flex__item icon__cage __multi-buttons">
+
+                                <button mat-icon-button class="btn-color-default">
+                                  <i class="material-icons"> date_range</i>
+                                </button>
+
+                                <button mat-icon-button class="btn-color-default">
+                                  <i class="icon-icn-office-big-chair  "> </i>
+                                </button>
+
+                                <button mat-icon-button class="btn-color-default">
+                                  <i class="icon-icn-table"> </i>
+                                </button>
+
+                                <button mat-icon-button class="btn-color-default">
+                                  <i class="material-icons"> settings</i>
+                                </button>
+
+                                <button mat-icon-button class="btn-color-default">
+                                  <i class="material-icons">help</i>
+                                </button>
+
+                                <button mat-icon-button class="btn btn__frozen">
+                                  <i class="material-icons">layers</i>
+                                </button>
+
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-6 col-md-8	col-lg-8 col-xs-12 package-expand-description ">
+                            <div class="tc-flex-item__center">
+                              <div class="opt-txt__caption">Quisque in dolor hendrerit, dignissim lacus non, accumsan
+                                nisl. Duis sollicitudin convallis magna.</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </mat-expansion-panel>
+              </mat-accordion>
+            </div>
+          </div>
+        </mat-accordion>
+
+        <mat-accordion>
+          <mat-expansion-panel [disabled]="true" class="package_expansion_panel">
+            <mat-expansion-panel-header collapsedHeight="55px" expandedHeight="55px">
+              <div class="opt_flex--container outer" style="width: 100%;">
+                <div class="opt_flex__item">
+                  <div class="opt_flex--container inner">
+                    <div class="opt_flex__item--inherit">
+                      <div class="package_main_details">
+                        <div class="package_icon">
+                          <span class="icon_moon icon-icn-item"></span>
+                          <!-- <div class="add_icon"><i class="material-icons">add</i></div> -->
+                        </div>
+                        <div class="package_details">
+                          <div class="opt-txt__body2-small package_title cover_count_enabled" style="line-height: 18px;">
+                            BTX15GV - Child Classic Sunday
+                            <div class="badge_custom cover_count">10</div>
+                          </div>
+                          <div class="package_additional_info">
+                            <span class="material-icons package-color--product">gamepad</span>
+                            <span class="opt__subtitle-1-small opt-txt__secondary"> | Alnut Park </span>
+                            <span class="opt__subtitle-1-small opt-txt__secondary"> | 12-Jan-2018</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="opt_flex__item--inherit">
+                      <div class="dual_line_details">
+                        <div class="availability-icon __last-few" style="font-size: 0;">
+                          <span class="opt-txt__body2" style="vertical-align:middle;">Unlimited</span>
+                        </div>
+                        <!--<div class="opt-txt__body1-small">Unlimited</div>-->
+                        <div class="opt-txt__caption __link" [popper]="pricing_options" [popperTrigger]="'click'"
+                          [popperHideOnClickOutside]="true" popperPlacement="'bottom'" [popperAppendTo]="'body'">Half
+                          Day</div>
+                      </div>
+                    </div>
+                    <div class="opt_flex__item--inherit">
+                      <div class="three_div_wrapper">
+                        <div class="three_div_solo">
+                          <div class="lbl lbl__vat opt_lbl_primary" style="height:auto;line-height:1;">Inc Vat</div>
+                        </div>
+                        <div class="three_div_combo">
+                          <div class="item2 tc-flex-item__center opt-txt__body2-small ref_no opt_unit__price">&pound;
+                            450.00</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="opt_flex__item--inherit">
+                      <div class="solo_wrapper fixed_width">
+                        <app-opt-counter></app-opt-counter>
+                        <div style="font-size:10px;color:#e74c3c;margin-top:3px;white-space:nowrap;">Error
+                          message
+                          goes here...</div>
+                      </div>
+                    </div>
+                    <div class="opt_flex__item--inherit">
+                      <div class="three_div_wrapper reverse">
+                        <div [matMenuTriggerFor]="menu" class="three_div_solo"><span class="icon-coin-of-dollar"></span></div>
+                        <mat-menu #menu="matMenu" class="price-popover">
+                          <div class="opt_flex--container" (click)="$event.stopPropagation();">
+                            <div class="opt_flex__item price--values">
+                              <div class="opt_flex--container filter-popover-item">
+                                <div class="opt_flex__item opt_flex__item">
+                                  <span class="opt-txt__body1">Fixed Price</span>
+                                </div>
+                                <div class="opt_flex__item opt-txt__align-right">
+                                  <span class="opt-txt__body1 opt-txt__secondary">&pound;55.00</span>
+                                </div>
+                              </div>
+                              <div class="opt_flex--container filter-popover-item">
+                                <div class="opt_flex__item opt_flex__item">
+                                  <span class="opt-txt__body1">Variable Price</span>
+                                </div>
+                                <div class="opt_flex__item opt-txt__align-right">
+                                  <span class="opt-txt__body1 opt-txt__secondary">&pound;1555.00</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </mat-menu>
+                        <div class="three_div_combo">
+                          <mat-form-field class="expansion_panel_input">
+                            <input class="" matInput value="&pound;19875.89">
+                          </mat-form-field>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </mat-expansion-panel-header>
-
-              <div class="opt_expand--container">
-                <div class="opt_flex--container item-details">
-                  <div class="opt_flex__item">
-                    <div class="row opt_flex--container tc-flex-item__center">
-                      <div class="col-sm-6 col-md-4	col-lg-4	col-xs-12">
-                        <div class="opt_flex--container row tc-flex-item__center __data">
-                          <div class="opt_flex__item icon__cage __multi-buttons">
-
-                            <button mat-icon-button class="btn-color-default">
-                              <i class="material-icons"> date_range</i>
-                            </button>
-
-                            <button mat-icon-button class="btn-color-default">
-                              <i class="icon-icn-office-big-chair  "> </i>
-                            </button>
-
-                            <button mat-icon-button class="btn-color-default">
-                              <i class="icon-icn-table"> </i>
-                            </button>
-
-                            <button mat-icon-button class="btn-color-default">
-                              <i class="material-icons"> settings</i>
-                            </button>
-
-                            <button mat-icon-button class="btn-color-default">
-                              <i class="material-icons">help</i>
-                            </button>
-
-                            <button mat-icon-button class="btn btn__frozen">
-                              <i class="material-icons">layers</i>
-                            </button>
-
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-sm-6 col-md-8	col-lg-8 col-xs-12 package-expand-description ">
-                        <div class="tc-flex-item__center">
-                          <div class="opt-txt__caption">Quisque in dolor hendrerit, dignissim lacus non, accumsan nisl. Duis sollicitudin convallis magna.</div>
-                        </div>
-                      </div>
-                    </div>
+                <div class="opt_flex__item--inherit">
+                  <div class="solo_wrapper add_button">
+                    <button mat-button class="mat-btn-primary--small item4">
+                      Add
+                      <span class="add_icon on_btn"><i class="material-icons">add</i></span>
+                    </button>
+                  </div>
+                </div>
+                <div class="opt_flex__item--inherit">
+                  <div class="dflex">
+                    <button class="down-arrow" mat-icon-button color="primary" (click)="expandPannel()" [disableRipple]="true">
+                      <mat-icon>keyboard_arrow_down</mat-icon>
+                    </button>
                   </div>
                 </div>
               </div>
-            </mat-expansion-panel>
-          </mat-accordion>
-        </div>
-        </div>
+            </mat-expansion-panel-header>
+          </mat-expansion-panel>
         </mat-accordion>
-        <br><br><br>
+
         <div class="opt_flex--container">
           <div class="opt_flex__item">
             <span class=" opt-txt__secondary opt-txt__body2">30 Items found, </span>
@@ -473,6 +559,5 @@
         </div>
       </div>
     </div>
-
   </div>
 </div>
