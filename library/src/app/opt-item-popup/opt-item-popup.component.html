@@ -133,6 +133,9 @@
       </div>
     </div>
   </popper-content>
+  <popper-content #package_select>
+    <app-opt-package-selection-modal></app-opt-package-selection-modal>
+  </popper-content>
   <div class="mat-dialog-content">
     <div class="opt_modal-header ">
       <div class="test opt--depth__1">
@@ -198,7 +201,9 @@
                       </div>
                     </div>
                   </div>
-                  <button class="opt_flex__item--inherit package-select-menu  mat-icon-button" (click)="openPackageSelectionDropDown()">
+                  <button class="opt_flex__item--inherit package-select-menu  mat-icon-button" [popper]="package_select"
+                    [popperTrigger]="'click'" [popperHideOnClickOutside]="true" popperPlacement="'bottom'"
+                    [popperAppendTo]="'body'">
                     <i class="material-icons">
                       keyboard_arrow_down
                     </i>
@@ -211,7 +216,7 @@
 
         <div class="package-wrapper">
           <div class="top-label opt_flex--container al_flend">
-            <div class="opt_flex__item  opt_flex__item--vcenter opt-txt__secondary opt-txt__body2">30 Items</div>
+            <div class="opt_flex__item opt-txt__secondary opt-txt__body2">30 Packages</div>
             <div class="opt_flex__item--inherit">
               <app-opt-triple-toggle></app-opt-triple-toggle>
             </div>
@@ -219,11 +224,11 @@
         </div>
 
 
-        <mat-accordion>
-          <div>
-            <!-- *ngFor="let a of itemListArray; let index = index" -->
+        <!-- <mat-accordion>
+          <div> -->
+        <!-- *ngFor="let a of itemListArray; let index = index" -->
 
-            <div class="opt_package-details opt_booking__list opt_booking__detail">
+        <!-- <div class="opt_package-details opt_booking__list opt_booking__detail">
               <mat-accordion>
                 <mat-expansion-panel #myPanel [disabled]="true" class="opt-expand--line">
                   <mat-expansion-panel-header class="opt_width-define opt_expand__header first-outer-wrapper"
@@ -438,12 +443,13 @@
                   </div>
                 </mat-expansion-panel>
               </mat-accordion>
-            </div>
-          </div>
-        </mat-accordion>
+            </div> -->
+        <!-- </div>
+        </mat-accordion> -->
 
         <mat-accordion>
-          <mat-expansion-panel [disabled]="true" class="package_expansion_panel">
+          <mat-expansion-panel [disabled]="true" class="package_expansion_panel" hideToggle="true" [expanded]="panelOpenState"
+            #mep="matExpansionPanel">
             <mat-expansion-panel-header collapsedHeight="55px" expandedHeight="55px">
               <div class="opt_flex--container outer" style="width: 100%;">
                 <div class="opt_flex__item">
@@ -541,13 +547,50 @@
                 </div>
                 <div class="opt_flex__item--inherit">
                   <div class="dflex">
-                    <button class="down-arrow" mat-icon-button color="primary" (click)="expandPannel()" [disableRipple]="true">
+                    <button class="down-arrow" mat-icon-button color="primary" (click)="mep.expanded = !mep.expanded"
+                      [disableRipple]="true">
                       <mat-icon>keyboard_arrow_down</mat-icon>
                     </button>
                   </div>
                 </div>
               </div>
             </mat-expansion-panel-header>
+            <div class="opt_flex--container al_cen">
+              <div class="opt_flex__item--inherit">
+                <div class="icon_btn_group">
+                  <button mat-icon-button class="btn-color-default">
+                    <span class="material-icons"> date_range</span>
+                  </button>
+
+                  <button mat-icon-button class="btn-color-default">
+                    <span class="icon-icn-office-big-chair  "> </span>
+                  </button>
+
+                  <button mat-icon-button class="btn-color-default">
+                    <span class="icon-icn-table"> </span>
+                  </button>
+
+                  <button mat-icon-button class="btn-color-default">
+                    <span class="material-icons"> settings</span>
+                  </button>
+
+                  <button mat-icon-button class="btn-color-default">
+                    <span class="material-icons">help</span>
+                  </button>
+
+                  <button mat-icon-button class="btn-color-default --frozen">
+                    <span class="material-icons">layers</span>
+                  </button>
+                </div>
+              </div>
+              <div class="opt_flex__item">
+                <div class="text_solo_wrapper">
+                  <div class="opt-txt__caption">Quisque in dolor hendrerit, dignissim lacus non, accumsan
+                    nisl. Duis sollicitudin convallis magna.
+                  </div>
+                </div>
+              </div>
+            </div>
           </mat-expansion-panel>
         </mat-accordion>
 
