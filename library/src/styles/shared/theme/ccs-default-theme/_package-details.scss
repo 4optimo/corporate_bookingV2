@@ -322,7 +322,7 @@ button {
   }
   .opt_calendar-expand {
     margin: 0;
-    padding: 10px;
+    // padding: 10px;
     background-color: $opt_color_white;
 
     .outer-wrapper {
@@ -365,6 +365,10 @@ button {
           }
         }
         .date-hover {
+          display: flex;
+          align-items: center;
+          padding: 0 53px;
+          border: 1px solid #cecece;
           .date-display {
             width: 130px;
             height: 130px;

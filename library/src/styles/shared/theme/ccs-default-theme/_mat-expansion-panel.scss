@@ -341,9 +341,34 @@ mat-expansion-panel {
     background-color: #e3e3e3;
     font-size: 13px;
     font-weight: 600;
-    .allocation_dates {
+    .more_allocation_toggle {
+      cursor: pointer;
+      font-size: 13px;
+      font-weight: 400;
+      a {
+        color: #27bfc2;
+      }
     }
-    .allocation_duration {
+  }
+  .more_allocation_details {
+    background-color: #e3e3e3;
+    padding: 0 15px;
+    max-height: 0;
+    overflow: auto;
+    transition: max-height 0.3s linear;
+    height: auto;
+    overflow: hidden;
+    .allocation_dates {
+      font-size: 13px;
+      font-weight: 500;
+      line-height: 1.4;
+    }
+
+    &.more_open {
+      height: auto;
+      transition: max-height 0.3s linear;
+      padding-bottom: 15px;
+      max-height: 105px;
     }
   }
   .pricing_options {
@@ -351,12 +376,18 @@ mat-expansion-panel {
     padding-bottom: 0;
     .auto_generated {
       padding: 0 15px;
-      // margin-bottom: 15px;
+      &.disabled {
+        .price_types_wrapper {
+          color: #dadada;
+        }
+      }
     }
     .customized_pricing_options {
       padding: 15px 15px 0;
       &.disabled {
-        color: #dadada;
+        .pricing_groups {
+          color: #dadada;
+        }
       }
     }
     .price_types_wrapper {

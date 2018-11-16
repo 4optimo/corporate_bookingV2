@@ -2,8 +2,15 @@
   <popper-content #pricing_options>
     <div class="pricing_options_wrapper">
       <div class="allocation_period_details">
-        <div class="allocation_dates">Allocation Period: <span>12th June 2018</span></div>
-        <div class="allocation_duration">8.00am to 3.00pm</div>
+        <div class="allocation_dates">Allocation Period: <span>12th June 2018</span> <span>8.00am to 3.00pm</span></div>
+        <div class="more_allocation_toggle"><a (click)="Moretoggle = !Moretoggle">more...</a></div>
+      </div>
+      <div class="more_allocation_details" [ngClass]="{'more_open': Moretoggle}">
+        <div class="allocation_dates"><span>12th June 2018</span> <span>8.00am to 3.00pm</span></div>
+        <div class="allocation_dates"><span>12th June 2018</span> <span>8.00am to 3.00pm</span></div>
+        <div class="allocation_dates"><span>12th June 2018</span> <span>8.00am to 3.00pm</span></div>
+        <div class="allocation_dates"><span>12th June 2018</span> <span>8.00am to 3.00pm</span></div>
+        <div class="allocation_dates"><span>12th June 2018</span> <span>8.00am to 3.00pm</span></div>
       </div>
       <div class="pricing_options">
         <div class="auto_generated">
@@ -26,7 +33,7 @@
             </div>
           </div>
         </div>
-        <div class="customized_pricing_options">
+        <div class="customized_pricing_options disabled">
           <mat-radio-button class="mini_radio" value="1" name="priceGroup">Change Price Type to</mat-radio-button>
           <div class="pricing_groups">
             <div class="price_types_wrapper">
@@ -558,23 +565,23 @@
             <div class="opt_flex--container al_cen">
               <div class="opt_flex__item--inherit">
                 <div class="icon_btn_group">
-                  <button mat-icon-button class="btn-color-default">
+                  <button mat-icon-button class="btn-color-default" matTooltip="Calendar">
                     <span class="material-icons"> date_range</span>
                   </button>
 
-                  <button mat-icon-button class="btn-color-default">
+                  <button mat-icon-button class="btn-color-default" matTooltip="Seat Allocation">
                     <span class="icon-icn-office-big-chair  "> </span>
                   </button>
 
-                  <button mat-icon-button class="btn-color-default">
+                  <button mat-icon-button class="btn-color-default" matTooltip="Table Allocation">
                     <span class="icon-icn-table"> </span>
                   </button>
 
-                  <button mat-icon-button class="btn-color-default">
+                  <button mat-icon-button class="btn-color-default" matTooltip="Configuration">
                     <span class="material-icons"> settings</span>
                   </button>
 
-                  <button mat-icon-button class="btn-color-default">
+                  <button mat-icon-button class="btn-color-default" matTooltip="Questions">
                     <span class="material-icons">help</span>
                   </button>
 

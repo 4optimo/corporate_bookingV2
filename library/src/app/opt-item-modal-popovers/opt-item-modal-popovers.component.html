@@ -58,7 +58,20 @@
   <div class="opt_calendar-expand opt--depth__2">
     <div class="outer-wrapper">
       <div class="inner-wrapper opt_flex--container">
-        <div class="date-hover">
+        <div class="date-hover enabled">
+          <div class="date-picker">
+            <div class="date-picker_month">
+              Dec
+            </div>
+            <div class="date-picker_date">
+              25
+            </div>
+            <div class="date-picker_year">
+              2018
+            </div>
+          </div>
+        </div>
+        <!-- <div class="date-hover">
           <div class="date-select">
             <div>
               <div (click)="picker.open()" class="opt_flex__item tc-flex-item__center">
@@ -72,7 +85,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
 
         <div class="opt_flex__item time-slot-selection">
           <div class="time-slot">
@@ -266,26 +279,26 @@
             </div>
           </div>
           <div class="time-range">
-              <div class="opt_flex--container row" (click)="$event.stopPropagation();">
-                <div class="opt_flex__item">
-                  <mat-form-field class="example-full-width">
-                    <input type="tel" matInput placeholder="Time" value="09:30 AM - 11:30 AM" multiple="true">
+            <div class="opt_flex--container row" (click)="$event.stopPropagation();">
+              <div class="opt_flex__item">
+                <mat-form-field class="example-full-width">
+                  <input type="tel" matInput placeholder="Time" value="09:30 AM - 11:30 AM" multiple="true">
 
-                      <mat-icon matSuffix mat-button [matMenuTriggerFor]="menu"><i class="material-icons opt-txt__secondary">access_time</i></mat-icon>
-                    <mat-menu #menu="matMenu">
-                      <button mat-menu-item>09:00 AM - 09:30 AM</button>
-                      <button mat-menu-item>09:30 AM - 10:00 AM</button>
-                      <button mat-menu-item>10:00 AM - 10:30 AM</button>
-                      <button mat-menu-item>10:30 AM - 11:00 AM</button>
-                      <button mat-menu-item>11:00 AM - 11:30 AM</button>
-                      <button mat-menu-item>11:30 AM - 12:00 PM</button>
-                      <button mat-menu-item>12:00 PM - 12:30 PM</button>
-                      <button mat-menu-item>12:30 PM - 01:00 PM</button>
+                  <mat-icon matSuffix mat-button [matMenuTriggerFor]="menu"><i class="material-icons opt-txt__secondary">access_time</i></mat-icon>
+                  <mat-menu #menu="matMenu">
+                    <button mat-menu-item>09:00 AM - 09:30 AM</button>
+                    <button mat-menu-item>09:30 AM - 10:00 AM</button>
+                    <button mat-menu-item>10:00 AM - 10:30 AM</button>
+                    <button mat-menu-item>10:30 AM - 11:00 AM</button>
+                    <button mat-menu-item>11:00 AM - 11:30 AM</button>
+                    <button mat-menu-item>11:30 AM - 12:00 PM</button>
+                    <button mat-menu-item>12:00 PM - 12:30 PM</button>
+                    <button mat-menu-item>12:30 PM - 01:00 PM</button>
 
-                    </mat-menu>
-                  </mat-form-field>
-                </div>
+                  </mat-menu>
+                </mat-form-field>
               </div>
+            </div>
           </div>
         </div>
       </div>
