@@ -230,14 +230,18 @@ mat-expansion-panel {
           .cover_count {
             display: none;
           }
+          .badge_custom{
+            width: 30px;
+            border-radius: 10%;
+          }
           &.cover_count_enabled {
             position: relative;
             padding-right: 20px;
             .cover_count {
               display: inline-block;
               position: absolute;
-              right: 0;
-              top: -3px;
+              right: -15px;
+              top: 0px;
             }
           }
         }
@@ -368,7 +372,8 @@ mat-expansion-panel {
       height: auto;
       transition: max-height 0.3s linear;
       padding-bottom: 15px;
-      max-height: 105px;
+      max-height: 90px;
+      overflow-y: scroll;
     }
   }
   .pricing_options {

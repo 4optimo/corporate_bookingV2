@@ -65,7 +65,7 @@ button {
   }
   .opt-search-panel-wrapper {
     background-color: $background-color;
-    margin: -24px;
+    //margin: -24px;
   }
   .html-code {
     display: none;
@@ -600,12 +600,12 @@ button {
       .notification_count {
         position: absolute;
         font-size: 10px;
-        background-color: $icon_dark;
+        background-color:  #e74c3c;
         padding: 3px;
         border-radius: 50%;
         top: -4px;
         right: 5px;
-        color: $opt_color_black;
+        color: $opt_color_white;
       }
     }
   }

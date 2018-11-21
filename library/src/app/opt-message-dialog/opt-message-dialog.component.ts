@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import {MatDialog} from "@angular/material";
 @Component({
   selector: 'app-opt-message-dialog',
   templateUrl: './opt-message-dialog.component.html',
@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OptMessageDialogComponent implements OnInit {
 
-  constructor() { }
+  constructor()  { }
 
   ngOnInit() {
   }
