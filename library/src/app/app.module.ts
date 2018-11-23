@@ -213,6 +213,8 @@ const appRoutes: Routes = [
   { path: 'opt-triple-toggle', component: OptTripleToggleComponent },
   { path: 'opt-double-toggle', component: OptDoubleToggleComponent },
   { path: 'opt-message-dialog', component: OptMessageDialogComponent },
+  { path: 'opt-discount-cart', component: OptDiscountCartComponent },
+
 
   { path: '', redirectTo: '/opt-booking-summary', pathMatch: 'full' },
   { path: '**', redirectTo: '/opt-booking-summary', pathMatch: 'full' }
@@ -256,7 +258,7 @@ const appRoutes: Routes = [
     ScrollDispatchModule
 
   ],
-  declarations: [OptDiscountCartComponent],
+  declarations: [],
 
 })
 export class DemoMaterialModule { }
@@ -340,6 +342,7 @@ export class DemoMaterialModule { }
     OptMessageDialogComponent,
     OptDiscountSearchComponent,
     OptNormalSearchComponent,
+    OptDiscountCartComponent,
 
     RoutingProjectComponent,
     TypographyComponent,
