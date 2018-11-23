@@ -748,7 +748,7 @@
     <div class="opt_flex__item">
       <mat-form-field class="example-full-width">
         <mat-select placeholder="Configuration">
-          <mat-option value="Bus Stop Area 1"></mat-option>
+          <mat-option value="Bus Stop Area 1">Bus Stop Area 1</mat-option>
         </mat-select>
       </mat-form-field>
     </div>
@@ -759,19 +759,1173 @@
 <div class="config-popup facilty-allocation">
   <div class="row">
     <div class="opt_flex--container">
-      <div class="col-md-6"><div class="opt_flex__item">
-        <span>Facility</span>
-      </div></div>
-      <div class="col-md-6"><div class="opt_flex__item">
-
-      </div></div>
+      <div class="col-md-6">
+        <div class="opt_flex__item">
+          <p>Facility</p>
+        </div>
+        <div class="opt_flex__item">
+          <mat-form-field class="example-full-width">
+            <mat-select placeholder="Facility">
+              <mat-option value="Main Pit 1">Main Pit 1</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+        <div class="opt_flex__item">
+          <mat-form-field class="example-full-width">
+            <mat-select placeholder="Facility">
+              <mat-option value="Main Pit 2">Main Pit 2</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+        <div class="opt_flex__item">
+          <mat-form-field class="example-full-width">
+            <mat-select placeholder="Facility">
+              <mat-option value="Main Pit 3">Main Pit 3</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+        <div class="opt_flex__item">
+          <mat-form-field class="example-full-width">
+            <mat-select placeholder="Facility">
+              <mat-option value="Main Pit 4">Main Pit 4</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+        <div class="opt_flex__item">
+          <mat-form-field class="example-full-width">
+            <mat-select placeholder="Facility">
+              <mat-option value="Main Pit 5">Main Pit 5</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="opt_flex__item">
+          <p>Configuration</p>
+        </div>
+        <div class="opt_flex__item">
+          <mat-form-field class="example-full-width">
+            <mat-select placeholder="Configuration">
+              <mat-option value="Main Pit 1 (20)">Main Pit 1 (20)</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+        <div class="opt_flex__item">
+          <mat-form-field class="example-full-width">
+            <mat-select placeholder="Configuration">
+              <mat-option value="Main Pit 2 (20)">Main Pit 2 (20)</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+        <div class="opt_flex__item">
+          <mat-form-field class="example-full-width">
+            <mat-select placeholder="Configuration">
+              <mat-option value="Main Pit 3 (20)">Main Pit 3 (20)</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+        <div class="opt_flex__item">
+          <mat-form-field class="example-full-width">
+            <mat-select placeholder="Configuration">
+              <mat-option value="Main Pit 4 (20)">Main Pit 4 (20)</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+        <div class="opt_flex__item">
+          <mat-form-field class="example-full-width">
+            <mat-select placeholder="Configuration">
+              <mat-option value="Main Pit 5 (20)">Main Pit 5 (20)</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12 opt-txt__align-right">
+      <button mat-button class="mat-btn-primary--small">Advanced</button>
     </div>
   </div>
 </div>
 <br><br>
-
-
-
+<h2>Advanced facility allocation for private booking</h2><br>
+<div class="config-popup advanced-private">
+  <div class="row header-row">
+    <div class="col-md-6 opt-no-padding">
+      <div class="opt_flex--container">
+        <div class="opt_flex__item">
+          <p>3 out of 3 Facilities selected</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6  opt-txt__align-right opt-no-padding">
+      <div class="opt_flex--container">
+        <div class="opt_flex__item">
+          <div class="opt-triple-toggle">
+            <label>Show item allocation</label>
+            <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+              <mat-button-toggle value="on">On</mat-button-toggle>
+              <mat-button-toggle value="off">Off</mat-button-toggle>
+            </mat-button-toggle-group>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="content-list">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="opt_flex--container">
+          <div class="opt_flex__item opt_flex__item--vcenter">
+            <mat-checkbox class="opt-txt__body1">Main Pit 1</mat-checkbox>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="opt_flex--container">
+          <div class="opt_flex__item opt_flex__item--vcenter">
+            <mat-form-field class="example-full-width">
+              <mat-select placeholder="Configuration">
+                <mat-option value="Main Pit 5 (20)">Main Pit 1 (20)</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="opt_flex--container">
+          <div class="opt_flex__item opt_flex__item--vcenter">
+            <mat-checkbox class="opt-txt__body1">Main Pit 2</mat-checkbox>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="opt_flex--container">
+          <div class="opt_flex__item opt_flex__item--vcenter">
+            <mat-form-field class="example-full-width">
+              <mat-select placeholder="Configuration">
+                <mat-option value="Main Pit 5 (20)">Main Pit 2 (20)</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="opt_flex--container">
+          <div class="opt_flex__item opt_flex__item--vcenter">
+            <mat-checkbox class="opt-txt__body1">Main Pit 3</mat-checkbox>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="opt_flex--container">
+          <div class="opt_flex__item opt_flex__item--vcenter">
+            <mat-form-field class="example-full-width">
+              <mat-select placeholder="Configuration">
+                <mat-option value="Main Pit 5 (20)">Main Pit 3 (20)</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="opt_flex--container">
+          <div class="opt_flex__item opt_flex__item--vcenter">
+            <mat-checkbox class="opt-txt__body1">Main Pit 4</mat-checkbox>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="opt_flex--container">
+          <div class="opt_flex__item opt_flex__item--vcenter">
+            <mat-form-field class="example-full-width">
+              <mat-select placeholder="Configuration">
+                <mat-option value="Main Pit 5 (20)">Main Pit 4 (20)</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="opt_flex--container">
+          <div class="opt_flex__item opt_flex__item--vcenter">
+            <mat-checkbox class="opt-txt__body1">Main Pit 5</mat-checkbox>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="opt_flex--container">
+          <div class="opt_flex__item opt_flex__item--vcenter">
+            <mat-form-field class="example-full-width">
+              <mat-select placeholder="Configuration">
+                <mat-option value="Main Pit 5 (20)">Main Pit 5 (20)</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="opt_flex--container">
+          <div class="opt_flex__item opt_flex__item--vcenter">
+            <mat-checkbox class="opt-txt__body1">Main Pit 6</mat-checkbox>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="opt_flex--container">
+          <div class="opt_flex__item opt_flex__item--vcenter">
+            <mat-form-field class="example-full-width">
+              <mat-select placeholder="Configuration">
+                <mat-option value="Main Pit 5 (20)">Main Pit 6 (20)</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="opt_flex--container">
+          <div class="opt_flex__item opt_flex__item--vcenter">
+            <mat-checkbox class="opt-txt__body1">Main Pit 7</mat-checkbox>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="opt_flex--container">
+          <div class="opt_flex__item opt_flex__item--vcenter">
+            <mat-form-field class="example-full-width">
+              <mat-select placeholder="Configuration">
+                <mat-option value="Main Pit 5 (20)">Main Pit 7 (20)</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="opt_flex--container">
+          <div class="opt_flex__item opt_flex__item--vcenter">
+            <mat-checkbox class="opt-txt__body1">Main Pit 8</mat-checkbox>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="opt_flex--container">
+          <div class="opt_flex__item opt_flex__item--vcenter">
+            <mat-form-field class="example-full-width">
+              <mat-select placeholder="Configuration">
+                <mat-option value="Main Pit 5 (20)">Main Pit 8 (20)</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="opt_flex--container">
+          <div class="opt_flex__item opt_flex__item--vcenter">
+            <mat-checkbox class="opt-txt__body1">Main Pit 9</mat-checkbox>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="opt_flex--container">
+          <div class="opt_flex__item opt_flex__item--vcenter">
+            <mat-form-field class="example-full-width">
+              <mat-select placeholder="Configuration">
+                <mat-option value="Main Pit 5 (20)">Main Pit 9 (20)</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="opt_flex--container">
+          <div class="opt_flex__item opt_flex__item--vcenter">
+            <mat-checkbox class="opt-txt__body1">Main Pit 10</mat-checkbox>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="opt_flex--container">
+          <div class="opt_flex__item opt_flex__item--vcenter">
+            <mat-form-field class="example-full-width">
+              <mat-select placeholder="Configuration">
+                <mat-option value="Main Pit 5 (20)">Main Pit 10 (20)</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="opt_flex--container">
+          <div class="opt_flex__item opt_flex__item--vcenter">
+            <mat-checkbox class="opt-txt__body1">Main Pit 11</mat-checkbox>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="opt_flex--container">
+          <div class="opt_flex__item opt_flex__item--vcenter">
+            <mat-form-field class="example-full-width">
+              <mat-select placeholder="Configuration">
+                <mat-option value="Main Pit 5 (20)">Main Pit 11 (20)</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="opt_flex--container">
+          <div class="opt_flex__item opt_flex__item--vcenter">
+            <mat-checkbox class="opt-txt__body1">Main Pit 12</mat-checkbox>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="opt_flex--container">
+          <div class="opt_flex__item opt_flex__item--vcenter">
+            <mat-form-field class="example-full-width">
+              <mat-select placeholder="Configuration">
+                <mat-option value="Main Pit 5 (20)">Main Pit 12 (20)</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12 opt-txt__align-right">
+      <button mat-button class="mat-btn-primary--small">Deselect All</button>
+      <button mat-button class="mat-btn-primary--small">Auto Allocate Facilities</button>
+      <button mat-button class="mat-btn-primary--small">Update</button>
+    </div>
+  </div>
+</div>
+<br><br>
+<h2>Advanced facility allocation for private booking - with individual</h2><br>
+<div class="config-popup advanced-private-individual">
+  <div class="row header-row">
+    <div class="col-md-12 opt-txt__align-right opt-no-padding">
+      <div class="opt_flex--container">
+        <div class="opt_flex__item">
+          <div class="opt-triple-toggle">
+            <label>Show item allocation</label>
+            <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+              <mat-button-toggle value="on">On</mat-button-toggle>
+              <mat-button-toggle value="off">Off</mat-button-toggle>
+            </mat-button-toggle-group>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="content-list">
+    <div class="md-accordion">
+      <mat-accordion>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <div class="row">
+              <div class="col-md-4">
+                <span class="opt-txt__body1">3rd June 2018</span>
+              </div>
+              <div class="col-md-4">
+                <span class="opt-txt__body1">8:00am - 12:00pm</span>
+              </div>
+              <div class="col-md-4">
+                <span class="opt-txt__body1">3 out of 3 facilities selected</span>
+              </div>
+            </div>
+          </mat-expansion-panel-header>
+          <div class="expanded-content">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item opt_flex__item--vcenter">
+                    <mat-checkbox class="opt-txt__body1">Main Pit 1</mat-checkbox>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item opt_flex__item--vcenter">
+                    <mat-form-field class="example-full-width">
+                      <mat-select placeholder="Configuration">
+                        <mat-option value="Main Pit 5 (20)">Main Pit 1 (20)</mat-option>
+                      </mat-select>
+                    </mat-form-field>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item opt_flex__item--vcenter">
+                    <mat-checkbox class="opt-txt__body1">Main Pit 2</mat-checkbox>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item opt_flex__item--vcenter">
+                    <mat-form-field class="example-full-width">
+                      <mat-select placeholder="Configuration">
+                        <mat-option value="Main Pit 5 (20)">Main Pit 2 (20)</mat-option>
+                      </mat-select>
+                    </mat-form-field>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item opt_flex__item--vcenter">
+                    <mat-checkbox class="opt-txt__body1">Main Pit 3</mat-checkbox>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item opt_flex__item--vcenter">
+                    <mat-form-field class="example-full-width">
+                      <mat-select placeholder="Configuration">
+                        <mat-option value="Main Pit 5 (20)">Main Pit 3 (20)</mat-option>
+                      </mat-select>
+                    </mat-form-field>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item opt_flex__item--vcenter">
+                    <mat-checkbox class="opt-txt__body1">Main Pit 4</mat-checkbox>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item opt_flex__item--vcenter">
+                    <mat-form-field class="example-full-width">
+                      <mat-select placeholder="Configuration">
+                        <mat-option value="Main Pit 5 (20)">Main Pit 4 (20)</mat-option>
+                      </mat-select>
+                    </mat-form-field>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item opt_flex__item--vcenter">
+                    <mat-checkbox class="opt-txt__body1">Main Pit 5</mat-checkbox>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item opt_flex__item--vcenter">
+                    <mat-form-field class="example-full-width">
+                      <mat-select placeholder="Configuration">
+                        <mat-option value="Main Pit 5 (20)">Main Pit 5 (20)</mat-option>
+                      </mat-select>
+                    </mat-form-field>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item opt_flex__item--vcenter">
+                    <mat-checkbox class="opt-txt__body1">Main Pit 6</mat-checkbox>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item opt_flex__item--vcenter">
+                    <mat-form-field class="example-full-width">
+                      <mat-select placeholder="Configuration">
+                        <mat-option value="Main Pit 5 (20)">Main Pit 6 (20)</mat-option>
+                      </mat-select>
+                    </mat-form-field>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item opt_flex__item--vcenter">
+                    <mat-checkbox class="opt-txt__body1">Main Pit 7</mat-checkbox>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item opt_flex__item--vcenter">
+                    <mat-form-field class="example-full-width">
+                      <mat-select placeholder="Configuration">
+                        <mat-option value="Main Pit 5 (20)">Main Pit 7 (20)</mat-option>
+                      </mat-select>
+                    </mat-form-field>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item opt_flex__item--vcenter">
+                    <mat-checkbox class="opt-txt__body1">Main Pit 8</mat-checkbox>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item opt_flex__item--vcenter">
+                    <mat-form-field class="example-full-width">
+                      <mat-select placeholder="Configuration">
+                        <mat-option value="Main Pit 5 (20)">Main Pit 8 (20)</mat-option>
+                      </mat-select>
+                    </mat-form-field>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item opt_flex__item--vcenter">
+                    <mat-checkbox class="opt-txt__body1">Main Pit 9</mat-checkbox>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item opt_flex__item--vcenter">
+                    <mat-form-field class="example-full-width">
+                      <mat-select placeholder="Configuration">
+                        <mat-option value="Main Pit 5 (20)">Main Pit 9 (20)</mat-option>
+                      </mat-select>
+                    </mat-form-field>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item opt_flex__item--vcenter">
+                    <mat-checkbox class="opt-txt__body1">Main Pit 10</mat-checkbox>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item opt_flex__item--vcenter">
+                    <mat-form-field class="example-full-width">
+                      <mat-select placeholder="Configuration">
+                        <mat-option value="Main Pit 5 (20)">Main Pit 10 (20)</mat-option>
+                      </mat-select>
+                    </mat-form-field>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item opt_flex__item--vcenter">
+                    <mat-checkbox class="opt-txt__body1">Main Pit 11</mat-checkbox>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item opt_flex__item--vcenter">
+                    <mat-form-field class="example-full-width">
+                      <mat-select placeholder="Configuration">
+                        <mat-option value="Main Pit 5 (20)">Main Pit 11 (20)</mat-option>
+                      </mat-select>
+                    </mat-form-field>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item opt_flex__item--vcenter">
+                    <mat-checkbox class="opt-txt__body1">Main Pit 12</mat-checkbox>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item opt_flex__item--vcenter">
+                    <mat-form-field class="example-full-width">
+                      <mat-select placeholder="Configuration">
+                        <mat-option value="Main Pit 5 (20)">Main Pit 12 (20)</mat-option>
+                      </mat-select>
+                    </mat-form-field>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </mat-expansion-panel>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <div class="row">
+              <div class="col-md-4">
+                <span class="opt-txt__body1">3rd June 2018</span>
+              </div>
+              <div class="col-md-4">
+                <span class="opt-txt__body1">8:00am - 12:00pm</span>
+              </div>
+              <div class="col-md-4">
+                <span class="opt-txt__body1">3 out of 3 facilities selected</span>
+              </div>
+            </div>
+          </mat-expansion-panel-header>
+          <div class="expanded-content">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item opt_flex__item--vcenter">
+                    <mat-checkbox class="opt-txt__body1">Main Pit 1</mat-checkbox>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item opt_flex__item--vcenter">
+                    <mat-form-field class="example-full-width">
+                      <mat-select placeholder="Configuration">
+                        <mat-option value="Main Pit 5 (20)">Main Pit 1 (20)</mat-option>
+                      </mat-select>
+                    </mat-form-field>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item opt_flex__item--vcenter">
+                    <mat-checkbox class="opt-txt__body1">Main Pit 2</mat-checkbox>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item opt_flex__item--vcenter">
+                    <mat-form-field class="example-full-width">
+                      <mat-select placeholder="Configuration">
+                        <mat-option value="Main Pit 5 (20)">Main Pit 2 (20)</mat-option>
+                      </mat-select>
+                    </mat-form-field>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item opt_flex__item--vcenter">
+                    <mat-checkbox class="opt-txt__body1">Main Pit 3</mat-checkbox>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item opt_flex__item--vcenter">
+                    <mat-form-field class="example-full-width">
+                      <mat-select placeholder="Configuration">
+                        <mat-option value="Main Pit 5 (20)">Main Pit 3 (20)</mat-option>
+                      </mat-select>
+                    </mat-form-field>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item opt_flex__item--vcenter">
+                    <mat-checkbox class="opt-txt__body1">Main Pit 4</mat-checkbox>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item opt_flex__item--vcenter">
+                    <mat-form-field class="example-full-width">
+                      <mat-select placeholder="Configuration">
+                        <mat-option value="Main Pit 5 (20)">Main Pit 4 (20)</mat-option>
+                      </mat-select>
+                    </mat-form-field>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item opt_flex__item--vcenter">
+                    <mat-checkbox class="opt-txt__body1">Main Pit 5</mat-checkbox>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item opt_flex__item--vcenter">
+                    <mat-form-field class="example-full-width">
+                      <mat-select placeholder="Configuration">
+                        <mat-option value="Main Pit 5 (20)">Main Pit 5 (20)</mat-option>
+                      </mat-select>
+                    </mat-form-field>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item opt_flex__item--vcenter">
+                    <mat-checkbox class="opt-txt__body1">Main Pit 6</mat-checkbox>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item opt_flex__item--vcenter">
+                    <mat-form-field class="example-full-width">
+                      <mat-select placeholder="Configuration">
+                        <mat-option value="Main Pit 5 (20)">Main Pit 6 (20)</mat-option>
+                      </mat-select>
+                    </mat-form-field>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item opt_flex__item--vcenter">
+                    <mat-checkbox class="opt-txt__body1">Main Pit 7</mat-checkbox>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item opt_flex__item--vcenter">
+                    <mat-form-field class="example-full-width">
+                      <mat-select placeholder="Configuration">
+                        <mat-option value="Main Pit 5 (20)">Main Pit 7 (20)</mat-option>
+                      </mat-select>
+                    </mat-form-field>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item opt_flex__item--vcenter">
+                    <mat-checkbox class="opt-txt__body1">Main Pit 8</mat-checkbox>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item opt_flex__item--vcenter">
+                    <mat-form-field class="example-full-width">
+                      <mat-select placeholder="Configuration">
+                        <mat-option value="Main Pit 5 (20)">Main Pit 8 (20)</mat-option>
+                      </mat-select>
+                    </mat-form-field>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item opt_flex__item--vcenter">
+                    <mat-checkbox class="opt-txt__body1">Main Pit 9</mat-checkbox>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item opt_flex__item--vcenter">
+                    <mat-form-field class="example-full-width">
+                      <mat-select placeholder="Configuration">
+                        <mat-option value="Main Pit 5 (20)">Main Pit 9 (20)</mat-option>
+                      </mat-select>
+                    </mat-form-field>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item opt_flex__item--vcenter">
+                    <mat-checkbox class="opt-txt__body1">Main Pit 10</mat-checkbox>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item opt_flex__item--vcenter">
+                    <mat-form-field class="example-full-width">
+                      <mat-select placeholder="Configuration">
+                        <mat-option value="Main Pit 5 (20)">Main Pit 10 (20)</mat-option>
+                      </mat-select>
+                    </mat-form-field>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item opt_flex__item--vcenter">
+                    <mat-checkbox class="opt-txt__body1">Main Pit 11</mat-checkbox>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item opt_flex__item--vcenter">
+                    <mat-form-field class="example-full-width">
+                      <mat-select placeholder="Configuration">
+                        <mat-option value="Main Pit 5 (20)">Main Pit 11 (20)</mat-option>
+                      </mat-select>
+                    </mat-form-field>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item opt_flex__item--vcenter">
+                    <mat-checkbox class="opt-txt__body1">Main Pit 12</mat-checkbox>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item opt_flex__item--vcenter">
+                    <mat-form-field class="example-full-width">
+                      <mat-select placeholder="Configuration">
+                        <mat-option value="Main Pit 5 (20)">Main Pit 12 (20)</mat-option>
+                      </mat-select>
+                    </mat-form-field>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </mat-expansion-panel>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <div class="row">
+              <div class="col-md-4">
+                <span class="opt-txt__body1">3rd June 2018</span>
+              </div>
+              <div class="col-md-4">
+                <span class="opt-txt__body1">8:00am - 12:00pm</span>
+              </div>
+              <div class="col-md-4">
+                <span class="opt-txt__body1">3 out of 3 facilities selected</span>
+              </div>
+            </div>
+          </mat-expansion-panel-header>
+          <div class="expanded-content">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item opt_flex__item--vcenter">
+                    <mat-checkbox class="opt-txt__body1">Main Pit 1</mat-checkbox>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item opt_flex__item--vcenter">
+                    <mat-form-field class="example-full-width">
+                      <mat-select placeholder="Configuration">
+                        <mat-option value="Main Pit 5 (20)">Main Pit 1 (20)</mat-option>
+                      </mat-select>
+                    </mat-form-field>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item opt_flex__item--vcenter">
+                    <mat-checkbox class="opt-txt__body1">Main Pit 2</mat-checkbox>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item opt_flex__item--vcenter">
+                    <mat-form-field class="example-full-width">
+                      <mat-select placeholder="Configuration">
+                        <mat-option value="Main Pit 5 (20)">Main Pit 2 (20)</mat-option>
+                      </mat-select>
+                    </mat-form-field>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item opt_flex__item--vcenter">
+                    <mat-checkbox class="opt-txt__body1">Main Pit 3</mat-checkbox>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item opt_flex__item--vcenter">
+                    <mat-form-field class="example-full-width">
+                      <mat-select placeholder="Configuration">
+                        <mat-option value="Main Pit 5 (20)">Main Pit 3 (20)</mat-option>
+                      </mat-select>
+                    </mat-form-field>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item opt_flex__item--vcenter">
+                    <mat-checkbox class="opt-txt__body1">Main Pit 4</mat-checkbox>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item opt_flex__item--vcenter">
+                    <mat-form-field class="example-full-width">
+                      <mat-select placeholder="Configuration">
+                        <mat-option value="Main Pit 5 (20)">Main Pit 4 (20)</mat-option>
+                      </mat-select>
+                    </mat-form-field>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item opt_flex__item--vcenter">
+                    <mat-checkbox class="opt-txt__body1">Main Pit 5</mat-checkbox>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item opt_flex__item--vcenter">
+                    <mat-form-field class="example-full-width">
+                      <mat-select placeholder="Configuration">
+                        <mat-option value="Main Pit 5 (20)">Main Pit 5 (20)</mat-option>
+                      </mat-select>
+                    </mat-form-field>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item opt_flex__item--vcenter">
+                    <mat-checkbox class="opt-txt__body1">Main Pit 6</mat-checkbox>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item opt_flex__item--vcenter">
+                    <mat-form-field class="example-full-width">
+                      <mat-select placeholder="Configuration">
+                        <mat-option value="Main Pit 5 (20)">Main Pit 6 (20)</mat-option>
+                      </mat-select>
+                    </mat-form-field>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item opt_flex__item--vcenter">
+                    <mat-checkbox class="opt-txt__body1">Main Pit 7</mat-checkbox>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item opt_flex__item--vcenter">
+                    <mat-form-field class="example-full-width">
+                      <mat-select placeholder="Configuration">
+                        <mat-option value="Main Pit 5 (20)">Main Pit 7 (20)</mat-option>
+                      </mat-select>
+                    </mat-form-field>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item opt_flex__item--vcenter">
+                    <mat-checkbox class="opt-txt__body1">Main Pit 8</mat-checkbox>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item opt_flex__item--vcenter">
+                    <mat-form-field class="example-full-width">
+                      <mat-select placeholder="Configuration">
+                        <mat-option value="Main Pit 5 (20)">Main Pit 8 (20)</mat-option>
+                      </mat-select>
+                    </mat-form-field>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item opt_flex__item--vcenter">
+                    <mat-checkbox class="opt-txt__body1">Main Pit 9</mat-checkbox>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item opt_flex__item--vcenter">
+                    <mat-form-field class="example-full-width">
+                      <mat-select placeholder="Configuration">
+                        <mat-option value="Main Pit 5 (20)">Main Pit 9 (20)</mat-option>
+                      </mat-select>
+                    </mat-form-field>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item opt_flex__item--vcenter">
+                    <mat-checkbox class="opt-txt__body1">Main Pit 10</mat-checkbox>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item opt_flex__item--vcenter">
+                    <mat-form-field class="example-full-width">
+                      <mat-select placeholder="Configuration">
+                        <mat-option value="Main Pit 5 (20)">Main Pit 10 (20)</mat-option>
+                      </mat-select>
+                    </mat-form-field>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item opt_flex__item--vcenter">
+                    <mat-checkbox class="opt-txt__body1">Main Pit 11</mat-checkbox>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item opt_flex__item--vcenter">
+                    <mat-form-field class="example-full-width">
+                      <mat-select placeholder="Configuration">
+                        <mat-option value="Main Pit 5 (20)">Main Pit 11 (20)</mat-option>
+                      </mat-select>
+                    </mat-form-field>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item opt_flex__item--vcenter">
+                    <mat-checkbox class="opt-txt__body1">Main Pit 12</mat-checkbox>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item opt_flex__item--vcenter">
+                    <mat-form-field class="example-full-width">
+                      <mat-select placeholder="Configuration">
+                        <mat-option value="Main Pit 5 (20)">Main Pit 12 (20)</mat-option>
+                      </mat-select>
+                    </mat-form-field>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </mat-expansion-panel>
+      </mat-accordion>
+    </div>
+    <div class="row">
+        <div class="col-md-12 opt-txt__align-right">
+          <button mat-button class="mat-btn-primary--small">Deselect All</button>
+          <button mat-button class="mat-btn-primary--small">Auto Allocate Facilities</button>
+          <button mat-button class="mat-btn-primary--small">Update</button>
+        </div>
+      </div>
+  </div>
+</div>
+<br><br>
 <!-- <div class="opt_package-details opt_booking__list opt_booking__detail opt_time-range">
   <div class="opt_calendar-expand opt--depth__2">
     <div class="outer-wrapper">
