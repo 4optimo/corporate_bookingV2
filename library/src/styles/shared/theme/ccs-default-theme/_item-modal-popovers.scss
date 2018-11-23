@@ -1,5 +1,59 @@
 @import "variables";
+.multiple-defined{
+  .time-slot-selection{
+    padding: 0 50px !important;
+  }
+  .md-accordion{
+    padding: 20px 50px;
+    .opt_flex__item {
+      flex-basis: unset;
+      flex-grow: 1;
+      padding: unset;
+      border-bottom: unset;
+      margin: unset;
+    }
+    .mat-expansion-panel-body{
+      padding: 16px 24px 16px 24px;
+    }
+    .time-slot-selection{
+      min-height: 170px
+    }
+    .opt_item--multiple-timeslot .opt_flex__item{
+      margin:0 10px;
+    }
+  }
 
+  .opt_flex__item {
+    flex-basis: unset;
+    flex-grow: unset;
+    padding: unset;
+    border-bottom: unset;
+    margin: unset;
+  }
+}
+.multiple-normal{
+  .time-selected{
+    padding-left: 15px;
+    padding-right: 10px;
+  }
+}
+.single-normal{
+  .mat-form-field-flex{
+    align-items: inherit;
+  }
+}
+.single-defined{
+  .time-slot{
+    min-height: 55px;
+    display: flex;
+    align-items: center;
+  }
+  .individual-row{
+    height: unset;
+    line-height: unset;
+    flex-grow: 1;
+  }
+}
 .opt_item--multiple-timeslot {
   background-color: $opt_color_white;
   .opt_flex__item {
@@ -28,7 +82,8 @@
       margin-left: 50px;
     }
     .time-lbl{
-      padding: 0px 10px;
+      padding-left: 20px;
+      padding-right: 10px;
     }
   }
 }
@@ -94,27 +149,27 @@
 
 .date-hover {
   &.enabled {
-    &:hover {
-      cursor: pointer;
-      background-color: #2c95dc;
-      .date-picker {
-        .date-picker_month {
-          background-color: #fff;
-          color: #333;
-          &:before,
-          &:after {
-            background-color: #fff;
-          }
-        }
-        .date-picker_date {
-          border-color: #fff;
-          color: #fff;
-        }
-        .date-picker_year {
-          color: #fff;
-        }
-      }
-    }
+    // &:hover {
+    //   //cursor: pointer;
+    //  // background-color: #2c95dc;
+    //   .date-picker {
+    //     .date-picker_month {
+    //       //background-color: #fff;
+    //       color: #333;
+    //       &:before,
+    //       &:after {
+    //         //background-color: #fff;
+    //       }
+    //     }
+    //     .date-picker_date {
+    //       border-color: #fff;
+    //       color: #fff;
+    //     }
+    //     .date-picker_year {
+    //       color: #fff;
+    //     }
+    //   }
+    // }
   }
 }
 
