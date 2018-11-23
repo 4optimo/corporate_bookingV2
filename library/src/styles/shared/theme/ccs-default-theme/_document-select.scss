@@ -1,30 +1,27 @@
 @import "variables";
 
-.card{
+.card {
   background-color: $opt_color_white;
   border-bottom: 1px solid $opt-border-color;
   margin: 10px;
-  .row{
+  .row {
     //font-family: 'Rubik', sans-serif;
     font-weight: 500;
     font-size: medium;
 
-
-    .opt_flex__item{
+    .opt_flex__item {
       margin: 10px;
     }
 
-    .doc-des{
+    .doc-des {
       color: $doc-des;
     }
 
-    .doc-sub{
+    .doc-sub {
       color: $doc-sub;
     }
   }
 }
-
-
 
 .btn-addTo {
   background-color: $opt_color_white;
@@ -35,31 +32,65 @@
   padding: 5px;
   margin: 14px;
 
-    &:active, &:focus, &:visited, &:active:focus, &:hover {
-      background-color: $opt_color_primary;
-      color: $opt_color_white;
-    }
+  &:active,
+  &:focus,
+  &:visited,
+  &:active:focus,
+  &:hover {
+    background-color: $opt_color_primary;
+    color: $opt_color_white;
   }
+}
 
-
-nav{
-    ul{
-     li{
-      a{
+nav {
+  ul {
+    li {
+      a {
         border-radius: 50%;
       }
     }
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
+.opt_discount-search {
+  .opt-search-panel {
+    .opt_flex__item--inherit {
+      display: none;
+    }
+  }
+  .document-select-list {
+    .opt_flex--container {
+      // &.inc-col {
+      //   align-items: flex-end;
+      // }
+      &.price {
+        align-items: flex-end;
+      }
+    }
+    .add-img {
+      font-size: 14px;
+      vertical-align: middle;
+      transform: rotate(0.03deg);
+    }
+    .price {
+      justify-content: flex-end;
+    }
+  }
+  .package-select-section {
+    flex-wrap: nowrap;
+    flex-grow: inherit;
+    padding: 10px 0 2px;
+    fieldset {
+      border: 1px dashed $opt-border-color_darker;
+      padding: 15px 15px 0;
+      margin-top: 30px;
+      background-color: $opt_color_white;
+      legend {
+        display: inline-block;
+        width: auto;
+        background-color: $background-color;
+        padding: 2px 15px;
+      }
+    }
+  }
+}
