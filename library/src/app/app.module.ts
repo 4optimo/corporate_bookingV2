@@ -138,6 +138,7 @@ import { OptCounterComponent } from './opt-counter/opt-counter.component';
 import { OptTripleToggleComponent } from './opt-triple-toggle/opt-triple-toggle.component';
 import { OptDoubleToggleComponent } from './opt-double-toggle/opt-double-toggle.component';
 import { OptMessageDialogComponent } from './opt-message-dialog/opt-message-dialog.component';
+import { OptDiscountSearchComponent } from './opt-discount-search/opt-discount-search.component';
 
 
 
@@ -253,6 +254,7 @@ const appRoutes: Routes = [
     ScrollDispatchModule
 
   ],
+  declarations: [OptDiscountSearchComponent],
 
 })
 export class DemoMaterialModule {}
