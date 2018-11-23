@@ -54,6 +54,11 @@
     flex-grow: 1;
   }
 }
+.config-popup{
+  background-color: #ffffff;
+  max-width: 500px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
 .opt_item--multiple-timeslot {
   background-color: $opt_color_white;
   .opt_flex__item {
