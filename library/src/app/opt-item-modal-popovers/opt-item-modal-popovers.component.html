@@ -249,9 +249,23 @@
   </div>
   <div class="opt_flex--container">
     <div class="opt_flex__item opt_flex__item--vcenter">
-      <mat-checkbox class="opt-txt__caption">05-Feb-2018</mat-checkbox>
-      <span class="opt-txt__body1 time-selected">11:00 AM - 12:15 PM</span>
-      <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">edit</i></button>
+      <div class="edit-time">
+          <mat-checkbox class="opt-txt__caption">05-Feb-2018</mat-checkbox>
+          <mat-form-field class="example-full-width">
+              <input matInput placeholder="Start time" value="">
+              <mat-icon matSuffix>access_time</mat-icon>
+            </mat-form-field>
+            <mat-form-field class="example-full-width">
+                <input matInput placeholder="End time" value="">
+                <mat-icon matSuffix>access_time</mat-icon>
+              </mat-form-field>
+              <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">done</i></button>
+      </div>
+      <div class="default-time" style="display:none">
+          <mat-checkbox class="opt-txt__caption">05-Feb-2018</mat-checkbox>
+          <span class="opt-txt__body1 time-selected">11:00 AM - 12:15 PM</span>
+          <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">edit</i></button>
+      </div>
     </div>
     <div class="opt_flex__item  opt_flex__item--vcenter">
       <mat-checkbox class="opt-txt__caption">12-Feb-2018</mat-checkbox>
@@ -1917,13 +1931,1333 @@
       </mat-accordion>
     </div>
     <div class="row">
-        <div class="col-md-12 opt-txt__align-right">
-          <button mat-button class="mat-btn-primary--small">Deselect All</button>
-          <button mat-button class="mat-btn-primary--small">Auto Allocate Facilities</button>
-          <button mat-button class="mat-btn-primary--small">Update</button>
+      <div class="col-md-12 opt-txt__align-right">
+        <button mat-button class="mat-btn-primary--small">Deselect All</button>
+        <button mat-button class="mat-btn-primary--small">Auto Allocate Facilities</button>
+        <button mat-button class="mat-btn-primary--small">Update</button>
+      </div>
+    </div>
+  </div>
+</div>
+<br><br>
+<h2>Advanced Facility Selection Popup for Public Bookings</h2><br>
+<div class="config-popup advanced-public">
+  <div class="row header-row">
+    <div class="col-md-6 opt-no-padding">
+      <div class="opt_flex--container">
+        <div class="opt_flex__item">
+          <p>Covers 58/58 reserved</p>
         </div>
       </div>
+    </div>
+    <div class="col-md-6  opt-txt__align-right opt-no-padding">
+      <div class="opt_flex--container">
+        <div class="opt_flex__item">
+          <div class="opt-triple-toggle">
+            <label>Show item allocation</label>
+            <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+              <mat-button-toggle value="on">On</mat-button-toggle>
+              <mat-button-toggle value="off">Off</mat-button-toggle>
+            </mat-button-toggle-group>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
+  <div class="content-list">
+      <div class="row">
+          <div class="col-md-4">
+            <div class="opt_flex--container">
+              <div class="opt_flex__item opt_flex__item--vcenter">
+                <mat-checkbox class="opt-txt__body1">Main Pit 1</mat-checkbox>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="opt_flex--container">
+              <div class="opt_flex__item opt_flex__item--vcenter">
+                <span class="opt-txt__body1">Main Pit 1 (12/20)</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="opt_flex--container">
+              <div class="opt_flex__item opt_flex__item--vcenter">
+                <mat-form-field class="example-full-width">
+                  <input matInput placeholder="" value="8">
+                </mat-form-field>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="opt_flex--container">
+              <div class="opt_flex__item opt_flex__item--vcenter">
+                <mat-checkbox class="opt-txt__body1">Main Pit 2</mat-checkbox>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="opt_flex--container">
+              <div class="opt_flex__item opt_flex__item--vcenter">
+                <span class="opt-txt__body1">Main Pit 2 (10/20)</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="opt_flex--container">
+              <div class="opt_flex__item opt_flex__item--vcenter">
+                <mat-form-field class="example-full-width">
+                  <input matInput placeholder="" value="8">
+                </mat-form-field>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="opt_flex--container">
+              <div class="opt_flex__item opt_flex__item--vcenter">
+                <mat-checkbox class="opt-txt__body1">Main Pit 3</mat-checkbox>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="opt_flex--container">
+              <div class="opt_flex__item opt_flex__item--vcenter">
+                <span class="opt-txt__body1">Main Pit 3 (0/20)</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="opt_flex--container">
+              <div class="opt_flex__item opt_flex__item--vcenter">
+                <mat-form-field class="example-full-width">
+                  <input matInput placeholder="" value="8">
+                </mat-form-field>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="opt_flex--container">
+              <div class="opt_flex__item opt_flex__item--vcenter">
+                <mat-checkbox class="opt-txt__body1">Main Pit 4</mat-checkbox>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="opt_flex--container">
+              <div class="opt_flex__item opt_flex__item--vcenter">
+                <span class="opt-txt__body1">Main Pit 4 (0/20)</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="opt_flex--container">
+              <div class="opt_flex__item opt_flex__item--vcenter">
+                <mat-form-field class="example-full-width">
+                  <input matInput placeholder="" value="8">
+                </mat-form-field>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="opt_flex--container">
+              <div class="opt_flex__item opt_flex__item--vcenter">
+                <mat-checkbox class="opt-txt__body1">Main Pit 5</mat-checkbox>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="opt_flex--container">
+              <div class="opt_flex__item opt_flex__item--vcenter">
+                <span class="opt-txt__body1">Main Pit 5 (0/20)</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="opt_flex--container">
+              <div class="opt_flex__item opt_flex__item--vcenter">
+                <mat-form-field class="example-full-width">
+                  <input matInput placeholder="" value="8">
+                </mat-form-field>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="opt_flex--container">
+              <div class="opt_flex__item opt_flex__item--vcenter">
+                <mat-checkbox class="opt-txt__body1">Main Pit 6</mat-checkbox>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="opt_flex--container">
+              <div class="opt_flex__item opt_flex__item--vcenter">
+                <span class="opt-txt__body1">Main Pit 6 (0/20)</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="opt_flex--container">
+              <div class="opt_flex__item opt_flex__item--vcenter">
+                <mat-form-field class="example-full-width">
+                  <input matInput placeholder="" value="8">
+                </mat-form-field>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="opt_flex--container">
+              <div class="opt_flex__item opt_flex__item--vcenter">
+                <mat-checkbox class="opt-txt__body1">Main Pit 7</mat-checkbox>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="opt_flex--container">
+              <div class="opt_flex__item opt_flex__item--vcenter">
+                <span class="opt-txt__body1">Main Pit 7 (0/20)</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="opt_flex--container">
+              <div class="opt_flex__item opt_flex__item--vcenter">
+                <mat-form-field class="example-full-width">
+                  <input matInput placeholder="" value="8">
+                </mat-form-field>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="opt_flex--container">
+              <div class="opt_flex__item opt_flex__item--vcenter">
+                <mat-checkbox class="opt-txt__body1">Main Pit 8</mat-checkbox>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="opt_flex--container">
+              <div class="opt_flex__item opt_flex__item--vcenter">
+                <span class="opt-txt__body1">Main Pit 8 (0/20)</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="opt_flex--container">
+              <div class="opt_flex__item opt_flex__item--vcenter">
+                <mat-form-field class="example-full-width">
+                  <input matInput placeholder="" value="8">
+                </mat-form-field>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="opt_flex--container">
+              <div class="opt_flex__item opt_flex__item--vcenter">
+                <mat-checkbox class="opt-txt__body1">Main Pit 9</mat-checkbox>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="opt_flex--container">
+              <div class="opt_flex__item opt_flex__item--vcenter">
+                <span class="opt-txt__body1">Main Pit 9 (0/20)</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="opt_flex--container">
+              <div class="opt_flex__item opt_flex__item--vcenter">
+                <mat-form-field class="example-full-width">
+                  <input matInput placeholder="" value="8">
+                </mat-form-field>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="opt_flex--container">
+              <div class="opt_flex__item opt_flex__item--vcenter">
+                <mat-checkbox class="opt-txt__body1">Main Pit 10</mat-checkbox>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="opt_flex--container">
+              <div class="opt_flex__item opt_flex__item--vcenter">
+                <span class="opt-txt__body1">Main Pit 10 (0/20)</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="opt_flex--container">
+              <div class="opt_flex__item opt_flex__item--vcenter">
+                <mat-form-field class="example-full-width">
+                  <input matInput placeholder="" value="8">
+                </mat-form-field>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="opt_flex--container">
+              <div class="opt_flex__item opt_flex__item--vcenter">
+                <mat-checkbox class="opt-txt__body1">Main Pit 11</mat-checkbox>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="opt_flex--container">
+              <div class="opt_flex__item opt_flex__item--vcenter">
+                <span class="opt-txt__body1">Main Pit 11 (0/20)</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="opt_flex--container">
+              <div class="opt_flex__item opt_flex__item--vcenter">
+                <mat-form-field class="example-full-width">
+                  <input matInput placeholder="" value="8">
+                </mat-form-field>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="opt_flex--container">
+              <div class="opt_flex__item opt_flex__item--vcenter">
+                <mat-checkbox class="opt-txt__body1">Main Pit 12</mat-checkbox>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="opt_flex--container">
+              <div class="opt_flex__item opt_flex__item--vcenter">
+                <span class="opt-txt__body1">Main Pit 12 (0/20)</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="opt_flex--container">
+              <div class="opt_flex__item opt_flex__item--vcenter">
+                <mat-form-field class="example-full-width">
+                  <input matInput placeholder="" value="8">
+                </mat-form-field>
+              </div>
+            </div>
+          </div>
+        </div>
+  </div>
+  <div class="row">
+      <div class="col-md-12 opt-txt__align-right">
+        <button mat-button class="mat-btn-primary--small">Update</button>
+      </div>
+    </div>
+</div>
+<br><br>
+<h2>Advanced Facility Selection Popup for Public Bookings - with individual Item allocations</h2><br>
+<div class="config-popup advanced-public">
+    <div class="row header-row">
+        <div class="col-md-6 opt-no-padding">
+          <div class="opt_flex--container">
+            <div class="opt_flex__item">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6  opt-txt__align-right opt-no-padding">
+          <div class="opt_flex--container">
+            <div class="opt_flex__item">
+              <div class="opt-triple-toggle">
+                <label>Show item allocation</label>
+                <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+                  <mat-button-toggle value="on">On</mat-button-toggle>
+                  <mat-button-toggle value="off">Off</mat-button-toggle>
+                </mat-button-toggle-group>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content-list">
+          <div class="md-accordion">
+            <mat-accordion>
+              <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                  <div class="row">
+                    <div class="col-md-4">
+                      <span class="opt-txt__body1">3rd June 2018</span>
+                    </div>
+                    <div class="col-md-4">
+                      <span class="opt-txt__body1">8:00am - 12:00pm</span>
+                    </div>
+                    <div class="col-md-4">
+                      <span class="opt-txt__body1">3 out of 3 facilities selected</span>
+                    </div>
+                  </div>
+                </mat-expansion-panel-header>
+                <div class="expanded-content">
+                    <div class="row">
+                        <div class="col-md-4">
+                          <div class="opt_flex--container">
+                            <div class="opt_flex__item opt_flex__item--vcenter">
+                              <mat-checkbox class="opt-txt__body1">Main Pit 1</mat-checkbox>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="opt_flex--container">
+                            <div class="opt_flex__item opt_flex__item--vcenter">
+                              <span class="opt-txt__body1">Main Pit 1 (12/20)</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="opt_flex--container">
+                            <div class="opt_flex__item opt_flex__item--vcenter">
+                              <mat-form-field class="example-full-width">
+                                <input matInput placeholder="" value="8">
+                              </mat-form-field>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-4">
+                          <div class="opt_flex--container">
+                            <div class="opt_flex__item opt_flex__item--vcenter">
+                              <mat-checkbox class="opt-txt__body1">Main Pit 2</mat-checkbox>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="opt_flex--container">
+                            <div class="opt_flex__item opt_flex__item--vcenter">
+                              <span class="opt-txt__body1">Main Pit 2 (10/20)</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="opt_flex--container">
+                            <div class="opt_flex__item opt_flex__item--vcenter">
+                              <mat-form-field class="example-full-width">
+                                <input matInput placeholder="" value="8">
+                              </mat-form-field>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-4">
+                          <div class="opt_flex--container">
+                            <div class="opt_flex__item opt_flex__item--vcenter">
+                              <mat-checkbox class="opt-txt__body1">Main Pit 3</mat-checkbox>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="opt_flex--container">
+                            <div class="opt_flex__item opt_flex__item--vcenter">
+                              <span class="opt-txt__body1">Main Pit 3 (0/20)</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="opt_flex--container">
+                            <div class="opt_flex__item opt_flex__item--vcenter">
+                              <mat-form-field class="example-full-width">
+                                <input matInput placeholder="" value="8">
+                              </mat-form-field>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-4">
+                          <div class="opt_flex--container">
+                            <div class="opt_flex__item opt_flex__item--vcenter">
+                              <mat-checkbox class="opt-txt__body1">Main Pit 4</mat-checkbox>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="opt_flex--container">
+                            <div class="opt_flex__item opt_flex__item--vcenter">
+                              <span class="opt-txt__body1">Main Pit 4 (0/20)</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="opt_flex--container">
+                            <div class="opt_flex__item opt_flex__item--vcenter">
+                              <mat-form-field class="example-full-width">
+                                <input matInput placeholder="" value="8">
+                              </mat-form-field>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-4">
+                          <div class="opt_flex--container">
+                            <div class="opt_flex__item opt_flex__item--vcenter">
+                              <mat-checkbox class="opt-txt__body1">Main Pit 5</mat-checkbox>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="opt_flex--container">
+                            <div class="opt_flex__item opt_flex__item--vcenter">
+                              <span class="opt-txt__body1">Main Pit 5 (0/20)</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="opt_flex--container">
+                            <div class="opt_flex__item opt_flex__item--vcenter">
+                              <mat-form-field class="example-full-width">
+                                <input matInput placeholder="" value="8">
+                              </mat-form-field>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-4">
+                          <div class="opt_flex--container">
+                            <div class="opt_flex__item opt_flex__item--vcenter">
+                              <mat-checkbox class="opt-txt__body1">Main Pit 6</mat-checkbox>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="opt_flex--container">
+                            <div class="opt_flex__item opt_flex__item--vcenter">
+                              <span class="opt-txt__body1">Main Pit 6 (0/20)</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="opt_flex--container">
+                            <div class="opt_flex__item opt_flex__item--vcenter">
+                              <mat-form-field class="example-full-width">
+                                <input matInput placeholder="" value="8">
+                              </mat-form-field>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-4">
+                          <div class="opt_flex--container">
+                            <div class="opt_flex__item opt_flex__item--vcenter">
+                              <mat-checkbox class="opt-txt__body1">Main Pit 7</mat-checkbox>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="opt_flex--container">
+                            <div class="opt_flex__item opt_flex__item--vcenter">
+                              <span class="opt-txt__body1">Main Pit 7 (0/20)</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="opt_flex--container">
+                            <div class="opt_flex__item opt_flex__item--vcenter">
+                              <mat-form-field class="example-full-width">
+                                <input matInput placeholder="" value="8">
+                              </mat-form-field>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-4">
+                          <div class="opt_flex--container">
+                            <div class="opt_flex__item opt_flex__item--vcenter">
+                              <mat-checkbox class="opt-txt__body1">Main Pit 8</mat-checkbox>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="opt_flex--container">
+                            <div class="opt_flex__item opt_flex__item--vcenter">
+                              <span class="opt-txt__body1">Main Pit 8 (0/20)</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="opt_flex--container">
+                            <div class="opt_flex__item opt_flex__item--vcenter">
+                              <mat-form-field class="example-full-width">
+                                <input matInput placeholder="" value="8">
+                              </mat-form-field>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-4">
+                          <div class="opt_flex--container">
+                            <div class="opt_flex__item opt_flex__item--vcenter">
+                              <mat-checkbox class="opt-txt__body1">Main Pit 9</mat-checkbox>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="opt_flex--container">
+                            <div class="opt_flex__item opt_flex__item--vcenter">
+                              <span class="opt-txt__body1">Main Pit 9 (0/20)</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="opt_flex--container">
+                            <div class="opt_flex__item opt_flex__item--vcenter">
+                              <mat-form-field class="example-full-width">
+                                <input matInput placeholder="" value="8">
+                              </mat-form-field>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-4">
+                          <div class="opt_flex--container">
+                            <div class="opt_flex__item opt_flex__item--vcenter">
+                              <mat-checkbox class="opt-txt__body1">Main Pit 10</mat-checkbox>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="opt_flex--container">
+                            <div class="opt_flex__item opt_flex__item--vcenter">
+                              <span class="opt-txt__body1">Main Pit 10 (0/20)</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="opt_flex--container">
+                            <div class="opt_flex__item opt_flex__item--vcenter">
+                              <mat-form-field class="example-full-width">
+                                <input matInput placeholder="" value="8">
+                              </mat-form-field>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-4">
+                          <div class="opt_flex--container">
+                            <div class="opt_flex__item opt_flex__item--vcenter">
+                              <mat-checkbox class="opt-txt__body1">Main Pit 11</mat-checkbox>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="opt_flex--container">
+                            <div class="opt_flex__item opt_flex__item--vcenter">
+                              <span class="opt-txt__body1">Main Pit 11 (0/20)</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="opt_flex--container">
+                            <div class="opt_flex__item opt_flex__item--vcenter">
+                              <mat-form-field class="example-full-width">
+                                <input matInput placeholder="" value="8">
+                              </mat-form-field>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-4">
+                          <div class="opt_flex--container">
+                            <div class="opt_flex__item opt_flex__item--vcenter">
+                              <mat-checkbox class="opt-txt__body1">Main Pit 12</mat-checkbox>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="opt_flex--container">
+                            <div class="opt_flex__item opt_flex__item--vcenter">
+                              <span class="opt-txt__body1">Main Pit 12 (0/20)</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="opt_flex--container">
+                            <div class="opt_flex__item opt_flex__item--vcenter">
+                              <mat-form-field class="example-full-width">
+                                <input matInput placeholder="" value="8">
+                              </mat-form-field>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+              </mat-expansion-panel>
+              <mat-expansion-panel>
+                  <mat-expansion-panel-header>
+                    <div class="row">
+                      <div class="col-md-4">
+                        <span class="opt-txt__body1">3rd June 2018</span>
+                      </div>
+                      <div class="col-md-4">
+                        <span class="opt-txt__body1">8:00am - 12:00pm</span>
+                      </div>
+                      <div class="col-md-4">
+                        <span class="opt-txt__body1">3 out of 3 facilities selected</span>
+                      </div>
+                    </div>
+                  </mat-expansion-panel-header>
+                  <div class="expanded-content">
+                      <div class="row">
+                          <div class="col-md-4">
+                            <div class="opt_flex--container">
+                              <div class="opt_flex__item opt_flex__item--vcenter">
+                                <mat-checkbox class="opt-txt__body1">Main Pit 1</mat-checkbox>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="opt_flex--container">
+                              <div class="opt_flex__item opt_flex__item--vcenter">
+                                <span class="opt-txt__body1">Main Pit 1 (12/20)</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-2">
+                            <div class="opt_flex--container">
+                              <div class="opt_flex__item opt_flex__item--vcenter">
+                                <mat-form-field class="example-full-width">
+                                  <input matInput placeholder="" value="8">
+                                </mat-form-field>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-4">
+                            <div class="opt_flex--container">
+                              <div class="opt_flex__item opt_flex__item--vcenter">
+                                <mat-checkbox class="opt-txt__body1">Main Pit 2</mat-checkbox>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="opt_flex--container">
+                              <div class="opt_flex__item opt_flex__item--vcenter">
+                                <span class="opt-txt__body1">Main Pit 2 (10/20)</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-2">
+                            <div class="opt_flex--container">
+                              <div class="opt_flex__item opt_flex__item--vcenter">
+                                <mat-form-field class="example-full-width">
+                                  <input matInput placeholder="" value="8">
+                                </mat-form-field>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-4">
+                            <div class="opt_flex--container">
+                              <div class="opt_flex__item opt_flex__item--vcenter">
+                                <mat-checkbox class="opt-txt__body1">Main Pit 3</mat-checkbox>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="opt_flex--container">
+                              <div class="opt_flex__item opt_flex__item--vcenter">
+                                <span class="opt-txt__body1">Main Pit 3 (0/20)</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-2">
+                            <div class="opt_flex--container">
+                              <div class="opt_flex__item opt_flex__item--vcenter">
+                                <mat-form-field class="example-full-width">
+                                  <input matInput placeholder="" value="8">
+                                </mat-form-field>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-4">
+                            <div class="opt_flex--container">
+                              <div class="opt_flex__item opt_flex__item--vcenter">
+                                <mat-checkbox class="opt-txt__body1">Main Pit 4</mat-checkbox>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="opt_flex--container">
+                              <div class="opt_flex__item opt_flex__item--vcenter">
+                                <span class="opt-txt__body1">Main Pit 4 (0/20)</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-2">
+                            <div class="opt_flex--container">
+                              <div class="opt_flex__item opt_flex__item--vcenter">
+                                <mat-form-field class="example-full-width">
+                                  <input matInput placeholder="" value="8">
+                                </mat-form-field>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-4">
+                            <div class="opt_flex--container">
+                              <div class="opt_flex__item opt_flex__item--vcenter">
+                                <mat-checkbox class="opt-txt__body1">Main Pit 5</mat-checkbox>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="opt_flex--container">
+                              <div class="opt_flex__item opt_flex__item--vcenter">
+                                <span class="opt-txt__body1">Main Pit 5 (0/20)</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-2">
+                            <div class="opt_flex--container">
+                              <div class="opt_flex__item opt_flex__item--vcenter">
+                                <mat-form-field class="example-full-width">
+                                  <input matInput placeholder="" value="8">
+                                </mat-form-field>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-4">
+                            <div class="opt_flex--container">
+                              <div class="opt_flex__item opt_flex__item--vcenter">
+                                <mat-checkbox class="opt-txt__body1">Main Pit 6</mat-checkbox>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="opt_flex--container">
+                              <div class="opt_flex__item opt_flex__item--vcenter">
+                                <span class="opt-txt__body1">Main Pit 6 (0/20)</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-2">
+                            <div class="opt_flex--container">
+                              <div class="opt_flex__item opt_flex__item--vcenter">
+                                <mat-form-field class="example-full-width">
+                                  <input matInput placeholder="" value="8">
+                                </mat-form-field>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-4">
+                            <div class="opt_flex--container">
+                              <div class="opt_flex__item opt_flex__item--vcenter">
+                                <mat-checkbox class="opt-txt__body1">Main Pit 7</mat-checkbox>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="opt_flex--container">
+                              <div class="opt_flex__item opt_flex__item--vcenter">
+                                <span class="opt-txt__body1">Main Pit 7 (0/20)</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-2">
+                            <div class="opt_flex--container">
+                              <div class="opt_flex__item opt_flex__item--vcenter">
+                                <mat-form-field class="example-full-width">
+                                  <input matInput placeholder="" value="8">
+                                </mat-form-field>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-4">
+                            <div class="opt_flex--container">
+                              <div class="opt_flex__item opt_flex__item--vcenter">
+                                <mat-checkbox class="opt-txt__body1">Main Pit 8</mat-checkbox>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="opt_flex--container">
+                              <div class="opt_flex__item opt_flex__item--vcenter">
+                                <span class="opt-txt__body1">Main Pit 8 (0/20)</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-2">
+                            <div class="opt_flex--container">
+                              <div class="opt_flex__item opt_flex__item--vcenter">
+                                <mat-form-field class="example-full-width">
+                                  <input matInput placeholder="" value="8">
+                                </mat-form-field>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-4">
+                            <div class="opt_flex--container">
+                              <div class="opt_flex__item opt_flex__item--vcenter">
+                                <mat-checkbox class="opt-txt__body1">Main Pit 9</mat-checkbox>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="opt_flex--container">
+                              <div class="opt_flex__item opt_flex__item--vcenter">
+                                <span class="opt-txt__body1">Main Pit 9 (0/20)</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-2">
+                            <div class="opt_flex--container">
+                              <div class="opt_flex__item opt_flex__item--vcenter">
+                                <mat-form-field class="example-full-width">
+                                  <input matInput placeholder="" value="8">
+                                </mat-form-field>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-4">
+                            <div class="opt_flex--container">
+                              <div class="opt_flex__item opt_flex__item--vcenter">
+                                <mat-checkbox class="opt-txt__body1">Main Pit 10</mat-checkbox>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="opt_flex--container">
+                              <div class="opt_flex__item opt_flex__item--vcenter">
+                                <span class="opt-txt__body1">Main Pit 10 (0/20)</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-2">
+                            <div class="opt_flex--container">
+                              <div class="opt_flex__item opt_flex__item--vcenter">
+                                <mat-form-field class="example-full-width">
+                                  <input matInput placeholder="" value="8">
+                                </mat-form-field>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-4">
+                            <div class="opt_flex--container">
+                              <div class="opt_flex__item opt_flex__item--vcenter">
+                                <mat-checkbox class="opt-txt__body1">Main Pit 11</mat-checkbox>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="opt_flex--container">
+                              <div class="opt_flex__item opt_flex__item--vcenter">
+                                <span class="opt-txt__body1">Main Pit 11 (0/20)</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-2">
+                            <div class="opt_flex--container">
+                              <div class="opt_flex__item opt_flex__item--vcenter">
+                                <mat-form-field class="example-full-width">
+                                  <input matInput placeholder="" value="8">
+                                </mat-form-field>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-4">
+                            <div class="opt_flex--container">
+                              <div class="opt_flex__item opt_flex__item--vcenter">
+                                <mat-checkbox class="opt-txt__body1">Main Pit 12</mat-checkbox>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="opt_flex--container">
+                              <div class="opt_flex__item opt_flex__item--vcenter">
+                                <span class="opt-txt__body1">Main Pit 12 (0/20)</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-2">
+                            <div class="opt_flex--container">
+                              <div class="opt_flex__item opt_flex__item--vcenter">
+                                <mat-form-field class="example-full-width">
+                                  <input matInput placeholder="" value="8">
+                                </mat-form-field>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                  </div>
+                </mat-expansion-panel>
+                <mat-expansion-panel>
+                    <mat-expansion-panel-header>
+                      <div class="row">
+                        <div class="col-md-4">
+                          <span class="opt-txt__body1">3rd June 2018</span>
+                        </div>
+                        <div class="col-md-4">
+                          <span class="opt-txt__body1">8:00am - 12:00pm</span>
+                        </div>
+                        <div class="col-md-4">
+                          <span class="opt-txt__body1">3 out of 3 facilities selected</span>
+                        </div>
+                      </div>
+                    </mat-expansion-panel-header>
+                    <div class="expanded-content">
+                        <div class="row">
+                            <div class="col-md-4">
+                              <div class="opt_flex--container">
+                                <div class="opt_flex__item opt_flex__item--vcenter">
+                                  <mat-checkbox class="opt-txt__body1">Main Pit 1</mat-checkbox>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="opt_flex--container">
+                                <div class="opt_flex__item opt_flex__item--vcenter">
+                                  <span class="opt-txt__body1">Main Pit 1 (12/20)</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-2">
+                              <div class="opt_flex--container">
+                                <div class="opt_flex__item opt_flex__item--vcenter">
+                                  <mat-form-field class="example-full-width">
+                                    <input matInput placeholder="" value="8">
+                                  </mat-form-field>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-4">
+                              <div class="opt_flex--container">
+                                <div class="opt_flex__item opt_flex__item--vcenter">
+                                  <mat-checkbox class="opt-txt__body1">Main Pit 2</mat-checkbox>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="opt_flex--container">
+                                <div class="opt_flex__item opt_flex__item--vcenter">
+                                  <span class="opt-txt__body1">Main Pit 2 (10/20)</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-2">
+                              <div class="opt_flex--container">
+                                <div class="opt_flex__item opt_flex__item--vcenter">
+                                  <mat-form-field class="example-full-width">
+                                    <input matInput placeholder="" value="8">
+                                  </mat-form-field>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-4">
+                              <div class="opt_flex--container">
+                                <div class="opt_flex__item opt_flex__item--vcenter">
+                                  <mat-checkbox class="opt-txt__body1">Main Pit 3</mat-checkbox>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="opt_flex--container">
+                                <div class="opt_flex__item opt_flex__item--vcenter">
+                                  <span class="opt-txt__body1">Main Pit 3 (0/20)</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-2">
+                              <div class="opt_flex--container">
+                                <div class="opt_flex__item opt_flex__item--vcenter">
+                                  <mat-form-field class="example-full-width">
+                                    <input matInput placeholder="" value="8">
+                                  </mat-form-field>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-4">
+                              <div class="opt_flex--container">
+                                <div class="opt_flex__item opt_flex__item--vcenter">
+                                  <mat-checkbox class="opt-txt__body1">Main Pit 4</mat-checkbox>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="opt_flex--container">
+                                <div class="opt_flex__item opt_flex__item--vcenter">
+                                  <span class="opt-txt__body1">Main Pit 4 (0/20)</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-2">
+                              <div class="opt_flex--container">
+                                <div class="opt_flex__item opt_flex__item--vcenter">
+                                  <mat-form-field class="example-full-width">
+                                    <input matInput placeholder="" value="8">
+                                  </mat-form-field>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-4">
+                              <div class="opt_flex--container">
+                                <div class="opt_flex__item opt_flex__item--vcenter">
+                                  <mat-checkbox class="opt-txt__body1">Main Pit 5</mat-checkbox>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="opt_flex--container">
+                                <div class="opt_flex__item opt_flex__item--vcenter">
+                                  <span class="opt-txt__body1">Main Pit 5 (0/20)</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-2">
+                              <div class="opt_flex--container">
+                                <div class="opt_flex__item opt_flex__item--vcenter">
+                                  <mat-form-field class="example-full-width">
+                                    <input matInput placeholder="" value="8">
+                                  </mat-form-field>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-4">
+                              <div class="opt_flex--container">
+                                <div class="opt_flex__item opt_flex__item--vcenter">
+                                  <mat-checkbox class="opt-txt__body1">Main Pit 6</mat-checkbox>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="opt_flex--container">
+                                <div class="opt_flex__item opt_flex__item--vcenter">
+                                  <span class="opt-txt__body1">Main Pit 6 (0/20)</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-2">
+                              <div class="opt_flex--container">
+                                <div class="opt_flex__item opt_flex__item--vcenter">
+                                  <mat-form-field class="example-full-width">
+                                    <input matInput placeholder="" value="8">
+                                  </mat-form-field>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-4">
+                              <div class="opt_flex--container">
+                                <div class="opt_flex__item opt_flex__item--vcenter">
+                                  <mat-checkbox class="opt-txt__body1">Main Pit 7</mat-checkbox>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="opt_flex--container">
+                                <div class="opt_flex__item opt_flex__item--vcenter">
+                                  <span class="opt-txt__body1">Main Pit 7 (0/20)</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-2">
+                              <div class="opt_flex--container">
+                                <div class="opt_flex__item opt_flex__item--vcenter">
+                                  <mat-form-field class="example-full-width">
+                                    <input matInput placeholder="" value="8">
+                                  </mat-form-field>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-4">
+                              <div class="opt_flex--container">
+                                <div class="opt_flex__item opt_flex__item--vcenter">
+                                  <mat-checkbox class="opt-txt__body1">Main Pit 8</mat-checkbox>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="opt_flex--container">
+                                <div class="opt_flex__item opt_flex__item--vcenter">
+                                  <span class="opt-txt__body1">Main Pit 8 (0/20)</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-2">
+                              <div class="opt_flex--container">
+                                <div class="opt_flex__item opt_flex__item--vcenter">
+                                  <mat-form-field class="example-full-width">
+                                    <input matInput placeholder="" value="8">
+                                  </mat-form-field>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-4">
+                              <div class="opt_flex--container">
+                                <div class="opt_flex__item opt_flex__item--vcenter">
+                                  <mat-checkbox class="opt-txt__body1">Main Pit 9</mat-checkbox>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="opt_flex--container">
+                                <div class="opt_flex__item opt_flex__item--vcenter">
+                                  <span class="opt-txt__body1">Main Pit 9 (0/20)</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-2">
+                              <div class="opt_flex--container">
+                                <div class="opt_flex__item opt_flex__item--vcenter">
+                                  <mat-form-field class="example-full-width">
+                                    <input matInput placeholder="" value="8">
+                                  </mat-form-field>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-4">
+                              <div class="opt_flex--container">
+                                <div class="opt_flex__item opt_flex__item--vcenter">
+                                  <mat-checkbox class="opt-txt__body1">Main Pit 10</mat-checkbox>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="opt_flex--container">
+                                <div class="opt_flex__item opt_flex__item--vcenter">
+                                  <span class="opt-txt__body1">Main Pit 10 (0/20)</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-2">
+                              <div class="opt_flex--container">
+                                <div class="opt_flex__item opt_flex__item--vcenter">
+                                  <mat-form-field class="example-full-width">
+                                    <input matInput placeholder="" value="8">
+                                  </mat-form-field>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-4">
+                              <div class="opt_flex--container">
+                                <div class="opt_flex__item opt_flex__item--vcenter">
+                                  <mat-checkbox class="opt-txt__body1">Main Pit 11</mat-checkbox>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="opt_flex--container">
+                                <div class="opt_flex__item opt_flex__item--vcenter">
+                                  <span class="opt-txt__body1">Main Pit 11 (0/20)</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-2">
+                              <div class="opt_flex--container">
+                                <div class="opt_flex__item opt_flex__item--vcenter">
+                                  <mat-form-field class="example-full-width">
+                                    <input matInput placeholder="" value="8">
+                                  </mat-form-field>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-4">
+                              <div class="opt_flex--container">
+                                <div class="opt_flex__item opt_flex__item--vcenter">
+                                  <mat-checkbox class="opt-txt__body1">Main Pit 12</mat-checkbox>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="opt_flex--container">
+                                <div class="opt_flex__item opt_flex__item--vcenter">
+                                  <span class="opt-txt__body1">Main Pit 12 (0/20)</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-2">
+                              <div class="opt_flex--container">
+                                <div class="opt_flex__item opt_flex__item--vcenter">
+                                  <mat-form-field class="example-full-width">
+                                    <input matInput placeholder="" value="8">
+                                  </mat-form-field>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                  </mat-expansion-panel>
+            </mat-accordion>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 opt-txt__align-right">
+              <button mat-button class="mat-btn-primary--small">Update</button>
+            </div>
+          </div>
 </div>
 <br><br>
 <!-- <div class="opt_package-details opt_booking__list opt_booking__detail opt_time-range">
