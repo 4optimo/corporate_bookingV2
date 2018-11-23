@@ -58,7 +58,53 @@
   background-color: #ffffff;
   max-width: 500px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  padding: 10px 20px;
+  padding: 20px 20px;
+  mat-form-field{
+    width: 100%;
+  }
+}
+.advanced-private{
+  .header-row{
+    margin:10px 0px;
+  }
+  .opt_flex--container{
+    min-height: 50px;
+  }
+  .content-list{
+    max-height: 500px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    mat-form-field{
+      padding-right: 10px;
+    }
+  }
+  button{
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+}
+.advanced-private-individual{
+  max-width: 600px;
+  .header-row{
+    margin:10px 0px;
+  }
+  .opt_flex--container{
+    min-height: 50px;
+  }
+  .content-list{
+    .expanded-content{
+      max-height: 500px;
+      overflow-y: scroll;
+      overflow-x: hidden;
+      mat-form-field{
+        padding-right: 10px;
+      } 
+    }
+  }
+  button{
+    margin-left: 10px;
+    margin-top: 10px;
+  }
 }
 .opt_item--multiple-timeslot {
   background-color: $opt_color_white;
