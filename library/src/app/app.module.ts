@@ -338,6 +338,7 @@ export class DemoMaterialModule { }
     OptDoubleToggleComponent,
     OptMessageDialogComponent,
     OptDiscountSearchComponent,
+    OptNormalSearchComponent,
 
     RoutingProjectComponent,
     TypographyComponent,

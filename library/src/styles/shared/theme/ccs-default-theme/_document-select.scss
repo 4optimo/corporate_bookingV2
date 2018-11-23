@@ -59,21 +59,63 @@ nav {
     }
   }
   .document-select-list {
+    .document-list-row {
+      .list-icon {
+        &::before {
+          content: none;
+        }
+      }
+      .icon-cage {
+        justify-content: center;
+        i {
+          margin-left: 0;
+        }
+      }
+      &.list-row--quantity-discount {
+        .price {
+          .inc-col {
+            display: none;
+          }
+        }
+      }
+
+      &.list-row--amount-per-cover {
+        .list-icon {
+          background-color: $opt_color_type;
+        }
+      }
+      &.list-row--fixed-amount {
+        .list-icon {
+          background-color: $tentative;
+        }
+      }
+      &.list-row--percentage-discount {
+        .list-icon {
+          background-color: $booking_summary_color;
+          // &::before {
+          //   content: ;
+          // }
+        }
+      }
+    }
     .opt_flex--container {
       // &.inc-col {
       //   align-items: flex-end;
       // }
       &.price {
-        align-items: flex-end;
+        float: right;
+        justify-content: flex-end !important;
+        flex-direction: row !important;
+        align-items: center;
+        .opt_unit__price {
+          padding-left: 15px;
+        }
       }
     }
     .add-img {
       font-size: 14px;
       vertical-align: middle;
       transform: rotate(0.03deg);
-    }
-    .price {
-      justify-content: flex-end;
     }
   }
   .package-select-section {

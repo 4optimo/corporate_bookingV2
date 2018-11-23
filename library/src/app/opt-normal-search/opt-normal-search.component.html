@@ -1,3 +1,181 @@
-<p>
-  opt-normal-search works!
-</p>
+<!-- component Start-->
+<div class="opt-search-panel-wrapper">
+  <div class="opt_search-panel">
+    <div class="search-load">
+      <mat-spinner diameter="30" strokeWidth="2"></mat-spinner>
+    </div>
+    <div class="opt_flex--container outer-wrapper">
+
+
+
+
+
+      <div class="opt_flex__item">
+        <div class="opt_flex--container tc-flex-item__center main--input">
+          <div class="opt_flex__item">
+            <div class="opt_expand--container ">
+
+              <!--<div class="opt_flex__item">-->
+              <!--<label class="opt_chip-set&#45;&#45;label opt-txt__light">-->
+              <!--{{ category }}-->
+              <!--</label>-->
+              <!--</div>-->
+
+              <div class="opt_flex__item">
+                <form [formGroup]="stateForm">
+                  <input type="text" class="opt_chip-set--text input-field" placeholder=" Search by Keyword, Configuration, etc"
+                    formControlName="stateGroup" [matAutocomplete]="autoGroup" [(ngModel)]="category" (keyup.enter)="onKeyUp()">
+                  <!--<input type="text" matInput placeholder="{{ category}}" [(ngModel)]="category" (keyup.enter)="onKeyUp()"/>-->
+                  <mat-autocomplete #autoGroup="matAutocomplete">
+                    <mat-optgroup *ngFor="let group of stateGroupOptions | async" [label]="group.letter">
+                      <mat-option *ngFor="let name of group.names" [value]="name">
+                        {{ name }}
+                        <!--class="lbl lbl__vat __normal"-->
+                      </mat-option>
+                    </mat-optgroup>
+                  </mat-autocomplete>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="opt_flex__item--inherit --right">
+            <div class="btn __normal">
+              <div mat-raised-button>Search</div>
+            </div>
+            <button mat-icon-button>
+              <mat-icon mat-button [matMenuTriggerFor]="menu" class="btn-color-default material-icons ">filter_list</mat-icon>
+              <mat-menu #menu="matMenu" class="mat-menu">
+                <button mat-menu-item>
+                  <span><i class="material-icons">search</i></span>
+                  <span>General Search</span>
+                </button>
+                <button mat-menu-item disabled>
+                  <span><i class="material-icons">settings_applications</i></span>
+                  <span>Advanced Search</span>
+                </button>
+              </mat-menu>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--end of the Component-->
+
+
+
+
+
+<!--
+        ############################################################
+        Please note:
+    
+        library purpose only
+        ############################################################
+        -->
+
+<!--<div class="html-code">
+    
+          <code class="opt-tag">
+            &lt; app-opt-search-panel &gt;
+            &lt; / app-opt-search-panel &gt;
+          </code>
+    
+    
+          <textarea name="comments"  class="code-view">
+            <div class="opt_search-panel">
+          <div class="opt_flex&#45;&#45;container">
+            <div class="opt_flex__item&#45;&#45;inherit">
+    
+    
+              &lt;!&ndash;Import opt-chip component for multiple and auto complete&ndash;&gt;
+              <app-opt-chip></app-opt-chip>
+              &lt;!&ndash;end&ndash;&gt;
+    
+    
+            </div>
+    
+            <div class="opt_flex__item&#45;&#45;inherit">
+    
+    
+              &lt;!&ndash;Import opt-chip-input component for normal input&ndash;&gt;
+              <app-opt-chip-input></app-opt-chip-input>
+              &lt;!&ndash;end&ndash;&gt;
+    
+    
+            </div>
+    
+            <div class="opt_flex__item&#45;&#45;inherit">
+    
+    
+              &lt;!&ndash;Import opt-chip-date-picker component for select date&ndash;&gt;
+              <app-opt-chip-date-picker></app-opt-chip-date-picker>
+              &lt;!&ndash;end&ndash;&gt;
+    
+    
+            </div>
+    
+            <div class="opt_flex__item&#45;&#45;inherit">
+    
+              &lt;!&ndash;Import opt-chip-select component for single selection&ndash;&gt;
+              <app-opt-chip-select></app-opt-chip-select>
+              &lt;!&ndash;end&ndash;&gt;
+    
+    
+            </div>
+    
+            <div class="opt_flex__item">
+              <div class="opt_flex&#45;&#45;container tc-flex-item__center main&#45;&#45;input">
+                <div class="opt_flex__item">
+                  <div class="opt_expand&#45;&#45;container ">
+    
+                    &lt;!&ndash;<div class="opt_flex__item">&ndash;&gt;
+                    &lt;!&ndash;<label class="opt_chip-set&#45;&#45;label opt-txt__light">&ndash;&gt;
+                    &lt;!&ndash;{{ category }}&ndash;&gt;
+                    &lt;!&ndash;</label>&ndash;&gt;
+                    &lt;!&ndash;</div>&ndash;&gt;
+    
+                    <div class="opt_flex__item">
+                      <form [formGroup]="stateForm">
+                        <input type="text" class="opt_chip-set&#45;&#45;text input-field" placeholder=" Search by Keyword, Configuration, etc" formControlName="stateGroup" [matAutocomplete]="autoGroup" [(ngModel)]="category" (keyup.enter)="onKeyUp()">
+                        &lt;!&ndash;<input type="text" matInput placeholder="{{ category}}" [(ngModel)]="category" (keyup.enter)="onKeyUp()"/>&ndash;&gt;
+                        <mat-autocomplete #autoGroup="matAutocomplete">
+                          <mat-optgroup *ngFor="let group of stateGroupOptions | async" [label]="group.letter">
+                            <mat-option *ngFor="let name of group.names" [value]="name">
+                              {{ name }}
+                              &lt;!&ndash;class="lbl lbl__vat __normal"&ndash;&gt;
+                            </mat-option>
+                          </mat-optgroup>
+                        </mat-autocomplete>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                <div class="opt_flex__item&#45;&#45;inherit &#45;&#45;right">
+                  <div class="btn __normal">
+                    <div mat-raised-button>Search</div>
+                  </div>
+                  <button mat-icon-button >
+                    <mat-icon mat-button [matMenuTriggerFor]="menu" class="btn-color-default material-icons opt-txt__primary">filter_list</mat-icon>
+                    <mat-menu #menu="matMenu" class="mat-menu">
+                      <button mat-menu-item>
+                        <span><i class="material-icons opt-txt__primary">search</i></span>
+                        <span class="opt-txt__primary">General Search</span>
+                      </button>
+                      <button mat-menu-item>
+                        <span><i class="material-icons opt-txt__primary">settings_applications</i></span>
+                        <span class="opt-txt__primary">Advanced Search</span>
+                      </button>
+                    </mat-menu>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+          </textarea>
+    
+        </div>-->

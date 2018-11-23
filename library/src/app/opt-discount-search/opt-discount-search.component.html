@@ -1,11 +1,18 @@
 <div class="opt_modal-content opt_document-select-popup opt_discount-search">
+  <!-- package list popover start -->
+  <popper-content #package_select>
+    <app-opt-package-selection-modal></app-opt-package-selection-modal>
+  </popper-content>
+  <!-- Popover end -->
   <div class="mat-dialog-content">
     <div class="opt_modal-header">
       <div class="test opt--depth__1">
         <div class="opt_flex--container test-wrapper">
           <div class="opt_flex__item--inherit test-inner">
             <div class="inner-icon">
-              <i class="icon-icn-file"></i>
+              <i class="material-icons">
+                pages
+              </i>
             </div>
           </div>
           <div class="opt_flex__item test-inner-expand">
@@ -16,6 +23,10 @@
           </div>
           <div class="opt_flex__item--inherit test-inner-2">
             <div class="inner-action">
+              <div class="cart-wrapper">
+                <button class="material-icons">add_alert</button>
+                <div class="notification_count">99</div>
+              </div>
               <button class="material-icons icon1">launch</button>
               <button class="material-icons icon2" (click)="close()">close</button>
             </div>
@@ -24,7 +35,7 @@
       </div>
     </div>
     <div class="document-select-header">
-      <app-opt-search-panel> </app-opt-search-panel>
+      <app-opt-normal-search></app-opt-normal-search>
       <div class="package-select-section">
 
         <form>
@@ -57,12 +68,16 @@
         </div>
       </div>
       <div class="document-select-list">
-        <div class="document-list-row">
+        <div class="document-list-row list-row--quantity-discount">
           <div class="row">
             <div class="col-xs-2 col-md-1">
               <div class="opt_flex--container">
-                <div class="opt_flex__item opt_flex__item--vcenter">
-                  <i class="icon-icn-file list-icon"></i>
+                <div class="opt_flex__item opt_flex__item--vcenter icon-cage">
+                  <i class="icon-icn-file list-icon">
+                    <i class="material-icons">
+                      pages
+                    </i>
+                  </i>
                 </div>
               </div>
             </div>
@@ -77,17 +92,21 @@
                 </div>
               </div>
             </div>
-            <div class="col-xs-1 col-md-1">
+            <!-- <div class="col-xs-1 col-md-1">
               <div class="opt_flex--container inc-col">
                 <div class="opt_flex__item opt_flex__item--vcenter">
                   <div class="lbl lbl__vat opt_lbl_primary" style="height:auto;line-height:1;">Inc
                     Vat</div>
                 </div>
               </div>
-            </div>
+            </div> -->
 
-            <div class="col-xs-2 col-md-2">
+            <div class="col-xs-3 col-md-3">
               <div class="opt_flex--container price">
+                <div class="opt_flex__item opt_flex__item--vcenter inc-col">
+                  <div class="lbl lbl__vat opt_lbl_primary" style="height:auto;line-height:1;">Inc
+                    Vat</div>
+                </div>
                 <div class="opt_flex__item opt_flex__item--vcenter">
                   <div class="opt-txt__body2-small ref_no opt_unit__price">&pound;
                     450.00</div>
@@ -103,258 +122,386 @@
             </div>
           </div>
         </div>
-        <div class="document-list-row list-row-highlighted">
+        <div class="document-list-row list-row--amount-per-cover">
           <div class="row">
             <div class="col-xs-2 col-md-1">
               <div class="opt_flex--container">
-                <div class="opt_flex__item opt_flex__item--vcenter">
-                  <i class="icon-icn-file list-icon"></i>
+                <div class="opt_flex__item opt_flex__item--vcenter icon-cage">
+                  <i class="icon-icn-file list-icon">
+                    <i class="material-icons">
+                      pages
+                    </i>
+                  </i>
                 </div>
               </div>
             </div>
-            <div class="col-xs-8 col-md-9">
-              <div class="opt_flex--container">
-                <div class="opt_flex__item opt_flex__item--vcenter">
-                  <span class="opt-txt__body2">Application Venue Hire From</span>
-                </div>
-                <div class="opt_flex__item opt_flex__item--vcenter">
-                  <span class="opt-txt__body2 opt-txt__secondary">Dinner Cruise</span>
-                </div>
-              </div>
-            </div>
-            <div class="col-xs-2 col-md-2 list-button">
-              <div class="opt_flex--container">
-                <div class="opt_flex__item opt_flex__item--vcenter">
-                  <button class="mat-btn-primary mat-button">Select</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="document-list-row">
-          <div class="row">
-            <div class="col-xs-2 col-md-1">
-              <div class="opt_flex--container">
-                <div class="opt_flex__item opt_flex__item--vcenter">
-                  <i class="icon-icn-file list-icon"></i>
-                </div>
-              </div>
-            </div>
-            <div class="col-xs-8 col-md-9">
-              <div class="opt_flex--container">
-                <div class="opt_flex__item opt_flex__item--vcenter">
-                  <span class="opt-txt__body2">Booking Confirmation Venues</span>
-                </div>
-                <div class="opt_flex__item opt_flex__item--vcenter">
-                  <span class="opt-txt__body2 opt-txt__secondary">Booking</span>
-                </div>
-              </div>
-            </div>
-            <div class="col-xs-2 col-md-2 list-button">
-              <div class="opt_flex--container">
-                <div class="opt_flex__item opt_flex__item--vcenter">
-                  <button class="mat-btn-primary mat-button">Select</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="document-list-row list-row-highlighted">
-          <div class="row">
-            <div class="col-xs-2 col-md-1">
-              <div class="opt_flex--container">
-                <div class="opt_flex__item opt_flex__item--vcenter">
-                  <i class="icon-icn-file list-icon"></i>
-                </div>
-              </div>
-            </div>
-            <div class="col-xs-8 col-md-9">
-              <div class="opt_flex--container">
-                <div class="opt_flex__item opt_flex__item--vcenter">
-                  <span class="opt-txt__body2">Confirmation Multi Purpose</span>
-                </div>
-                <div class="opt_flex__item opt_flex__item--vcenter">
-                  <span class="opt-txt__body2 opt-txt__secondary">Dinner Cruise</span>
-                </div>
-              </div>
-            </div>
-            <div class="col-xs-2 col-md-2 list-button">
-              <div class="opt_flex--container">
-                <div class="opt_flex__item opt_flex__item--vcenter">
-                  <button class="mat-btn-primary mat-button">Select</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="document-list-row list-row-highlighted">
-          <div class="row">
-            <div class="col-xs-2 col-md-1">
-              <div class="opt_flex--container">
-                <div class="opt_flex__item opt_flex__item--vcenter">
-                  <i class="icon-icn-file list-icon"></i>
-                </div>
-              </div>
-            </div>
-            <div class="col-xs-8 col-md-9">
+            <div class="col-xs-5 col-md-5">
               <div class="opt_flex--container">
                 <div class="opt_flex__item opt_flex__item--vcenter">
                   <span class="opt-txt__body2">Room_hire_schedule_of_fees_2016</span>
                 </div>
                 <div class="opt_flex__item opt_flex__item--vcenter">
-                  <span class="opt-txt__body2 opt-txt__secondary">Booking</span>
+                  <span class="material-icons package-color--product add-img">gamepad</span>
+                  <span class="opt-txt__body2 opt-txt__secondary"> | Booking</span>
                 </div>
               </div>
             </div>
-            <div class="col-xs-2 col-md-2 list-button">
+            <!-- <div class="col-xs-1 col-md-1">
+                <div class="opt_flex--container inc-col">
+                  <div class="opt_flex__item opt_flex__item--vcenter">
+                    <div class="lbl lbl__vat opt_lbl_primary" style="height:auto;line-height:1;">Inc
+                      Vat</div>
+                  </div>
+                </div>
+              </div> -->
+
+            <div class="col-xs-3 col-md-3">
+              <div class="opt_flex--container price">
+                <div class="opt_flex__item opt_flex__item--vcenter inc-col">
+                  <div class="lbl lbl__vat opt_lbl_primary" style="height:auto;line-height:1;">Inc
+                    Vat</div>
+                </div>
+                <div class="opt_flex__item opt_flex__item--vcenter">
+                  <div class="opt-txt__body2-small ref_no opt_unit__price">&pound;
+                    450.00</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-2 col-md-3 list-button">
               <div class="opt_flex--container">
                 <div class="opt_flex__item opt_flex__item--vcenter">
-                  <button class="mat-btn-primary mat-button">Select</button>
+                  <button class="mat-btn-primary mat-button">Add</button>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="document-list-row">
+        <div class="document-list-row list-row--fixed-amount">
           <div class="row">
             <div class="col-xs-2 col-md-1">
               <div class="opt_flex--container">
-                <div class="opt_flex__item opt_flex__item--vcenter">
-                  <i class="icon-icn-file list-icon"></i>
+                <div class="opt_flex__item opt_flex__item--vcenter icon-cage">
+                  <i class="icon-icn-file list-icon">
+                    <i class="material-icons">
+                      pages
+                    </i>
+                  </i>
                 </div>
               </div>
             </div>
-            <div class="col-xs-8 col-md-9">
+            <div class="col-xs-5 col-md-5">
               <div class="opt_flex--container">
                 <div class="opt_flex__item opt_flex__item--vcenter">
-                  <span class="opt-txt__body2">Application Venue Hire From</span>
+                  <span class="opt-txt__body2">Room_hire_schedule_of_fees_2016</span>
                 </div>
                 <div class="opt_flex__item opt_flex__item--vcenter">
-                  <span class="opt-txt__body2 opt-txt__secondary">Dinner Cruise</span>
+                  <span class="material-icons package-color--product add-img">gamepad</span>
+                  <span class="opt-txt__body2 opt-txt__secondary"> | Booking</span>
                 </div>
               </div>
             </div>
-            <div class="col-xs-2 col-md-2 list-button">
+            <!-- <div class="col-xs-1 col-md-1">
+                  <div class="opt_flex--container inc-col">
+                    <div class="opt_flex__item opt_flex__item--vcenter">
+                      <div class="lbl lbl__vat opt_lbl_primary" style="height:auto;line-height:1;">Inc
+                        Vat</div>
+                    </div>
+                  </div>
+                </div> -->
+
+            <div class="col-xs-3 col-md-3">
+              <div class="opt_flex--container price">
+                <div class="opt_flex__item opt_flex__item--vcenter inc-col">
+                  <div class="lbl lbl__vat opt_lbl_primary" style="height:auto;line-height:1;">Inc
+                    Vat</div>
+                </div>
+                <div class="opt_flex__item opt_flex__item--vcenter">
+                  <div class="opt-txt__body2-small ref_no opt_unit__price">&pound;
+                    450.00</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-2 col-md-3 list-button">
               <div class="opt_flex--container">
                 <div class="opt_flex__item opt_flex__item--vcenter">
-                  <button class="mat-btn-primary mat-button">Select</button>
+                  <button class="mat-btn-primary mat-button">Add</button>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="document-list-row">
+        <div class="document-list-row list-row--percentage-discount">
           <div class="row">
             <div class="col-xs-2 col-md-1">
               <div class="opt_flex--container">
-                <div class="opt_flex__item opt_flex__item--vcenter">
-                  <i class="icon-icn-file list-icon"></i>
+                <div class="opt_flex__item opt_flex__item--vcenter icon-cage">
+                  <i class="icon-icn-file list-icon">
+                    <i class="material-icons">
+                      pages
+                    </i>
+                  </i>
                 </div>
               </div>
             </div>
-            <div class="col-xs-8 col-md-9">
+            <div class="col-xs-5 col-md-5">
               <div class="opt_flex--container">
                 <div class="opt_flex__item opt_flex__item--vcenter">
-                  <span class="opt-txt__body2">BTX16l4 - Premiere Dinner & Eye</span>
+                  <span class="opt-txt__body2">Room_hire_schedule_of_fees_2016</span>
                 </div>
                 <div class="opt_flex__item opt_flex__item--vcenter">
-                  <span class="opt-txt__body2 opt-txt__secondary">Dinner Cruise</span>
+                  <span class="material-icons package-color--product add-img">gamepad</span>
+                  <span class="opt-txt__body2 opt-txt__secondary"> | Booking</span>
                 </div>
               </div>
             </div>
-            <div class="col-xs-2 col-md-2 list-button">
+            <!-- <div class="col-xs-1 col-md-1">
+                    <div class="opt_flex--container inc-col">
+                      <div class="opt_flex__item opt_flex__item--vcenter">
+                        <div class="lbl lbl__vat opt_lbl_primary" style="height:auto;line-height:1;">Inc
+                          Vat</div>
+                      </div>
+                    </div>
+                  </div> -->
+
+            <div class="col-xs-3 col-md-3">
+              <div class="opt_flex--container price">
+                <div class="opt_flex__item opt_flex__item--vcenter inc-col">
+                  <div class="lbl lbl__vat opt_lbl_primary" style="height:auto;line-height:1;">Inc
+                    Vat</div>
+                </div>
+                <div class="opt_flex__item opt_flex__item--vcenter">
+                  <div class="opt-txt__body2-small ref_no opt_unit__price">&pound;
+                    450.00</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-2 col-md-3 list-button">
               <div class="opt_flex--container">
                 <div class="opt_flex__item opt_flex__item--vcenter">
-                  <button class="mat-btn-primary mat-button">Select</button>
+                  <button class="mat-btn-primary mat-button">Add</button>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="document-list-row">
+
+        <div class="document-list-row list-row--quantity-discount">
           <div class="row">
             <div class="col-xs-2 col-md-1">
               <div class="opt_flex--container">
-                <div class="opt_flex__item opt_flex__item--vcenter">
-                  <i class="icon-icn-file list-icon"></i>
+                <div class="opt_flex__item opt_flex__item--vcenter icon-cage">
+                  <i class="icon-icn-file list-icon">
+                    <i class="material-icons">
+                      pages
+                    </i>
+                  </i>
                 </div>
               </div>
             </div>
-            <div class="col-xs-8 col-md-9">
+            <div class="col-xs-5 col-md-5">
               <div class="opt_flex--container">
                 <div class="opt_flex__item opt_flex__item--vcenter">
-                  <span class="opt-txt__body2">Confirmation Multi Purpose</span>
+                  <span class="opt-txt__body2">Room_hire_schedule_of_fees_2016</span>
                 </div>
                 <div class="opt_flex__item opt_flex__item--vcenter">
-                  <span class="opt-txt__body2 opt-txt__secondary">Dinner Cruise</span>
+                  <span class="material-icons package-color--product add-img">gamepad</span>
+                  <span class="opt-txt__body2 opt-txt__secondary"> | Booking</span>
                 </div>
               </div>
             </div>
-            <div class="col-xs-2 col-md-2 list-button">
+            <!-- <div class="col-xs-1 col-md-1">
+                <div class="opt_flex--container inc-col">
+                  <div class="opt_flex__item opt_flex__item--vcenter">
+                    <div class="lbl lbl__vat opt_lbl_primary" style="height:auto;line-height:1;">Inc
+                      Vat</div>
+                  </div>
+                </div>
+              </div> -->
+
+            <div class="col-xs-3 col-md-3">
+              <div class="opt_flex--container price">
+                <div class="opt_flex__item opt_flex__item--vcenter inc-col">
+                  <div class="lbl lbl__vat opt_lbl_primary" style="height:auto;line-height:1;">Inc
+                    Vat</div>
+                </div>
+                <div class="opt_flex__item opt_flex__item--vcenter">
+                  <div class="opt-txt__body2-small ref_no opt_unit__price">&pound;
+                    450.00</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-2 col-md-3 list-button">
               <div class="opt_flex--container">
                 <div class="opt_flex__item opt_flex__item--vcenter">
-                  <button class="mat-btn-primary mat-button">Select</button>
+                  <button class="mat-btn-primary mat-button">Add</button>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="document-list-row">
+        <div class="document-list-row list-row--amount-per-cover">
           <div class="row">
             <div class="col-xs-2 col-md-1">
               <div class="opt_flex--container">
-                <div class="opt_flex__item opt_flex__item--vcenter">
-                  <i class="icon-icn-file list-icon"></i>
+                <div class="opt_flex__item opt_flex__item--vcenter icon-cage">
+                  <i class="icon-icn-file list-icon">
+                    <i class="material-icons">
+                      pages
+                    </i>
+                  </i>
                 </div>
               </div>
             </div>
-            <div class="col-xs-8 col-md-9">
+            <div class="col-xs-5 col-md-5">
               <div class="opt_flex--container">
                 <div class="opt_flex__item opt_flex__item--vcenter">
-                  <span class="opt-txt__body2">BTX16l4 - Premiere Dinner & Eye</span>
+                  <span class="opt-txt__body2">Room_hire_schedule_of_fees_2016</span>
                 </div>
                 <div class="opt_flex__item opt_flex__item--vcenter">
-                  <span class="opt-txt__body2 opt-txt__secondary">Dinner Cruise</span>
+                  <span class="material-icons package-color--product add-img">gamepad</span>
+                  <span class="opt-txt__body2 opt-txt__secondary"> | Booking</span>
                 </div>
               </div>
             </div>
-            <div class="col-xs-2 col-md-2 list-button">
+            <!-- <div class="col-xs-1 col-md-1">
+                  <div class="opt_flex--container inc-col">
+                    <div class="opt_flex__item opt_flex__item--vcenter">
+                      <div class="lbl lbl__vat opt_lbl_primary" style="height:auto;line-height:1;">Inc
+                        Vat</div>
+                    </div>
+                  </div>
+                </div> -->
+
+            <div class="col-xs-3 col-md-3">
+              <div class="opt_flex--container price">
+                <div class="opt_flex__item opt_flex__item--vcenter inc-col">
+                  <div class="lbl lbl__vat opt_lbl_primary" style="height:auto;line-height:1;">Inc
+                    Vat</div>
+                </div>
+                <div class="opt_flex__item opt_flex__item--vcenter">
+                  <div class="opt-txt__body2-small ref_no opt_unit__price">&pound;
+                    450.00</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-2 col-md-3 list-button">
               <div class="opt_flex--container">
                 <div class="opt_flex__item opt_flex__item--vcenter">
-                  <button class="mat-btn-primary mat-button">Select</button>
+                  <button class="mat-btn-primary mat-button">Add</button>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="document-list-row">
+        <div class="document-list-row list-row--fixed-amount">
           <div class="row">
             <div class="col-xs-2 col-md-1">
               <div class="opt_flex--container">
-                <div class="opt_flex__item opt_flex__item--vcenter">
-                  <i class="icon-icn-file list-icon"></i>
+                <div class="opt_flex__item opt_flex__item--vcenter icon-cage">
+                  <i class="icon-icn-file list-icon">
+                    <i class="material-icons">
+                      pages
+                    </i>
+                  </i>
                 </div>
               </div>
             </div>
-            <div class="col-xs-8 col-md-9">
+            <div class="col-xs-5 col-md-5">
               <div class="opt_flex--container">
                 <div class="opt_flex__item opt_flex__item--vcenter">
-                  <span class="opt-txt__body2">Confirmation Multi Purpose</span>
+                  <span class="opt-txt__body2">Room_hire_schedule_of_fees_2016</span>
                 </div>
                 <div class="opt_flex__item opt_flex__item--vcenter">
-                  <span class="opt-txt__body2 opt-txt__secondary">Dinner Cruise</span>
+                  <span class="material-icons package-color--product add-img">gamepad</span>
+                  <span class="opt-txt__body2 opt-txt__secondary"> | Booking</span>
                 </div>
               </div>
             </div>
-            <div class="col-xs-2 col-md-2 list-button">
+            <!-- <div class="col-xs-1 col-md-1">
+                    <div class="opt_flex--container inc-col">
+                      <div class="opt_flex__item opt_flex__item--vcenter">
+                        <div class="lbl lbl__vat opt_lbl_primary" style="height:auto;line-height:1;">Inc
+                          Vat</div>
+                      </div>
+                    </div>
+                  </div> -->
+
+            <div class="col-xs-3 col-md-3">
+              <div class="opt_flex--container price">
+                <div class="opt_flex__item opt_flex__item--vcenter inc-col">
+                  <div class="lbl lbl__vat opt_lbl_primary" style="height:auto;line-height:1;">Inc
+                    Vat</div>
+                </div>
+                <div class="opt_flex__item opt_flex__item--vcenter">
+                  <div class="opt-txt__body2-small ref_no opt_unit__price">&pound;
+                    450.00</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-2 col-md-3 list-button">
               <div class="opt_flex--container">
                 <div class="opt_flex__item opt_flex__item--vcenter">
-                  <button class="mat-btn-primary mat-button">Select</button>
+                  <button class="mat-btn-primary mat-button">Add</button>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        <div class="document-list-row list-row--percentage-discount">
+          <div class="row">
+            <div class="col-xs-2 col-md-1">
+              <div class="opt_flex--container">
+                <div class="opt_flex__item opt_flex__item--vcenter icon-cage">
+                  <i class="icon-icn-file list-icon">
+                    <i class="material-icons">
+                      pages
+                    </i>
+                  </i>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-5 col-md-5">
+              <div class="opt_flex--container">
+                <div class="opt_flex__item opt_flex__item--vcenter">
+                  <span class="opt-txt__body2">Room_hire_schedule_of_fees_2016</span>
+                </div>
+                <div class="opt_flex__item opt_flex__item--vcenter">
+                  <span class="material-icons package-color--product add-img">gamepad</span>
+                  <span class="opt-txt__body2 opt-txt__secondary"> | Booking</span>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="col-xs-1 col-md-1">
+                      <div class="opt_flex--container inc-col">
+                        <div class="opt_flex__item opt_flex__item--vcenter">
+                          <div class="lbl lbl__vat opt_lbl_primary" style="height:auto;line-height:1;">Inc
+                            Vat</div>
+                        </div>
+                      </div>
+                    </div> -->
+
+            <div class="col-xs-3 col-md-3">
+              <div class="opt_flex--container price">
+                <div class="opt_flex__item opt_flex__item--vcenter inc-col">
+                  <div class="lbl lbl__vat opt_lbl_primary" style="height:auto;line-height:1;">Inc
+                    Vat</div>
+                </div>
+                <div class="opt_flex__item opt_flex__item--vcenter">
+                  <div class="opt-txt__body2-small ref_no opt_unit__price">&pound;
+                    450.00</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-2 col-md-3 list-button">
+              <div class="opt_flex--container">
+                <div class="opt_flex__item opt_flex__item--vcenter">
+                  <button class="mat-btn-primary mat-button">Add</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
       <div class="document-select-paginator">
         <div class="opt_flex--container">
