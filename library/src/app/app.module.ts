@@ -140,6 +140,7 @@ import { OptDoubleToggleComponent } from './opt-double-toggle/opt-double-toggle.
 import { OptMessageDialogComponent } from './opt-message-dialog/opt-message-dialog.component';
 import { OptDiscountSearchComponent } from './opt-discount-search/opt-discount-search.component';
 import { OptNormalSearchComponent } from './opt-normal-search/opt-normal-search.component';
+import { OptDiscountCartComponent } from './opt-discount-cart/opt-discount-cart.component';
 
 
 
@@ -255,7 +256,7 @@ const appRoutes: Routes = [
     ScrollDispatchModule
 
   ],
-  declarations: [],
+  declarations: [OptDiscountCartComponent],
 
 })
 export class DemoMaterialModule { }

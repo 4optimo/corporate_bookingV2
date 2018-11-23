@@ -36,6 +36,12 @@
     padding-left: 15px;
     padding-right: 10px;
   }
+  .edit-time{
+    mat-form-field{
+      width: 100px;
+      margin: 0 10px;
+    }
+  }
 }
 .single-normal{
   .mat-form-field-flex{
@@ -104,6 +110,42 @@
   button{
     margin-left: 10px;
     margin-top: 10px;
+  }
+}
+.advanced-public{
+  max-width: 600px;
+  .header-row{
+    margin:10px 0px;
+  }
+  .opt_flex--container{
+    min-height: 50px;
+  }
+  .opt_flex__item{
+    width:100%;
+  }
+  .content-list{
+    max-height: 470px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    mat-form-field{
+      padding-right: 10px;
+    }
+  }
+  button{
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+}
+.advance-public-individual{
+  .content-list{
+    .expanded-content{
+      max-height: 470px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    mat-form-field{
+      padding-right: 10px;
+    }
+    }
   }
 }
 .opt_item--multiple-timeslot {
