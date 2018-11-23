@@ -95,9 +95,9 @@ button {
 }
 
 .opt_package-details {
-  // .align-content {
-  //   // margin-left: 140px;
-  // }
+  .align-content {
+    // margin-left: 140px;
+  }
   .opt_expand--container {
     padding: 0 5px 0 5px !important;
   }
@@ -276,7 +276,6 @@ button {
 
       &::-webkit-scrollbar-track {
         -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
-        box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
         border-radius: 10px;
         background-color: $background-color !important;
       }
@@ -284,7 +283,6 @@ button {
       &::-webkit-scrollbar-thumb {
         border-radius: 10px;
         -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
-        box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
       }
 
       .inner-wrapper {
@@ -353,7 +351,6 @@ button {
 
           &::-webkit-scrollbar-track {
             -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
-            box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
             background-color: $background-color !important;
           }
@@ -361,7 +358,6 @@ button {
           &::-webkit-scrollbar-thumb {
             border-radius: 10px;
             -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
-            box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
           }
         }
         .date-hover {
@@ -438,9 +434,9 @@ button {
     //padding: 15px;
     height: 55px;
     line-height: 55px;
-    // .material-icons {
-    //   //padding-right: 15px;
-    // }
+    .material-icons {
+      //padding-right: 15px;
+    }
   }
 
   .availability-icon {
@@ -583,8 +579,8 @@ button {
   .opt_booking__list {
     .opt_width-calc {
       width: unset;
-      // .opt_expand--container {
-      // }
+      .opt_expand--container {
+      }
     }
   }
   .inner-icon-black {
@@ -601,7 +597,7 @@ button {
       .notification_count {
         position: absolute;
         font-size: 10px;
-        background-color:  #e74c3c;
+        background-color: #e74c3c;
         padding: 3px;
         border-radius: 50%;
         top: -4px;
