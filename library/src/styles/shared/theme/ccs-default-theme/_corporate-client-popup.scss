@@ -1474,56 +1474,6 @@
       }
     }
   }
-  &_discount-search {
-    .document-select-list {
-      .opt_flex--container {
-        &.inc-col {
-          flex-direction: row !important;
-          justify-content: space-between !important;
-        }
-      }
-      .add-img {
-        font-size: 14px;
-        vertical-align: middle;
-        transform: rotate(0.03deg);
-      }
-      .price {
-        justify-content: flex-end;
-      }
-    }
-    .opt-header-section {
-      margin: -24px;
-      background-color: $background-color;
-      padding: 24px 24px 1px;
-      .opt-search-panel-wrapper {
-        // margin: -15px;
-      }
-
-      .package-list-section {
-        float: left;
-      }
-      .package-select-menu {
-        float: right;
-      }
-      .package-select-section {
-        flex-wrap: nowrap;
-        flex-grow: inherit;
-        padding: 10px 0 2px;
-        fieldset {
-          border: 1px dashed $opt-border-color_darker;
-          padding: 15px 15px 0;
-          margin-top: 30px;
-          background-color: $opt_color_white;
-          legend {
-            display: inline-block;
-            width: auto;
-            background-color: $background-color;
-            padding: 2px 15px;
-          }
-        }
-      }
-    }
-  }
 }
 
 /*Global classes*/
