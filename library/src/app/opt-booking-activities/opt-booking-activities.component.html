@@ -18,7 +18,7 @@
               <button mat-fab>
                 <i class="icon-note"></i>
               </button>
-              <div class="activity-availability">0 items available</div>
+              <div class="activity-availability">0 items</div>
               <div class="activity-title">Notes</div>
             </div>
           </ng-template>
@@ -50,7 +50,7 @@
                 <div class="col-xs-12 col-sm-12 col-md-5	col-lg-5 just-content-end">
                   <div class="opt_flex__item--inherit horizontally-center action-btn">
                     <mat-form-field class="note-search aligned_form_field">
-                      <input matInput placeholder="Search">
+                      <input matInput placeholder="Search by keywords">
                       <mat-icon matSuffix><i class="material-icons mat-btn-icon-btn opt_color_icon_font icn-search">search</i></mat-icon>
                     </mat-form-field>
                     <div class="header_row--action-wrapper">
@@ -64,7 +64,7 @@
               </div>
             </div>
             <!--Content-->
-            <div class="note_list_item">
+            <div class="note_list_item" [ngClass]="status1 ? 'show-more' : 'show-less'">
               <div class="row">
                 <div class="col-xs-12 col-sm-4 col-md-3	col-lg-3">
                   <div class="opt_flex--container">
@@ -74,16 +74,17 @@
                     <div class="opt_flex__item des-box ">
                       <div class="opt-txt__body2 opt-fontweight--bold"> Optimo User </div>
                       <div class="opt-txt__secondary opt-txt__body1-small"> 04-Jan-2018 | <span class="symbol_icon"><i
-                            class="icon-dinner"></i></span></div>
+                            class="icon-dinner" matTooltip="Catering"></i></span></div>
                     </div>
                   </div>
                 </div>
                 <div class="col-xs-12 col-sm-8 col-md-9	col-lg-9">
                   <div class="opt_flex--container">
-                      <div class="opt_flex__item horizontally-center opt_txt_color_tertiary opt-txt__body1-small full-width text-truncate"  [ngClass]="status1 ? 'show-more' : 'show-less'">Lorem
+                      <div class="opt_flex__item horizontally-center opt_txt_color_tertiary opt-txt__body1-small full-width text-truncate row-desc">Lorem
                           ipsum dolor sit amet, consectetuer adipiscing elit.
                           Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
-                          parturient montes, nascetur ridiculus mus.<span class="read-toggle" (click)="readToggle1()" (click)="clickEvent1()"> {{ readtxt1 ? 'Show less' : 'Show more' }}</span>
+                          parturient montes, nascetur ridiculus mus.
+                          <span class="read-toggle" (click)="readToggle1()" (click)="clickEvent1()"> {{ readtxt1 ? 'Show less' : 'Show more' }}</span>
                         </div>
                     <div class="opt_flex__item opt_flex__item--vcenter just-content-end">
                       <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">edit</i></button>
@@ -93,7 +94,7 @@
                 </div>
               </div>
             </div>
-            <div class="note_list_item">
+            <div class="note_list_item" [ngClass]="status2 ? 'show-more' : 'show-less'">
               <div class="row">
                 <div class="col-xs-12 col-sm-4 col-md-3	col-lg-3">
                   <div class="opt_flex--container">
@@ -103,16 +104,17 @@
                     <div class="opt_flex__item des-box">
                       <div class="opt-txt__body2 opt-fontweight--bold"> Optimo User </div>
                       <div class="opt-txt__secondary opt-txt__body1-small"> 04-Jan-2018 | <span class="symbol_icon"><i
-                            class="material-icons">note</i></span></div>
+                            class="material-icons" matTooltip="General">note</i></span></div>
                     </div>
                   </div>
                 </div>
                 <div class="col-xs-12 col-sm-8 col-md-9	col-lg-9">
                   <div class="opt_flex--container">
-                    <div class="opt_flex__item horizontally-center opt_txt_color_tertiary opt-txt__body1-small full-width text-truncate"  [ngClass]="status2 ? 'show-more' : 'show-less'">Lorem
+                    <div class="opt_flex__item horizontally-center opt_txt_color_tertiary opt-txt__body1-small full-width text-truncate row-desc">Lorem
                       ipsum dolor sit amet, consectetuer adipiscing elit.
                       Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
-                      parturient montes, nascetur ridiculus mus.<span class="read-toggle" (click)="readToggle2()" (click)="clickEvent2()"> {{ readtxt2 ? 'Show less' : 'Show more' }}</span>
+                      parturient montes, nascetur ridiculus mus.
+                      <span class="read-toggle" (click)="readToggle2()" (click)="clickEvent2()"> {{ readtxt2 ? 'Show less' : 'Show more' }}</span>
                     </div>
                     <div class="opt_flex__item opt_flex__item--vcenter just-content-end">
                       <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">edit</i></button>
@@ -122,7 +124,7 @@
                 </div>
               </div>
             </div>
-            <div class="note_list_item">
+            <div class="note_list_item" [ngClass]="status3 ? 'show-more' : 'show-less'">
               <div class="row">
                 <div class="col-xs-12 col-sm-4 col-md-3	col-lg-3">
                   <div class="opt_flex--container">
@@ -132,25 +134,27 @@
                     <div class="opt_flex__item des-box">
                       <div class="opt-txt__body2 opt-fontweight--bold"> Optimo User </div>
                       <div class="opt-txt__secondary opt-txt__body1-small"> 04-Jan-2018 | <span class="symbol_icon"><i
-                            class="material-icons">directions_bus</i></span></div>
+                            class="material-icons" matTooltip="Mobility/Special Instructions">directions_bus</i></span></div>
                     </div>
                   </div>
                 </div>
                 <div class="col-xs-12 col-sm-8 col-md-9	col-lg-9">
                   <div class="opt_flex--container">
-                      <div class="opt_flex__item horizontally-center opt_txt_color_tertiary opt-txt__body1-small full-width text-truncate"  [ngClass]="status3 ? 'show-more' : 'show-less'">Lorem
+                      <div class="opt_flex__item horizontally-center opt_txt_color_tertiary opt-txt__body1-small full-width text-truncate row-desc">Lorem
                           ipsum dolor sit amet, consectetuer adipiscing elit.
                           Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
-                          parturient montes, nascetur ridiculus mus.<span class="read-toggle" (click)="readToggle3()" (click)="clickEvent3()"> {{ readtxt3 ? 'Show less' : 'Show more' }}</span>
+                          parturient montes, nascetur ridiculus mus.
+                          <span class="read-toggle" (click)="readToggle3()" (click)="clickEvent3()"> {{ readtxt3 ? 'Show less' : 'Show more' }}</span>
                         </div>
                     <div class="opt_flex__item opt_flex__item--vcenter just-content-end">
                       <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">edit</i></button>
-                      <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">delete</i></button>
+                      <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font" (click)="openDeleteItem()">delete</i></button>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+            <app-opt-paginator></app-opt-paginator>
           </div>
         </mat-step>
 
@@ -166,7 +170,7 @@
               <button mat-fab>
                 <i class="icon-open-mail"></i>
               </button>
-              <div class="activity-availability">0 items available</div>
+              <div class="activity-availability">0 items</div>
               <div class="activity-title">Documents</div>
             </div>
           </ng-template>
@@ -389,7 +393,7 @@
               <button mat-fab>
                 <i class="icon-icn-file"></i>
               </button>
-              <div class="activity-availability">0 items available</div>
+              <div class="activity-availability">0 items</div>
               <div class="activity-title">Correspondence</div>
             </div>
           </ng-template>
@@ -825,7 +829,7 @@
               <button mat-fab>
                 <i class="icon-credit-card"></i>
               </button>
-              <div class="activity-availability">0 items available</div>
+              <div class="activity-availability">0 items</div>
               <div class="activity-title">Payment</div>
             </div>
           </ng-template>
@@ -1242,7 +1246,7 @@
               <button mat-fab>
                 <i class="icon-trolley"></i>
               </button>
-              <div class="activity-availability">0 items available</div>
+              <div class="activity-availability">0 items</div>
               <div class="activity-title">Deliverables & Dispatch</div>
             </div>
           </ng-template>
@@ -1618,7 +1622,7 @@
               <button mat-fab>
                 <i class="icon-server2"></i>
               </button>
-              <div class="activity-availability">0 items available</div>
+              <div class="activity-availability">0 items</div>
               <div class="activity-title">Host</div>
             </div>
           </ng-template>
@@ -1874,7 +1878,7 @@
               <button mat-fab>
                 <i class="icon-earth-globe"></i>
               </button>
-              <div class="activity-availability">0 items available</div>
+              <div class="activity-availability">0 items</div>
               <div class="activity-title">History</div>
             </div>
           </ng-template>

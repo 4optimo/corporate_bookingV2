@@ -35,6 +35,12 @@ export class OptPackagePopupComponent implements OnInit {
     alert('efaea');
   }
 
+  selectedIndex = 0;
+
+selectTab(index: number): void {
+  this.selectedIndex = index;
+}
+
   @ViewChild('myPanel') myPanel: MatExpansionPanel;
   matIcon = 'keyboard_arrow_down' || 'keyboard_arrow_up';
 

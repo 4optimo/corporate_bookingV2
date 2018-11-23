@@ -296,4 +296,31 @@ h1,h2,h3,h4,h5,h6{
 //Confirmation message dialog styles
 .conf-message-wrapper{
   padding:20px;
+  min-height: 90px;
+  .dialog-message{
+    background-color: #ffffff;
+    padding: 15px;
+  }
+  .more-info{
+    color: #4bb3fa;
+    cursor: pointer;
+  }
+  .mat-dialog-actions{
+    padding-bottom: 0px;
+  }
+  p{
+    margin-bottom: 0;
+  }
+  .opt_flex--container{
+    min-height: 24px;
+    width: 100%;
+  }
+  .invalid-added-item{
+    .availability-label{
+      margin-bottom:10px;
+    }
+    .message-popover-wrapper{
+      padding: 10px 0px;
+    }
+  }
 }

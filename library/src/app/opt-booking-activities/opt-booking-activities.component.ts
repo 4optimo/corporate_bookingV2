@@ -44,15 +44,6 @@ readToggle3(){
 
   constructor(public dialog: MatDialog)  { }
 
-  public openDeleteItem(){
-    this.dialog.open(OptMessageDialogComponent,{
-      panelClass:'custom-dialog-container',
-      height: 'auto',
-      minHeight: '100px',
-      width: '30%'
-    });
-
-  }
 
   @ViewChild('myPanel1') myPanel1: MatExpansionPanel;
   matIcon1 = 'keyboard_arrow_down' || 'keyboard_arrow_up';
