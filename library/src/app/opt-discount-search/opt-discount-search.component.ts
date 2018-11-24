@@ -11,6 +11,17 @@ export class OptDiscountSearchComponent implements OnInit {
 
   constructor(public matDialogRef: MatDialogRef<ModalContentComponent>,
     @Inject(MAT_DIALOG_DATA) public data: any) { }
+
+  public maximize() {
+    alert('efaea');
+  }
+
+  selectedIndex = 0;
+
+  selectTab(index: number): void {
+    this.selectedIndex = index;
+  }
+
   public close() {
     this.matDialogRef.close();
   }

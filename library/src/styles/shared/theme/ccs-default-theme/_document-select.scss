@@ -58,6 +58,11 @@ nav {
       display: none;
     }
   }
+  &.opt_document-select-popup {
+    .document-select-header {
+      margin-top: 0;
+    }
+  }
   .document-select-list {
     .document-list-row {
       .list-icon {
@@ -133,6 +138,13 @@ nav {
         background-color: $background-color;
         padding: 2px 15px;
       }
+    }
+  }
+}
+.opt_cart {
+  &.opt_discount-cart {
+    .package-alert-section {
+      margin-top: 30px;
     }
   }
 }
