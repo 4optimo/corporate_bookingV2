@@ -1,0 +1,19 @@
+.btn_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  button {
+    flex-basis: calc((100% - 60px) / 6);
+    margin: 5px;
+    flex-grow: 0;
+    &.mat-raised-button {
+      span {
+        &.mat-button-wrapper {
+          overflow: hidden !important;
+          display: block !important;
+          text-overflow: ellipsis !important;
+        }
+      }
+    }
+  }
+}

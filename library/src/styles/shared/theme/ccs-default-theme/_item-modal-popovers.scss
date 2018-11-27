@@ -1,69 +1,230 @@
 @import "variables";
+.multiple-defined{
+  .time-slot-selection{
+    padding: 0 50px !important;
+  }
+  .md-accordion{
+    padding: 20px 50px;
+    .opt_flex__item {
+      flex-basis: unset;
+      flex-grow: 1;
+      padding: unset;
+      border-bottom: unset;
+      margin: unset;
+    }
+    .mat-expansion-panel-body{
+      padding: 16px 24px 16px 24px;
+    }
+    .time-slot-selection{
+      min-height: 170px
+    }
+    .opt_item--multiple-timeslot .opt_flex__item{
+      margin:0 10px;
+    }
+  }
 
-.opt_item--multiple-timeslot{
-  background-color: $opt_color_white;
-  margin: 10px;
+  .opt_flex__item {
+    flex-basis: unset;
+    flex-grow: unset;
+    padding: unset;
+    border-bottom: unset;
+    margin: unset;
+  }
+}
+.multiple-normal{
+  .time-selected{
+    padding-left: 15px;
+    padding-right: 10px;
+  }
+  .edit-time{
+    mat-form-field{
+      width: 100px;
+      margin: 0 10px;
+    }
+  }
+}
+.single-normal{
+  .mat-form-field-flex{
+    align-items: inherit;
+  }
+}
+.single-defined{
+  .time-slot{
+    min-height: 55px;
+    display: flex;
+    align-items: center;
+  }
+  .individual-row{
+    height: unset;
+    line-height: unset;
+    flex-grow: 1;
+  }
+}
+.config-popup{
+  background-color: #ffffff;
+  max-width: 500px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  padding: 20px 20px;
+  mat-form-field{
+    width: 100%;
+  }
+}
+.advanced-private{
+  .header-row{
+    margin:10px 0px;
+  }
+  .opt_flex--container{
+    min-height: 50px;
+  }
+  .content-list{
+    max-height: 500px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    mat-form-field{
+      padding-right: 10px;
+    }
+  }
+  button{
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+}
+.advanced-private-individual{
+  max-width: 600px;
+  .header-row{
+    margin:10px 0px;
+  }
+  .opt_flex--container{
+    min-height: 50px;
+  }
+  .content-list{
+    .expanded-content{
+      max-height: 500px;
+      overflow-y: scroll;
+      overflow-x: hidden;
+      mat-form-field{
+        padding-right: 10px;
+      } 
+    }
+  }
+  button{
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+}
+.advanced-public{
+  max-width: 600px;
+  .header-row{
+    margin:10px 0px;
+  }
+  .opt_flex--container{
+    min-height: 50px;
+  }
   .opt_flex__item{
+    width:100%;
+  }
+  .content-list{
+    max-height: 470px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    mat-form-field{
+      padding-right: 10px;
+    }
+  }
+  button{
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+}
+.advance-public-individual{
+  .content-list{
+    .expanded-content{
+      max-height: 470px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    mat-form-field{
+      padding-right: 10px;
+    }
+    }
+  }
+}
+.opt_item--multiple-timeslot {
+  background-color: $opt_color_white;
+  .opt_flex__item {
     flex-basis: calc(100% / 3);
     flex-grow: 1;
     padding: 10px 0;
     border-bottom: 1px dashed $opt_text_color_tertiary;
     margin: 10px 50px 10px 50px;
   }
-  .flex-container{
+  .flex-container {
     justify-content: space-around;
     padding-left: 20px;
     margin: 10px;
   }
-  .select-all{
-    padding: 20px 10px 20px 50px;
+  .select-all {
+    //padding: 20px 10px 20px 50px;
+  }
+  .ts-header{
+    border-bottom: 1px dashed $opt_text_color_tertiary;
+    .opt_flex__item {
+      border-bottom: unset;
+      flex-basis: unset;
+      margin: 10px 0px;
+    }
+    .opt_flex__item:nth-child(1) {
+      margin-left: 50px;
+    }
+    .time-lbl{
+      padding-left: 20px;
+      padding-right: 10px;
+    }
   }
 }
 
-.opt_config-popover{
+.opt_config-popover {
   background-color: $opt_color_white;
-  margin: 10px;
   max-width: 500px;
-  .mat-form-field{
+  .mat-form-field {
     width: 100%;
   }
-  .opt_flex__item{
+  .opt_flex__item {
     flex-basis: calc(100% / 2);
     flex-grow: 1;
     padding: 10px 0;
     margin: 20px;
   }
-  .flex-container{
+  .flex-container {
     justify-content: space-around;
     padding-left: 20px;
     margin: 10px;
   }
 }
 
-.opt_time-range{
-  .outer-wrapper{
+.opt_time-range {
+  .outer-wrapper {
     overflow: hidden !important;
   }
-  .time-range{
-    .opt_flex--container{
+  .time-range {
+    .opt_flex--container {
       min-height: 94px;
       align-items: flex-end;
     }
-    .opt_flex__item{
+    .opt_flex__item {
       padding-left: 30px;
-      .mat-form-field-suffix{
+      .mat-form-field-suffix {
         padding: 5px;
       }
     }
   }
 }
 
-.opt_user-time-slot{
-  .outer-wrapper{
+.opt_user-time-slot {
+  .outer-wrapper {
     overflow: hidden !important;
   }
 }
-.mat-form-field-infix{
+.mat-form-field-infix {
   font-size: 12px;
 }
 .price-align {
@@ -71,11 +232,81 @@
 }
 .opt_calendar-expand {
   .time-slot-selection {
-    .tot_price{
+    .tot_price {
       font-weight: 600;
       .mat-form-field-infix {
         width: 70px;
       }
     }
+  }
+}
+
+.date-hover {
+  &.enabled {
+    // &:hover {
+    //   //cursor: pointer;
+    //  // background-color: #2c95dc;
+    //   .date-picker {
+    //     .date-picker_month {
+    //       //background-color: #fff;
+    //       color: #333;
+    //       &:before,
+    //       &:after {
+    //         //background-color: #fff;
+    //       }
+    //     }
+    //     .date-picker_date {
+    //       border-color: #fff;
+    //       color: #fff;
+    //     }
+    //     .date-picker_year {
+    //       color: #fff;
+    //     }
+    //   }
+    // }
+  }
+}
+
+.date-picker {
+  .date-picker_month {
+    font-size: 12px;
+    background-color: #a9a9a9;
+    color: #fff;
+    padding: 5px 10px;
+    text-align: center;
+    border-radius: 4px 4px 0 0;
+    position: relative;
+    &:after {
+      content: "";
+      position: absolute;
+      left: 10px;
+      top: -5px;
+      height: 5px;
+      width: 5px;
+      background-color: #a9a9a9;
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      right: 10px;
+      top: -5px;
+      height: 5px;
+      width: 5px;
+      background-color: #a9a9a9;
+    }
+  }
+  .date-picker_date {
+    padding: 15px 18px;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    border: 1px solid #a9a9a9;
+    border-radius: 0 0 4px 4px;
+  }
+  .date-picker_year {
+    font-size: 12px;
+    font-weight: 500;
+    padding: 5px 10px;
+    text-align: center;
   }
 }
