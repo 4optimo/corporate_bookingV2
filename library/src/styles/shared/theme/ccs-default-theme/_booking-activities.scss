@@ -881,11 +881,47 @@
   }
 
   .documents {
+    .document-upload-panel{
+      .doc-upload-container {
+        padding: 20px;
+        border: 1px dashed darkgray;
+        margin:15px 0px;
+        background-color: $opt_color_white;
+        .opt_flex--container{
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+      .document-upload-icon {
+        @include circle-icon(70px, $circle_icon, $circle_icon);
+        .icon-icn-file {
+          color: lightgray;
+          font-size: 35px;
+          vertical-align: middle;
+        }
+      }
+      .document-upload-message {
+        padding-left: 20px;
+      }
+    }
+    .general-item{
+      height: 55px;
+      padding: 0 81px 0 25px !important;
+      border-top: 1px solid #e0e0e0;
+      border-bottom: 1px solid #e0e0e0;
+      .data-cadge{
+        .opt_flex--container{
+          flex-direction: column;
+        }
+      }
+    }
+    .merged-item{
+      border-top: 1px solid #e0e0e0;
+    }
     .documents_list_item {
       padding: 0;
-      border-bottom: 1px solid $opt-border-color;
       .header-height{
-        height: auto !important;
         padding: 10px !important;
       }
       .row {
@@ -921,8 +957,21 @@
           max-width: 610px;
         }
       }
+      a:hover{
+        text-decoration: underline;
+        cursor: pointer;
+      }
+      .mat-expansion-panel-body{
+        .__expansion-lft--side{
+          padding:0 15px;
+          .data-cadge{
+            .opt_flex--container{
+              flex-direction: column;
+            }
+          }
+        }
+      }
     }
-
     //========styles for expansion ================
       .mat-expansion-panel {
         box-shadow: none;
@@ -982,7 +1031,9 @@
 
       }
     //=========================================
+    
   }
+
 
   .c-sent{
     //========styles for expansion ================
@@ -1188,5 +1239,32 @@
   }
 }
 
-
+// Document-popup styles
+.document-popups{
+  .add-upload-popup, .email-popup, .edit-popup{
+    max-width: 500px;
+    background-color: $opt_color_white;
+    padding: 15px;
+    .opt_flex--container{
+      height: 40px;
+    }
+    button{
+      margin-left: 10px;
+    }
+    mat-form-field{
+      width: 100%;
+    }
+    .button-row{
+      margin:25px -15px 0px -15px !important;
+    }
+  }
+  .edit-popup{
+    .edit-buttons{
+      button{
+        margin-left: 0px !important;
+        width: 160px;
+      }
+    }
+  }
+}
 
