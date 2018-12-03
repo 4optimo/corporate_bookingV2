@@ -141,6 +141,7 @@ import { OptMessageDialogComponent } from './opt-message-dialog/opt-message-dial
 import { OptDiscountSearchComponent } from './opt-discount-search/opt-discount-search.component';
 import { OptNormalSearchComponent } from './opt-normal-search/opt-normal-search.component';
 import { OptDiscountCartComponent } from './opt-discount-cart/opt-discount-cart.component';
+import { OptDocumentPopupsComponent } from './opt-document-popups/opt-document-popups.component';
 
 
 
@@ -214,6 +215,7 @@ const appRoutes: Routes = [
   { path: 'opt-double-toggle', component: OptDoubleToggleComponent },
   { path: 'opt-message-dialog', component: OptMessageDialogComponent },
   { path: 'opt-discount-cart', component: OptDiscountCartComponent },
+  { path: 'opt-document-popups', component: OptDocumentPopupsComponent },
 
 
   { path: '', redirectTo: '/opt-booking-summary', pathMatch: 'full' },
@@ -258,7 +260,6 @@ const appRoutes: Routes = [
     ScrollDispatchModule
 
   ],
-  declarations: [],
 
 })
 export class DemoMaterialModule { }
@@ -343,6 +344,7 @@ export class DemoMaterialModule { }
     OptDiscountSearchComponent,
     OptNormalSearchComponent,
     OptDiscountCartComponent,
+    OptDocumentPopupsComponent,
 
     RoutingProjectComponent,
     TypographyComponent,

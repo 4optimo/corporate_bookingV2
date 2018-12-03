@@ -51,7 +51,12 @@ nav {
     }
   }
 }
-
+.opt_document-select-popup {
+  .badge_custom{
+    border-radius: 10%;
+    color: #ffffff !important;
+  }
+}
 .opt_discount-search {
   .opt-search-panel {
     .opt_flex__item--inherit {
@@ -61,6 +66,9 @@ nav {
   &.opt_document-select-popup {
     .document-select-header {
       margin-top: 0;
+    }
+    .badge_custom{
+      border-radius: 10%;
     }
   }
   .document-select-list {
@@ -102,6 +110,7 @@ nav {
           // }
         }
       }
+      
     }
     .opt_flex--container {
       // &.inc-col {
