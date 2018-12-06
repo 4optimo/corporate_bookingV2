@@ -23,31 +23,140 @@
         </div>
       </div>
     </div>
-  <div class="questionnaire-wrapper">
-    <div class="row">
-      <div class="col-xs-4 col-md-3 pull-right questionnaire-toggle">
-        <div class="opt_flex--container">
-          <div class="opt_flex__item opt_flex__item--vcenter">
-            <span class="toggle-label opt-txt__body2">Show mandatory</span>
+    <div class="questionnaire-wrapper">
+      <div class="question-header">
+        <div class="row">
+          <div class="col-xs-6 col-sm-6">
+            <div class="opt_flex--container">
+              <div class="opt_flex__item opt_flex__item--vcenter">
+                <span class="opt-txt__body2">Questionnaire Name</span>
+              </div>
+            </div>
           </div>
-          <div class="opt_flex__item opt_flex__item--vcenter">
-            <mat-slide-toggle></mat-slide-toggle>
+          <div class="col-xs-6 col-sm-6">
+            
+            <div class="opt_flex--container">
+                <div class="opt_flex__item opt_flex__item--vcenter just-content-end question-date-picker">
+                    <mat-form-field class="example-full-width" (click)="$event.stopPropagation();">
+                        <input class="opt-txt__body2" matInput [matDatepicker]="picker1" value="Call center" readonly="true">
+                        <!--<input matInput [matDatepicker]="picker" value="20-Jan-2018">-->
+                        <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+                        <mat-datepicker #picker1></mat-datepicker>
+                      </mat-form-field>
+                </div>
+              <div class="opt_flex__item opt_flex__item--vcenter just-content-end">
+                <span>
+                  <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">keyboard_arrow_left</i></button>
+                  <span class="opt-txt__body2 page-count">2/3</span>
+                  <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">keyboard_arrow_right</i></button>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+              <div class="opt_flex--container">
+                  <div class="opt_flex__item opt_flex__item--vcenter">
+                    <span class="opt-txt__body2">Package Name - Event Name</span>
+                  </div>
+                </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+              <div class="opt_flex--container">
+                  <div class="opt_flex__item opt_flex__item--vcenter">
+                    <span class="opt-txt__body1">25 to 28 June 2018</span>
+                  </div>
+                </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="questionnaire-accordion">
-      <div class="opt_flex--container">
-        <div class="opt_flex__item opt_flex__item--vcenter">
-          <mat-accordion>
-            <mat-expansion-panel>
+      <div class="row inner-header">
+        <div class="col-xs-8 col-md-9">
+            <div class="opt_flex--container">
+                <div class="opt_flex__item opt_flex__item--vcenter">
+                    <span class="opt-txt__body1">2 out of 3</span>
+                  </div>
+                </div>
+        </div>
+        <div class="col-xs-4 col-md-3 pull-right questionnaire-toggle">
+          <div class="opt_flex--container">
+            <div class="opt_flex__item opt_flex__item--vcenter">
+              <span class="toggle-label opt-txt__body2">Show mandatory</span>
+            </div>
+            <div class="opt_flex__item opt_flex__item--vcenter">
+              <mat-slide-toggle></mat-slide-toggle>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="questionnaire-accordion">
+        <div class="opt_flex--container">
+          <div class="opt_flex__item opt_flex__item--vcenter">
+            <mat-accordion>
+              <mat-expansion-panel>
+                <mat-expansion-panel-header collapsedHeight="55px" expandedHeight="55px">
+                  <mat-panel-title>
+                    <div class="row">
+                      <div class="col-md-1">
+                        <div class="opt_flex--container">
+                          <div class="opt_flex__item opt_flex__item--vcenter">
+                            <span class="icon-icn-package questionnaire-blue-icon"></span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-10 list-label-margin">
+                        <div class="opt_flex--container">
+                          <div class="opt_flex__item opt_flex__item--vcenter">
+                            <p>2 course meal (8 pax)<sup class="required-mark">*</sup></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </mat-panel-title>
+                </mat-expansion-panel-header>
+                <div class="accordion-content">
+                    <div class="document-upload-panel">
+                        <div class="row">
+                            <div class="col-md-12">
+                              <div class="doc-upload-container">
+                                <div class="opt_flex--container">
+                                  <div class="opt_flex__item--inherit" >
+                                    <div class="document-upload-icon">
+                                      <i class="icon-icn-file tc-flex-item__center"></i>
+                                    </div>
+                                  </div>
+                                  <div class="opt_flex__item--inherit">
+                                    <div class="document-upload-message">Drag and Drop files here or select them from your computer</div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="opt_flex--container">
+                                <div class="opt_flex__item opt-fd-col">
+                                  <p class="opt-txt__body1 opt_txt_status_cancelled">File exceeds maximum number of file attached</p>
+                                  <p class="opt-txt__body1 opt_txt_status_cancelled">File exceeds the maximum upload size</p>
+                                  <p class="opt-txt__body1 opt_txt_status_cancelled">File not belongs to the acceptable file type</p>
+                                </div>
+                              </div>
+                        </div>
+                      </div>
+                </div>
+              </mat-expansion-panel>
+              <mat-expansion-panel>
                   <mat-expansion-panel-header collapsedHeight="55px" expandedHeight="55px">
                     <mat-panel-title>
                       <div class="row">
                         <div class="col-md-1">
                           <div class="opt_flex--container">
                             <div class="opt_flex__item opt_flex__item--vcenter">
-                              <i class="material-icons questionnaire-red-icon">restaurant</i>
+                              <span class="icon-icn-package questionnaire-blue-icon"></span>
                             </div>
                           </div>
                         </div>
@@ -56,8 +165,351 @@
                             <div class="opt_flex__item opt_flex__item--vcenter">
                               <p>2 course meal (8 pax)<sup class="required-mark">*</sup></p>
                             </div>
+                          </div>
+                        </div>
+                      </div>
+                    </mat-panel-title>
+                  </mat-expansion-panel-header>
+                  <div class="accordion-content">
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-3">
+                          <div class="opt_flex--container">
+                              <div class="opt_flex__item opt_flex__item--vcenter">
+                                  <mat-form-field class="example-full-width">
+                                      <input matInput [matDatepicker]="picker2" placeholder="Expiry Date">
+                                      <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+                                      <mat-datepicker #picker2></mat-datepicker>
+                                    </mat-form-field>
+                              </div>
+                            </div>
+                      </div>
+                    </div>
+                  </div>
+                </mat-expansion-panel>
+                <!-- <mat-expansion-panel>
+                    <mat-expansion-panel-header collapsedHeight="55px" expandedHeight="55px">
+                      <mat-panel-title>
+                        <div class="row">
+                          <div class="col-md-1">
+                            <div class="opt_flex--container">
+                              <div class="opt_flex__item opt_flex__item--vcenter">
+                                <span class="icon-icn-package questionnaire-blue-icon"></span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-10 list-label-margin">
+                            <div class="opt_flex--container">
+                              <div class="opt_flex__item opt_flex__item--vcenter">
+                                <p>2 course meal (8 pax)<sup class="required-mark">*</sup></p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <div class="accordion-content">
+                      <div class="row">
+                        <div class="col-xs-1 col-md-1"></div>
+                        <div class="col-xs-11 col-md-11 list-label-margin">
+                          <div class="counter-section-wrapper">
+                            <div class="opt_flex--container">
+                              <div class="opt_flex__item opt_flex__item--vcenter p25">
+                                <span class="opt-txt__body2 opt-txt__secondary">Chicken</span>
+                              </div>
+                              <div class="opt_flex__item opt_flex__item--vcenter p75">
+                                <div class="opt_counter">
+                                  <div class="opt_flex--container ">
+                                    <div class="opt_flex__item opt_flex__item--vcenter">
+                                      <button mat-raised-button>-</button>
+                                    </div>
+                                    <div class="opt_flex__item opt_flex__item--vcenter">
+                                      <form class="example-form">
+                                        <mat-form-field class="">
+                                          <input matInput value="1">
+                                        </mat-form-field>
+                                      </form>
+                                    </div>
+                                    <div class="opt_flex__item opt_flex__item--vcenter">
+                                      <button mat-raised-button>+</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="opt_flex--container">
+                              <div class="opt_flex__item opt_flex__item--vcenter p25">
+                                <span class="opt-txt__body2 opt-txt__secondary">Seafood</span>
+                              </div>
+                              <div class="opt_flex__item opt_flex__item--vcenter p75">
+                                <div class="opt_counter">
+                                  <div class="opt_flex--container ">
+                                    <div class="opt_flex__item opt_flex__item--vcenter">
+                                      <button mat-raised-button>-</button>
+                                    </div>
+                                    <div class="opt_flex__item opt_flex__item--vcenter">
+                                      <form class="example-form">
+                                        <mat-form-field class="">
+                                          <input matInput value="1">
+                                        </mat-form-field>
+                                      </form>
+                                    </div>
+                                    <div class="opt_flex__item opt_flex__item--vcenter">
+                                      <button mat-raised-button>+</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="opt_flex--container">
+                              <div class="opt_flex__item opt_flex__item--vcenter p25">
+                                <span class="opt-txt__body2 opt-txt__secondary">Meat</span>
+                              </div>
+                              <div class="opt_flex__item opt_flex__item--vcenter p75">
+                                <div class="opt_counter">
+                                  <div class="opt_flex--container ">
+                                    <div class="opt_flex__item opt_flex__item--vcenter">
+                                      <button mat-raised-button>-</button>
+                                    </div>
+                                    <div class="opt_flex__item opt_flex__item--vcenter">
+                                      <form class="example-form">
+                                        <mat-form-field class="">
+                                          <input matInput value="1">
+                                        </mat-form-field>
+                                      </form>
+                                    </div>
+                                    <div class="opt_flex__item opt_flex__item--vcenter">
+                                      <button mat-raised-button>+</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="opt_flex--container">
+                              <div class="opt_flex__item opt_flex__item--vcenter p25">
+                                <span class="opt-txt__body2 opt-txt__secondary">Other</span>
+                              </div>
+                              <div class="opt_flex__item opt_flex__item--vcenter p25">
+                                <div class="opt_counter">
+                                  <div class="opt_flex--container ">
+                                    <div class="opt_flex__item opt_flex__item--vcenter">
+                                      <button mat-raised-button>-</button>
+                                    </div>
+                                    <div class="opt_flex__item opt_flex__item--vcenter">
+                                      <form class="example-form">
+                                        <mat-form-field class="">
+                                          <input matInput value="1">
+                                        </mat-form-field>
+                                      </form>
+                                    </div>
+                                    <div class="opt_flex__item opt_flex__item--vcenter">
+                                      <button mat-raised-button>+</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="opt_flex__item opt_flex__item--vcenter p50">
+                                <mat-form-field class="example-full-width opt-txt__body1">
+                                  <input matInput placeholder="Other (Please specify)" value="">
+                                </mat-form-field>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </mat-expansion-panel> -->
+              <mat-expansion-panel>
+                <mat-expansion-panel-header collapsedHeight="55px" expandedHeight="55px">
+                  <mat-panel-title>
+                    <div class="row">
+                      <div class="col-md-1">
+                        <div class="opt_flex--container">
+                          <div class="opt_flex__item opt_flex__item--vcenter">
+                            <span class="icon-icn-item questionnaire-blue-icon"></span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-10 list-label-margin">
+                        <div class="opt_flex--container">
                             <div class="opt_flex__item opt_flex__item--vcenter">
-                              <span class="lbl lbl__vat">Lunch</span>
+                                <span class="lbl lbl__vat">Whiteboard</span>
+                              </div>
+                          <div class="opt_flex__item opt_flex__item--vcenter">
+                            <p>2 course meal (8 pax)<sup class="required-mark">*</sup></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </mat-panel-title>
+                </mat-expansion-panel-header>
+                <div class="accordion-content">
+                    <div class="row">
+                        <div class="col-xs-1 col-md-1"></div>
+                        <div class="col-xs-12 col-md-3 list-label-margin">
+                          <div class="questionnaire-radio-group opt_flex--container">
+                            <div class="opt_flex__item opt_flex__item--vcenter">
+                              <mat-radio-group>
+                                <mat-radio-button value="1"><span class="opt-txt__body1">03:00PM</span></mat-radio-button>
+                                <mat-radio-button value="2"><span class="opt-txt__body1">04:00PM</span></mat-radio-button>
+                                <mat-radio-button value="3"><span class="opt-txt__body1">05:00PM</span></mat-radio-button>
+                              </mat-radio-group>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xs-11 col-md-3">
+                          <div class="opt_flex--container">
+                            <div class="opt_flex__item opt_flex__item--vcenter">
+                                <mat-form-field class="example-full-width opt-txt__body1">
+                                    <input matInput placeholder="Other (Please specify)" value="">
+                                  </mat-form-field>
+                                  <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">done</i></button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+              </mat-expansion-panel>
+              <mat-expansion-panel>
+                  <mat-expansion-panel-header collapsedHeight="55px" expandedHeight="55px">
+                    <mat-panel-title>
+                      <div class="row">
+                        <div class="col-md-1">
+                          <div class="opt_flex--container">
+                            <div class="opt_flex__item opt_flex__item--vcenter">
+                              <span class="icon-icn-item questionnaire-blue-icon"></span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-10 list-label-margin">
+                          <div class="opt_flex--container">
+                              <div class="opt_flex__item opt_flex__item--vcenter">
+                                  <span class="lbl lbl__vat">Whiteboard</span>
+                                </div>
+                            <div class="opt_flex__item opt_flex__item--vcenter">
+                              <p>2 course meal (8 pax)<sup class="required-mark">*</sup></p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </mat-panel-title>
+                  </mat-expansion-panel-header>
+                  <div class="accordion-content">
+                      <div class="row">
+                          <div class="col-xs-1 col-md-1"></div>
+                          <div class="col-xs-12 col-md-2 list-label-margin">
+                            <div class="questionnaire-radio-group opt_flex--container">
+                              <div class="opt_flex__item opt-fd-col">
+                                  <mat-checkbox><span class="opt-txt__body1">Option 1</span></mat-checkbox>
+                                  <mat-checkbox><span class="opt-txt__body1">Option 2</span></mat-checkbox>
+                                  <mat-checkbox><span class="opt-txt__body1">Option 3</span></mat-checkbox>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-xs-11 col-md-3">
+                            <div class="opt_flex--container">
+                              <div class="opt_flex__item opt_flex__item--vcenter">
+                                  <mat-form-field class="example-full-width opt-txt__body1">
+                                      <input matInput placeholder="Other (Please specify)" value="">
+                                    </mat-form-field>
+                                    <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">done</i></button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                  </div>
+                </mat-expansion-panel>
+                <!-- <mat-expansion-panel>
+                    <mat-expansion-panel-header collapsedHeight="55px" expandedHeight="55px">
+                      <mat-panel-title>
+                        <div class="row">
+                          <div class="col-md-1">
+                            <div class="opt_flex--container">
+                              <div class="opt_flex__item opt_flex__item--vcenter">
+                                <span class="icon-icn-item questionnaire-blue-icon"></span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-10 list-label-margin">
+                            <div class="opt_flex--container">
+                                <div class="opt_flex__item opt_flex__item--vcenter">
+                                    <span class="lbl lbl__vat">Whiteboard</span>
+                                  </div>
+                              <div class="opt_flex__item opt_flex__item--vcenter">
+                                <p>2 course meal (8 pax)<sup class="required-mark">*</sup></p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <div class="accordion-content">
+                      <div class="opt_flex--container">
+                        <div class="opt_flex__item opt_flex__item--vcenter">
+                          <mat-form-field class="example-full-width opt-txt__body1">
+                            <input matInput placeholder="If so, Please list them here:" value="">
+                          </mat-form-field>
+                        </div>
+                      </div>
+                    </div>
+                  </mat-expansion-panel> -->
+              <mat-expansion-panel>
+                <mat-expansion-panel-header collapsedHeight="55px" expandedHeight="55px">
+                  <mat-panel-title>
+                    <div class="row">
+                      <div class="col-md-1">
+                        <div class="opt_flex--container">
+                          <div class="opt_flex__item opt_flex__item--vcenter">
+                            <span class="icon-icn-item questionnaire-blue-icon"></span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-10 list-label-margin">
+                        <div class="opt_flex--container">
+                            <div class="opt_flex__item opt_flex__item--vcenter">
+                                <span class="lbl lbl__vat">Evening Tea</span>
+                              </div>
+                          <div class="opt_flex__item opt_flex__item--vcenter">
+                            <p>2 course meal (8 pax)<sup class="required-mark">*</sup></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </mat-panel-title>
+                </mat-expansion-panel-header>
+                <div class="accordion-content">
+                  <div class="row">
+                    <div class="col-xs-1 col-md-1"></div>
+                    <div class="col-xs-11 col-md-11 list-label-margin">
+                      <div class="questionnaire-radio-group opt_flex--container">
+                        <div class="opt_flex__item opt_flex__item--vcenter">
+                          <mat-radio-group>
+                            <mat-radio-button value="1"><span class="opt-txt__body1">Yes</span></mat-radio-button>
+                            <mat-radio-button value="2"><span class="opt-txt__body1">No</span></mat-radio-button>
+                          </mat-radio-group>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </mat-expansion-panel>
+              <mat-expansion-panel>
+                  <mat-expansion-panel-header collapsedHeight="55px" expandedHeight="55px">
+                    <mat-panel-title>
+                      <div class="row">
+                        <div class="col-md-1">
+                          <div class="opt_flex--container">
+                            <div class="opt_flex__item opt_flex__item--vcenter">
+                              <span class="icon-icn-item questionnaire-blue-icon"></span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-10 list-label-margin">
+                          <div class="opt_flex--container">
+                              <div class="opt_flex__item opt_flex__item--vcenter">
+                                  <span class="lbl lbl__vat">Evening Tea</span>
+                                </div>
+                            <div class="opt_flex__item opt_flex__item--vcenter">
+                              <p>2 course meal (8 pax)<sup class="required-mark">*</sup></p>
                             </div>
                           </div>
                         </div>
@@ -66,206 +518,71 @@
                   </mat-expansion-panel-header>
                   <div class="accordion-content">
                     <div class="row">
-                      <div class="col-xs-1 col-md-1"></div>
-                      <div class="col-xs-11 col-md-11 list-label-margin">
-                        <div class="counter-section-wrapper">
+                      <div class="col-xs-12 col-md-3">
                           <div class="opt_flex--container">
-                            <div class="opt_flex__item opt_flex__item--vcenter p25">
-                              <span class="opt-txt__body2 opt-txt__secondary">Chicken</span>
-                            </div>
-                            <div class="opt_flex__item opt_flex__item--vcenter p75">
-                              <div class="opt_counter">
-                                <div class="opt_flex--container ">
-                                  <div class="opt_flex__item opt_flex__item--vcenter">
-                                    <button mat-raised-button>-</button>
-                                  </div>
-                                  <div class="opt_flex__item opt_flex__item--vcenter">
-                                    <form class="example-form">
-                                      <mat-form-field class="">
-                                        <input matInput value="1">
-                                      </mat-form-field>
-                                    </form>
-                                  </div>
-                                  <div class="opt_flex__item opt_flex__item--vcenter">
-                                    <button mat-raised-button>+</button>
-                                  </div>
-                                </div>
+                              <div class="opt_flex__item opt_flex__item--vcenter">
+                                <mat-form-field class="example-full-width opt-txt__body1">
+                                  <input matInput placeholder="If so, Please list them here:" value="">
+                                </mat-form-field>
                               </div>
                             </div>
-                          </div>
-                          <div class="opt_flex--container">
-                            <div class="opt_flex__item opt_flex__item--vcenter p25">
-                              <span class="opt-txt__body2 opt-txt__secondary">Seafood</span>
-                            </div>
-                            <div class="opt_flex__item opt_flex__item--vcenter p75">
-                              <div class="opt_counter">
-                                <div class="opt_flex--container ">
-                                  <div class="opt_flex__item opt_flex__item--vcenter">
-                                    <button mat-raised-button>-</button>
-                                  </div>
-                                  <div class="opt_flex__item opt_flex__item--vcenter">
-                                    <form class="example-form">
-                                      <mat-form-field class="">
-                                        <input matInput value="1">
-                                      </mat-form-field>
-                                    </form>
-                                  </div>
-                                  <div class="opt_flex__item opt_flex__item--vcenter">
-                                    <button mat-raised-button>+</button>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="opt_flex--container">
-                            <div class="opt_flex__item opt_flex__item--vcenter p25">
-                              <span class="opt-txt__body2 opt-txt__secondary">Meat</span>
-                            </div>
-                            <div class="opt_flex__item opt_flex__item--vcenter p75">
-                              <div class="opt_counter">
-                                <div class="opt_flex--container ">
-                                  <div class="opt_flex__item opt_flex__item--vcenter">
-                                    <button mat-raised-button>-</button>
-                                  </div>
-                                  <div class="opt_flex__item opt_flex__item--vcenter">
-                                    <form class="example-form">
-                                      <mat-form-field class="">
-                                        <input matInput value="1">
-                                      </mat-form-field>
-                                    </form>
-                                  </div>
-                                  <div class="opt_flex__item opt_flex__item--vcenter">
-                                    <button mat-raised-button>+</button>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="opt_flex--container">
-                            <div class="opt_flex__item opt_flex__item--vcenter p25">
-                              <span class="opt-txt__body2 opt-txt__secondary">Other</span>
-                            </div>
-                            <div class="opt_flex__item opt_flex__item--vcenter p25">
-                              <div class="opt_counter">
-                                <div class="opt_flex--container ">
-                                  <div class="opt_flex__item opt_flex__item--vcenter">
-                                    <button mat-raised-button>-</button>
-                                  </div>
-                                  <div class="opt_flex__item opt_flex__item--vcenter">
-                                    <form class="example-form">
-                                      <mat-form-field class="">
-                                        <input matInput value="1">
-                                      </mat-form-field>
-                                    </form>
-                                  </div>
-                                  <div class="opt_flex__item opt_flex__item--vcenter">
-                                    <button mat-raised-button>+</button>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="opt_flex__item opt_flex__item--vcenter p50">
-                              <mat-form-field class="example-full-width opt-txt__body1">
-                                <input matInput placeholder="Other (Please specify)" value="">
-                              </mat-form-field>
-                            </div>
-                          </div>
-                        </div>
                       </div>
                     </div>
                   </div>
                 </mat-expansion-panel>
-            <mat-expansion-panel>
-              <mat-expansion-panel-header collapsedHeight="55px" expandedHeight="55px">
-                <mat-panel-title>
-                  <div class="row">
-                    <div class="col-md-1">
-                      <div class="opt_flex--container">
-                        <div class="opt_flex__item opt_flex__item--vcenter">
-                          <i class="material-icons questionnaire-red-icon">assignment_turned_in</i>
+                <mat-expansion-panel>
+                    <mat-expansion-panel-header collapsedHeight="55px" expandedHeight="55px">
+                      <mat-panel-title>
+                        <div class="row">
+                          <div class="col-md-1">
+                            <div class="opt_flex--container">
+                              <div class="opt_flex__item opt_flex__item--vcenter">
+                                <span class="icon-icn-item questionnaire-blue-icon"></span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-10 list-label-margin">
+                            <div class="opt_flex--container">
+                                <div class="opt_flex__item opt_flex__item--vcenter">
+                                    <span class="lbl lbl__vat">Evening Tea</span>
+                                  </div>
+                              <div class="opt_flex__item opt_flex__item--vcenter">
+                                <p>2 course meal (8 pax)<sup class="required-mark">*</sup></p>
+                              </div>
+                            </div>
+                          </div>
                         </div>
-                      </div>
+                      </mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <div class="accordion-content">
+                        <div class="row">
+                            <div class="col-xs-12 col-md-3">
+                                <div class="opt_flex--container">
+                                    <div class="opt_flex__item opt_flex__item--vcenter">
+                                      <mat-form-field class="example-full-width opt-txt__body1">
+                                          <textarea matInput placeholder="Leave a comment"></textarea>
+                                      </mat-form-field>
+                                    </div>
+                                  </div>
+                            </div>
+                          </div>
                     </div>
-                    <div class="col-md-10 list-label-margin">
-                      <div class="opt_flex--container">
-                        <div class="opt_flex__item opt_flex__item--vcenter">
-                          <p>2 course meal (8 pax)<sup class="required-mark">*</sup></p>
-                        </div>
-                        <div class="opt_flex__item opt_flex__item--vcenter">
-                          <span class="lbl lbl__vat">Whiteboard</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </mat-panel-title>
-              </mat-expansion-panel-header>
-              <div class="accordion-content">
-                <div class="opt_flex--container">
-                  <div class="opt_flex__item opt_flex__item--vcenter">
-                    <mat-form-field class="example-full-width opt-txt__body1">
-                      <input matInput placeholder="If so, Please list them here:" value="">
-                    </mat-form-field>
-                  </div>
-                </div>
-              </div>
-            </mat-expansion-panel>
-            <mat-expansion-panel>
-              <mat-expansion-panel-header collapsedHeight="55px" expandedHeight="55px">
-                <mat-panel-title>
-                  <div class="row">
-                    <div class="col-md-1">
-                      <div class="opt_flex--container">
-                        <div class="opt_flex__item opt_flex__item--vcenter">
-                          <i class="material-icons questionnaire-blue-icon">local_cafe</i>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-10 list-label-margin">
-                      <div class="opt_flex--container">
-                        <div class="opt_flex__item opt_flex__item--vcenter">
-                          <p>2 course meal (8 pax)<sup class="required-mark">*</sup></p>
-                        </div>
-                        <div class="opt_flex__item opt_flex__item--vcenter">
-                          <span class="lbl lbl__vat">Evening Tea</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </mat-panel-title>
-              </mat-expansion-panel-header>
-              <div class="accordion-content">
-                <div class="row">
-                  <div class="col-xs-1 col-md-1"></div>
-                  <div class="col-xs-11 col-md-11 list-label-margin">
-                    <div class="questionnaire-radio-group opt_flex--container">
-                      <div class="opt_flex__item opt_flex__item--vcenter">
-                        <mat-radio-group>
-                          <mat-radio-button value="1"><span  class="opt-txt__body1">03:00PM</span></mat-radio-button>
-                          <mat-radio-button value="2"><span  class="opt-txt__body1">04:00PM</span></mat-radio-button>
-                          <mat-radio-button value="3"><span  class="opt-txt__body1">05:00PM</span></mat-radio-button>
-                        </mat-radio-group>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </mat-expansion-panel>
-          </mat-accordion>
+                  </mat-expansion-panel>
+            </mat-accordion>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-md-2 pull-right">
-        <div class="questionnaire-button">
-          <div class="opt_flex--container">
-            <div class="opt_flex__item opt_flex__item--vcenter">
-              <button class="mat-btn-primary mat-button" (click)="close()">Save</button>
+      <div class="row">
+        <div class="col-md-2 pull-right">
+          <div class="questionnaire-button">
+            <div class="opt_flex--container">
+              <div class="opt_flex__item opt_flex__item--vcenter">
+                <button class="mat-btn-primary mat-button" (click)="close()">Save</button>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  </div>
 </div>
-
