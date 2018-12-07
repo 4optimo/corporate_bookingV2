@@ -1394,6 +1394,15 @@
             font-size: 20px;
           }
         }
+        .panel-action-btn-icon{
+            border:1px solid #909cac;
+            margin-left: 10px;
+            margin-bottom: 6px;
+            padding:0px;
+          i{
+            line-height: 24px;
+          }
+        }
         mat-panel-title {
           .opt_flex--container {
             flex-direction: column;
