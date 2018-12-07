@@ -73,6 +73,9 @@ nav {
   }
   .document-select-list {
     .document-list-row {
+      .updated-doc-label{
+        line-height: 1.5;
+      }
       .list-icon {
         &::before {
           content: none;
