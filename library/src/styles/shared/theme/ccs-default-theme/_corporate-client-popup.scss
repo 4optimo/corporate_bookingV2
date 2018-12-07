@@ -1287,6 +1287,8 @@
           }
           .mat-input-wrapper{
             padding-bottom: 11px;
+            width: 100px;
+            line-height: 10px;
           }
           mat-datepicker-toggle{
             button{
@@ -1295,8 +1297,8 @@
             }
           }
           input{
-            text-align: right;
             padding-right: 5px;
+            padding-top: 5px;
           }
           mat-form-field{
             position: relative;
@@ -1392,6 +1394,15 @@
             color: $opt_color_white;
             padding: 6px;
             font-size: 20px;
+          }
+        }
+        .panel-action-btn-icon{
+            border:1px solid #909cac;
+            margin-left: 10px;
+            margin-bottom: 6px;
+            padding:0px;
+          i{
+            line-height: 24px;
           }
         }
         mat-panel-title {

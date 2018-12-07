@@ -44,12 +44,11 @@
                       </mat-form-field>
                 </div> -->
               <div class="opt_flex__item opt_flex__item--vcenter just-content-end">
-                  <mat-form-field class="example-full-width question-date-picker" (click)="$event.stopPropagation();">
+                  <!-- <mat-form-field class="example-full-width question-date-picker" (click)="$event.stopPropagation();">
                       <input class="opt-txt__body2" matInput [matDatepicker]="picker1" value="Call center" readonly="true">
-                      <!--<input matInput [matDatepicker]="picker" value="20-Jan-2018">-->
                       <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
                       <mat-datepicker #picker1></mat-datepicker>
-                    </mat-form-field>
+                    </mat-form-field> -->
                 <span>
                   <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">keyboard_arrow_left</i></button>
                   <span class="opt-txt__body2 page-count">2/3</span>
@@ -73,6 +72,13 @@
               <div class="opt_flex--container">
                   <div class="opt_flex__item opt_flex__item--vcenter">
                     <span class="opt-txt__body1">25 to 28 June 2018</span>
+                  </div>
+                  <div class="opt_flex__item opt_flex__item--vcenter" style="display:none;">
+                      <mat-form-field class="example-full-width question-date-picker" (click)="$event.stopPropagation();">
+                          <input class="opt-txt__body2" matInput [matDatepicker]="picker1" value="Call center" readonly="true">
+                          <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+                          <mat-datepicker #picker1></mat-datepicker>
+                        </mat-form-field>
                   </div>
                 </div>
           </div>
@@ -115,7 +121,7 @@
                       <div class="col-md-10 list-label-margin">
                         <div class="opt_flex--container">
                             <div class="opt_flex__item opt_flex__item--vcenter">
-                                <span class="header-package-date opt-txt__body1">19th-Dec-2018 4:00-5:00pm</span>
+                                <span class="header-package-date opt-txt__body1-small opt-txt__secondary">19th-Dec-2018 4:00-5:00pm</span>
                             </div>
                           <div class="opt_flex__item opt_flex__item--vcenter">
                             <p>2 course meal (8 pax)<sup class="required-mark">*</sup></p>
@@ -148,9 +154,9 @@
                         <div class="col-xs-12">
                             <div class="opt_flex--container">
                                 <div class="opt_flex__item opt-fd-col">
-                                  <p class="opt-txt__body1 opt_txt_status_cancelled">File exceeds maximum number of file attached</p>
-                                  <p class="opt-txt__body1 opt_txt_status_cancelled">File exceeds the maximum upload size</p>
-                                  <p class="opt-txt__body1 opt_txt_status_cancelled">File not belongs to the acceptable file type</p>
+                                  <p class="opt-txt__body1 opt_txt_status_cancelled">Upload failed.(File exceeds maximum number of file attached)</p>
+                                  <p class="opt-txt__body1 opt_txt_status_cancelled">Upload failed.(File exceeds the maximum upload size)</p>
+                                  <p class="opt-txt__body1 opt_txt_status_cancelled">Upload failed.(File not belongs to the acceptable file type)</p>
                                 </div>
                               </div>
                         </div>
@@ -179,7 +185,7 @@
                         <div class="col-md-10 list-label-margin">
                           <div class="opt_flex--container">
                             <div class="opt_flex__item opt_flex__item--vcenter">
-                                <span class="header-package-date opt-txt__body1">19th-Dec-2018 4:00-5:00pm</span>
+                                <span class="header-package-date opt-txt__body1-small opt-txt__secondary">19th-Dec-2018 4:00-5:00pm</span>
                             </div>
                             <div class="opt_flex__item opt_flex__item--vcenter">
                               <p>2 course meal (8 pax)<sup class="required-mark">*</sup></p>
@@ -363,7 +369,7 @@
                         <div class="opt_flex--container">
                             <div class="opt_flex__item opt_flex__item--vcenter">
                                 <span class="lbl lbl__vat">Whiteboard</span>
-                                <span class="header-package-date opt-txt__body1">19th-Dec-2018 4:00-5:00pm</span>
+                                <span class="header-package-date opt-txt__body1-small opt-txt__secondary">19th-Dec-2018 4:00-5:00pm</span>
                               </div>
                           <div class="opt_flex__item opt_flex__item--vcenter">
                             <p>2 course meal (8 pax)<sup class="required-mark">*</sup></p>
@@ -424,7 +430,7 @@
                           <div class="opt_flex--container">
                               <div class="opt_flex__item opt_flex__item--vcenter">
                                   <span class="lbl lbl__vat">Whiteboard</span>
-                                  <span class="header-package-date opt-txt__body1">19th-Dec-2018 4:00-5:00pm</span>
+                                  <span class="header-package-date opt-txt__body1-small opt-txt__secondary">19th-Dec-2018 4:00-5:00pm</span>
                                 </div>
                             <div class="opt_flex__item opt_flex__item--vcenter">
                               <p>2 course meal (8 pax)<sup class="required-mark">*</sup></p>
@@ -517,7 +523,7 @@
                         <div class="opt_flex--container">
                             <div class="opt_flex__item opt_flex__item--vcenter">
                                 <span class="lbl lbl__vat">Evening Tea</span>
-                                <span class="header-package-date opt-txt__body1">19th-Dec-2018 4:00-5:00pm</span>
+                                <span class="header-package-date opt-txt__body1-small opt-txt__secondary">19th-Dec-2018 4:00-5:00pm</span>
                               </div>
                           <div class="opt_flex__item opt_flex__item--vcenter">
                             <p>2 course meal (8 pax)<sup class="required-mark">*</sup></p>
@@ -567,7 +573,7 @@
                           <div class="opt_flex--container">
                               <div class="opt_flex__item opt_flex__item--vcenter">
                                   <span class="lbl lbl__vat">Evening Tea</span>
-                                  <span class="header-package-date opt-txt__body1">19th-Dec-2018 4:00-5:00pm</span>
+                                  <span class="header-package-date opt-txt__body1-small opt-txt__secondary">19th-Dec-2018 4:00-5:00pm</span>
                                 </div>
                             <div class="opt_flex__item opt_flex__item--vcenter">
                               <p>2 course meal (8 pax)<sup class="required-mark">*</sup></p>
@@ -616,7 +622,7 @@
                             <div class="opt_flex--container">
                                 <div class="opt_flex__item opt_flex__item--vcenter">
                                     <span class="lbl lbl__vat">Evening Tea</span>
-                                    <span class="header-package-date opt-txt__body1">19th-Dec-2018 4:00-5:00pm</span>
+                                    <span class="header-package-date opt-txt__body1-small opt-txt__secondary">19th-Dec-2018 4:00-5:00pm</span>
                                   </div>
                               <div class="opt_flex__item opt_flex__item--vcenter">
                                 <p>2 course meal (8 pax)<sup class="required-mark">*</sup></p>
@@ -659,7 +665,7 @@
           <div class="questionnaire-button">
             <div class="opt_flex--container">
               <div class="opt_flex__item opt_flex__item--vcenter">
-                <button class="mat-btn-primary mat-button" (click)="close()">Save</button>
+                <button class="mat-btn-primary mat-button" (click)="close()">Next</button>
               </div>
             </div>
           </div>
