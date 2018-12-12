@@ -52,7 +52,7 @@ nav {
   }
 }
 .opt_document-select-popup {
-  .badge_custom{
+  .badge_custom {
     border-radius: 10%;
     color: #ffffff !important;
   }
@@ -67,12 +67,13 @@ nav {
     .document-select-header {
       margin-top: 0;
     }
-    .badge_custom{
+    .badge_custom {
       border-radius: 10%;
     }
   }
   .document-select-list {
     .document-list-row {
+      
       .list-icon {
         &::before {
           content: none;
@@ -80,10 +81,65 @@ nav {
       }
       .icon-cage {
         justify-content: center;
+        position: relative;
+        .list-icon {
+          background-color: $opt_color_secondary;
+        }
+        .opt_circle__sub {
+          display: flex;
+          justify-content: center;
+          position: absolute;
+          @include circle-icon(17px, #454545, #454545);
+          top: -3px;
+          right: 3px;
+
+          &.__percentage {
+            // font-family: "Material icons";
+            vertical-align: initial;
+            display: inline-block;
+            font-size: 12px;
+            font-weight: 500;
+            color: $opt_color_white;
+            &::before {
+              content: "%";
+            }
+          }
+          &.__fixed {
+            font-family: "Material icons";
+            vertical-align: initial;
+            display: inline-block;
+            font-size: 12px;
+            color: $opt_color_white;
+            &::before {
+              content: "lock";
+            }
+          }
+          &.__covers {
+            font-family: "Material icons";
+            vertical-align: initial;
+            display: inline-block;
+            font-size: 12px;
+            color: $opt_color_white;
+            &::before {
+              content: "person";
+            }
+          }
+          &.__quantity {
+            font-family: "Material icons";
+            vertical-align: initial;
+            display: inline-block;
+            font-size: 12px;
+            color: $opt_color_white;
+            &::before {
+              content: "attach_money";
+            }
+          }
+        }
         i {
           margin-left: 0;
         }
       }
+
       &.list-row--quantity-discount {
         .price {
           .inc-col {
@@ -92,25 +148,24 @@ nav {
         }
       }
 
-      &.list-row--amount-per-cover {
-        .list-icon {
-          background-color: $opt_color_type;
-        }
-      }
-      &.list-row--fixed-amount {
-        .list-icon {
-          background-color: $tentative;
-        }
-      }
-      &.list-row--percentage-discount {
-        .list-icon {
-          background-color: $booking_summary_color;
-          // &::before {
-          //   content: ;
-          // }
-        }
-      }
-      
+      // &.list-row--amount-per-cover {
+      //   .list-icon {
+      //     background-color: $opt_color_type;
+      //   }
+      // }
+      // &.list-row--fixed-amount {
+      //   .list-icon {
+      //     background-color: $tentative;
+      //   }
+      // }
+      // &.list-row--percentage-discount {
+      //   .list-icon {
+      //     background-color: $booking_summary_color;
+      //     // &::before {
+      //     //   content: ;
+      //     // }
+      //   }
+      // }
     }
     .opt_flex--container {
       // &.inc-col {
@@ -156,4 +211,7 @@ nav {
       margin-top: 30px;
     }
   }
+}
+.updated-doc-label{
+  line-height: 1.5;
 }

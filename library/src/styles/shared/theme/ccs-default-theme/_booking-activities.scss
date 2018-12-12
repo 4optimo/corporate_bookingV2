@@ -919,6 +919,9 @@
     .merged-item{
       border-top: 1px solid #e0e0e0;
     }
+    .document-status-icon{
+      font-size: 14px;
+    }
     .documents_list_item {
       padding: 0;
       .header-height{
@@ -1264,6 +1267,10 @@
         margin-left: 0px !important;
         width: 160px;
       }
+    }
+    .doc-edited-label{
+      position: relative;
+      top:15px;
     }
   }
 }
