@@ -21,6 +21,7 @@ import { OptDocumentSelectPopupComponent } from "../opt-document-select-popup/op
 import { OptDispatchAddNewAddressComponent } from "../opt-dispatch-add-new-address/opt-dispatch-add-new-address.component";
 import { OptShipmentScreenComponent } from "../opt-shipment-screen/opt-shipment-screen.component";
 import { OptDiscountSearchComponent } from '../opt-discount-search/opt-discount-search.component';
+import { OptContactSetupPopupComponent } from '../opt-contact-setup-popup/opt-contact-setup-popup.component';
 
 @Component({
   selector: 'app-opt-popup-window',
@@ -232,6 +233,15 @@ export class OptPopupWindowComponent implements OnInit {
       panelClass: ['custom-dialog-container', 'w60modal'],
       height: 'auto',
       width: '60%'
+    });
+
+  }
+  public openContactSetupPopup() {
+    this.dialog.open(OptContactSetupPopupComponent, {
+      data: { name: 'Add a new address' },
+      panelClass: ['custom-dialog-container', 'w40modal'],
+      height: 'auto',
+      width: '40%'
     });
 
   }
