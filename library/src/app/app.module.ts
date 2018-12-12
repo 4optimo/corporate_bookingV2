@@ -7,6 +7,7 @@ import { HttpModule } from '@angular/http';
 import { NgxEditorModule } from 'ngx-editor';
 import { NgxPopper } from 'angular-popper';
 import { NgxPopperModule } from 'ngx-popper';
+import { Ng5SliderModule } from 'ng5-slider';
 import { TooltipModule } from 'ngx-bootstrap/tooltip';
 import {
   MatAutocompleteModule,
@@ -376,6 +377,7 @@ export class DemoMaterialModule { }
     TooltipModule.forRoot(),
     NgxPopper,
     NgxPopperModule,
+    Ng5SliderModule,
   ],
 
   entryComponents: [

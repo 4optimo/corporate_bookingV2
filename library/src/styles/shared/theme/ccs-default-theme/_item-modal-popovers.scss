@@ -47,6 +47,9 @@
   .mat-form-field-flex{
     align-items: inherit;
   }
+  .time-slot-selection{
+    max-height: 187px !important;
+  }
 }
 .single-defined{
   .time-slot{
@@ -309,4 +312,7 @@
     padding: 5px 10px;
     text-align: center;
   }
+}
+.time-range{
+  margin:10px 0px;
 }
