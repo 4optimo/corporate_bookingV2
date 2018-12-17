@@ -303,6 +303,12 @@ h1,h2,h3,h4,h5,h6{
   .dialog-message{
     background-color: #ffffff;
     padding: 15px;
+    mat-radio-group{
+      margin-bottom: 20px;
+      mat-radio-button{
+        padding:5px 0px;
+      }
+    }
   }
   .more-info{
     color: #4bb3fa;
@@ -327,8 +333,6 @@ h1,h2,h3,h4,h5,h6{
     }
   }
 }
-
-
 //Percentage globalization
 .p25{
   width: 25%;

@@ -964,7 +964,7 @@
                   <!--Content-->
                   <div class="payment_list_item">
                     <mat-accordion>
-                      <mat-expansion-panel   collapsedHeight="55px" expandedHeight="55px">
+                      <mat-expansion-panel collapsedHeight="55px" expandedHeight="55px">
                         <mat-expansion-panel-header>
                           <div class="opt_flex--container">
                             <div class="opt_flex__item">
@@ -975,121 +975,317 @@
                               <div class="opt-txt__body2">25-Jun-2018</div>
                             </div>
                             <div class="opt_flex__item opt-txt__align-right">
-                                <div class="opt-txt__body2 opt-txt__secondary">Amount Due</div>
-                                <div class="opt-txt__body2">$80.00</div>
+                              <div class="opt-txt__body2 opt-txt__secondary">Amount Due</div>
+                              <div class="opt-txt__body2">$80.00</div>
                             </div>
                             <div class="opt_flex__item opt-txt__align-right">
-                                <div class="opt-txt__body2 opt-txt__secondary">Paid Amount</div>
-                                <div class="opt-txt__body2">$30.00</div>
+                              <div class="opt-txt__body2 opt-txt__secondary">Paid Amount</div>
+                              <div class="opt-txt__body2">$30.00</div>
                             </div>
                             <div class="opt_flex__item opt-txt__align-right">
-                                <div class="opt-txt__body2 opt-txt__secondary">Balance Due</div>
-                                <div class="opt-txt__body2">$50.00</div>
+                              <div class="opt-txt__body2 opt-txt__secondary">Balance Due</div>
+                              <div class="opt-txt__body2">$50.00</div>
                             </div>
                           </div>
                         </mat-expansion-panel-header>
 
                         <div class="opt_flex--container">
-                            <div class="opt_flex__item col-1">
-                                <div class="opt-txt__body2 opt-txt__secondary">Inv. Due</div>
-                                <div class="opt-txt__body2">20-Jun-2018</div>
-                            </div>
-                            <div class="opt_flex__item col-2">
-                              <span class="opt-txt__body2 opt-txt__secondary opt-normal-whitespace">When invoiced, the Booking will change to <span class="opt-txt__body2 opt-txt__tertiary">Provisional</span>
-                            </span>
-                            </div>
-                            <div class="opt_flex__item col-3">
-                                <span class="opt-txt__body2 opt-txt__secondary opt-normal-whitespace">When paid, the Booking will change to <span class="opt-txt__body2 opt-txt__tertiary">Confirmed</span>
-                            </span>
-                            </div>
-                            <div class="opt_flex__item opt-txt__align-right">
-                                <div class="opt-txt__body2 opt-txt__secondary">Paid Amount</div>
-                                <div class="opt-txt__body2">$30.00</div>
-                            </div>
-                            <div class="opt_flex__item opt-txt__align-right">
-                                <div class="opt-txt__body2 opt-txt__secondary">Balance Due</div>
-                                <div class="opt-txt__body2">$50.00</div>
-                            </div>
+                          <div class="opt_flex__item col-1">
+                            <div class="opt-txt__body2 opt-txt__secondary">Inv. Due</div>
+                            <div class="opt-txt__body2">20-Jun-2018</div>
                           </div>
+                          <div class="opt_flex__item col-2">
+                            <span class="opt-txt__body2 opt-txt__secondary opt-normal-whitespace">When invoiced, the
+                              Booking will change to <span class="opt-txt__body2 opt-txt__tertiary">Provisional</span>
+                            </span>
+                          </div>
+                          <div class="opt_flex__item col-3">
+                            <span class="opt-txt__body2 opt-txt__secondary opt-normal-whitespace">When paid, the
+                              Booking will change to <span class="opt-txt__body2 opt-txt__tertiary">Confirmed</span>
+                            </span>
+                          </div>
+                          <div class="opt_flex__item opt-txt__align-right">
+                            <div class="opt-txt__body2 opt-txt__secondary">Paid Amount</div>
+                            <div class="opt-txt__body2">$30.00</div>
+                          </div>
+                          <div class="opt_flex__item opt-txt__align-right">
+                            <div class="opt-txt__body2 opt-txt__secondary">Balance Due</div>
+                            <div class="opt-txt__body2">$50.00</div>
+                          </div>
+                        </div>
 
                       </mat-expansion-panel>
+
                     </mat-accordion>
                   </div>
+
                 </div>
               </mat-tab>
             </div>
             <!-- Invoice and Credit Notes -->
-            <div class="invoice">
+            <div class="">
               <mat-tab label="Invoice and Credit Notes">
 
-                <div class="notes">
+                <div class="payment-invoice notes">
                   <!--Header-->
 
                   <div class="header-row">
                     <div class="row">
-                      <div class="col-xs-12 col-sm-12 col-md-7	col-lg-7">
+                      <div class="col-xs-4">
                         <div class="opt_flex--container">
                           <div class="opt_flex__item  horizontally-center ">
                             <mat-checkbox>
                               <span class="opt-txt__body1">Select All</span>
                             </mat-checkbox>
-                            <span class="cage_selected opt_txt_color_tertiary">1 Item</span>
+                            <span class="opt_txt_color_tertiary opt-txt__body1">1 Item</span>
                           </div>
+                        </div>
+                      </div>
+                      <div class="col-xs-4">
+                        <div class="opt-triple-toggle">
+                          <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+                            <mat-button-toggle value="on">Standard</mat-button-toggle>
+                            <mat-button-toggle value="default">Pro-forma</mat-button-toggle>
+                            <mat-button-toggle value="off">Cancelled</mat-button-toggle>
+                          </mat-button-toggle-group>
+                        </div>
+                      </div>
+                      <div class="col-xs-4 just-content-end">
+                        <div class="header_row--action-wrapper btn-group">
+                          <button mat-button class="mat-btn-primary--small btn-icon-text mat-button"><i class="material-icons opt_color_icon_font">cancel</i>
+                            <span class="btn-text hidden-sm opt-txt__secondary">Cancel</span></button>
+                          <button mat-button class="mat-btn-primary--small btn-icon-text mat-button"><i class="material-icons opt_color_icon_font">email</i>
+                            <span class="btn-text hidden-sm opt-txt__secondary">Email</span></button>
+                          <button mat-button class="mat-btn-primary--small btn-icon-text mat-button"><i class="material-icons opt_color_icon_font">monetization_on</i><span
+                              class="btn-text hidden-sm opt-txt__secondary">Pay</span></button>
                         </div>
                       </div>
                     </div>
                   </div>
                   <!--Content-->
-                  <div class="note_list_item">
-                    <div class="row">
-                      <div class="col-xs-12 col-sm-3 col-md-3	col-lg-3">
-                        <div class="opt_flex--container">
-                          <div class="opt_flex__item chck-box">
-                            <mat-checkbox></mat-checkbox>
+                  <div class="payment-invoice-list">
+                    <mat-accordion>
+                      <mat-expansion-panel #myPanel9 [disabled]="true" collapsedHeight="55px" expandedHeight="55px">
+                        <mat-expansion-panel-header collapsedHeight="55px" expandedHeight="55px">
+                          <div class="opt_expand--container">
+                            <div class="opt_flex--container opt_flex__item--vcenter">
+                              <div class="opt_flex__item __expansion-lft--side p100">
+                                <div class="opt_flex--container">
+                                  <div class="opt_flex__item--inherit opt_flex__item--vcenter">
+                                    <mat-checkbox></mat-checkbox>
+                                  </div>
+                                  <div class="opt_flex__item opt_flex__item--vcenter">
+                                    <i class="icon-icn-invoice cat-icon cancelled-text"></i>
+                                    <span class="cancelled-text"><i class="material-icons cancel-icon">cancel</i></span>
+                                    <div class="opt_flex--container opt-fd-col">
+                                      <div class="opt_flex__item opt_flex__item--vcenter">
+                                        <div class="opt-txt__body2">092845</div>
+                                        <i class="material-icons symbol_icon">email</i>
+                                      </div>
+                                      <div class="opt_flex__item opt_flex__item--vcenter">
+                                        <div class="opt-txt__body2 opt-txt__secondary">20-Jan-2018</div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="opt_flex__item">
+                                    <div class="opt_flex--container opt-fd-col">
+                                      <div class="opt_flex__item opt_flex__item--vcenter lbl-col">
+                                        <div class="opt-txt__body2 opt-txt__secondary">Payment Ref</div>
+                                      </div>
+                                      <div class="opt_flex__item opt_flex__item--vcenter val-col">
+                                        <div class="opt-txt__body2 opt-txt__secondary">Alternative Ref</div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="opt_flex__item">
+                                    <div class="opt_flex--container opt-fd-col">
+                                      <div class="opt_flex__item opt_flex__item--vcenter lbl-col">
+                                        <div class="opt-txt__body2">210456</div>
+                                      </div>
+                                      <div class="opt_flex__item opt_flex__item--vcenter val-col">
+                                        <div class="opt-txt__body2">SAP 011542</div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="opt_flex__item opt-txt__align-right">
+                                    <div class="opt-txt__body2 opt-txt__secondary">Invoiced Amount</div>
+                                    <div class="opt-txt__body2">$80.00</div>
+                                  </div>
+                                  <div class="opt_flex__item opt-txt__align-right">
+                                    <div class="opt-txt__body2 opt-txt__secondary">Payment Due Date</div>
+                                    <div class="opt-txt__body2">25-Jun-2018</div>
+                                  </div>
+                                  <div class="opt_flex__item opt-txt__align-right">
+                                    <div class="opt-txt__body2 opt-txt__secondary">Outstanding Amount</div>
+                                    <div class="opt-txt__body2">$50.00</div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="opt_flex__item __expansion-rgt--side">
+                                <div class="opt_flex--container">
+                                  <div class="opt_flex__item">
+                                    <div class="col tc-flex-item__center">
+                                      <div class="opt_flex__item action__button tc-flex-item__center">
+                                        <button class="down-arrow" mat-icon-button color="primary" (click)="expandPannel9()"
+                                          [disableRipple]="true">
+                                          <mat-icon>{{matIcon9}}</mat-icon>
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
                           </div>
-                          <div class="opt_flex__item des-box ">
-                            <div class="opt-txt__body2 opt-fontweight--bold">092883 | Box Office Event 1 Item</div>
-                            <div class="opt-txt__secondary opt-txt__body1-small"><span class=""><i class="icon-icn-invoice icon-small"></i></span>
-                              | 19-Jan-2018</div>
+                        </mat-expansion-panel-header>
+                        <div class="opt_expand--container">
+                          <div class="opt_flex--container opt_flex__item--vcenter">
+                            <div class="opt_flex__item __expansion-lft--side p100">
+                              <div class="opt_flex--container">
+                                <div class="opt_flex__item opt_flex__item--vcenter">
+                                  <i class="material-icons symbol_icon">credit_card</i>
+                                  <div class="opt_flex--container opt-fd-col">
+                                    <div class="opt_flex__item opt_flex__item--vcenter">
+                                      <div class="opt-txt__body2">2214</div>
+                                    </div>
+                                    <div class="opt_flex__item opt_flex__item--vcenter">
+                                      <div class="opt-txt__body2 opt-txt__secondary">22-Jan-2018 at 11:35am by Sam</div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="opt_flex__item opt_flex__item--vcenter">
+                                  <div class="opt_flex--container opt-fd-col">
+                                    <div class="opt_flex__item opt_flex__item--vcenter lbl-col">
+                                      <div class="opt-txt__body2 opt-txt__secondary">Credit Card</div>
+                                    </div>
+                                    <div class="opt_flex__item opt_flex__item--vcenter val-col">
+                                      <div class="opt-txt__body2 opt-txt__secondary">4562</div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="opt_flex__item opt_flex__item--vcenter just-content-end">
+                                  <div class="opt-txt__body2">$30.00</div>
+                                </div>
+                              </div>
+                            </div>
                           </div>
                         </div>
-                      </div>
-                      <div class="col-xs-12 col-sm-3 col-md-3	col-lg-3">
-                        <div class="opt_flex--container">
-                          <div class="opt_flex__item des-box ">
-                            <div class="opt-txt__body2 opt-link--primary">3509 Chimney Road Drive, UK</div>
-                            <div class="opt-txt__secondary opt-txt__body1-small">Lorem ipsum dolor sit amet,
-                              consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
-                              natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</div>
+
+                      </mat-expansion-panel>
+                      <mat-expansion-panel #myPanel10 [disabled]="true" collapsedHeight="55px" expandedHeight="55px">
+                        <mat-expansion-panel-header collapsedHeight="55px" expandedHeight="55px" class="red-highlight">
+                          <div class="opt_expand--container">
+                            <div class="opt_flex--container opt_flex__item--vcenter">
+                              <div class="opt_flex__item __expansion-lft--side p100">
+                                <div class="opt_flex--container">
+                                  <div class="opt_flex__item--inherit opt_flex__item--vcenter">
+                                    <mat-checkbox></mat-checkbox>
+                                  </div>
+                                  <div class="opt_flex__item opt_flex__item--vcenter">
+                                    <i class="icon-credit-note cat-icon"></i>
+                                    <div class="opt_flex--container opt-fd-col">
+                                      <div class="opt_flex__item opt_flex__item--vcenter">
+                                        <div class="opt-txt__body2">092845</div>
+                                        <i class="material-icons symbol_icon" mat-button [matMenuTriggerFor]="menuEmail">email</i>
+                                        <mat-menu #menuEmail="matMenu" class="email-panel">
+                                          <div>
+                                            <span class="opt-txt__body1">Sent by <span class="opt-txt__tertiary">Joe
+                                                Root</span> on <span class="opt-txt__tertiary">25-Jul-2018</span> at
+                                              <span class="opt-txt__tertiary">9:35am</span> </span>
+                                          </div>
+                                        </mat-menu>
+
+                                      </div>
+                                      <div class="opt_flex__item opt_flex__item--vcenter">
+                                        <div class="opt-txt__body2 opt-txt__secondary">20-Jan-2018</div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="opt_flex__item">
+                                    <div class="opt_flex--container opt-fd-col">
+                                      <div class="opt_flex__item opt_flex__item--vcenter lbl-col">
+                                        <div class="opt-txt__body2 opt-txt__secondary">Payment Ref</div>
+                                      </div>
+                                      <div class="opt_flex__item opt_flex__item--vcenter val-col">
+                                        <div class="opt-txt__body2 opt-txt__secondary">Alternative Ref</div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="opt_flex__item">
+                                    <div class="opt_flex--container opt-fd-col">
+                                      <div class="opt_flex__item opt_flex__item--vcenter lbl-col">
+                                        <div class="opt-txt__body2">210456</div>
+                                      </div>
+                                      <div class="opt_flex__item opt_flex__item--vcenter val-col">
+                                        <div class="opt-txt__body2">SAP 011542</div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="opt_flex__item opt-txt__align-right">
+                                    <div class="opt-txt__body2 opt-txt__secondary">Invoiced Amount</div>
+                                    <div class="opt-txt__body2">$80.00</div>
+                                  </div>
+                                  <div class="opt_flex__item opt-txt__align-right">
+                                    <div class="opt-txt__body2 opt-txt__secondary">Payment Due Date</div>
+                                    <div class="opt-txt__body2">25-Jun-2018</div>
+                                  </div>
+                                  <div class="opt_flex__item opt-txt__align-right">
+                                    <div class="opt-txt__body2 opt-txt__secondary">Outstanding Amount</div>
+                                    <div class="opt-txt__body2">$50.00</div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="opt_flex__item __expansion-rgt--side">
+                                <div class="opt_flex--container">
+                                  <div class="opt_flex__item">
+                                    <div class="col tc-flex-item__center">
+                                      <div class="opt_flex__item action__button tc-flex-item__center">
+                                        <button class="down-arrow" mat-icon-button color="primary" (click)="expandPannel10()"
+                                          [disableRipple]="true">
+                                          <mat-icon>{{matIcon10}}</mat-icon>
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </mat-expansion-panel-header>
+                        <div class="opt_expand--container">
+                          <div class="opt_flex--container opt_flex__item--vcenter">
+                            <div class="opt_flex__item __expansion-lft--side p100">
+                              <div class="opt_flex--container">
+                                <div class="opt_flex__item opt_flex__item--vcenter">
+                                  <div class="opt_flex--container opt-fd-col cancelled-text">
+                                    <div class="opt_flex__item opt_flex__item--vcenter">
+                                      <div class="opt-txt__body2">Cancelled on</div>
+                                    </div>
+                                    <div class="opt_flex__item opt_flex__item--vcenter">
+                                      <div class="opt-txt__body2 opt-txt__secondary">22-Jan-2018 at 11:35am by Sam</div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="opt_flex__item opt_flex__item--vcenter p25">
+                                  <div class="opt_flex--container">
+                                    <div class="opt_flex__item opt_flex__item--vcenter lbl-col">
+                                      <div class="opt-txt__body2 opt-txt__secondary opt-normal-whitespace">Lorem ipsum
+                                        dolor sit amet, consectetus adipiccing elit. Vestibulum sugitits, ttortor sit
+                                        amet vestibulumn efficiturm nisi enim sed nisl.</div>
+                                    </div>
+                                    <div class="opt_flex__item opt_flex__item--vcenter val-col">
+                                      <i class="material-icons symbol_icon">library_books</i>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
                           </div>
                         </div>
-                      </div>
-                      <div class="col-xs-12 col-sm-2 col-md-2	col-lg-2">
-                        <div class="opt_flex--container">
-                          <div class="opt_flex__item des-box opt-txt__align-right">
-                            <button class="panel-action-btn-icon mat-button">
-                              <i class="material-icons opt_txt_color_tertiary">credit_card</i>
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-xs-12 col-sm-2 col-md-2	col-lg-2">
-                        <div class="opt_flex--container">
-                          <div class="opt_flex__item des-box opt-txt__align-right">
-                            <span class="opt-txt__body2-small">-£108.85</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-xs-12 col-sm-2 col-md-2	col-lg-2">
-                        <div class="opt_flex--container">
-                          <div class="opt_flex__item des-box opt-txt__align-right">
-                            <button class="panel-action-btn-icon mat-button">
-                              <i class="material-icons opt_txt_color_tertiary">exit_to_app</i>
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+
+                      </mat-expansion-panel>
+                    </mat-accordion>
+
                   </div>
                 </div>
 
@@ -1098,220 +1294,561 @@
             <!-- Payments -->
             <div class="payments">
               <mat-tab label="Payments & Refund">
-                <!--Header-->
-                <div class="header-row">
-                  <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-7	col-lg-7">
-                      <div class="opt_flex--container">
-                        <div class="opt_flex__item  horizontally-center ">
-                          <mat-checkbox>
-                            <span class="opt-txt__body1">Select All</span>
-                          </mat-checkbox>
-                          <span class="cage_selected opt_txt_color_tertiary">2 Item</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-12 col-md-5	col-lg-5 just-content-end">
-                      <div class="opt_flex__item--inherit horizontally-center action-btn">
-                        <div class="header_row--action-wrapper">
-                          <button mat-button class="mat-btn-primary--small btn-icon-text"><i class="material-icons opt_color_icon_font">delete</i>
-                            <span class="btn-text hidden-sm  opt-txt__secondary">Delete</span></button>
-                        </div>
+                <div class="payment-refund-list">
+                  <div class="payment-refund-header">
+                    <div class="row">
+                      <div class="col-xs-12 opt-txt__align-right">
+                        <span class="opt-txt__tertiary" mat-button [matMenuTriggerFor]="menuFailed">View Failed Payment
+                          Transactions</span>
+                        <mat-menu #menuFailed="matMenu" class="failed-panel">
+                          <div class="header-row">
+                            <div class="row">
+                              <div class="col-xs-12">
+                                <span class="opt-txt__body2">Failed payment transactions for the booking <span class="opt-txt__tertiary">EN6528</span></span>
+                              </div>
+                            </div>
+                          </div>
+                            <div class="row">
+                              <div class="col-xs-12">
+                                <div class="opt_flex--container">
+                                  <div class="opt_flex__item opt_flex__item--vcenter">
+                                    <div class="opt_flex--container opt-fd-col">
+                                      <div class="opt_flex__item">
+                                        <span class="opt-txt__body2 opt-txt__secondary header-lbl">Transaction ID</span>
+                                      </div>
+                                      <div class="opt_flex__item">
+                                        <span class="opt-txt__body2">246525486</span>
+                                      </div>
+                                      <div class="opt_flex__item">
+                                        <span class="opt-txt__body2">3256415989</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="opt_flex__item opt_flex__item--vcenter">
+                                    <div class="opt_flex--container opt-fd-col">
+                                      <div class="opt_flex__item">
+                                        <span class="opt-txt__body2 opt-txt__secondary header-lbl">Amount</span>
+                                      </div>
+                                      <div class="opt_flex__item">
+                                        <span class="opt-txt__body2">$250.00</span>
+                                      </div>
+                                      <div class="opt_flex__item">
+                                        <span class="opt-txt__body2">$485.00</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="opt_flex__item opt_flex__item--vcenter">
+                                    <div class="opt_flex--container opt-fd-col">
+                                      <div class="opt_flex__item">
+                                        <span class="opt-txt__body2 opt-txt__secondary header-lbl">Date</span>
+                                      </div>
+                                      <div class="opt_flex__item">
+                                        <span class="opt-txt__body2">25-Aug-2018</span>
+                                      </div>
+                                      <div class="opt_flex__item">
+                                        <span class="opt-txt__body2">06-Oct-2018</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="opt_flex__item opt_flex__item--vcenter">
+                                    <div class="opt_flex--container opt-fd-col">
+                                      <div class="opt_flex__item">
+                                        <span class="opt-txt__body2 opt-txt__secondary header-lbl">Time</span>
+                                      </div>
+                                      <div class="opt_flex__item">
+                                        <span class="opt-txt__body2">9.25am</span>
+                                      </div>
+                                      <div class="opt_flex__item">
+                                        <span class="opt-txt__body2">3.25pm</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="opt_flex__item opt_flex__item--vcenter">
+                                    <div class="opt_flex--container opt-fd-col">
+                                      <div class="opt_flex__item">
+                                        <span class="opt-txt__body2 opt-txt__secondary header-lbl">Error Description</span>
+                                      </div>
+                                      <div class="opt_flex__item">
+                                        <span class="opt-txt__body2">Do Not Honer</span>
+                                      </div>
+                                      <div class="opt_flex__item">
+                                        <span class="opt-txt__body2">Insufficient Funds</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="opt_flex__item opt_flex__item--vcenter">
+                                    <div class="opt_flex--container opt-fd-col">
+                                      <div class="opt_flex__item">
+                                        <span class="opt-txt__body2 opt-txt__secondary header-lbl">Card Type</span>
+                                      </div>
+                                      <div class="opt_flex__item">
+                                        <span class="opt-txt__body2">Visa</span>
+                                      </div>
+                                      <div class="opt_flex__item">
+                                        <span class="opt-txt__body2">MasterCard</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="opt_flex__item opt_flex__item--vcenter">
+                                    <div class="opt_flex--container opt-fd-col">
+                                      <div class="opt_flex__item">
+                                        <span class="opt-txt__body2 opt-txt__secondary header-lbl">Card Holder</span>
+                                      </div>
+                                      <div class="opt_flex__item">
+                                        <span class="opt-txt__body2">C J Lewis</span>
+                                      </div>
+                                      <div class="opt_flex__item">
+                                        <span class="opt-txt__body2">Rodger Federer</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="opt_flex__item opt_flex__item--vcenter">
+                                    <div class="opt_flex--container opt-fd-col">
+                                      <div class="opt_flex__item">
+                                        <span class="opt-txt__body2 opt-txt__secondary header-lbl">Expiry Date</span>
+                                      </div>
+                                      <div class="opt_flex__item">
+                                        <span class="opt-txt__body2">20-Aug-2018</span>
+                                      </div>
+                                      <div class="opt_flex__item">
+                                        <span class="opt-txt__body2">01-Jan-2018</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="opt_flex__item opt_flex__item--vcenter">
+                                    <div class="opt_flex--container opt-fd-col">
+                                      <div class="opt_flex__item">
+                                        <span class="opt-txt__body2 opt-txt__secondary header-lbl">Last Four Digits</span>
+                                      </div>
+                                      <div class="opt_flex__item">
+                                        <span class="opt-txt__body2">2546</span>
+                                      </div>
+                                      <div class="opt_flex__item">
+                                        <span class="opt-txt__body2">8456</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="opt_flex__item opt_flex__item--vcenter">
+                                    <div class="opt_flex--container opt-fd-col">
+                                      <div class="opt_flex__item">
+                                        <span class="opt-txt__body2 opt-txt__secondary header-lbl">Payment Gateway</span>
+                                      </div>
+                                      <div class="opt_flex__item">
+                                        <span class="opt-txt__body2">SAGE Pay</span>
+                                      </div>
+                                      <div class="opt_flex__item">
+                                        <span class="opt-txt__body2">SAGE Pay</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="opt_flex__item opt_flex__item--vcenter">
+                                    <div class="opt_flex--container opt-fd-col">
+                                      <div class="opt_flex__item">
+                                        <span class="opt-txt__body2 opt-txt__secondary header-lbl">Transaction User</span>
+                                      </div>
+                                      <div class="opt_flex__item">
+                                        <span class="opt-txt__body2">Rome Stark</span>
+                                      </div>
+                                      <div class="opt_flex__item">
+                                        <span class="opt-txt__body2">Eden Elis</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+
+
+
+
+
+
+
+
+
+
+
+                              </div>
+                            </div>
+                          
+                        </mat-menu>
                       </div>
                     </div>
                   </div>
+                  <mat-accordion>
+                    <mat-expansion-panel #myPanel11 [disabled]="true">
+                      <mat-expansion-panel-header collapsedHeight="55px" expandedHeight="55px">
+                        <div class="opt_expand--container">
+                          <div class="opt_flex--container opt_flex__item--vcenter">
+                            <div class="opt_flex__item __expansion-lft--side p100">
+                              <div class="opt_flex--container">
+                                <div class="opt_flex__item opt_flex__item--vcenter p25">
+                                  <i class="material-icons cat-icon">credit_card</i>
+                                  <div class="opt_flex--container opt-fd-col">
+                                    <div class="opt_flex__item opt_flex__item--vcenter">
+                                      <div class="opt-txt__body2">2214</div>
+                                    </div>
+                                    <div class="opt_flex__item opt_flex__item--vcenter">
+                                      <div class="opt-txt__body2 opt-txt__secondary">22-Jan-2018 at 11:35am by Sam</div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="opt_flex__item opt_flex__item--vcenter p25">
+                                  <div class="opt_flex--container opt-fd-col">
+                                    <div class="opt_flex__item opt_flex__item--vcenter lbl-col">
+                                      <div class="opt-txt__body2 opt-txt__secondary">Credit Card</div>
+                                    </div>
+                                    <div class="opt_flex__item opt_flex__item--vcenter val-col">
+                                      <div class="opt-txt__body2 opt-txt__secondary">4562</div>
+                                      <i class="material-icons symbol_icon opt-txt__tertiary" mat-button
+                                        [matMenuTriggerFor]="menuInfo">info</i>
+                                      <mat-menu #menuInfo="matMenu" class="info-panel">
+                                        <div class="row">
+                                          <div class="col-xs-6">
+                                            <div class="opt_flex--container opt-fd-col">
+                                              <div class="opt_flex__item opt_flex__item--vcenter">
+                                                <div class="opt-txt__body2">Credit Card Type</div>
+                                              </div>
+                                              <div class="opt_flex__item opt_flex__item--vcenter">
+                                                <div class="opt-txt__body2 opt-txt__secondary">Visa</div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="col-xs-6">
+                                            <div class="opt_flex--container opt-fd-col">
+                                              <div class="opt_flex__item opt_flex__item--vcenter">
+                                                <div class="opt-txt__body2">Name on Card</div>
+                                              </div>
+                                              <div class="opt_flex__item opt_flex__item--vcenter">
+                                                <div class="opt-txt__body2 opt-txt__secondary">Harrison Ford</div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="row">
+                                          <div class="col-xs-6">
+                                            <div class="opt_flex--container opt-fd-col">
+                                              <div class="opt_flex__item opt_flex__item--vcenter">
+                                                <div class="opt-txt__body2">Last 4 Digits</div>
+                                              </div>
+                                              <div class="opt_flex__item opt_flex__item--vcenter">
+                                                <div class="opt-txt__body2 opt-txt__secondary">5864</div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="col-xs-6">
+                                            <div class="opt_flex--container opt-fd-col">
+                                              <div class="opt_flex__item opt_flex__item--vcenter">
+                                                <div class="opt-txt__body2">Expiry Date</div>
+                                              </div>
+                                              <div class="opt_flex__item opt_flex__item--vcenter">
+                                                <div class="opt-txt__body2 opt-txt__secondary">15/12/2021</div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="row">
+                                          <div class="col-xs-6">
+                                            <div class="opt_flex--container opt-fd-col">
+                                              <div class="opt_flex__item opt_flex__item--vcenter">
+                                                <div class="opt-txt__body2">Authorization Code</div>
+                                              </div>
+                                              <div class="opt_flex__item opt_flex__item--vcenter">
+                                                <div class="opt-txt__body2 opt-txt__secondary">542689</div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="col-xs-6">
+                                            <div class="opt_flex--container opt-fd-col">
+                                              <div class="opt_flex__item opt_flex__item--vcenter">
+                                                <div class="opt-txt__body2">Payment Gateway</div>
+                                              </div>
+                                              <div class="opt_flex__item opt_flex__item--vcenter">
+                                                <div class="opt-txt__body2 opt-txt__secondary">SAGE Pay</div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="row">
+                                          <div class="col-xs-6">
+                                            <div class="opt_flex--container opt-fd-col">
+                                              <div class="opt_flex__item opt_flex__item--vcenter">
+                                                <div class="opt-txt__body2">Transaction Number</div>
+                                              </div>
+                                              <div class="opt_flex__item opt_flex__item--vcenter">
+                                                <div class="opt-txt__body2 opt-txt__secondary">546878125</div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </mat-menu>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="opt_flex__item opt_flex__item--vcenter p25">
+                                  <div class="opt_flex--container">
+                                    <div class="opt_flex__item opt_flex__item--vcenter lbl-col">
+                                      <div class="opt-txt__body2 opt-txt__secondary opt-normal-whitespace">Lorem ipsum
+                                        dolor sit amet, consectetus adipiccing elit.</div>
+                                    </div>
+                                    <div class="opt_flex__item opt_flex__item--vcenter val-col">
+                                      <i class="material-icons symbol_icon">library_books</i>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="opt_flex__item opt_flex__item--vcenter just-content-end">
+                                  <div class="opt-txt__body2">$30.00</div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="opt_flex__item __expansion-rgt--side">
+                              <div class="opt_flex--container">
+                                <div class="opt_flex__item">
+                                  <div class="col tc-flex-item__center">
+                                    <div class="opt_flex__item action__button tc-flex-item__center">
+                                      <button class="down-arrow" mat-icon-button color="primary" (click)="expandPannel11()"
+                                        [disableRipple]="true">
+                                        <mat-icon>{{matIcon11}}</mat-icon>
+                                      </button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </mat-expansion-panel-header>
+                      <div class="opt_expand--container">
+                        <div class="opt_flex--container opt_flex__item--vcenter">
+                          <div class="opt_flex__item __expansion-lft--side p100">
+                            <div class="opt_flex--container">
+                              <div class="opt_flex__item opt_flex__item--vcenter">
+                                <i class="icon-icn-invoice cat-icon"></i>
+                                <div class="opt_flex--container opt-fd-col">
+                                  <div class="opt_flex__item opt_flex__item--vcenter">
+                                    <div class="opt-txt__body2">092845</div>
+                                  </div>
+                                  <div class="opt_flex__item opt_flex__item--vcenter">
+                                    <div class="opt-txt__body2 opt-txt__secondary">20-Jan-2018</div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="opt_flex__item mid-col">
+                                <div class="opt_flex--container opt-fd-col">
+                                  <div class="opt_flex__item opt_flex__item--vcenter lbl-col">
+                                    <div class="opt-txt__body2 opt-txt__secondary">Payment Ref</div>
+                                  </div>
+                                  <div class="opt_flex__item opt_flex__item--vcenter val-col">
+                                    <div class="opt-txt__body2 opt-txt__secondary">Alternative Ref</div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="opt_flex__item">
+                                <div class="opt_flex--container opt-fd-col">
+                                  <div class="opt_flex__item opt_flex__item--vcenter lbl-col">
+                                    <div class="opt-txt__body2">210456</div>
+                                  </div>
+                                  <div class="opt_flex__item opt_flex__item--vcenter val-col">
+                                    <div class="opt-txt__body2">SAP 011542</div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="opt_flex__item opt-txt__align-right">
+                                <div class="opt-txt__body2 opt-txt__secondary">Settled Amount</div>
+                                <div class="opt-txt__body2">$250.00</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="opt_expand--container">
+                        <div class="opt_flex--container opt_flex__item--vcenter">
+                          <div class="opt_flex__item __expansion-lft--side p100">
+                            <div class="opt_flex--container">
+                              <div class="opt_flex__item opt_flex__item--vcenter">
+                                <i class="icon-icn-invoice cat-icon"></i>
+                                <div class="opt_flex--container opt-fd-col">
+                                  <div class="opt_flex__item opt_flex__item--vcenter">
+                                    <div class="opt-txt__body2">092845</div>
+                                  </div>
+                                  <div class="opt_flex__item opt_flex__item--vcenter">
+                                    <div class="opt-txt__body2 opt-txt__secondary">20-Jan-2018</div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="opt_flex__item mid-col">
+                                <div class="opt_flex--container opt-fd-col">
+                                  <div class="opt_flex__item opt_flex__item--vcenter lbl-col">
+                                    <div class="opt-txt__body2 opt-txt__secondary">Payment Ref</div>
+                                  </div>
+                                  <div class="opt_flex__item opt_flex__item--vcenter val-col">
+                                    <div class="opt-txt__body2 opt-txt__secondary">Alternative Ref</div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="opt_flex__item">
+                                <div class="opt_flex--container opt-fd-col">
+                                  <div class="opt_flex__item opt_flex__item--vcenter lbl-col">
+                                    <div class="opt-txt__body2">210456</div>
+                                  </div>
+                                  <div class="opt_flex__item opt_flex__item--vcenter val-col">
+                                    <div class="opt-txt__body2">SAP 011542</div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="opt_flex__item opt-txt__align-right">
+                                <div class="opt-txt__body2 opt-txt__secondary">Settled Amount</div>
+                                <div class="opt-txt__body2">$250.00</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </mat-expansion-panel>
+                    <mat-expansion-panel #myPanel12 [disabled]="true">
+                      <mat-expansion-panel-header collapsedHeight="55px" expandedHeight="55px">
+                        <div class="opt_expand--container">
+                          <div class="opt_flex--container opt_flex__item--vcenter">
+                            <div class="opt_flex__item __expansion-lft--side p100">
+                              <div class="opt_flex--container">
+                                <div class="opt_flex__item opt_flex__item--vcenter p25">
+                                  <i class="material-icons cat-icon">attach_money</i>
+                                  <div class="opt_flex--container opt-fd-col">
+                                    <div class="opt_flex__item opt_flex__item--vcenter">
+                                      <div class="opt-txt__body2">2214</div>
+                                    </div>
+                                    <div class="opt_flex__item opt_flex__item--vcenter">
+                                      <div class="opt-txt__body2 opt-txt__secondary">22-Jan-2018 at 11:35am by Sam</div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="opt_flex__item opt_flex__item--vcenter p25">
+                                  <div class="opt_flex--container opt-fd-col">
+                                    <div class="opt_flex__item opt_flex__item--vcenter lbl-col">
+                                      <div class="opt-txt__body2 opt-txt__secondary">Cash</div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="opt_flex__item opt_flex__item--vcenter p25">
+                                  <div class="opt_flex--container">
+                                    <div class="opt_flex__item opt_flex__item--vcenter lbl-col">
+                                      <div class="opt-txt__body2 opt-txt__secondary opt-normal-whitespace">Lorem ipsum
+                                        dolor sit amet, consectetus adipiccing elit.</div>
+                                    </div>
+                                    <div class="opt_flex__item opt_flex__item--vcenter val-col">
+                                      <i class="material-icons symbol_icon">library_books</i>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="opt_flex__item opt_flex__item--vcenter just-content-end">
+                                  <div class="opt-txt__body2">$30.00</div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="opt_flex__item __expansion-rgt--side">
+                              <div class="opt_flex--container">
+                                <div class="opt_flex__item">
+                                  <div class="col tc-flex-item__center">
+                                    <div class="opt_flex__item action__button tc-flex-item__center">
+                                      <button class="down-arrow" mat-icon-button color="primary" (click)="expandPannel12()"
+                                        [disableRipple]="true">
+                                        <mat-icon>{{matIcon12}}</mat-icon>
+                                      </button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </mat-expansion-panel-header>
+                      <div class="opt_expand--container">
+                        <div class="opt_flex--container opt_flex__item--vcenter">
+                          <div class="opt_flex__item __expansion-lft--side p100">
+                            <div class="opt_flex--container">
+                              <div class="opt_flex__item opt_flex__item--vcenter">
+                                <i class="icon-icn-invoice cat-icon"></i>
+                                <div class="opt_flex--container opt-fd-col">
+                                  <div class="opt_flex__item opt_flex__item--vcenter">
+                                    <div class="opt-txt__body2">092845</div>
+                                  </div>
+                                  <div class="opt_flex__item opt_flex__item--vcenter">
+                                    <div class="opt-txt__body2 opt-txt__secondary">20-Jan-2018</div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="opt_flex__item mid-col">
+                                <div class="opt_flex--container opt-fd-col">
+                                  <div class="opt_flex__item opt_flex__item--vcenter lbl-col">
+                                    <div class="opt-txt__body2 opt-txt__secondary">Payment Ref</div>
+                                  </div>
+                                  <div class="opt_flex__item opt_flex__item--vcenter val-col">
+                                    <div class="opt-txt__body2 opt-txt__secondary">Alternative Ref</div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="opt_flex__item">
+                                <div class="opt_flex--container opt-fd-col">
+                                  <div class="opt_flex__item opt_flex__item--vcenter lbl-col">
+                                    <div class="opt-txt__body2">210456</div>
+                                  </div>
+                                  <div class="opt_flex__item opt_flex__item--vcenter val-col">
+                                    <div class="opt-txt__body2">SAP 011542</div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="opt_flex__item opt-txt__align-right">
+                                <div class="opt-txt__body2 opt-txt__secondary">Settled Amount</div>
+                                <div class="opt-txt__body2">$250.00</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="opt_expand--container">
+                        <div class="opt_flex--container opt_flex__item--vcenter">
+                          <div class="opt_flex__item __expansion-lft--side p100">
+                            <div class="opt_flex--container">
+                              <div class="opt_flex__item opt_flex__item--vcenter">
+                                <i class="icon-icn-invoice cat-icon"></i>
+                                <div class="opt_flex--container opt-fd-col">
+                                  <div class="opt_flex__item opt_flex__item--vcenter">
+                                    <div class="opt-txt__body2">092845</div>
+                                  </div>
+                                  <div class="opt_flex__item opt_flex__item--vcenter">
+                                    <div class="opt-txt__body2 opt-txt__secondary">20-Jan-2018</div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="opt_flex__item mid-col">
+                                <div class="opt_flex--container opt-fd-col">
+                                  <div class="opt_flex__item opt_flex__item--vcenter lbl-col">
+                                    <div class="opt-txt__body2 opt-txt__secondary">Payment Ref</div>
+                                  </div>
+                                  <div class="opt_flex__item opt_flex__item--vcenter val-col">
+                                    <div class="opt-txt__body2 opt-txt__secondary">Alternative Ref</div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="opt_flex__item">
+                                <div class="opt_flex--container opt-fd-col">
+                                  <div class="opt_flex__item opt_flex__item--vcenter lbl-col">
+                                    <div class="opt-txt__body2">210456</div>
+                                  </div>
+                                  <div class="opt_flex__item opt_flex__item--vcenter val-col">
+                                    <div class="opt-txt__body2">SAP 011542</div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="opt_flex__item opt-txt__align-right">
+                                <div class="opt-txt__body2 opt-txt__secondary">Settled Amount</div>
+                                <div class="opt-txt__body2">$250.00</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </mat-expansion-panel>
+                  </mat-accordion>
                 </div>
-                <!--Content-->
-                <mat-accordion>
-                  <mat-expansion-panel #myPanel5 [disabled]="true" class="opt-expand--line payments-list-item">
-                    <mat-expansion-panel-header collapsedHeight="55px" expandedHeight="55px">
-                      <div class="opt_expand--container">
-                        <mat-panel-title class="horizontally-center">
-                          <div class="opt_flex__item __expansion-lft--side">
-                            <div class="row">
-                              <div class="col-xs-12 col-sm-3 col-md-3	col-lg-3">
-                                <div class="opt_flex--container">
-                                  <div class="opt_flex__item chck-box tc-flex-item__center">
-                                    <mat-checkbox></mat-checkbox>
-                                  </div>
-                                  <div class="opt_flex__item des-box ">
-                                    <div class="opt-txt__body2 opt-fontweight--bold">PVY46 999 </div>
-                                    <div class="opt-txt__secondary opt-txt__body1-small"> Mode 999</div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="col-xs-12 col-sm-4 col-md-5	col-lg-5">
-                                <div class="opt_flex--container">
-                                  <div class="opt_flex__item des-box ">
-                                    <div class="opt-txt__body2">Host <span class="symbol_icon"><i class="material-icons">arrow_right_alt</i></span>
-                                      Host Name </div>
-                                    <div class="opt-txt__secondary opt-txt__body1-small">Client <span class="symbol_icon"><i
-                                          class="material-icons">arrow_right_alt</i></span>Client Name </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="col-xs-12 col-sm-2 col-md-1	col-lg-2">
-                                <div class="opt_flex--container">
-                                  <div class="opt_flex__item tc-flex-item__center">
-                                    <div class="opt-txt__body2">Amount</div>
-                                    <div class="opt_txt_color_tertiary opt-txt__body1-small">Voucher</div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="col-xs-12 col-sm-3 col-md-3	col-lg-2">
-                                <div class="opt_flex__item opt-txt__align-right">
-                                  <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">edit</i></button>
-                                  <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">delete</i></button>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="opt_flex__item __expansion-rgt--side">
-                            <div class="col tc-flex-item__center">
-                              <div class="opt_flex__item action__button tc-flex-item__center">
-                                <button class="down-arrow" mat-icon-button color="primary" (click)="expandPannel5()"
-                                  [disableRipple]="true">
-                                  <mat-icon class="opt_color_icon_font">{{matIcon5}}</mat-icon>
-                                </button>
-                              </div>
-                            </div>
-                          </div>
-                        </mat-panel-title>
-                      </div>
-                    </mat-expansion-panel-header>
-
-                    <div class="row">
-                      <div class="col-xs-12 col-sm-6 col-md-3	col-lg-3">
-                        <div class="opt_flex--container data-cadge">
-                          <div class="opt_flex__item  tc-flex-item__center padding-left">
-                            <div class="opt-txt__body2 text-truncate"> Package Name</div>
-                            <div class="opt_txt_color_tertiary opt-txt__body1-small text-truncate">Voucher Expiry date</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-xs-12 col-sm-6 col-md-5	col-lg-5">
-                        <div class="opt_flex--container data-cadge">
-                          <div class="opt_flex__item tc-flex-item__center">
-                            <div class="opt-txt__body2">Extension Letter Checked By </div>
-                            <div class="opt-txt__body2 ">Extensioin Letter Checked By | <span class="opt_txt_color_tertiary">Taken
-                                By</span> </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-xs-12 col-sm-4 col-md-1	col-lg-2">
-                        <div class="opt_flex--container data-cadge">
-                          <div class="opt_flex__item tc-flex-item__center">
-                            <div class="opt-txt__body2">Date</div>
-                            <div class="opt_txt_color_tertiary opt-txt__body1-small">Notes</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-xs-12 col-sm-4 col-md-3	col-lg-2">
-                        <div class="opt_flex--container data-cadge">
-                          <div class="opt_flex__item tc-flex-item__center">
-                            <div class="opt-txt__body2">Cancelled<i class="material-icons icn-right">close</i></div>
-                            <div class="opt_txt_color_tertiary opt-txt__body1-small">Original Payment</div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </mat-expansion-panel>
-                  <mat-expansion-panel #myPanel6 [disabled]="true" class="opt-expand--line payments-list-item">
-                    <mat-expansion-panel-header collapsedHeight="55px" expandedHeight="55px">
-                      <div class="opt_expand--container">
-                        <mat-panel-title class="horizontally-center">
-                          <div class="opt_flex__item __expansion-lft--side">
-                            <div class="row">
-                              <div class="col-xs-12 col-sm-3 col-md-3	col-lg-3">
-                                <div class="opt_flex--container">
-                                  <div class="opt_flex__item chck-box tc-flex-item__center">
-                                    <mat-checkbox></mat-checkbox>
-                                  </div>
-                                  <div class="opt_flex__item des-box ">
-                                    <div class="opt-txt__body2 opt-fontweight--bold">PVY46 </div>
-                                    <div class="opt-txt__secondary opt-txt__body1-small"> Mode</div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="col-xs-12 col-sm-4 col-md-5	col-lg-5">
-                                <div class="opt_flex--container">
-                                  <div class="opt_flex__item des-box ">
-                                    <div class="opt-txt__body2">Host <span class="symbol_icon"><i class="material-icons">arrow_right_alt</i></span>
-                                      Host Name </div>
-                                    <div class="opt-txt__secondary opt-txt__body1-small">Client <span class="symbol_icon"><i
-                                          class="material-icons">arrow_right_alt</i></span>Client Name </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="col-xs-12 col-sm-2 col-md-1	col-lg-2">
-                                <div class="opt_flex--container">
-                                  <div class="opt_flex__item tc-flex-item__center">
-                                    <div class="opt-txt__body2">Amount</div>
-                                    <div class="opt_txt_color_tertiary opt-txt__body1-small">Voucher</div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="col-xs-12 col-sm-3 col-md-3	col-lg-2">
-                                <div class="opt_flex__item opt-txt__align-right">
-                                  <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">edit</i></button>
-                                  <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">delete</i></button>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="opt_flex__item __expansion-rgt--side">
-                            <div class="col tc-flex-item__center">
-                              <div class="opt_flex__item action__button tc-flex-item__center">
-                                <button class="down-arrow" mat-icon-button color="primary" (click)="expandPannel6()"
-                                  [disableRipple]="true">
-                                  <mat-icon class="opt_color_icon_font">{{matIcon6}}</mat-icon>
-                                </button>
-                              </div>
-                            </div>
-                          </div>
-                        </mat-panel-title>
-                      </div>
-                    </mat-expansion-panel-header>
-
-                    <div class="row">
-                      <div class="col-xs-12 col-sm-6 col-md-3	col-lg-3">
-                        <div class="opt_flex--container data-cadge">
-                          <div class="opt_flex__item  tc-flex-item__center padding-left">
-                            <div class="opt-txt__body2 text-truncate"> Package Name</div>
-                            <div class="opt_txt_color_tertiary opt-txt__body1-small text-truncate">Voucher Expiry date</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-xs-12 col-sm-6 col-md-5	col-lg-5">
-                        <div class="opt_flex--container data-cadge">
-                          <div class="opt_flex__item tc-flex-item__center">
-                            <div class="opt-txt__body2">Extension Letter Checked By </div>
-                            <div class="opt-txt__body2 ">Extensioin Letter Checked By | <span class="opt_txt_color_tertiary">Taken
-                                By</span> </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-xs-12 col-sm-4 col-md-1	col-lg-2">
-                        <div class="opt_flex--container data-cadge">
-                          <div class="opt_flex__item tc-flex-item__center">
-                            <div class="opt-txt__body2">Date</div>
-                            <div class="opt_txt_color_tertiary opt-txt__body1-small">Notes</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-xs-12 col-sm-4 col-md-3	col-lg-2">
-                        <div class="opt_flex--container data-cadge">
-                          <div class="opt_flex__item tc-flex-item__center">
-                            <div class="opt-txt__body2">Cancelled<i class="material-icons icn-right">close</i></div>
-                            <div class="opt_txt_color_tertiary opt-txt__body1-small">Original Payment</div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </mat-expansion-panel>
-                </mat-accordion>
-
-
               </mat-tab>
             </div>
           </mat-tab-group>

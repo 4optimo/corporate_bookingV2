@@ -69,6 +69,17 @@ readToggle3(){
   @ViewChild('myPanel8') myPanel8: MatExpansionPanel;
   matIcon8 = 'keyboard_arrow_down' || 'keyboard_arrow_up';
 
+  @ViewChild('myPanel9') myPanel9: MatExpansionPanel;
+  matIcon9 = 'keyboard_arrow_down' || 'keyboard_arrow_up';
+
+  @ViewChild('myPanel10') myPanel10: MatExpansionPanel;
+  matIcon10 = 'keyboard_arrow_down' || 'keyboard_arrow_up';
+
+  @ViewChild('myPanel11') myPanel11: MatExpansionPanel;
+  matIcon11 = 'keyboard_arrow_down' || 'keyboard_arrow_up';
+
+  @ViewChild('myPanel12') myPanel12: MatExpansionPanel;
+  matIcon12 = 'keyboard_arrow_down' || 'keyboard_arrow_up';
 
 
   ngOnInit() {
@@ -102,6 +113,19 @@ readToggle3(){
 
     this.myPanel8.expandedChange.subscribe((data) => {
       this.matIcon8 = data ? 'keyboard_arrow_up' : 'keyboard_arrow_down';
+    });
+
+    this.myPanel9.expandedChange.subscribe((data) => {
+      this.matIcon9 = data ? 'keyboard_arrow_up' : 'keyboard_arrow_down';
+    });
+    this.myPanel10.expandedChange.subscribe((data) => {
+      this.matIcon10 = data ? 'keyboard_arrow_up' : 'keyboard_arrow_down';
+    });
+    this.myPanel11.expandedChange.subscribe((data) => {
+      this.matIcon11 = data ? 'keyboard_arrow_up' : 'keyboard_arrow_down';
+    });
+    this.myPanel12.expandedChange.subscribe((data) => {
+      this.matIcon12 = data ? 'keyboard_arrow_up' : 'keyboard_arrow_down';
     });
 
   }
@@ -142,6 +166,23 @@ readToggle3(){
 
   expandPannel8() {
     this.myPanel8.expanded = !this.myPanel8.expanded;
+    // alert("1");
+  }
+
+  expandPannel9() {
+    this.myPanel9.expanded = !this.myPanel9.expanded;
+    // alert("1");
+  }
+  expandPannel10() {
+    this.myPanel10.expanded = !this.myPanel10.expanded;
+    // alert("1");
+  }
+  expandPannel11() {
+    this.myPanel11.expanded = !this.myPanel11.expanded;
+    // alert("1");
+  }
+  expandPannel12() {
+    this.myPanel12.expanded = !this.myPanel12.expanded;
     // alert("1");
   }
 }

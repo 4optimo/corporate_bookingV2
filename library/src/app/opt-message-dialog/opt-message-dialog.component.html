@@ -169,6 +169,66 @@
       </div>
     </div>
     <br><br>
+    
+    <h2>Payment tab message</h2><br>
+  <div class="dialog-message delete-confirmation-message-note" style="width: 500px;">
+      <div mat-dialog-content minHeight="800px;"  style="height: 60px;">
+        <div class="row">
+          <div class="col-md-11">
+            <div class="opt_flex--container">
+              <div class="opt_flex__item opt_flex__item--vcenter">
+                  <mat-radio-group>
+                      <mat-radio-button value="1"><span class="opt-txt__body1">Create a single invoice for all the selected Payment Item terms</span></mat-radio-button>
+                      <mat-radio-button value="2"><span class="opt-txt__body1">Create a separate invoice for all the selected Payment Item terms</span></mat-radio-button>
+                    </mat-radio-group>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div mat-dialog-actions>
+        <div class="opt_flex--container">
+          <div class="opt_flex__item opt-txt__align-right">
+            <button mat-button class="mat-btn-primary--small" (click)="onNoClick()">Cancel</button>
+            <button mat-button class="mat-btn-primary--small" [mat-dialog-close]>Proceed</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br><br>
+    <h2>Cancel Note</h2><br>
+  <div class="dialog-message delete-confirmation-message-note" style="width: 500px;">
+      <div mat-dialog-content minHeight="800px;"  style="height: 60px;">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="opt_flex--container">
+              <div class="opt_flex__item opt_flex__item--vcenter">
+                <p class="opt-txt__body1">Cancel Note</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+              <div class="opt_flex--container">
+                <div class="opt_flex__item opt_flex__item--vcenter">
+                    <mat-form-field style="width: 100%;">
+                        <textarea matInput placeholder=""></textarea>
+                      </mat-form-field>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div mat-dialog-actions>
+        <div class="opt_flex--container">
+          <div class="opt_flex__item opt-txt__align-right">
+            <button mat-button class="mat-btn-primary--small" [mat-dialog-close]>Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br><br>
     <h2>Cancel booking message</h2><br>
     <div class="confirmation-message">
       <div mat-dialog-content>
