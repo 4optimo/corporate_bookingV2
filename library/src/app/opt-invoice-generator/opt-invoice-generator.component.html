@@ -13,17 +13,17 @@
           <img src="../../assets/companylogo-black.png">
         </div>
         <div class="col-xs-6 col-sm-6 col-md-6">
-            <div class="opt_flex--container invoice-info">
-              <div class="opt_flex__item opt_flex__item--vcenter">
-                <h1 class="opt__heading-1">INVOICE</h1>
-              </div>
-              <div class="opt_flex__item opt_flex__item--vcenter">
-                <span class="opt-txt__body1 opt-txt__secondary">BK00021</span>
-              </div>
-              <div class="opt_flex__item opt_flex__item--vcenter">
-                <span class="opt-txt__body1 opt-txt__secondary">23-JUN-2018</span>
-              </div>
+          <div class="opt_flex--container invoice-info">
+            <div class="opt_flex__item opt_flex__item--vcenter">
+              <h1 class="opt__heading-1">INVOICE</h1>
             </div>
+            <div class="opt_flex__item opt_flex__item--vcenter">
+              <span class="opt-txt__body1 opt-txt__secondary">BK00021</span>
+            </div>
+            <div class="opt_flex__item opt_flex__item--vcenter">
+              <span class="opt-txt__body1 opt-txt__secondary">23-JUN-2018</span>
+            </div>
+          </div>
         </div>
       </div>
       <div class="row">
@@ -37,25 +37,16 @@
             </div>
           </div>
         </div>
-        <div class="col-xs-6 col-sm-6 col-md-4 invoice-status">
-          <div class="row">
-            <div class="col-xs-6 col-sm-6 col-md-3">
-              <i class="material-icons">done</i>
-            </div>
-            <div class="col-xs-6 col-sm-6 col-md-9">
-              <div class="opt_flex--container">
-                <div class="opt_flex__item opt_flex__item--vcenter">
-                  <span class="invoice-text-success">Payment Confirmed</span>
-                </div>
-                <div class="opt_flex__item opt_flex__item--vcenter">
-                  <span class="opt-txt__body1">Paid in full</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-4">
+        <div class="col-xs-12 col-sm-12 col-md-8">
           <div class="opt_flex--container invoice-total">
+            <div class="opt_flex__item">
+              <span class="opt-txt__body1 picker-lbl">Due Date</span>
+              <mat-form-field>
+                <input matInput [matDatepicker]="picker10" placeholder="Start Date" value="11-Aug-2018">
+                <mat-datepicker-toggle matSuffix [for]="picker10"></mat-datepicker-toggle>
+                <mat-datepicker #picker10></mat-datepicker>
+              </mat-form-field>
+            </div>
             <div class="opt_flex__item opt_flex__item--vcenter">
               <h2 class="opt__heading-2 opt-txt__tertiary">£6,595.86</h2>
             </div>
@@ -63,219 +54,317 @@
         </div>
       </div>
     </div>
-    <div class="invoice-list-row">
-      <div class="list-row-wrapper">
-        <div class="row">
-          <div class="col-xs-12 col-sm-12 col-md-4">
+    <!-- <div class="row">
+        <div class="package-name">
             <div class="opt_flex--container">
-              <div class="opt_flex__item opt_flex__item--vcenter">
-                <mat-checkbox>
-                  <span class="opt-txt__body2">0C16REG Private Chalet Lower</span><br>
-                  <span class="opt-txt__body1 opt-txt__secondary">06-FEB-2018</span>
-                </mat-checkbox>
+                <div class="opt_flex__item--inherit opt_flex__item--vcenter">
+                  <mat-checkbox></mat-checkbox>
+                </div>
+                <div class="opt_flex__item">
+                    <div class="opt_flex--container opt-fd-col just-content-center">
+                        <span class="opt-txt__body2">0C16REG Private Chalet Lower</span>
+                        <span class="opt-txt__body2 opt-txt__secondary">06-FEB-2018</span>
+                      </div>
+                </div>
+              </div>
+        </div>
+      </div>
+     -->
+    <div class="package-details-wrapper">
+      <div class="invoice-list-row">
+        <div class="list-row-wrapper ">
+          <div class="row table-header">
+            <div class="col-xs-12">
+              <div class="opt_flex--container">
+                <div class="opt_flex__item">
+                  <div class="opt_flex--container">
+                    <div class="opt_flex__item--inherit">
+                      <mat-checkbox></mat-checkbox>
+                    </div>
+                    <div class="opt_flex__item p50">
+                      <div class="opt_flex--container opt-fd-col">
+                        <span class="opt-txt__body2 opt-txt__tertiary">0C16REG Private Chalet Lower</span>
+                        <span class="opt-txt__body2 opt-txt__secondary">06-FEB-2018</span>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="opt_flex__item p25 opt-txt__align-right">
+                  <span class="opt-txt__body1 opt-txt__secondary">Quantity</span>
+                </div>
+                <div class="opt_flex__item p25 opt-txt__align-right">
+                  <span class="opt-txt__body1 opt-txt__secondary">Invoiced Quantity</span>
+                </div>
+                <div class="opt_flex__item p25 opt-txt__align-right">
+                  <span class="opt-txt__body1 opt-txt__secondary opt-normal-whitespace">To Be Invoiced Quantity</span>
+                </div>
+                <div class="opt_flex__item p25 opt-txt__align-right">
+                  <span class="opt-txt__body1 opt-txt__secondary">Price</span>
+                </div>
+                <div class="opt_flex__item p25 opt-txt__align-right">
+                  <span class="opt-txt__body1 opt-txt__secondary">Tax</span>
+                </div>
+                <div class="opt_flex__item p25 opt-txt__align-right">
+                  <span class="opt-txt__body1 opt-txt__secondary">Total Amount</span>
+                </div>
+                <div class="opt_flex__item p25 opt-txt__align-right">
+                  <span class="opt-txt__body1 opt-txt__secondary">Invoiced Amount</span>
+                </div>
+                <div class="opt_flex__item p25 opt-txt__align-right">
+                  <span class="opt-txt__body1 opt-txt__secondary opt-normal-whitespace">To Be Invoiced Amount</span>
+                </div>
               </div>
             </div>
+
           </div>
-          <div class="col-xs-3 col-sm-3 col-md-2">
-            <div class="opt_flex--container value-col">
-              <div class="opt_flex__item opt_flex__item--vcenter">
-                <span class="opt-txt__body1 opt-txt__secondary">Quantity</span>
-              </div>
-              <div class="opt_flex__item opt_flex__item--vcenter">
-                <span class="opt-txt__body1">1</span>
+        </div>
+      </div>
+      <div class="invoice-list-row">
+        <div class="list-row-wrapper">
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="opt_flex--container">
+                <div class="opt_flex__item package-item">
+                  <div class="opt_flex--container">
+                    <div class="opt_flex__item--inherit opt_flex__item--vcenter">
+                      <mat-checkbox></mat-checkbox>
+                    </div>
+                    <div class="opt_flex__item">
+                      <div class="opt_flex--container opt-fd-col just-content-center">
+                        <span class="opt-txt__body2">0C16REG Private Chalet Lower</span>
+                        <span class="opt-txt__body2 opt-txt__secondary">06-FEB-2018</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="opt_flex__item p25 opt_flex__item--vcenter just-content-end">
+                  <span class="opt-txt__body2">2</span>
+                </div>
+                <div class="opt_flex__item p25 opt_flex__item--vcenter just-content-end">
+                  <span class="opt-txt__body2">0</span>
+                </div>
+                <div class="opt_flex__item p25 opt_flex__item--vcenter just-content-end">
+                  <span class="opt-txt__body2">2</span>
+                </div>
+                <div class="opt_flex__item p25 opt_flex__item--vcenter just-content-end">
+                  <span class="opt-txt__body2">$50.00</span>
+                </div>
+                <div class="opt_flex__item p25 opt_flex__item--vcenter just-content-end">
+                  <span class="opt-txt__body2">$50.00</span>
+                </div>
+                <div class="opt_flex__item p25 opt_flex__item--vcenter just-content-end">
+                  <span class="opt-txt__body2">$110.00</span>
+                </div>
+                <div class="opt_flex__item p25 opt_flex__item--vcenter just-content-end">
+                  <span class="opt-txt__body2">$0.00</span>
+                </div>
+                <div class="opt_flex__item p25 opt_flex__item--vcenter just-content-end">
+                  <span class="opt-txt__body2">$110.00</span>
+                </div>
               </div>
             </div>
+
           </div>
-          <div class="col-xs-3 col-sm-3 col-md-2">
-            <div class="opt_flex--container value-col">
-              <div class="opt_flex__item opt_flex__item--vcenter">
-                <span class="opt-txt__body1 opt-txt__secondary">Tax</span>
-              </div>
-              <div class="opt_flex__item opt_flex__item--vcenter">
-                <span class="opt-txt__body1">£0.00</span>
+        </div>
+      </div>
+      <div class="invoice-list-row">
+        <div class="list-row-wrapper">
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="opt_flex--container">
+                <div class="opt_flex__item package-item">
+                  <div class="opt_flex--container">
+                    <div class="opt_flex__item--inherit opt_flex__item--vcenter">
+                      <mat-checkbox></mat-checkbox>
+                    </div>
+                    <div class="opt_flex__item">
+                      <div class="opt_flex--container opt-fd-col just-content-center">
+                        <span class="opt-txt__body2">0C16REG Private Chalet Lower</span>
+                        <span class="opt-txt__body2 opt-txt__secondary">06-FEB-2018</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="opt_flex__item p25 opt_flex__item--vcenter just-content-end">
+                  <span class="opt-txt__body2">2</span>
+                </div>
+                <div class="opt_flex__item p25 opt_flex__item--vcenter just-content-end">
+                  <span class="opt-txt__body2">0</span>
+                </div>
+                <div class="opt_flex__item p25 opt_flex__item--vcenter just-content-end">
+                  <span class="opt-txt__body2">2</span>
+                </div>
+                <div class="opt_flex__item p25 opt_flex__item--vcenter just-content-end">
+                  <span class="opt-txt__body2">$50.00</span>
+                </div>
+                <div class="opt_flex__item p25 opt_flex__item--vcenter just-content-end">
+                  <span class="opt-txt__body2">$50.00</span>
+                </div>
+                <div class="opt_flex__item p25 opt_flex__item--vcenter just-content-end">
+                  <span class="opt-txt__body2">$110.00</span>
+                </div>
+                <div class="opt_flex__item p25 opt_flex__item--vcenter just-content-end">
+                  <span class="opt-txt__body2">$0.00</span>
+                </div>
+                <div class="opt_flex__item p25 opt_flex__item--vcenter just-content-end">
+                  <span class="opt-txt__body2">$110.00</span>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-xs-3 col-sm-3 col-md-2">
-            <div class="opt_flex--container value-col">
-              <div class="opt_flex__item opt_flex__item--vcenter">
-                <span class="opt-txt__body1 opt-txt__secondary">Invoice (%)</span>
-              </div>
-              <div class="opt_flex__item opt_flex__item--vcenter">
-                <span class="opt-txt__body1">100%</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-3 col-sm-3 col-md-2">
-            <div class="opt_flex--container value-col">
-              <div class="opt_flex__item opt_flex__item--vcenter">
-                <span class="opt-txt__body1 opt-txt__tertiary">£250.89</span>
-              </div>
-            </div>
+
           </div>
         </div>
       </div>
     </div>
-    <div class="invoice-list-row">
-      <div class="list-row-wrapper">
-        <div class="row">
-          <div class="col-xs-12 col-sm-12 col-md-4">
-            <div class="opt_flex--container">
-              <div class="opt_flex__item opt_flex__item--vcenter">
-                <mat-checkbox>
-                  <span class="opt-txt__body2">0C16REG Private Chalet Lower</span><br>
-                  <span class="opt-txt__body1 opt-txt__secondary">06-FEB-2018</span>
-                </mat-checkbox>
+    <div class="package-details-wrapper">
+      <div class="invoice-list-row">
+        <div class="list-row-wrapper ">
+          <div class="row table-header">
+            <div class="col-xs-12">
+              <div class="opt_flex--container">
+                <div class="opt_flex__item">
+                  <div class="opt_flex--container">
+                    <div class="opt_flex__item--inherit">
+                      <mat-checkbox></mat-checkbox>
+                    </div>
+                    <div class="opt_flex__item p50">
+                      <div class="opt_flex--container opt-fd-col">
+                        <span class="opt-txt__body2 opt-txt__tertiary">0C16REG Private Chalet Lower</span>
+                        <span class="opt-txt__body2 opt-txt__secondary">06-FEB-2018</span>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="opt_flex__item p25 opt-txt__align-right">
+                  <span class="opt-txt__body1 opt-txt__secondary">Quantity</span>
+                </div>
+                <div class="opt_flex__item p25 opt-txt__align-right">
+                  <span class="opt-txt__body1 opt-txt__secondary">Invoiced Quantity</span>
+                </div>
+                <div class="opt_flex__item p25 opt-txt__align-right">
+                  <span class="opt-txt__body1 opt-txt__secondary opt-normal-whitespace">To Be Invoiced Quantity</span>
+                </div>
+                <div class="opt_flex__item p25 opt-txt__align-right">
+                  <span class="opt-txt__body1 opt-txt__secondary">Price</span>
+                </div>
+                <div class="opt_flex__item p25 opt-txt__align-right">
+                  <span class="opt-txt__body1 opt-txt__secondary">Tax</span>
+                </div>
+                <div class="opt_flex__item p25 opt-txt__align-right">
+                  <span class="opt-txt__body1 opt-txt__secondary">Total Amount</span>
+                </div>
+                <div class="opt_flex__item p25 opt-txt__align-right">
+                  <span class="opt-txt__body1 opt-txt__secondary">Invoiced Amount</span>
+                </div>
+                <div class="opt_flex__item p25 opt-txt__align-right">
+                  <span class="opt-txt__body1 opt-txt__secondary opt-normal-whitespace">To Be Invoiced Amount</span>
+                </div>
               </div>
             </div>
+
           </div>
-          <div class="col-xs-3 col-sm-3 col-md-2">
-            <div class="opt_flex--container value-col">
-              <div class="opt_flex__item opt_flex__item--vcenter">
-                <span class="opt-txt__body1 opt-txt__secondary">Quantity</span>
-              </div>
-              <div class="opt_flex__item opt_flex__item--vcenter">
-                <span class="opt-txt__body1">1</span>
+        </div>
+      </div>
+      <div class="invoice-list-row">
+        <div class="list-row-wrapper">
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="opt_flex--container">
+                <div class="opt_flex__item package-item">
+                  <div class="opt_flex--container">
+                    <div class="opt_flex__item--inherit opt_flex__item--vcenter">
+                      <mat-checkbox></mat-checkbox>
+                    </div>
+                    <div class="opt_flex__item">
+                      <div class="opt_flex--container opt-fd-col just-content-center">
+                        <span class="opt-txt__body2">JChristmas Package - Gold</span>
+                        <span class="opt-txt__body2 opt-txt__secondary">01-Dec-2017</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="opt_flex__item p25 opt_flex__item--vcenter just-content-end">
+                  <span class="opt-txt__body2">2</span>
+                </div>
+                <div class="opt_flex__item p25 opt_flex__item--vcenter just-content-end">
+                  <span class="opt-txt__body2">0</span>
+                </div>
+                <div class="opt_flex__item p25 opt_flex__item--vcenter just-content-end">
+                  <span class="opt-txt__body2">2</span>
+                </div>
+                <div class="opt_flex__item p25 opt_flex__item--vcenter just-content-end">
+                  <span class="opt-txt__body2">$50.00</span>
+                </div>
+                <div class="opt_flex__item p25 opt_flex__item--vcenter just-content-end">
+                  <span class="opt-txt__body2">$50.00</span>
+                </div>
+                <div class="opt_flex__item p25 opt_flex__item--vcenter just-content-end">
+                  <span class="opt-txt__body2">$110.00</span>
+                </div>
+                <div class="opt_flex__item p25 opt_flex__item--vcenter just-content-end">
+                  <span class="opt-txt__body2">$0.00</span>
+                </div>
+                <div class="opt_flex__item p25 opt_flex__item--vcenter just-content-end">
+                  <span class="opt-txt__body2">$110.00</span>
+                </div>
               </div>
             </div>
+
           </div>
-          <div class="col-xs-3 col-sm-3 col-md-2">
-            <div class="opt_flex--container value-col">
-              <div class="opt_flex__item opt_flex__item--vcenter">
-                <span class="opt-txt__body1 opt-txt__secondary">Tax</span>
-              </div>
-              <div class="opt_flex__item opt_flex__item--vcenter">
-                <span class="opt-txt__body1">£0.00</span>
+        </div>
+      </div>
+      <div class="invoice-list-row">
+        <div class="list-row-wrapper">
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="opt_flex--container">
+                <div class="opt_flex__item package-item">
+                  <div class="opt_flex--container">
+                    <div class="opt_flex__item--inherit opt_flex__item--vcenter">
+                      <mat-checkbox></mat-checkbox>
+                    </div>
+                    <div class="opt_flex__item">
+                      <div class="opt_flex--container opt-fd-col just-content-center">
+                        <span class="opt-txt__body2">0C16REG Private Chalet Lower</span>
+                        <span class="opt-txt__body2 opt-txt__secondary">06-FEB-2018</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="opt_flex__item p25 opt_flex__item--vcenter just-content-end">
+                  <span class="opt-txt__body2">2</span>
+                </div>
+                <div class="opt_flex__item p25 opt_flex__item--vcenter just-content-end">
+                  <span class="opt-txt__body2">0</span>
+                </div>
+                <div class="opt_flex__item p25 opt_flex__item--vcenter just-content-end">
+                  <span class="opt-txt__body2">2</span>
+                </div>
+                <div class="opt_flex__item p25 opt_flex__item--vcenter just-content-end">
+                  <span class="opt-txt__body2">$50.00</span>
+                </div>
+                <div class="opt_flex__item p25 opt_flex__item--vcenter just-content-end">
+                  <span class="opt-txt__body2">$50.00</span>
+                </div>
+                <div class="opt_flex__item p25 opt_flex__item--vcenter just-content-end">
+                  <span class="opt-txt__body2">$110.00</span>
+                </div>
+                <div class="opt_flex__item p25 opt_flex__item--vcenter just-content-end">
+                  <span class="opt-txt__body2">$0.00</span>
+                </div>
+                <div class="opt_flex__item p25 opt_flex__item--vcenter just-content-end">
+                  <span class="opt-txt__body2">$110.00</span>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-xs-3 col-sm-3 col-md-2">
-            <div class="opt_flex--container value-col">
-              <div class="opt_flex__item opt_flex__item--vcenter">
-                <span class="opt-txt__body1 opt-txt__secondary">Invoice (%)</span>
-              </div>
-              <div class="opt_flex__item opt_flex__item--vcenter">
-                <span class="opt-txt__body1">100%</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-3 col-sm-3 col-md-2">
-            <div class="opt_flex--container value-col">
-              <div class="opt_flex__item opt_flex__item--vcenter">
-                <span class="opt-txt__body1 opt-txt__tertiary">£679.00</span>
-              </div>
-            </div>
+
           </div>
         </div>
       </div>
     </div>
-    <div class="invoice-list-row">
-      <div class="list-row-wrapper">
-        <div class="row">
-          <div class="col-xs-12 col-sm-12 col-md-4">
-            <div class="opt_flex--container">
-              <div class="opt_flex__item opt_flex__item--vcenter">
-                <mat-checkbox>
-                  <span class="opt-txt__body2">0C16REG Private Chalet Lower</span><br>
-                  <span class="opt-txt__body1 opt-txt__secondary">06-FEB-2018</span>
-                </mat-checkbox>
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-3 col-sm-3 col-md-2">
-            <div class="opt_flex--container value-col">
-              <div class="opt_flex__item opt_flex__item--vcenter">
-                <span class="opt-txt__body1 opt-txt__secondary">Quantity</span>
-              </div>
-              <div class="opt_flex__item opt_flex__item--vcenter">
-                <span class="opt-txt__body1">1</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-3 col-sm-3 col-md-2">
-            <div class="opt_flex--container value-col">
-              <div class="opt_flex__item opt_flex__item--vcenter">
-                <span class="opt-txt__body1 opt-txt__secondary">Tax</span>
-              </div>
-              <div class="opt_flex__item opt_flex__item--vcenter">
-                <span class="opt-txt__body1">£0.00</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-3 col-sm-3 col-md-2">
-            <div class="opt_flex--container value-col">
-              <div class="opt_flex__item opt_flex__item--vcenter">
-                <span class="opt-txt__body1 opt-txt__secondary">Invoice (%)</span>
-              </div>
-              <div class="opt_flex__item opt_flex__item--vcenter">
-                <span class="opt-txt__body1">100%</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-3 col-sm-3 col-md-2">
-            <div class="opt_flex--container value-col">
-              <div class="opt_flex__item opt_flex__item--vcenter">
-                <span class="opt-txt__body1 opt-txt__tertiary">£92.19</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="invoice-list-row">
-      <div class="list-row-wrapper">
-        <div class="row">
-          <div class="col-xs-12 col-sm-12 col-md-4">
-            <div class="opt_flex--container">
-              <div class="opt_flex__item opt_flex__item--vcenter">
-                <mat-checkbox>
-                  <span class="opt-txt__body2">0C16REG Private Chalet Lower</span><br>
-                  <span class="opt-txt__body1 opt-txt__secondary">06-FEB-2018</span>
-                </mat-checkbox>
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-3 col-sm-3 col-md-2">
-            <div class="opt_flex--container value-col">
-              <div class="opt_flex__item opt_flex__item--vcenter">
-                <span class="opt-txt__body1 opt-txt__secondary">Quantity</span>
-              </div>
-              <div class="opt_flex__item opt_flex__item--vcenter">
-                <span class="opt-txt__body1">1</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-3 col-sm-3 col-md-2">
-            <div class="opt_flex--container value-col">
-              <div class="opt_flex__item opt_flex__item--vcenter">
-                <span class="opt-txt__body1 opt-txt__secondary">Tax</span>
-              </div>
-              <div class="opt_flex__item opt_flex__item--vcenter">
-                <span class="opt-txt__body1">£0.00</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-3 col-sm-3 col-md-2">
-            <div class="opt_flex--container value-col">
-              <div class="opt_flex__item opt_flex__item--vcenter">
-                <span class="opt-txt__body1 opt-txt__secondary">Invoice (%)</span>
-              </div>
-              <div class="opt_flex__item opt_flex__item--vcenter">
-                <span class="opt-txt__body1">100%</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-3 col-sm-3 col-md-2">
-            <div class="opt_flex--container value-col">
-              <div class="opt_flex__item opt_flex__item--vcenter">
-                <span class="opt-txt__body1 opt-txt__tertiary">£100.00</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="invoice-summary">
+    <!-- <div class="invoice-summary">
       <div class="invoice-summary-row">
         <div class="row">
           <div class="col-xs-6 col-sm-6 col-md-6">
@@ -328,12 +417,76 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <div class="invoice-payment-terms">
       <div class="payment-terms-wrapper">
         <div class="row">
+          <div class="col-xs-12 col-xs-12 col-md-5">
+            <div class="payment-term-note">
+              <div class="opt_flex--container">
+                <div class="opt_flex__item">
+                  <span class="opt-txt__body2">Note:</span>
+                </div>
+              </div>
+              <div class="opt_flex--container">
+                <div class="opt_flex__item">
+                  <span class="opt-txt__body1">Canceled 14 days before 12:00AM of the event date cancellation charge
+                    100%.</span>
+                </div>
+                <div class="opt_flex__item p25 just-content-end opt_flex__item--vcenter">
+                  <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">note_add</i></button>
+                  <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">edit</i></button>
+                </div>
+              </div>
+
+            </div>
+          </div>
           <div class="col-xs-12 col-sm-12 col-md-7">
-            <div class="payment-terms-header">
+            <div class="opt_flex--container invoice-summary-padding">
+              <div class="opt_flex__item">
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item--inherit lbl-padding-right opt_flex__item--vcenter">
+                    <span class="opt-txt__body1 opt-txt__secondary">Booking Total</span>
+                  </div>
+                  <div class="opt_flex__item opt_flex__item--vcenter">
+                    <span class="opt-txt__body2">$297.00</span>
+                  </div>
+                </div>
+              </div>
+              <div class="opt_flex__item">
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item--inherit lbl-padding-right opt_flex__item--vcenter">
+                    <span class="opt-txt__body1 opt-txt__secondary">Net Total</span>
+                  </div>
+                  <div class="opt_flex__item opt_flex__item--vcenter">
+                    <span class="opt-txt__body2">$270.00</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="opt_flex--container">
+              <div class="opt_flex__item">
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item--inherit lbl-padding-right opt_flex__item--vcenter">
+                    <span class="opt-txt__body1 opt-txt__secondary">Total Invoiced</span>
+                  </div>
+                  <div class="opt_flex__item opt_flex__item--vcenter">
+                    <span class="opt-txt__body2">$0.00</span>
+                  </div>
+                </div>
+              </div>
+              <div class="opt_flex__item">
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item--inherit lbl-padding-right opt_flex__item--vcenter">
+                    <span class="opt-txt__body1 opt-txt__secondary">Tax Total</span>
+                  </div>
+                  <div class="opt_flex__item opt_flex__item--vcenter">
+                    <span class="opt-txt__body2">$27.00</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="payment-terms-header">
               <div class="opt_flex--container">
                 <div class="opt_flex__item opt_flex__item--vcenter p50">
                   <span class="opt-txt__body2">Payment Terms</span>
@@ -366,7 +519,8 @@
                 <div class="opt_flex__item opt_flex__item--vcenter">
                   <div class="opt_flex__item opt_flex__item--vcenter">
                     <i class="material-icons opt-txt__tertiary">arrow_right</i>
-                    <p class="opt-txt__body1 opt-txt__tertiary">30% <span class="opt-txt__body1">30 day before the event</span></p>
+                    <p class="opt-txt__body1 opt-txt__tertiary">30% <span class="opt-txt__body1">30 day before the
+                        event</span></p>
                   </div>
                 </div>
               </div>
@@ -376,23 +530,25 @@
                 <div class="opt_flex__item opt_flex__item--vcenter">
                   <div class="opt_flex__item opt_flex__item--vcenter">
                     <i class="material-icons">arrow_right</i>
-                    <p class="opt-txt__body1 opt-txt__secondary">30% <span class="opt-txt__body2">60 day before the event</span></p>
+                    <p class="opt-txt__body1 opt-txt__secondary">30% <span class="opt-txt__body2">60 day before the
+                        event</span></p>
                   </div>
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
-          <div class="col-xs-12 col-xs-12 col-md-5">
-            <div class="payment-term-note">
-              <div class="opt_flex--container">
-                <div class="opt_flex__item">
-                  <span class="opt-txt__body2">Note:</span>
-                </div>
-                <div class="opt_flex__item">
-                  <span class="opt-txt__body1">Canceled 14 days before 12:00AM of the event date cancellation charge 100%.</span>
-                </div>
-              </div>
-            </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="row invoice-total-row">
+      <div class="col-xs-12">
+        <div class="opt_flex--container">
+          <div class="opt_flex__item just-content-end opt_flex__item--vcenter">
+              <h2 class="lbl-padding-right">Invoice Total</h2>
+          </div>
+          <div class="opt_flex__item--inherit opt_flex__item--vcenter">
+              <h2 class="opt-txt__tertiary opt__heading-2">$270.00</h2>
           </div>
         </div>
       </div>
@@ -400,9 +556,8 @@
     <div class="invoice-button-row">
       <div class="opt_flex--container">
         <div class="opt_flex__item opt_flex__item--vcenter">
-          <button class="mat-btn-primary mat-button" (click)="close()">Save</button>
-          <button class="mat-btn-primary mat-button" (click)="close()">Preview</button>
-          <button class="mat-btn-primary mat-button" (click)="close()">Print</button>
+          <button class="mat-btn-primary mat-button" (click)="close()">Generate</button>
+          <button class="mat-btn-primary mat-button" (click)="close()">Close</button>
         </div>
       </div>
     </div>

@@ -244,9 +244,9 @@
                       </section>
                       <section class="opt-section__heading">
                         <mat-accordion>
-                          <mat-expansion-panel #myPanel2 class="section-heading __main" expanded="true">
+                          <mat-expansion-panel #myPanel2 class="section-heading __main" expanded="true" disabled="true">
                             <mat-expansion-panel-header class="__title section-header" collapsedHeight="55px" expandedHeight="55px">
-                              <h1 class="opt-txt__body2">Payment Info</h1>
+                              <h1 class="opt-txt__body2">Payment Information</h1>
                             </mat-expansion-panel-header>
                             <div class="billing-info-section">
                               <div class="expand-outer-wrapper">
@@ -273,7 +273,7 @@
                       </section>
                       <section class="opt-section__heading">
                         <mat-accordion>
-                          <mat-expansion-panel #myPanel2 class="section-heading __main" expanded="true">
+                          <mat-expansion-panel #myPanel2 class="section-heading __main" expanded="true" disabled="true">
                             <mat-expansion-panel-header class="__title section-header" collapsedHeight="55px" expandedHeight="55px">
                               <h1 class="opt-txt__body2">Note</h1>
                             </mat-expansion-panel-header>
@@ -297,19 +297,19 @@
                     <div class="col-md-3 item-align">
                       <div class="balance_section">
                         <div class="balance_section--title">
-                          Refund Payments<!--Refund Payments-->
+                          Cuurent Balance<!--Refund Payments-->
                         </div>
                         <div class="balance_section--balance">
                           <span class="sup-mark">&pound;</span> 108. <span class="opt__subtitle-2">86</span>
                         </div>
-                        <!-- <div class="additional_info">
+                        <div class="additional_info">
                           <ul class="balance_section--date_list">
                             <li><span class="--date">06-Feb-2018</span> <span>+ <span class="sup-mark--mini">&pound;</span>80</span></li>
                             <li><span class="--date">06-Feb-2018</span> <span>+ <span class="sup-mark--mini">&pound;</span>80</span></li>
                             <li><span class="--date">06-Feb-2018</span> <span>+ <span class="sup-mark--mini">&pound;</span>80</span></li>
                           </ul>
-                          <p><strong>Note:</strong> Refund Receipts doubles up a credit if there is already a credit memo entered in the system.</p>
-                        </div> -->
+                          
+                        </div> 
                       </div>
                     </div>
                   </div>
@@ -333,36 +333,42 @@
                             </mat-expansion-panel-header>
 
                             <div class="select_invoice-section">
-                              <div class="expand-outer-wrapper">
-                                <div class="expand-inner-wrapper">
-                                  <div class="opt_flex--container">
-                                    <div class="opt_flex__item tc-flex-item__center">
-                                      <mat-checkbox>
-                                        <div class="opt-txt__caption">
-                                          <span>BK00021</span> | <span>23-Jun-2018</span>
-                                        </div>
+                                <div class="expand-outer-wrapper">
+                                  <div class="expand-inner-wrapper">
+                                    <div class="opt_flex--container">
+                                    <div class="opt_flex__item">
+                                      <mat-checkbox checked="true">
+                                        <div class="opt-txt__body2-small">Casual Recreation Centre Hire</div>
+                                        <div class="opt-txt__caption	">06-Feb-2018</div>
                                       </mat-checkbox>
                                     </div>
-                                    <div class="opt_flex__item">
-                                      <div class="opt-txt__body2-small flex-padding">Total Invoice</div>
-                                      <div class="opt-txt__caption flex-padding"><span class="opt-txt__body2-small">&pound;</span> 6,595.86</div>
+                                    <div class="opt_flex__item price-value">
+                                      <span class="opt-txt__body2-small">&pound;</span> 20
                                     </div>
-                                    <div class="opt_flex__item price-value __link ">
-                                      <span class="opt-txt__body2-small">&pound;</span> 6,595.86
+                                  </div>
+                                    <div class="opt_flex--container">
+                                      <div class="opt_flex__item">
+                                        <mat-checkbox>
+                                          <div class="opt-txt__body2-small">Casual Recreation Centre Hire</div>
+                                          <div class="opt-txt__caption	">06-Feb-2018</div>
+                                        </mat-checkbox>
+                                      </div>
+                                      <div class="opt_flex__item price-value">
+                                        <span class="opt-txt__body2-small">&pound;</span> 20
+                                      </div>
                                     </div>
                                   </div>
                                 </div>
                               </div>
-                            </div>
 
                           </mat-expansion-panel>
                         </mat-accordion>
                       </section>
                       <section class="opt-section__heading">
                         <mat-accordion>
-                          <mat-expansion-panel #myPanel2 class="section-heading __main">
+                          <mat-expansion-panel #myPanel2 class="section-heading __main" expanded="true" disabled="true">
                             <mat-expansion-panel-header class="__title section-header" collapsedHeight="55px" expandedHeight="55px">
-                              <h1 class="opt-txt__body2">Billing Information</h1>
+                              <h1 class="opt-txt__body2">Refund Information</h1>
                             </mat-expansion-panel-header>
                             <div class="billing-info-section">
                               <div class="expand-outer-wrapper">
@@ -455,7 +461,7 @@
                       </section>
                       <section class="opt-section__heading">
                         <mat-accordion>
-                          <mat-expansion-panel #myPanel2 class="section-heading __main">
+                          <mat-expansion-panel #myPanel2 class="section-heading __main" expanded="true" disabled="true">
                             <mat-expansion-panel-header class="__title section-header" collapsedHeight="55px" expandedHeight="55px">
                               <h1 class="opt-txt__body2">Note</h1>
                             </mat-expansion-panel-header>
@@ -479,7 +485,7 @@
                     <div class="col-md-3 item-align">
                       <div class="balance_section refund">
                         <div class="balance_section--title">
-                          Current Balance<!--Refund Payments-->
+                          Refund Payments
                         </div>
                         <div class="balance_section--balance">
                           <span class="sup-mark">&pound;</span> 20.<span class="opt__subtitle-2">86</span>
@@ -490,9 +496,9 @@
                             <li><span class="--date">06-Feb-2018</span> <span>+ <span class="sup-mark--mini">&pound;</span>80</span></li>
                             <li><span class="--date">06-Feb-2018</span> <span>+ <span class="sup-mark--mini">&pound;</span>80</span></li>
                           </ul>
-                          <div class="opt-txt__body2">
+                          <!-- <div class="opt-txt__body2">
                             <p><strong>Note:</strong> Refund Receipts doubles up a credit if there is already a credit memo entered in the system.</p>
-                          </div>
+                          </div> -->
                         </div>
                       </div>
                     </div>
@@ -551,9 +557,9 @@
                       </section>
                       <section class="opt-section__heading">
                         <mat-accordion>
-                          <mat-expansion-panel #myPanel2 class="section-heading __main">
+                          <mat-expansion-panel #myPanel2 class="section-heading __main" expanded="true" disabled="true">
                             <mat-expansion-panel-header class="__title section-header" collapsedHeight="55px" expandedHeight="55px">
-                              <h1 class="opt-txt__body2">Billing Info</h1>
+                              <h1 class="opt-txt__body2">Payment Information</h1>
                             </mat-expansion-panel-header>
                             <div class="billing-info-section">
                               <div class="expand-outer-wrapper">
@@ -587,7 +593,7 @@
                       </section>
                       <section class="opt-section__heading">
                         <mat-accordion>
-                          <mat-expansion-panel #myPanel2 class="section-heading __main">
+                          <mat-expansion-panel #myPanel2 class="section-heading __main" expanded="true" disabled="true">
                             <mat-expansion-panel-header class="__title section-header" collapsedHeight="55px" expandedHeight="55px">
                               <h1 class="opt-txt__body2">Note</h1>
                             </mat-expansion-panel-header>
@@ -681,9 +687,9 @@
                       </section>
                       <section class="opt-section__heading">
                         <mat-accordion>
-                          <mat-expansion-panel #myPanel2 class="section-heading __main">
+                          <mat-expansion-panel #myPanel2 class="section-heading __main"  expanded="true" disabled="true">
                             <mat-expansion-panel-header class="__title section-header" collapsedHeight="55px" expandedHeight="55px">
-                              <h1 class="opt-txt__body2">Billing Info</h1>
+                              <h1 class="opt-txt__body2">Payment Information</h1>
                             </mat-expansion-panel-header>
                             <div class="billing-info-section">
                               <div class="expand-outer-wrapper">
@@ -710,7 +716,7 @@
                       </section>
                       <section class="opt-section__heading">
                         <mat-accordion>
-                          <mat-expansion-panel #myPanel2 class="section-heading __main">
+                          <mat-expansion-panel #myPanel2 class="section-heading __main" expanded="true" disabled="true">
                             <mat-expansion-panel-header class="__title section-header" collapsedHeight="55px" expandedHeight="55px">
                               <h1 class="opt-txt__body2">Note</h1>
                             </mat-expansion-panel-header>
@@ -803,9 +809,9 @@
                       </section>
                       <section class="opt-section__heading">
                         <mat-accordion>
-                          <mat-expansion-panel #myPanel2 class="section-heading __main">
+                          <mat-expansion-panel #myPanel2 class="section-heading __main" expanded="true" disabled="true">
                             <mat-expansion-panel-header class="__title section-header" collapsedHeight="55px" expandedHeight="55px">
-                              <h1 class="opt-txt__body2">Billing Info</h1>
+                              <h1 class="opt-txt__body2">Payment Information</h1>
                             </mat-expansion-panel-header>
                             <div class="billing-info-section">
                               <div class="expand-outer-wrapper">
@@ -839,7 +845,7 @@
                       </section>
                       <section class="opt-section__heading">
                         <mat-accordion>
-                          <mat-expansion-panel #myPanel2 class="section-heading __main">
+                          <mat-expansion-panel #myPanel2 class="section-heading __main" expanded="true" disabled="true">
                             <mat-expansion-panel-header class="__title section-header" collapsedHeight="55px" expandedHeight="55px">
                               <h1 class="opt-txt__body2">Note</h1>
                             </mat-expansion-panel-header>
@@ -932,9 +938,9 @@
                       </section>
                       <section class="opt-section__heading">
                         <mat-accordion>
-                          <mat-expansion-panel #myPanel2 class="section-heading __main">
+                          <mat-expansion-panel #myPanel2 class="section-heading __main" expanded="true" disabled="true">
                             <mat-expansion-panel-header class="__title section-header" collapsedHeight="55px" expandedHeight="55px">
-                              <h1 class="opt-txt__body2">Billing Info</h1>
+                              <h1 class="opt-txt__body2">Payment Information</h1>
                             </mat-expansion-panel-header>
                             <div class="billing-info-section">
                               <div class="expand-outer-wrapper">
@@ -968,7 +974,7 @@
                       </section>
                       <section class="opt-section__heading">
                         <mat-accordion>
-                          <mat-expansion-panel #myPanel2 class="section-heading __main">
+                          <mat-expansion-panel #myPanel2 class="section-heading __main" expanded="true" disabled="true">
                             <mat-expansion-panel-header class="__title section-header" collapsedHeight="55px" expandedHeight="55px">
                               <h1 class="opt-txt__body2">Note</h1>
                             </mat-expansion-panel-header>
@@ -1061,9 +1067,9 @@
                       </section>
                       <section class="opt-section__heading">
                         <mat-accordion>
-                          <mat-expansion-panel #myPanel2 class="section-heading __main">
+                          <mat-expansion-panel #myPanel2 class="section-heading __main" expanded="true" disabled="true">
                             <mat-expansion-panel-header class="__title section-header" collapsedHeight="55px" expandedHeight="55px">
-                              <h1 class="opt-txt__body2">Billing Info</h1>
+                              <h1 class="opt-txt__body2">Payment Information</h1>
                             </mat-expansion-panel-header>
                             <div class="billing-info-section">
                               <div class="expand-outer-wrapper">
@@ -1112,7 +1118,7 @@
                       </section>
                       <section class="opt-section__heading">
                         <mat-accordion>
-                          <mat-expansion-panel #myPanel2 class="section-heading __main">
+                          <mat-expansion-panel #myPanel2 class="section-heading __main" expanded="true" disabled="true">
                             <mat-expansion-panel-header class="__title section-header" collapsedHeight="55px" expandedHeight="55px">
                               <h1 class="opt-txt__body2">Note</h1>
                             </mat-expansion-panel-header>

@@ -918,10 +918,32 @@
           <div class="header-row payment-header">
             <div class="row">
               <div class="col-xs-6 col-sm-12">
-                <div class="opt_flex--container opt-fd-col">
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item--inherit">
+                      <div class="opt-txt__body2">Invoice Address</div>
+                  </div>
+                  <div class="opt_flex__item">
+                      <div class="opt-txt__body2 opt-txt__secondary padding-left">Anglr House</div>
+                      <div class="opt-txt__body2 opt-txt__secondary padding-left">1 Pastly Road</div>
+                      <div class="opt-txt__body2 opt-txt__secondary padding-left">Kempston</div>
+                  </div>
+                </div>
+                <div class="opt_flex--container">
+                    <div class="opt_flex__item">
+                        <a class="opt-txt__body1" [matMenuTriggerFor]="menuAddress">Change</a>
+                        <mat-menu #menuAddress="matMenu" class="menu-address">
+                            <span class="opt-txt__secondary opt-txt__body2">Invoice Addresses</span>
+                            <button mat-menu-item>Anglr House, 1 Postley Road, Kempston</button>
+                            <span class="opt-txt__secondary opt-txt__body2">Booking Addresses</span>
+                            <button mat-menu-item>Anglr House, 1 Postley Road, Kempston123</button>
+                            <button class="mat-btn-primary mat-button" mat-menu-item>New Address</button>
+                          </mat-menu>
+                    </div>
+                    </div>
+                <!-- <div class="opt_flex--container opt-fd-col">
                   <div class="opt_flex__item  horizontally-center">
                     <span class="opt-txt__body2">Invoice Address</span>
-                    <span class="opt-txt__body1 opt-txt__secondary padding-left">Anglr House 1 Pastly Road Kempston</span>
+                    <div class="opt-txt__body1 opt-txt__secondary padding-left">Anglr House 1 Pastly Road Kempston</div>
                   </div>
                   <div class="opt_flex__item  horizontally-center">
                     <a class="opt-txt__body1" [matMenuTriggerFor]="menuAddress">Change</a>
@@ -933,7 +955,7 @@
                     <button mat-menu-item>Anglr House, 1 Postley Road, Kempston123</button>
                     <button class="mat-btn-primary mat-button" mat-menu-item>New Address</button>
                   </mat-menu>
-                </div>
+                </div> -->
               </div>
             </div>
           </div>
@@ -968,7 +990,8 @@
                         <mat-expansion-panel-header>
                           <div class="opt_flex--container">
                             <div class="opt_flex__item">
-                              <span class="opt-txt__body2">20% discount</span>
+                                <mat-checkbox><span class="opt-txt__body2">20% discount</span>
+                                  </mat-checkbox>
                             </div>
                             <div class="opt_flex__item">
                               <div class="opt-txt__body2 opt-txt__secondary">Pay Due</div>
@@ -1005,11 +1028,11 @@
                             </span>
                           </div>
                           <div class="opt_flex__item opt-txt__align-right">
-                            <div class="opt-txt__body2 opt-txt__secondary">Paid Amount</div>
+                            <div class="opt-txt__body2 opt-txt__secondary">Invoiced Amount</div>
                             <div class="opt-txt__body2">$30.00</div>
                           </div>
                           <div class="opt_flex__item opt-txt__align-right">
-                            <div class="opt-txt__body2 opt-txt__secondary">Balance Due</div>
+                            <div class="opt-txt__body2 opt-txt__secondary">Balance To Invoice</div>
                             <div class="opt-txt__body2">$50.00</div>
                           </div>
                         </div>
@@ -1274,7 +1297,12 @@
                                         amet vestibulumn efficiturm nisi enim sed nisl.</div>
                                     </div>
                                     <div class="opt_flex__item opt_flex__item--vcenter val-col">
-                                      <i class="material-icons symbol_icon">library_books</i>
+                                      <i class="material-icons symbol_icon" [matMenuTriggerFor]="menuReadMore">library_books</i>
+                                      <mat-menu #menuReadMore="matMenu" class="ReadMore-panel">
+                                          <div class="opt-txt__body2 opt-txt__secondary opt-normal-whitespace">Lorem ipsum
+                                              dolor sit amet, consectetus adipiccing elit. Vestibulum sugitits, ttortor sit
+                                              amet vestibulumn efficiturm nisi enim sed nisl.</div>
+                                      </mat-menu>
                                     </div>
                                   </div>
                                 </div>
@@ -1579,7 +1607,53 @@
                                             </div>
                                           </div>
                                         </div>
-                                      </mat-menu>
+                                      </mat-menu> 
+                                      <!-- For voucher -->
+                                      <!-- <mat-menu #menuInfo="matMenu" class="info-panel">
+                                          <div class="row">
+                                            <div class="col-xs-6">
+                                              <div class="opt_flex--container opt-fd-col">
+                                                <div class="opt_flex__item opt_flex__item--vcenter">
+                                                  <div class="opt-txt__body2">Voucher Number</div>
+                                                </div>
+                                                <div class="opt_flex__item opt_flex__item--vcenter">
+                                                  <div class="opt-txt__body2 opt-txt__secondary">546879</div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <div class="col-xs-6">
+                                              <div class="opt_flex--container opt-fd-col">
+                                                <div class="opt_flex__item opt_flex__item--vcenter">
+                                                  <div class="opt-txt__body2">Expiry Date</div>
+                                                </div>
+                                                <div class="opt_flex__item opt_flex__item--vcenter">
+                                                  <div class="opt-txt__body2 opt-txt__secondary">15-Jun-2018</div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="row">
+                                            <div class="col-xs-6">
+                                              <div class="opt_flex--container opt-fd-col">
+                                                <div class="opt_flex__item opt_flex__item--vcenter">
+                                                  <div class="opt-txt__body2">Voucher Package</div>
+                                                </div>
+                                                <div class="opt_flex__item opt_flex__item--vcenter">
+                                                  <div class="opt-txt__body2 opt-txt__secondary">5864</div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="row">
+                                            <div class="col-xs-12">
+                                              <div class="opt_flex--container opt-fd-col">
+                                                <div class="opt_flex__item opt_flex__item--vcenter">
+                                                  <span class="opt-txt__body2">Extension Letter <span class="receive-text">Received</span></span>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </mat-menu> -->
                                     </div>
                                   </div>
                                 </div>
@@ -1590,7 +1664,12 @@
                                         dolor sit amet, consectetus adipiccing elit.</div>
                                     </div>
                                     <div class="opt_flex__item opt_flex__item--vcenter val-col">
-                                      <i class="material-icons symbol_icon">library_books</i>
+                                        <i class="material-icons symbol_icon" [matMenuTriggerFor]="menuReadMore">library_books</i>
+                                        <mat-menu #menuReadMore="matMenu" class="ReadMore-panel">
+                                            <div class="opt-txt__body2 opt-txt__secondary opt-normal-whitespace">Lorem ipsum
+                                                dolor sit amet, consectetus adipiccing elit. Vestibulum sugitits, ttortor sit
+                                                amet vestibulumn efficiturm nisi enim sed nisl.</div>
+                                        </mat-menu>
                                     </div>
                                   </div>
                                 </div>
@@ -1734,7 +1813,12 @@
                                         dolor sit amet, consectetus adipiccing elit.</div>
                                     </div>
                                     <div class="opt_flex__item opt_flex__item--vcenter val-col">
-                                      <i class="material-icons symbol_icon">library_books</i>
+                                      <i class="material-icons symbol_icon" [matMenuTriggerFor]="menuReadMore">library_books</i>
+                                      <mat-menu #menuReadMore="matMenu" class="ReadMore-panel">
+                                          <div class="opt-txt__body2 opt-txt__secondary opt-normal-whitespace">Lorem ipsum
+                                              dolor sit amet, consectetus adipiccing elit. Vestibulum sugitits, ttortor sit
+                                              amet vestibulumn efficiturm nisi enim sed nisl.</div>
+                                      </mat-menu>
                                     </div>
                                   </div>
                                 </div>

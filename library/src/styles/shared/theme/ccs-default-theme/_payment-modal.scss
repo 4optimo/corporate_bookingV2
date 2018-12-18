@@ -16,6 +16,9 @@
     }
 
     .opt-section__heading {
+      .mat-expansion-panel-header[aria-disabled=true]{
+        color: unset;
+      }
       .expand-outer-wrapper{
         padding: 30px 0;
         .expand-inner-wrapper {

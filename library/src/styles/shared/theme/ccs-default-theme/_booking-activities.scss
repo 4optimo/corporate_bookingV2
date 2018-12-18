@@ -580,12 +580,17 @@
       color: #27bfc2;
       cursor: pointer;
       line-height: 1.7;
+      position: absolute;
+      bottom: 20px;
     }
   }
   .payment_list_item{
     .mat-expansion-panel{
       box-shadow: unset;
       
+    }
+    .mat-checkbox-inner-container{
+      margin-left: -3px;
     }
     .mat-expanded{
       .mat-expansion-panel-content{
@@ -1512,6 +1517,10 @@ padding: 20px;
   .row{
     margin:5px 0px;
   }
+  .receive-text{
+    color: $success_action_new;
+    padding-left: 10px;
+  }
 }
 .mat-menu-panel.info-panel{
   max-width: 330px;
@@ -1527,4 +1536,7 @@ padding: 20px;
   .mat-menu-content{
     padding:20px;
   }
+}
+.ReadMore-panel{
+  padding: 15px;
 }

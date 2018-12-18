@@ -303,11 +303,28 @@ h1,h2,h3,h4,h5,h6{
   .dialog-message{
     background-color: #ffffff;
     padding: 15px;
+    min-height: 120px;
     mat-radio-group{
       margin-bottom: 20px;
       mat-radio-button{
         padding:5px 0px;
       }
+    }
+  }
+  .voucher-redeem-message{
+    .header-row{
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    .msg-lbl{
+      padding-right: 20px;
+    }
+    .symbol_icon{
+      color: #909cac;
+    }
+    .footer-row{
+      height: 60px;
     }
   }
   .more-info{

@@ -183,9 +183,9 @@ export class OptPopupWindowComponent implements OnInit {
   public openInvoicePopup() {
     this.dialog.open(OptInvoiceGeneratorComponent, {
       data: { name: 'Invoice Generator' },
-      panelClass: ['custom-dialog-container', 'w70modal'],
+      panelClass: ['custom-dialog-container', 'w80modal'],
       height: 'auto',
-      width: '70%'
+      width: '80%'
     });
 
   }

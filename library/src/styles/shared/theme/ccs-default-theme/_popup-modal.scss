@@ -76,6 +76,24 @@
     }
   }
 }
+.w80modal{
+  .opt_modal-content{
+    .mat-dialog-content{
+      position: relative;
+      .opt_modal-header{
+        border-radius: 4px 4px 0 0;
+        position: fixed;
+        width: 70%;
+        z-index: 9999;
+        background-color: #fff;
+        opacity: 1;
+      }
+      .opt_modal-body{
+        margin-top: 60px;
+      }
+    }
+  }
+}
 
 .w90modal{
   .opt_modal-content{
