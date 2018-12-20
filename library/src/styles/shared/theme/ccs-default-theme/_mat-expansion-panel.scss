@@ -37,6 +37,18 @@
       background-color: #f4493c;
       color: #fff !important;
     }
+    &.--warning {
+      background-color: #f5c70e;
+      color: #fff !important;
+      .warning-icon{
+        border-radius: 50%;
+        background-color: #f4493c;
+        color: #fff;
+        position: absolute;
+        font-size: 12px;
+        padding: 2px;
+      }
+    }
   }
 }
 
@@ -234,6 +246,16 @@ mat-expansion-panel {
           .badge_custom{
             width: 30px;
             border-radius: 10%;
+          }
+          .badge-warning{
+            border-radius: 50%;
+            background-color: #f5c70e;
+            color: #fff;
+            position: absolute;
+            font-size: 12px;
+            padding: 2px;
+            bottom:9px;
+            left:25px;
           }
           &.cover_count_enabled {
             position: relative;

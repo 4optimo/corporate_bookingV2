@@ -205,7 +205,7 @@
                     <div class="col-md-9">
                       <section class="opt-section__heading">
                         <mat-accordion>
-                          <mat-expansion-panel #myPanel2 class="section-heading __main">
+                          <mat-expansion-panel #myPanel2 class="section-heading __main" expanded="true">
                             <mat-expansion-panel-header class="__title section-header"  collapsedHeight="55px" expandedHeight="55px" >
                               <h1 class="opt-txt__body2">Select Invoice</h1>
                             </mat-expansion-panel-header>
@@ -244,9 +244,9 @@
                       </section>
                       <section class="opt-section__heading">
                         <mat-accordion>
-                          <mat-expansion-panel #myPanel2 class="section-heading __main">
+                          <mat-expansion-panel #myPanel2 class="section-heading __main" expanded="true" disabled="true">
                             <mat-expansion-panel-header class="__title section-header" collapsedHeight="55px" expandedHeight="55px">
-                              <h1 class="opt-txt__body2">Billing Info</h1>
+                              <h1 class="opt-txt__body2">Payment Information</h1>
                             </mat-expansion-panel-header>
                             <div class="billing-info-section">
                               <div class="expand-outer-wrapper">
@@ -254,7 +254,7 @@
                                   <div class="opt_flex--container">
                                     <div class="opt_flex__item">
                                       <mat-form-field class="example-full-width">
-                                        <input matInput placeholder="Account" value="£50.00" required>
+                                        <input matInput placeholder="Amount" value="£50.00" required>
                                       </mat-form-field>
                                     </div>
                                     <div class="opt_flex__item">
@@ -273,7 +273,7 @@
                       </section>
                       <section class="opt-section__heading">
                         <mat-accordion>
-                          <mat-expansion-panel #myPanel2 class="section-heading __main">
+                          <mat-expansion-panel #myPanel2 class="section-heading __main" expanded="true" disabled="true">
                             <mat-expansion-panel-header class="__title section-header" collapsedHeight="55px" expandedHeight="55px">
                               <h1 class="opt-txt__body2">Note</h1>
                             </mat-expansion-panel-header>
@@ -297,10 +297,10 @@
                     <div class="col-md-3 item-align">
                       <div class="balance_section">
                         <div class="balance_section--title">
-                          Current Balance<!--Refund Payments-->
+                          Cuurent Balance<!--Refund Payments-->
                         </div>
                         <div class="balance_section--balance">
-                          <span class="sup-mark">&pound;</span> 20. <span class="opt__subtitle-2">86</span>
+                          <span class="sup-mark">&pound;</span> 108. <span class="opt__subtitle-2">86</span>
                         </div>
                         <div class="additional_info">
                           <ul class="balance_section--date_list">
@@ -308,8 +308,8 @@
                             <li><span class="--date">06-Feb-2018</span> <span>+ <span class="sup-mark--mini">&pound;</span>80</span></li>
                             <li><span class="--date">06-Feb-2018</span> <span>+ <span class="sup-mark--mini">&pound;</span>80</span></li>
                           </ul>
-                          <p><strong>Note:</strong> Refund Receipts doubles up a credit if there is already a credit memo entered in the system.</p>
-                        </div>
+                          
+                        </div> 
                       </div>
                     </div>
                   </div>
@@ -333,36 +333,42 @@
                             </mat-expansion-panel-header>
 
                             <div class="select_invoice-section">
-                              <div class="expand-outer-wrapper">
-                                <div class="expand-inner-wrapper">
-                                  <div class="opt_flex--container">
-                                    <div class="opt_flex__item tc-flex-item__center">
-                                      <mat-checkbox>
-                                        <div class="opt-txt__caption">
-                                          <span>BK00021</span> | <span>23-Jun-2018</span>
-                                        </div>
+                                <div class="expand-outer-wrapper">
+                                  <div class="expand-inner-wrapper">
+                                    <div class="opt_flex--container">
+                                    <div class="opt_flex__item">
+                                      <mat-checkbox checked="true">
+                                        <div class="opt-txt__body2-small">Casual Recreation Centre Hire</div>
+                                        <div class="opt-txt__caption	">06-Feb-2018</div>
                                       </mat-checkbox>
                                     </div>
-                                    <div class="opt_flex__item">
-                                      <div class="opt-txt__body2-small flex-padding">Total Invoice</div>
-                                      <div class="opt-txt__caption flex-padding"><span class="opt-txt__body2-small">&pound;</span> 6,595.86</div>
+                                    <div class="opt_flex__item price-value">
+                                      <span class="opt-txt__body2-small">&pound;</span> 20
                                     </div>
-                                    <div class="opt_flex__item price-value __link ">
-                                      <span class="opt-txt__body2-small">&pound;</span> 6,595.86
+                                  </div>
+                                    <div class="opt_flex--container">
+                                      <div class="opt_flex__item">
+                                        <mat-checkbox>
+                                          <div class="opt-txt__body2-small">Casual Recreation Centre Hire</div>
+                                          <div class="opt-txt__caption	">06-Feb-2018</div>
+                                        </mat-checkbox>
+                                      </div>
+                                      <div class="opt_flex__item price-value">
+                                        <span class="opt-txt__body2-small">&pound;</span> 20
+                                      </div>
                                     </div>
                                   </div>
                                 </div>
                               </div>
-                            </div>
 
                           </mat-expansion-panel>
                         </mat-accordion>
                       </section>
                       <section class="opt-section__heading">
                         <mat-accordion>
-                          <mat-expansion-panel #myPanel2 class="section-heading __main">
+                          <mat-expansion-panel #myPanel2 class="section-heading __main" expanded="true" disabled="true">
                             <mat-expansion-panel-header class="__title section-header" collapsedHeight="55px" expandedHeight="55px">
-                              <h1 class="opt-txt__body2">Billing Info</h1>
+                              <h1 class="opt-txt__body2">Refund Information</h1>
                             </mat-expansion-panel-header>
                             <div class="billing-info-section">
                               <div class="expand-outer-wrapper">
@@ -370,15 +376,25 @@
                                   <div class="opt_flex--container">
                                     <div class="opt_flex__item">
                                       <mat-form-field class="example-full-width">
-                                        <input matInput placeholder="Name" value="£50.00" required>
+                                        <input matInput placeholder="Amount" value="£50.00" required>
                                       </mat-form-field>
                                     </div>
                                     <div class="opt_flex__item">
                                       <mat-form-field class="example-full-width">
-                                        <input matInput [matDatepicker]="picker1" placeholder="Refund On">
+                                        <input matInput [matDatepicker]="picker1" placeholder="Paid On">
                                         <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
                                         <mat-datepicker #picker1></mat-datepicker>
                                       </mat-form-field>
+                                    </div>
+                                  </div>
+                                  <div class="opt_flex--container">
+                                    <div class="opt_flex__item">
+                                      <div class="row">
+                                        <div class="col-xs-12">
+                                            <button mat-button class="mat-btn-primary--small">Pay Now</button>
+                                            <button mat-button class="mat-btn-primary--small">Manual</button>
+                                        </div>
+                                      </div>
                                     </div>
                                   </div>
                                   <div class="opt_flex--container">
@@ -392,7 +408,7 @@
                                     </div>
                                     <div class="opt_flex__item">
                                       <mat-form-field class="example-full-width">
-                                        <input matInput placeholder="Amount" value="£108.86" required>
+                                        <input matInput placeholder="Name" value="Jane" required>
                                       </mat-form-field>
                                     </div>
                                   </div>
@@ -411,8 +427,13 @@
                                         </div>
                                       </div>
                                     </div>
+                                    <div class="opt_flex__item">
+                                        <mat-form-field class="example-full-width">
+                                          <input matInput placeholder="Authorization Code" required>
+                                        </mat-form-field>
+                                      </div>
                                   </div>
-                                  <div class="opt_flex--container">
+                                  <!-- <div class="opt_flex--container">
                                     <div class="opt_flex__item flex-nt-grow col-div">
                                       <div class="opt_flex--container">
                                         <div class="opt_flex__item p50">
@@ -431,7 +452,7 @@
                                         </div>
                                       </div>
                                     </div>
-                                  </div>
+                                  </div> -->
                                 </div>
                               </div>
                             </div>
@@ -440,7 +461,7 @@
                       </section>
                       <section class="opt-section__heading">
                         <mat-accordion>
-                          <mat-expansion-panel #myPanel2 class="section-heading __main">
+                          <mat-expansion-panel #myPanel2 class="section-heading __main" expanded="true" disabled="true">
                             <mat-expansion-panel-header class="__title section-header" collapsedHeight="55px" expandedHeight="55px">
                               <h1 class="opt-txt__body2">Note</h1>
                             </mat-expansion-panel-header>
@@ -464,7 +485,7 @@
                     <div class="col-md-3 item-align">
                       <div class="balance_section refund">
                         <div class="balance_section--title">
-                          Current Balance<!--Refund Payments-->
+                          Refund Payments
                         </div>
                         <div class="balance_section--balance">
                           <span class="sup-mark">&pound;</span> 20.<span class="opt__subtitle-2">86</span>
@@ -475,9 +496,9 @@
                             <li><span class="--date">06-Feb-2018</span> <span>+ <span class="sup-mark--mini">&pound;</span>80</span></li>
                             <li><span class="--date">06-Feb-2018</span> <span>+ <span class="sup-mark--mini">&pound;</span>80</span></li>
                           </ul>
-                          <div class="opt-txt__body2">
+                          <!-- <div class="opt-txt__body2">
                             <p><strong>Note:</strong> Refund Receipts doubles up a credit if there is already a credit memo entered in the system.</p>
-                          </div>
+                          </div> -->
                         </div>
                       </div>
                     </div>
@@ -536,9 +557,9 @@
                       </section>
                       <section class="opt-section__heading">
                         <mat-accordion>
-                          <mat-expansion-panel #myPanel2 class="section-heading __main">
+                          <mat-expansion-panel #myPanel2 class="section-heading __main" expanded="true" disabled="true">
                             <mat-expansion-panel-header class="__title section-header" collapsedHeight="55px" expandedHeight="55px">
-                              <h1 class="opt-txt__body2">Billing Info</h1>
+                              <h1 class="opt-txt__body2">Payment Information</h1>
                             </mat-expansion-panel-header>
                             <div class="billing-info-section">
                               <div class="expand-outer-wrapper">
@@ -572,7 +593,7 @@
                       </section>
                       <section class="opt-section__heading">
                         <mat-accordion>
-                          <mat-expansion-panel #myPanel2 class="section-heading __main">
+                          <mat-expansion-panel #myPanel2 class="section-heading __main" expanded="true" disabled="true">
                             <mat-expansion-panel-header class="__title section-header" collapsedHeight="55px" expandedHeight="55px">
                               <h1 class="opt-txt__body2">Note</h1>
                             </mat-expansion-panel-header>
@@ -666,9 +687,9 @@
                       </section>
                       <section class="opt-section__heading">
                         <mat-accordion>
-                          <mat-expansion-panel #myPanel2 class="section-heading __main">
+                          <mat-expansion-panel #myPanel2 class="section-heading __main"  expanded="true" disabled="true">
                             <mat-expansion-panel-header class="__title section-header" collapsedHeight="55px" expandedHeight="55px">
-                              <h1 class="opt-txt__body2">Billing Info</h1>
+                              <h1 class="opt-txt__body2">Payment Information</h1>
                             </mat-expansion-panel-header>
                             <div class="billing-info-section">
                               <div class="expand-outer-wrapper">
@@ -676,7 +697,7 @@
                                   <div class="opt_flex--container">
                                     <div class="opt_flex__item">
                                       <mat-form-field class="example-full-width">
-                                        <input matInput placeholder="Account" value="£50.00" required>
+                                        <input matInput placeholder="Amount" value="£50.00" required>
                                       </mat-form-field>
                                     </div>
                                     <div class="opt_flex__item">
@@ -695,7 +716,7 @@
                       </section>
                       <section class="opt-section__heading">
                         <mat-accordion>
-                          <mat-expansion-panel #myPanel2 class="section-heading __main">
+                          <mat-expansion-panel #myPanel2 class="section-heading __main" expanded="true" disabled="true">
                             <mat-expansion-panel-header class="__title section-header" collapsedHeight="55px" expandedHeight="55px">
                               <h1 class="opt-txt__body2">Note</h1>
                             </mat-expansion-panel-header>
@@ -788,9 +809,9 @@
                       </section>
                       <section class="opt-section__heading">
                         <mat-accordion>
-                          <mat-expansion-panel #myPanel2 class="section-heading __main">
+                          <mat-expansion-panel #myPanel2 class="section-heading __main" expanded="true" disabled="true">
                             <mat-expansion-panel-header class="__title section-header" collapsedHeight="55px" expandedHeight="55px">
-                              <h1 class="opt-txt__body2">Billing Info</h1>
+                              <h1 class="opt-txt__body2">Payment Information</h1>
                             </mat-expansion-panel-header>
                             <div class="billing-info-section">
                               <div class="expand-outer-wrapper">
@@ -824,7 +845,7 @@
                       </section>
                       <section class="opt-section__heading">
                         <mat-accordion>
-                          <mat-expansion-panel #myPanel2 class="section-heading __main">
+                          <mat-expansion-panel #myPanel2 class="section-heading __main" expanded="true" disabled="true">
                             <mat-expansion-panel-header class="__title section-header" collapsedHeight="55px" expandedHeight="55px">
                               <h1 class="opt-txt__body2">Note</h1>
                             </mat-expansion-panel-header>
@@ -917,9 +938,9 @@
                       </section>
                       <section class="opt-section__heading">
                         <mat-accordion>
-                          <mat-expansion-panel #myPanel2 class="section-heading __main">
+                          <mat-expansion-panel #myPanel2 class="section-heading __main" expanded="true" disabled="true">
                             <mat-expansion-panel-header class="__title section-header" collapsedHeight="55px" expandedHeight="55px">
-                              <h1 class="opt-txt__body2">Billing Info</h1>
+                              <h1 class="opt-txt__body2">Payment Information</h1>
                             </mat-expansion-panel-header>
                             <div class="billing-info-section">
                               <div class="expand-outer-wrapper">
@@ -953,7 +974,7 @@
                       </section>
                       <section class="opt-section__heading">
                         <mat-accordion>
-                          <mat-expansion-panel #myPanel2 class="section-heading __main">
+                          <mat-expansion-panel #myPanel2 class="section-heading __main" expanded="true" disabled="true">
                             <mat-expansion-panel-header class="__title section-header" collapsedHeight="55px" expandedHeight="55px">
                               <h1 class="opt-txt__body2">Note</h1>
                             </mat-expansion-panel-header>
@@ -1046,13 +1067,21 @@
                       </section>
                       <section class="opt-section__heading">
                         <mat-accordion>
-                          <mat-expansion-panel #myPanel2 class="section-heading __main">
+                          <mat-expansion-panel #myPanel2 class="section-heading __main" expanded="true" disabled="true">
                             <mat-expansion-panel-header class="__title section-header" collapsedHeight="55px" expandedHeight="55px">
-                              <h1 class="opt-txt__body2">Billing Info</h1>
+                              <h1 class="opt-txt__body2">Payment Information</h1>
                             </mat-expansion-panel-header>
                             <div class="billing-info-section">
                               <div class="expand-outer-wrapper">
                                 <div class="billing-inner-wrapper">
+                                    <div class="opt_flex--container">
+                                        <div class="opt_flex__item">
+                                            <mat-radio-group class="opt-txt__body1">
+                                                <mat-radio-button value="1">Internal Voucher</mat-radio-button>
+                                                <mat-radio-button value="2">External Voucher</mat-radio-button>
+                                              </mat-radio-group>
+                                          </div>
+                                      </div>
                                   <div class="opt_flex--container">
                                     <div class="opt_flex__item">
                                       <mat-form-field class="example-full-width">
@@ -1061,21 +1090,7 @@
                                     </div>
                                     <div class="opt_flex__item">
                                       <mat-form-field class="example-full-width">
-                                        <input matInput placeholder="Host Name" value="">
-                                      </mat-form-field>
-                                    </div>
-                                  </div>
-                                  <div class="opt_flex--container">
-                                    <div class="opt_flex__item">
-                                      <mat-form-field class="example-full-width">
-                                        <mat-select placeholder="Voucher Package">
-                                          <mat-option *ngFor="" [value]="">Voucher Package</mat-option>
-                                        </mat-select>
-                                      </mat-form-field>
-                                    </div>
-                                    <div class="opt_flex__item">
-                                      <mat-form-field class="example-full-width">
-                                        <input matInput placeholder="Package Price" value="">
+                                        <input matInput placeholder="Voucher Amount" value="">
                                       </mat-form-field>
                                     </div>
                                   </div>
@@ -1103,7 +1118,7 @@
                       </section>
                       <section class="opt-section__heading">
                         <mat-accordion>
-                          <mat-expansion-panel #myPanel2 class="section-heading __main">
+                          <mat-expansion-panel #myPanel2 class="section-heading __main" expanded="true" disabled="true">
                             <mat-expansion-panel-header class="__title section-header" collapsedHeight="55px" expandedHeight="55px">
                               <h1 class="opt-txt__body2">Note</h1>
                             </mat-expansion-panel-header>

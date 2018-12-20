@@ -1,0 +1,156 @@
+<div class="opt_modal-content opt-corporate-client">
+  <div class="mat-dialog-content">
+    <div class="opt_modal-header ">
+      <div class="test opt--depth__1">
+        <div class="opt_flex--container test-wrapper">
+          <div class="opt_flex__item--inherit test-inner">
+            <div class="inner-icon-black">
+              <i class="material-icons">contacts</i>
+            </div>
+          </div>
+          <div class="opt_flex__item test-inner-expand">
+            <div class="title">
+              <h1 mat-dialog-title>{{data.name}}</h1>
+            </div>
+          </div>
+          <div class="opt_flex__item--inherit test-inner-2">
+            <div class="inner-action">
+              <button class="material-icons icon1">launch</button>
+              <button class="material-icons icon2" (click)="close()">close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="opt_modal-body">
+
+      <!--modal body start-->
+      <div class="opt_email-document-popup opt_corporate-client-popup">
+        <div class="opt_flex--container">
+          <div class="opt_flex__item">
+            <div class="row">
+              <div class="col-xs-12 col-sm-10">
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item">
+                      <mat-form-field>
+                          <mat-select [(value)]="selected" placeholder="Country">
+                            <mat-option value="option1">United Kingdom</mat-option>
+                            <mat-option value="option2">US</mat-option>
+                            <mat-option value="option3">Australia</mat-option>
+                          </mat-select>
+                        </mat-form-field>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12 col-sm-10">
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item">
+                    <mat-radio-group>
+                      <mat-radio-button value="1"><span class="opt-txt__body1">Address lookup</span></mat-radio-button>
+                      <mat-radio-button class=" padding-left" value="2"><span class="opt-txt__body1">Add manually</span></mat-radio-button>
+                    </mat-radio-group>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12 col-sm-10">
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item">
+                      <form class="example-form">
+                          <mat-form-field class="example-full-width">
+                            <input type="text" placeholder="Start typing the address" aria-label="Number" matInput [formControl]="myControl"
+                              [matAutocomplete]="auto">
+                            <mat-autocomplete #auto="matAutocomplete">
+                              <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+                                {{option}}
+                              </mat-option>
+                            </mat-autocomplete>
+                          </mat-form-field>
+                        </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12 col-sm-10">
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item">
+                    <mat-form-field class="example-full-width">
+                      <input class="opt-txt__body2-small" matInput placeholder="Address line 1">
+                    </mat-form-field>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-10">
+                  <div class="opt_flex--container">
+                    <div class="opt_flex__item">
+                      <mat-form-field class="example-full-width">
+                        <input class="opt-txt__body2-small" matInput placeholder="Address line 2">
+                      </mat-form-field>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                  <div class="col-xs-12 col-sm-10">
+                    <div class="opt_flex--container">
+                      <div class="opt_flex__item">
+                        <mat-form-field class="example-full-width">
+                          <input class="opt-txt__body2-small" matInput placeholder="Address line 3">
+                        </mat-form-field>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-10">
+                      <div class="opt_flex--container">
+                        <div class="opt_flex__item">
+                          <mat-form-field class="example-full-width">
+                            <input class="opt-txt__body2-small" matInput placeholder="City/Town">
+                          </mat-form-field>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-xs-12 col-sm-10">
+                        <div class="opt_flex--container">
+                          <div class="opt_flex__item">
+                            <mat-form-field class="example-full-width">
+                              <input class="opt-txt__body2-small" matInput placeholder="Post Code">
+                            </mat-form-field>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-10">
+                          <div class="opt_flex--container">
+                            <div class="opt_flex__item">
+                              <mat-form-field class="example-full-width">
+                                <input class="opt-txt__body2-small" matInput placeholder="Region/Country">
+                              </mat-form-field>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+          </div>
+        </div>
+      </div>
+      <div class="opt_flex--container">
+        <div class="opt_flex__item"></div>
+        <div class="opt_flex__item--inherit">
+          <button class="mat-btn-primary mat-button" (click)="close()">Add</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

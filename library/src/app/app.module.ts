@@ -143,6 +143,7 @@ import { OptDiscountSearchComponent } from './opt-discount-search/opt-discount-s
 import { OptNormalSearchComponent } from './opt-normal-search/opt-normal-search.component';
 import { OptDiscountCartComponent } from './opt-discount-cart/opt-discount-cart.component';
 import { OptDocumentPopupsComponent } from './opt-document-popups/opt-document-popups.component';
+import { OptContactSetupPopupComponent } from './opt-contact-setup-popup/opt-contact-setup-popup.component';
 
 
 
@@ -217,7 +218,7 @@ const appRoutes: Routes = [
   { path: 'opt-message-dialog', component: OptMessageDialogComponent },
   { path: 'opt-discount-cart', component: OptDiscountCartComponent },
   { path: 'opt-document-popups', component: OptDocumentPopupsComponent },
-
+  { path: 'opt-contact-setup-popup', component: OptContactSetupPopupComponent },
 
   { path: '', redirectTo: '/opt-booking-summary', pathMatch: 'full' },
   { path: '**', redirectTo: '/opt-booking-summary', pathMatch: 'full' }
@@ -346,6 +347,7 @@ export class DemoMaterialModule { }
     OptNormalSearchComponent,
     OptDiscountCartComponent,
     OptDocumentPopupsComponent,
+    OptContactSetupPopupComponent,
 
     RoutingProjectComponent,
     TypographyComponent,

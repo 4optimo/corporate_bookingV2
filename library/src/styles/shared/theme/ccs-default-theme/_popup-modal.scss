@@ -21,7 +21,25 @@
     }
   }
 }
-
+.w40modal{
+  .opt_modal-content{
+    .mat-dialog-content{
+      position: relative;
+      .opt_modal-header{
+        border-radius: 4px 4px 0 0;
+        position: fixed;
+        width: 40%;
+        z-index: 9999;
+        background-color: #fff;
+        opacity: 1;
+      }
+      .opt_modal-body{
+        margin-top: 60px;
+        background-color: #e1e1e1;
+      }
+    }
+  }
+}
 .w60modal{
   .opt_modal-content{
     .mat-dialog-content{
@@ -36,6 +54,7 @@
       }
       .opt_modal-body{
         margin-top: 60px;
+        background-color: #e1e1e1;
       }
     }
   }
@@ -55,6 +74,26 @@
       }
       .opt_modal-body{
         margin-top: 60px;
+        background-color: #e1e1e1;
+      }
+    }
+  }
+}
+.w80modal{
+  .opt_modal-content{
+    .mat-dialog-content{
+      position: relative;
+      .opt_modal-header{
+        border-radius: 4px 4px 0 0;
+        position: fixed;
+        width: 70%;
+        z-index: 9999;
+        background-color: #fff;
+        opacity: 1;
+      }
+      .opt_modal-body{
+        margin-top: 60px;
+        background-color: #e1e1e1;
       }
     }
   }
@@ -74,6 +113,7 @@
       }
       .opt_modal-body{
         margin-top: 60px;
+        background-color: #e1e1e1;
       }
     }
   }
@@ -94,7 +134,7 @@
     }
     .opt_modal-body{
       margin-top: 60px;
-      
+      background-color: #e1e1e1;
     }
   }
 

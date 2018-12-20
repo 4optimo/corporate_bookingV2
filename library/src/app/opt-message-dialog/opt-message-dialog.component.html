@@ -32,7 +32,8 @@
   <h2>Invalid item added message</h2>
   <div class="dialog-message invalid-added-item">
     <div mat-dialog-content>
-      <span class="opt-txt__body1">Cannot add the Item. There are conflicts with other Booking created for the same time period.<span class="more-info" (click)="show1= true"> More details...</span></span>
+      <span class="opt-txt__body1">Cannot add the Item. There are conflicts with other Booking created for the same
+        time period.<span class="more-info" (click)="show1= true"> More details...</span></span>
       <div class="message-popover-wrapper" *ngIf="show1">
         <p class="opt-txt__body2 availability-label">Availability</p>
         <div class="row">
@@ -135,133 +136,261 @@
             <button class="mat-btn-primary mat-button" (click)="show1= false">Close</button>
           </div>
         </div>
-      </div>  
+      </div>
     </div>
   </div>
   <br><br>
   <h2>Questinnaire message</h2><br>
   <div class="dialog-message delete-confirmation-message-note" style="width: 500px;">
-      <div mat-dialog-content minHeight="800px;"  style="height: 60px;">
-        <div class="row">
-          <div class="col-md-1">
-            <div class="opt_flex--container">
-              <div class="opt_flex__item opt_flex__item--vcenter">
-                <i class="material-icons">info</i>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-11">
-            <div class="opt_flex--container">
-              <div class="opt_flex__item opt_flex__item--vcenter">
-                <p class="opt-txt__body1">Do you want to apply the same answers to all the questions on all days?</p>
-              </div>
+    <div mat-dialog-content minHeight="800px;" style="height: 60px;">
+      <div class="row">
+        <div class="col-md-1">
+          <div class="opt_flex--container">
+            <div class="opt_flex__item opt_flex__item--vcenter">
+              <i class="material-icons">info</i>
             </div>
           </div>
         </div>
-      </div>
-      <div mat-dialog-actions>
-        <div class="opt_flex--container">
-          <div class="opt_flex__item opt-txt__align-right">
-            <button mat-button class="mat-btn-primary--small" (click)="onNoClick()">No, Dont Apply</button>
-            <button mat-button class="mat-btn-primary--small" [mat-dialog-close]>Yes, Apply</button>
+        <div class="col-md-11">
+          <div class="opt_flex--container">
+            <div class="opt_flex__item opt_flex__item--vcenter">
+              <p class="opt-txt__body1">Do you want to apply the same answers to all the questions on all days?</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <br><br>
-    <h2>Cancel booking message</h2><br>
-    <div class="confirmation-message">
-      <div mat-dialog-content>
-        <div class="row">
-          <div class="col-md-1">
-            <div class="opt_flex--container">
-              <div class="opt_flex__item">
-                  <i class="material-icons">info</i>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-11">
-              <div class="opt_flex--container">
-                  <div class="opt_flex__item">
-                      <p class="opt-txt__body1">Are you sure you want to cancel this booking?</p>  
-                  </div>
-                </div>
-          </div>
+    <div mat-dialog-actions>
+      <div class="opt_flex--container">
+        <div class="opt_flex__item opt-txt__align-right">
+          <button mat-button class="mat-btn-primary--small" (click)="onNoClick()">No, Dont Apply</button>
+          <button mat-button class="mat-btn-primary--small" [mat-dialog-close]>Yes, Apply</button>
         </div>
-        </div>
-        <div mat-dialog-actions>
+      </div>
+    </div>
+  </div>
+  <br><br>
+
+  <h2>Payment tab message</h2><br>
+  <div class="dialog-message delete-confirmation-message-note" style="width: 500px;">
+    <div mat-dialog-content minHeight="800px;" style="height: 60px;">
+      <div class="row">
+        <div class="col-md-11">
           <div class="opt_flex--container">
-            <div class="opt_flex__item just-content-end">
-                <button mat-button class="mat-btn-primary--small" (click)="onNoClick()">No, dont cancel</button>
-                <button mat-button class="mat-btn-primary--small" [mat-dialog-close]>Yes, cancel</button>
+            <div class="opt_flex__item opt_flex__item--vcenter">
+              <mat-radio-group>
+                <mat-radio-button value="1"><span class="opt-txt__body1">Create a single invoice for all the selected
+                    Payment Term Items</span></mat-radio-button>
+                <mat-radio-button value="2"><span class="opt-txt__body1">Create a separate invoice for each selected Payment Term Item</span></mat-radio-button>
+              </mat-radio-group>
             </div>
           </div>
         </div>
+      </div>
+    </div>
+    <div mat-dialog-actions>
+      <div class="opt_flex--container">
+        <div class="opt_flex__item opt-txt__align-right">
+          <button mat-button class="mat-btn-primary--small" (click)="onNoClick()">Cancel</button>
+          <button mat-button class="mat-btn-primary--small" [mat-dialog-close]>Proceed</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br><br>
+  <h2>Cancel Note</h2><br>
+  <div class="dialog-message delete-confirmation-message-note" style="width: 500px;">
+    <div mat-dialog-content minHeight="800px;" style="height: 60px;">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="opt_flex--container">
+            <div class="opt_flex__item opt_flex__item--vcenter">
+              <p class="opt-txt__body1">Cancel Note</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="opt_flex--container">
+            <div class="opt_flex__item opt_flex__item--vcenter">
+              <mat-form-field style="width: 100%;">
+                <textarea matInput placeholder=""></textarea>
+              </mat-form-field>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div mat-dialog-actions>
+      <div class="opt_flex--container">
+        <div class="opt_flex__item opt-txt__align-right">
+          <button mat-button class="mat-btn-primary--small" [mat-dialog-close]>Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br><br>
+  <h2>Voucher redeem message</h2><br>
+  <div class="dialog-message delete-confirmation-message-note voucher-redeem-message">
+    <div mat-dialog-content minHeight="800px;" style="height: 60px;">
+      <div class="row">
+        <div class="col-xs-12 header-row">
+          <h3 class="">The voucher number you have entered <span class="opt-txt__tertiary">--voucher
+              number--</span> has been redeemed before!</h3>
+        </div>
+      </div>
+      <div class="row">
+            <div class="col-xs-1">
+              <span class="opt-txt__body2 opt-txt__secondary">Redeemed On</span>
+            </div>
+            <div class="col-xs-2">
+              <span class="opt-txt__body2 opt-txt__secondary">Client</span>
+            </div>
+            <div class="col-xs-2">
+              <span class="opt-txt__body2 opt-txt__secondary">Salesperson</span>
+            </div>
+            <div class="col-xs-1">
+              <span class="opt-txt__body2 opt-txt__secondary">Venue</span>
+            </div>
+            <div class="col-xs-2">
+              <span class="opt-txt__body2 opt-txt__secondary">Amount</span>
+            </div>
+            <div class="col-xs-4">
+              <span class="opt-txt__body2 opt-txt__secondary">Note</span>
+            </div>
+      </div>
+      <div class="row">
+              <div class="col-xs-1">
+                <span class="opt-txt__body2">12-May-2018</span>
+              </div>
+              <div class="col-xs-2">
+                <span class="opt-txt__body2">Max Holdings</span>
+              </div>
+              <div class="col-xs-2">
+                <span class="opt-txt__body2">Jorden Brown</span>
+              </div>
+              <div class="col-xs-1">
+                <span class="opt-txt__body2">Central Park</span>
+              </div>
+              <div class="col-xs-2">
+                <span class="opt-txt__body2">$2,500.00</span>
+              </div>
+              <div class="col-xs-4">
+                <span class="opt-txt__body2 opt-normal-whitespace">Some notes that has been entered against the voucher payment will be displayed here.</span>
+                <i class="material-icons symbol_icon" [matMenuTriggerFor]="menuReadMore">library_books</i>
+                                      <mat-menu #menuReadMore="matMenu" class="ReadMore-panel">
+                                          <div class="opt-txt__body2 opt-txt__secondary opt-normal-whitespace">Some notes that has been entered against the voucher payment will be displayed here.</div>
+                                      </mat-menu>
+              </div>
+        </div>
+    </div>
+    <div mat-dialog-actions>
+      <div class="opt_flex--container footer-row ">
+        <div class="opt_flex__item opt_flex__item--vcenter just-content-end">
+          <span class="opt-txt__body1 msg-lbl">Do you want to continue the payment with the same voucher?</span>
+        </div>
+        <div class="opt_flex__item--inherit opt_flex__item--vcenter opt-txt__align-right">
+          <button mat-button class="mat-btn-primary--small" [mat-dialog-close]>Yes</button>
+          <button mat-button class="mat-btn-primary--small" [mat-dialog-close]>No</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br><br>
+  <h2>Cancel booking message</h2><br>
+  <div class="confirmation-message">
+    <div mat-dialog-content>
+      <div class="row">
+        <div class="col-md-1">
+          <div class="opt_flex--container">
+            <div class="opt_flex__item">
+              <i class="material-icons">info</i>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-11">
+          <div class="opt_flex--container">
+            <div class="opt_flex__item">
+              <p class="opt-txt__body1">Are you sure you want to cancel this booking?</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div mat-dialog-actions>
+      <div class="opt_flex--container">
+        <div class="opt_flex__item just-content-end">
+          <button mat-button class="mat-btn-primary--small" (click)="onNoClick()">No, dont cancel</button>
+          <button mat-button class="mat-btn-primary--small" [mat-dialog-close]>Yes, cancel</button>
+        </div>
+      </div>
+    </div>
   </div>
   <div class="reason-message">
-      <div mat-dialog-content>
-          <div class="row">
-              <div class="col-md-3">
-                <div class="opt_flex--container">
-                  <div class="opt_flex__item">
-                    <div class="opt-txt__body2-small ">Cancellation Reason</div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-9">
-                <div class="opt_flex--container">
-                  <div class="opt_flex__item">
-                    <mat-form-field>
-                      <mat-select class="mat-option-text">
-                        <mat-option value="option1">Alternative geographical destination-Global</mat-option>
-                        <mat-option value="option2">Alternative geographical destination-Local</mat-option>
-                        <mat-option value="option3">Alternative geographical destination-Regional</mat-option>
-                        <mat-option value="option4">Client budget constraint</mat-option>
-                        <mat-option value="option5">Duplicate booking</mat-option>
-                        <mat-option value="option6">Event cancelled</mat-option>
-                        <mat-option value="option7">Event pstpond to an undetermined date</mat-option>
-                        <mat-option value="option8">Event resheduled (new date alredy set)</mat-option>
-                        <mat-option value="option9">Lack of availability in internal resources</mat-option>
-                        <mat-option value="option10">Lost to competition</mat-option>
-                        <mat-option value="option11">Required facility not available</mat-option>
-                        <mat-option value="option12">Venue capacity constraint</mat-option>
-                        <mat-option value="option1">New</mat-option>
-                      </mat-select>
-                    </mat-form-field>
-                  </div>
-                </div>
-              </div>
+    <div mat-dialog-content>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="opt_flex--container">
+            <div class="opt_flex__item">
+              <div class="opt-txt__body2-small ">Cancellation Reason</div>
             </div>
-            <div class="row">
-              <div class="col-md-3">
-                <div class="opt_flex--container">
-                  <div class="opt_flex__item">
-                    <div class="opt-txt__body2-small">Notes</div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-9">
-                <div class="opt_flex--container">
-                  <div class="opt_flex__item">
-                    <form class="example-form">
-                      <mat-form-field class="example-full-width">
-                        <input matInput>
-                      </mat-form-field>
-                    </form>
-                  </div>
-                </div>
-              </div>
+          </div>
+        </div>
+        <div class="col-md-9">
+          <div class="opt_flex--container">
+            <div class="opt_flex__item">
+              <mat-form-field>
+                <mat-select class="mat-option-text">
+                  <mat-option value="option1">Alternative geographical destination-Global</mat-option>
+                  <mat-option value="option2">Alternative geographical destination-Local</mat-option>
+                  <mat-option value="option3">Alternative geographical destination-Regional</mat-option>
+                  <mat-option value="option4">Client budget constraint</mat-option>
+                  <mat-option value="option5">Duplicate booking</mat-option>
+                  <mat-option value="option6">Event cancelled</mat-option>
+                  <mat-option value="option7">Event pstpond to an undetermined date</mat-option>
+                  <mat-option value="option8">Event resheduled (new date alredy set)</mat-option>
+                  <mat-option value="option9">Lack of availability in internal resources</mat-option>
+                  <mat-option value="option10">Lost to competition</mat-option>
+                  <mat-option value="option11">Required facility not available</mat-option>
+                  <mat-option value="option12">Venue capacity constraint</mat-option>
+                  <mat-option value="option1">New</mat-option>
+                </mat-select>
+              </mat-form-field>
             </div>
+          </div>
+        </div>
       </div>
-      <div mat-dialog-actions>
-          <div class="row">
-              <div class="col-md-9">
-                <div class="opt_flex__item">
-                  <button mat-button class="mat-btn-primary--small" (click)="onNoClick()">OK</button>
-                  <button mat-button class="mat-btn-primary--small" (click)="onNoClick()">Cancel</button>
-                </div>
-              </div>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="opt_flex--container">
+            <div class="opt_flex__item">
+              <div class="opt-txt__body2-small">Notes</div>
             </div>
+          </div>
+        </div>
+        <div class="col-md-9">
+          <div class="opt_flex--container">
+            <div class="opt_flex__item">
+              <form class="example-form">
+                <mat-form-field class="example-full-width">
+                  <input matInput>
+                </mat-form-field>
+              </form>
+            </div>
+          </div>
+        </div>
       </div>
+    </div>
+    <div mat-dialog-actions>
+      <div class="row">
+        <div class="col-md-9">
+          <div class="opt_flex__item">
+            <button mat-button class="mat-btn-primary--small" (click)="onNoClick()">OK</button>
+            <button mat-button class="mat-btn-primary--small" (click)="onNoClick()">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
