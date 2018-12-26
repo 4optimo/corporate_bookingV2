@@ -1100,13 +1100,13 @@
     }
   }
 
-  .documents, .c-sent, .payments, .host {
+  .documents, .c-sent, .payments, .host, .c-received {
     .row {
       border-bottom: none;
     }
   }
 
-  .documents {
+  .documents, .c-sent, .c-received {
     .document-upload-panel{
       .doc-upload-container {
         padding: 20px;
@@ -1470,7 +1470,7 @@
 
 // Document-popup styles
 .document-popups{
-  .add-upload-popup, .email-popup, .edit-popup{
+  .add-upload-popup, .email-popup, .edit-popup, .multiple-attach-popup{
     max-width: 500px;
     background-color: $opt_color_white;
     padding: 15px;
@@ -1486,6 +1486,9 @@
     .button-row{
       margin:25px -15px 0px -15px !important;
     }
+  }
+  .multiple-attach-popup{
+    max-width: 850px;
   }
   .edit-popup{
     .edit-buttons{
