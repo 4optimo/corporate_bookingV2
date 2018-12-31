@@ -536,41 +536,32 @@
                             </div>
                             <div class="opt_flex__item des-box ">
                               <div class="opt-txt__body2"> <a class="opt-txt__link opt-txt__body2"> Email subject</a> </div>
-                              <div class="opt-txt__secondary opt-txt__body1-small"> 12-Oct-2018 | 11:00am <span class="opt-txt__body1-small opt-txt__secondary"><span class="symbol_icon"><i class="material-icons">attach_file</i></span> | 2</span></div>
+                              <div class="opt-txt__secondary opt-txt__body1-small"> 12-Oct-2018 | 11:00am <span class="opt-txt__body1-small opt-txt__secondary"><span class="symbol_icon"><i class="material-icons">attach_file</i></span><sup>2</sup></span></div>
                               
                             </div>
                           </div>
                         </div>
-                        <div class="col-xs-12 col-sm-2 col-md-2	col-lg-2">
+                        <div class="col-xs-12 col-sm-2 col-md-2	col-lg-2 align-baseline">
                           <div class="opt_flex--container">
                             <div class="opt_flex__item des-box ">
-                                <div class="opt-txt__body2"><a class="opt-txt__link opt-txt__body2" [matMenuTriggerFor]="menuReadMore">Email body</a></div>
-                                <mat-menu #menuReadMore="matMenu" class="ReadMore-panel">
-                                    <div class="opt-txt__body2 opt-txt__secondary opt-normal-whitespace">Some notes that has been entered against the voucher payment will be displayed here.</div>
-                                </mat-menu>
-                              <div class="opt-txt__secondary opt-txt__body1-small"><span class="symbol_icon"><i class="material-icons">call_made</i></span> Sent successfully</div>
+                                <div class="opt-txt__body2"><a class="opt-txt__link opt-txt__body2">Email body</a></div>
                             </div>
                           </div>
                         </div>
-                        <div class="col-xs-12 col-sm-6 col-md-6	col-lg-6">
+                        <div class="col-xs-12 col-sm-6 col-md-6	col-lg-6 align-baseline">
                           <div class="opt_flex--container">
                             <div class="opt_flex__item des-box ">
                               <div class="opt-txt__body2">Sent by</div>
-                              <div class="opt-txt__body1-small"><span class="" [matMenuTriggerFor]="menurecipient">4 Recipients </span>| <span class="" [matMenuTriggerFor]="menurecipienttype"> 2 Recipient types</span></div>
-                              <mat-menu #menurecipient="matMenu" class="ReadMore-panel">
-                                  <div class="opt-txt__body2 opt-txt__secondary opt-normal-whitespace">Email 1</div>
-                                  <div class="opt-txt__body2 opt-txt__secondary opt-normal-whitespace">Email 2</div>
-                              </mat-menu>
-                              <mat-menu #menurecipienttype="matMenu" class="ReadMore-panel">
-                                  <div class="opt-txt__body2 opt-txt__secondary opt-normal-whitespace">Type 1</div>
-                                  <div class="opt-txt__body2 opt-txt__secondary opt-normal-whitespace">Type 2</div>
-                              </mat-menu>
-                            </div>
-                            <div class="opt_flex__item opt_flex__item--vcenter just-content-end">
-                              <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">delete</i></button>
                             </div>
                           </div>
                         </div>
+                        <div class="col-xs-12 col-sm-3 col-md-3	col-lg-3">
+                            <div class="opt_flex--container">
+                              <div class="opt_flex__item opt_flex__item--vcenter just-content-end">
+                                <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">delete</i></button>
+                              </div>
+                            </div>
+                          </div>
                       </div>
                     </div>
                 </div>
@@ -635,7 +626,7 @@
                               </div>
                               <div class="opt_flex__item des-box ">
                                 <div class="opt-txt__body2"> <a class="opt-txt__link opt-txt__body2"> Email subject</a> </div>
-                                <div class="opt-txt__secondary opt-txt__body1-small"> 12-Oct-2018 | 11:00am <span class="opt-txt__body1-small opt-txt__secondary"><span class="symbol_icon"><i class="material-icons">attach_file</i></span> | 2</span></div>
+                                <div class="opt-txt__secondary opt-txt__body1-small"> 12-Oct-2018 | 11:00am <span class="opt-txt__body1-small opt-txt__secondary"><span class="symbol_icon"><i class="material-icons">attach_file</i></span><sup>2</sup></span></div>
                                 
                               </div>
                             </div>
@@ -647,15 +638,15 @@
                                 <mat-menu #menuReadMore="matMenu" class="ReadMore-panel">
                                     <div class="opt-txt__body2 opt-txt__secondary opt-normal-whitespace">Some notes that has been entered against the voucher payment will be displayed here.</div>
                                 </mat-menu>
-                                <div class="opt-txt__secondary opt-txt__body1-small"><span class="symbol_icon"><i class="material-icons">call_made</i></span> Sent successfully</div>
+                                <div class="opt-txt__secondary opt-txt__body1-small">Sent successfully</div>
                               </div>
                             </div>
                           </div>
                           <div class="col-xs-12 col-sm-6 col-md-6	col-lg-6">
                             <div class="opt_flex--container">
                                 <div class="opt_flex__item des-box ">
-                                    <div class="opt-txt__body2">Sent by</div>
-                                    <div class="opt-txt__body1-small"><span class="" [matMenuTriggerFor]="menurecipient">4 Recipients </span>| <span class="" [matMenuTriggerFor]="menurecipienttype"> 2 Recipient types</span></div>
+                                    <div class="opt-txt__body2"><span class="symbol_icon"><i class="material-icons" matTooltip="Sent by">call_made</i></span> Sent by</div>
+                                    <div class="opt-txt__body1-small"><span class="" [matMenuTriggerFor]="menurecipient"><span class="symbol_icon"><i class="material-icons" matTooltip="Received">call_received</i></span> 4 Recipients </span>| <span class="" [matMenuTriggerFor]="menurecipienttype"> 2 Recipient types</span></div>
                                     <mat-menu #menurecipient="matMenu" class="ReadMore-panel">
                                         <div class="opt-txt__body2 opt-txt__secondary opt-normal-whitespace">Email 1</div>
                                         <div class="opt-txt__body2 opt-txt__secondary opt-normal-whitespace">Email 2</div>
@@ -677,9 +668,10 @@
               </div>
             </mat-tab>
 
+            
 
           </mat-tab-group>
-
+          <app-opt-paginator></app-opt-paginator>
         </mat-step>
 
 

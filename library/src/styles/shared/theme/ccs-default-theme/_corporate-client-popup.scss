@@ -739,6 +739,9 @@
     .doc-upload-container{
       background-color: #fff;
     }
+    .search-fab{
+      background-color: #4bb3fa;
+    }
   }
   &_ticket-scan-popup {
     .ticket-list-row {
@@ -1648,10 +1651,11 @@
   }
   mat-tab-group {
     flex-grow: 1;
+    border-bottom: 1px solid $opt-border-color;
+    margin-bottom: 10px;
   }
   .to-tab-content {
     padding: 15px;
-    border-bottom: 1px solid $opt-border-color;
     margin-bottom: 15px;
     mat-checkbox {
       margin-bottom: 10px;
