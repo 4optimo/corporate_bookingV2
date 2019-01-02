@@ -736,6 +736,12 @@
     .mat-form-field {
       padding-right: 0px;
     }
+    .doc-upload-container{
+      background-color: #fff;
+    }
+    .search-fab{
+      background-color: #4bb3fa;
+    }
   }
   &_ticket-scan-popup {
     .ticket-list-row {
@@ -1645,10 +1651,11 @@
   }
   mat-tab-group {
     flex-grow: 1;
+    border-bottom: 1px solid $opt-border-color;
+    margin-bottom: 10px;
   }
   .to-tab-content {
     padding: 15px;
-    border-bottom: 1px solid $opt-border-color;
     margin-bottom: 15px;
     mat-checkbox {
       margin-bottom: 10px;
@@ -1774,6 +1781,18 @@
       align-items: center !important;
     }
   }
+  .mat-tab-header{
+    display: none;
+  }
+  .package-wrapper{
+    padding-top: 0px !important;
+  }
+  .package-select-section{
+    padding: 0px !important; 
+  }
+  .top-label {
+    margin-top: 20px;
+  }
 }
 
 .opt_add_new_address {
@@ -1791,5 +1810,10 @@
         }
       }
     }
+  }
+}
+.opt-email-document-modal{
+  .opt_modal-body{
+    background-color: #fff !important;
   }
 }

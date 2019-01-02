@@ -601,8 +601,12 @@ button {
         padding: 3px;
         border-radius: 50%;
         top: -4px;
-        right: 5px;
+        right: 12px;
         color: $opt_color_white;
+        min-width: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
     }
   }

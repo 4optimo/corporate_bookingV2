@@ -33,6 +33,10 @@
         transform: rotate(0.03deg);
       }
     }
+    &.--primary {
+      background-color: #27bfc2;
+      color: #fff !important;
+    }
     &.--frozen {
       background-color: #f4493c;
       color: #fff !important;
