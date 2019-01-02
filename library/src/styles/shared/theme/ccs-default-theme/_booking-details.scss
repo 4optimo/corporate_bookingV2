@@ -171,7 +171,24 @@
       .icon__cage{
         margin-left: -6px;
       }
-
+      .mat-input-element{
+        text-align: left;
+      }
+      .attendee-count{
+        .mat-input-wrapper{
+          width: 30px;
+        }
+      }
+      .lbl-total{
+        padding-left: 10px;
+      }
+      .progress-bar-wrapper{
+        .progress-icon{
+          position: absolute;
+          left: -14px;
+          font-size: 20px;
+        }
+      }
     }
 
     .__date--cage{
@@ -230,6 +247,19 @@
 
 
 
+        }
+      }
+      .package-name{
+        .mat-form-field{
+          flex-grow: 1;
+        }
+        .mat-input-element{
+          text-align: left;
+        }
+      }
+      .event-details{
+        .opt_flex__item{
+          padding-right: 5px;
         }
       }
     }
@@ -304,7 +334,16 @@
 
     .icon__cage {
       width: 35px;
-
+      .btn-color-default{
+        &.--primary {
+          background-color: #27bfc2 !important;
+          color: #fff !important;
+        }
+        .material-icons{
+          color:#91a0ad !important
+        }
+      }
+      
 
       &.__min{
         width: auto;
@@ -878,19 +917,9 @@
 }
 
 .icon-text-menu{
-  button{
-    &.blocked{
-      i{
-        color: $no-color--state;
-
-      }
-    }
-    span{
-      vertical-align: middle;
-      display: inline-block;
-      padding-left: 15px;
-      font-size: 14px;
-    }
+  padding: 15px;
+  .opt-triple-toggle{
+    margin-bottom: 15px;
   }
 }
 
