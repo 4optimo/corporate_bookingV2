@@ -243,7 +243,8 @@
                         Event Name
                       </div>
                       <div class="opt_flex__item opt-txt__caption opt-txt__light">
-                          <input matInput value="12-Jan-2018 10:00 AM | 12-Jan-2018 15:00PM" [matDatepicker]="picker"> 
+                          <!-- <input matInput value="12-Jan-2018 10:00 AM | 12-Jan-2018 15:00PM"> -->
+                          <input matInput [matDatepicker]="picker" value="12-Jan-2018 10:00 AM | 12-Jan-2018 15:00PM"> 
                           <mat-datepicker #picker></mat-datepicker>
                         </div>
                     </div>
@@ -390,7 +391,7 @@
               <div class="col-sm-6	col-md-6 col-lg-6	col-xl-6">
 
                 <div class="opt_flex--container tc-flex-item__center __data">
-                  <div class="opt_flex__item icon__cageicon__cage __multi-buttons">
+                  <div class="opt_flex__item icon__cage __multi-buttons">
                     <button mat-icon-button class="btn-color-default" matTooltip="Seat Allocation"
                     >
                       <span class="icon-icn-office-big-chair  "> </span>
@@ -403,7 +404,7 @@
                     <button mat-icon-button class="btn-color-default" matTooltip="Configuration">
                       <span class="icon-icn-settings-work-tool  "> </span>
                     </button>
-                    <button mat-icon-button class="btn-color-default" matTooltip="Calendar">
+                    <button mat-icon-button class="btn-color-default date-icon" matTooltip="Calendar">
                         <span [popper]="popper1Content" [popperTrigger]="'click'"
                         [popperHideOnClickOutside]="true" popperPlacement="'bottom'" [popperAppendTo]="'body'" class="material-icons"> date_range</span>
                       </button>
@@ -596,13 +597,16 @@
                               </div>
                             </div>
                       </popper-content>
-                    <button mat-icon-button class="btn-color-default">
+                      <button mat-icon-button class="btn-color-default date-icon" matTooltip="Questions">
+                          <span class="material-icons">help</span>
+                        </button>
+                    <!-- <button mat-icon-button class="btn-color-default">
                       <span class="icon-icn-file-fill  " matTooltip="Document"> </span>
                     </button>
 
                     <button mat-icon-button class="btn-color-default" matTooltip="Invoice">
                       <span class="icon-icn-invoice  "> </span>
-                    </button>
+                    </button> -->
 
                   </div>
                 </div>
@@ -658,7 +662,9 @@
                         </div>
 
                         <div class="opt_flex__item package-name">
-                          <div class="opt-txt__body2">BTW17L3 - Sunday Lunch ADVC</div>
+                            <mat-form-field class="">
+                                <input class="opt-txt__body2" matInput value="Sunday Lunch ADVC">
+                              </mat-form-field>
                           <div class="opt_flex--container tc-flex-item__center">
                             <div class="opt_flex__item--inherit icon__cage __min"><span
                               class="icon-icn-item package-color--item"> </span>

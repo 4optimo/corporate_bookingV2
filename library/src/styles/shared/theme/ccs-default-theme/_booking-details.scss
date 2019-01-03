@@ -331,7 +331,10 @@
         }
       }
     }
-
+    .date-icon{
+      position: relative;
+      top: 5px;
+    }
     .icon__cage {
       width: 35px;
       .btn-color-default{
@@ -342,6 +345,7 @@
         .material-icons{
           color:#91a0ad !important
         }
+        
       }
       
 
