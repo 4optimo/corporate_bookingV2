@@ -335,15 +335,34 @@
       position: relative;
       top: 5px;
     }
+    .freezed-icon{
+      position: relative;
+      //top: 5px;
+    }
+    .warning-icon{
+      color: #fff !important;
+      top: 0px;
+      right: -3px;
+    }
+    .editable-field{
+      background-color: #f6ff0050;
+    padding-left: 3px;
+    }
+    .frozen-badge{
+      padding-left: 30px;
+    }
+    .progress-bar-panel{
+      margin-left: 40px;
+    }
     .icon__cage {
       width: 35px;
       .btn-color-default{
         &.--primary {
-          background-color: #27bfc2 !important;
+          background-color: #4bb3fa !important;
           color: #fff !important;
         }
         .material-icons{
-          color:#91a0ad !important
+          color:#91a0ad;
         }
         
       }
@@ -533,7 +552,12 @@
       }
     }
   }
-
+  .item-header{
+    .package-name{
+      display: flex;
+      flex-direction: column;
+    }
+  }
   &_expand__header {
 
     padding-left: 0px !important;
