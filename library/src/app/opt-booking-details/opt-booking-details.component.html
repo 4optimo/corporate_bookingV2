@@ -7,10 +7,10 @@
         <div class="col-md-2 header-block">
           <div class="opt-txt__body1">
               <mat-form-field >
-                  <input matInput placeholder="" value="Heading">
+                  <input class="editable-field opt-txt__body2" matInput placeholder="" value="Heading">
                 </mat-form-field>
           </div>
-          <div class="opt-txt__body1 attendee-count">Attendees : <mat-form-field><input matInput placeholder="" value="25"></mat-form-field></div>
+          <div class="opt-txt__body1 attendee-count">Attendees : <mat-form-field><input class="editable-field" matInput placeholder="" value="25"></mat-form-field></div>
         </div>
         <!-- <div class="col-md-4 frozen-badge">
             <div class="opt_flex__item">
@@ -46,7 +46,7 @@
       <div class="col-md-4 progress-bar-panel">
         <div class="opt_flex--container progress-bar-wrapper">
             <div class="opt_flex__item opt_flex__item--inherit">
-                <i class="material-icons progress-icon" matTooltip="Questions Status Bar">notes</i>
+                <i class="material-icons progress-icon" matTooltip="Questions Status Bar">help</i>
             </div>
           <div class="opt_flex__item opt_flex__item--vcenter">
               <mat-progress-bar mode="determinate" value="10"></mat-progress-bar>
@@ -62,7 +62,7 @@
       <div class="col-md-4 progress-bar-panel">
           <div class="opt_flex--container progress-bar-wrapper">
               <div class="opt_flex__item opt_flex__item--inherit">
-                  <i class="material-icons progress-icon" matTooltip="Tasks Status Bar">multiline_chart</i>
+                  <i class="material-icons progress-icon" matTooltip="Tasks Status Bar">assignment</i>
               </div>
             <div class="opt_flex__item opt_flex__item--vcenter">
                 <mat-progress-bar mode="determinate" value="10"></mat-progress-bar>
@@ -227,7 +227,9 @@
               <div class="col-sm-6  	col-md-5	col-lg-5	col-xl-4">
                 <div class="opt_flex--container tc-flex-item__center">
                   <div class="opt_flex__item--inherit icon__cage ">
-                    <mat-checkbox></mat-checkbox>
+                      <mat-radio-group name="package">
+                          <mat-radio-button value="1"></mat-radio-button>
+                        </mat-radio-group>
                   </div>
                   <div class="opt_flex__item package-name">
                     <div class="opt_flex--container">
@@ -313,12 +315,8 @@
                                     <div class="opt_flex__item opt_flex__item">
                                       <span class="opt-txt__body1">Tax</span>
                                     </div>
-                                    <div class="opt_flex__item--inherit opt-txt__align-right price--value__input">
-                                      <form class="example-form">
-                                        <mat-form-field class="">
-                                          <input class="opt-txt__body1 opt-txt__secondary" matInput value="&pound;19875.89">
-                                        </mat-form-field>
-                                      </form>
+                                    <div class="opt_flex__item--inherit opt-txt__align-right">
+                                        <span class="opt-txt__body1 opt-txt__secondary">&pound;1555.00</span>
                                     </div>
                                   </div>
                                   <div class="opt_flex--container filter-popover-item">
@@ -345,16 +343,20 @@
                                     <div class="opt_flex__item opt_flex__item">
                                       <span class="opt-txt__body1">Estimate Cost</span>
                                     </div>
-                                    <div class="opt_flex__item opt-txt__align-right">
-                                      <span class="opt-txt__body1 opt-txt__secondary">&pound;1555.00</span>
+                                    <div class="opt_flex__item--inherit opt-txt__align-right price--value__input">
+                                        <mat-form-field class="">
+                                            <input class="opt-txt__body1 opt-txt__secondary" matInput value="&pound;19875.89">
+                                          </mat-form-field>
                                     </div>
                                   </div>
                                   <div class="opt_flex--container filter-popover-item">
                                     <div class="opt_flex__item opt_flex__item">
                                       <span class="opt-txt__body1">Actual Cost</span>
                                     </div>
-                                    <div class="opt_flex__item opt-txt__align-right">
-                                      <span class="opt-txt__body1 opt-txt__secondary">&pound;55.00</span>
+                                    <div class="opt_flex__item--inherit opt-txt__align-right price--value__input">
+                                        <mat-form-field class="">
+                                            <input class="opt-txt__body1 opt-txt__secondary" matInput value="&pound;19875.89">
+                                          </mat-form-field>
                                     </div>
                                   </div>
                                 </div>
@@ -754,12 +756,8 @@
                                       <div class="opt_flex__item opt_flex__item">
                                         <span class="opt-txt__body1">Tax</span>
                                       </div>
-                                      <div class="opt_flex__item--inherit opt-txt__align-right price--value__input">
-                                        <form class="example-form">
-                                          <mat-form-field class="">
-                                            <input class="opt-txt__body1 opt-txt__secondary" matInput value="&pound;19875.89">
-                                          </mat-form-field>
-                                        </form>
+                                      <div class="opt_flex__item--inherit opt-txt__align-right">
+                                          <span class="opt-txt__body1 opt-txt__secondary">&pound;55.00</span>
                                       </div>
                                     </div>
                                     <div class="opt_flex--container filter-popover-item">
@@ -786,16 +784,20 @@
                                       <div class="opt_flex__item opt_flex__item">
                                         <span class="opt-txt__body1">Estimate Cost</span>
                                       </div>
-                                      <div class="opt_flex__item opt-txt__align-right">
-                                        <span class="opt-txt__body1 opt-txt__secondary">&pound;1555.00</span>
+                                      <div class="opt_flex__item--inherit opt-txt__align-right price--value__input">
+                                          <mat-form-field class="">
+                                              <input class="opt-txt__body1 opt-txt__secondary" matInput value="&pound;19875.89">
+                                            </mat-form-field>
                                       </div>
                                     </div>
                                     <div class="opt_flex--container filter-popover-item">
                                       <div class="opt_flex__item opt_flex__item">
                                         <span class="opt-txt__body1">Actual Cost</span>
                                       </div>
-                                      <div class="opt_flex__item opt-txt__align-right">
-                                        <span class="opt-txt__body1 opt-txt__secondary">&pound;55.00</span>
+                                      <div class="opt_flex__item--inherit opt-txt__align-right price--value__input">
+                                          <mat-form-field class="">
+                                              <input class="opt-txt__body1 opt-txt__secondary" matInput value="&pound;19875.89">
+                                            </mat-form-field>
                                       </div>
                                     </div>
                                   </div>
@@ -894,8 +896,8 @@
 
 
             </mat-expansion-panel>
+            
           </mat-accordion>
-
 
 
 
