@@ -34,7 +34,7 @@
       }
     }
     &.--primary {
-      background-color: #27bfc2;
+      background-color: #4bb3fa;
       color: #fff !important;
     }
     &.--frozen {
@@ -244,6 +244,7 @@ mat-expansion-panel {
         .package_title {
           overflow: visible;
           white-space: normal;
+          width: fit-content;
           .cover_count {
             display: none;
           }
@@ -495,5 +496,10 @@ mat-expansion-panel {
   }
   .mat-form-field-underline {
     bottom: 0;
+  }
+}
+.price-popover{
+  .mat-form-field{
+    width: 90%;
   }
 }

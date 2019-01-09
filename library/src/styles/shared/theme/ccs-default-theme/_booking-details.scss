@@ -44,7 +44,6 @@
 
       }
     }
-
     .mat-form-field-wrapper {
       margin-left: 1px;
       margin-right: 1px;
@@ -54,6 +53,14 @@
       width: 30px;
       text-align: center;
 
+    }
+    .mat-form-field-underline{
+      display: none;
+    }
+    .mat-focused{
+      .mat-form-field-underline{
+        display: block;
+      }
     }
   }
 
@@ -76,7 +83,7 @@
       button{
         i{
           padding-right: 3px;
-          margin-top: -2px;
+          //margin-top: -2px;
         }
       }
     }
@@ -174,9 +181,23 @@
       .mat-input-element{
         text-align: left;
       }
+      .header-block{
+        .mat-form-field-underline{
+          display: none;
+        }
+        .mat-focused{
+          .mat-form-field-underline{
+            display: block;
+          }
+        }
+      }
       .attendee-count{
         .mat-input-wrapper{
           width: 30px;
+        }
+        span{
+          position: relative;
+          bottom: 2px;
         }
       }
       .lbl-total{
@@ -187,6 +208,7 @@
           position: absolute;
           left: -14px;
           font-size: 20px;
+          color: #909cac;
         }
       }
     }
@@ -225,6 +247,7 @@
           margin-bottom: 50px;
           box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
           transition: 0.3s;
+          padding-bottom: 10px;
         }
 
 
@@ -243,7 +266,35 @@
           .__new-items_line{
             border-top:1px dashed $opt_text_color_primary;
           }
-
+          .mat-expansion-panel{
+            background-color: #e1e1e150;
+            margin:0 10px;
+            &.mat-expanded{
+              box-shadow: 0px 7px 5px -2px rgba(0,0,0,.1), 0px 3px 2px 0 rgba(0,0,0,.14), 0 0px 10px 0px rgba(0,0,0,.14);
+              margin:50px 10px;
+              .freezed-icon{
+                top: 0px !important;
+              }
+            }
+            .mat-expansion-panel-body{
+              padding-bottom:10px;
+              .mat-expansion-panel{
+                box-shadow: none;
+                background-color: #e1e1e180;
+                .mat-expansion-panel-header{
+                  border-bottom: 1px solid #909cac50;
+                }
+                &.mat-expanded{
+                  box-shadow: 0px 7px 5px -2px rgba(0,0,0,.1), 0px 3px 2px 0 rgba(0,0,0,.14), 0 0px 10px 0px rgba(0,0,0,.14);
+                }
+              }
+            }
+          }
+          .mat-expansion-panel:nth-child(1){
+            &.mat-expanded{
+              margin:0px 10px 50px 10px;
+            }
+          }
 
 
 
@@ -259,7 +310,7 @@
       }
       .event-details{
         .opt_flex__item{
-          padding-right: 5px;
+          margin-left: 5px;
         }
       }
     }
@@ -331,17 +382,40 @@
         }
       }
     }
-
+    .date-icon{
+      position: relative;
+      top: 5px;
+    }
+    .freezed-icon{
+      position: relative;
+      top: 5px;
+    }
+    .warning-icon{
+      color: #fff !important;
+      top: 0px;
+      right: -3px;
+    }
+    .editable-field{
+      background-color: #f6ff0050;
+    padding-left: 3px;
+    }
+    .frozen-badge{
+      padding-left: 30px;
+    }
+    .progress-bar-panel{
+      margin-left: 40px;
+    }
     .icon__cage {
       width: 35px;
       .btn-color-default{
         &.--primary {
-          background-color: #27bfc2 !important;
+          background-color: #4bb3fa !important;
           color: #fff !important;
         }
         .material-icons{
-          color:#91a0ad !important
+          color:#91a0ad;
         }
+        
       }
       
 
@@ -354,7 +428,25 @@
       .mat-checkbox-layout {
         margin-left: 7px;
       }
-
+      .mat-radio-checked{
+        .mat-radio-outer-circle{
+          background-color: #4bb3fa !important;
+          border-color: #4bb3fa !important;
+        }
+        .mat-radio-inner-circle{
+          border-bottom: 2px solid;
+          border-right: 2px solid;
+          border-color: #fff;
+          transform: rotate(45deg);
+          border-radius: 0%;
+          box-sizing: border-box;
+          height: 11px;
+          left: 7px;
+          position: absolute;
+          top: 3px;
+          width: 7px;
+        }
+      }
     }
 
     .mat-input-element {
@@ -393,7 +485,9 @@
 
     }
     .__item--value{
-
+      .mat-form-field{
+        width: 60px;
+      }
       @include respond-to('small') {
 
         padding-left: 15px;
@@ -528,8 +622,22 @@
         }
       }
     }
+    .savechanges{
+      position: absolute;
+      top: -1px;
+      right: -25px;
+      background-color: #fff;
+      i{
+        color: #27bfc2 !important;
+      }
+    }
   }
-
+  .item-header{
+    .package-name{
+      display: flex;
+      flex-direction: column;
+    }
+  }
   &_expand__header {
 
     padding-left: 0px !important;
@@ -573,6 +681,9 @@
   padding-right: 15px;
   .filter-popover-item {
     border-bottom: none !important;
+  }
+  .mat-form-field{
+    width: 90%;
   }
   .mat-form-field-infix{
     padding: 0 !important;
