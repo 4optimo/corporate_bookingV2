@@ -44,7 +44,6 @@
 
       }
     }
-
     .mat-form-field-wrapper {
       margin-left: 1px;
       margin-right: 1px;
@@ -54,6 +53,14 @@
       width: 30px;
       text-align: center;
 
+    }
+    .mat-form-field-underline{
+      display: none;
+    }
+    .mat-focused{
+      .mat-form-field-underline{
+        display: block;
+      }
     }
   }
 
@@ -76,7 +83,7 @@
       button{
         i{
           padding-right: 3px;
-          margin-top: -2px;
+          //margin-top: -2px;
         }
       }
     }
@@ -178,10 +185,19 @@
         .mat-form-field-underline{
           display: none;
         }
+        .mat-focused{
+          .mat-form-field-underline{
+            display: block;
+          }
+        }
       }
       .attendee-count{
         .mat-input-wrapper{
           width: 30px;
+        }
+        span{
+          position: relative;
+          bottom: 2px;
         }
       }
       .lbl-total{
@@ -251,11 +267,27 @@
             border-top:1px dashed $opt_text_color_primary;
           }
           .mat-expansion-panel{
-            background-color: #e1e1e130;
+            background-color: #e1e1e150;
             margin:0 10px;
             &.mat-expanded{
               box-shadow: 0px 7px 5px -2px rgba(0,0,0,.1), 0px 3px 2px 0 rgba(0,0,0,.14), 0 0px 10px 0px rgba(0,0,0,.14);
               margin:50px 10px;
+              .freezed-icon{
+                top: 0px !important;
+              }
+            }
+            .mat-expansion-panel-body{
+              padding-bottom:10px;
+              .mat-expansion-panel{
+                box-shadow: none;
+                background-color: #e1e1e180;
+                .mat-expansion-panel-header{
+                  border-bottom: 1px solid #909cac50;
+                }
+                &.mat-expanded{
+                  box-shadow: 0px 7px 5px -2px rgba(0,0,0,.1), 0px 3px 2px 0 rgba(0,0,0,.14), 0 0px 10px 0px rgba(0,0,0,.14);
+                }
+              }
             }
           }
           .mat-expansion-panel:nth-child(1){
@@ -274,9 +306,6 @@
         }
         .mat-input-element{
           text-align: left;
-        }
-        .mat-form-field-underline{
-          display: none;
         }
       }
       .event-details{
@@ -359,7 +388,7 @@
     }
     .freezed-icon{
       position: relative;
-      //top: 5px;
+      top: 5px;
     }
     .warning-icon{
       color: #fff !important;
@@ -456,7 +485,9 @@
 
     }
     .__item--value{
-
+      .mat-form-field{
+        width: 60px;
+      }
       @include respond-to('small') {
 
         padding-left: 15px;
@@ -589,6 +620,15 @@
         @include respond-to('medium') {
           margin-bottom: 0;
         }
+      }
+    }
+    .savechanges{
+      position: absolute;
+      top: -1px;
+      right: -25px;
+      background-color: #fff;
+      i{
+        color: #27bfc2 !important;
       }
     }
   }

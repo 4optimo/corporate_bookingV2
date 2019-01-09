@@ -244,6 +244,7 @@ mat-expansion-panel {
         .package_title {
           overflow: visible;
           white-space: normal;
+          width: fit-content;
           .cover_count {
             display: none;
           }
