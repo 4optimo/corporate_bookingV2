@@ -433,7 +433,8 @@ button {
   .individual-row {
     //padding: 15px;
     height: 55px;
-    line-height: 55px;
+    display: flex;
+    align-items: center;
     .material-icons {
       //padding-right: 15px;
     }
