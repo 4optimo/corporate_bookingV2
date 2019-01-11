@@ -168,7 +168,7 @@
 
   .mat-horizontal-stepper-header {
     height: auto !important;
-
+    padding: 0px 10px;
     &.mat-step-header {
       width: 111px;
       &:hover {
@@ -302,7 +302,7 @@
       }
     }
     .row {
-      display: inline-flex;
+      //display: inline-flex;
       [class*=' col-'] {
         display: flex;
         align-items: center;
@@ -581,7 +581,7 @@
       cursor: pointer;
       line-height: 1.7;
       position: absolute;
-      bottom: 20px;
+      bottom: 0px;
     }
   }
   .payment_list_item{
