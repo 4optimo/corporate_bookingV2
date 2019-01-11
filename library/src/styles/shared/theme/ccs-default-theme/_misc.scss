@@ -310,6 +310,10 @@ h1,h2,h3,h4,h5,h6{
         padding:5px 0px;
       }
     }
+    
+  }
+  .delete-confirmation-message-note{
+    width: 500px;
   }
   .voucher-redeem-message{
     .header-row{
@@ -342,6 +346,7 @@ h1,h2,h3,h4,h5,h6{
     width: 100%;
   }
   .invalid-added-item{
+    width: auto;
     .availability-label{
       margin-bottom:10px;
     }
@@ -353,4 +358,28 @@ h1,h2,h3,h4,h5,h6{
 //Percentage globalization
 .p25{
   width: 25%;
+}
+//Modals and popups media query for responsiveness
+.custom-dialog-container{
+  @media only screen and (max-width: 1024px) {
+    max-width: unset !important;
+    height: 100% !important;
+    width: 100% !important;
+  }
+}
+.opt_modal-header {
+    @media only screen and (max-width: 1024px) {
+        width: 100% !important;
+    }
+}
+
+.ngxp__container {
+    @media only screen and (max-width: 1024px) {
+        width: 90% !important;
+    }
+}
+.config-popup{
+    @media only screen and (max-width: 1024px) {
+        max-width: 100% !important;
+    }
 }

@@ -843,6 +843,7 @@
     .opt-add-note-wrapper {
       .opt_modal-body {
         padding: 0;
+        background-color: #fff;
       }
       .opt-text-editor {
         margin-bottom: 30px;
@@ -1778,7 +1779,7 @@
   }
   mat-accordion {
     .opt_flex--container:nth-child(1) {
-      align-items: center !important;
+      align-items: center;
     }
   }
   .mat-tab-header{

@@ -25,6 +25,9 @@
         position: relative;
         bottom: 10px;
         height: 30px;
+        .mat-input-element{
+            text-align: left !important;
+        }
       .mat-form-field-underline {
         display: none;
       }
