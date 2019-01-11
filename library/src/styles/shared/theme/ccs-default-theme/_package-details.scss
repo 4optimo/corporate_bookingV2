@@ -92,6 +92,9 @@ button {
       //padding-right: 5px;
     }
   }
+  .mat-tab-body-content{
+    overflow: hidden;
+  }
 }
 
 .opt_package-details {
@@ -433,7 +436,8 @@ button {
   .individual-row {
     //padding: 15px;
     height: 55px;
-    line-height: 55px;
+    display: flex;
+    align-items: center;
     .material-icons {
       //padding-right: 15px;
     }
@@ -612,12 +616,12 @@ button {
   }
   .opt_package-popup {
     &.opt_modal-body {
-      background-color: $default-state-dark-bg;
+      background-color: #e1e1e1;
     }
   }
   .opt_item-popup {
     &.opt_modal-body {
-      background-color: $default-state-dark-bg;
+      background-color: #e1e1e1;
     }
   }
 }
