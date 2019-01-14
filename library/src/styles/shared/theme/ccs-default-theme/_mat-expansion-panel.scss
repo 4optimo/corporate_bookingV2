@@ -176,7 +176,15 @@ mat-expansion-panel {
               flex-basis: 100px;
             }
             &:nth-child(6) {
-              flex-basis: 138px;
+              @include respond-to('small') {
+                flex-basis: 428px;
+              }
+              @include respond-to('medium') {
+                flex-basis: 138px;
+              }
+              @media(width: 1024px) {
+                flex-basis: 428px !important;
+              }
             }
           }
         }

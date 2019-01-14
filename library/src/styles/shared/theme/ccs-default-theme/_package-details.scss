@@ -272,6 +272,7 @@ button {
       //padding: 0 15px;
       .mat-expansion-panel-header {
         padding: 0 15px;
+        overflow: hidden;
       }
       &::-webkit-scrollbar {
         width: 5px;

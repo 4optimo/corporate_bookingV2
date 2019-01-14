@@ -50,6 +50,9 @@
   .time-slot-selection{
     max-height: 187px !important;
   }
+  .mat-form-field-underline{
+    bottom: unset;
+  }
 }
 .single-defined{
   .time-slot{
@@ -153,6 +156,9 @@
 }
 .opt_item--multiple-timeslot {
   background-color: $opt_color_white;
+  .opt_flex--container{
+    flex-wrap: wrap;
+  }
   .opt_flex__item {
     flex-basis: calc(100% / 3);
     flex-grow: 1;
