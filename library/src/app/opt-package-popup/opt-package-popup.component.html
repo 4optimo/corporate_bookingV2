@@ -187,10 +187,74 @@
                             <span class="material-icons"> date_range</span>
                           </button>
 
-                          <button mat-icon-button class="btn-color-default" matTooltip="General Admission">
+                          <button mat-icon-button class="btn-color-default" matTooltip="General Admission" [matMenuTriggerFor]="menupopup">
                             <span class="material-icons">domain</span>
                           </button>
-
+                          <mat-menu #menupopup="matMenu" class="popup-wrapper" style="padding:20px;">
+                            <div> 
+                              <span>some text</span>
+                              <button mat-button (click)="$event.stopPropagation();">nothing</button>
+                              <button mat-button (click)="closeMyMenu();">close</button>
+                            </div>
+                          </mat-menu>
+                          <mat-menu #menupopup1="matMenu" class="popup-wrapper1" >
+                              <div class="inner-wrapper opt_flex--container" (click)="$event.stopPropagation();">
+                                  <div class="opt_flex__item time-slot-selection">
+                                    <div class="edit_area">
+                                        <div class="opt_flex--container tc-flex-item__center">
+                                            <div class="opt_flex__item">
+                                              <div class="opt_flex__item tc-flex-item__center">
+                                                <mat-form-field>
+                                                  <input matInput [matDatepicker]="picker10" placeholder="Start Date" value="11-Aug-2018">
+                                                  <mat-datepicker-toggle matSuffix [for]="picker10"></mat-datepicker-toggle>
+                                                  <mat-datepicker #picker10></mat-datepicker>
+                                                </mat-form-field>
+                                              </div>
+                                            </div>
+                                            <div class="opt_flex__item">
+                                              <div class="opt_flex__item tc-flex-item__center">
+                                                <mat-form-field>
+                                                  <input matInput [matDatepicker]="picker11" placeholder="End Date">
+                                                  <mat-datepicker-toggle matSuffix [for]="picker11"></mat-datepicker-toggle>
+                                                  <mat-datepicker #picker11></mat-datepicker>
+                                                </mat-form-field>
+                                              </div>
+                                            </div>
+                                          </div>
+                                      <div class="opt_flex--container tc-flex-item__center">
+                                        <div class="opt_flex__item">
+                                          <div class="opt_flex__item tc-flex-item__center">
+                                            <mat-form-field class="example-full-width">
+                                              <input type="tel" matInput placeholder="Start Time" value="09:30 AM" multiple="true">
+                                              <mat-icon matSuffix>access_time</mat-icon>
+                                            </mat-form-field>
+                                          </div>
+                                        </div>
+                                        <div class="opt_flex__item">
+                                          <mat-form-field class="example-full-width">
+                                            <input type="tel" matInput placeholder="End Time" value="11:30 AM" multiple="true">
+                                            <mat-icon matSuffix>access_time</mat-icon>
+                                          </mat-form-field>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="error_msg">
+                                      <div class="opt-txt__body2-small">
+                                        <a href="#" class="opt_txt_status_cancelled">error msg</a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                
+                                <mat-accordion (click)="$event.stopPropagation();">
+                                  <mat-expansion-panel>
+                                    <mat-expansion-panel-header>
+                                      header
+                                    </mat-expansion-panel-header>
+                                    content
+                                  </mat-expansion-panel>
+                                </mat-accordion>
+                            </mat-menu>
                           <button mat-icon-button class="btn-color-default" matTooltip="Private Suit">
                             <span class="material-icons">local_activity</span>
                           </button>

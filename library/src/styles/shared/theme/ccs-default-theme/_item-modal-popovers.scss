@@ -44,14 +44,21 @@
   }
 }
 .single-normal{
+  margin-top: 30px;
   .mat-form-field-flex{
-    align-items: inherit;
+    //align-items: inherit;
   }
   .time-slot-selection{
     max-height: 187px !important;
   }
   .mat-form-field-underline{
-    bottom: unset;
+    bottom: unset !important;
+  }
+  .mat-input-element{
+    text-align: left !important;
+  }
+  .mat-form-field-wrapper{
+    padding-bottom: 0px;
   }
 }
 .single-defined{
@@ -68,7 +75,7 @@
 }
 .config-popup{
   background-color: #ffffff;
-  max-width: 500px;
+  //max-width: 500px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   padding: 20px 20px;
   mat-form-field{

@@ -1,5 +1,5 @@
 import {Component, Inject, OnInit, ViewChild} from '@angular/core';
-import {MatDialog} from "@angular/material";
+import {MatDialog, MatMenuTrigger} from "@angular/material";
 import {ModalContentComponent} from "../modal-content/modal-content.component";
 import {MatDialogRef, MAT_DIALOG_DATA, MatExpansionPanel} from "@angular/material";
 import {OptPackageCartComponent} from "../opt-package-cart/opt-package-cart.component";
@@ -11,6 +11,15 @@ import {OptPackageCartComponent} from "../opt-package-cart/opt-package-cart.comp
 })
 
 export class OptPackagePopupComponent implements OnInit {
+
+  @ViewChild(MatMenuTrigger) trigger: MatMenuTrigger;
+
+  openMyMenu() {
+    this.trigger.openMenu();
+  } 
+  closeMyMenu() {
+    this.trigger.closeMenu();
+  } 
 
   showVar: boolean = true;
   toggleChild(){
