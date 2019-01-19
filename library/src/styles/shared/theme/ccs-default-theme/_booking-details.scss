@@ -87,18 +87,20 @@
         }
       }
     }
-
-    button{
-      i{
-        font-size: 14px;
-      }
-      .mat-button-wrapper{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        min-height: 22px;
-      }
+    .booking-details-btn-dropdown{
+      button{
+        i{
+          font-size: 14px;
+        }
+        .mat-button-wrapper{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          min-height: 22px;
+        }
+      }  
     }
+    
     btn-group {
       i{
         padding-right: 3px;
@@ -165,8 +167,23 @@
       background-color: $opt_color_white;
       height: 58px;
       border-bottom: 2px solid $opt-border-color;
-
-
+      .main-heading{
+        display: flex;
+        flex-grow: 1;
+        margin-bottom:2px;
+        .mat-form-field{
+          width: 100%;
+        }
+      }
+      .event-label{
+        font-size: 14px !important;
+      }
+      .savechanges{
+        background-color: #f5f5f5;
+      }
+      &:nth-child(1){
+        background-color: #f5f5f5;
+      }
       &:nth-child(2){
         padding-left: 0px;
       }
@@ -195,7 +212,7 @@
         .mat-input-wrapper{
           width: 30px;
         }
-        span{
+        span, .symbol_icon{
           position: relative;
           bottom: 2px;
         }
@@ -204,11 +221,30 @@
         padding-left: 10px;
       }
       .progress-bar-wrapper{
+        .mat-progress-bar{
+          height: 10px;
+          border-radius:7px;
+          &.question{
+            .mat-progress-bar-fill::after{
+              background-color: #9c27b0 !important;
+            }
+          }
+          &.task{
+            .mat-progress-bar-fill::after{
+              background-color: #673ab7 !important;
+            }
+          }
+        }
         .progress-icon{
           position: absolute;
           left: -14px;
           font-size: 20px;
-          color: #909cac;
+          &.question-icon{
+            color: #9c27b0;
+          }
+          &.task-icon{
+            color:#673ab7;
+          }
         }
       }
     }
@@ -234,7 +270,7 @@
 
       >.mat-expansion-panel{
         box-shadow: none;
-
+        overflow: hidden;
       }
 
 
@@ -273,7 +309,7 @@
               box-shadow: 0px 7px 5px -2px rgba(0,0,0,.1), 0px 3px 2px 0 rgba(0,0,0,.14), 0 0px 10px 0px rgba(0,0,0,.14);
               margin:50px 10px;
               .freezed-icon{
-                top: 0px !important;
+                //top: 5px !important;
               }
             }
             .mat-expansion-panel-body{
@@ -289,6 +325,16 @@
                 }
               }
             }
+            .__item--value{
+              .time-label{
+                width: 40px;
+                max-width: 160px;
+              }
+              .tax-label{
+                max-width: 190px;
+                width: 80px;
+              }
+            }
           }
           .mat-expansion-panel:nth-child(1){
             &.mat-expanded{
@@ -300,6 +346,35 @@
 
         }
       }
+      .loadding--cage{
+        position: relative;
+        z-index: 9999;
+        margin-left: -8px;
+      }
+      .package-selector{
+        height: 55px;
+        width: 55px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 5px;
+        position: relative;
+        background-color: #f5f5f5;
+        top: 0px;
+        left: -8px;
+        &:after{
+            content: '';
+            height: 10px;
+            width: 10px;
+            background-color: #fff;
+            position: absolute;
+            right: -5px;
+            transform: rotate(45deg);
+        }
+        .mat-radio-label-content{
+          padding-left: 0px;
+        }
+      }
       .package-name{
         .mat-form-field{
           flex-grow: 1;
@@ -307,10 +382,17 @@
         .mat-input-element{
           text-align: left;
         }
+        .standard-item{
+          font-size: 20px;
+        }
       }
       .event-details{
         .opt_flex__item{
           margin-left: 5px;
+          margin-right: 5px
+        }
+        .event-name{
+          font-weight: 600;
         }
       }
     }
@@ -384,11 +466,14 @@
     }
     .date-icon{
       position: relative;
-      top: 5px;
+      //top: 5px;
     }
     .freezed-icon{
       position: relative;
-      top: 5px;
+      //top: 5px;
+      &.__delete{
+        right: -15px;
+      }
     }
     .warning-icon{
       color: #fff !important;
@@ -396,8 +481,10 @@
       right: -3px;
     }
     .editable-field{
-      background-color: #f6ff0050;
-    padding-left: 3px;
+      input:hover{
+        color: #3f51b5;
+        transition: 0.3s;
+      }
     }
     .frozen-badge{
       padding-left: 30px;
@@ -626,9 +713,16 @@
       position: absolute;
       top: -1px;
       right: -25px;
-      background-color: #fff;
+      background-color: unset;
+      button{
+        background-color: #27bfc2;
+        border-radius: 50%;
+      }
+      .mat-button-ripple{
+        border-radius: 50%;
+      }
       i{
-        color: #27bfc2 !important;
+        color: #fff !important;
       }
     }
   }

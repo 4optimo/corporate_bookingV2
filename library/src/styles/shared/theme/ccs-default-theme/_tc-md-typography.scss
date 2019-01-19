@@ -226,7 +226,9 @@ text-overflow: ellipsis;
   &__align-right {
    text-align: right;
   }
-
+  &__align-left {
+    text-align: left !important;
+   }
   &__right{
         text-align: right;
   }

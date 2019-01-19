@@ -78,7 +78,9 @@ $icn-font--url:'./shared/theme/ccs-default-theme/font/fonts-icon/';
 .icon-icn-clipboard:before {
   content: "\e909";
 }
-
+.icon-price:before {
+  content: "\e925";
+}
 //Booking Activities Icons
 .icon-note:before {
   content: "\e90e";
@@ -153,13 +155,5 @@ $icn-font--url:'./shared/theme/ccs-default-theme/font/fonts-icon/';
 .icon-percentage:before {
   content: "\e921";
 }
-.icon-bond_invoice:before {
-  content: "\e935";
-}
-.icon-pro-forma_invoice:before {
-  content: "\e925";
-}
-.icon-selective_invoice:before {
-  content: "\e92d";
-}
+
 //End of Booking Activities Icons

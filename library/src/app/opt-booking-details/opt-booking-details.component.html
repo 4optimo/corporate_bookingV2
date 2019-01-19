@@ -4,20 +4,24 @@
 
     <div class="opt_flex--container tc-flex-item__center tbl_head">
       <div class="row opt_flex--container tc-flex-item__center">
-        <div class="col-md-2 header-block">
-          <div class="opt-txt__body1">
-              <mat-form-field class="">
-                  <input class="opt-txt__body2" matInput value="Heading">
-                  <div class="savechanges">
-                      <button mat-button class="panel-action-btn-icon mat-button">
-                        <i class="material-icons mat-btn-icon-btn">done</i>
-                      </button>
-                    </div>
-                </mat-form-field>
+        <div class="col-md-4 header-block">
+          <div class="opt__flex--container">
+            <div class="opt_flex__item opt_flex__item--vcenter">
+                <div class="main-heading ">
+                    <mat-form-field class="editable-field">
+                        <input class="opt-txt__body2 event-label" matInput value="Drift Game Experience">
+                        <div class="savechanges">
+                            <button mat-button class="panel-action-btn-icon mat-button">
+                              <i class="material-icons mat-btn-icon-btn">done</i>
+                            </button>
+                          </div>
+                      </mat-form-field>
+                </div>
+            </div>
           </div>
           <div class="opt-txt__body1 attendee-count">
-            <span class="opt-txt__body1">Attendees: </span>
-             <mat-form-field class="">
+            <span class="opt-txt__body1 opt-txt__secondary editable-field"><i class="material-icons symbol_icon">group</i> Attendees: </span>
+             <mat-form-field class="editable-field">
               <input matInput placeholder="Attendees" class="opt-txt__body2"  value="25">
               <div class="savechanges">
                   <button mat-button class="panel-action-btn-icon mat-button">
@@ -61,37 +65,43 @@
       <div class="col-md-4 progress-bar-panel">
         <div class="opt_flex--container progress-bar-wrapper">
             <div class="opt_flex__item opt_flex__item--inherit">
-                <i class="material-icons progress-icon" matTooltip="Questions Status Bar">help</i>
+                <i class="material-icons progress-icon question-icon" matTooltip="Questions Status Bar">help</i>
             </div>
           <div class="opt_flex__item opt_flex__item--vcenter">
-              <mat-progress-bar mode="determinate" value="10"></mat-progress-bar>
+              <mat-progress-bar class="question" mode="determinate" value="10"></mat-progress-bar>
           </div>
           <div class="opt_flex__item opt_flex__item--inherit lbl-total">
               <span class="opt-txt__body2">1/10</span>
           </div>
         </div>
         <div class="opt_flex--container opt-fd-col">
-            <div class="opt_flex--item"><span class="opt-txt__body1-small opt-txt__secondary">Unanswered mandatory questions: 1 </span></div>
+            <div class="opt_flex--item">
+              <span class="opt-txt__body1-small opt-text-danger">Unanswered mandatory questions: </span>
+              <span class="opt-txt__body2-small opt-text-danger">1</span>
+            </div>
           </div>    
       </div>
       <div class="col-md-4 progress-bar-panel">
           <div class="opt_flex--container progress-bar-wrapper">
               <div class="opt_flex__item opt_flex__item--inherit">
-                  <i class="material-icons progress-icon" matTooltip="Tasks Status Bar">assignment</i>
+                  <i class="material-icons progress-icon task-icon" matTooltip="Tasks Status Bar">assignment</i>
               </div>
             <div class="opt_flex__item opt_flex__item--vcenter">
-                <mat-progress-bar mode="determinate" value="10"></mat-progress-bar>
+                <mat-progress-bar class="task" mode="determinate" value="10"></mat-progress-bar>
             </div>
             <div class="opt_flex__item opt_flex__item--inherit lbl-total">
                 <span class="opt-txt__body2">1/10</span>
             </div>
           </div>
           <div class="opt_flex--container opt-fd-col">
-              <div class="opt_flex--item"><span class="opt-txt__body1-small opt-txt__secondary">Overdue task(s): 1 </span></div>
+              <div class="opt_flex--item">
+                <span class="opt-txt__body1-small opt-text-danger">Overdue tasks: </span>
+                <span class="opt-txt__body2-small opt-text-danger">1</span>
+              </div>
             </div>    
         </div>
         <div class="col-md-2  opt-txt__align-right frozen-badge">
-            <span class="opt-txt__body2 opt-txt__tertiary"><i class="material-icons symbol_icon">flag</i> Booking Freezed</span>
+            <span class="opt-txt__body2 opt-txt__tertiary"><i class="material-icons symbol_icon">flag</i> Booking Frozen</span>
             <!-- <div class="opt_flex__item opt_flex__item--vcenter">
                 <div class="badge __danger __uppercase mini-badge">
                     <i class="material-icons symbol_icon">flag</i> <span>Booking Freezed</span>
@@ -134,7 +144,7 @@
 
               <div class="opt_flex__item p75">
                 <div class="opt-txt__body2 opt-txt__light">
-                  4 Selected
+                  1 Selected
                 </div>
               </div>
 
@@ -170,7 +180,7 @@
                   <span>Bond/Bond Refund</span>
                 </button>
             </mat-menu>
-            <button mat-button class="mat-btn-primary--small" (click)="openDataTable()"><i class="material-icons">assessment</i>Advance Price</button>
+            <button mat-button class="mat-btn-primary--small" (click)="openDataTable()"><i class="material-icons">assessment</i>Advanced Price</button>
             <button mat-button class="mat-btn-primary--small" ><i class="material-icons">delete</i>Delete</button>
           </div>
         </div>
@@ -195,7 +205,7 @@
             </div>
           </button>
         </div>
-        <div class="col-md-6">
+        <!-- <div class="col-md-6">
             <button mat-button class="button-wrapper ">
               <div class="opt_flex--container">
                 <div class="opt_flex__item opt_flex__item--vcenter">
@@ -210,8 +220,8 @@
                 </div>
               </div>
             </button>
-          </div>
-          <!-- <div class="col-md-4">
+          </div> -->
+          <div class="col-md-6">
               <button mat-button class="button-wrapper ">
                 <div class="opt_flex--container">
                   <div class="opt_flex__item opt_flex__item--vcenter">
@@ -226,7 +236,7 @@
                   </div>
                 </div>
               </button>
-            </div> -->
+            </div> 
       </div>
     </div>
     <mat-accordion>
@@ -241,7 +251,7 @@
             <div class="row">
               <div class="col-sm-6  	col-md-5	col-lg-5	col-xl-4">
                 <div class="opt_flex--container tc-flex-item__center">
-                  <div class="opt_flex__item--inherit icon__cage ">
+                  <div class="opt_flex__item--inherit icon__cage package-selector">
                       <mat-radio-group name="package">
                           <mat-radio-button value="1"></mat-radio-button>
                         </mat-radio-group>
@@ -249,16 +259,21 @@
                   <div class="opt_flex__item package-name">
                     <div class="opt_flex--container">
                       <div class="opt_flex__item--inherit opt_flex__item--vcenter">
-                        <span class="opt-txt__body2">BTX16L4 - </span>
+                        <span class="opt-txt__body2 opt-txt__secondary">BTX16L4 - </span>
                       </div>
                       <div class="opt_flex__item opt_flex__item--vcenter">
-                          <mat-form-field class="">
-                              <input class="opt-txt__body2" matInput value="Premier Dinner & Eye">
+                          <mat-form-field class="editable-field">
+                              <input class="opt-txt__body2" matInput value="Drift Games Masterclass">
                               <div class="savechanges">
                                   <button mat-button class="panel-action-btn-icon mat-button">
                                     <i class="material-icons mat-btn-icon-btn">done</i>
                                   </button>
                                 </div>
+                                <div class="savechanges">
+                                    <button mat-button class="panel-action-btn-icon mat-button">
+                                      <i class="material-icons mat-btn-icon-btn">done</i>
+                                    </button>
+                                  </div>
                             </mat-form-field>
                             
                         </div>
@@ -267,8 +282,8 @@
                       <div class="opt_flex__item--inherit icon__cage __min"><span
                         class="icon-icn-package  package-color--product"> </span>
                       </div>
-                      <div class="opt_flex__item opt_flex__item--inherit opt-txt__caption opt-txt__light">
-                        Event Name
+                      <div class="opt_flex__item opt_flex__item--inherit opt-txt__caption opt-txt__light event-name">
+                          Drift Game Experience
                       </div>
                       <div class="opt_flex__item--inherit opt_flex__item--vcenter opt-txt__caption opt-txt__light  opt-pre-whitespace">
                           <span class=""> 12-Jan-2018 </span>
@@ -282,7 +297,7 @@
                           <span class="">10:00 AM |</span>
                         </div>
                         <div class="opt_flex__item--inherit opt_flex__item--vcenter opt-txt__caption opt-txt__light  opt-pre-whitespace">
-                            <span class=""> 12-Jan-2018</span>
+                            <span class=""> 13-Jan-2018</span>
                           </div>
                           <div class="opt_flex__item--inherit opt_flex__item--vcenter opt-txt__caption opt-txt__light  opt-pre-whitespace">
                               <span class=""> 15:00PM</span>
@@ -292,23 +307,23 @@
                 </div>
               </div>
 
-              <div class="col-sm-6  	col-md-2	col-lg-2	col-xl-3">
+              <!-- <div class="col-sm-6  	col-md-2	col-lg-2	col-xl-3">
                 <div class="opt_flex--container tc-flex-item__center ">
                   <div class="opt_flex__item ">
-                    <div class="opt-txt__body1-small"> Covers [4hrs]</div>
+                    <div class="opt-txt__body1-small __link">Multiple</div>
                   </div>
                 </div>
 
-              </div>
-              <div class="col-sm-12	col-md-5	col-lg-5	col-xl-5">
+              </div> -->
+              <div class="col-sm-12	col-md-7	col-lg-7	col-xl-8">
 
-                <div class="opt_flex--container tc-flex-item__center">
-                    <div class="opt_flex__item--inherit">
-                        <span class="opt_lbl_primary">inc Vat</span>
-                      </div>
+                <div class="opt_flex--container tc-flex-item__center  __bold __item--value">
+                    <!-- <div class="opt_flex__item--inherit">
+                        
+                      </div> -->
                   <div class="opt_flex__item">
-                    <div class="opt-txt__body1 __link __bold __item--value">
-                        <mat-form-field class="">
+                        <span class="opt_lbl_primary">inc Vat</span>
+                        <mat-form-field class="editable-field">
                             <input class="opt-txt__body2" matInput value="£92.89">
                             <div class="savechanges">
                                 <button mat-button class="panel-action-btn-icon mat-button">
@@ -316,10 +331,11 @@
                                 </button>
                               </div>
                           </mat-form-field>
-                          
-                    </div>
                     
                   </div>
+                  <div class="opt_flex__item ">
+                      <div class="opt-txt__body1-small __link">Multiple</div>
+                    </div>
                   <div class="opt_flex__item">
                       <app-opt-counter></app-opt-counter>
                     </div>
@@ -332,8 +348,8 @@
                         <div class="opt_flex--container tc-flex-item__center tc-flex-just__right">
                           <div class="opt_flex__item--inherit price--value__input">
                             <form class="example-form">
-                              <mat-form-field class="">
-                                <input class="opt-txt__body2" matInput value="£19875.89">
+                              <mat-form-field class="editable-field">
+                                <input class="opt-txt__body2" matInput value="£19,875.89">
                                 <div class="savechanges" style="display:none;">
                                     <button mat-button class="panel-action-btn-icon mat-button">
                                       <i class="material-icons mat-btn-icon-btn">done</i>
@@ -354,7 +370,7 @@
                                     </div>
                                     <div class="opt_flex__item--inherit opt-txt__align-right price--value__input">
                                         <mat-form-field class="">
-                                          <input class="opt-txt__body1 opt-txt__secondary" matInput value="&pound;19875.89">
+                                          <input class="opt-txt__body1 opt-txt__secondary" matInput value="&pound;19,875.89">
                                         </mat-form-field>
                                     </div>
                                   </div>
@@ -373,7 +389,7 @@
                                     <div class="opt_flex__item--inherit opt-txt__align-right price--value__input">
                                       <form class="example-form">
                                         <mat-form-field class="">
-                                          <input class="opt-txt__body1 opt-txt__secondary" matInput value="&pound;19875.89">
+                                          <input class="opt-txt__body1 opt-txt__secondary" matInput value="&pound;19,875.89">
                                         </mat-form-field>
                                       </form>
                                     </div>
@@ -392,7 +408,7 @@
                                     </div>
                                     <div class="opt_flex__item--inherit opt-txt__align-right price--value__input">
                                         <mat-form-field class="">
-                                            <input class="opt-txt__body1 opt-txt__secondary" matInput value="&pound;19875.89">
+                                            <input class="opt-txt__body1 opt-txt__secondary" matInput value="&pound;19,875.89">
                                           </mat-form-field>
                                     </div>
                                   </div>
@@ -402,7 +418,7 @@
                                     </div>
                                     <div class="opt_flex__item--inherit opt-txt__align-right price--value__input">
                                         <mat-form-field class="">
-                                            <input class="opt-txt__body1 opt-txt__secondary" matInput value="&pound;19875.89">
+                                            <input class="opt-txt__body1 opt-txt__secondary" matInput value="&pound;19,875.89">
                                           </mat-form-field>
                                     </div>
                                   </div>
@@ -444,7 +460,7 @@
 
           <div class="__data ">
             <div class="row">
-              <div class="col-sm-6	col-md-6 col-lg-6	col-xl-6">
+              <div class="col-sm-8	col-md-8 col-lg-8	col-xl-8">
 
                 <div class="opt_flex--container tc-flex-item__center __data">
                   <div class="opt_flex__item icon__cage __multi-buttons">
@@ -678,35 +694,20 @@
 
 
               </div>
-              <!-- <div class="col-sm-6	col-md-6	col-lg-6	col-xl-6">
+
+               <div class="col-sm-4	col-md-4	col-lg-4	col-xl-4">
 
                 <div class="opt_flex--container tc-flex-item__center __data">
                   <div class="opt_flex__item icon__cage --right __multi-buttons opt-txt__right ">
 
-                    <button mat-icon-button class="btn btn__frozen" matTooltip="Frozen Status">
+                    <button mat-icon-button class="btn-color-default freezed-icon __delete mat-icon-button" matTooltip="Frozen Status">
                       <i class="material-icons">
-                        recent_actors
+                        delete
                       </i>
-                    </button>
-
-                    <button mat-icon-button class="btn-color-default" matTooltip="ToolTip">
-                      <span [matMenuTriggerFor]="menu1" class="icon-icn-clipboard  "> </span>
-                      <mat-menu #menu1="matMenu" class="filter-popover">
-                        <div class="opt_flex--container" (click)="$event.stopPropagation();">
-                          <div class="opt_flex__item">
-                            <mat-form-field>
-                              <input class="opt-txt__body1 opt-txt__secondary" matInput value="Sample Input">
-                            </mat-form-field>
-                          </div>
-                          <div class="opt_flex__item--inherit opt-txt__align-right price--value__input tc-flex-item__center">
-                            <button mat-button class="mat-btn-primary--small">Save</button>
-                          </div>
-                        </div>
-                      </mat-menu>
                     </button>
                   </div>
                 </div>
-              </div> -->
+              </div> 
             </div>
           </div>
 
@@ -729,26 +730,31 @@
                         <div class="opt_flex__item package-name">
                           <div class="opt_flex--container">
                             <div class="opt_flex__item opt_flex__item--vcenter">
-                                <mat-form-field class="">
-                                    <input class="opt-txt__body2" matInput value="Sunday Lunch ADVC">
+                                <mat-form-field class="editable-field">
+                                    <input class="opt-txt__body2" matInput value="International Race Circuit">
+                                    <div class="savechanges">
+                                        <button mat-button class="panel-action-btn-icon mat-button">
+                                          <i class="material-icons mat-btn-icon-btn">done</i>
+                                        </button>
+                                      </div>
                                   </mat-form-field>
                             </div>
                           </div>
                           <div class="opt_flex--container tc-flex-item__center event-details">
                             <div class="opt_flex__item--inherit icon__cage __min"><span
-                              class="icon-icn-item package-color--item"> </span>
+                              class="package-color--item "><i class="material-icons standard-item">offline_pin</i> </span>
                             </div>
                             <div class="opt_flex__item opt_flex__item--inherit opt-txt__caption ">
                               <!--<span class="opt-txt__light"> 20-Jan-2018 </span> |-->
                               <span
-                                class="opt-txt__light"> Windsor Sunday Lunch </span>
+                                class="opt-txt__light">Mondello Park </span>
                             </div>
                             <div class="opt_flex__item opt_flex__item--vcenter opt-txt__caption opt-txt__light">
-                                <!-- <input matInput value="12-Jan-2018 10:00 AM | 12-Jan-2018 15:00PM"> -->
-                                <mat-form-field>
+                                <input matInput value="12-Jan-2018 10:00 AM | 13-Jan-2018 15:00PM" readonly>
+                                <!-- <mat-form-field>
                                 <input class="" matInput [matDatepicker]="picker1" value="12-Jan-2018 10:00 AM | 12-Jan-2018 15:00PM"> 
                                 <mat-datepicker #picker1></mat-datepicker>
-                              </mat-form-field>
+                              </mat-form-field> -->
                               
                               </div>
                           </div>
@@ -756,22 +762,34 @@
 
                       </div>
                     </div>
-                    <div class="col-sm-6	col-md-2	col-lg-2	col-xl-3 ">
+                    <!-- <div class="col-sm-6	col-md-2	col-lg-2	col-xl-3 ">
                       <div class="opt_flex--container tc-flex-item__center ">
                         <div class="opt_flex__item ">
-                          <div class="opt-txt__body1"><span class="opt-txt__body1 __link"> Covers</span> [4hrs]</div>
-                          <div class="opt-txt__body2"> 6</div>
+                          <div class="opt-txt__body1"><span class="opt-txt__body1 __link"> Covers</span></div>
+                           <div class="opt-txt__body2"> 6</div>
                         </div>
                         
                       </div>
-                    </div>
-                    <div class="col-sm-12	col-md-5	col-lg-5	col-xl-5">
+                    </div> -->
+                    <div class="col-sm-12	col-md-7	col-lg-7	col-xl-8">
                       <div class="opt_flex--container tc-flex-item__center __bold __item--value">
-                          <div class="opt_flex__item--inherit"><span class="opt_lbl_primary">inc Vat</span>
-                          </div>
-                        <div class="opt_flex__item">
-                          <div class="opt-txt__body1 __link __bold __item--value">£92.19</div>
+                          <!-- <div class="opt_flex__item--inherit">
+                          </div> -->
+                        <div class="opt_flex__item tax-label">
+                            <span class="opt_lbl_primary">inc Vat</span>
+                            <mat-form-field class="editable-field">
+                                <input class="opt-txt__body2" matInput value="£92.89">
+                                <div class="savechanges">
+                                    <button mat-button class="panel-action-btn-icon mat-button">
+                                      <i class="material-icons mat-btn-icon-btn">done</i>
+                                    </button>
+                                  </div>
+                              </mat-form-field>
                         </div>
+                        <div class="opt_flex__item time-label">
+                            <div class="opt-txt__body1"><span class="opt-txt__body1 __link"> Covers</span></div>
+                            <!-- <div class="opt-txt__body2"> 6</div> -->
+                          </div>
                         <div class="opt_flex__item opt_flex__item--vcenter">
                             <app-opt-counter></app-opt-counter>
                           </div>
@@ -780,7 +798,7 @@
                             <div class="opt_flex__item--inherit price--value__input">
                               <form class="example-form">
                                 <mat-form-field class="">
-                                  <input class="opt-txt__body2" matInput value="£19875.89">
+                                  <input class="opt-txt__body2" matInput value="£19,875.89">
                                 </mat-form-field>
                               </form>
                             </div>
@@ -795,7 +813,7 @@
                                       </div>
                                       <div class="opt_flex__item--inherit opt-txt__align-right price--value__input">
                                         <mat-form-field class="">
-                                          <input class="opt-txt__body1 opt-txt__secondary" matInput value="&pound;19875.89">
+                                          <input class="opt-txt__body1 opt-txt__secondary" matInput value="&pound;19,875.89">
                                         </mat-form-field>
                                       </div>
                                     </div>
@@ -814,7 +832,7 @@
                                       <div class="opt_flex__item--inherit opt-txt__align-right price--value__input">
                                         <form class="example-form">
                                           <mat-form-field class="">
-                                            <input class="opt-txt__body1 opt-txt__secondary" matInput value="&pound;19875.89">
+                                            <input class="opt-txt__body1 opt-txt__secondary" matInput value="&pound;19,875.89">
                                           </mat-form-field>
                                         </form>
                                       </div>
@@ -833,7 +851,7 @@
                                       </div>
                                       <div class="opt_flex__item--inherit opt-txt__align-right price--value__input">
                                           <mat-form-field class="">
-                                              <input class="opt-txt__body1 opt-txt__secondary" matInput value="&pound;19875.89">
+                                              <input class="opt-txt__body1 opt-txt__secondary" matInput value="&pound;19,875.89">
                                             </mat-form-field>
                                       </div>
                                     </div>
@@ -843,7 +861,7 @@
                                       </div>
                                       <div class="opt_flex__item--inherit opt-txt__align-right price--value__input">
                                           <mat-form-field class="">
-                                              <input class="opt-txt__body1 opt-txt__secondary" matInput value="&pound;19875.89">
+                                              <input class="opt-txt__body1 opt-txt__secondary" matInput value="&pound;19,875.89">
                                             </mat-form-field>
                                       </div>
                                     </div>
@@ -887,7 +905,7 @@
               <div class="expansion-panel_body __inner_body ">
                 <div class="__data">
                   <div class="row">
-                    <div class=" col-sm-12	col-md-12	col-lg-12	col-xl-12 ">
+                    <div class="col-sm-8	col-md-8	col-lg-8	col-xl-8 ">
 
                       <div class="opt_flex--container tc-flex-item__center __data">
                         <div class="opt_flex__item icon__cage __multi-buttons icon_btn_group">
@@ -934,6 +952,19 @@
 
 
                     </div>
+                    <div class="col-sm-4	col-md-4	col-lg-4	col-xl-4">
+
+                        <div class="opt_flex--container tc-flex-item__center __data">
+                          <div class="opt_flex__item icon__cage --right __multi-buttons opt-txt__right ">
+        
+                            <button mat-icon-button class="btn-color-default freezed-icon __delete mat-icon-button" matTooltip="Frozen Status">
+                              <i class="material-icons">
+                                delete
+                              </i>
+                            </button>
+                          </div>
+                        </div>
+                      </div> 
                   </div>
 
                 </div>
@@ -955,7 +986,7 @@
                                     <div class="opt_flex--container">
                                       <div class="opt_flex__item opt_flex__item--vcenter">
                                           <mat-form-field class="">
-                                              <input class="opt-txt__body2" matInput value="Sunday Lunch ADVC">
+                                              <input class="opt-txt__body2" matInput value="International Race Circuit" readonly>
                                             </mat-form-field>
                                       </div>
                                     </div>
@@ -966,14 +997,15 @@
                                       <div class="opt_flex__item opt_flex__item--inherit opt-txt__caption ">
                                         <!--<span class="opt-txt__light"> 20-Jan-2018 </span> |-->
                                         <span
-                                          class="opt-txt__light"> Windsor Sunday Lunch </span>
+                                          class="opt-txt__light"> Mondello Park
+                                        </span>
                                       </div>
                                       <div class="opt_flex__item opt_flex__item--vcenter opt-txt__caption opt-txt__light">
-                                          <!-- <input matInput value="12-Jan-2018 10:00 AM | 12-Jan-2018 15:00PM"> -->
-                                          <mat-form-field>
+                                          <input matInput value="12-Jan-2018 10:00 AM | 13-Jan-2018 15:00PM">
+                                          <!-- <mat-form-field>
                                           <input class="" matInput [matDatepicker]="picker3" value="12-Jan-2018 10:00 AM | 12-Jan-2018 15:00PM"> 
                                           <mat-datepicker #picker3></mat-datepicker>
-                                        </mat-form-field>
+                                        </mat-form-field> -->
                                         
                                         </div>
                                     </div>
@@ -981,22 +1013,29 @@
           
                                 </div>
                               </div>
-                              <div class="col-sm-6	col-md-2	col-lg-2	col-xl-3 ">
+                              <!-- <div class="col-sm-6	col-md-2	col-lg-2	col-xl-3 ">
                                 <div class="opt_flex--container tc-flex-item__center ">
                                   <div class="opt_flex__item ">
-                                    <div class="opt-txt__body1"><span class="opt-txt__body1 __link"> Covers</span> [4hrs]</div>
-                                    <div class="opt-txt__body2"> 6</div>
+                                    <div class="opt-txt__body1"><span class="opt-txt__body1 __link"> Covers</span></div>
+                                    
                                   </div>
                                   
                                 </div>
-                              </div>
-                              <div class="col-sm-12	col-md-5	col-lg-5	col-xl-5">
+                              </div> -->
+                              <div class="col-sm-12	col-md-7	col-lg-7	col-xl-8">
                                 <div class="opt_flex--container tc-flex-item__center __bold __item--value">
-                                    <div class="opt_flex__item--inherit"><span class="opt_lbl_primary">inc Vat</span>
-                                    </div>
-                                  <div class="opt_flex__item">
-                                    <div class="opt-txt__body1 __link __bold __item--value">£92.19</div>
+                                    <!-- <div class="opt_flex__item--inherit">
+                                    </div> -->
+                                  <div class="opt_flex__item tax-label">
+                                      <span class="opt_lbl_primary">inc Vat</span>
+                                      <mat-form-field class="editable-field">
+                                          <input class="opt-txt__body2" matInput value="£92.89" readonly>
+                                        </mat-form-field>
                                   </div>
+                                  <div class="opt_flex__item time-label">
+                                      <div class="opt-txt__body1"><span class="opt-txt__body1 __link"> Covers</span></div>
+                                      <!-- <div class="opt-txt__body2"> 6</div> -->
+                                    </div>
                                   <div class="opt_flex__item opt_flex__item--vcenter">
                                       <app-opt-counter></app-opt-counter>
                                     </div>
@@ -1005,7 +1044,7 @@
                                       <div class="opt_flex__item--inherit price--value__input">
                                         <form class="example-form">
                                           <mat-form-field class="">
-                                            <input class="opt-txt__body2" matInput value="£19875.89">
+                                            <input class="opt-txt__body2" matInput value="£19,875.89" readonly>
                                           </mat-form-field>
                                         </form>
                                       </div>
@@ -1020,7 +1059,7 @@
                                                 </div>
                                                 <div class="opt_flex__item--inherit opt-txt__align-right price--value__input">
                                                   <mat-form-field class="">
-                                                    <input class="opt-txt__body1 opt-txt__secondary" matInput value="&pound;19875.89">
+                                                    <input class="opt-txt__body1 opt-txt__secondary" matInput value="&pound;19,875.89">
                                                   </mat-form-field>
                                                 </div>
                                               </div>
@@ -1039,7 +1078,7 @@
                                                 <div class="opt_flex__item--inherit opt-txt__align-right price--value__input">
                                                   <form class="example-form">
                                                     <mat-form-field class="">
-                                                      <input class="opt-txt__body1 opt-txt__secondary" matInput value="&pound;19875.89">
+                                                      <input class="opt-txt__body1 opt-txt__secondary" matInput value="&pound;19,875.89">
                                                     </mat-form-field>
                                                   </form>
                                                 </div>
@@ -1058,7 +1097,7 @@
                                                 </div>
                                                 <div class="opt_flex__item--inherit opt-txt__align-right price--value__input">
                                                     <mat-form-field class="">
-                                                        <input class="opt-txt__body1 opt-txt__secondary" matInput value="&pound;19875.89">
+                                                        <input class="opt-txt__body1 opt-txt__secondary" matInput value="&pound;19,875.89">
                                                       </mat-form-field>
                                                 </div>
                                               </div>
@@ -1068,7 +1107,7 @@
                                                 </div>
                                                 <div class="opt_flex__item--inherit opt-txt__align-right price--value__input">
                                                     <mat-form-field class="">
-                                                        <input class="opt-txt__body1 opt-txt__secondary" matInput value="&pound;19875.89">
+                                                        <input class="opt-txt__body1 opt-txt__secondary" matInput value="&pound;19,875.89">
                                                       </mat-form-field>
                                                 </div>
                                               </div>
@@ -1111,7 +1150,21 @@
                         <!--This is a summary of the content1-->
                         <div class="expansion-panel_body __inner_body ">
                           <div class="__data">
-                            
+                              <div class="col-sm-8	col-md-8	col-lg-8	col-xl-8">
+                                </div>
+                              <div class="col-sm-4 col-md-4	col-lg-4	col-xl-4">
+
+                                  <div class="opt_flex--container tc-flex-item__center __data">
+                                    <div class="opt_flex__item icon__cage --right __multi-buttons opt-txt__right ">
+                  
+                                      <button mat-icon-button class="btn-color-default freezed-icon __delete mat-icon-button" matTooltip="Frozen Status">
+                                        <i class="material-icons">
+                                          delete
+                                        </i>
+                                      </button>
+                                    </div>
+                                  </div>
+                                </div>
                           </div>
                         </div>
           
@@ -1144,7 +1197,7 @@
                             <div class="opt_flex--container">
                               <div class="opt_flex__item opt_flex__item--vcenter">
                                   <mat-form-field class="">
-                                      <input class="opt-txt__body2" matInput value="Sunday Lunch ADVC">
+                                      <input class="opt-txt__body2" matInput value="Collision Waiver Insurance">
                                     </mat-form-field>
                               </div>
                             </div>
@@ -1155,14 +1208,15 @@
                               <div class="opt_flex__item opt_flex__item--inherit opt-txt__caption ">
                                 <!--<span class="opt-txt__light"> 20-Jan-2018 </span> |-->
                                 <span
-                                  class="opt-txt__light"> Windsor Sunday Lunch </span>
+                                  class="opt-txt__light"> Mondello Park
+                                </span>
                               </div>
                               <div class="opt_flex__item opt_flex__item--vcenter opt-txt__caption opt-txt__light">
-                                  <!-- <input matInput value="12-Jan-2018 10:00 AM | 12-Jan-2018 15:00PM"> -->
-                                  <mat-form-field>
+                                  <input matInput value="12-Jan-2018 10:00 AM | 13-Jan-2018 15:00PM">
+                                  <!-- <mat-form-field>
                                   <input class="" matInput [matDatepicker]="picker2" value="12-Jan-2018 10:00 AM | 12-Jan-2018 15:00PM"> 
                                   <mat-datepicker #picker2></mat-datepicker>
-                                </mat-form-field>
+                                </mat-form-field> -->
                                 
                                 </div>
                             </div>
@@ -1170,22 +1224,34 @@
   
                         </div>
                       </div>
-                      <div class="col-sm-6	col-md-2	col-lg-2	col-xl-3 ">
+                      <!-- <div class="col-sm-6	col-md-2	col-lg-2	col-xl-3 ">
                         <div class="opt_flex--container tc-flex-item__center ">
                           <div class="opt_flex__item ">
-                            <div class="opt-txt__body1"><span class="opt-txt__body1 __link"> Covers</span> [4hrs]</div>
+                            <div class="opt-txt__body1"><span class="opt-txt__body1 __link"> Hourly</span> [4hrs]</div>
                             <div class="opt-txt__body2"> 6</div>
                           </div>
                           
                         </div>
-                      </div>
-                      <div class="col-sm-12	col-md-5	col-lg-5	col-xl-5">
+                      </div> -->
+                      <div class="col-sm-12	col-md-7	col-lg-7	col-xl-8">
                         <div class="opt_flex--container tc-flex-item__center __bold __item--value">
-                            <div class="opt_flex__item--inherit"><span class="opt_lbl_primary">inc Vat</span>
-                            </div>
-                          <div class="opt_flex__item">
-                            <div class="opt-txt__body1 __link __bold __item--value">£92.19</div>
+                            <!-- <div class="opt_flex__item--inherit">
+                            </div> -->
+                          <div class="opt_flex__item tax-label">
+                              <span class="opt_lbl_primary">inc Vat</span>
+                              <mat-form-field class="editable-field">
+                                  <input class="opt-txt__body2" matInput value="£92.89">
+                                  <div class="savechanges">
+                                      <button mat-button class="panel-action-btn-icon mat-button">
+                                        <i class="material-icons mat-btn-icon-btn">done</i>
+                                      </button>
+                                    </div>
+                                </mat-form-field>
                           </div>
+                          <div class="opt_flex__item time-label">
+                              <div class="opt-txt__body1"><span class="opt-txt__body1 __link"> Hourly</span> [4hrs]</div>
+                              <div class="opt-txt__body2"> 6</div>
+                            </div>
                           <div class="opt_flex__item opt_flex__item--vcenter">
                               <app-opt-counter></app-opt-counter>
                             </div>
@@ -1194,7 +1260,7 @@
                               <div class="opt_flex__item--inherit price--value__input">
                                 <form class="example-form">
                                   <mat-form-field class="">
-                                    <input class="opt-txt__body2" matInput value="£19875.89">
+                                    <input class="opt-txt__body2" matInput value="£19,875.89">
                                   </mat-form-field>
                                 </form>
                               </div>
@@ -1209,7 +1275,7 @@
                                         </div>
                                         <div class="opt_flex__item--inherit opt-txt__align-right price--value__input">
                                           <mat-form-field class="">
-                                            <input class="opt-txt__body1 opt-txt__secondary" matInput value="&pound;19875.89">
+                                            <input class="opt-txt__body1 opt-txt__secondary" matInput value="&pound;19,875.89">
                                           </mat-form-field>
                                         </div>
                                       </div>
@@ -1228,7 +1294,7 @@
                                         <div class="opt_flex__item--inherit opt-txt__align-right price--value__input">
                                           <form class="example-form">
                                             <mat-form-field class="">
-                                              <input class="opt-txt__body1 opt-txt__secondary" matInput value="&pound;19875.89">
+                                              <input class="opt-txt__body1 opt-txt__secondary" matInput value="&pound;19,875.89">
                                             </mat-form-field>
                                           </form>
                                         </div>
@@ -1247,7 +1313,7 @@
                                         </div>
                                         <div class="opt_flex__item--inherit opt-txt__align-right price--value__input">
                                             <mat-form-field class="">
-                                                <input class="opt-txt__body1 opt-txt__secondary" matInput value="&pound;19875.89">
+                                                <input class="opt-txt__body1 opt-txt__secondary" matInput value="&pound;19,875.89">
                                               </mat-form-field>
                                         </div>
                                       </div>
@@ -1257,7 +1323,7 @@
                                         </div>
                                         <div class="opt_flex__item--inherit opt-txt__align-right price--value__input">
                                             <mat-form-field class="">
-                                                <input class="opt-txt__body1 opt-txt__secondary" matInput value="&pound;19875.89">
+                                                <input class="opt-txt__body1 opt-txt__secondary" matInput value="&pound;19,875.89">
                                               </mat-form-field>
                                         </div>
                                       </div>
@@ -1301,7 +1367,7 @@
                 <div class="expansion-panel_body __inner_body ">
                   <div class="__data">
                     <div class="row">
-                      <div class=" col-sm-12	col-md-12	col-lg-12	col-xl-12 ">
+                      <div class="col-sm-8	col-md-8	col-lg-8	col-xl-8">
   
                         <div class="opt_flex--container tc-flex-item__center __data">
                           <div class="opt_flex__item icon__cage __multi-buttons icon_btn_group">
@@ -1348,6 +1414,19 @@
   
   
                       </div>
+                      <div class="col-sm-4	col-md-4	col-lg-4	col-xl-4">
+
+                          <div class="opt_flex--container tc-flex-item__center __data">
+                            <div class="opt_flex__item icon__cage --right __multi-buttons opt-txt__right ">
+          
+                              <button mat-icon-button class="btn-color-default freezed-icon __delete mat-icon-button" matTooltip="Frozen Status">
+                                <i class="material-icons">
+                                  delete
+                                </i>
+                              </button>
+                            </div>
+                          </div>
+                        </div> 
                     </div>
   
                   </div>

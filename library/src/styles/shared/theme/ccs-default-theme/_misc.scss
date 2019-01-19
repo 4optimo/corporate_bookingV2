@@ -383,3 +383,14 @@ h1,h2,h3,h4,h5,h6{
         max-width: 100% !important;
     }
 }
+.general-popover{
+  max-width:unset !important;
+  min-width:unset !important;
+  overflow: hidden !important;
+  .config-popup{
+      box-shadow:none !important;
+      .header-row{
+        margin:10px 0px;
+      }
+  }
+}
