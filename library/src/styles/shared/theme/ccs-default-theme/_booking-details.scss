@@ -216,6 +216,10 @@
           position: relative;
           bottom: 2px;
         }
+        .mat-btn-icon-btn{
+          position: relative;
+          top:2px;
+        }
       }
       .lbl-total{
         padding-left: 10px;
@@ -709,20 +713,41 @@
         }
       }
     }
-    .savechanges{
+    .savechanges, .resetchanges{
       position: absolute;
       top: -1px;
       right: -25px;
       background-color: unset;
+      z-index: 9999;
       button{
-        background-color: #27bfc2;
+        background-color: #1ce884;
         border-radius: 50%;
+        height: 22px;
+        width: 22px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
       .mat-button-ripple{
         border-radius: 50%;
       }
       i{
         color: #fff !important;
+        &.material-icons{
+          font-size: 14px;
+          line-height: 14px;
+          padding: 0;
+        }
+      }
+      .mat-button-wrapper{
+        height:13px;
+        width: 22px;
+      }
+    }
+    .resetchanges{
+      right: -50px;
+      button{
+        background-color: #f5766c;
       }
     }
   }

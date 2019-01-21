@@ -44,12 +44,17 @@
             top: -12px;
             right: 0px;
             button{
-                background-color: #fff;
-                border-radius: 50%;
+              background-color: #1ce884;
+              border-radius: 50%;
               }
               .mat-button-ripple{
                 border-radius: 50%;
               }
+        }
+        .resetchanges{
+          top: -34px;
+          position: relative;
+          right: -25px;
         }
         .opt_flex--container{
             flex-direction: row;
