@@ -111,6 +111,26 @@
       position: relative;
       top:5px;
     }
+    .booking-ref-lbl{
+      &:hover{
+        background-color: #e0e0e0;
+        transition:0.3s;
+      }
+      
+      display: inline;
+      padding: 5px;
+      border-radius: 13px;
+      margin-right: 10px;
+      .opt-link--secondary{
+          font-size:12px !important;
+          font-weight:500 !important;
+          text-decoration:none;
+      }
+      .symbol_icon{
+          padding-right:5px;
+          color:#909cac;
+      }
+  }
   }
 
   .valuation{
@@ -219,6 +239,16 @@
   .venue-field {
     .opt_flex--container {
         flex-grow: 1;
+    }
+  }
+  .client-ref-lbl{
+    .opt-link--secondary{
+        font-size:12px !important;
+        font-weight:500 !important;
+    }
+    .symbol_icon{
+        padding-right:5px;
+        color:#909cac;
     }
 }
 }
