@@ -216,6 +216,11 @@
       margin-top: 5px;
     }
   }
+  .venue-field {
+    .opt_flex--container {
+        flex-grow: 1;
+    }
+}
 }
 
 .vh-center{

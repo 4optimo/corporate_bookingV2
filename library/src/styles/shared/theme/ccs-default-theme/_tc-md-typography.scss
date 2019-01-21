@@ -72,7 +72,9 @@ $background-item:#fff;
   }
 
   &:hover{
-    color: darken($opt-link-color__secondary,30%);
+    cursor: pointer;
+    text-decoration: underline;
+    color: $opt-link-color__secondary;
   }
 }
 
