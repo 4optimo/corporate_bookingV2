@@ -841,6 +841,9 @@
       }
     }
     .opt-add-note-wrapper {
+      .mat-dialog-content{
+        padding-bottom:10px;
+      }
       .opt_modal-body {
         padding: 0;
         background-color: #fff;
@@ -876,6 +879,9 @@
         }
       }
       .note-button-row {
+        position: absolute;
+        bottom: -10px;
+        right: 0;
         padding: 15px;
         .opt_flex__item {
           justify-content: flex-end;

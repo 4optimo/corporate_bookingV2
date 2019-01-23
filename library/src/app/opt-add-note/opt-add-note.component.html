@@ -62,7 +62,7 @@
                       <div class="col-md-12">
                         <div class="opt_flex--container">
                           <div class="opt_flex__item">
-                            <app-ngx-editor [placeholder]="'Enter text here...'" [spellcheck]="true" [(ngModel)]="htmlContent"></app-ngx-editor>
+                            <app-ngx-editor [config]="editorConfig" [placeholder]="'Enter text here...'" [spellcheck]="true" [(ngModel)]="htmlContent"></app-ngx-editor>
                           </div>
                         </div>
                       </div>
@@ -207,6 +207,7 @@
         </div>
       </div>
     </div>
+    
   </div>
 </div>
 
