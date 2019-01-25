@@ -209,7 +209,7 @@
         }
       }
       .attendee-count{
-        .mat-input-wrapper{
+        .mat-form-field{
           width: 30px;
         }
         span, .symbol_icon{
@@ -577,7 +577,7 @@
     }
     .__item--value{
       .mat-form-field{
-        width: 60px;
+        width: 115px;
       }
       @include respond-to('small') {
 
@@ -748,6 +748,19 @@
       right: -50px;
       button{
         background-color: #f5766c;
+      }
+    }
+    .inline-spinner{
+      position: absolute;
+      right: -25px;
+      top: 0;
+      .mat-spinner{
+        height: 20px !important;
+        width:20px !important;
+        svg{
+          height: 20px !important;
+          width: 20px !important;
+        }
       }
     }
   }

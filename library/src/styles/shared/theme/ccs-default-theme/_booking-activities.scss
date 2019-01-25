@@ -612,7 +612,7 @@
     }
     .mat-expansion-panel-body{
       margin-right: 28px;
-      padding-bottom: 0px;
+      padding: 0 24px !important;
       .col-1{
         width: 78px;
       }
@@ -782,11 +782,15 @@
       }
     }
     .cat-icon{
-      font-size: 24px;
+      font-size: 17px;
       color: #909cac;
       padding-right: 10px !important;
     }
-    
+    .material-icons{
+      &.cat-icon{
+        font-size: 24px !important;
+      }
+    }
   }
   .opt-invo {
     width: 100%;
