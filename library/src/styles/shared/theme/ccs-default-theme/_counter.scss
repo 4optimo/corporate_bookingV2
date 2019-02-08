@@ -5,7 +5,7 @@
   height: 100%;
   padding: 0;
     .counter-label{
-      margin-bottom: -5px;
+      margin-bottom: -3px;
       content: 'Attendees';
       font-size: 11px !important;
     }
@@ -36,6 +36,7 @@
         background-color: unset;
         border-radius: 13px;
         padding: 10px;
+        padding-left:0px;
         height: 20px;
         width: 50px;
         transition: width .3s;
@@ -88,8 +89,8 @@
           }
         }
         .inline-spinner{
-          position: relative;
-          top: -34px;
+          position: absolute;
+          top: 0px;
           right: 0px;
           .mat-spinner{
             height: 20px !important;

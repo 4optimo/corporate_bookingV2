@@ -42,6 +42,10 @@
       margin: 0 10px;
     }
   }
+  .popup-btn-row{
+    margin-top: 15px;
+    padding:0px;
+  }
 }
 .single-normal{
   margin-top: 30px;
@@ -59,6 +63,10 @@
   }
   .mat-form-field-wrapper{
     padding-bottom: 0px;
+  }
+  .popup-btn-row{
+    margin-top: 15px;
+    padding:0px;
   }
 }
 .single-defined{
@@ -90,8 +98,7 @@
     min-height: 50px;
   }
   .content-list{
-    max-height: 500px;
-    overflow-y: scroll;
+    overflow-y: hidden;
     overflow-x: hidden;
     mat-form-field{
       padding-right: 10px;
@@ -112,8 +119,7 @@
   }
   .content-list{
     .expanded-content{
-      max-height: 500px;
-      overflow-y: scroll;
+      overflow-y: hidden;
       overflow-x: hidden;
       mat-form-field{
         padding-right: 10px;
@@ -137,8 +143,7 @@
     width:100%;
   }
   .content-list{
-    max-height: 470px;
-    overflow-y: scroll;
+    overflow-y: hidden;
     overflow-x: hidden;
     mat-form-field{
       padding-right: 10px;
@@ -152,8 +157,7 @@
 .advance-public-individual{
   .content-list{
     .expanded-content{
-      max-height: 470px;
-    overflow-y: scroll;
+    overflow-y: hidden;
     overflow-x: hidden;
     mat-form-field{
       padding-right: 10px;
@@ -171,7 +175,7 @@
     flex-grow: 1;
     padding: 10px 0;
     border-bottom: 1px dashed $opt_text_color_tertiary;
-    margin: 10px 50px 10px 50px;
+    margin: 10px 10px 10px 0px;
   }
   .flex-container {
     justify-content: space-around;
@@ -189,12 +193,16 @@
       margin: 10px 0px;
     }
     .opt_flex__item:nth-child(1) {
-      margin-left: 50px;
+      margin-left: 0px;
     }
     .time-lbl{
       padding-left: 20px;
       padding-right: 10px;
     }
+  }
+  .panel-action-btn-icon{
+      position: relative;
+      top: 4px;
   }
 }
 

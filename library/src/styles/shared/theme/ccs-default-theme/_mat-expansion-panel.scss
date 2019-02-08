@@ -161,7 +161,7 @@ mat-expansion-panel {
           .opt_flex__item--inherit {
             flex-shrink: 0;
             &:nth-child(1) {
-              flex-basis: 315px;
+              flex-basis: 250px;
             }
             &:nth-child(2) {
               flex-basis: 60px;
@@ -261,14 +261,12 @@ mat-expansion-panel {
             border-radius: 10%;
           }
           .badge-warning{
-            border-radius: 50%;
-            background-color: #f5c70e;
-            color: #fff;
-            position: absolute;
-            font-size: 12px;
-            padding: 2px;
-            bottom:9px;
-            left:25px;
+            color: #000;
+            font-size: 12px !important;
+            background-color: #cbdfec !important;
+            padding-left: 2px;
+            padding-right: 3px;
+            border-radius: 3px;
           }
           &.cover_count_enabled {
             position: relative;
@@ -339,6 +337,24 @@ mat-expansion-panel {
           }
         }
       }
+    }
+    .tax-lbl-col{
+      width: 200px;
+      .three_div_combo{
+        flex-direction: row;
+        margin-right: 10px;
+        .lbl__vat{
+          margin-right: 5px;
+        }
+      }
+      .three_div_solo{
+        i{
+          line-height: 15px;
+        }
+      }
+    }
+    .button-col{
+      width:unset !important;
     }
   }
 }
@@ -411,12 +427,24 @@ mat-expansion-panel {
       max-height: 90px;
       overflow-y: scroll;
     }
+    
   }
   .pricing_options {
+    .mat-radio-label{
+      display:flex;
+      align-items:center;
+      font-size: 13px !important;
+    font-weight: 500 !important;
+    padding-left: 0px;
+  }
+  .mat-radio-button{
+    padding-left: 0px;
+  }
     padding: 15px 0;
     padding-bottom: 0;
     .auto_generated {
       padding: 0 15px;
+      margin-bottom: 10px;
       &.disabled {
         .price_types_wrapper {
           color: #dadada;
@@ -432,15 +460,15 @@ mat-expansion-panel {
       }
     }
     .price_types_wrapper {
-      padding-left: 18px;
+      padding:0px;
     }
     .price_types {
       &.outer {
-        padding: 10px 0;
+        padding: 0px;
         .price_types {
           &.inner {
             .pricing_title {
-              padding-left: 15px;
+              //padding-left: 15px;
             }
           }
         }
@@ -450,8 +478,11 @@ mat-expansion-panel {
         justify-content: space-between;
         align-items: center;
         padding: 3px 0;
+        font-size: 13px;
+        font-weight: 500;
         .pricing_title {
           flex-basis: 150px;
+          padding-left: 27px;
         }
         .pricing_calc {
           display: flex;

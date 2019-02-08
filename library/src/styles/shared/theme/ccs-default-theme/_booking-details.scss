@@ -331,14 +331,17 @@
             }
             .__item--value{
               .time-label{
-                width: 40px;
+                //width: 40px;
                 max-width: 160px;
               }
               .tax-label{
                 max-width: 190px;
-                width: 80px;
+                padding-right: 10%;
               }
             }
+            .item-counter{
+              padding-right:5%;
+          }
           }
           .mat-expansion-panel:nth-child(1){
             &.mat-expanded{

@@ -289,6 +289,9 @@ h1,h2,h3,h4,h5,h6{
 .opt-normal-whitespace{
   white-space: normal !important;
 }
+.opt-nowrap-whitespace{
+  white-space: nowrap !important;
+}
 .opt-fd-col{
   flex-direction: column;
 }
@@ -386,7 +389,9 @@ h1,h2,h3,h4,h5,h6{
 .general-popover{
   max-width:unset !important;
   min-width:unset !important;
-  overflow: hidden !important;
+  height: 100%;
+  padding:0 10px;
+  max-height: 400px !important;
   .config-popup{
       box-shadow:none !important;
       .header-row{
