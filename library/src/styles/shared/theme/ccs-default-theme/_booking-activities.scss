@@ -587,14 +587,23 @@
   .payment_list_item{
     .mat-expansion-panel{
       box-shadow: unset;
-      
+      &.mat-expanded{
+        box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12) !important;
+        margin:20px 0px;
+      }
     }
+    
     .mat-checkbox-inner-container{
       margin-left: -3px;
     }
     .mat-expanded{
       .mat-expansion-panel-content{
         border-bottom: 1px solid #eeeeee;
+        background-color: #fff;
+        .opt_flex__item.p33:first-child{
+          position: relative;
+          left: 38px;
+        }
       }
     }
     mat-expansion-panel-header{
@@ -612,7 +621,7 @@
     }
     .mat-expansion-panel-body{
       margin-right: 28px;
-      padding-bottom: 0px;
+      padding: 0 24px !important;
       .col-1{
         width: 78px;
       }
@@ -649,16 +658,33 @@
         .red-highlight{
           border-left: 5px solid #f5766c;
         }
+        &.mat-expanded{
+          border:1px solid #e0e0e0;
+          box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12) !important;
+          margin: 20px 0px;
+        }
       }
+      .invoice-expansion-panel{
+        .mat-expansion-panel-body{
+          background-color: #fff;
+            .opt_expand--container{
+              border-bottom:1px dotted #e0e0e0;
+            }
+        }
+    }
       .mat-expansion-panel.mat-expanded{
         box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
       }
       .mat-expansion-panel-body{
         display: none !important;
+        .payment-method-lbl{
+          padding-left:16%;
+      }
       }
       .mat-expansion-panel-header{
         height: 55px;
         padding:0px 11px;
+        border-left: 5px solid #eeeeee50;
         .__expansion-rgt--side{
           margin-left: 20px;
         }
@@ -671,8 +697,7 @@
             height: 55px;
             display: flex;
             align-items: center;
-            padding: 0 55px;
-            padding-left: 65px;
+            padding: 0 65px;
             .symbol_icon{
               padding-right: 10px;
             }
@@ -711,6 +736,10 @@
   .payment-refund-list{
     .mat-expansion-panel-body{
       display: none !important;
+      .cat-icon{
+        padding-left: 8px;
+          padding-right: 13px !important;
+    }
     }
     .mat-expanded{
       .mat-expansion-panel-body{
@@ -742,7 +771,9 @@
       box-shadow: none;
     }
     .mat-expansion-panel.mat-expanded{
-      box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+      border: 1px solid #e0e0e0;
+      box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12) !important;
+      margin: 20px 0px;
     }
     .__expansion-rgt--side{
       margin-left: 20px;
@@ -752,13 +783,13 @@
         display: block !important;
         padding: 0px;
         .opt_expand--container{
-          border-top:1px dotted #4bb3fa;
-          border-bottom:1px dotted #4bb3fa;
+          border-bottom:1px dotted #e0e0e0;
+          background-color: #fff;
         }
         .__expansion-lft--side{
           display: flex;
           align-items: center;
-          padding: 0 70px;
+          padding: 0 78px;
           padding-left: 25px;
           .symbol_icon{
             padding-right: 10px;
@@ -782,11 +813,15 @@
       }
     }
     .cat-icon{
-      font-size: 24px;
+      font-size: 17px;
       color: #909cac;
       padding-right: 10px !important;
     }
-    
+    .material-icons{
+      &.cat-icon{
+        font-size: 24px !important;
+      }
+    }
   }
   .opt-invo {
     width: 100%;

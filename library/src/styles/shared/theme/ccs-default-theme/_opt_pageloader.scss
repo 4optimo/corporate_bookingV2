@@ -21,7 +21,7 @@ $gray-001 : #6e6e6e;
     margin-left: auto;
     text-align: center;
     background-color: $opt_color_white;
-
+    z-index: 10000;
 p{
   margin-bottom: 0px;
   color: $opt_text_color;

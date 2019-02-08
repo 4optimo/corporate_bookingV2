@@ -5,7 +5,7 @@
   height: 100%;
   padding: 0;
     .counter-label{
-      margin-bottom: -5px;
+      margin-bottom: -3px;
       content: 'Attendees';
       font-size: 11px !important;
     }
@@ -36,9 +36,38 @@
         background-color: unset;
         border-radius: 13px;
         padding: 10px;
+        padding-left:0px;
         height: 20px;
         width: 50px;
         transition: width .3s;
+        .savechanges, .resetchanges{
+          background-color: unset;
+          z-index: 9999;
+          button{
+            background-color: #1ce884;
+            border-radius: 50%;
+            height: 22px;
+            width: 22px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          .mat-button-ripple{
+            border-radius: 50%;
+          }
+          i{
+            color: #fff !important;
+            &.material-icons{
+              font-size: 14px;
+              line-height: 14px;
+              padding: 0;
+            }
+          }
+          .mat-button-wrapper{
+            height:13px;
+            width: 22px;
+          }
+        }
         .savechanges{
             position: relative;
             top: -12px;
@@ -55,6 +84,22 @@
           top: -34px;
           position: relative;
           right: -25px;
+          button{
+            background-color: #f5766c;
+          }
+        }
+        .inline-spinner{
+          position: absolute;
+          top: 0px;
+          right: 0px;
+          .mat-spinner{
+            height: 20px !important;
+            width:20px !important;
+            svg{
+              height: 20px !important;
+              width: 20px !important;
+            }
+          }
         }
         .opt_flex--container{
             flex-direction: row;

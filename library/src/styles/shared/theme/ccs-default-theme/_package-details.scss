@@ -16,7 +16,55 @@ button {
     }
   }
 }
-
+.opt_calender-popup{
+  .date_time-section{
+    width: 100%;
+    margin-bottom: 15px !important;
+  }
+  .edit_area{
+        padding-top:10px;
+      .opt_flex--container{
+        margin:10px 0px;
+        .mat-form-field{
+          padding-right: 10px;
+        }
+        .mat-input-element{
+            text-align: unset;
+          }
+          .mat-form-field-suffix{
+            position: relative;
+            top:5px;
+          }
+          .mat-form-field-infix{
+              padding: .4375em 0 !important;
+              border-top: .84375em solid transparent !important;
+          }
+          .mat-form-field-underline{
+              bottom:1.25em !important;
+          }
+      }
+    }
+  .error_msg{
+      position: relative;
+      bottom: 20px;
+  }
+  .mat-expansion-panel{
+    &.outer-wrapper{
+      
+      border: 1px solid #e0e0e0;
+    }
+      &.mat-expanded{
+          padding-bottom:0px !important;
+          .mat-expansion-panel-content{
+              box-shadow:unset;
+              background-color:#fff;
+          }
+      }
+      .mat-expansion-panel-header{
+        background-color: #eeeeee50;
+      }
+  }
+}
 .opt_package-popup {
   .opt_booking__list {
     .mat-accordion {
@@ -50,6 +98,7 @@ button {
     background-color: $opt_color_white;
     z-index: 999;
   }
+  
   .opt_linked-packages {
     width: 1053px;
     position: absolute;
@@ -269,6 +318,7 @@ button {
     }
     .outer-wrapper {
       overflow-y: auto;
+      
       //padding: 0 15px;
       .mat-expansion-panel-header {
         padding: 0 15px;
@@ -331,7 +381,8 @@ button {
       //overflow-y: auto;
       //overflow-x: hidden;
       .error_msg {
-        padding: 10px;
+        padding: 0px;
+        padding-left:20px;
       }
       .time-slot {
         // padding: 8px 15px;
