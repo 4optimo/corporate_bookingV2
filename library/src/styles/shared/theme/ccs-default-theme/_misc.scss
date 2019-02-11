@@ -441,3 +441,14 @@ h1,h2,h3,h4,h5,h6{
 }
 
 //End of scroll bar styles//
+.inline-spinner {
+  .mat-spinner {
+      height: 20px !important;
+      width: 20px !important;
+
+      svg {
+          height: 20px !important;
+          width: 20px !important;
+      }
+  }
+}
