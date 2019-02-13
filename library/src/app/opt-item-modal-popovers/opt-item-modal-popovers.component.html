@@ -51,24 +51,36 @@
                   <div class="opt_flex__item tc-flex-item__center">
                     <mat-form-field class="example-full-width">
                       <input type="tel" matInput placeholder="Start Time" value="09:30 AM" multiple="true">
-                      <mat-icon matSuffix>access_time</mat-icon>
+                      <mat-icon matSuffix [matMenuTriggerFor]="timepicker1">access_time</mat-icon>
+                      <mat-menu #timepicker1="matMenu" class="timepicker-panel">
+                          <timepicker (click)="$event.stopPropagation();"></timepicker>
+                          <button mat-button class="mat-btn-primary--small">Save</button>
+                      </mat-menu>
                     </mat-form-field>
+                    
                   </div>
                 </div>
                 <div class="col-sm-6 col-md-6	col-lg-6	col-xs-6">
                   <mat-form-field class="example-full-width">
                     <input type="tel" matInput placeholder="End Time" value="11:30 AM" multiple="true">
-                    <mat-icon matSuffix>access_time</mat-icon>
+                    <mat-icon matSuffix [matMenuTriggerFor]="timepicker2">access_time</mat-icon>
+                    <mat-menu #timepicker2="matMenu" class="timepicker-panel">
+                        <timepicker (click)="$event.stopPropagation();"></timepicker>
+                        <button mat-button class="mat-btn-primary--small">Save</button>
+                    </mat-menu>
                   </mat-form-field>
                 </div>
               </div>
             </div>
           </div>
           <div class="time-slot">
-            <div class="time-range">
+            <!-- <div class="time-range">
                 <ng5-slider [(value)]="minValue" [(highValue)]="maxValue" [options]="options"></ng5-slider>
-            </div>
+            </div> -->
+            
           </div>
+          <app-opt-timerange-selector></app-opt-timerange-selector>
+          
         </div>
       </div>
     </div>
@@ -242,12 +254,20 @@
         <span class="opt-txt__body1 time-lbl">Applicable time from</span>
         <mat-form-field class="example-full-width">
           <input type="tel" matInput placeholder="Start Time" value="">
-          <mat-icon matSuffix><i class="material-icons opt-txt__secondary">access_time</i></mat-icon>
+          <mat-icon matSuffix [matMenuTriggerFor]="timepicker1">access_time</mat-icon>
+          <mat-menu #timepicker1="matMenu" class="timepicker-panel">
+            <timepicker (click)="$event.stopPropagation();"></timepicker>
+            <button mat-button class="mat-btn-primary--small">Save</button>
+          </mat-menu>
         </mat-form-field>
         <span class="opt-txt__body1 time-lbl">to</span>
         <mat-form-field class="example-full-width">
           <input type="tel" matInput placeholder="End Time" value="">
-          <mat-icon matSuffix><i class="material-icons opt-txt__secondary">access_time</i></mat-icon>
+          <mat-icon matSuffix [matMenuTriggerFor]="timepicker1">access_time</mat-icon>
+          <mat-menu #timepicker1="matMenu" class="timepicker-panel">
+            <timepicker (click)="$event.stopPropagation();"></timepicker>
+            <button mat-button class="mat-btn-primary--small">Save</button>
+          </mat-menu>
         </mat-form-field>
       </div>
     </div>
@@ -258,11 +278,19 @@
           <mat-checkbox class="opt-txt__caption">05-Feb-2018</mat-checkbox>
           <mat-form-field class="example-full-width">
               <input matInput placeholder="Start time" value="">
-              <mat-icon matSuffix>access_time</mat-icon>
+              <mat-icon matSuffix [matMenuTriggerFor]="timepicker1">access_time</mat-icon>
+              <mat-menu #timepicker1="matMenu" class="timepicker-panel">
+                <timepicker (click)="$event.stopPropagation();"></timepicker>
+                <button mat-button class="mat-btn-primary--small">Save</button>
+              </mat-menu>
             </mat-form-field>
             <mat-form-field class="example-full-width">
                 <input matInput placeholder="End time" value="">
-                <mat-icon matSuffix>access_time</mat-icon>
+                <mat-icon matSuffix [matMenuTriggerFor]="timepicker1">access_time</mat-icon>
+                <mat-menu #timepicker1="matMenu" class="timepicker-panel">
+                  <timepicker (click)="$event.stopPropagation();"></timepicker>
+                  <button mat-button class="mat-btn-primary--small">Save</button>
+                </mat-menu>
               </mat-form-field>
               <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">done</i></button>
       </div>

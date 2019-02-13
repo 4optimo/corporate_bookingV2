@@ -8,7 +8,8 @@ import { NgxEditorModule } from 'ngx-editor';
 import { NgxPopper } from 'angular-popper';
 import { NgxPopperModule } from 'ngx-popper';
 import { Ng5SliderModule } from 'ng5-slider';
-import { TooltipModule } from 'ngx-bootstrap/tooltip';
+import { TimepickerModule } from 'ngx-bootstrap/timepicker';
+//import { TooltipModule } from 'ngx-bootstrap/tooltip';
 import {
   MatAutocompleteModule,
   MatButtonModule,
@@ -144,6 +145,7 @@ import { OptNormalSearchComponent } from './opt-normal-search/opt-normal-search.
 import { OptDiscountCartComponent } from './opt-discount-cart/opt-discount-cart.component';
 import { OptDocumentPopupsComponent } from './opt-document-popups/opt-document-popups.component';
 import { OptContactSetupPopupComponent } from './opt-contact-setup-popup/opt-contact-setup-popup.component';
+import { OptTimerangeSelectorComponent } from './opt-timerange-selector/opt-timerange-selector.component';
 
 
 
@@ -219,6 +221,7 @@ const appRoutes: Routes = [
   { path: 'opt-discount-cart', component: OptDiscountCartComponent },
   { path: 'opt-document-popups', component: OptDocumentPopupsComponent },
   { path: 'opt-contact-setup-popup', component: OptContactSetupPopupComponent },
+  { path: 'opt-timerange-selector', component: OptTimerangeSelectorComponent },
 
   { path: '', redirectTo: '/opt-booking-summary', pathMatch: 'full' },
   { path: '**', redirectTo: '/opt-booking-summary', pathMatch: 'full' }
@@ -262,6 +265,7 @@ const appRoutes: Routes = [
     ScrollDispatchModule
 
   ],
+  declarations: [],
 
 })
 export class DemoMaterialModule { }
@@ -348,6 +352,7 @@ export class DemoMaterialModule { }
     OptDiscountCartComponent,
     OptDocumentPopupsComponent,
     OptContactSetupPopupComponent,
+    OptTimerangeSelectorComponent,
 
     RoutingProjectComponent,
     TypographyComponent,
@@ -376,7 +381,8 @@ export class DemoMaterialModule { }
     NgMultiSelectDropDownModule,
     RouterModule.forRoot(appRoutes),
     NgxEditorModule,
-    TooltipModule.forRoot(),
+    TimepickerModule.forRoot(),
+    //TooltipModule,
     NgxPopper,
     NgxPopperModule,
     Ng5SliderModule,
