@@ -8,7 +8,7 @@ import { Options, LabelType } from 'ng5-slider';
 export class OptItemModalPopoversComponent implements OnInit {
   dateRange: Date[] = this.createDateRange();
   value: number = this.dateRange[0].getTime();
-
+  
   minValue: number = 1;
   maxValue: number = 10;
   options: Options = {
@@ -33,11 +33,14 @@ export class OptItemModalPopoversComponent implements OnInit {
     return dates;
   }
 
+ 
 
-
-  constructor() { }
+  constructor() { 
+    
+  }
 
   ngOnInit() {
+    
   }
 
 }

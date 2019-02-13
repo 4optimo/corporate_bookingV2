@@ -32,6 +32,9 @@
   }
 }
 .multiple-normal{
+  mat-icon{
+    cursor: pointer;
+  }
   .time-selected{
     padding-left: 15px;
     padding-right: 10px;
@@ -54,6 +57,9 @@
   }
   .time-slot-selection{
     max-height: 187px !important;
+    mat-icon{
+      cursor: pointer;
+    }
   }
   .mat-form-field-underline{
     bottom: unset !important;

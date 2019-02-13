@@ -603,14 +603,22 @@
                 <div class="opt_flex__item tc-flex-item__center">
                   <mat-form-field class="example-full-width">
                     <input type="tel" matInput placeholder="Start Time" value="09:30 AM" multiple="true">
-                    <mat-icon matSuffix>access_time</mat-icon>
+                    <mat-icon matSuffix [matMenuTriggerFor]="timepicker1">access_time</mat-icon>
+                      <mat-menu #timepicker1="matMenu" class="timepicker-panel">
+                          <timepicker (click)="$event.stopPropagation();"></timepicker>
+                          <button mat-button class="mat-btn-primary--small">Save</button>
+                      </mat-menu>
                   </mat-form-field>
                 </div>
               </div>
               <div class="opt_flex__item">
                 <mat-form-field class="example-full-width">
                   <input type="tel" matInput placeholder="End Time" value="11:30 AM" multiple="true">
-                  <mat-icon matSuffix>access_time</mat-icon>
+                  <mat-icon matSuffix [matMenuTriggerFor]="timepicker1">access_time</mat-icon>
+                      <mat-menu #timepicker1="matMenu" class="timepicker-panel">
+                          <timepicker (click)="$event.stopPropagation();"></timepicker>
+                          <button mat-button class="mat-btn-primary--small">Save</button>
+                      </mat-menu>
                 </mat-form-field>
               </div>
             </div>

@@ -393,6 +393,9 @@ button {
       }
       .inner-wrapper {
         .time-slot-selection {
+          mat-icon{
+            cursor: pointer;
+          }
           overflow-y: auto;
           padding: 0 15px;
           background-color: $light_background;
