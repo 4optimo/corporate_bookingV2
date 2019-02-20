@@ -22,7 +22,7 @@ import { OptDispatchAddNewAddressComponent } from "../opt-dispatch-add-new-addre
 import { OptShipmentScreenComponent } from "../opt-shipment-screen/opt-shipment-screen.component";
 import { OptDiscountSearchComponent } from '../opt-discount-search/opt-discount-search.component';
 import { OptContactSetupPopupComponent } from '../opt-contact-setup-popup/opt-contact-setup-popup.component';
-
+import { OptBondItemsPopupComponent } from '../opt-bond-items-popup/opt-bond-items-popup.component';
 @Component({
   selector: 'app-opt-popup-window',
   templateUrl: './opt-popup-window.component.html',
@@ -136,6 +136,17 @@ export class OptPopupWindowComponent implements OnInit {
   public openItemPopup() {
     this.dialog.open(OptItemPopupComponent, {
       data: { name: 'Item Search' },
+      panelClass: ['custom-dialog-container', 'w80modal'],
+      height: 'auto',
+      width: '80%'
+      // DialogPosition : top
+
+    });
+
+  }
+  public openBondItemPopup() {
+    this.dialog.open(OptBondItemsPopupComponent, {
+      data: { name: 'Bond Item Search' },
       panelClass: ['custom-dialog-container', 'w80modal'],
       height: 'auto',
       width: '80%'
