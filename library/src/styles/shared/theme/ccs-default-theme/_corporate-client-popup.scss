@@ -1567,6 +1567,13 @@
           i {
             margin-left: 20px;
           }
+          .document-item-name{
+            color: #4bb3fa;
+            &:hover{
+              cursor: pointer;
+              text-decoration: underline;
+            }
+          }
         }
         // .list-row-highlighted {
         //   .list-icon-merged {
