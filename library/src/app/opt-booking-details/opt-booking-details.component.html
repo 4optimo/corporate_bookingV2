@@ -778,9 +778,10 @@
                                 class="opt-txt__light">Mondello Park </span>
                             </div>
                             <div class="opt_flex__item opt_flex__item--vcenter opt-txt__caption opt-txt__light">
-                                <input matInput value="12-Jan-2018 10:00 AM | 13-Jan-2018 15:00PM" readonly>
+                                <input matInput value="25-Aug-2018 | 26-Aug-2018" readonly>
                                 <!-- <mat-form-field>
-                                <input class="" matInput [matDatepicker]="picker1" value="12-Jan-2018 10:00 AM | 12-Jan-2018 15:00PM"> 
+                                <input class="" matInput 
+                                [matDatepicker]="picker1" value="12-Jan-2018 10:00 AM | 12-Jan-2018 15:00PM"> 
                                 <mat-datepicker #picker1></mat-datepicker>
                               </mat-form-field> -->
                               
@@ -806,7 +807,7 @@
                         <div class="opt_flex__item tax-label">
                             <span class="opt_lbl_primary">inc Vat</span>
                             <mat-form-field class="editable-field">
-                                <input class="opt-txt__body2" matInput value="£92.89">
+                                <input class="opt-txt__body2" matInput value="£100.00">
                                 <div class="savechanges">
                                     <button mat-button class="panel-action-btn-icon mat-button">
                                       <i class="material-icons mat-btn-icon-btn">done</i>
@@ -820,7 +821,7 @@
                               </mat-form-field>
                         </div>
                         <div class="opt_flex__item time-label">
-                            <div class="opt-txt__body1"><span class="opt-txt__body1 __link"> Covers</span></div>
+                            <div class="opt-txt__body1"><span class="opt-txt__body1 __link"> Multiple</span></div>
                             <!-- <div class="opt-txt__body2"> 6</div> -->
                           </div>
                         <div class="opt_flex__item opt_flex__item--vcenter">
@@ -1002,6 +1003,7 @@
 
                 </div>
                 <mat-accordion>
+                  <!-- level 2 -->
                     <mat-expansion-panel #myPanel5 [disabled]="true">
 
                         <mat-expansion-panel-header class="opt_expand__header __include-package_line item-header"  collapsedHeight="55px" expandedHeight="55px">
@@ -1034,7 +1036,7 @@
                                         </span>
                                       </div>
                                       <div class="opt_flex__item opt_flex__item--vcenter opt-txt__caption opt-txt__light">
-                                          <input matInput value="12-Jan-2018 10:00 AM | 13-Jan-2018 15:00PM">
+                                          <input matInput value="25-Aug-2018 08:00 AM | 26-Aug-2018 12:00PM">
                                           <!-- <mat-form-field>
                                           <input class="" matInput [matDatepicker]="picker3" value="12-Jan-2018 10:00 AM | 12-Jan-2018 15:00PM"> 
                                           <mat-datepicker #picker3></mat-datepicker>
@@ -1062,15 +1064,12 @@
                                   <div class="opt_flex__item tax-label">
                                       <span class="opt_lbl_primary">inc Vat</span>
                                       <mat-form-field class="editable-field">
-                                          <input class="opt-txt__body2" matInput value="£92.89" readonly>
+                                          <input class="opt-txt__body2" matInput value="£50.00" readonly>
                                         </mat-form-field>
                                   </div>
                                   <div class="opt_flex__item time-label">
-                                      <div class="opt-txt__body1"><span class="opt-txt__body1 __link"> Covers</span></div>
-                                      <!-- <div class="opt-txt__body2"> 6</div> -->
-                                    </div>
-                                  <div class="opt_flex__item opt_flex__item--vcenter">
-                                      <app-opt-counter></app-opt-counter>
+                                      <div class="opt-txt__body1"><span class="opt-txt__body1 __link"> Halfday</span></div>
+                                      <div class="opt-txt__body2"> 2</div>
                                     </div>
                                   <div class="opt_flex__item price--values">
                                     <div class="opt_flex--container tc-flex-item__center tc-flex-just__right">
@@ -1080,84 +1079,6 @@
                                             <input class="opt-txt__body2" matInput value="£19,875.89" readonly>
                                           </mat-form-field>
                                         </form>
-                                      </div>
-                                      <div class="opt_flex__item  price--value__icon">
-                                        <span [matMenuTriggerFor]="menu" class="icon-coin-of-dollar"></span>
-                                        <mat-menu #menu="matMenu" class="filter-popover price-popover">
-                                          <div class="opt_flex--container" (click)="$event.stopPropagation();">
-                                            <div class="opt_flex__item price--values">
-                                              <div class="opt_flex--container filter-popover-item">
-                                                <div class="opt_flex__item opt_flex__item">
-                                                  <span class="opt-txt__body1">Net</span>
-                                                </div>
-                                                <div class="opt_flex__item--inherit opt-txt__align-right price--value__input">
-                                                  <mat-form-field class="">
-                                                    <input class="opt-txt__body1 opt-txt__secondary" matInput value="&pound;19,875.89">
-                                                  </mat-form-field>
-                                                </div>
-                                              </div>
-                                              <div class="opt_flex--container filter-popover-item">
-                                                <div class="opt_flex__item opt_flex__item">
-                                                  <span class="opt-txt__body1">Tax</span>
-                                                </div>
-                                                <div class="opt_flex__item--inherit opt-txt__align-right">
-                                                    <span class="opt-txt__body1 opt-txt__secondary">&pound;55.00</span>
-                                                </div>
-                                              </div>
-                                              <div class="opt_flex--container filter-popover-item">
-                                                <div class="opt_flex__item opt_flex__item">
-                                                  <span class="opt-txt__body1">Gross</span>
-                                                </div>
-                                                <div class="opt_flex__item--inherit opt-txt__align-right price--value__input">
-                                                  <form class="example-form">
-                                                    <mat-form-field class="">
-                                                      <input class="opt-txt__body1 opt-txt__secondary" matInput value="&pound;19,875.89">
-                                                    </mat-form-field>
-                                                  </form>
-                                                </div>
-                                              </div>
-                                              <div class="opt_flex--container filter-popover-item">
-                                                <div class="opt_flex__item opt_flex__item">
-                                                  <span class="opt-txt__body1">Margin</span>
-                                                </div>
-                                                <div class="opt_flex__item opt-txt__align-right">
-                                                  <span class="opt-txt__body1 opt-txt__secondary">&pound;55.00</span>
-                                                </div>
-                                              </div>
-                                              <div class="opt_flex--container filter-popover-item">
-                                                <div class="opt_flex__item opt_flex__item">
-                                                  <span class="opt-txt__body1">Estimate Cost</span>
-                                                </div>
-                                                <div class="opt_flex__item--inherit opt-txt__align-right price--value__input">
-                                                    <mat-form-field class="">
-                                                        <input class="opt-txt__body1 opt-txt__secondary" matInput value="&pound;19,875.89">
-                                                      </mat-form-field>
-                                                </div>
-                                              </div>
-                                              <div class="opt_flex--container filter-popover-item">
-                                                <div class="opt_flex__item opt_flex__item">
-                                                  <span class="opt-txt__body1">Actual Cost</span>
-                                                </div>
-                                                <div class="opt_flex__item--inherit opt-txt__align-right price--value__input">
-                                                    <mat-form-field class="">
-                                                        <input class="opt-txt__body1 opt-txt__secondary" matInput value="&pound;19,875.89">
-                                                      </mat-form-field>
-                                                </div>
-                                              </div>
-                                            </div>
-                                          </div>
-                                        </mat-menu>
-                                      </div>
-                                    </div>
-                                    <div class="opt_flex--container tc-flex-item__center">
-                                      <div class="opt_flex__item opt-txt__right opt__type">
-                                        <span class="opt-txt__body1 __link __bold" [matMenuTriggerFor]="menutaxtype">GST</span>
-                                        <mat-menu #menutaxtype="matMenu">
-                                            <button mat-menu-item>10</button>
-                                            <button mat-menu-item>GST</button>
-                                            <button mat-menu-item>Zero</button>
-                                            <button mat-menu-item>Vat 15</button>
-                                          </mat-menu>
                                       </div>
                                     </div>
                                   </div>
@@ -1200,11 +1121,307 @@
                                 </div>
                           </div>
                         </div>
-          
+                        <!-- 3rd level item --> 
+                        <div class="opt_flex--container opt-fd-col">
+                          <div class="opt_flex__item">
+                              <div class="opt_expand--container item-level-3">
+                                  <div class="row">
+                                    <div class="col-sm-6	col-md-5	col-lg-5	col-xl-4">
+                
+                                      <div class="opt_flex--container tc-flex-item__center ">
+                                        <div class="opt_flex__item--inherit icon__cage ">
+                                          <mat-checkbox></mat-checkbox>
+                                        </div>
+                
+                                        <div class="opt_flex__item package-name">
+                                          <div class="opt_flex--container">
+                                            <div class="opt_flex__item opt_flex__item--vcenter">
+                                                <mat-form-field class="">
+                                                    <input class="opt-txt__body2" matInput value="International Race Circuit" readonly>
+                                                  </mat-form-field>
+                                            </div>
+                                          </div>
+                                          <div class="opt_flex--container tc-flex-item__center event-details">
+                                            <div class="opt_flex__item--inherit icon__cage __min"><span
+                                              class="icon-icn-item package-color--item"> </span>
+                                            </div>
+                                            <div class="opt_flex__item opt_flex__item--inherit opt-txt__caption ">
+                                              <!--<span class="opt-txt__light"> 20-Jan-2018 </span> |-->
+                                              <span
+                                                class="opt-txt__light"> Mondello Park
+                                              </span>
+                                            </div>
+                                            <div class="opt_flex__item opt_flex__item--vcenter opt-txt__caption opt-txt__light">
+                                                <input matInput value="25-Aug-2018 08:00 AM | 25-Aug-2018 12:00PM">
+                                                <!-- <mat-form-field>
+                                                <input class="" matInput [matDatepicker]="picker3" value="12-Jan-2018 10:00 AM | 12-Jan-2018 15:00PM"> 
+                                                <mat-datepicker #picker3></mat-datepicker>
+                                              </mat-form-field> -->
+                                              
+                                              </div>
+                                          </div>
+                                        </div>
+                
+                                      </div>
+                                    </div>
+                                    <!-- <div class="col-sm-6	col-md-2	col-lg-2	col-xl-3 ">
+                                      <div class="opt_flex--container tc-flex-item__center ">
+                                        <div class="opt_flex__item ">
+                                          <div class="opt-txt__body1"><span class="opt-txt__body1 __link"> Covers</span></div>
+                                          
+                                        </div>
+                                        
+                                      </div>
+                                    </div> -->
+                                    <div class="col-sm-12	col-md-7	col-lg-7	col-xl-8">
+                                      <div class="opt_flex--container tc-flex-item__center __bold __item--value">
+                                          <!-- <div class="opt_flex__item--inherit">
+                                          </div> -->
+                                        <div class="opt_flex__item tax-label">
+                                            <span class="opt_lbl_primary">inc Vat</span>
+                                            <mat-form-field class="editable-field">
+                                                <input class="opt-txt__body2" matInput value="£92.89" readonly>
+                                              </mat-form-field>
+                                        </div>
+                                        <div class="opt_flex__item time-label">
+                                            <div class="opt-txt__body1"><span class="opt-txt__body1 __link"> Halfday</span></div>
+                                            <div class="opt-txt__body2"> 1</div>
+                                          </div>
+                                        <div class="opt_flex__item price--values">
+                                          <div class="opt_flex--container tc-flex-item__center tc-flex-just__right">
+                                            <div class="opt_flex__item--inherit price--value__input">
+                                              <form class="example-form">
+                                                <mat-form-field class="">
+                                                  <input class="opt-txt__body2" matInput value="£19,875.89" readonly>
+                                                </mat-form-field>
+                                              </form>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                
+                                    </div>
+                                  </div>
+                
+                                  <!--<div class="loadding&#45;&#45;cage">-->
+                                  <!--<mat-progress-bar mode="query"></mat-progress-bar>-->
+                                  <!--</div>-->
+                
+                                </div>
+                          </div>
+                          <div class="opt_flex__item">
+                              <div class="opt_expand--container item-level-3">
+                                  <div class="row">
+                                    <div class="col-sm-6	col-md-5	col-lg-5	col-xl-4">
+                
+                                      <div class="opt_flex--container tc-flex-item__center ">
+                                        <div class="opt_flex__item--inherit icon__cage ">
+                                          <mat-checkbox></mat-checkbox>
+                                        </div>
+                
+                                        <div class="opt_flex__item package-name">
+                                          <div class="opt_flex--container">
+                                            <div class="opt_flex__item opt_flex__item--vcenter">
+                                                <mat-form-field class="">
+                                                    <input class="opt-txt__body2" matInput value="International Race Circuit" readonly>
+                                                  </mat-form-field>
+                                            </div>
+                                          </div>
+                                          <div class="opt_flex--container tc-flex-item__center event-details">
+                                            <div class="opt_flex__item--inherit icon__cage __min"><span
+                                              class="icon-icn-item package-color--item"> </span>
+                                            </div>
+                                            <div class="opt_flex__item opt_flex__item--inherit opt-txt__caption ">
+                                              <!--<span class="opt-txt__light"> 20-Jan-2018 </span> |-->
+                                              <span
+                                                class="opt-txt__light"> Mondello Park
+                                              </span>
+                                            </div>
+                                            <div class="opt_flex__item opt_flex__item--vcenter opt-txt__caption opt-txt__light">
+                                                <input matInput value="26-Aug-2018 08:00 AM | 26-Aug-2018 12:00PM">
+                                                <!-- <mat-form-field>
+                                                <input class="" matInput [matDatepicker]="picker3" value="12-Jan-2018 10:00 AM | 12-Jan-2018 15:00PM"> 
+                                                <mat-datepicker #picker3></mat-datepicker>
+                                              </mat-form-field> -->
+                                              
+                                              </div>
+                                          </div>
+                                        </div>
+                
+                                      </div>
+                                    </div>
+                                    <!-- <div class="col-sm-6	col-md-2	col-lg-2	col-xl-3 ">
+                                      <div class="opt_flex--container tc-flex-item__center ">
+                                        <div class="opt_flex__item ">
+                                          <div class="opt-txt__body1"><span class="opt-txt__body1 __link"> Covers</span></div>
+                                          
+                                        </div>
+                                        
+                                      </div>
+                                    </div> -->
+                                    <div class="col-sm-12	col-md-7	col-lg-7	col-xl-8">
+                                      <div class="opt_flex--container tc-flex-item__center __bold __item--value">
+                                          <!-- <div class="opt_flex__item--inherit">
+                                          </div> -->
+                                        <div class="opt_flex__item tax-label">
+                                            <span class="opt_lbl_primary">inc Vat</span>
+                                            <mat-form-field class="editable-field">
+                                                <input class="opt-txt__body2" matInput value="£92.89" readonly>
+                                              </mat-form-field>
+                                        </div>
+                                        <div class="opt_flex__item time-label">
+                                            <div class="opt-txt__body1"><span class="opt-txt__body1 __link"> Halfday</span></div>
+                                            <div class="opt-txt__body2"> 1</div>
+                                          </div>
+                                        <div class="opt_flex__item price--values">
+                                          <div class="opt_flex--container tc-flex-item__center tc-flex-just__right">
+                                            <div class="opt_flex__item--inherit price--value__input">
+                                              <form class="example-form">
+                                                <mat-form-field class="">
+                                                  <input class="opt-txt__body2" matInput value="£19,875.89" readonly>
+                                                </mat-form-field>
+                                              </form>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                
+                                    </div>
+                                  </div>
+                
+                                  <!--<div class="loadding&#45;&#45;cage">-->
+                                  <!--<mat-progress-bar mode="query"></mat-progress-bar>-->
+                                  <!--</div>-->
+                
+                                </div>
+                          </div>
+                        </div>
                         <!--</mat-panel-description>-->
           
           
                       </mat-expansion-panel>
+                      <mat-expansion-panel #myPanel5 [disabled]="true">
+
+                          <mat-expansion-panel-header class="opt_expand__header __include-package_line item-header"  collapsedHeight="55px" expandedHeight="55px">
+            
+                            <div class="opt_expand--container ">
+                              <div class="row">
+                                <div class="col-sm-6	col-md-5	col-lg-5	col-xl-4">
+            
+                                  <div class="opt_flex--container tc-flex-item__center ">
+                                    <div class="opt_flex__item--inherit icon__cage ">
+                                      <mat-checkbox></mat-checkbox>
+                                    </div>
+            
+                                    <div class="opt_flex__item package-name">
+                                      <div class="opt_flex--container">
+                                        <div class="opt_flex__item opt_flex__item--vcenter">
+                                            <mat-form-field class="">
+                                                <input class="opt-txt__body2" matInput value="International Race Circuit" readonly>
+                                              </mat-form-field>
+                                        </div>
+                                      </div>
+                                      <div class="opt_flex--container tc-flex-item__center event-details">
+                                        <div class="opt_flex__item--inherit icon__cage __min"><span
+                                          class="icon-icn-item package-color--item"> </span>
+                                        </div>
+                                        <div class="opt_flex__item opt_flex__item--inherit opt-txt__caption ">
+                                          <!--<span class="opt-txt__light"> 20-Jan-2018 </span> |-->
+                                          <span
+                                            class="opt-txt__light"> Mondello Park
+                                          </span>
+                                        </div>
+                                        <div class="opt_flex__item opt_flex__item--vcenter opt-txt__caption opt-txt__light">
+                                            <input matInput value="25-Aug-2018 12:00 PM | 25-Aug-2018 15:00PM">
+                                            <!-- <mat-form-field>
+                                            <input class="" matInput [matDatepicker]="picker3" value="12-Jan-2018 10:00 AM | 12-Jan-2018 15:00PM"> 
+                                            <mat-datepicker #picker3></mat-datepicker>
+                                          </mat-form-field> -->
+                                          
+                                          </div>
+                                      </div>
+                                    </div>
+            
+                                  </div>
+                                </div>
+                                <!-- <div class="col-sm-6	col-md-2	col-lg-2	col-xl-3 ">
+                                  <div class="opt_flex--container tc-flex-item__center ">
+                                    <div class="opt_flex__item ">
+                                      <div class="opt-txt__body1"><span class="opt-txt__body1 __link"> Covers</span></div>
+                                      
+                                    </div>
+                                    
+                                  </div>
+                                </div> -->
+                                <div class="col-sm-12	col-md-7	col-lg-7	col-xl-8">
+                                  <div class="opt_flex--container tc-flex-item__center __bold __item--value">
+                                      <!-- <div class="opt_flex__item--inherit">
+                                      </div> -->
+                                    <div class="opt_flex__item tax-label">
+                                        <span class="opt_lbl_primary">inc Vat</span>
+                                        <mat-form-field class="editable-field">
+                                            <input class="opt-txt__body2" matInput value="£50.00" readonly>
+                                          </mat-form-field>
+                                    </div>
+                                    <div class="opt_flex__item time-label">
+                                        <div class="opt-txt__body1"><span class="opt-txt__body1 __link"> Hourly</span></div>
+                                        <div class="opt-txt__body2"> 3</div>
+                                      </div>
+                                    <div class="opt_flex__item price--values">
+                                      <div class="opt_flex--container tc-flex-item__center tc-flex-just__right">
+                                        <div class="opt_flex__item--inherit price--value__input">
+                                          <form class="example-form">
+                                            <mat-form-field class="">
+                                              <input class="opt-txt__body2" matInput value="£19,875.89" readonly>
+                                            </mat-form-field>
+                                          </form>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="opt_flex__item action__button ">
+                                      <button mat-icon-button color="primary" (click)="expandPannel5()" [disableRipple]="true">
+                                        <mat-icon>{{matIcon5}}</mat-icon>
+                                      </button>
+                                    </div>
+                                  </div>
+            
+                                </div>
+                              </div>
+            
+                              <!--<div class="loadding&#45;&#45;cage">-->
+                              <!--<mat-progress-bar mode="query"></mat-progress-bar>-->
+                              <!--</div>-->
+            
+                            </div>
+            
+            
+                          </mat-expansion-panel-header>
+                          <!--<mat-panel-description>-->
+                          <!--This is a summary of the content1-->
+                          <div class="expansion-panel_body __inner_body ">
+                            <div class="__data">
+                                <div class="col-sm-8	col-md-8	col-lg-8	col-xl-8">
+                                  </div>
+                                <div class="col-sm-4 col-md-4	col-lg-4	col-xl-4">
+  
+                                    <div class="opt_flex--container tc-flex-item__center __data">
+                                      <div class="opt_flex__item icon__cage --right __multi-buttons opt-txt__right ">
+                    
+                                        <button mat-icon-button class="btn-color-default freezed-icon __delete mat-icon-button" matTooltip="Delete">
+                                          <i class="material-icons">
+                                            delete
+                                          </i>
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </div>
+                            </div>
+                          </div>
+                          <!-- 3rd level item --> 
+                          <!--</mat-panel-description>-->
+            
+            
+                        </mat-expansion-panel>
                 </mat-accordion>
                 
               </div>
