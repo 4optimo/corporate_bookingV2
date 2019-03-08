@@ -23,6 +23,7 @@ import { OptShipmentScreenComponent } from "../opt-shipment-screen/opt-shipment-
 import { OptDiscountSearchComponent } from '../opt-discount-search/opt-discount-search.component';
 import { OptContactSetupPopupComponent } from '../opt-contact-setup-popup/opt-contact-setup-popup.component';
 import { OptBondItemsPopupComponent } from '../opt-bond-items-popup/opt-bond-items-popup.component';
+import { OptCancelBookingComponent } from '../opt-cancel-booking/opt-cancel-booking.component';
 @Component({
   selector: 'app-opt-popup-window',
   templateUrl: './opt-popup-window.component.html',
@@ -255,6 +256,14 @@ export class OptPopupWindowComponent implements OnInit {
       width: '40%'
     });
 
+  }
+  public openCancelBooking(){
+    this.dialog.open(OptCancelBookingComponent, {
+      data: { name: 'Cancel Booking' },
+      panelClass: ['custom-dialog-container'],
+      height: 'auto',
+      width: '50%'
+    });
   }
   ngOnInit() {
   }

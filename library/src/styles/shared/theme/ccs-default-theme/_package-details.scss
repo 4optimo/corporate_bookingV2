@@ -2,10 +2,13 @@
 
 .opt_package-details {
   .mat-tab-group {
-    margin-top: 30px;
+    //margin-top: 30px;
     .mat-tab-header {
       display: none;
     }
+  }
+  .mat-expansion-panel-header{
+    overflow: hidden !important;
   }
 }
 
@@ -17,54 +20,53 @@ button {
   }
 }
 .opt_calender-popup{
-  .date_time-section{
-    width: 100%;
-    margin-bottom: 15px !important;
-  }
-  .edit_area{
-        padding-top:10px;
-      .opt_flex--container{
-        margin:10px 0px;
-        .mat-form-field{
+    .date_time-section{
+      width: 100%;
+      margin-bottom: 15px !important;
+    }
+    .edit_area{
+          padding-top:10px;
+        .opt_flex--container{
+          margin:10px 0px;
+          .mat-form-field{
           padding-right: 10px;
         }
-        .mat-input-element{
-            text-align: unset;
-          }
-          .mat-form-field-suffix{
-            position: relative;
-            top:5px;
-          }
-          .mat-form-field-infix{
-              padding: .4375em 0 !important;
-              border-top: .84375em solid transparent !important;
-          }
-          .mat-form-field-underline{
-              bottom:1.25em !important;
-          }
+          .mat-input-element{
+              text-align: unset;
+            }
+            .mat-form-field-suffix{
+              position: relative;
+              top:5px;
+            }
+            .mat-form-field-infix{
+                padding: .4375em 0 !important;
+                border-top: .84375em solid transparent !important;
+            }
+            .mat-form-field-underline{
+                bottom:1.25em !important;
+            }
+        }
       }
+    .error_msg{
+        position: relative;
+        bottom: 20px;
     }
-  .error_msg{
-      position: relative;
-      bottom: 20px;
-  }
-  .mat-expansion-panel{
-    &.outer-wrapper{
-      
-      border: 1px solid #e0e0e0;
-    }
-      &.mat-expanded{
-          padding-bottom:0px !important;
-          .mat-expansion-panel-content{
-              box-shadow:unset;
-              background-color:#fff;
-          }
-      }
-      .mat-expansion-panel-header{
+    .mat-expansion-panel{
+        &.outer-wrapper{
+            border: 1px solid #e0e0e0;
+        }
+        &.mat-expanded{
+            padding-bottom:0px !important;
+            .mat-expansion-panel-content{
+                box-shadow:unset;
+                background-color:#fff;
+            }
+        }
+        .mat-expansion-panel-header{
         background-color: #eeeeee50;
       }
-  }
-}
+    }
+ }
 .opt_package-popup {
   .opt_booking__list {
     .mat-accordion {
@@ -132,7 +134,7 @@ button {
     }
   }
   .package-wrapper {
-    padding-top: 40px;
+    //padding-top: 40px;
     .mat-slide-toggle {
       margin-left: 10px;
     }
@@ -322,7 +324,7 @@ button {
       //padding: 0 15px;
       .mat-expansion-panel-header {
         padding: 0 15px;
-        overflow: hidden;
+        overflow:hidden !important;
       }
       &::-webkit-scrollbar {
         width: 5px;
@@ -393,9 +395,6 @@ button {
       }
       .inner-wrapper {
         .time-slot-selection {
-          mat-icon{
-            cursor: pointer;
-          }
           overflow-y: auto;
           padding: 0 15px;
           background-color: $light_background;
@@ -497,8 +496,17 @@ button {
       //padding-right: 15px;
     }
   }
-
+  .availability-details{
+    flex-direction: row;
+    align-items: center;
+    .availability-label{
+        &:hover{
+            text-decoration:underline;
+        }
+    }
+  }
   .availability-icon {
+    width: 35px;
     &.__last-few {
       color: $opt_status_few_availability;
     }
