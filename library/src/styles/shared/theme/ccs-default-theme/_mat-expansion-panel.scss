@@ -28,7 +28,7 @@
     span {
       font-size: 17px;
       &.material-icons {
-        font-size: 24px;
+        font-size: 18px;
         vertical-align: middle;
         transform: rotate(0.03deg);
       }
@@ -249,6 +249,7 @@ mat-expansion-panel {
       }
       .package_details {
         padding: 0 15px;
+        width: 250px;
         .package_title {
           overflow: visible;
           white-space: normal;
@@ -262,7 +263,7 @@ mat-expansion-panel {
           }
           .badge-warning{
             color: #000;
-            font-size: 12px !important;
+            font-size: 11px !important;
             background-color: #cbdfec !important;
             padding-left: 2px;
             padding-right: 3px;
@@ -287,6 +288,11 @@ mat-expansion-panel {
           }
           span {
             vertical-align: middle;
+          }
+          .package-date-time{
+              &:hover{
+                  text-decoration:underline;
+              }
           }
         }
       }
@@ -343,18 +349,20 @@ mat-expansion-panel {
       .three_div_combo{
         flex-direction: row;
         margin-right: 10px;
+        width:120px;
+        justify-content:flex-end;
         .lbl__vat{
           margin-right: 5px;
         }
       }
       .three_div_solo{
-        i{
-          line-height: 15px;
-        }
+          i{
+              line-height: 15px;
+          }
       }
     }
     .button-col{
-      width:unset !important;
+        width:unset !important;
     }
   }
 }
@@ -430,21 +438,21 @@ mat-expansion-panel {
     
   }
   .pricing_options {
-    .mat-radio-label{
-      display:flex;
-      align-items:center;
-      font-size: 13px !important;
-    font-weight: 500 !important;
-    padding-left: 0px;
-  }
-  .mat-radio-button{
-    padding-left: 0px;
-  }
     padding: 15px 0;
     padding-bottom: 0;
+    .mat-radio-label{
+        display:flex;
+        align-items:center;
+        font-size: 13px !important;
+    font-weight: 500 !important;
+    padding-left:0px;
+    }
+    .mat-radio-button{
+    padding-left: 0px;
+  }
     .auto_generated {
       padding: 0 15px;
-      margin-bottom: 10px;
+      margin-bottom:10px;
       &.disabled {
         .price_types_wrapper {
           color: #dadada;
@@ -464,7 +472,7 @@ mat-expansion-panel {
     }
     .price_types {
       &.outer {
-        padding: 0px;
+        padding:0px;
         .price_types {
           &.inner {
             .pricing_title {
@@ -478,15 +486,23 @@ mat-expansion-panel {
         justify-content: space-between;
         align-items: center;
         padding: 3px 0;
-        font-size: 13px;
-        font-weight: 500;
+            font-size: 13px;
+    font-weight: 500;
         .pricing_title {
           flex-basis: 150px;
-          padding-left: 27px;
+              padding-left: 27px;
         }
         .pricing_calc {
           display: flex;
           align-items: center;
+          .pricing-calc-val{
+              width:100px;
+          }
+          .pricing-calc-select{
+              .mat-form-field{
+                  width:100px;
+              }
+          }
         }
         .pricing_total {
           flex-basis: 100px;

@@ -387,17 +387,17 @@ h1,h2,h3,h4,h5,h6{
     }
 }
 .general-popover{
-  max-width:unset !important;
-  min-width:unset !important;
-  height: 100%;
-  padding:0 10px;
-  max-height: 400px !important;
-  .config-popup{
-      box-shadow:none !important;
-      .header-row{
-        margin:10px 0px;
-      }
-  }
+    max-width:unset !important;
+    min-width:unset !important;
+    padding:0 10px;
+    height:100%;
+    max-height: 400px !important;
+    .config-popup{
+        box-shadow:none !important;
+        .header-row{
+            margin:10px 0px;
+        }
+    }
 }
 .ngx-wrapper{
   b{
@@ -415,7 +415,6 @@ h1,h2,h3,h4,h5,h6{
     margin-left: 10px;
   }
 }
-
 //Scroll Bar styles//
 
 /* width */
@@ -442,128 +441,22 @@ h1,h2,h3,h4,h5,h6{
 
 //End of scroll bar styles//
 .inline-spinner {
-  .mat-spinner {
-      height: 20px !important;
-      width: 20px !important;
+    .mat-spinner {
+        height: 20px !important;
+        width: 20px !important;
 
-      svg {
-          height: 20px !important;
-          width: 20px !important;
+        svg {
+            height: 20px !important;
+            width: 20px !important;
+        }
+    }
+}
+
+.sp-label{
+      display: flex;
+      align-items: center;
+      .symbol_icon{
+        padding-right: 5px;
+        color:#909cac;
       }
-  }
-}
-
-//Timeline styles
-.man-popup-cop{
-  margin: 30px 0px;
-  .timeline{
-    background-color: #1ce884;
-    height: 20px;
-    width: 100%;
-    /* position: absolute; */
-    z-index: 3;
-    -webkit-border-radius: 9px;
-    -moz-border-radius: 9px;
-    border-radius: 9px;
-    margin:unset;
-    &:before{
-      display: none;
-    }
-  }
-  
-  .time-line--sub{
-    background-color: #f5766c;
-    height: 20px;
-    position: absolute;
-    z-index: 300;
-    width: 50px;
-    //margin-top: -20px;
-  }
-  
-  
-  .time-line-separator{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-content: stretch;
-    align-items: flex-start;
-    background-color: #f1f5f8;
-    border-bottom: 2px solid #4bb3fa;
-  
-  }
-  
-  .line{
-    order: 0;
-    flex: 1 0 auto;
-    align-self: stretch;
-    border-right: 1px solid #4bb3fa;
-    height: 10px;
-
-    &:nth-child(1) {
-      position:relative;
-      border-left: 1px solid #4bb3fa;
-
-      &:after {
-          content:"12:00 am";
-          position:absolute;
-          top:20px;
-          right: 15px;
-          width: 60px;
-          font-size: 12px;
-        }
-    }
-    
-    &:nth-child(6) {
-      position:relative;
-      &:after {
-          content:"6:00 am";
-          position:absolute;
-          top:20px;
-          right: -40px;
-          width: 60px;
-          font-size: 12px;
-        }
-    }
-    &:nth-child(12) {
-      position:relative;
-      &:after {
-          content:"12:00 pm";
-          position:absolute;
-          top:20px;
-          right: -40px;
-          width: 60px;
-          font-size: 12px;
-        }
-    }
-    &:nth-child(18) {
-      position:relative;
-      &:after {
-          content:"6:00 pm";
-          position:absolute;
-          top:20px;
-          right: -40px;
-          width: 60px;
-          font-size: 12px;
-        }
-    }
-    &:nth-child(24) {
-      position:relative;
-      &:after {
-          content:"12:00 am";
-          position:absolute;
-          top:20px;
-          right: -40px;
-          width: 60px;
-          font-size: 12px;
-        }
-    }
-    }
-}
-.timepicker-panel{
-  padding:10px;
-  .mat-button{
-    width: 100%;
-    margin-top: 10px;
-  }
 }

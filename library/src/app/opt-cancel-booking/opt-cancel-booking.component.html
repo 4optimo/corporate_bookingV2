@@ -1,97 +1,188 @@
-<div class="conf-message-wrapper">
-  <div class="confirmation-message">
-      <div mat-dialog-content>
-        <div class="row">
-          <div class="col-md-1">
-            <div class="opt_flex--container">
-              <div class="opt_flex__item">
-                  <i class="material-icons">info</i>
-              </div>
+<div class="opt_modal-content">
+  <div class="mat-dialog-content">
+    <div class="opt_modal-header ">
+      <div class="test opt--depth__1">
+        <div class="opt_flex--container test-wrapper">
+          <div class="opt_flex__item--inherit test-inner">
+            <div class="inner-icon-black">
+              <i class="material-icons">highlight_off</i>
             </div>
           </div>
-          <div class="col-md-11">
-              <div class="opt_flex--container">
-                  <div class="opt_flex__item">
-                      <p class="opt-txt__body1">Are you sure you want to cancel this booking?</p>  
-                  </div>
-                </div>
+          <div class="opt_flex__item test-inner-expand">
+            <div class="title">
+              <h1 mat-dialog-title>{{data.name}}</h1>
+            </div>
+          </div>
+          <div class="opt_flex__item--inherit test-inner-2">
+            <div class="inner-action">
+              <button class="material-icons icon1">launch</button>
+              <button class="material-icons icon2" (click)="close()">close</button>
+            </div>
           </div>
         </div>
-        </div>
-        <div mat-dialog-actions>
+      </div>
+    </div>
+    <div class="cancel-booking-wrapper">
+      <div class="row">
+        <div class="col-xs-6 col-md-6">
           <div class="opt_flex--container">
-            <div class="opt_flex__item just-content-end">
-                <button mat-button class="mat-btn-primary--small" (click)="onNoClick()">No, dont cancel</button>
-                <button mat-button class="mat-btn-primary--small" [mat-dialog-close]>Yes, cancel</button>
+            <div class="opt_flex__item opt_flex__item--vcenter">
+              <div class="opt-txt__body2">Cancellation Reason</div>
             </div>
           </div>
         </div>
-  </div>
-  <div class="reason-message">
-      <div mat-dialog-content>
-          <div class="row">
-              <div class="col-md-3">
-                <div class="opt_flex--container">
-                  <div class="opt_flex__item">
-                    <div class="opt-txt__body2-small ">Cancellation Reason</div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-9">
-                <div class="opt_flex--container">
-                  <div class="opt_flex__item">
-                    <mat-form-field>
-                      <mat-select class="mat-option-text">
-                        <mat-option value="option1">Alternative geographical destination-Global</mat-option>
-                        <mat-option value="option2">Alternative geographical destination-Local</mat-option>
-                        <mat-option value="option3">Alternative geographical destination-Regional</mat-option>
-                        <mat-option value="option4">Client budget constraint</mat-option>
-                        <mat-option value="option5">Duplicate booking</mat-option>
-                        <mat-option value="option6">Event cancelled</mat-option>
-                        <mat-option value="option7">Event pstpond to an undetermined date</mat-option>
-                        <mat-option value="option8">Event resheduled (new date alredy set)</mat-option>
-                        <mat-option value="option9">Lack of availability in internal resources</mat-option>
-                        <mat-option value="option10">Lost to competition</mat-option>
-                        <mat-option value="option11">Required facility not available</mat-option>
-                        <mat-option value="option12">Venue capacity constraint</mat-option>
-                        <mat-option value="option1">New</mat-option>
-                      </mat-select>
-                    </mat-form-field>
-                  </div>
-                </div>
-              </div>
+        <div class="col-xs-6 col-md-6">
+          <div class="opt_flex--container">
+            <div class="opt_flex__item">
+              <!-- <mat-form-field>
+                <textarea matInput placeholder="Select Cancellation Reason"></textarea>
+              </mat-form-field> -->
+              <mat-form-field>
+                <mat-select placeholder="Select Cancellation Reason">
+                  <mat-option value="1">1</mat-option>
+                  <mat-option value="2">2</mat-option>
+                  <mat-option value="3">3</mat-option>
+                </mat-select>
+              </mat-form-field>
             </div>
-            <div class="row">
-              <div class="col-md-3">
-                <div class="opt_flex--container">
-                  <div class="opt_flex__item">
-                    <div class="opt-txt__body2-small">Notes</div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-9">
-                <div class="opt_flex--container">
-                  <div class="opt_flex__item">
-                    <form class="example-form">
-                      <mat-form-field class="example-full-width">
-                        <input matInput>
-                      </mat-form-field>
-                    </form>
-                  </div>
-                </div>
-              </div>
-            </div>
+          </div>
+        </div>
       </div>
-      <div mat-dialog-actions>
-          <div class="row">
-              <div class="col-md-9">
+      <div class="row">
+        <div class="col-xs-6 col-md-6">
+          <div class="opt_flex--container">
+            <div class="opt_flex__item opt_flex__item--vcenter">
+              <div class="opt-txt__body2">Note</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-6 col-md-6">
+          <div class="opt_flex--container">
+            <div class="opt_flex__item">
+              <mat-form-field>
+                <textarea matInput placeholder="Cancellation Note"></textarea>
+              </mat-form-field>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row cp-row">
+        <div class="col-xs-6 col-md-6">
+          <div class="opt_flex--container">
+            <div class="opt_flex__item opt_flex__item--vcenter">
+              <div class="opt-txt__body2">Applied Cancellation Policy</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-6 col-md-6">
+          <div class="opt_flex--container">
+            <div class="opt_flex__item opt_flex__item--vcenter">
+              <div class="opt-txt__body2 cp-value">20-50-70-100</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row cancellation-row">
+        <div class="col-xs-6 col-md-6">
+          <div class="opt_flex--container opt-fd-col">
+            <div class="opt_flex__item opt_flex__item--vcenter">
+              <div class="opt-txt__body2">Cancellation Fee</div>
+            </div>
+            <div class="opt_flex__item">
+              <div class="opt-txt__body1-small opt-txt__caption">10% of the total booking amount</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-6 col-md-6">
+            <div class="opt_flex--container">
                 <div class="opt_flex__item">
-                  <button mat-button class="mat-btn-primary--small" (click)="onNoClick()">OK</button>
-                  <button mat-button class="mat-btn-primary--small" (click)="onNoClick()">Cancel</button>
+                    <mat-form-field>
+                        <input class="opt-txt__body2" matInput value="£200.00">
+                    </mat-form-field>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+            <div class="opt_flex--container">
+                <div class="opt_flex__item opt_flex__item--vcenter">
+                    <mat-checkbox><span class="opt-txt__body2">Bond Refund Amount</span></mat-checkbox>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div class="br-row">
+          <div class="row header-row">
+              <div class="col-xs-6 col-md-6">
+                <div class="opt_flex--container">
+                      <div class="opt_flex__item opt_flex__item--vcenter">
+                          <div class="opt-txt__body2">Bond Name</div>
+                      </div>
+                </div>
+              </div>
+              <div class="col-xs-6 col-md-6 right-col">
+                  <div class="opt_flex--container">
+                      <div class="opt_flex__item opt_flex__item--vcenter just-content-end p33">
+                          <div class="opt-txt__body2 header-label">Bond Amount</div>
+                      </div>
+                      <div class="opt_flex__item opt_flex__item--vcenter just-content-end p33">
+                          <div class="opt-txt__body2 header-label">Forfeit</div>
+                      </div>
+                      <div class="opt_flex__item opt_flex__item--vcenter just-content-end p33">
+                          <div class="opt-txt__body2 header-label">Refund</div>
+                      </div>
                 </div>
               </div>
             </div>
+            <div class="row br-val-row">
+                <div class="col-xs-6 col-md-6">
+                  <div class="opt_flex--container">
+                        <div class="opt_flex__item opt_flex__item--vcenter">
+                            <div class="opt-txt__body2">Bond_1</div>
+                        </div>
+                  </div>
+                </div>
+                <div class="col-xs-6 col-md-6 right-col">
+                    <div class="opt_flex--container">
+                        <div class="opt_flex__item opt_flex__item--vcenter p33 just-content-end bond-amount-value">
+                            <div class="opt-txt__body2">£1000.00</div>
+                            <!-- <mat-form-field>
+                                <input class="opt-txt__body2" matInput value="£1000.00">
+                            </mat-form-field> -->
+                        </div>
+                        <div class="opt_flex__item opt_flex__item--vcenter p33">
+                            <mat-form-field>
+                                <input class="opt-txt__body2" matInput value="£200.00">
+                            </mat-form-field>
+                        </div>
+                        <div class="opt_flex__item opt_flex__item--vcenter p33">
+                            <mat-form-field>
+                                <input class="opt-txt__body2" matInput value="£1000.00">
+                            </mat-form-field>
+                        </div>
+                  </div>
+                </div>
+              </div>
+      </div>
+      
+      <div class="row error-msg-row">
+        <div class="col-md-12">
+            <div class="opt_flex--container">
+              <div class="opt_flex__item opt_flex__item opt_flex__item--vcenter">
+                <div class="opt-txt__body2"><i class="material-icons">info</i> Total value of forfeit and refund should be equal to bond amount.</div>
+              </div>
+            </div>
+      </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="opt_flex--container">
+                <div class="opt_flex__item cb-button-row">
+                  <button mat-button class="mat-btn-primary">OK</button>
+                </div>
+              </div>
+        </div>
       </div>
   </div>
-    
-  
+</div>
