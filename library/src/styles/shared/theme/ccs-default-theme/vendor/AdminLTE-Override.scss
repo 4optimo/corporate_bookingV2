@@ -427,3 +427,17 @@ body {
       }
   }
 }
+.sidebar{
+    .user-panel{
+        display:flex;
+        align-items:center;
+        .pull-left{
+            display: flex;
+            align-items: center;
+            .pull-icon{
+                margin-top:0px;
+                padding-left:110px;
+            }
+        }
+    }
+}

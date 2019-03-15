@@ -26,9 +26,9 @@
   padding-right: 15px;
   .btn-color-default {
     span {
-      font-size: 17px;
+      //font-size: 17px;
       &.material-icons {
-        font-size: 18px;
+        //font-size: 18px;
         vertical-align: middle;
         transform: rotate(0.03deg);
       }
@@ -44,6 +44,9 @@
     &.--warning {
       background-color: #f5c70e;
       color: #fff !important;
+      .actionable-icon{
+          color:#fff !important;
+      }
       .warning-icon{
         border-radius: 50%;
         background-color: #f4493c;
@@ -254,6 +257,11 @@ mat-expansion-panel {
           overflow: visible;
           white-space: normal;
           width: fit-content;
+          display:flex;
+          align-items:center;
+          .material-icons{
+              padding-left:5px;
+          }
           .cover_count {
             display: none;
           }
