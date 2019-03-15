@@ -353,7 +353,25 @@
                     padding: 0px;
 
                     .__multi-buttons {
-                        padding-left: 32px;
+                        display: flex;
+                        align-items: center;
+                        padding-left: 15px;
+
+                        .info-icons {
+                            display: flex;
+                            align-items: center;
+                            margin-left: 20px;
+                            .material-icons {
+                                padding: 0;
+                                min-width: 0;
+                                width: 40px;
+                                height: 40px;
+                                flex-shrink: 0;
+                                line-height: 40px;
+                                border-radius: 50%;
+                                text-align: center;
+                            }
+                        }
                     }
 
                     .__include-package_line {
@@ -372,6 +390,10 @@
                         &.mat-expanded {
                             box-shadow: 0px 7px 5px -2px rgba(0,0,0,.1), 0px 3px 2px 0 rgba(0,0,0,.14), 0 0px 10px 0px rgba(0,0,0,.14);
                             margin: 50px 10px;
+
+                            .info-icons {
+                                margin-left: 20px;
+                            }
 
                             .freezed-icon {
                                 //top: 5px !important;
@@ -485,10 +507,12 @@
                 .event-name {
                     font-weight: 600;
                 }
-                .booking-start-date{
+
+                .booking-start-date {
                     //font-weight:500;
                 }
-                .booking-start-time{
+
+                .booking-start-time {
                     //font-weight:500;
                 }
             }

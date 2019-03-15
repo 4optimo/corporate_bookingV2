@@ -245,7 +245,7 @@ mat-option:hover{
   }
 }
 .opt-text-danger{
-  color: $no-color--state;
+  color: $no-color--state !important;
 }
 .badge{
   span{
@@ -459,4 +459,251 @@ h1,h2,h3,h4,h5,h6{
         padding-right: 5px;
         color:#909cac;
       }
+}
+.actionable-icon{
+  color:$opt-text-color__quaternary !important;
+}
+.information-icon{
+  color:$opt-text-color__secondary !important;
+}
+.img-new {
+  display: block;
+  max-width: 100%;
+  height: 40px;
+  padding-top: 6px;
+  padding-left: 6px;
+}
+.nav-icon{
+  color:#e6c62d;
+}
+.pull-icon{
+  padding-left: 120px;
+  margin-top: -21px;
+}
+//Timeline styles
+
+.man-popup-cop{
+
+  margin: 30px 0px;
+
+  .timeline{
+
+    background-color: #1ce884;
+
+    height: 20px;
+
+    width: 100%;
+
+    /* position: absolute; */
+
+    z-index: 3;
+
+    -webkit-border-radius: 9px;
+
+    -moz-border-radius: 9px;
+
+    border-radius: 9px;
+
+    margin:unset;
+
+    &:before{
+
+      display: none;
+
+    }
+
+  }
+
+  
+
+  .time-line--sub{
+
+    background-color: #f5766c;
+
+    height: 20px;
+
+    position: absolute;
+
+    z-index: 300;
+
+    width: 50px;
+
+    //margin-top: -20px;
+
+  }
+
+  
+
+  
+
+  .time-line-separator{
+
+    display: flex;
+
+    flex-direction: row;
+
+    flex-wrap: nowrap;
+
+    justify-content: flex-start;
+
+    align-content: stretch;
+
+    align-items: flex-start;
+
+    background-color: #f1f5f8;
+
+    border-bottom: 2px solid #4bb3fa;
+
+  
+
+  }
+
+  
+
+  .line{
+
+    order: 0;
+
+    flex: 1 0 auto;
+
+    align-self: stretch;
+
+    border-right: 1px solid #4bb3fa;
+
+    height: 10px;
+
+
+
+    &:nth-child(1) {
+
+      position:relative;
+
+      border-left: 1px solid #4bb3fa;
+
+
+
+      &:after {
+
+          content:"12:00 am";
+
+          position:absolute;
+
+          top:20px;
+
+          right: 15px;
+
+          width: 60px;
+
+          font-size: 12px;
+
+        }
+
+    }
+
+    
+
+    &:nth-child(6) {
+
+      position:relative;
+
+      &:after {
+
+          content:"6:00 am";
+
+          position:absolute;
+
+          top:20px;
+
+          right: -40px;
+
+          width: 60px;
+
+          font-size: 12px;
+
+        }
+
+    }
+
+    &:nth-child(12) {
+
+      position:relative;
+
+      &:after {
+
+          content:"12:00 pm";
+
+          position:absolute;
+
+          top:20px;
+
+          right: -40px;
+
+          width: 60px;
+
+          font-size: 12px;
+
+        }
+
+    }
+
+    &:nth-child(18) {
+
+      position:relative;
+
+      &:after {
+
+          content:"6:00 pm";
+
+          position:absolute;
+
+          top:20px;
+
+          right: -40px;
+
+          width: 60px;
+
+          font-size: 12px;
+
+        }
+
+    }
+
+    &:nth-child(24) {
+
+      position:relative;
+
+      &:after {
+
+          content:"12:00 am";
+
+          position:absolute;
+
+          top:20px;
+
+          right: -40px;
+
+          width: 60px;
+
+          font-size: 12px;
+
+        }
+
+    }
+
+    }
+
+}
+
+.timepicker-panel{
+
+  padding:10px;
+
+  .mat-button{
+
+    width: 100%;
+
+    margin-top: 10px;
+
+  }
+
 }
