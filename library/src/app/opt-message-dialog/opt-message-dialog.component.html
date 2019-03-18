@@ -1,4 +1,50 @@
 <div class="conf-message-wrapper">
+  <h2>Copy Booking</h2>
+  <div class="dialog-message copy-booking-message" style="display:block;">
+      <div mat-dialog-content minHeight="800px;">
+        <div class="row">
+          <div class="col-md-11">
+            <div class="opt_flex--container">
+              <div class="opt_flex__item opt_flex__item--vcenter">
+                  <mat-form-field>
+                      <input matInput [matDatepicker]="picker" placeholder="Start Date">
+                      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                      <mat-datepicker #picker></mat-datepicker>
+                    </mat-form-field>                    
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+              <mat-checkbox><span class="opt-txt__body1">Retain Customer</span></mat-checkbox>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <mat-checkbox><span class="opt-txt__body1">Retain Prices</span></mat-checkbox>
+            </div>
+          </div>
+          <div class="row">
+              <div class="col-md-12">
+                  <mat-checkbox><span class="opt-txt__body1">Include Function Sheets</span></mat-checkbox>
+              </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <mat-checkbox><span class="opt-txt__body1">Include Catering Notes and Special Instructions</span></mat-checkbox>
+                </div>
+              </div>
+      </div>
+      <div mat-dialog-actions>
+        <div class="opt_flex--container">
+          <div class="opt_flex__item opt-txt__align-right">
+            <button mat-button class="mat-btn-primary--small" (click)="onNoClick()">Apply</button>
+            <button mat-button class="mat-btn-primary--small" [mat-dialog-close]>Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
   <h2>Delete message</h2>
   <div class="dialog-message delete-confirmation-message-note" style="display:block;">
     <div mat-dialog-content minHeight="800px;">
