@@ -1583,12 +1583,21 @@ padding: 20px;
 .failed-panel{
   max-width: unset !important;
   overflow: hidden;
-  min-width: 80vw !important;
+  min-width: 90vw !important;
   .header-row{
     margin:10px 0px;
   }
   .mat-menu-content{
     padding:20px;
+  }
+  .col-90{
+      width:90px;
+  }
+  .col-70{
+      width:70px;
+  }
+  .col-50{
+      width:50px;
   }
 }
 .ReadMore-panel{

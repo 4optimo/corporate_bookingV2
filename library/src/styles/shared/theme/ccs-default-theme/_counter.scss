@@ -5,6 +5,7 @@
   height: 100%;
   padding: 0;
     .counter-label{
+      display: none;
       margin-bottom: -3px;
       content: 'Attendees';
       font-size: 11px !important;
@@ -150,5 +151,10 @@
         //     }
         // }
     }
-
+    .counter-icon{
+      position: relative;
+      bottom: 5px;
+      color: #909cac;
+      width: 20px;
+    }
 }

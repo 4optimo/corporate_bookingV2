@@ -361,6 +361,9 @@
                             display: flex;
                             align-items: center;
                             margin-left: 20px;
+                            .mat-icon-button{
+                                //line-height: 40 !important;
+                            }
                             .material-icons {
                                 padding: 0;
                                 min-width: 0;
