@@ -276,7 +276,7 @@
                       </div>
                       <div class="opt_flex__item opt_flex__item--vcenter">
                           <mat-form-field class="editable-field">
-                              <input class="opt-txt__body2" matInput value="Drift Games Masterclass">
+                              <input class="opt-txt__body2" matInput value="Drift Games Masterclass" (keydown)="$event.stopPropagation()">
                               <div class="savechanges">
                                   <button mat-button class="panel-action-btn-icon mat-button">
                                     <i class="material-icons mat-btn-icon-btn">done</i>

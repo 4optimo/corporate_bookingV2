@@ -245,12 +245,12 @@
 <div class="opt_item--multiple-timeslot opt--depth__2 multiple-normal">
   <div class="ts-header">
     <div class="opt_flex--container">
-      <div class="opt_flex__item opt_flex__item--vcenter">
+      <div class="opt_flex__item--inherit  opt_flex__item--vcenter">
         <div class="select-all">
           <mat-checkbox class="opt-txt__body1-small">Applicable for All Dates</mat-checkbox>
         </div>
       </div>
-      <div class="opt_flex__item opt_flex__item--vcenter p75">
+      <div class="opt_flex__item--inherit opt_flex__item--vcenter p50">
         <span class="opt-txt__body1 time-lbl">Applicable time from</span>
         <mat-form-field class="example-full-width">
           <input type="tel" matInput placeholder="Start Time" value="">
@@ -269,6 +269,11 @@
             <button mat-button class="mat-btn-primary--small">Save</button>
           </mat-menu>
         </mat-form-field>
+      </div>
+      <div class="opt_flex__item opt_flex__item--vcenter">
+          <mat-form-field class="time-selected">
+              <input matInput placeholder="Quantity" value="">
+          </mat-form-field>
       </div>
     </div>
   </div>
@@ -292,6 +297,9 @@
                   <button mat-button class="mat-btn-primary--small">Save</button>
                 </mat-menu>
               </mat-form-field>
+              <mat-form-field class="">
+                  <input matInput placeholder="Quantity" value="">
+              </mat-form-field>
               <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">done</i></button>
       </div>
       <div class="default-time" style="display:none">
@@ -303,11 +311,13 @@
     <div class="opt_flex__item  opt_flex__item--vcenter">
       <mat-checkbox class="opt-txt__caption">12-Feb-2018</mat-checkbox>
       <span class="opt-txt__body1 time-selected">11:00 AM - 12:15 PM</span>
+      <span class="opt-txt__body2 time-selected">50</span>
       <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">edit</i></button>
     </div>
     <div class="opt_flex__item opt_flex__item--vcenter">
       <mat-checkbox class="opt-txt__caption">24-Feb-2018</mat-checkbox>
       <span class="opt-txt__body1 time-selected">11:00 AM - 12:15 PM</span>
+      <span class="opt-txt__body2 time-selected">20</span>
       <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">edit</i></button>
     </div>
   </div>
@@ -315,16 +325,19 @@
     <div class="opt_flex__item opt_flex__item--vcenter">
       <mat-checkbox class="opt-txt__caption">05-Feb-2018</mat-checkbox>
       <span class="opt-txt__body1 time-selected">11:00 AM - 12:15 PM</span>
+      <span class="opt-txt__body2 time-selected">10</span>
       <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">edit</i></button>
     </div>
     <div class="opt_flex__item opt_flex__item--vcenter">
       <mat-checkbox class="opt-txt__caption">12-Feb-2018</mat-checkbox>
       <span class="opt-txt__body1 time-selected">11:00 AM - 12:15 PM</span>
+      <span class="opt-txt__body2 time-selected">30</span>
       <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">edit</i></button>
     </div>
     <div class="opt_flex__item opt_flex__item--vcenter">
       <mat-checkbox class="opt-txt__caption">24-Feb-2018</mat-checkbox>
       <span class="opt-txt__body1 time-selected">11:00 AM - 12:15 PM</span>
+      <span class="opt-txt__body2 time-selected">40</span>
       <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">edit</i></button>
     </div>
   </div>
@@ -332,16 +345,19 @@
     <div class="opt_flex__item opt_flex__item--vcenter">
       <mat-checkbox class="opt-txt__caption">05-Oct-2018</mat-checkbox>
       <span class="opt-txt__body1 time-selected">11:00 AM - 12:15 PM</span>
+      <span class="opt-txt__body2 time-selected">10</span>
       <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">edit</i></button>
     </div>
     <div class="opt_flex__item opt_flex__item--vcenter">
       <mat-checkbox class="opt-txt__caption">05-Nov-2018</mat-checkbox>
       <span class="opt-txt__body1 time-selected">11:00 AM - 12:15 PM</span>
+      <span class="opt-txt__body2 time-selected">15</span>
       <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">edit</i></button>
     </div>
     <div class="opt_flex__item opt_flex__item--vcenter">
       <mat-checkbox class="opt-txt__caption">05-Dec-2018</mat-checkbox>
       <span class="opt-txt__body1 time-selected">11:00 AM - 12:15 PM</span>
+      <span class="opt-txt__body2 time-selected">25</span>
       <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">edit</i></button>
     </div>
   </div>

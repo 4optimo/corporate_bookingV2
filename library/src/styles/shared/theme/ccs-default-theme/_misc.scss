@@ -47,7 +47,6 @@
 .opt_flex{
       &--container{
         @include flexbox();
-
          &.space-between{
            justify-content: space-between !important;
          }
@@ -84,7 +83,7 @@
       }
 }
 
-.tc-flex-item__center{
+.tc-flex-item__c {
   align-self: center !important;
   align-items: center;
   -ms-flex-pack: center;
@@ -493,6 +492,7 @@ h1,h2,h3,h4,h5,h6{
   padding-left: 120px;
   margin-top: -21px;
 }
+
 //Timeline styles
 
 .man-popup-cop{
@@ -718,5 +718,19 @@ h1,h2,h3,h4,h5,h6{
     margin-top: 10px;
 
   }
+
+}
+button[disabled],.mat-button[disabled]{
+  background-color: #f5f5f5 !important;
+  cursor:not-allowed;
+&:hover{
+  background-color: unset !important;
+  box-shadow:none;
+  border: 1px solid #909cac !important;
+  color: #909cac !important;
+    i{
+      color: #909cac !important;
+    }
+}
 
 }
