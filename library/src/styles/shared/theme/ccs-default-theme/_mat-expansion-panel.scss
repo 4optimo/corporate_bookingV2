@@ -164,29 +164,29 @@ mat-expansion-panel {
           .opt_flex__item--inherit {
             flex-shrink: 0;
             &:nth-child(1) {
-              flex-basis: 250px;
+              width: 280px;
             }
             &:nth-child(2) {
-              flex-basis: 60px;
+              width: 110px;
             }
             &:nth-child(3) {
-              flex-basis: 141px;
+              width: 255px;
             }
             &:nth-child(4) {
-              flex-basis: 100px;
+              width: 90px;
             }
             &:nth-child(5) {
-              flex-basis: 100px;
+              width: 90px;
             }
             &:nth-child(6) {
               @include respond-to('small') {
-                flex-basis: 428px;
+                width: 428px;
               }
               @include respond-to('medium') {
-                flex-basis: 138px;
+                width: 170px;
               }
               @media(width: 1024px) {
-                flex-basis: 428px !important;
+                width: 428px !important;
               }
             }
           }
@@ -252,7 +252,7 @@ mat-expansion-panel {
       }
       .package_details {
         padding: 0 15px;
-        width: 250px;
+        width: 240px;
         .package_title {
           overflow: visible;
           white-space: normal;
@@ -311,6 +311,14 @@ mat-expansion-panel {
       .mat-expansion-panel-content {
         box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2),
           0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+        .icon_btn_group{
+            display:flex;
+        }
+        .info-icons{
+            display: flex;
+            align-items: center;
+            margin-left: 20px;
+        }
       }
     }
 
@@ -353,11 +361,11 @@ mat-expansion-panel {
       }
     }
     .tax-lbl-col{
-      width: 200px;
+      width: 250px;
       .three_div_combo{
         flex-direction: row;
         margin-right: 10px;
-        width:120px;
+        width:150px;
         justify-content:flex-end;
         .lbl__vat{
           margin-right: 5px;
