@@ -65,14 +65,27 @@
 
     &_booking__detail {
         .booking-title-row {
-            /*.title-lable {
-                position: relative;
-                left: 63px;
+            padding:0 8px;
+            height: 55px;
+            display: flex;
+            background-color: #f5f5f5;
+            align-items: center;
+            .row{
+                flex-grow:1;
             }
+            .gutter-space-40{
+                min-width:40px;
+                max-width:40px;
+            }
+            .title-label {
+                 margin-left: 55px;
+            }
+            
             .unit-price-label{
-                position: relative;
-                left: 30px;
+                text-align: right;
+                padding-right: 50px;
             }
+            /*
             .price-type-label{
                 position: relative;
                 left: 47px;
@@ -90,7 +103,6 @@
                 left: 14px;
             }*/
         }
-
         overflow: hidden;
 
         .lft_btn_cage {
@@ -743,7 +755,6 @@
                 // background-color: rebeccapurple;
             }
         }
-
         .price--values {
 
 
