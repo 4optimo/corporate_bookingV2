@@ -64,7 +64,9 @@
           display: flex;
           align-items: center;
         }
-
+        &.p10{
+          width: 10%;
+        }
         &.p15{
           width: 15%;
         }
@@ -363,6 +365,14 @@ h1,h2,h3,h4,h5,h6{
     }
   }
 }
+.price--values{
+  .save-button{
+    button{
+      width: 100%;
+      margin-top: 10px;
+    }
+  }
+}
 //Percentage globalization
 .p25{
   width: 25%;
@@ -403,6 +413,13 @@ h1,h2,h3,h4,h5,h6{
             margin:10px 0px;
         }
     }
+}
+.package-info-popup{
+  padding:0 10px;
+  width:800px;
+  max-width:unset !important;
+  min-width:unset !important;
+  max-height: 500px !important;
 }
 .ngx-wrapper{
   b{
@@ -470,6 +487,9 @@ h1,h2,h3,h4,h5,h6{
 }
 .information-icon{
   color:$opt-text-color__secondary !important;
+  &.mat-icon-button{
+      line-height:44px;
+  }
 }
 .img-new {
     display: block;

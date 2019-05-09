@@ -140,7 +140,7 @@
       .__expansion-lft--side{
         width: calc(100% - 40px);
         .opt_flex--container{
-          flex-wrap: wrap;
+          flex-wrap: nowrap;
           justify-content: flex-end;
           .mat-expansion-panel-header-title{
             flex-wrap: nowrap;

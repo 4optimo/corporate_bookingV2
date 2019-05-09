@@ -61,14 +61,17 @@
       cursor: pointer;
     }
   }
+  .mat-form-field{
+      height:20px;
+  }
   .mat-form-field-underline{
-    bottom: unset !important;
+    bottom: 1.25em !important;
   }
   .mat-input-element{
     text-align: left !important;
   }
   .mat-form-field-wrapper{
-    padding-bottom: 0px;
+    //padding-bottom: 0px;
   }
   .popup-btn-row{
     margin-top: 15px;

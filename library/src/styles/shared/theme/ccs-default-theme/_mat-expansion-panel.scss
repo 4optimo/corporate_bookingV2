@@ -372,6 +372,9 @@ mat-expansion-panel {
     .button-col{
         width:unset !important;
     }
+    .up-arrow, .down-arrow{
+        max-width:24px;
+    }
   }
 }
 
