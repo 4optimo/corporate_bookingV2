@@ -109,7 +109,6 @@ $icn-font--url:'./shared/theme/ccs-default-theme/font/fonts-icon/';
 .icon-add-booking:before {
   content: "\e90a";
 }
-//ss
 .icon-human:before {
   content: "\e911";
 }
@@ -155,5 +154,21 @@ $icn-font--url:'./shared/theme/ccs-default-theme/font/fonts-icon/';
 .icon-percentage:before {
   content: "\e921";
 }
-
-//End of Booking Activities Icons
+.icon-product:before {
+  content: "\e922";
+}
+.icon-services:before {
+  content: "\e923";
+}
+.icon-branding-areas:before {
+  content: "\e927";
+}
+.icon-gift-voucher:before {
+  content: "\e928";
+}
+.icon-experience-voucher:before {
+  content: "\e926";
+}
+.icon-bulkhour-voucher:before {
+  content: "\e924";
+}
