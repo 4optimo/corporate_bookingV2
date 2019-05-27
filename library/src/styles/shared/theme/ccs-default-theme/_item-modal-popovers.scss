@@ -34,6 +34,8 @@
 .multiple-normal{
   mat-icon{
     cursor: pointer;
+    position:relative;
+    top:5px;
   }
   .time-selected{
     padding-left: 15px;
@@ -48,6 +50,15 @@
   .popup-btn-row{
     margin-top: 15px;
     padding:0px;
+  }
+  .ts-header{
+      .mat-form-field{
+         height: 43px;
+         mat-icon{
+            position:relative;
+            top:0px;
+         }
+      }
   }
 }
 .single-normal{

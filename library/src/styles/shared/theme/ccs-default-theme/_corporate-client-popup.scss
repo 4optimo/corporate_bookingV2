@@ -1561,6 +1561,16 @@
             .mat-btn-primary:hover {
               color: $opt_color_white !important;
             }
+            .opt_flex--container{
+                flex-direction:row;
+            }
+            .opt_flex__item{
+                flex-grow: inherit;
+                padding: 0 5px;
+            }
+            .mat-btn-primary--small{
+                line-height:22px !important;
+            }
           }
           .opt_flex--container:nth-child(1) {
             margin-left: -20px;

@@ -1,0 +1,513 @@
+﻿//Booking details TFS dedicated styles
+@import "variables";
+@import "mixins/_mixins.scss";
+.sidebar-collapse{
+        .opt_booking-details-full{
+            .booking-main-tab-group{
+                .mat-tab-label:nth-child(1){
+                    max-width:413px !important;
+                }
+            }
+            
+        } 
+}
+    
+.opt_booking-details-full {
+    @media (width: 1024px) {
+       padding:15px;   
+    }
+    @include respond-to("x-small") {
+        padding:15px;
+      }
+
+      @include respond-to("small") {
+        padding:15px;
+      }
+      @include respond-to("medium") {
+        padding:0px;
+      }
+      @include respond-to("large") {
+        padding:0px;
+      }
+
+    .booking-details-header-tabs {
+        margin: -15px -15px 0px;
+    }
+
+    .booking-summary {
+        margin: 0 -15px;
+    }
+
+    .opt-section__heading {
+        margin: 0 -15px;
+    }
+
+    .opt_booking__detail {
+        .frozen-badge {
+            /*position:relative;
+            left:105px;*/
+        }
+
+        .mat-form-field-appearance-legacy .mat-form-field-wrapper {
+            padding-bottom: 0px;
+        }
+
+        .__include-package_line {
+            border-top: 1px solid $opt-border-color_light !important;
+        }
+    }
+
+    .opt_booking__activity {
+        .mat-step-label {
+            min-width: 100px;
+        }
+
+        .aligned_form_field {
+            .mat-form-field-wrapper {
+                padding: 0px;
+            }
+        }
+    }
+
+    .opt_booking__detail,
+    .opt_booking__activity {
+        .mat-form-field-appearance-legacy {
+            .mat-form-field-wrapper {
+                //padding-bottom: 0px !important;
+            }
+        }
+    }
+
+    .booking-details-btn-dropdown {
+        button {
+            margin-right: 4px;
+        }
+    }
+
+    .opt_alert {
+        padding: 15px !important;
+        margin: 0px;
+    }
+
+    .mat-horizontal-stepper-header.mat-step-header {
+        background-color: transparent;
+    }
+
+    .booking-main-tab-group {
+        .mat-tab-label {
+            opacity: 1;
+        }
+
+        .mat-tab-label:nth-child(1) {
+            max-width: 353px;
+
+            .mat-tab-label-content {
+                display: block;
+
+                .badge {
+                    margin-top: 5px;
+                }
+            }
+        }
+
+        .mat-tab-label-active {
+            background-color: $opt_color_white !important;
+            //border-bottom:4px solid $opt_color_primary;
+            color: $opt_color_black;
+        }
+
+        .mat-tab-label:hover {
+            background-color: $opt_color_white !important;
+            color: $opt_color_black !important;
+            transition: 0.3s;
+        }
+    }
+
+    .stepper-step-one {
+        .des-box {
+            min-width: 150px;
+
+            span,
+            mat-form-field {
+                width: 100%;
+            }
+        }
+    }
+
+    .price-popover {
+        .filter-popover-item {
+            border-bottom: none !important;
+        }
+
+        .mat-form-field-infix {
+            padding: 0 !important;
+            border-top: none !important;
+            max-width: 100px !important;
+        }
+
+        .mat-form-field-wrapper {
+            padding-bottom: 0 !important;
+        }
+
+        .mat-form-field-underline {
+            bottom: unset !important;
+        }
+
+        .mat-input-element {
+            text-align: right;
+        }
+    }
+
+    .booking-summary {
+        .field-inner:nth-child(3) {
+            padding: 0 15px;
+        }
+    }
+}
+
+//Booking list TFS dedicated styles
+app-booking-list {
+    //Search panel TFS dedicated styles
+    
+    .opt_search-panel {
+        .mat-form-field-appearance-legacy .mat-form-field-underline {
+            bottom: 0;
+        }
+
+        .mat-form-field-infix {
+            padding: 0px;
+        }
+    }
+
+    .opt_lbl_primary{
+        margin-right: 15px;
+        white-space: nowrap;
+    }
+
+    .opt_booking__list,
+    .opt_paginator {
+        //margin:0 -15px;
+        /*@include respond-to('small') {
+            margin: 0px -15px;
+        }
+
+        @include respond-to('medium') {
+            margin-left: 50px;
+            margin-right: 0px;
+        }
+
+        @include respond-to('large') {
+            margin-left: 50px;
+            margin-right: 0px;
+        }*/
+    }
+
+    .opt_booking__detail {
+        padding-top: 0px !important;
+
+        .mat-form-field-appearance-legacy {
+            .mat-form-field-wrapper {
+                padding-bottom: 0px !important;
+            }
+        }
+
+        .loadding--cage {
+            margin: 0px !important;
+            bottom: 0px !important;
+        }
+
+        .opt_paginator {
+            //margin:0 -15px;
+            @include respond-to('small') {
+                padding: 0px 15px;
+            }
+
+            @include respond-to('medium') {
+                padding: 0px;
+            }
+
+            @include respond-to('large') {
+                padding: 0px;
+            }
+        }
+    }
+
+    .filter-section {
+        /*padding: 0px 25px;
+
+        @include respond-to('small') {
+            margin-left: -25px;
+            margin-right: -30px;
+        }
+
+        @include respond-to('medium') {
+            margin-left: 35px;
+            margin-right: -15px;
+        }
+
+        @include respond-to('large') {
+            margin-left: 35px;
+            margin-right: -15px;
+        }*/
+    }
+
+    .booking-list-fab {
+        position: fixed;
+        z-index: 9999;
+        bottom: 25px;
+        right: 25px;
+    }
+    .opt_price-section{
+        .total-val{
+            width:100px;
+        }
+    }
+}
+
+@media(width: 1024px) {
+      .content-wrapper {
+           padding:15px !important;
+      }
+}
+@media(width: 1024px) {
+      .opt_footer{
+              margin: 10px -15px -15px !important;
+      }
+}
+@media(width: 1024px) {
+    body.sidebar-mini .content-wrapper{
+        margin-left:0px !important;
+    }
+}
+
+
+@media(min-width: 1025px){
+    .sidebar-mini.sidebar-collapse .main-sidebar{
+        display:block !important;
+        transition:0.3s;
+    }
+}
+@media(min-width: 768px){
+    .sidebar-mini.sidebar-collapse .main-sidebar{
+        display:none;
+        transition:0.3s;
+    }
+}
+.content-wrapper {
+
+    @include respond-to('small') {
+        margin-left: 0px !important;
+    }
+
+    @include respond-to('medium') {
+        margin-left: 180px !important;
+    }
+
+    @include respond-to('large') {
+        margin-left: 180px !important;
+    }
+
+    .tmp-links {
+        @include respond-to('small') {
+            margin-left: -15px;
+        }
+
+        @include respond-to('medium') {
+            margin-left: 40px;
+        }
+
+        @include respond-to('large') {
+            margin-left: 40px;
+        }
+    }
+
+    .opt-search-panel-wrapper {
+        /*@include respond-to('small') {
+            margin-left: -15px;
+        }
+
+        @include respond-to('medium') {
+            margin-left: 35px;
+        }
+
+        @include respond-to('large') {
+            margin-left: 35px;
+        }*/
+    }
+
+    .opt_booking__list {
+        /*@include respond-to('small') {
+            margin: 0 -15px;
+        }
+
+        @include respond-to('medium') {
+            margin: 0px;
+            margin-left: 50px;
+        }
+
+        @include respond-to('large') {
+            margin: 0px;
+            margin-left: 50px;
+        }*/
+
+        .loadding--cage {
+            position: relative;
+
+            @include respond-to('small') {
+                margin: 0 -15px;
+                bottom: 0px;
+            }
+
+            @include respond-to('medium') {
+                margin: 0 -10px;
+                bottom: 2px;
+            }
+
+            @include respond-to('large') {
+                margin: 0 -10px;
+                bottom: 2px;
+            }
+        }
+        .vat-label{
+            
+            @include respond-to('small') {
+                margin-right:0px;
+              }
+              @include respond-to('medium') {
+                margin-right:-0px;
+              }
+              @include respond-to('large') {
+                margin-right:-40px;
+              }
+              @media only screen and (min-width: 1400px) {
+                margin-right:-130px;
+              }
+            align-self:center;
+        }
+    }
+}
+
+.sidebar-mini.sidebar-collapse .main-sidebar {
+    @include respond-to('small') {
+        display: none;
+        transition: 0.3s !important;
+    }
+
+    @include respond-to('medium') {
+        //display: block;
+        transition: 0.3s !important;
+    }
+
+    @include respond-to('large') {
+        //display: block;
+        transition: 0.3s !important;
+    }
+}
+
+.main-sidebar {
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+.main-sidebar {
+    transition: 0.3s !important;
+}
+
+.opt-normal-whitespace {
+    white-space: normal !important;
+}
+//Payment section
+.opt_booking-payments-section{
+    mat-form-field{
+        min-width:150px;
+    }
+}
+//Add note
+.opt-add-note-wrapper{
+    .mat-tab-label-content{
+        display:block !important;
+    }
+}
+
+//Corporate and individual client modal styles
+app-opt-individual-client-popup,
+app-opt-corporate-client-popup{
+    .opt_modal-body{
+        background-color:#ffffff !important;
+    }
+}
+.opt_corporate-client-popup{
+    .client-details, 
+    .contact-details, 
+    .communication-consent{
+        .mat-expansion-panel.mat-expanded{
+            margin:0px;
+            padding:0px;
+            .mat-expansion-panel-body{
+                margin:0px;
+            }
+        }
+    }
+    .client-details{
+        .document-upload-section{
+            button{
+                margin-left:5px;
+            }
+        }
+    }
+    .contact-details{
+        .opt-section__heading{
+                margin:0 -24px;
+                margin-bottom:15px;
+            }
+        .mat-expansion-panel{
+            padding:0 24px !important;
+        }
+    }
+}
+.general-search-icon,
+.advanced-search-icon{
+   margin-right:5px;
+}
+.cart-btn{
+    button{
+        margin-left:5px;
+    }
+}
+app-opt-paginator{
+    width:100%;
+}
+.img-new {
+    display: block;
+    max-width: 100%;
+    height: 40px;
+    padding-top: 6px;
+    padding-left: 6px;
+}
+
+//Dialog messages
+
+//Delete Note Message
+.delete-note-message{
+    .conf-message-wrapper{
+        height:100%;
+        .delete-confirmation-message{
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+    }
+    i{
+        color:#4bb3fa;
+    }
+    .mat-dialog-content{
+        .row{
+            display:flex;
+        }
+    }
+    .mat-dialog-container{
+        padding: 0px;
+        overflow: hidden;
+    }
+}

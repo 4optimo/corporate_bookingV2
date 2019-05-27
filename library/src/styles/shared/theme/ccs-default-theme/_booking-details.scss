@@ -457,6 +457,19 @@
 
                         .booking-edit-level-2 {
                             > .opt_flex__item {
+                                &:nth-child(1) {
+                                    display: flex;
+                                    line-height: 19px;
+                                    mat-form-field {
+                                        width: 125px !important;
+                                        font-weight: 500 !important;
+                                        input{
+                                            text-align:right !important;
+                                            padding-right:55px;
+                                        }
+                                        }
+                                }
+
                                 &:nth-child(2) {
                                     position: relative;
                                     left: -5px;
@@ -466,6 +479,26 @@
                                     position: relative;
                                     left: -40px;
                                 }
+
+                                &:nth-child(4) {
+                                    app-opt-counter{
+                                        width:90px;
+                                    }
+                                    mat-form-field {
+                                        width: 90px !important;
+                                        input {
+                                            font-size: 13px;
+                                            font-weight: 500;
+                                            text-align:right !important;
+                                        }
+                                    }
+                                }
+                            }
+                            .savechanges{
+                                right: -50px !important;
+                            }
+                            .resetchanges{
+                                right: -75px !important;
                             }
                         }
 
@@ -552,10 +585,18 @@
                 }
 
                 .booking-start-date {
-                    //font-weight:500;
+                    color: #000 !important;
                 }
 
                 .booking-start-time {
+                    //font-weight:500;
+                }
+
+                .booking-end-date {
+                    color: #000 !important;
+                }
+
+                .booking-end-time {
                     //font-weight:500;
                 }
             }
@@ -804,21 +845,26 @@
                     @include respond-to('medium') {
                         width: 70px;
                     }
+
                     @include respond-to('x-large') {
                         width: 90px;
                     }
                 }
-                .total-price-col{
-                    display:flex;
-                    flex-wrap:wrap;
+
+                .total-price-col {
+                    display: flex;
+                    flex-wrap: wrap;
+
                     @include respond-to('medium') {
                         max-width: 110px;
                     }
+
                     @include respond-to('large') {
-                        max-width: 150px;
+                        max-width: 200px;
                     }
+
                     @include respond-to('x-large') {
-                        max-width: 150px;
+                        max-width: 200px;
                     }
                 }
             }
@@ -876,15 +922,15 @@
 
 
                 @include respond-to('small') {
-                    margin-right: 23px;
+                    //margin-right: 23px;
                 }
 
                 @include respond-to('medium') {
-                    margin-right: 23px;
+                    //margin-right: 23px;
                 }
 
                 @include respond-to('large') {
-                    margin-right: 23px;
+                    //margin-right: 23px;
                 }
             }
 
