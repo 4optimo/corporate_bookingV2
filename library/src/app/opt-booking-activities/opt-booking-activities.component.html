@@ -1730,287 +1730,375 @@
           </ng-template>
 
           <mat-tab-group>
-            <div class="deliverables">
-              <mat-tab label="Deliverables">
+              <mat-tab label="Overview">
                 <!--Header-->
                 <div class="deliverables-header header-row">
                   <div class="row">
                     <div class="col-md-6">
-                        <div class="opt_flex--container">
-                            <div class="opt_flex__item">
-                                <mat-checkbox>
-                                  <span class="opt-txt__body1">Show hidden items (1)</span>
-                                </mat-checkbox>
-                            </div>
+                      <div class="opt_flex--container">
+                        <div class="opt_flex__item">
+                          <mat-checkbox>
+                            <span class="opt-txt__body1">Show hidden items (1)</span>
+                          </mat-checkbox>
                         </div>
+                      </div>
                     </div>
                     <div class="col-md-6">
-                        <div class="opt_flex--container just-content-end">
-                            <div class="opt_flex__item--inherit">
-                                <button mat-icon-button [matMenuTriggerFor]="deliverablesSort" class=""><i class="material-icons small opt_color_icon_font">filter_list</i></button>
-                                <mat-menu #deliverablesSort="matMenu" class="icon-text-menu">
-                                    <div class="opt-triple-toggle" (click)="$event.stopPropagation();">
-                                      <label>Tax</label>
-                                      <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
-                                        <mat-button-toggle value="on">On</mat-button-toggle>
-                                        <mat-button-toggle value="default">Dynamic</mat-button-toggle>
-                                        <mat-button-toggle value="off">Off</mat-button-toggle>
-                                      </mat-button-toggle-group>
-                                    </div>
-                                    <div class="opt-triple-toggle" (click)="$event.stopPropagation();">
-                                      <label>Currency</label>
-                                      <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
-                                        <mat-button-toggle value="on">System</mat-button-toggle>
-                                        <mat-button-toggle value="off">Booking</mat-button-toggle>
-                                      </mat-button-toggle-group>
-                                    </div>
-                                  </mat-menu>
+                      <div class="opt_flex--container just-content-end">
+                        <div class="opt_flex__item--inherit">
+                          <button mat-icon-button [matMenuTriggerFor]="deliverablesSort" class=""><i class="material-icons small opt_color_icon_font">filter_list</i></button>
+                          <mat-menu #deliverablesSort="matMenu" class="icon-text-menu">
+                            <div class="opt-triple-toggle" (click)="$event.stopPropagation();">
+                              <label>Tax</label>
+                              <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+                                <mat-button-toggle value="on">On</mat-button-toggle>
+                                <mat-button-toggle value="default">Dynamic</mat-button-toggle>
+                                <mat-button-toggle value="off">Off</mat-button-toggle>
+                              </mat-button-toggle-group>
                             </div>
-                            <div class="opt_flex__item--inherit opt_flex__item--vcenter">
-                                <div class="header_row--action-wrapper">
-                                  <button mat-button class="mat-btn-primary--small btn-icon-text"><i class="material-icons opt_color_icon_font">add</i>
-                                    <span class="btn-text hidden-sm opt-txt__secondary">Task</span></button>
-                                </div>
+                            <div class="opt-triple-toggle" (click)="$event.stopPropagation();">
+                              <label>Currency</label>
+                              <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+                                <mat-button-toggle value="on">System</mat-button-toggle>
+                                <mat-button-toggle value="off">Booking</mat-button-toggle>
+                              </mat-button-toggle-group>
                             </div>
+                          </mat-menu>
                         </div>
+                        <div class="opt_flex__item--inherit opt_flex__item--vcenter">
+                          <div class="header_row--action-wrapper">
+                            <button mat-button class="mat-btn-primary--small btn-icon-text"><i class="material-icons opt_color_icon_font">add</i>
+                              <span class="btn-text hidden-sm opt-txt__secondary">Task</span></button>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
                 <!--Content-->
                 <div class="deliverables-list-item">
-                    <div class="opt_flex--container">
-                      <div class="opt_flex__item--inherit opt_flex__item--vcenter">
-                          <mat-checkbox>
-                          </mat-checkbox>
-                      </div>
-                      <div class="opt_flex__item p15">
-                          <div class="opt_flex--container opt-fd-col">
-                              <div class="opt_flex__item">
-                                <span class="opt-txt__body2">Item Name</span>
-                              </div>
-                              <div class="opt_flex__item">
-                                  <span class="opt-txt__body2-small opt-txt__secondary">Package Name</span>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="opt_flex__item opt_flex__item--vcenter p15">
-                          <div class="opt_flex--container opt-fd-col">
-                              <div class="opt_flex__item">
-                                <span class="opt-txt__body2">FS category</span>
-                              </div>
-                              <div class="opt_flex__item">
-                                  <span class="opt-txt__body2-small opt-txt__secondary">Event date and time</span>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="opt_flex__item opt_flex__item--vcenter p10">
-                          <span><i class="material-icons small indicator-icon">shopping_basket</i></span>
-                          <span><i class="material-icons small indicator-icon">help</i></span>
-                          <span><i class="material-icons small indicator-icon">border_color</i></span>
-                      </div>
-                      <div class="opt_flex__item opt_flex__item--vcenter p10">
-                          <span><i class="material-icons small action-icon">domain</i></span>
-                      </div>
-                      <div class="opt_flex__item opt_flex__item--vcenter p20">
-                          <span class="opt-txt__body1">Sample item description</span>
-                      </div>
-                      <div class="opt_flex__item opt_flex__item--vcenter just-content-end">
-                          <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">edit</i></button>
-                          <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">visibility</i></button>
+                  <div class="opt_flex--container">
+                    <div class="opt_flex__item--inherit opt_flex__item--vcenter">
+                      <mat-checkbox>
+                      </mat-checkbox>
+                    </div>
+                    <div class="opt_flex__item p15">
+                      <div class="opt_flex--container opt-fd-col">
+                        <div class="opt_flex__item">
+                          <span class="opt-txt__body2">Item Name</span>
+                        </div>
+                        <div class="opt_flex__item">
+                          <span class="opt-txt__body2-small opt-txt__secondary">Package Name</span>
+                        </div>
                       </div>
                     </div>
+                    <div class="opt_flex__item opt_flex__item--vcenter p15">
+                      <div class="opt_flex--container opt-fd-col">
+                        <div class="opt_flex__item">
+                          <span class="opt-txt__body2">FS category</span>
+                        </div>
+                        <div class="opt_flex__item">
+                          <span class="opt-txt__body2-small opt-txt__secondary">Event date and time</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="opt_flex__item opt_flex__item--vcenter p10">
+                      <span><i class="material-icons small indicator-icon">shopping_basket</i></span>
+                      <span><i class="material-icons small indicator-icon">help</i></span>
+                      <span><i class="material-icons small indicator-icon">border_color</i></span>
+                    </div>
+                    <div class="opt_flex__item opt_flex__item--vcenter p10">
+                      <span><i class="material-icons small action-icon" [matMenuTriggerFor]="facilityMenu">domain</i></span>
+                      <mat-menu #facilityMenu="matMenu" class="general-popover">
+                        <div class="opt_booking__activity">
+                            <div class="facility-menu">
+                                <div class="opt_flex--container header-row">
+                                  <div class="opt_flex__item opt_flex__item--vcenter">
+                                    <span class="material-icons small opt_color_icon_font">domain</span><span class="opt-txt__body2">Facilities Water Bottle (Item Name)</span>
+                                  </div>
+                                </div>
+                                <div class="opt_flex--container menu-row">
+                                  <div class="opt_flex__item opt_flex__item--vcenter">
+                                    <span class="opt-txt__body1">Facility 1</span>
+                                  </div>
+                                  <div class="opt_flex__item opt_flex__item--vcenter">
+                                    <span class="opt-txt__body1">Configuration 1</span>
+                                  </div>
+                                  <div class="opt_flex__item opt_flex__item--vcenter">
+                                    <app-opt-counter></app-opt-counter>
+                                  </div>
+                                  <div class="opt_flex__item opt_flex__item--vcenter">
+                                    <app-opt-counter></app-opt-counter>
+                                  </div>
+                                </div>
+                                <div class="opt_flex--container menu-row">
+                                    <div class="opt_flex__item opt_flex__item--vcenter">
+                                      <span class="opt-txt__body1">Facility 2</span>
+                                    </div>
+                                    <div class="opt_flex__item opt_flex__item--vcenter">
+                                      <span class="opt-txt__body1">Configuration 1</span>
+                                    </div>
+                                    <div class="opt_flex__item opt_flex__item--vcenter">
+                                      <app-opt-counter></app-opt-counter>
+                                    </div>
+                                    <div class="opt_flex__item opt_flex__item--vcenter">
+                                      <app-opt-counter></app-opt-counter>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                      </mat-menu>
+                    </div>
+                    <div class="opt_flex__item opt_flex__item--vcenter p20">
+                      <span class="opt-txt__body1">Sample item description</span>
+                    </div>
+                    <div class="opt_flex__item opt_flex__item--vcenter just-content-end">
+                      <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">edit</i></button>
+                      <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">visibility</i></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="deliverables-list-item">
+                  <div class="opt_flex--container">
+                    <div class="opt_flex__item--inherit opt_flex__item--vcenter">
+                      <mat-checkbox>
+                      </mat-checkbox>
+                    </div>
+                    <div class="opt_flex__item opt_flex__item--vcenter p15">
+                      <div class="opt_flex--container opt-fd-col">
+                        <div class="opt_flex__item">
+                          <span class="opt-txt__body2">Package Name</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="opt_flex__item opt_flex__item--vcenter p15">
+                      <div class="opt_flex--container opt-fd-col">
+                        <div class="opt_flex__item">
+                          <span class="opt-txt__body2">FS category</span>
+                        </div>
+                        <div class="opt_flex__item">
+                          <span class="opt-txt__body2-small opt-txt__secondary">Event date and time</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="opt_flex__item opt_flex__item--vcenter p10">
+                      <span><i class="material-icons small indicator-icon">shopping_basket</i></span>
+                      <span><i class="material-icons small indicator-icon">help</i></span>
+                      <span><i class="material-icons small indicator-icon">border_color</i></span>
+                    </div>
+                    <div class="opt_flex__item opt_flex__item--vcenter p10">
+                      <span><i class="material-icons small action-icon">domain</i></span>
+                    </div>
+                    <div class="opt_flex__item opt_flex__item--vcenter p20">
+                      <span class="opt-txt__body1">Sample item description</span>
+                    </div>
+                    <div class="opt_flex__item opt_flex__item--vcenter just-content-end">
+                      <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">edit</i></button>
+                      <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">visibility_off</i></button>
+                    </div>
+                  </div>
                 </div>
               </mat-tab>
-            </div>
-
-
-            <div class="dispatch">
-              <mat-tab label="Dispatch">
+              
+              <mat-tab label="Questions">
                 <!--Header-->
-                <div class="header-row">
-                  <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-7	col-lg-7">
-                      <div class="opt_flex--container">
-                        <div class="opt_flex__item  horizontally-center ">
-                          <mat-checkbox>
-                            <span class="opt-txt__body1">Select All</span>
-                          </mat-checkbox>
-                          <span class="cage_selected opt_txt_color_tertiary">3 Item</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-12 col-md-5	col-lg-5 just-content-end">
-
-                      <div class="opt_flex__item--inherit horizontally-center action-btn">
-                        <div class="header_row--action-wrapper">
-                          <button mat-button class="mat-btn-primary--small btn-icon-text"><i class="material-icons opt_color_icon_font">call_made</i>
-                            <span class="btn-text hidden-sm opt-txt__secondary">Dispatch</span></button>
-                          <button mat-button class="mat-btn-primary--small btn-icon-text"><i class="material-icons opt_color_icon_font">print</i>
-                            <span class="btn-text hidden-sm  opt-txt__secondary">Print</span></button>
-                          <button mat-button class="mat-btn-primary--small btn-icon-text"><i class="material-icons opt_color_icon_font">scanner</i>
-                            <span class="btn-text hidden-sm  opt-txt__secondary">Scan</span></button>
-                          <button mat-button class="mat-btn-primary--small btn-icon-text"><i class="material-icons opt_color_icon_font">directions_boat</i>
-                            <span class="btn-text hidden-sm  opt-txt__secondary">Shipment</span></button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-
                 <!--Content-->
-                <div class="opt_flex--container dispatch-list-item ">
-                  <div class="opt_flex__item horizontally-center">
-                    <div class="row row-block">
-                      <div class="col-xs-12 col-sm-4 col-md-3	col-lg-3">
-                        <div class="opt_flex--container">
-                          <div class="opt_flex__item chck-box tc-flex-item__center">
-                            <mat-checkbox></mat-checkbox>
-                          </div>
-                          <div class="opt_flex__item des-box ">
-                            <div class="opt-txt__body2 opt-fontweight--bold"> 092883 | Country Stand Admission </div>
-                            <div class="opt-txt__secondary opt-txt__body1-small"> Delivery Method | Box Office
-                              Collection</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-xs-12 col-sm-2 col-md-3	col-lg-2">
-                        <div class="opt_flex--container">
-                          <div class="opt_flex__item des-box tc-flex-item__center">
-                            <div class="opt-txt__body2-small opt-fontweight--bold title_box">
-                              <div class="text-truncate">2</div>
-                            </div>
-                            <div class="opt_txt_color_tertiary opt-txt__body1-small text-truncate">
-                              <div class="client_box">Track No.</div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-xs-12 col-sm-3 col-md-3	col-lg-4">
-                        <div class="opt_flex--container">
-                          <div class="opt_flex__item tc-flex-item__center">
-                            <div class="opt_flex__item des-box ">
-                              <div [matMenuTriggerFor]="menu" class="address opt-txt__body2 opt-fontweight--bold opt-link--primary">
-                                3509 Chimney Road Drive, UK </div>
-                              <div class="opt-txt__secondary opt-txt__body1-small"> Lorem ipsum dolor sit
-                                amet,consectetuer adipiscing elit</div>
-                            </div>
-                            <mat-menu #menu="matMenu">
-                              <span class="opt-txt__secondary opt-txt__body2">Invoice Addresses</span>
-                              <button mat-menu-item>Anglr House, 1 Postley Road, Kempston</button>
-                              <span class="opt-txt__secondary opt-txt__body2">Booking Addresses</span>
-                              <button mat-menu-item>Anglr House, 1 Postley Road, Kempston</button>
-                              <span class="opt-txt__body2">--New Addresses--</span>
-                            </mat-menu>
+              </mat-tab>
 
+              <mat-tab label="Tasks">
+                <!--Header-->
+                <div class="deliverables-header header-row">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="opt_flex--container">
+                          <div class="opt_flex__item">
+                            <mat-checkbox>
+                              <span class="opt-txt__body1">Show hidden items (1)</span>
+                            </mat-checkbox>
                           </div>
                         </div>
                       </div>
-                      <div class="col-xs-12 col-sm-3 col-md-3	col-lg-3">
-                        <div class="opt_flex__item opt_flex__item--vcenter just-content-end">
-                          <i class="material-icons panel-icon opt_color_icon_font">print</i>
-                          <i class="material-icons panel-icon opt_color_icon_font">call_made</i>
+                      <div class="col-md-6">
+                        <div class="opt_flex--container just-content-end">
+                          <div class="opt_flex__item--inherit">
+                            <button mat-icon-button [matMenuTriggerFor]="deliverablesSort" class=""><i class="material-icons small opt_color_icon_font">filter_list</i></button>
+                            <mat-menu #deliverablesSort="matMenu" class="icon-text-menu">
+                              <div class="opt-triple-toggle" (click)="$event.stopPropagation();">
+                                <label>Tax</label>
+                                <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+                                  <mat-button-toggle value="on">On</mat-button-toggle>
+                                  <mat-button-toggle value="default">Dynamic</mat-button-toggle>
+                                  <mat-button-toggle value="off">Off</mat-button-toggle>
+                                </mat-button-toggle-group>
+                              </div>
+                              <div class="opt-triple-toggle" (click)="$event.stopPropagation();">
+                                <label>Currency</label>
+                                <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+                                  <mat-button-toggle value="on">System</mat-button-toggle>
+                                  <mat-button-toggle value="off">Booking</mat-button-toggle>
+                                </mat-button-toggle-group>
+                              </div>
+                            </mat-menu>
+                          </div>
+                          <div class="opt_flex__item--inherit opt_flex__item--vcenter">
+                            <div class="header_row--action-wrapper">
+                              <button mat-button class="mat-btn-primary--small btn-icon-text"><i class="material-icons opt_color_icon_font">add</i>
+                                <span class="btn-text hidden-sm opt-txt__secondary">Task</span></button>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="opt_flex--container dispatch-list-item ">
-                  <div class="opt_flex__item horizontally-center">
-                    <div class="row row-block">
-                      <div class="col-xs-12 col-sm-4 col-md-3	col-lg-3">
-                        <div class="opt_flex--container">
-                          <div class="opt_flex__item chck-box tc-flex-item__center">
-                            <mat-checkbox></mat-checkbox>
-                          </div>
-                          <div class="opt_flex__item des-box ">
-                            <div class="opt-txt__body2 opt-fontweight--bold"> 092883 | Country Stand Admission </div>
-                            <div class="opt-txt__secondary opt-txt__body1-small"> Delivery Method | Box Office
-                              Collection</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-xs-12 col-sm-2 col-md-2	col-lg-2">
-                        <div class="opt_flex--container">
-                          <div class="opt_flex__item des-box tc-flex-item__center">
-                            <div class="opt-txt__body2-small opt-fontweight--bold title_box">
-                              <div class="text-truncate">1</div>
+                <!--Content-->
+                <div class="deliverables-task">
+                  <mat-accordion>
+                    <mat-expansion-panel #myPanel13 [disabled]="true">
+                      <mat-expansion-panel-header collapsedHeight="55px" expandedHeight="55px">
+                        <div class="deliverables-list-item">
+                          <div class="opt_flex--container">
+                            <div class="opt_flex__item--inherit opt_flex__item--vcenter">
+                              <mat-checkbox>
+                              </mat-checkbox>
                             </div>
-                            <div class="opt_txt_color_tertiary opt-txt__body1-small text-truncate">
-                              <div class="client_box">Track No.</div>
+                            <div class="opt_flex__item opt_flex__item--vcenter p15">
+                              <div class="opt_flex--container opt-fd-col">
+                                <div class="opt_flex__item">
+                                  <span class="opt-txt__body2">Task Subject</span>
+                                </div>
+                              </div>
                             </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-xs-12 col-sm-3 col-md-4	col-lg-4">
-                        <div class="opt_flex--container">
-                          <div class="opt_flex__item des-box ">
-                            <div class="opt-txt__body2 opt-fontweight--bold opt-link--primary"> 3509 Chimney Road
-                              Drive, UK </div>
-                            <div class="opt-txt__secondary opt-txt__body1-small"> Lorem ipsum dolor sit
-                              amet,consectetuer adipiscing elit</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-xs-12 col-sm-3 col-md-3	col-lg-3">
-                        <div class="opt_flex__item opt_flex__item--vcenter just-content-end">
-                          <i class="material-icons panel-icon opt_color_icon_font">print</i>
-                          <i class="material-icons panel-icon opt-txt__tertiary">call_made</i>
-                          <i class="material-icons panel-icon opt_color_icon_font">scanner</i>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="opt_flex--container dispatch-list-item ">
-                  <div class="opt_flex__item horizontally-center">
-                    <div class="row row-block">
-                      <div class="col-xs-12 col-sm-4 col-md-3	col-lg-3">
-                        <div class="opt_flex--container">
-                          <div class="opt_flex__item chck-box tc-flex-item__center">
-                            <mat-checkbox></mat-checkbox>
-                          </div>
-                          <div class="opt_flex__item des-box ">
-                            <div class="opt-txt__body2 opt-fontweight--bold"> 092883 | Country Stand Admission </div>
-                            <div class="opt-txt__secondary opt-txt__body1-small"> Delivery Method | Box Office
-                              Collection</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-xs-12 col-sm-2 col-md-2	col-lg-2">
-                        <div class="opt_flex--container">
-                          <div class="opt_flex__item des-box tc-flex-item__center">
-                            <div class="opt-txt__body2-small opt-fontweight--bold title_box">
-                              <div class="text-truncate">3</div>
+                            <div class="opt_flex__item opt_flex__item--vcenter p15">
+                              <div class="opt_flex--container opt-fd-col">
+                                <div class="opt_flex__item">
+                                  <span class="opt-txt__body2">Item Name</span>
+                                </div>
+                              </div>
                             </div>
-                            <div class="opt_txt_color_tertiary opt-txt__body1-small text-truncate">
-                              <div class="client_box">Track No.</div>
+                            <div class="opt_flex__item opt_flex__item--vcenter p15">
+                              <div class="opt_flex--container opt-fd-col">
+                                <div class="opt_flex__item">
+                                  <span class="opt-txt__body2">Function sheet category</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="opt_flex__item opt_flex__item--vcenter p15">
+                              <div class="opt_flex--container opt-fd-col">
+                                <div class="opt_flex__item">
+                                  <span class="opt-txt__body2">Task status</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="opt_flex__item opt_flex__item--vcenter p15">
+                              <div class="opt_flex--container opt-fd-col">
+                                <div class="opt_flex__item">
+                                  <span class="opt-txt__body2">Allocated to users, user groups</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="opt_flex__item opt_flex__item--vcenter p15">
+                              <div class="opt_flex--container opt-fd-col">
+                                <div class="opt_flex__item">
+                                  <span class="opt-txt__body2">Due date</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="opt_flex__item opt_flex__item--vcenter just-content-end">
+                              <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">edit</i></button>
+                              <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">visibility_off</i></button>
+                            </div>
+                            <div class="opt_flex__item opt_flex__item--vcenter">
+                              <button class="down-arrow" mat-icon-button color="primary" (click)="expandPannel13()" [disableRipple]="true">
+                                <mat-icon>{{matIcon13}}</mat-icon>
+                              </button>
                             </div>
                           </div>
                         </div>
-                      </div>
-                      <div class="col-xs-12 col-sm-3 col-md-4	col-lg-4">
-                        <div class="opt_flex--container">
-                          <div class="opt_flex__item des-box ">
-                            <div class="opt-txt__body2 opt-fontweight--bold opt-link--primary"> 3509 Chimney Road
-                              Drive, UK </div>
-                            <div class="opt-txt__secondary opt-txt__body1-small"> Lorem ipsum dolor sit
-                              amet,consectetuer adipiscing elit</div>
-                          </div>
+                      </mat-expansion-panel-header>
+                      <div class="row">
+                        <div class="col-md-12">
+                            <div class="deliverables-list-item">
+                                <div class="opt_flex--container">
+                                  <div class="opt_flex__item--inherit opt_flex__item--vcenter">
+                                    <mat-checkbox>
+                                    </mat-checkbox>
+                                  </div>
+                                  <div class="opt_flex__item opt_flex__item--vcenter p15">
+                                    <div class="opt_flex--container opt-fd-col">
+                                      <div class="opt_flex__item">
+                                        <span class="opt-txt__body2">Task Subject</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="opt_flex__item opt_flex__item--vcenter p15">
+                                    <div class="opt_flex--container opt-fd-col">
+                                      <div class="opt_flex__item">
+                                        <span class="opt-txt__body2">Item Name</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="opt_flex__item opt_flex__item--vcenter p15">
+                                    <div class="opt_flex--container opt-fd-col">
+                                      <div class="opt_flex__item">
+                                        <span class="opt-txt__body2">Function sheet category</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="opt_flex__item opt_flex__item--vcenter p15">
+                                    <div class="opt_flex--container opt-fd-col">
+                                      <div class="opt_flex__item">
+                                        <span class="opt-txt__body2">Task status</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="opt_flex__item opt_flex__item--vcenter p15">
+                                    <div class="opt_flex--container opt-fd-col">
+                                      <div class="opt_flex__item">
+                                        <span class="opt-txt__body2">Allocated to users, user groups</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="opt_flex__item opt_flex__item--vcenter p15">
+                                    <div class="opt_flex--container opt-fd-col">
+                                      <div class="opt_flex__item">
+                                        <span class="opt-txt__body2">Due date</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="opt_flex__item opt_flex__item--vcenter just-content-end">
+                                    <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">edit</i></button>
+                                    <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">visibility_off</i></button>
+                                  </div>
+                                </div>
+                              </div>
                         </div>
                       </div>
-                      <div class="col-xs-12 col-sm-3 col-md-3	col-lg-3">
-                        <div class="opt_flex__item opt_flex__item--vcenter just-content-end">
-                          <i class="material-icons panel-icon opt-txt__tertiary">print</i>
-                          <i class="material-icons panel-icon opt_color_icon_font">call_made</i>
-                          <i class="material-icons panel-icon opt_txt_status_cancelled crrnt-status">print</i>
+                      <div class="forwarded-details-row">
+                        <div class="user-card">
+                            <div class="opt_flex--container opt-fd-col">
+                              <div class="opt_flex__item">
+                                <span class="opt-txt__body2">User Name</span>
+                              </div>
+                              <div class="opt_flex__item">
+                                <span class="opt-txt__body2-small opt-txt__secondary">Date forwarded</span>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="user-card">
+                            <div class="opt_flex--container opt-fd-col">
+                              <div class="opt_flex__item">
+                                <span class="opt-txt__body2">User Name</span>
+                              </div>
+                              <div class="opt_flex__item">
+                                <span class="opt-txt__body2-small opt-txt__secondary">Date forwarded</span>
+                              </div>
+                            </div>
                         </div>
                       </div>
-                    </div>
-                  </div>
+                    </mat-expansion-panel>
+                  </mat-accordion>
                 </div>
               </mat-tab>
-            </div>
           </mat-tab-group>
         </mat-step>
 
