@@ -81,6 +81,8 @@ readToggle3(){
   @ViewChild('myPanel12') myPanel12: MatExpansionPanel;
   matIcon12 = 'keyboard_arrow_down' || 'keyboard_arrow_up';
 
+  @ViewChild('myPanel13') myPanel13: MatExpansionPanel;
+  matIcon13 = 'keyboard_arrow_down' || 'keyboard_arrow_up';
 
   ngOnInit() {
     this.myPanel1.expandedChange.subscribe((data) => {
@@ -128,8 +130,12 @@ readToggle3(){
       this.matIcon12 = data ? 'keyboard_arrow_up' : 'keyboard_arrow_down';
     });
 
+
+    this.myPanel13.expandedChange.subscribe((data) => {
+      this.matIcon13 = data ? 'keyboard_arrow_up' : 'keyboard_arrow_down';
+    });
   }
-  expandPannel1() {
+  expandPannel() {
     this.myPanel1.expanded = !this.myPanel1.expanded;
     // alert("1");
   }
@@ -183,6 +189,10 @@ readToggle3(){
   }
   expandPannel12() {
     this.myPanel12.expanded = !this.myPanel12.expanded;
+    // alert("1");
+  }
+  expandPannel13() {
+    this.myPanel13.expanded = !this.myPanel13.expanded;
     // alert("1");
   }
 }

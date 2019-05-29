@@ -107,7 +107,7 @@
 
 .w90modal{
   @include respond-to('medium') {
-    max-width:90vw !important;
+    max-width:90vw;
   }
   .opt_modal-content{
     .mat-dialog-content{
@@ -116,7 +116,7 @@
         border-radius: 4px 4px 0 0;
         position: fixed;
         width: 90%;
-        max-width:90vw;
+        //max-width:90vw;
         z-index: 9999;
         background-color: #fff;
         opacity: 1;

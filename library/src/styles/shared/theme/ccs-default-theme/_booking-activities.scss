@@ -1024,65 +1024,84 @@
       padding:0 10px;
     }
   }
-
-  .dispatch-list-item {
-    padding: 10px 0;
-    border-bottom: 1px solid $opt-border-color;
-    .row-block{
-
-      @include respond-to('x-small') {
-        padding: 10px 0;
-        display: block !important;
+  .deliverables-task{
+    .mat-expansion-panel{
+      &.mat-expanded{
+        border-left: 4px solid #4bb3fa;
+        box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+        margin-bottom: 50px;
+        transition: 0.3s;
       }
-      @include respond-to('small') {
-        padding: 10px 0;
-        display: block !important;
+      .mat-expansion-panel-header{
+        padding: 0px;
+        overflow: hidden;
       }
-      @include respond-to('medium') {
-        padding: 0;
-        display: flex !important;
+      .mat-expansion-panel-header[aria-disabled=true]{
+        color: unset;
       }
-    }
-    .crrnt-status {
-      background-color: inherit;
-
-    }
-
-    .row {
-      margin: 0;
-      display: flex;
-      [class*=' col-'] {
+      .mat-expansion-panel-body{
+        padding: 0px 0px 16px;
+        margin-right: 24px;
+      }
+      .forwarded-details-row{
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding:0 10px;
+        align-items: center;
+        height: 55px;
+        background-color: #fff;
+        padding-left: 10px;
+        margin: 20px 0px 10px 16px;
+        .user-card{
+          width: 300px;
+          display: flex;
+          &::after{
+            font-family: 'Material Icons';
+            content: 'navigate_next';
+            height: 40px;
+            width: 40px;
+            border: 1px solid #000;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            left: 150px;
+          }
+          &:nth-last-child(1){
+            &::after{
+              display: none;
+            }
+          }
+        }
       }
     }
-
-    .mat-expansion-panel-body {
-      padding: 10px 50px 16px 15px;
+    
+    .deliverables-list-item{
+      width: 100%;
+      border:unset;
     }
-
-    width: 100%;
-    margin: 0;
-
-    .text-truncate {
-      display: inline-block;
-      @include respond-to('x-small') {
-        max-width: 130px;
-      }
-      @include respond-to('small') {
-        max-width: 270px;
-      }
-      @include respond-to('medium') {
-        max-width: 180px;
-      }
-      @include respond-to('large') {
-        max-width: 225px;
-      }
-    }
-
   }
+  .facility-menu{
+    width: 700px;
+    overflow: hidden;
+    background-color: #f5f5f5;
+    .inline-spinner{
+      display: none;
+    }
+    .header-row{
+      padding:10px;
+      .small{
+        padding-right: 5px;
+      }
+    }
+    .menu-row{
+      height: 48px;
+      padding: 10px;
+      background-color: #fff;
+      border-bottom: 1px solid #eeeeee;
+    }
+  }
+
+  
 
   .opt-deli-header {
     mat-checkbox {
