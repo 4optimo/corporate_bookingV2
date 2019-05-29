@@ -255,7 +255,8 @@
     <mat-accordion>
 
 
-      <mat-expansion-panel #myPanel [disabled]="true" class="opt-expand--line">
+      <mat-expansion-panel #myPanel [disabled]="true" class="opt-expand--line"
+                           *ngFor="let PackageName of PackageName ; let i = index">
         <mat-expansion-panel-header class="opt_expand__header" collapsedHeight="55px" expandedHeight="55px">
 
 
