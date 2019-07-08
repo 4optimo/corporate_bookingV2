@@ -1749,18 +1749,17 @@
                           <button mat-icon-button [matMenuTriggerFor]="deliverablesSort" class=""><i class="material-icons small opt_color_icon_font">filter_list</i></button>
                           <mat-menu #deliverablesSort="matMenu" class="icon-text-menu">
                             <div class="opt-triple-toggle" (click)="$event.stopPropagation();">
-                              <label>Tax</label>
+                              <label>Event Date Ascending</label>
                               <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
                                 <mat-button-toggle value="on">On</mat-button-toggle>
-                                <mat-button-toggle value="default">Dynamic</mat-button-toggle>
                                 <mat-button-toggle value="off">Off</mat-button-toggle>
                               </mat-button-toggle-group>
                             </div>
                             <div class="opt-triple-toggle" (click)="$event.stopPropagation();">
-                              <label>Currency</label>
+                              <label>Package Name A-Z</label>
                               <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
-                                <mat-button-toggle value="on">System</mat-button-toggle>
-                                <mat-button-toggle value="off">Booking</mat-button-toggle>
+                                <mat-button-toggle value="on">On</mat-button-toggle>
+                                <mat-button-toggle value="off">Off</mat-button-toggle>
                               </mat-button-toggle-group>
                             </div>
                           </mat-menu>
@@ -1809,7 +1808,7 @@
                     </div>
                     <div class="opt_flex__item opt_flex__item--vcenter p10">
                       <span><i class="material-icons small action-icon" [matMenuTriggerFor]="facilityMenu">domain</i></span>
-                      <mat-menu #facilityMenu="matMenu" class="general-popover">
+                      <mat-menu #facilityMenu="matMenu" class="general-popover ">
                         <div class="opt_booking__activity">
                             <div class="facility-menu">
                                 <div class="opt_flex--container header-row">
@@ -1851,9 +1850,24 @@
                     </div>
                     <div class="opt_flex__item opt_flex__item--vcenter p20">
                       <span class="opt-txt__body1">Sample item description</span>
+                      <button mat-button class="panel-action-btn-icon" [matMenuTriggerFor]="deliverableseditnote"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">edit</i></button>
+                      <mat-menu #deliverableseditnote="matMenu" class="general-popover">
+                        <div class="row">
+                          <div class="col-xs-12">
+                              <mat-form-field class="example-full-width">
+                                  <textarea matInput placeholder="Sample item description"></textarea>
+                                </mat-form-field>
+                          </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <button mat-button class="mat-btn-primary--small btn-icon-text"><i class="material-icons opt_color_icon_font">add</i>
+                                  <span class="btn-text hidden-sm opt-txt__secondary">Save</span></button>
+                            </div>
+                          </div>
+                      </mat-menu>
                     </div>
                     <div class="opt_flex__item opt_flex__item--vcenter just-content-end">
-                      <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">edit</i></button>
                       <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">visibility</i></button>
                     </div>
                   </div>
@@ -1891,9 +1905,9 @@
                     </div>
                     <div class="opt_flex__item opt_flex__item--vcenter p20">
                       <span class="opt-txt__body1">Sample item description</span>
+                      <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">edit</i></button>
                     </div>
                     <div class="opt_flex__item opt_flex__item--vcenter just-content-end">
-                      <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">edit</i></button>
                       <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">visibility_off</i></button>
                     </div>
                   </div>
@@ -2052,7 +2066,7 @@
                 <!--Content-->
                 <div class="deliverables-tasks">
                   <mat-accordion>
-                    <mat-expansion-panel #myPanel13 [disabled]="true">
+                    <mat-expansion-panel #myPanel14 [disabled]="true">
                       <mat-expansion-panel-header collapsedHeight="55px" expandedHeight="55px">
                         <div class="deliverables-list-item">
                           <div class="opt_flex--container">
@@ -2107,8 +2121,8 @@
                               <button mat-button class="panel-action-btn-icon"><i class="material-icons mat-btn-icon-btn opt_color_icon_font">visibility_off</i></button>
                             </div>
                             <div class="opt_flex__item opt_flex__item--vcenter">
-                              <button class="down-arrow" mat-icon-button color="primary" (click)="expandPannel13()" [disableRipple]="true">
-                                <mat-icon>{{matIcon13}}</mat-icon>
+                              <button class="down-arrow" mat-icon-button color="primary" (click)="expandPannel14()" [disableRipple]="true">
+                                <mat-icon>{{matIcon14}}</mat-icon>
                               </button>
                             </div>
                           </div>

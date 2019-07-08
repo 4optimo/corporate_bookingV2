@@ -1,0 +1,161 @@
+<div class="booking-approval-page-wrapper">
+<app-opt-search-panel></app-opt-search-panel>
+<div class="options-section opt--depth__1">
+    <div class="row">
+        <div class="col-md-3">
+          <mat-form-field>
+            <mat-label>User</mat-label>
+            <mat-select>
+              <mat-option value="User 1">User 1</mat-option>
+              <mat-option value="User 2">User 2</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+        <div class="col-md-3">
+          <mat-form-field>
+            <mat-label>Event</mat-label>
+            <mat-select>
+              <mat-option value="User 1">Event 1</mat-option>
+              <mat-option value="User 2">Event 2</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+        <div class="col-md-3">
+          <mat-form-field>
+            <mat-label>Booking Status</mat-label>
+            <mat-select>
+              <mat-option value="User 1">Status 1</mat-option>
+              <mat-option value="User 2">Status 2</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+        <div class="col-md-3">
+            <div class="opt_flex--container client-search">
+              <div class="opt_flex__item--inerit opt_flex__item--vcenter">
+                  <mat-form-field class="">
+                    <input matInput placeholder="Client" value="">
+                  </mat-form-field>
+              </div>
+              <div class="opt_flex__item--inerit opt_flex__item--vcenter">
+                  <button mat-button class="mat-btn-primary"><i class="material-icons">search</i></button>
+              </div>
+            </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+            <div class="opt_flex--container opt-fd-col">
+              <div class="opt_flex__item--inerit opt_flex__item--vcenter">
+                  <mat-radio-group name="date-range" aria-label="Select an option">
+                      <mat-radio-button class="opt-txt__body2" value="1">Event Date Range</mat-radio-button>
+                  </mat-radio-group>
+              </div>
+              <div class="opt_flex__item--inerit opt_flex__item--vcenter">
+                  <mat-form-field>
+                    <mat-label>Event Date Range</mat-label>
+                    <mat-select>
+                      <mat-option value="All (including past events)">All (including past events)</mat-option>
+                    </mat-select>
+                  </mat-form-field>
+              </div>
+            </div>
+        </div>
+        <div class="col-md-3 specific-period">
+            <div class="opt_flex--container opt-fd-col">
+                <div class="opt_flex__item--inerit opt_flex__item--vcenter">
+                    <mat-radio-group name="date-range" aria-label="Select an option">
+                        <mat-radio-button class="opt-txt__body2" value="1">Specific Period</mat-radio-button>
+                    </mat-radio-group>
+                </div>
+                <div class="opt_flex__item--inerit opt_flex__item--vcenter">
+                    <mat-form-field>
+                      <input matInput [matDatepicker]="picker1" placeholder="From">
+                      <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+                      <mat-datepicker #picker1></mat-datepicker>
+                    </mat-form-field>
+                    <mat-form-field>
+                      <input matInput [matDatepicker]="picker2" placeholder="To">
+                      <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+                      <mat-datepicker #picker2></mat-datepicker>
+                    </mat-form-field>
+                </div>
+              </div>
+        </div>
+        <div class="col-md-3">
+            <mat-checkbox class="opt-txt__body2">Rules violated bookings</mat-checkbox>
+        </div>
+        <div class="col-md-3 venue-select">
+            <mat-form-field>
+                <mat-label>Venue</mat-label>
+                <mat-select>
+                  <mat-option value="All">All</mat-option>
+                </mat-select>
+              </mat-form-field>
+        </div>
+      </div>
+</div>
+<div class="table-responsive">
+    <table class="table table-striped">
+        <thead class="opt-txt__body2">
+          <tr>
+            <th scope="col">Booking Ref</th>
+            <th scope="col">Client</th>
+            <th scope="col">Booking Status</th>
+            <th scope="col">Covers</th>
+            <th scope="col">Booking Total</th>
+            <th scope="col">Margin</th>
+            <th scope="col">Age</th>
+            <th scope="col">Event</th>
+            <th scope="col">Approver</th>
+          </tr>
+        </thead>
+        <tbody class="opt-txt__body1">
+          <tr>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>@mdo</td>
+            <td>@mdo</td>
+            <td>@mdo</td>
+            <td>@mdo</td>
+            <td>@mdo</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+            <td>@fat</td>
+            <td>@fat</td>
+            <td>@fat</td>
+            <td>@fat</td>
+            <td>@fat</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+            <td>@twitter</td>
+            <td>@twitter</td>
+            <td>@twitter</td>
+            <td>@twitter</td>
+            <td>@twitter</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+<div class="opt_flex--container button-row just-content-end">
+  <div class="opt_flex__item--inherit opt_flex__item--vcenter opt-txt__link">Rules Violated Bookings</div>
+  <div class="opt_flex__item--inherit opt_flex__item--vcenter">
+    <button mat-button class="mat-btn-primary">Approve</button>
+  </div>
+  <div class="opt_flex__item--inherit opt_flex__item--vcenter">
+    <button mat-button class="mat-btn-primary">Reject</button>
+  </div>
+  <div class="opt_flex__item--inherit opt_flex__item--vcenter">
+    <button mat-button class="mat-btn-primary">Close</button>
+  </div>
+</div>
+</div>

@@ -1,7 +1,7 @@
 import { AppComponent } from './app.component';
 import { CdkTableModule } from '@angular/cdk/table';
 import { HttpClientModule } from '@angular/common/http';
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { NgxEditorModule } from 'ngx-editor';
@@ -9,6 +9,8 @@ import { NgxPopper } from 'angular-popper';
 import { NgxPopperModule } from 'ngx-popper';
 import { Ng5SliderModule } from 'ng5-slider';
 import { TimepickerModule } from 'ngx-bootstrap/timepicker';
+import { NguCarouselModule } from '@ngu/carousel';
+
 //import { TooltipModule } from 'ngx-bootstrap/tooltip';
 import {
   MatAutocompleteModule,
@@ -46,10 +48,10 @@ import {
   MatOptionModule,
   MatDialogTitle,
 } from '@angular/material';
-
+import 'hammerjs';
 import { BrowserModule } from '@angular/platform-browser';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { BrowserAnimationsModule, NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { trigger, style, transition, animate, keyframes, query, stagger } from '@angular/animations';
 import { ExpansionPanelComponent } from './expansion-panel/expansion-panel.component';
 import { OptBookingListComponent } from './opt-booking-list/opt-booking-list.component';
@@ -148,7 +150,8 @@ import { OptContactSetupPopupComponent } from './opt-contact-setup-popup/opt-con
 import { OptTimerangeSelectorComponent } from './opt-timerange-selector/opt-timerange-selector.component';
 import { OptBondItemsPopupComponent } from './opt-bond-items-popup/opt-bond-items-popup.component';
 import { OptBondItemCartComponent } from './opt-bond-item-cart/opt-bond-item-cart.component';
-
+import { OptSliderComponent } from './opt-slider/opt-slider.component';
+import { OptBookingApprovalComponent } from './opt-booking-approval/opt-booking-approval.component';
 
 
 const appRoutes: Routes = [
@@ -226,6 +229,7 @@ const appRoutes: Routes = [
   { path: 'opt-timerange-selector', component: OptTimerangeSelectorComponent },
   { path: 'opt-bond-items-popup', component: OptBondItemsPopupComponent },
   { path: 'opt-bond-item-cart', component: OptBondItemCartComponent },
+  { path: 'opt-booking-approval', component: OptBookingApprovalComponent },
 
   { path: '', redirectTo: '/opt-booking-summary', pathMatch: 'full' },
   { path: '**', redirectTo: '/opt-booking-summary', pathMatch: 'full' }
@@ -266,11 +270,9 @@ const appRoutes: Routes = [
     MatTabsModule,
     MatToolbarModule,
     MatTooltipModule,
-    ScrollDispatchModule
+    ScrollDispatchModule,
 
   ],
-  declarations: [],
-
 })
 export class DemoMaterialModule { }
 
@@ -361,7 +363,8 @@ export class DemoMaterialModule { }
     OptBondItemCartComponent,
     RoutingProjectComponent,
     TypographyComponent,
-
+    OptSliderComponent,
+    OptBookingApprovalComponent
   ],
   imports: [
     BrowserModule,
@@ -386,11 +389,13 @@ export class DemoMaterialModule { }
     NgMultiSelectDropDownModule,
     RouterModule.forRoot(appRoutes),
     NgxEditorModule,
+    NguCarouselModule,
     TimepickerModule.forRoot(),
     //TooltipModule,
     NgxPopper,
     NgxPopperModule,
     Ng5SliderModule,
+    NguCarouselModule
   ],
 
   entryComponents: [
@@ -406,6 +411,7 @@ export class DemoMaterialModule { }
     OptCancelBookingComponent,
     OptDiscountSearchComponent
   ],
+  schemas: [ CUSTOM_ELEMENTS_SCHEMA],
 
   providers: [{ provide: APP_BASE_HREF, useValue: '/' }],
 

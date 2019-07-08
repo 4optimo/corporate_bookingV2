@@ -1,0 +1,30 @@
+<ngu-carousel #myCarousel [inputs]="carouselTileConfig" [dataSource]="carouselTileItems">
+    <ngu-tile *nguCarouselDef="let item; let i = index;">
+        <!--[@slider]="ani" PLease this animation to this tile to see animation. stackblitz have error with animations-->
+        <div class="tile">
+            {{i}}
+            <!-- <div *ngIf="i == 0">
+            </div>
+            <div *ngIf="i == 1">
+            </div>
+            <div *ngIf="i == 2"> Q3</div>
+            <div *ngIf="i == 3"> Q4</div>
+            <div *ngIf="i == 4"> Q5</div>
+            <div *ngIf="i == 5"> Q6</div> -->
+        </div>
+    </ngu-tile>
+    <button NguCarouselPrev class="leftRs" [style.opacity]="myCarousel.isFirst ? 0.5:1">
+        <i class="material-icons">
+            arrow_back_ios
+        </i>
+    </button>
+    <button NguCarouselNext class="rightRs" [style.opacity]="myCarousel.isLast ? 0.5:1">
+        <i class="material-icons">
+            arrow_forward_ios
+        </i>
+    </button>
+
+    <ul class="myPoint" NguCarouselPoint>
+        <li *ngFor="let i of myCarousel.pointNumbers; let i = index" [class.active]="i==myCarousel.activePoint" (click)="myCarousel.moveTo(i)"></li>
+    </ul>
+</ngu-carousel>

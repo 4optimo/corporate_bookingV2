@@ -1,0 +1,52 @@
+.booking-approval-page-wrapper{
+    .options-section{
+        background-color: #fff;
+        padding: 10px;
+        margin: 15px 0px;
+        .row{
+            margin:10px 0px;
+        }
+        .client-search{
+            .mat-form-field{
+                height: 37px;
+                width: 100%;
+            }
+            button{
+                min-width: 58px !important;
+            }
+        }
+        .venue-select{
+            .mat-form-field{
+                bottom: 9px;
+            }
+        }
+        .specific-period{
+            .mat-form-field{
+                width:50% !important;
+                &:nth-child(2){
+                    margin-left: 10px;
+                }
+            }
+        }
+        button{
+            margin-left: 10px;
+        }
+        .mat-form-field{
+            width: 80%;
+        }
+    }
+    .table{
+        background-color: #fff;
+    }
+    .button-row{
+        button{
+            margin-left: 10px;
+        }
+        .opt-txt__link{
+            &:hover{
+                text-decoration: underline;
+                cursor: pointer;
+            }
+        }
+    }
+}
