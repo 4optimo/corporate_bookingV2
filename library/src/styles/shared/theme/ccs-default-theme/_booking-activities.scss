@@ -122,6 +122,10 @@
       align-items: center;
     }
   }
+  .symbol_icon{
+      color:#909cac;
+      margin:0 5px;
+  }
 }
 
 
@@ -588,6 +592,15 @@
     }
   }
   .payment_list_item{
+    .mat-checkbox{
+        .opt_lbl_primary{
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            height:17px;
+            width:50px;
+        }
+    }
     .mat-expansion-panel{
       box-shadow: unset;
       &.mat-expanded{
@@ -650,6 +663,30 @@
       .col-xs-4{
         display: flex;
         align-items: center;
+      }
+      .opt-triple-toggle{
+          .count-indicator{
+                position: absolute;
+                color:#fff ;
+                background-color: #4bb3fa;
+                height: 10px;
+                width: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                top: 1px;
+                right: 1px;
+                font-size: lin;
+                font-size: 10px;
+                line-height: 19px;
+          }
+          .mat-button-toggle-checked{
+              .count-indicator{
+                  color: #4bb3fa;
+                  background-color: #fff;
+              }
+          }
       }
     }
     .payment-invoice-list{

@@ -28,14 +28,37 @@
       </div>
       <div class="row">
         <div class="col-xs-6 col-sm-6 col-md-4">
-          <div class="opt_flex--container invoice-bio">
-            <div class="opt_flex__item opt_flex__item--vcenter">
-              <h2 class="opt__heading-2">John Deo</h2>
-            </div>
-            <div class="opt_flex__item opt_flex__item--vcenter">
-              <span class="opt-txt__body1 opt-txt__secondary">200 Broadway Av,<br>West Beach SA, Australia.</span>
-            </div>
-          </div>
+            <div class="opt_flex--container">
+                <div class="opt_flex__item--inherit">
+                    <div class="opt_flex--container invoice-bio">
+                        <div class="opt_flex__item opt_flex__item--vcenter">
+                          <h2 class="opt__heading-2">John Deo</h2>
+                        </div>
+                        <div class="opt_flex__item opt_flex__item--vcenter">
+                          <span class="opt-txt__body1 opt-txt__secondary">200 Broadway Av,<br>West Beach SA, Australia.</span>
+                        </div>
+                      </div>
+                </div>
+                <div class="opt_flex__item">
+                    <div class="opt_flex--container">
+                        <div class="opt_flex__item">
+                          <button mat-button class="panel-action-btn-icon" [matMenuTriggerFor]="editInvoiceBio">
+                              <i class="material-icons mat-btn-icon-btn opt_color_icon_font">edit</i>
+                          </button>
+                          <mat-menu #editInvoiceBio="matMenu">
+                            <button mat-menu-item >Existing contacts</button>
+                            <button mat-menu-item [matMenuTriggerFor]="createnew">Create new</button>
+                          </mat-menu>
+                          <mat-menu #createnew="matMenu">
+                            <button mat-menu-item>Corporate</button>
+                            <button mat-menu-item>Individual</button>
+                          </mat-menu>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+          
+          
         </div>
         <div class="col-xs-12 col-sm-12 col-md-8">
           <div class="opt_flex--container invoice-total">

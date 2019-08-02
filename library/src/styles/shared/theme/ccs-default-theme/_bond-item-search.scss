@@ -116,3 +116,52 @@
         }
     } 
 }
+
+//Bond refund popups
+.bond-refund-popup-wrapper{
+  .br-row{
+    padding: 0 15px;
+    .row{
+        padding: unset !important;
+    }
+    .header-row{
+        background-color: #eeeeee;
+        height: 40px;
+        .right-col{
+            .header-label{
+                padding-right: 10px;
+            }
+        }
+    }
+    .br-val-row{
+        border: 1px solid #f5f5f5;
+        .bond-amount-value{
+            padding-right: 10px;
+        }
+    }
+    .opt_flex--container{
+        height: 40px !important;
+    }
+    .mat-form-field{
+        padding-right: 10px;
+        text-align: right !important;
+        height: 50px;
+    }
+}
+.cp-row{
+  height: 50px;
+  .cp-value{
+      color: #f5c70e;
+  }
+}
+.error-msg-row{
+  color: #f5766c;
+  margin:10px 0px;
+}
+.cb-button-row{
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 10px;
+  margin-left: 10px;
+}
+}

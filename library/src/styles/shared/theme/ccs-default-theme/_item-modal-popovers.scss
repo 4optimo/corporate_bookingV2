@@ -4,7 +4,7 @@
     padding: 0 50px !important;
   }
   .md-accordion{
-    padding: 20px 50px;
+    margin-top:20px;
     .opt_flex__item {
       flex-basis: unset;
       flex-grow: 1;
@@ -29,6 +29,9 @@
     padding: unset;
     border-bottom: unset;
     margin: unset;
+  }
+  .single-defined{
+      min-width:100%;
   }
 }
 .multiple-normal{
@@ -68,6 +71,7 @@
   }
   .time-slot-selection{
     max-height: 187px !important;
+    overflow-y:hidden !important;
     mat-icon{
       cursor: pointer;
     }
@@ -89,17 +93,49 @@
     padding:0px;
   }
 }
-.single-defined{
-  .time-slot{
-    min-height: 55px;
-    display: flex;
-    align-items: center;
-  }
-  .individual-row{
-    height: unset;
-    line-height: unset;
-    flex-grow: 1;
-  }
+.single-defined {
+    margin-top:20px;
+    min-width:70vw;
+    .row {
+        width: 100%;
+    }
+
+    .availability-icon {
+        display: flex;
+    }
+
+    .time-slot {
+        min-height: 55px;
+        display: flex;
+        align-items: center;
+    }
+
+    .individual-row {
+        height: unset;
+        line-height: unset;
+        flex-grow: 1;
+    }
+
+    .mat-form-field-underline {
+        bottom: 1.25em;
+    }
+
+    .opt__subtitle-2-small {
+        line-height: 13px;
+    }
+
+    .price-align {
+        .mat-form-field-infix {
+            border-top: .84375em solid transparent !important;
+            padding: .4375em 0 !important;
+        }
+    }
+    .opt_calendar-expand{
+        width:100%;
+    }
+    .time-slot-selection{
+        padding: 0 50px !important;
+    }
 }
 .config-popup{
   background-color: #ffffff;
@@ -195,7 +231,11 @@
     flex-grow: 1;
     padding: 10px 0;
     border-bottom: 1px dashed $opt_text_color_tertiary;
-    margin: 10px 10px 10px 0px;
+    //margin: 10px 10px 10px 0px;
+    .edit-time{
+        display: flex;
+        align-items: center;
+    }
   }
   .flex-container {
     justify-content: space-around;
@@ -221,8 +261,8 @@
     }
   }
   .panel-action-btn-icon{
-      position: relative;
-      top: 4px;
+      //position: relative;
+      //top: 4px;
   }
 }
 

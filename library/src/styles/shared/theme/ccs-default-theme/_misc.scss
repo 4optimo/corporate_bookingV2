@@ -79,6 +79,9 @@
         &.p33{
           width: 33%;
         }
+        &.p40{
+          width: 40%;
+        }
         &.p50{
           width: 50%;
         }
@@ -134,8 +137,8 @@
 
 
 .tc-flex-item__justify_center{
-  align-items: center;
-  justify-content: center;
+  align-items: center !important;
+  justify-content: center  !important;
 }
 
 
@@ -345,11 +348,11 @@ h1,h2,h3,h4,h5,h6{
     color: #4bb3fa;
     cursor: pointer;
   }
-  .mat-dialog-actions{
-    padding-bottom: 0px;
+  .mat-dialog-title{
+      margin:0px;
   }
-  p{
-    margin-bottom: 0;
+  .mat-dialog-actions{
+    //padding-bottom: 0px;
   }
   .opt_flex--container{
     min-height: 24px;
@@ -364,6 +367,14 @@ h1,h2,h3,h4,h5,h6{
       padding: 10px 0px;
     }
   }
+}
+.mat-dialog-title {
+    margin: 0px 0 10px !important;
+}
+.mat-dialog-content{
+    p{
+        margin-bottom:0px;
+    }
 }
 .price--values{
   .save-button{
@@ -484,11 +495,15 @@ h1,h2,h3,h4,h5,h6{
 }
 .actionable-icon{
   color:$opt-text-color__quaternary !important;
+  line-height:42px !important;
 }
 .information-icon{
   color:$opt-text-color__secondary !important;
   &.mat-icon-button{
       line-height:44px;
+  }
+  &.material-icons{
+      line-height:42px !important;
   }
 }
 .img-new {

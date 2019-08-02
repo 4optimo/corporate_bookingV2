@@ -162,9 +162,10 @@ mat-expansion-panel {
         &.inner {
           flex-wrap: wrap;
           .opt_flex__item--inherit {
+              //height:45px;
             flex-shrink: 0;
             &:nth-child(1) {
-              width: 280px;
+              width: 350px;
             }
             &:nth-child(2) {
               width: 110px;
@@ -252,10 +253,10 @@ mat-expansion-panel {
       }
       .package_details {
         padding: 0 15px;
-        width: 240px;
+        width: 350px;
         .package_title {
           overflow: visible;
-          white-space: normal;
+          //white-space: normal;
           width: fit-content;
           display:flex;
           align-items:center;

@@ -498,9 +498,9 @@ app-opt-paginator{
             justify-content: space-evenly;
         }
     }
-    i{
+    /*i{
         color:#4bb3fa;
-    }
+    }*/
     .mat-dialog-content{
         .row{
             display:flex;
@@ -510,4 +510,8 @@ app-opt-paginator{
         padding: 0px;
         overflow: hidden;
     }
+}
+.message-box-inline-icon{
+        color:#4bb3fa;
+        margin-right: 5px;
 }

@@ -4,9 +4,15 @@
     .opt_flex--container:nth-child(1) {
       //align-items: center;
     }
-    .mat-expansion-panel-header{
-      @media(max-width: 1024px) {
-        height: 68px !important;
+    .mat-expansion-panel-header {
+        padding:5px;
+      @include respond-to("medium") {
+        height: auto !important;
+        //background-color: #9e9d24;
+      }
+      @include respond-to("small") {
+        height: auto !important;
+        //background-color: red;
       }
     }
     &.opt_modal-content {

@@ -152,6 +152,7 @@ import { OptBondItemsPopupComponent } from './opt-bond-items-popup/opt-bond-item
 import { OptBondItemCartComponent } from './opt-bond-item-cart/opt-bond-item-cart.component';
 import { OptSliderComponent } from './opt-slider/opt-slider.component';
 import { OptBookingApprovalComponent } from './opt-booking-approval/opt-booking-approval.component';
+import { OptBondRefundPopupComponent } from './opt-bond-refund-popup/opt-bond-refund-popup.component';
 
 
 const appRoutes: Routes = [
@@ -230,6 +231,7 @@ const appRoutes: Routes = [
   { path: 'opt-bond-items-popup', component: OptBondItemsPopupComponent },
   { path: 'opt-bond-item-cart', component: OptBondItemCartComponent },
   { path: 'opt-booking-approval', component: OptBookingApprovalComponent },
+  { path: 'opt-bond-refund-popup', component: OptBondRefundPopupComponent },
 
   { path: '', redirectTo: '/opt-booking-summary', pathMatch: 'full' },
   { path: '**', redirectTo: '/opt-booking-summary', pathMatch: 'full' }
@@ -361,6 +363,7 @@ export class DemoMaterialModule { }
     OptTimerangeSelectorComponent,
     OptBondItemsPopupComponent,
     OptBondItemCartComponent,
+    OptBondRefundPopupComponent,
     RoutingProjectComponent,
     TypographyComponent,
     OptSliderComponent,

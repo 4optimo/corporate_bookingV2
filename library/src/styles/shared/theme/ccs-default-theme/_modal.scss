@@ -1,0 +1,26 @@
+.opt_email-document-popup{
+     .mat-btn-mini-fab{
+            margin:0 5px !important;
+        }
+   
+
+}
+
+.email-btn-row{
+         .mat-btn-primary{
+                 margin-right: 20px;
+         }
+           .mat-btn-primary:last-child{
+                margin-right: 0 !important;
+           }
+     }
+
+.email-btn-space{
+    padding-right:0 !important;
+}
+ button{
+        .inline-spinner {
+            display:flex;
+            justify-content:center;
+        }
+    }
