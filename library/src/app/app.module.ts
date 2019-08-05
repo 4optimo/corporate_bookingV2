@@ -10,7 +10,7 @@ import { NgxPopperModule } from 'ngx-popper';
 import { Ng5SliderModule } from 'ng5-slider';
 import { TimepickerModule } from 'ngx-bootstrap/timepicker';
 import { NguCarouselModule } from '@ngu/carousel';
-
+import { Customer360Module } from './customer360/customer360.module';
 //import { TooltipModule } from 'ngx-bootstrap/tooltip';
 import {
   MatAutocompleteModule,
@@ -153,7 +153,7 @@ import { OptBondItemCartComponent } from './opt-bond-item-cart/opt-bond-item-car
 import { OptSliderComponent } from './opt-slider/opt-slider.component';
 import { OptBookingApprovalComponent } from './opt-booking-approval/opt-booking-approval.component';
 import { OptBondRefundPopupComponent } from './opt-bond-refund-popup/opt-bond-refund-popup.component';
-
+import { AppRoutingModule } from './app-routing.module';
 
 const appRoutes: Routes = [
   { path: 'opt-booking-list', component: OptBookingListComponent },
@@ -398,7 +398,9 @@ export class DemoMaterialModule { }
     NgxPopper,
     NgxPopperModule,
     Ng5SliderModule,
-    NguCarouselModule
+    NguCarouselModule,
+    Customer360Module,
+    AppRoutingModule
   ],
 
   entryComponents: [
