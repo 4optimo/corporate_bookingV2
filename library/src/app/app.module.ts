@@ -10,7 +10,7 @@ import { NgxPopperModule } from 'ngx-popper';
 import { Ng5SliderModule } from 'ng5-slider';
 import { TimepickerModule } from 'ngx-bootstrap/timepicker';
 import { NguCarouselModule } from '@ngu/carousel';
-import { Customer360Module } from './customer360/customer360.module';
+//import { Customer360Module } from './customer360/customer360.module';
 //import { TooltipModule } from 'ngx-bootstrap/tooltip';
 import {
   MatAutocompleteModule,
@@ -154,6 +154,7 @@ import { OptSliderComponent } from './opt-slider/opt-slider.component';
 import { OptBookingApprovalComponent } from './opt-booking-approval/opt-booking-approval.component';
 import { OptBondRefundPopupComponent } from './opt-bond-refund-popup/opt-bond-refund-popup.component';
 import { AppRoutingModule } from './app-routing.module';
+import { OptInvoiceGeneratorRoComponent } from './opt-invoice-generator-ro/opt-invoice-generator-ro.component';
 
 const appRoutes: Routes = [
   { path: 'opt-booking-list', component: OptBookingListComponent },
@@ -367,7 +368,8 @@ export class DemoMaterialModule { }
     RoutingProjectComponent,
     TypographyComponent,
     OptSliderComponent,
-    OptBookingApprovalComponent
+    OptBookingApprovalComponent,
+    OptInvoiceGeneratorRoComponent
   ],
   imports: [
     BrowserModule,
@@ -399,7 +401,7 @@ export class DemoMaterialModule { }
     NgxPopperModule,
     Ng5SliderModule,
     NguCarouselModule,
-    Customer360Module,
+    //Customer360Module,
     AppRoutingModule
   ],
 
@@ -414,7 +416,8 @@ export class DemoMaterialModule { }
     OptPackageCartComponent,
     OptDataTableComponent,
     OptCancelBookingComponent,
-    OptDiscountSearchComponent
+    OptDiscountSearchComponent,
+    OptInvoiceGeneratorRoComponent
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA],
 

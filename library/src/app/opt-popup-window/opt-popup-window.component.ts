@@ -16,6 +16,7 @@ import { OptAddNoteComponent } from '../opt-add-note/opt-add-note.component';
 import { OptReprintPopupComponent } from "../opt-reprint-popup/opt-reprint-popup.component";
 import { OptTaskPopupComponent } from "../opt-task-popup/opt-task-popup.component";
 import { OptInvoiceGeneratorComponent } from "../opt-invoice-generator/opt-invoice-generator.component";
+import { OptInvoiceGeneratorRoComponent } from "../opt-invoice-generator-ro/opt-invoice-generator-ro.component";
 import { OptQuestionnairePopupComponent } from "../opt-questionnaire-popup/opt-questionnaire-popup.component";
 import { OptDocumentSelectPopupComponent } from "../opt-document-select-popup/opt-document-select-popup.component";
 import { OptDispatchAddNewAddressComponent } from "../opt-dispatch-add-new-address/opt-dispatch-add-new-address.component";
@@ -194,6 +195,15 @@ export class OptPopupWindowComponent implements OnInit {
   }
   public openInvoicePopup() {
     this.dialog.open(OptInvoiceGeneratorComponent, {
+      data: { name: 'Invoice Generator' },
+      panelClass: ['custom-dialog-container', 'w80modal'],
+      height: 'auto',
+      width: '80%'
+    });
+
+  }
+  public openInvoiceROPopup() {
+    this.dialog.open(OptInvoiceGeneratorRoComponent, {
       data: { name: 'Invoice Generator' },
       panelClass: ['custom-dialog-container', 'w80modal'],
       height: 'auto',
