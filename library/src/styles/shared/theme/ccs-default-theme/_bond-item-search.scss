@@ -6,6 +6,12 @@
           max-width: 100vw !important;
          }
     }
+    .opt_modal-body{
+        background-color:#e1e1e1 !important;
+        .document-select-list{
+            background-color:#fff !important;
+        }
+    }
 }
 .opt-bond-item-search, .opt-bond-item-cart{
     .bond-item-row{
@@ -102,6 +108,11 @@
             flex-direction: column;
             justify-content: center;
         }
+          .inner{
+              .opt_flex__item:nth-child(3){
+                  width:200px;
+              }
+          }
     }
 }
 

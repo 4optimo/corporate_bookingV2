@@ -129,6 +129,7 @@
     }
     .opt_expand--container {
       padding: 0 10px 0 10px;
+      cursor:auto;
       &> .row > [class^='col-'] {
         display: flex;
         min-height: 55px;

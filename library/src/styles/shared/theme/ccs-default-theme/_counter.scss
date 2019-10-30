@@ -43,7 +43,7 @@
         transition: width .3s;
         .savechanges, .resetchanges{
           background-color: unset;
-          z-index: 9999;
+          z-index: 1000;
           button{
             background-color: #1ce884;
             border-radius: 50%;

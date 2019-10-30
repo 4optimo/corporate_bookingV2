@@ -80,6 +80,12 @@
   .opt_expand--container {
     .__expansion-lft--side{
       display: inline-block;
+        button{
+        margin-left:5px;
+        }
+        .opt_price-section{
+            padding-right:0px !important;
+        }
     }
     .__expansion-rgt--side{
       display: inline-block;
@@ -88,6 +94,7 @@
         float: right;
       }
     }
+    
   }
 
   .opt-txt__light{

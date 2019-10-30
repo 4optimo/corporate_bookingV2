@@ -93,6 +93,10 @@
         }
       }
 }
+.expand-collapse{
+  justify-content: space-between;
+  display: flex;
+ }
 
 .tc-flex-item__center{
   align-self: center !important;
@@ -127,7 +131,10 @@
   .opt_flex--container {
     height: 100%;
     align-items: center;
+    
   }
+
+ 
 
   [class^="col-"], [class*=" col-"] {
 
@@ -264,7 +271,7 @@ mat-option:hover{
 }
 .mat-checkbox-label{
   span{
-    line-height: 20px;
+    //line-height: 20px;
   }
 }
 .mat-autocomplete-panel{
@@ -306,7 +313,7 @@ h1,h2,h3,h4,h5,h6{
   flex-direction: column;
 }
 .mat-select{
-  line-height: 16px;
+  line-height: 13px;
 }
 
 //Confirmation message dialog styles
@@ -411,6 +418,9 @@ h1,h2,h3,h4,h5,h6{
     @media only screen and (max-width: 1024px) {
         max-width: 100% !important;
     }
+    @media only screen and (min-width: 1025px) {
+        min-width: 600px !important;
+    }
 }
 .general-popover{
     max-width:unset !important;
@@ -434,7 +444,7 @@ h1,h2,h3,h4,h5,h6{
 }
 .ngx-wrapper{
   b{
-    font-weight: 500 !important;
+    font-weight: 600 !important;
   }
   i{
     font-style: italic !important;
@@ -541,4 +551,52 @@ button[disabled],.mat-button[disabled]{
     margin-left: 5px;
     border-radius: 50%;
   }
+}
+.cdk-overlay-transparent-backdrop, .cdk-overlay-transparent-backdrop.cdk-overlay-backdrop-showing{
+    opacity: 0.3;
+    background-color: #000;
+}
+.common-checkbox{
+    .mat-checkbox-inner-container{
+        position: relative;
+        top: 28px;
+        background-color: #eee;
+    }
+}
+.copy-booking-message{
+    margin-top:25px;
+}
+::-webkit-scrollbar {
+  width: 12px !important;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3) !important;
+  border-radius: 10px !important;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px !important; 
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5) !important;
+  background-color: #f9d630 !important;
+}
+.mat-dialog-container{
+    overflow:unset !important;
+}
+.opt_modal-body{
+    overflow-y:auto !important;
+    max-height:85vh;
+}
+.chk-availability-btn{
+    background-color: #27bfc2;
+    color: #fff !important;
+    border: 1px solid #27bfc2 !important;
+    height: 30px;
+    width: auto;
+}
+.item-calendar-popup{
+    overflow-x: hidden !important; 
+}
+.separator-hyphen{
+  margin:0 5px;
 }

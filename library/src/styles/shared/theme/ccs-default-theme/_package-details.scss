@@ -385,6 +385,12 @@ button {
   }
   .date_section {
     padding: 10px 10px 30px;
+    .package-date-time{
+        &:hover{
+            text-decoration:underline;
+            cursor:pointer;
+        }
+    }
   }
   .opt_calendar-expand {
     margin: 0;
@@ -871,5 +877,69 @@ button {
   padding: 0 20px;
   .filter-popover-item {
     padding: 10px 0;
+  }
+}
+
+.package_info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+  .package_icon {
+    height: 45px;
+    width: 45px;
+    background-color: #27bfc2;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    flex-shrink: 0;
+    position: relative;
+    .icon_moon {
+      font-size: 24px;
+      line-height: 1;
+    }
+    .add_icon {
+      background-color: #f9d630;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 15px;
+      width: 15px;
+      position: absolute;
+      right: -3px;
+      top: 0;
+      display: none;
+      i {
+        &.material-icons {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+
+.public_package {
+  .package_info {
+    .package_icon {
+      background-color: #8f44ad;
+    }
+  }
+}
+
+.bespoke_package {
+  .package_info {
+    .package_icon {
+      .icon-icn-package {
+        &:before {
+          content: "\e916";
+        }
+      }
+      .add_icon {
+        display: flex;
+      }
+    }
   }
 }

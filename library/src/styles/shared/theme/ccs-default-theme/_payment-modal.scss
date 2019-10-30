@@ -106,8 +106,8 @@
       padding: 3px 0;
     }
     .note-button-row{
-      width: 80%;
-      max-width: 80vw;
+      width: 70%;
+      max-width: 70vw;
       border-radius: 0 0 4px 4px;
       position: fixed;
       bottom: 2%;
@@ -137,6 +137,9 @@
 
   .mat-tab-labels{
     justify-content: center;
+    .mat-tab-label:nth-child(5){
+        display:none;
+    }
   }
 }
 
@@ -311,7 +314,7 @@
   .sup-mark{
     font-size: 15px;
     vertical-align: top;
-    margin-right: -10px;
+    margin-right: 0px;
     &--mini{
       font-size: 10px;
       padding-right: 3px;

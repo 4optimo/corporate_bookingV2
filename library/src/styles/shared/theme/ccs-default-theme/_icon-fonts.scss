@@ -1,8 +1,7 @@
-
-$icn-font--url:'./shared/theme/ccs-default-theme/font/fonts-icon/';
+$icn-font--url: "./shared/theme/ccs-default-theme/font/fonts-icon/";
 
 @font-face {
-  font-family: 'icomoon';
+  font-family: "icomoon";
   // src:  url('../ccs-default-theme/font/fonts-icon/icomoon.eot?p5o367');
   //src:  url('../ccs-default-theme/font/fonts-icon/icomoon.eot?p5o367#iefix') format('embedded-opentype'),
   //url('../ccs-default-theme/font/fonts-icon/icomoon.ttf?p5o367') format('truetype'),
@@ -13,18 +12,19 @@ $icn-font--url:'./shared/theme/ccs-default-theme/font/fonts-icon/';
   // url('../ccs-default-theme/font/fonts-icon/icomoon.ttf?p5o367') format('truetype'),
   // url('../ccs-default-theme/font/fonts-icon/icomoon.woff?p5o367') format('woff'),
   // url('../ccs-default-theme/font/fonts-icon/icomoon.svg?p5o367#icomoon') format('svg');
-  src:  url('./shared/theme/ccs-default-theme/font/fonts-icon/icomoon.eot?1irofb');
-  src:  url('./shared/theme/ccs-default-theme/font/fonts-icon/icomoon.eot?1irofb#iefix') format('embedded-opentype'),
-  url('./shared/theme/ccs-default-theme/font/fonts-icon/icomoon.ttf?1irofb') format('truetype'),
-  url('./shared/theme/ccs-default-theme/font/fonts-icon/icomoon.woff?1irofb') format('woff'),
-  url('./shared/theme/ccs-default-theme/font/fonts-icon/icomoon.svg?1irofb#icomoon') format('svg');
+  src: url("./shared/theme/ccs-default-theme/font/fonts-icon/icomoon.eot?1irofb");
+  src: url("./shared/theme/ccs-default-theme/font/fonts-icon/icomoon.eot?1irofb#iefix") format("embedded-opentype"),
+    url("./shared/theme/ccs-default-theme/font/fonts-icon/icomoon.ttf?1irofb") format("truetype"),
+    url("./shared/theme/ccs-default-theme/font/fonts-icon/icomoon.woff?1irofb") format("woff"),
+    url("./shared/theme/ccs-default-theme/font/fonts-icon/icomoon.svg?1irofb#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
-[class^="icon-"], [class*=" icon-"] {
+[class^="icon-"],
+[class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
+  font-family: "icomoon" !important;
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -38,6 +38,31 @@ $icn-font--url:'./shared/theme/ccs-default-theme/font/fonts-icon/';
 }
 
 
+.bespoke_package {
+  .package_icon {
+    .icon-icn-package {
+      &:before {
+        content: "\e916" !important;
+      }
+    }
+    .add_icon {
+      display: flex;
+    }
+  }
+}
+
+.standard_package {
+  .package_icon {
+    .icon-icn-package {
+      &:before {
+        content: "\e901" !important;
+      }
+    }
+    .add_icon {
+      display: flex;
+    }
+  }
+}
 
 .icon-icn-package:before {
   content: "\e901";
@@ -171,4 +196,13 @@ $icn-font--url:'./shared/theme/ccs-default-theme/font/fonts-icon/';
 }
 .icon-bulkhour-voucher:before {
   content: "\e924";
+}
+.icon-bond-invoice:before {
+  content: "\e929";
+}
+.icon-selective-invoice:before {
+  content: "\e92a";
+}
+.icon-proforma-invoice:before {
+  content: "\e92b";
 }

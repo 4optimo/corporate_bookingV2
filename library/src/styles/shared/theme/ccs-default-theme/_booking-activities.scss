@@ -101,12 +101,15 @@
 }
 
 .just-content-end{
+  display:flex;
   justify-content: flex-end;
 }
 .just-content-start{
+    display:flex;
   justify-content: flex-start !important;
 }
 .just-content-center{
+    display:flex;
   justify-content: center !important;
 }
 .unset-wrap{
@@ -1264,10 +1267,11 @@
         width: 100%;
       }
       .text-truncate {
-          white-space: normal;
-          display: flex;
+          //white-space: normal;
+          //display: flex;
           align-items: center;
-
+          display: block;
+          white-space: nowrap !important;
         @include respond-to('x-small') {
           /*max-width: 110px;*/
         }
@@ -1278,7 +1282,7 @@
           max-width: 450px;
         }
         @include respond-to('large') {
-          max-width: 610px;
+          max-width: 620px;
         }
       }
       a:hover{
@@ -1362,6 +1366,12 @@
     .align-baseline{
       display: flex;
       align-items: baseline !important;
+    }
+    .cr-link{
+        &:hover{
+            cursor:pointer;
+            text-decoration:underline;
+        }
     }
   }
   .c-sent{
@@ -1592,8 +1602,59 @@
       margin-bottom: 10px;
     }
   }
+  .file-name{
+      max-width:180px;
+  }
   .multiple-attach-popup{
     max-width: 850px;
+    background-color:#f5f5f5;
+    height: auto;
+    padding-bottom: 10px;
+    .mat-checkbox-inner-container{
+        margin-right:8px;
+    }
+    .file-info-header{
+        margin-bottom:10px;
+    }
+    /*.chkbox-file-name{
+        cursor:pointer;
+        &:hover{
+            color:#4bb3fa;
+        }
+    }*/
+    .file-icon{
+        background-color: #4bb3fa;
+        color: #fff;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 30px;
+        width: 30px;
+        margin-right:5px;
+    }
+    .header-row{
+        display: flex;
+        align-items: center;
+        height: 40px;
+        margin-bottom: 20px;
+    }
+    .select-all-container{
+        margin-bottom:10px;
+    }
+    .chkbox-file-name{
+        cursor:pointer;
+        line-height:17px;
+    }
+    .selected{
+        color: #4bb3fa;
+        font-weight: 500 !important;
+    }
+    .left-col{
+        max-width: 500px;
+        background-color: #ffffff;
+        padding-left: 10px;
+    }
   }
   .edit-popup{
     .edit-buttons{
@@ -1607,6 +1668,9 @@
       top:15px;
     }
   }
+  textarea{
+        min-height:100px !important;
+    }
 }
 .menu-address{
   padding:10px !important;

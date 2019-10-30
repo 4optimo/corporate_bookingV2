@@ -205,6 +205,11 @@ nav {
       }
     }
   }
+  .opt-discount-search-body{
+      .mat-tab-header{
+          display:none;
+      }
+  }
 }
 .opt_cart {
   &.opt_discount-cart {
