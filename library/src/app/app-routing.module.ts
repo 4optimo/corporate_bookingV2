@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-
+import { OptBookingEditLayoutComponent } from './opt-booking-edit-layout/opt-booking-edit-layout.component';
 const routes: Routes = [
   // {
   //   path: 'customer360',
@@ -14,7 +14,11 @@ const routes: Routes = [
     path: '',
     redirectTo: '',
     pathMatch: 'full'
-  }
+  },
+  {
+    path: 'booking-edit-layout',
+    component: OptBookingEditLayoutComponent
+  },
 ];
 
 @NgModule({

@@ -16,7 +16,7 @@ export class OptTimerangeSelectorComponent implements OnInit {
           end: 3.75,
       },
       {
-          start: 13.00,
+          start: 12.00,
           end: 15.00,
       },
       {

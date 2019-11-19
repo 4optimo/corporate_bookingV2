@@ -600,3 +600,196 @@ button[disabled],.mat-button[disabled]{
 .separator-hyphen{
   margin:0 5px;
 }
+
+//Timeline styles
+.man-popup-cop{
+  margin-left: auto;
+  margin-right: auto;
+ // width: 500px;
+  height: 100px;
+  //border: 1px solid gray;
+  position: relative;
+}
+.inner-action{
+  float: right;
+}
+.topic{
+  text-align:center;
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+       margin-bottom: 20px;
+
+      .font__semibold{
+          @include respond-to("x-small") {
+              //@include font-size(14);
+              font-size: 14px;
+          }
+          @include respond-to("small") {
+               //@include font-size(16);
+               font-size: 16px;
+          }
+          @include respond-to("medium") {
+               //@include font-size(20);
+               font-size: 20px;
+          }
+          @include respond-to("large") {
+               //@include font-size(24);
+               font-size: 24px;
+          }
+          @include respond-to("x-large") {
+               //@include font-size(28);
+               font-size: 28px;
+          }                
+              margin-bottom: 20px;
+      }
+
+
+  .mmc_flex--container{
+      flex-direction: column;
+      color: #7cb342;
+      //@include font-size(16);
+      font-size: 16px;
+      span{
+          padding: 0 2px;
+      }
+  }
+ 
+}
+.chip-set{
+   justify-content: center;
+      .single-chip{
+          border: 1px solid #696969;
+          padding: 5px 10px;
+          border-radius: 20px;
+          margin-right: 20px;
+          margin-bottom: 10px;
+          color: #7cb342;
+          span{
+              padding: 0 2px;
+          }
+      }
+  }
+.timeline{
+  background-color: #7cb342;
+  height: 20px;
+  width: 100%;
+  margin-top: 10%;
+  /* position: absolute; */
+  z-index: 3;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  border-radius: 9px;
+}
+.time-line--unavailable{
+  background-color: #ababab;
+  height: 30px;
+  position: absolute;
+  z-index: 300;
+  margin-top: -5px;  
+  opacity: 0.7;
+}
+.time-line--sub{
+  background-color: #e53935;
+  height: 30px;
+  position: absolute;
+  z-index: 300;
+  margin-top: -5px;    
+  /*-webkit-box-shadow: -1px 2px 5px 0px rgba(189,189,189,1);
+  -moz-box-shadow: -1px 2px 5px 0px rgba(189,189,189,1);
+  box-shadow: -1px 2px 5px 0px rgba(189,189,189,1);*/
+  /*left: @include calc-left($start);
+  width: @include calc-width($end , $start);*/
+  //left: 50%;
+  //width: 25%;
+
+  /*&.test{
+      left: 10% !important;
+      width: 15% !important;
+  }*/
+}
+
+
+
+.time-line-separator{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: stretch;
+  align-items: flex-start;
+  background-color: white;
+  border-bottom: 2px solid;
+
+}
+
+.line{
+  order: 0;
+  flex: 1 0 auto;
+  align-self: stretch;
+  border-right: 1px solid #acacac;
+  height: 10px;
+
+  &:nth-child(1) {
+    position:relative;
+    border-left: 2px solid #212529;
+
+    &:after {
+        content:"12:00 am";
+        position:absolute;
+        top:15px;
+        right: 8px;
+        //@include font-size(12);
+        font-size: 12px;
+      }
+  }
+  
+  &:nth-child(7) {
+    position:relative;
+    border-left: 2px solid #212529;
+    &:after {
+        content:"6:00 am";
+        position:absolute;
+        top:15px;
+        left: -11px;
+        //@include font-size(12);
+        font-size: 12px;
+      }
+  }
+  &:nth-child(13) {
+    position:relative;
+    border-left: 2px solid #212529;
+    &:after {
+        content:"12:00 pm";
+        position:absolute;
+        top:15px;
+        left: -11px;
+        //@include font-size(12);
+        font-size: 12px;
+      }
+  }
+  &:nth-child(19) {
+    position:relative;
+    border-left: 2px solid #212529;
+    &:after {
+        content:"6:00 pm";
+        position:absolute;
+        top:15px;
+        left: -11px;
+        //@include font-size(12);
+        font-size: 12px;
+      }
+  }
+  &:nth-child(24) {
+    position:relative;
+    border-right: 2px solid #212529;
+    &:after {
+        content:"12:00 am";
+        position:absolute;
+        top:15px;
+        left: 14px;
+        //@include font-size(12);
+        font-size: 12px;
+      }
+  }
+}

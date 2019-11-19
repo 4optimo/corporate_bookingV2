@@ -155,6 +155,7 @@ import { OptBookingApprovalComponent } from './opt-booking-approval/opt-booking-
 import { OptBondRefundPopupComponent } from './opt-bond-refund-popup/opt-bond-refund-popup.component';
 import { AppRoutingModule } from './app-routing.module';
 import { OptInvoiceGeneratorRoComponent } from './opt-invoice-generator-ro/opt-invoice-generator-ro.component';
+import { OptBookingEditLayoutComponent } from './opt-booking-edit-layout/opt-booking-edit-layout.component';
 
 const appRoutes: Routes = [
   { path: 'opt-booking-list', component: OptBookingListComponent },
@@ -233,6 +234,7 @@ const appRoutes: Routes = [
   { path: 'opt-bond-item-cart', component: OptBondItemCartComponent },
   { path: 'opt-booking-approval', component: OptBookingApprovalComponent },
   { path: 'opt-bond-refund-popup', component: OptBondRefundPopupComponent },
+  { path: 'booking-edit-layout' , component: OptBookingEditLayoutComponent},
 
   { path: '', redirectTo: '/opt-booking-summary', pathMatch: 'full' },
   { path: '**', redirectTo: '/opt-booking-summary', pathMatch: 'full' }
@@ -369,7 +371,8 @@ export class DemoMaterialModule { }
     TypographyComponent,
     OptSliderComponent,
     OptBookingApprovalComponent,
-    OptInvoiceGeneratorRoComponent
+    OptInvoiceGeneratorRoComponent,
+    OptBookingEditLayoutComponent
   ],
   imports: [
     BrowserModule,
