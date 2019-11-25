@@ -25,6 +25,14 @@ import { OptDiscountSearchComponent } from '../opt-discount-search/opt-discount-
 import { OptContactSetupPopupComponent } from '../opt-contact-setup-popup/opt-contact-setup-popup.component';
 import { OptBondItemsPopupComponent } from '../opt-bond-items-popup/opt-bond-items-popup.component';
 import { OptCancelBookingComponent } from '../opt-cancel-booking/opt-cancel-booking.component';
+import { OptBookingApprovalPopupComponent } from '../opt-booking-approval-popup/opt-booking-approval-popup.component';
+import { OptBookingApprovalStatusPopupComponent } from '../opt-booking-approval-status-popup/opt-booking-approval-status-popup.component';
+import { OptBookingBatchApprovalPopupComponent } from '../opt-booking-batch-approval-popup/opt-booking-batch-approval-popup.component';
+import { OptBookingApprovalRejectPopupComponent } from '../opt-booking-approval-reject-popup/opt-booking-approval-reject-popup.component';
+import { OptBookingApprovalSuccessPopupComponent } from '../opt-booking-approval-success-popup/opt-booking-approval-success-popup.component';
+import { OptBookingPackageConvertPopupComponent } from '../opt-booking-package-convert-popup/opt-booking-package-convert-popup.component';
+
+
 @Component({
   selector: 'app-opt-popup-window',
   templateUrl: './opt-popup-window.component.html',
@@ -275,6 +283,79 @@ export class OptPopupWindowComponent implements OnInit {
       width: '50%'
     });
   }
+
+  public openBookingApproval() {
+    this.dialog.open(OptBookingApprovalPopupComponent, {
+      data: { name: 'Booking Approval' },
+      panelClass: ['custom-dialog-container', 'w80modal'],
+      height: 'auto',
+      width: '80%'
+      // DialogPosition : top
+
+    });
+
+  }
+
+  public openBookingApprovalStatus() {
+    this.dialog.open(OptBookingApprovalStatusPopupComponent, {
+      data: { name: 'Booking Approval Status' },
+      panelClass: ['custom-dialog-container', 'w80modal'],
+      height: 'auto',
+      width: '80%'
+      // DialogPosition : top
+
+    });
+
+  }
+
+  public openBookingBatchApproval() {
+    this.dialog.open(OptBookingBatchApprovalPopupComponent, {
+      data: { name: 'Booking Batch Approval' },
+      panelClass: ['custom-dialog-container', 'w80modal'],
+      height: 'auto',
+      width: '80%'
+      // DialogPosition : top
+
+    });
+
+  }
+
+  public openBookingApprovalReject() {
+    this.dialog.open(OptBookingApprovalRejectPopupComponent, {
+      data: { name: 'Booking Approval Reject' },
+      panelClass: ['custom-dialog-container', 'w80modal'],
+      height: 'auto',
+      width: '80%'
+      // DialogPosition : top
+
+    });
+
+  }
+
+  public openBookingApprovalSuccess() {
+    this.dialog.open(OptBookingApprovalSuccessPopupComponent, {
+      data: { name: 'Booking Approval' },
+      panelClass: ['custom-dialog-container', 'w80modal'],
+      height: 'auto',
+      width: '80%'
+      // DialogPosition : top
+
+    });
+
+  }
+
+  public openBookingPackageConvert() {
+    this.dialog.open(OptBookingPackageConvertPopupComponent, {
+      data: { name: 'Convert the package to complementary' },
+      panelClass: ['custom-dialog-container', 'w80modal'],
+      height: 'auto',
+      width: '80%'
+      // DialogPosition : top
+
+    });
+
+  }
+
   ngOnInit() {
   }
 

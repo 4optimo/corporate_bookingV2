@@ -1,0 +1,60 @@
+<div class="opt_modal-content opt_package-convert-popup">
+  <div class="mat-dialog-content">
+    <div class="opt_modal-header">
+      <div class="test opt--depth__1">
+        <div class="opt_flex--container test-wrapper">
+          <div class="opt_flex__item--inherit test-inner">
+            <div class="inner-icon">
+              <i class="icon-icn-file"></i>
+            </div>
+          </div>
+          <div class="opt_flex__item test-inner-expand">
+            <div class="title">
+              <h1 mat-dialog-title>{{data.name}}</h1>
+              <p class="opt-txt__body2-small"></p>
+            </div>
+          </div>
+          <div class="opt_flex__item--inherit test-inner-2">
+            <div class="inner-action">
+              <!-- <button class="material-icons icon1">launch</button> -->
+              <button class="material-icons icon2" (click)="close()">close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+
+
+    <div class="opt_modal-body opt_package-convert-body">
+        <div class="note-wrapper">
+
+            <div class="row package-convert-note-row">
+                    <div class="opt__subtitle-2">
+                        Are you sure you want to convert this package to a Complementary package?
+                      </div>            
+          </div>
+
+            <div class="approval-note-message">
+                <div class="opt__subtitle-1">
+                  Please note that complementary packages cannot be changed back to a normal package
+                </div>
+          </div>
+
+           
+        <div class="row batch-approval-button-row">
+            <div class="col-md-6">
+            </div>
+  
+            <div class="col-md-6">
+              <div class="opt_flex--container">
+                <div class="opt_flex__item flex-item-align-right opt_flex__item--vcenter just-content-end">
+                  <button class="mat-btn-primary mat-button" (click)="close()">Close</button>         
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+  </div>
+</div>

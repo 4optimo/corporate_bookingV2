@@ -1,0 +1,45 @@
+@import "variables";
+
+.opt_batch-approval-popup{
+    .batch-approval-header{
+        padding: 24px;
+    background-color: #f5f5f5;
+    margin-top: 60px;
+    }
+
+    .opt_batch-approval-body{
+        padding: 24px;
+
+        .batch-approval-filter{
+            padding: 0 0 24px 24px;
+        }
+
+        .batch-approval-list-row{
+            padding: 0 24px;
+            border-bottom: 1px solid #e0e0e0;
+            background-color: #f5f5f5;
+
+            .list-row-wrapper{
+                padding: 6px 0;
+    display: flex;
+    .row{
+        flex-grow: 1;
+    }
+            }
+
+            .approval-status{
+                margin-left: 8px;
+            }
+        }
+
+        .batch-approval-button-row{
+            padding-top: 24px;
+
+            .flex-item-align-right{
+                >button{
+                    margin-left: 24px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,141 @@
+<div class="opt_modal-content opt_batch-approval-popup">
+  <div class="mat-dialog-content">
+    <div class="opt_modal-header">
+      <div class="test opt--depth__1">
+        <div class="opt_flex--container test-wrapper">
+          <div class="opt_flex__item--inherit test-inner">
+            <div class="inner-icon">
+              <i class="icon-icn-file"></i>
+            </div>
+          </div>
+          <div class="opt_flex__item test-inner-expand">
+            <div class="title">
+              <h1 mat-dialog-title>{{data.name}}</h1>
+              <p class="opt-txt__body2-small"></p>
+            </div>
+          </div>
+          <div class="opt_flex__item--inherit test-inner-2">
+            <div class="inner-action">
+              <!-- <button class="material-icons icon1">launch</button> -->
+              <button class="material-icons icon2" (click)="close()">close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="batch-approval-header">
+      <app-opt-search-panel> </app-opt-search-panel>
+    </div>
+    
+    <div class="opt_batch-approval-body">
+       
+      <div class="batch-approval-filter">
+            <div class="row">
+                <div class="col-xs-6 col-md-4">
+                  <div class="opt_flex--container">
+                    <div class="opt_flex__item opt_flex__item--vcenter">
+                      <mat-checkbox><span class="opt-txt__body1">Check All</span></mat-checkbox>
+                    </div>
+                   
+                  </div>
+                </div>
+                <div class="col-xs-6 col-md-8">
+                  <div class="opt_flex--container">
+                    <div class="opt_flex__item flex-item-align-right opt_flex__item--vcenter">
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+              <div class="batch-approval-list-row">
+                <div class="list-row-wrapper">
+                  <div class="row">
+                    <div class="col-xs-12">
+                      <div class="opt_flex--container">
+                        <div class="opt_flex__item package-item p40">
+                          <div class="opt_flex--container">
+                            <div class="opt_flex__item opt_flex__item--vcenter p10">
+                              <mat-checkbox></mat-checkbox>
+                            </div>
+                            <div class="opt_flex__item">
+                              <div class="opt_flex--container opt-fd-col just-content-center">
+                                <div class="opt_flex__item opt_flex__item--vcenter">
+                                  <span class="opt-txt__body2">Booking Ref</span><span class="approval-status success">Pending</span>
+                                </div>
+                                <div class="opt_flex__item opt_flex__item--vcenter">
+                                  <span class="opt-txt__body2">Client</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                       
+                        <div class="opt_flex__item p25">
+                          <div class="opt_flex--container opt-fd-col just-content-center">
+                            <div class="opt_flex__item opt_flex__item--vcenter">
+                              <span class="opt-txt__body2">Event</span>
+                            </div>
+                            <div class="opt_flex__item opt_flex__item--vcenter">
+                              <span class="opt-txt__body2">Covers</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="opt_flex__item p25 opt_flex__item--vcenter just-content-end">
+                          <span class="opt-txt__body2">Booking Total</span>
+                        </div>
+                        <div class="opt_flex__item p25 opt_flex__item--vcenter just-content-end">
+                          <span class="opt-txt__body2">Margin</span>
+                        </div>
+                        <div class="opt_flex__item p25 opt_flex__item--vcenter just-content-end">
+                          <span class="opt-txt__body2">Age</span>
+                        </div>
+                        <div class="opt_flex__item p15 opt_flex__item--vcenter just-content-end">
+                          <i class="material-icons">
+                            bookmark_border
+                            </i>
+                        </div>
+                        <div class="opt_flex__item p15 opt_flex__item--vcenter just-content-end">
+                          <i class="material-icons">
+                            bookmark_border
+                            </i>
+                        </div>
+                        
+                      </div>
+                    </div>
+        
+                  </div>
+                </div>
+              </div>
+
+  
+        <div class="row batch-approval-button-row">
+       
+          <div class="col-md-6">
+          </div>
+
+          <div class="col-md-6">
+            <div class="opt_flex--container">
+              <div class="opt_flex__item flex-item-align-right opt_flex__item--vcenter just-content-end">
+                <button class="mat-btn-primary mat-button" (click)="close()">Approve</button>
+                <button class="mat-btn-primary mat-button" (click)="close()">Reject</button>
+                <button class="mat-btn-primary mat-button" (click)="close()">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+          </div>
+
+        
+
+
+
+   
+  </div>
+</div>
+
+
