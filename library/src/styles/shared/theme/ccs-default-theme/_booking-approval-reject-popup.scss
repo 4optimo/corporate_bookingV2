@@ -1,0 +1,28 @@
+@import "variables";
+
+.opt_approval-reject-popup{
+    .opt_approval-reject-body{
+        .note-wrapper{
+.approval-note-message{
+    display: flex;
+    align-items: center;
+    padding-left: 24px;
+    color: #b71c1c;
+    border: 1px solid #b71c1c;
+    border-radius: 5px;
+    margin-bottom: 40PX;
+    margin-top: 10px;
+    min-height: 50px;
+    height: auto;
+    background-color: #ffebee;
+}
+
+.approval-reject-note-row{
+    .mat-form-field{
+        width: 100%;
+    }
+}
+        }
+    }
+    
+}

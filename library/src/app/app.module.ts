@@ -156,6 +156,12 @@ import { OptBondRefundPopupComponent } from './opt-bond-refund-popup/opt-bond-re
 import { AppRoutingModule } from './app-routing.module';
 import { OptInvoiceGeneratorRoComponent } from './opt-invoice-generator-ro/opt-invoice-generator-ro.component';
 import { OptBookingEditLayoutComponent } from './opt-booking-edit-layout/opt-booking-edit-layout.component';
+import { OptBookingApprovalPopupComponent } from './opt-booking-approval-popup/opt-booking-approval-popup.component';
+import { OptBookingApprovalStatusPopupComponent } from './opt-booking-approval-status-popup/opt-booking-approval-status-popup.component';
+import { OptBookingBatchApprovalPopupComponent } from './opt-booking-batch-approval-popup/opt-booking-batch-approval-popup.component';
+import { OptBookingApprovalRejectPopupComponent } from './opt-booking-approval-reject-popup/opt-booking-approval-reject-popup.component';
+import { OptBookingApprovalSuccessPopupComponent } from './opt-booking-approval-success-popup/opt-booking-approval-success-popup.component';
+import { OptBookingPackageConvertPopupComponent } from './opt-booking-package-convert-popup/opt-booking-package-convert-popup.component';
 
 const appRoutes: Routes = [
   { path: 'opt-booking-list', component: OptBookingListComponent },
@@ -235,6 +241,12 @@ const appRoutes: Routes = [
   { path: 'opt-booking-approval', component: OptBookingApprovalComponent },
   { path: 'opt-bond-refund-popup', component: OptBondRefundPopupComponent },
   { path: 'booking-edit-layout' , component: OptBookingEditLayoutComponent},
+  { path: 'opt-booking-approval-popup' , component: OptBookingApprovalPopupComponent},
+  { path: 'opt-booking-approval-status-popup' , component: OptBookingApprovalStatusPopupComponent},
+  { path: 'opt-booking-batch-approval-popup' , component: OptBookingBatchApprovalPopupComponent},
+  { path: 'opt-booking-approval-reject-popup' , component: OptBookingApprovalRejectPopupComponent},
+  { path: 'opt-booking-approval-success-popup' , component: OptBookingApprovalSuccessPopupComponent},
+  { path: 'opt-booking-package-convert-popup' , component: OptBookingPackageConvertPopupComponent},
 
   { path: '', redirectTo: '/opt-booking-summary', pathMatch: 'full' },
   { path: '**', redirectTo: '/opt-booking-summary', pathMatch: 'full' }
@@ -278,6 +290,9 @@ const appRoutes: Routes = [
     ScrollDispatchModule,
 
   ],
+  
+  
+  
 })
 export class DemoMaterialModule { }
 
@@ -372,7 +387,13 @@ export class DemoMaterialModule { }
     OptSliderComponent,
     OptBookingApprovalComponent,
     OptInvoiceGeneratorRoComponent,
-    OptBookingEditLayoutComponent
+    OptBookingEditLayoutComponent,
+    OptBookingApprovalPopupComponent,
+    OptBookingApprovalStatusPopupComponent,
+    OptBookingBatchApprovalPopupComponent,
+    OptBookingApprovalRejectPopupComponent,
+    OptBookingApprovalSuccessPopupComponent,
+    OptBookingPackageConvertPopupComponent,
   ],
   imports: [
     BrowserModule,
