@@ -156,6 +156,8 @@ import { OptBondRefundPopupComponent } from './opt-bond-refund-popup/opt-bond-re
 import { AppRoutingModule } from './app-routing.module';
 import { OptInvoiceGeneratorRoComponent } from './opt-invoice-generator-ro/opt-invoice-generator-ro.component';
 import { OptBookingEditLayoutComponent } from './opt-booking-edit-layout/opt-booking-edit-layout.component';
+import { OptAdminPanelImportComponent } from './opt-admin-panel-import/opt-admin-panel-import.component';
+import { ImportMessagesComponent } from './import-messages/import-messages.component';
 
 const appRoutes: Routes = [
   { path: 'opt-booking-list', component: OptBookingListComponent },
@@ -235,7 +237,7 @@ const appRoutes: Routes = [
   { path: 'opt-booking-approval', component: OptBookingApprovalComponent },
   { path: 'opt-bond-refund-popup', component: OptBondRefundPopupComponent },
   { path: 'booking-edit-layout' , component: OptBookingEditLayoutComponent},
-
+  { path: 'opt-admin-panel-import' , component: OptAdminPanelImportComponent},
   { path: '', redirectTo: '/opt-booking-summary', pathMatch: 'full' },
   { path: '**', redirectTo: '/opt-booking-summary', pathMatch: 'full' }
 
@@ -372,7 +374,9 @@ export class DemoMaterialModule { }
     OptSliderComponent,
     OptBookingApprovalComponent,
     OptInvoiceGeneratorRoComponent,
-    OptBookingEditLayoutComponent
+    OptBookingEditLayoutComponent,
+    OptAdminPanelImportComponent,
+    ImportMessagesComponent
   ],
   imports: [
     BrowserModule,
@@ -420,7 +424,8 @@ export class DemoMaterialModule { }
     OptDataTableComponent,
     OptCancelBookingComponent,
     OptDiscountSearchComponent,
-    OptInvoiceGeneratorRoComponent
+    OptInvoiceGeneratorRoComponent,
+    ImportMessagesComponent
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA],
 

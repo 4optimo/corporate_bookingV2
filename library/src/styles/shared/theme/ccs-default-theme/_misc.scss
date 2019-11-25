@@ -793,3 +793,89 @@ button[disabled],.mat-button[disabled]{
       }
   }
 }
+
+
+//Styles for admin panel stepper
+.stepper-wrapper{
+  .mat-horizontal-stepper-header-container{
+    margin-bottom: 10px;
+  }
+  .mat-step-header{
+    height: 100px;
+    &:hover{
+      background-color: unset;
+    }
+  }
+  .mat-step-icon {
+      display: none;
+    }
+    .mat-step-icon-not-touched {
+      display: none;
+    }
+    .mat-step-header-ripple {
+      &.mat-ripple {
+        display: none;
+      }
+    } 
+    .mat-fab{
+      background-color: #f6f6f6;
+      color: #909cac;
+      height: 55px;
+      width: 55px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      font-size: 34px;
+      box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.1), 0 1px 18px 0 rgba(0,0,0,.1);
+    }
+    .mat-step-label{
+      width: 75px;
+      .mat-button-wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      &:hover{
+        .mat-fab{
+          transform: translateY(-8px);
+        }
+      }
+    }
+    .mat-step-label-selected{
+      .mat-fab{
+        background-color: #4bb3fa;
+        color: #fff;
+      }
+      .step-title{
+        color: #4bb3fa;
+      }
+    } 
+}
+.download-container{
+  button{
+    .mat-button-wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        i{
+            margin-right: 5px;
+        }
+    }
+  }
+}
+.admin-import-messagebox{
+  .mat-dialog-container{
+      padding:15px;
+      min-height: 95px;
+      .mat-dialog-actions{
+          justify-content: flex-end;
+      }
+      .mat-dialog-content{
+          i{
+              color: #47a9ec;
+              font-size: 25px;
+          }
+      }
+  }
+}
+//End of stepper styles
+
