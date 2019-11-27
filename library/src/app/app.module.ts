@@ -156,6 +156,8 @@ import { OptBondRefundPopupComponent } from './opt-bond-refund-popup/opt-bond-re
 import { AppRoutingModule } from './app-routing.module';
 import { OptInvoiceGeneratorRoComponent } from './opt-invoice-generator-ro/opt-invoice-generator-ro.component';
 import { OptBookingEditLayoutComponent } from './opt-booking-edit-layout/opt-booking-edit-layout.component';
+import { OptAdminPanelImportComponent } from './opt-admin-panel-import/opt-admin-panel-import.component';
+import { ImportMessagesComponent } from './import-messages/import-messages.component';
 import { OptBookingApprovalPopupComponent } from './opt-booking-approval-popup/opt-booking-approval-popup.component';
 import { OptBookingApprovalStatusPopupComponent } from './opt-booking-approval-status-popup/opt-booking-approval-status-popup.component';
 import { OptBookingBatchApprovalPopupComponent } from './opt-booking-batch-approval-popup/opt-booking-batch-approval-popup.component';
@@ -241,6 +243,7 @@ const appRoutes: Routes = [
   { path: 'opt-booking-approval', component: OptBookingApprovalComponent },
   { path: 'opt-bond-refund-popup', component: OptBondRefundPopupComponent },
   { path: 'booking-edit-layout' , component: OptBookingEditLayoutComponent},
+  { path: 'opt-admin-panel-import' , component: OptAdminPanelImportComponent},
   { path: 'opt-booking-approval-popup' , component: OptBookingApprovalPopupComponent},
   { path: 'opt-booking-approval-status-popup' , component: OptBookingApprovalStatusPopupComponent},
   { path: 'opt-booking-batch-approval-popup' , component: OptBookingBatchApprovalPopupComponent},
@@ -388,6 +391,8 @@ export class DemoMaterialModule { }
     OptBookingApprovalComponent,
     OptInvoiceGeneratorRoComponent,
     OptBookingEditLayoutComponent,
+    OptAdminPanelImportComponent,
+    ImportMessagesComponent,
     OptBookingApprovalPopupComponent,
     OptBookingApprovalStatusPopupComponent,
     OptBookingBatchApprovalPopupComponent,
@@ -441,7 +446,8 @@ export class DemoMaterialModule { }
     OptDataTableComponent,
     OptCancelBookingComponent,
     OptDiscountSearchComponent,
-    OptInvoiceGeneratorRoComponent
+    OptInvoiceGeneratorRoComponent,
+    ImportMessagesComponent
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA],
 

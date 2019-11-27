@@ -1,0 +1,209 @@
+<div class="admin-panel-import-wrapper">
+  <mat-tab-group>
+    <mat-tab label="Booking Import">
+      <div class="stepper-wrapper">
+        <mat-horizontal-stepper [labelPosition]="bottom" #stepper>
+          <mat-step>
+            <form>
+              <ng-template matStepLabel>
+                  <div class="text-center">
+                      <button mat-fab>
+                        <i class="material-icons">cloud_upload</i>
+                      </button>
+                      <div class="step-title">Upload</div>
+                    </div>
+              </ng-template>
+              <div class="upload-step-wrapper">
+                <div class="download-container">
+                  <button mat-button class="mat-btn-primary">
+                      <i class="material-icons">cloud_download</i>
+                      <span>Download Booking Import Template</span>
+                  </button>
+                </div>
+                <div class="upload-container">
+                    <i class="material-icons">cloud_upload</i>
+                    <span class="opt-txt__body1">Drop the file here or <a>Click to upload</a></span>
+                </div>
+              </div>
+            </form>
+          </mat-step>
+          <mat-step>
+            <form>
+              <ng-template matStepLabel>
+                  <div class="text-center">
+                      <button mat-fab>
+                        <i class="material-icons">check_circle</i>
+                      </button>
+                      <div class="step-title">Validate</div>
+                    </div>
+              </ng-template>
+              <div class="upload-status-message alert alert-success">
+                  <div class="opt_flex--container">
+                    <div class="opt_flex__item icon-circle">
+                      <i class="material-icons">done</i>
+                    </div>
+                    <div class="opt_flex__item">
+                      <span class="opt-txt__body2">Upload Completed</span>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="validation-section">
+                  <div class="upload-step-checkbox">
+                      <p class="opt-txt__body2 validation-note">Please note that this import is irreversible. If it is stopped halfway or is canceled, all imported records will remain in the system.</p>
+                    <mat-checkbox class="opt-txt__body2">Start import automatically if no validation errors are detected.</mat-checkbox>
+                </div>
+                  <div class="validate-btn">
+                    <button mat-button class="mat-btn-primary">Start Validation</button>
+                  </div>
+                  <div class="upload-step-progressbar">
+                    <mat-progress-bar mode="determinate" value="40"></mat-progress-bar>
+                    <div class="opt-txt__body2 progress-status-txt">Validation for Booking_import.xlsx 25% completed</div>
+                  </div>
+                  <div class="cancel-validation-btn">
+                    <button mat-button class="mat-btn-primary">Cancel Process</button>
+                  </div>
+                </div>
+                <div class="upload-status-message alert alert-success">
+                    <div class="opt_flex--container">
+                      <div class="opt_flex__item icon-circle">
+                        <i class="material-icons">done</i>
+                      </div>
+                      <div class="opt_flex__item">
+                        <span class="opt-txt__body2">Validation Completed</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="upload-status-message alert alert-danger">
+                      <div class="opt_flex--container">
+                        <div class="opt_flex__item icon-circle">
+                          <i class="material-icons">done</i>
+                        </div>
+                        <div class="opt_flex__item">
+                          <span class="opt-txt__body2">Validation Completed with Errors</span>
+                        </div>
+                      </div>
+                    </div>
+                <div class="validate-section-two">
+                      <div class="document-name">
+                          <span class="opt-txt__body2">DocumentName.xlsx</span>
+                      </div>
+                      <div class="document-information-section">
+                        <div class="row">
+                          <div class="col-md-2 doc-label">
+                              <span class="opt-txt__body2">Date uploaded:</span>
+                          </div>
+                          <div class="col-md-6">
+                              <span class="opt-txt__body2">1 Nov 2019 - 08:56 am</span>
+                          </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-2 doc-label">
+                                <span class="opt-txt__body2">Total records:</span>
+                            </div>
+                            <div class="col-md-6">
+                                <span class="opt-txt__body2">11, 458</span>
+                            </div>
+                          </div>
+                          <div class="row">
+                              <div class="col-md-2 doc-label">
+                                  <span class="opt-txt__body2">Date validated:</span>
+                              </div>
+                              <div class="col-md-6">
+                                  <span class="opt-txt__body2">1 Nov 2019 - 08:56 am</span>
+                              </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-2 doc-label">
+                                    <span class="opt-txt__body2 error-text">Validation errors:</span>
+                                </div>
+                                <div class="col-md-6">
+                                    <span class="opt-txt__body2 error-text">256</span>
+                                </div>
+                              </div>
+                      </div>
+                      <div class="button-wrapper">
+                          <button mat-button class="mat-btn-primary">Download Report</button>
+                          <button mat-button class="mat-btn-primary">Cancel Process</button>
+                          <button mat-button class="mat-btn-primary">Continue to Import</button>
+                      </div>
+                </div>
+                
+            </form>
+          </mat-step>
+          <mat-step>
+            <ng-template matStepLabel>
+                <div class="text-center">
+                    <button mat-fab>
+                      <i class="material-icons">import_export</i>
+                    </button>
+                    <div class="step-title">Import</div>
+                  </div>
+            </ng-template>
+            <div class="import-step-wrapper">
+                  <p class="opt-txt__body2 validation-note">Please note that this import is irreversible. If it is stopped halfway or is canceled, all imported records will remain in the system.</p>
+                  <div class="start-validation-btn">
+                      <button mat-button class="mat-btn-primary" >Start Import</button>
+                    </div>
+                  <div class="upload-step-progressbar">
+                    <mat-progress-bar mode="determinate" value="40"></mat-progress-bar>
+                    <div class="opt-txt__body2 progress-status-txt">Import for DocumentName.xlsx 50% completed</div>
+                  </div>
+                  <div class="cancel-validation-btn">
+                    <button mat-button class="mat-btn-primary" (click)="openMessage()">Cancel Process</button>
+                  </div>
+                  <div class="upload-status-message alert alert-success">
+                      <div class="opt_flex--container">
+                        <div class="opt_flex__item icon-circle">
+                          <i class="material-icons">done</i>
+                        </div>
+                        <div class="opt_flex__item">
+                          <span class="opt-txt__body2">Import Completed</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="document-information-section">
+                        <div class="row">
+                          <div class="col-md-2 doc-label">
+                              <span class="opt-txt__body2">Date uploaded:</span>
+                          </div>
+                          <div class="col-md-6">
+                              <span class="opt-txt__body2">1 Nov 2019 - 08:56 am</span>
+                          </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-2 doc-label">
+                                <span class="opt-txt__body2">Total records:</span>
+                            </div>
+                            <div class="col-md-6">
+                                <span class="opt-txt__body2">11, 458</span>
+                            </div>
+                          </div>
+                          <div class="row">
+                              <div class="col-md-2 doc-label">
+                                  <span class="opt-txt__body2">Date validated:</span>
+                              </div>
+                              <div class="col-md-6">
+                                  <span class="opt-txt__body2">1 Nov 2019 - 08:56 am</span>
+                              </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-2 doc-label">
+                                    <span class="opt-txt__body2 error-text">Validation errors:</span>
+                                </div>
+                                <div class="col-md-6">
+                                    <span class="opt-txt__body2 error-text">-</span>
+                                </div>
+                              </div>
+                      </div>
+                      <div class="button-wrapper">
+                          <button mat-button class="mat-btn-primary">Download Report</button>
+                      </div>
+            </div>
+          </mat-step>
+        </mat-horizontal-stepper>
+      </div>
+    </mat-tab>
+    <mat-tab label="Import History"> Content 2 </mat-tab>
+  </mat-tab-group>
+</div>
