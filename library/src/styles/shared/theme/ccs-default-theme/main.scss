@@ -84,12 +84,13 @@ $bootstrap-sass-asset-helper: false;
 @import "cancel-booking";
 @import "tfs-dedicated";
 @import "booking-approval";
-@import "booking-approval-popup";
-@import "booking-batch-approval-popup";
-@import "booking-approval-status-popup";
-@import "booking-approval-reject-popup";
-@import "booking-approval-success-popup";
-@import "booking-package-convert";
+// @import "booking-approval-popup";
+// @import "booking-batch-approval-popup";
+// @import "booking-approval-status-popup";
+// @import "booking-approval-reject-popup";
+// @import "booking-approval-success-popup";
+// @import "booking-package-convert";
+@import "booking-approval-modals";
 
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700");
 html,
