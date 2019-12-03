@@ -214,6 +214,14 @@
                         }
                         .mat-expansion-panel-body{
                             padding: 0 24px 0px;
+
+                            .approval-status-expanded-content-row{
+                                height: 55px;
+                        display: flex;
+                        align-items: center;
+                        border-bottom: 1px solid #eee;
+                            }
+
                             .approval-status-expanded-content-row:not(:last-child){
                                 border-bottom: 1px dotted #9e9e9e;
                             }
@@ -318,7 +326,22 @@
     line-height: 1.5;
 }
 
+.icon-status{
+        display: flex;
+        border: 2px solid;
+        border-radius: 50%;
+        align-items: center;
+        justify-content: center;
+    
 
+    &.approve{
+color:#4CAF50 ;
+    }
+
+    &.not-approve{
+       color: #9E9E9E; 
+    }
+}
 
 .approval-status{
     font-size: 11px !important;
