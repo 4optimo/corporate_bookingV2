@@ -103,6 +103,7 @@
         .validate-btn{
             display: flex;
             justify-content: center;
+            margin-bottom: 20px;
         }
         .upload-step-progressbar{
             display: flex;
@@ -121,6 +122,9 @@
         .cancel-validation-btn{
             display: flex;
             justify-content: center;
+        }
+        .info-label{
+            margin-bottom: 5px;
         }
         .validation-note{
             display: flex;

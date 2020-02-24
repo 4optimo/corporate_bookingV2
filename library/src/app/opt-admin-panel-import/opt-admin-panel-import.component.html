@@ -20,6 +20,64 @@
                       <span>Download Booking Import Template</span>
                   </button>
                 </div>
+                <div class="">
+                  <i class="material-icons" [matMenuTriggerFor]="menu">info</i>
+                  <mat-menu class="info-popup-wrapper" #menu="matMenu">
+                    <div class="info-popup-header">
+                      <div class="user-image">
+                        <img src="http://apidocumentation.optimosoftware.co.uk/OptimoWebAPI/DevYS//Private/ProfileImages/30.png">
+                      </div>
+                      <div class="user-name-col">
+                        <div class="">Mr. Mauran Poobalasingham</div>
+                        <div class="">Sunrise Inc.</div>
+                      </div>
+                    </div>
+                    <div class="info-popup-contact">
+                      <div class="row">
+                          <div class="col-md-1">
+                            <i class="material-icons">phone</i>
+                          </div>
+                          <div class="col-md-2">
+                            <div class="">Office</div>
+                            <div class="">Mobile</div>
+                          </div>
+                          <div class="col-md-9">
+                            <div class="">2154658956</div>
+                            <div class="">2154658988</div>
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-md-1">
+                            <i class="material-icons">mail</i>
+                          </div>
+                          <div class="col-md-2">
+                            <div class="">Office</div>
+                            <div class="">Personal</div>
+                          </div>
+                          <div class="col-md-9">
+                            <div class="">mauran.poobalasingham@abc.com</div>
+                            <div class="">mauran123@gmail.com</div>
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-md-1">
+                            <i class="material-icons">room</i>
+                          </div>
+                          <div class="col-md-11">
+                            <div class="">Mailing Address</div>
+                            <div class="">43, Park Street, Burwood East, Australia</div>
+                          </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-11">
+                            <div class="">Invoice Address</div>
+                            <div class="">55, North Avenue, Burwood East, Australia</div>
+                        </div>
+                      </div>
+                    </div>
+                  </mat-menu>
+                </div>
                 <div class="upload-container">
                     <i class="material-icons">cloud_upload</i>
                     <span class="opt-txt__body1">Drop the file here or <a>Click to upload</a></span>
@@ -49,17 +107,18 @@
                 </div>
                 
                 <div class="validation-section">
+                    <div class="validate-btn">
+                        <button mat-button class="mat-btn-primary">Start Validation</button>
+                      </div>
+                      <div class="upload-step-progressbar">
+                          <mat-progress-bar mode="determinate" value="40"></mat-progress-bar>
+                          <div class="opt-txt__body2 progress-status-txt">Validation for Booking_import.xlsx 25% completed</div>
+                        </div>
                   <div class="upload-step-checkbox">
+                      <p class="opt-txt__body2 info-label">You could initiate the booking import automatically after the validation process is completed.</p>
                       <p class="opt-txt__body2 validation-note">Please note that this import is irreversible. If it is stopped halfway or is canceled, all imported records will remain in the system.</p>
                     <mat-checkbox class="opt-txt__body2">Start import automatically if no validation errors are detected.</mat-checkbox>
                 </div>
-                  <div class="validate-btn">
-                    <button mat-button class="mat-btn-primary">Start Validation</button>
-                  </div>
-                  <div class="upload-step-progressbar">
-                    <mat-progress-bar mode="determinate" value="40"></mat-progress-bar>
-                    <div class="opt-txt__body2 progress-status-txt">Validation for Booking_import.xlsx 25% completed</div>
-                  </div>
                   <div class="cancel-validation-btn">
                     <button mat-button class="mat-btn-primary">Cancel Process</button>
                   </div>
@@ -91,15 +150,15 @@
                       <div class="document-information-section">
                         <div class="row">
                           <div class="col-md-2 doc-label">
-                              <span class="opt-txt__body2">Date uploaded:</span>
+                              <span class="opt-txt__body2">Validation Started:</span>
                           </div>
                           <div class="col-md-6">
-                              <span class="opt-txt__body2">1 Nov 2019 - 08:56 am</span>
+                              <span class="opt-txt__body2">1 Nov 2019 - 08:56:00 am</span>
                           </div>
                         </div>
                         <div class="row">
                             <div class="col-md-2 doc-label">
-                                <span class="opt-txt__body2">Total records:</span>
+                                <span class="opt-txt__body2">Total Records:</span>
                             </div>
                             <div class="col-md-6">
                                 <span class="opt-txt__body2">11, 458</span>
@@ -107,15 +166,15 @@
                           </div>
                           <div class="row">
                               <div class="col-md-2 doc-label">
-                                  <span class="opt-txt__body2">Date validated:</span>
+                                  <span class="opt-txt__body2">Validation Completed:</span>
                               </div>
                               <div class="col-md-6">
-                                  <span class="opt-txt__body2">1 Nov 2019 - 08:56 am</span>
+                                  <span class="opt-txt__body2">1 Nov 2019 - 08:56:15 am</span>
                               </div>
                             </div>
                             <div class="row">
                                 <div class="col-md-2 doc-label">
-                                    <span class="opt-txt__body2 error-text">Validation errors:</span>
+                                    <span class="opt-txt__body2 error-text">Validation Errors:</span>
                                 </div>
                                 <div class="col-md-6">
                                     <span class="opt-txt__body2 error-text">256</span>
@@ -141,7 +200,6 @@
                   </div>
             </ng-template>
             <div class="import-step-wrapper">
-                  <p class="opt-txt__body2 validation-note">Please note that this import is irreversible. If it is stopped halfway or is canceled, all imported records will remain in the system.</p>
                   <div class="start-validation-btn">
                       <button mat-button class="mat-btn-primary" >Start Import</button>
                     </div>
@@ -149,6 +207,7 @@
                     <mat-progress-bar mode="determinate" value="40"></mat-progress-bar>
                     <div class="opt-txt__body2 progress-status-txt">Import for DocumentName.xlsx 50% completed</div>
                   </div>
+                  <p class="opt-txt__body2 validation-note">Please note that this import is irreversible. If it is stopped halfway or is canceled, all imported records will remain in the system.</p>
                   <div class="cancel-validation-btn">
                     <button mat-button class="mat-btn-primary" (click)="openMessage()">Cancel Process</button>
                   </div>
@@ -162,18 +221,31 @@
                         </div>
                       </div>
                     </div>
+                    <div class="upload-status-message alert alert-danger">
+                        <div class="opt_flex--container">
+                          <div class="opt_flex__item icon-circle">
+                            <i class="material-icons">done</i>
+                          </div>
+                          <div class="opt_flex__item">
+                            <span class="opt-txt__body2">Import Completed with Errors</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="document-name">
+                          <span class="opt-txt__body2">DocumentName.xlsx</span>
+                      </div>
                     <div class="document-information-section">
                         <div class="row">
                           <div class="col-md-2 doc-label">
-                              <span class="opt-txt__body2">Date uploaded:</span>
+                              <span class="opt-txt__body2">Import Started:</span>
                           </div>
                           <div class="col-md-6">
-                              <span class="opt-txt__body2">1 Nov 2019 - 08:56 am</span>
+                              <span class="opt-txt__body2">1 Nov 2019 - 08:56:00 am</span>
                           </div>
                         </div>
                         <div class="row">
                             <div class="col-md-2 doc-label">
-                                <span class="opt-txt__body2">Total records:</span>
+                                <span class="opt-txt__body2">Total Records:</span>
                             </div>
                             <div class="col-md-6">
                                 <span class="opt-txt__body2">11, 458</span>
@@ -181,15 +253,15 @@
                           </div>
                           <div class="row">
                               <div class="col-md-2 doc-label">
-                                  <span class="opt-txt__body2">Date validated:</span>
+                                  <span class="opt-txt__body2">Import Completed:</span>
                               </div>
                               <div class="col-md-6">
-                                  <span class="opt-txt__body2">1 Nov 2019 - 08:56 am</span>
+                                  <span class="opt-txt__body2">1 Nov 2019 - 08:56:15 am</span>
                               </div>
                             </div>
                             <div class="row">
                                 <div class="col-md-2 doc-label">
-                                    <span class="opt-txt__body2 error-text">Validation errors:</span>
+                                    <span class="opt-txt__body2 error-text">Import Errors:</span>
                                 </div>
                                 <div class="col-md-6">
                                     <span class="opt-txt__body2 error-text">-</span>

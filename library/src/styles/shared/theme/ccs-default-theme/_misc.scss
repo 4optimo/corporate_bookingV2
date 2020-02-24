@@ -879,3 +879,58 @@ button[disabled],.mat-button[disabled]{
 }
 //End of Stepper styles
 
+//Temp styles for diary popup
+.info-popup-wrapper{
+  padding: 20px;
+  min-width: 500px !important;
+  overflow: hidden !important;
+  .info-popup-header{
+      display: flex;
+      align-items: center;
+  }
+  .user-image{
+    margin-right: 10px;
+      img{
+          height: 50px;
+          width: 50px;
+          border-radius: 50%;
+      }
+  }
+  .info-popup-contact{
+    i{
+      font-size: 16px;
+    }
+    .row{
+      margin:20px 0px;
+      display: flex;
+      align-items: flex-start;
+    }
+  }
+}
+
+//Version Popup styels
+.opt-version-popup{
+  max-width: 600px;
+  background-color: #fff;
+  padding: 10px;
+  padding-bottom: 0px;
+  .version-logo{
+    img{
+      width: 200px;
+      margin-bottom: 20px;
+    }
+  }
+  .popup-body{
+    width: 250px;
+    margin: auto;
+    margin-bottom: 15px;
+  }
+  .version-footer{
+    background-color: #393d40;
+    margin: 10px -10px 0;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+  }
+}
