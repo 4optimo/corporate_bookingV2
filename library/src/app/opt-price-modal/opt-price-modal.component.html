@@ -42,21 +42,47 @@
           </div>
           <div class="opt_flex--container">
             <div class="opt_flex__item--inherit opt_flex__item--vcenter opt-pr-10">
-              <span class="opt-txt__body2">Price (Net)</span>
+              <span class="opt-txt__body2">Price (Gross)</span>
             </div>
             <div class="opt_flex__item opt_flex__item--vcenter just-content-end">
               <mat-form-field class="">
-                <input matInput placeholder="" value="$100.00">
+                <input matInput placeholder="" value="$105.00">
               </mat-form-field>
             </div>
           </div>
           <div class="opt_flex--container">
             <div class="opt_flex__item--inherit opt_flex__item--vcenter opt-pr-10">
-              <span class="opt-txt__body2">Price (Net)</span>
+              <span class="opt-txt__body2">Total (Net)</span>
             </div>
             <div class="opt_flex__item opt_flex__item--vcenter just-content-end">
               <mat-form-field class="">
-                <input matInput placeholder="" value="$100.00">
+                <input matInput placeholder="" value="$1200.00">
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="opt_flex--container">
+            <div class="opt_flex__item--inherit opt_flex__item--vcenter opt-pr-10">
+              <mat-form-field class="tax-field">
+                <mat-label>Tax</mat-label>
+                <mat-select [(value)]="selected">
+                  <mat-option value="option1">Standard</mat-option>
+                  <mat-option value="option2">5%</mat-option>
+                </mat-select>
+              </mat-form-field>
+            </div>
+            <div class="opt_flex__item opt_flex__item--vcenter just-content-end">
+              <mat-form-field class="">
+                <input matInput placeholder="" value="$1200.00">
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="opt_flex--container">
+            <div class="opt_flex__item--inherit opt_flex__item--vcenter opt-pr-10">
+              <span class="opt-txt__body2">Total (Gross)</span>
+            </div>
+            <div class="opt_flex__item opt_flex__item--vcenter just-content-end">
+              <mat-form-field class="">
+                <input matInput placeholder="" value="$1260.00">
               </mat-form-field>
             </div>
           </div>
@@ -74,21 +100,21 @@
           </div>
           <div class="opt_flex--container">
             <div class="opt_flex__item--inherit opt_flex__item--vcenter opt-pr-10">
-              <span class="opt-txt__body2">Est. Cost Per Unit</span>
+              <span class="opt-txt__body2">Total Estimated Cost</span>
             </div>
             <div class="opt_flex__item opt_flex__item--vcenter just-content-end">
               <mat-form-field class="">
-                <input matInput placeholder="" value="$100.00">
+                <input matInput placeholder="" value="$960.00">
               </mat-form-field>
             </div>
           </div>
           <div class="opt_flex--container">
             <div class="opt_flex__item--inherit opt_flex__item--vcenter opt-pr-10">
-              <span class="opt-txt__body2">Est. Cost Per Unit</span>
+              <span class="opt-txt__body2">Estimated Margin</span>
             </div>
             <div class="opt_flex__item opt_flex__item--vcenter just-content-end">
               <mat-form-field class="">
-                <input matInput placeholder="" value="$100.00">
+                <input matInput placeholder="" value="$300.00">
               </mat-form-field>
             </div>
           </div>
@@ -100,27 +126,27 @@
             </div>
             <div class="opt_flex__item opt_flex__item--vcenter just-content-end">
               <mat-form-field class="">
-                <input matInput placeholder="" value="$100.00">
+                <input matInput placeholder="" value="$70.00">
               </mat-form-field>
             </div>
           </div>
           <div class="opt_flex--container">
             <div class="opt_flex__item--inherit opt_flex__item--vcenter opt-pr-10">
-              <span class="opt-txt__body2">Actual Cost Per Unit</span>
+              <span class="opt-txt__body2">Total Actual Cost</span>
             </div>
             <div class="opt_flex__item opt_flex__item--vcenter just-content-end">
               <mat-form-field class="">
-                <input matInput placeholder="" value="$100.00">
+                <input matInput placeholder="" value="$840.00">
               </mat-form-field>
             </div>
           </div>
           <div class="opt_flex--container">
             <div class="opt_flex__item--inherit opt_flex__item--vcenter opt-pr-10">
-              <span class="opt-txt__body2">Actual Cost Per Unit</span>
+              <span class="opt-txt__body2">Actual Margin</span>
             </div>
             <div class="opt_flex__item opt_flex__item--vcenter just-content-end">
               <mat-form-field class="">
-                <input matInput placeholder="" value="$100.00">
+                <input matInput placeholder="" value="$420.00">
               </mat-form-field>
             </div>
           </div>
