@@ -56,7 +56,42 @@ nav {
     border-radius: 10%;
     color: #ffffff !important;
   }
+  .list-button{
+      i{
+          margin-left:0px !important;
+      }
+      .mat-spinner{
+        position: absolute;
+        top: 0;
+        right: 60%;
+        left: 40%;
+      }
+  }
+  .opt_modal-body{
+      padding:0px;
+  }
+  
 }
+.esigndoc-modal{
+    .opt_modal-header{
+        .title{
+            margin-bottom:0;
+        }
+        .mat-dialog-title{
+            margin-bottom:0px !important;
+        }
+    }
+      .title{
+      margin-bottom:10px;
+     }
+      .esigndoc-row{
+          display:flex;
+          align-items:center;
+      }
+      .opt_modal-body{
+      padding:24px !important;
+        }
+  }
 .opt_discount-search {
   .opt-search-panel {
     .opt_flex__item--inherit {

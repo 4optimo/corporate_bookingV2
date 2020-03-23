@@ -2,6 +2,8 @@
     margin-top: 60px;
     padding:0 20px;
     padding-bottom: 10px;
+    max-height: 80vh;
+    overflow-y: auto;
     .mat-form-field{
         width: 100%;
     }
@@ -10,6 +12,22 @@
     }
     .row{
         padding:10px 0px;
+        &.payment-invoice-list{
+            margin:0;
+            .cat-icon{
+                margin-right:10px;
+            }
+            .mat-expansion-panel-body{
+                padding-top:10px;
+            }
+            .invoice-expansion-panel{
+                .mat-expansion-panel-body{
+                    .cat-icon{
+                        margin-right:0px;
+                    }
+                }
+            }
+        }
         &:first-child{
             height: 20px;
         }

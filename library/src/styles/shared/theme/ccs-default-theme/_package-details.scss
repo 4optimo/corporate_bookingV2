@@ -77,6 +77,9 @@ button {
         background-color: #eeeeee50;
       }
     }
+    .with-expansion{
+            max-width:unset !important;
+    }
  }
 .opt_package-popup {
   .opt_booking__list {
@@ -396,7 +399,7 @@ button {
     margin: 0;
     // padding: 10px;
     background-color: $opt_color_white;
-
+    max-width: 470px;
     .outer-wrapper {
       //overflow-y: auto;
       //overflow-x: hidden;
@@ -896,6 +899,7 @@ button {
     border-radius: 50%;
     flex-shrink: 0;
     position: relative;
+    margin-right:10px;
     .icon_moon {
       font-size: 24px;
       line-height: 1;
@@ -961,3 +965,4 @@ button {
     margin-right: 32px;
   }
 }
+

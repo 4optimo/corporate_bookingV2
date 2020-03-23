@@ -2,8 +2,10 @@ $gray-001 : #6e6e6e;
 @import "variables";
 
 .opt_loading{
-position:relative;
+position:fixed;
 z-index:9999;
+top: 30%;
+right: 27%;
 
 
  mat-spinner{

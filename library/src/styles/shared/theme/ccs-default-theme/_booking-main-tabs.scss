@@ -99,4 +99,63 @@
     }
   }
 }
-
+.cancel-booking-btn{
+    align-items: center;
+    display: flex;
+    background-color: #fff;
+    border-bottom: 1px solid #bfbfbf;
+    button{
+        //height: 40px;
+        //width: 40px;
+        background-color: #fff !important;
+        border: 1px solid #f5766c;
+        color: #f5766c;
+        margin-left: 15px;
+        margin-right: 15px;
+        font-size:12px;
+        height: 23px;
+        line-height: 8px !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 4px !important;
+        &:hover{
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12) !important;
+            background-color: #f5766c !important;
+            color: #fff !important;
+        }
+        i{
+            font-size:24px !important;
+        }
+    }
+}
+.header-booking-col{
+    background-color: #fff;
+    border-bottom: 1px solid #bfbfbf;
+}
+.header-approve-col{
+    background-color: #fff;
+    border-bottom: 1px solid #bfbfbf;
+    display: flex;
+    padding-right: 15px;
+    justify-content: flex-end;
+    i{
+        margin-right:2px;
+    }
+    .approval-text{
+        margin-right:10px;
+    }
+    button{
+        margin-left:5px;
+    }
+}
+.header-status-col{
+    background-color: #fff;
+    border-bottom: 1px solid #bfbfbf;
+    min-width:100px;
+    justify-content: center;
+    display: flex;
+    i{
+        color:#909cac;
+    }
+}

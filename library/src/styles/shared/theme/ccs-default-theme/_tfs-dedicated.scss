@@ -1,11 +1,16 @@
 ﻿//Booking details TFS dedicated styles
 @import "variables";
 @import "mixins/_mixins.scss";
+body{
+    min-height:100vh !important;
+}
 .sidebar-collapse{
         .opt_booking-details-full{
             .booking-main-tab-group{
                 .mat-tab-label:nth-child(1){
-                    max-width:413px !important;
+                    max-width:unset !important;
+                    display: flex;
+                    justify-content: flex-start;
                 }
             }
             
@@ -454,12 +459,20 @@ app-opt-corporate-client-popup{
                 margin-left:5px;
             }
         }
+        .mat-expansion-panel{
+            padding:0 24px !important;
+        }
     }
     .contact-details{
         .opt-section__heading{
                 margin:0 -24px;
                 margin-bottom:15px;
             }
+        .mat-expansion-panel{
+            padding:0 24px !important;
+        }
+    }
+    .communication-consent{
         .mat-expansion-panel{
             padding:0 24px !important;
         }

@@ -47,12 +47,18 @@
   height: 30px;
   padding: 0 15px;
   width: auto;
+  border-radius:4px !important;
+  transition:0.3s !important;
+  line-height: 14px !important;
 }
 
 %btn-small{
   height: 23px;
   padding: 0 15px;
   width: auto;
+  border-radius:4px !important;
+  transition:0.3s !important;
+  line-height: 12px !important;
 }
 
 .mat-btn{
@@ -119,6 +125,17 @@
           background-color: $opt_color_primary;
         }
       }
+      &_dismiss{
+        @extend %btn-small;
+        color: $opt-color_btn_outline !important;
+        text-align: center !important;
+        border: 1px solid $opt_color_btn_outline !important;
+        font-size: 12px !important;
+        &:hover{
+            color: $opt_color_primary !important;
+            border: 1px solid $opt_color_primary !important;
+        }
+      }
     }
     &_active{ /*Priary Active*/
       @extend %btn;
@@ -133,6 +150,16 @@
         background-color: $opt_color_primary;
       }
     }
+    &_dismiss{
+        @extend %btn;
+        color: $opt-color_btn_outline !important;
+        text-align: center !important;
+        border: 1px solid $opt_color_btn_outline !important;
+        &:hover{
+            color: $opt_color_primary !important;
+            border: 1px solid $opt_color_primary !important;
+        }
+      }
   }
 
   &-remove { /*default*/

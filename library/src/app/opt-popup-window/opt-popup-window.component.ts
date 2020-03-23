@@ -31,6 +31,7 @@ import { OptBookingBatchApprovalPopupComponent } from '../opt-booking-batch-appr
 import { OptBookingApprovalRejectPopupComponent } from '../opt-booking-approval-reject-popup/opt-booking-approval-reject-popup.component';
 import { OptBookingApprovalSuccessPopupComponent } from '../opt-booking-approval-success-popup/opt-booking-approval-success-popup.component';
 import { OptBookingPackageConvertPopupComponent } from '../opt-booking-package-convert-popup/opt-booking-package-convert-popup.component';
+import { OptPriceModalComponent } from '../opt-price-modal/opt-price-modal.component';
 
 
 @Component({
@@ -355,7 +356,17 @@ export class OptPopupWindowComponent implements OnInit {
     });
 
   }
+  public openPricePopup() {
+    this.dialog.open(OptPriceModalComponent, {
+      data: { name: 'Price Popup' },
+      panelClass: ['custom-dialog-container', 'w70modal'],
+      height: 'auto',
+      width: '70%'
+      // DialogPosition : top
 
+    });
+
+  }
   ngOnInit() {
   }
 

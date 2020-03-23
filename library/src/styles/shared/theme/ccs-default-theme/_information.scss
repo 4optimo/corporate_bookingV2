@@ -9,10 +9,29 @@
     }
   }
 }
-
+ 
 .opt_additional-info{
   padding: 15px 10px 0;
   //padding: 30px 30px 30px 30px;
+  .additional-details-container{
+      justify-content:flex-start;
+      >.opt_flex__item{
+          flex-grow: 0 !important;
+          flex-basis: calc(100% / 3) !important;
+          padding-right:20px;
+      }
+      >.opt_flex__item:nth-child(3n){
+          padding-right:0px;
+      }
+      .expiry-date-field{
+          .mat-datepicker-toggle{
+              button{
+                position: relative;
+                top: 5px;
+              }
+          }
+      }
+  }
   .mat-menu-content{
     padding: 8px;
   }

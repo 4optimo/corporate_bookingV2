@@ -1,99 +1,399 @@
-@import "variables";
+﻿@import "variables";
 
-.opt_booking-approval-popup{
-    .opt_modal-body{
-        padding: 24px;
+// Booking Approval Modal
+
+.opt_booking-approval-popup {
+  .opt_modal-body {
+    padding: 24px;
     background-color: #f5f5f5;
     margin-top: 60px;
 
-    .approval-reject-note-message{
+    .approval-reject-note-message {
+      display: flex;
+      align-items: center;
+      padding-left: 24px;
+      color: #f5766c;
+      background-color: #f8d7da;
+      border: 1px solid #f5c6cb;
+      border-radius: 5px;
+      margin-bottom: 40PX;
+      margin-top: 10px;
+      min-height: 50px;
+      height: auto;
+    }
+
+    .approval-note-message {
+      display: flex;
+      // align-items: center;
+      padding-left: 24px;
+      color: #FFA000;
+      background-color: #FFF8E1;
+      border: 1px solid #FFECB3;
+      border-radius: 5px;
+      margin-bottom: 40PX;
+      margin-top: 10px;
+      min-height: 80px;
+      height: auto;
+      justify-content: center;
+
+      flex-direction: column;
+
+
+      > div {
+        padding: 5px 0;
+      }
+    }
+
+    .approval-note-row {
+      .mat-form-field {
+        width: 100%;
+      }
+    }
+
+    .approval-accordion-wrapper {
+      padding: 20px 0 20px;
+
+      .approval-accordion-row {
+        .row {
+          flex-grow: 1;
+
+
+          .mat-accordion {
+            flex-grow: 1;
+
+            .mat-expansion-panel {
+              // box-shadow: none !important;
+              // border: 1px solid #e0e0e0;
+              // border-bottom: none;
+
+              // .mat-expansion-panel-header{
+              //     height: 55px;
+              //     border-bottom: 1px solid #e0e0e0;
+              //     display: flex;
+              //     flex-direction: row;
+              //     align-items: center;
+              //     padding: 0 24px;
+
+              //     .mat-content{
+              //         display: flex;
+              //         flex: 1;
+              //         flex-direction: row;
+              //         overflow: hidden;
+
+              //     }
+              // }
+
+              .mat-expansion-panel-body {
+                padding: 0 24px 0px;
+
+                .approval-status-expanded-content-row {
+                  height: 55px;
+                  display: flex;
+                  align-items: center;
+                  border-bottom: 1px solid #eee;
+                }
+
+                .approval-status-expanded-content-row:not(:last-child) {
+                  border-bottom: 1px dotted #9e9e9e;
+                }
+              }
+
+
+            }
+
+
+          }
+        }
+      }
+    }
+  }
+}
+
+
+// Booking Approval Reject Modal
+
+.opt_approval-reject-popup {
+  .opt_approval-reject-body {
+    .note-wrapper {
+      .approval-note-message {
         display: flex;
         align-items: center;
         padding-left: 24px;
-        color: #f5766c ;
-    background-color: #f8d7da;
-    border: 1px solid #f5c6cb;
+        color: #f5766c;
+        background-color: #f8d7da;
+        border: 1px solid #f5c6cb;
         border-radius: 5px;
         margin-bottom: 40PX;
         margin-top: 10px;
         min-height: 50px;
         height: auto;
-    }
 
-    .approval-note-message{
+      }
+
+      .approval-reject-note-row {
+        .mat-form-field {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+}
+
+// Booking Approval Success Modal
+
+.opt_approval-success-popup {
+  .opt_approval-success-body {
+    .note-wrapper {
+      .approval-note-message {
         display: flex;
-        // align-items: center;
+        align-items: flex-start;
         padding-left: 24px;
-        color: #FFA000 ;
-    background-color: #FFF8E1;
-    border: 1px solid #FFECB3;
+        color: #155724;
+        background-color: #d4edda;
+        border: 1px solid #c3e6cb;
         border-radius: 5px;
         margin-bottom: 40PX;
         margin-top: 10px;
-        min-height: 80px;
+        min-height: 50px;
         height: auto;
         justify-content: center;
-    
-    flex-direction: column;
 
+        flex-direction: column;
 
-        >div{
-            padding: 5px 0;
+        > div {
+          padding: 5px 0;
         }
-    }
+      }
 
-    .approval-note-row{
-        .mat-form-field{
-            width: 100%;
+      .approval-reject-note-row {
+        .mat-form-field {
+          width: 100%;
         }
+      }
     }
+  }
 
-    .approval-accordion-wrapper{
-        padding: 20px 0 20px;
-.approval-accordion-row{
-    .row{
+}
+
+
+// Booking Approval Status Modal
+
+
+.opt_approval-status-popup {
+  .approval-status-accordion-wrapper {
+    padding: 20px 0 20px;
+
+    .approval-status-accordion-row {
+      .row {
         flex-grow: 1;
 
-        
-        .mat-accordion{
-            flex-grow: 1;
 
-            .mat-expansion-panel{
-                box-shadow: none !important;
-                border: 1px solid #e0e0e0;
-                // border-bottom: none;
+        .mat-accordion {
+          flex-grow: 1;
 
-                // .mat-expansion-panel-header{
-                //     height: 55px;
-                //     border-bottom: 1px solid #e0e0e0;
-                //     display: flex;
-                //     flex-direction: row;
-                //     align-items: center;
-                //     padding: 0 24px;
+          .mat-expansion-panel {
+            // box-shadow: none !important;
+            // border: 1px solid #e0e0e0;
+            // border-bottom: none;
 
-                //     .mat-content{
-                //         display: flex;
-                //         flex: 1;
-                //         flex-direction: row;
-                //         overflow: hidden;
-                        
-                //     }
-                // }
-                
-                // .mat-expansion-panel-body{
-                //     padding: 0 24px 0px;
-                //     .approval-status-expanded-content-row:not(:last-child){
-                //         border-bottom: 1px dotted #9e9e9e;
-                //     }
-                // }
-                
-    
+            .mat-expansion-panel-header {
+              height: 55px;
+              border-bottom: 1px solid #e0e0e0;
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              padding: 0 24px;
+
+              .mat-content {
+                display: flex;
+                flex: 1;
+                flex-direction: row;
+                overflow: hidden;
+
+              }
             }
 
-            
+            .mat-expansion-panel-body {
+              padding: 0 24px 0px;
+
+              .approval-status-expanded-content-row {
+                height: 55px;
+                display: flex;
+                align-items: center;
+                border-bottom: 1px solid #eee;
+              }
+
+              .approval-status-expanded-content-row:not(:last-child) {
+                border-bottom: 1px dotted #9e9e9e;
+              }
+            }
+
+
+          }
+
+
         }
+      }
     }
+  }
+
+  .opt_flex--container {
+    min-height: 48px;
+  }
+
 }
+
+// Booking Batch Approval Modal
+
+.opt_batch-approval-popup {
+  .batch-approval-header {
+    padding: 24px;
+    background-color: #f5f5f5;
+    margin-top: 60px;
+  }
+
+  .opt_batch-approval-body {
+    padding: 24px;
+
+    .batch-approval-filter {
+      padding: 0 0 24px 24px;
     }
+
+    .batch-approval-list-row {
+      padding: 0 24px;
+      border-bottom: 1px solid #e0e0e0;
+      background-color: #f5f5f5;
+
+      .list-row-wrapper {
+        padding: 6px 0;
+        display: flex;
+
+        .row {
+          flex-grow: 1;
+        }
+      }
+
+      .approval-status {
+        margin-left: 8px;
+      }
     }
+
+    .batch-approval-button-row {
+      padding-top: 24px;
+
+      .flex-item-align-right {
+        > button {
+          margin-left: 24px;
+        }
+      }
+    }
+  }
 }
+
+// Booking Package Convert Modal
+
+.opt_package-convert-popup {
+  .opt_package-convert-body {
+    .note-wrapper {
+      .package-convert-note-row {
+        padding: 24px;
+      }
+
+      .approval-note-message {
+        display: flex;
+        align-items: center;
+        padding-left: 24px;
+        color: #f5766c;
+        background-color: #f8d7da;
+        border: 1px solid #f5c6cb;
+        border-radius: 5px;
+        margin-bottom: 40PX;
+        margin-top: 10px;
+        min-height: 50px;
+        height: auto;
+
+      }
+
+    }
+  }
+}
+
+
+// Modal Common Scss
+
+.flex-line-break {
+  flex-direction: column;
+}
+
+.lh-lb {
+  line-height: 1.5;
+}
+
+.icon-status {
+  display: flex;
+  border: 2px solid;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+
+
+  &.approve {
+    color: #4CAF50;
+  }
+
+  &.not-approve {
+    color: #9E9E9E;
+  }
+}
+
+.approval-status {
+  font-size: 11px !important;
+  font-weight: 600;
+  height: 18px;
+  width: auto;
+  // background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 15px 7px;
+  border-radius: 10px;
+
+  &.success {
+
+    background-color: #C8E6C9;
+    color: #4CAF50 !important;
+    border: 1px solid #81C784 !important;
+  }
+
+  &.pending {
+    background-color: #FFECB3;
+    color: #FFC107 !important;
+    border: 1px solid #FFC107 !important;
+  }
+
+  &.inprogress {
+    background-color: #FFE0B2;
+    color: #FF9800 !important;
+    border: 1px solid #FF9800 !important;
+  }
+
+  &.cancelled {
+    background-color: #F5F5F5;
+    color: #9E9E9E !important;
+    border: 1px solid #9E9E9E !important;
+  }
+}
+
+.my {
+  &-1 {
+    margin-top: 4px;
+    margin-bottom: 4px;
+  }
+
+  &-2 {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+}
+

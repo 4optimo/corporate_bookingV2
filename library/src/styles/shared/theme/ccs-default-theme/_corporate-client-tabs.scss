@@ -22,4 +22,11 @@
   .mat-expansion-indicator{
     padding-bottom: 237px;
   }
+  .mat-tab-body{
+      margin-top:20px;
+      overflow-y: hidden !important;
+      .opt_additional-info{
+          padding-top:0px;
+      }
+  }
 }

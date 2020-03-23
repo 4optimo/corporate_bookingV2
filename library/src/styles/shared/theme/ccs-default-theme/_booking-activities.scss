@@ -39,6 +39,19 @@
 .header_row--action-wrapper {
   font-size: 0;
   display: inline-flex;
+  .mat-btn-primary--small_dismiss{
+      &.btn-icon-text:hover{
+          cursor:not-allowed;
+          .material-icons, span{
+            color: #4bb3fa !important;
+          }
+      }
+  }
+  .mat-button[disabled]:hover{
+      .material-icons, span{
+          color: #4bb3fa !important;
+      }
+  }
   .btn-icon-text:hover{
     .opt_color_icon_font{
       color: $opt_color_white !important;
@@ -128,6 +141,16 @@
   .symbol_icon{
       color:#909cac;
       margin:0 5px;
+  }
+  .price-container{
+      width:100%;
+  }
+  .generated-icon{
+      font-size: 19px;
+      margin-right: 5px;
+  }
+  .arrow-icon{
+      font-size:18px;
   }
 }
 
@@ -317,6 +340,9 @@
     }
     mat-checkbox{
       margin-right:20px;
+    }
+    .btn-text{
+        line-height:17px;
     }
   }
 
@@ -593,6 +619,16 @@
       position: absolute;
       bottom: 0px;
     }
+  }
+  .payment-tab-group{
+      .mat-tab-body{
+          overflow-y:hidden;
+      }
+      .schedule-header{
+          button{
+              margin-left:5px;
+          }
+      }
   }
   .payment_list_item{
     .mat-checkbox{
@@ -1248,6 +1284,28 @@
     }
     .documents_list_item {
       padding: 0;
+
+      .sign-icon1{
+        background-color: orange;
+        letter-spacing: 2px;
+        border-radius: 50%;
+        height: -45px;
+        font-size: 14px;
+        padding-right: 1px;
+        padding-left: 3px;
+      }
+
+      .insert-file-icon{
+        font-size: 18px;
+        color: #8f44ad;
+        margin-right: 5px;
+      }
+      .insert-file-icon1{
+        font-size: 18px;
+        color: orange;
+        margin-right: 5px;
+      }
+
       .header-height{
         padding: 10px !important;
       }
@@ -1298,6 +1356,10 @@
             }
           }
         }
+      }
+      .document-name{
+          overflow:hidden;
+          text-overflow:ellipsis;
       }
     }
     //========styles for expansion ================
@@ -1581,7 +1643,7 @@
 // Document-popup styles
 .document-popups{
   .add-upload-popup, .email-popup, .edit-popup, .multiple-attach-popup, .customer-email-popup{
-    max-width: 500px;
+    //max-width: 500px;
     background-color: $opt_color_white;
     padding: 15px;
     .opt_flex--container{
@@ -1645,6 +1707,7 @@
     .chkbox-file-name{
         cursor:pointer;
         line-height:17px;
+        max-width:300px;
     }
     .selected{
         color: #4bb3fa;
@@ -1732,4 +1795,8 @@ padding: 20px;
 }
 .ReadMore-panel{
   padding: 15px;
+  &.correspondence-panel{
+      min-width:600px;
+  }
+
 }

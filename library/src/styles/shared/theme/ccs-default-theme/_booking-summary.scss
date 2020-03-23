@@ -121,15 +121,21 @@
     .booking-ref-lbl{
         background-color:#e0e0e0;
         display: inline;
-        padding: 5px;
+        padding: 3px 5px;
         border-radius: 13px;
         margin-right: 10px;
+        display:flex;
+        align-items:center;
         .opt-link--secondary{
             font-size:12px !important;
             font-weight:500 !important;
             text-decoration:none !important;
             color:#909cac !important;
             transition:0.3s;
+            max-width: 100px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
             &:hover{
                     cursor: pointer;
                     text-decoration: underline !important;
@@ -163,8 +169,20 @@
     }
 
     >.opt_flex--container{
-      &:first-child{
-        margin-bottom: 5px;
+      &:nth-child(1){
+        margin-bottom: 7px;
+      }
+      &:nth-child(2){
+        margin-bottom: 7px;
+      }
+      &:nth-child(3){
+        height: 37px;
+        >.opt_flex__item{
+            &:nth-child(1){
+                position:relative;
+                bottom:9px;
+            }
+        }
       }
     }
   }
@@ -202,6 +220,7 @@
 }
 .mat-select-panel .mat-option{
   //height: 40px !important;
+  border-bottom:1px solid #e0e0e0;
 }
 .mat-option-text{
   @extend .opt-txt__body1;
@@ -247,6 +266,20 @@
         .telephone-field {
             margin-top: 5px;
         }
+        .mat-select-arrow{
+        position:relative;
+        bottom:4px;
+        }
+        .name-field{
+            .field-options{
+               position: relative;
+               bottom: 8px;
+            }
+        }
+        .field-detail{
+            font-weight:500;
+            margin-bottom:10px;
+        }
     }
 
     .venue-field {
@@ -272,6 +305,9 @@
             color:#909cac;
         }
     }
+    .opt-booking-summary-select-sm{
+      padding-right:18px;
+  }
 }
 
 .vh-center{
@@ -304,7 +340,10 @@
     input{
         position: relative;
         left: 20px;
-        top: 6px;
+        width:100%;
+        z-index: 999;
+        max-width:250px;
+        //top: 6px;
     }
     .mat-form-field-suffix{
         position:relative;
@@ -315,6 +354,21 @@
         position:relative;
         top:5.5px;
         right:25px;
+    }
+    >.field-inner:nth-child(1){
+        text-align:right;
+        .date_picker{
+            display: flex;
+            align-items: center;
+            padding-right: 43px;
+            width: 32%;
+            .symbol_icon{
+                width:100%;
+                i{
+                    font-size:14px !important;
+                }
+            }
+        }
     }
   }
 }
@@ -619,7 +673,7 @@ i {
   .outstanding-value{
       font-size:16px !important;
       position:relative;
-      top:5px;
+      //top:5px;
   }
   .tax-net-container{
       .tax-label{
@@ -627,16 +681,19 @@ i {
     bottom: 1px;
     
   }
-
+      h2{
+          line-height: 25px;
+      }
+  
+  }
   .net-label{
+      text-align:right;
         .net-value{
             flex:1 1 auto;
             text-align:right;
             font-size:16px !important;
         }
     }
-  }
-  
   .opt_flex--container{
     &.parent-width{
       margin: 0 -15px;
@@ -658,7 +715,7 @@ i {
     &:last-child{
       .badge{
         position: relative;
-        top: 5px;
+        //top: 5px;
       }
     }
 
@@ -706,6 +763,11 @@ i {
 }
 
 .booking-status-menu{
+    max-height:480px !important;
+    position:fixed;
+    .mat-menu-item{
+        border-bottom: 1px solid #e0e0e0 !important;
+    }
   .cancelled{
     color: $red-danger;
     transition: all 0.4s ease-in-out;

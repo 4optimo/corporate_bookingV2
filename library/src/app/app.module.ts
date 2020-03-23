@@ -164,6 +164,7 @@ import { OptBookingBatchApprovalPopupComponent } from './opt-booking-batch-appro
 import { OptBookingApprovalRejectPopupComponent } from './opt-booking-approval-reject-popup/opt-booking-approval-reject-popup.component';
 import { OptBookingApprovalSuccessPopupComponent } from './opt-booking-approval-success-popup/opt-booking-approval-success-popup.component';
 import { OptBookingPackageConvertPopupComponent } from './opt-booking-package-convert-popup/opt-booking-package-convert-popup.component';
+import { OptPriceModalComponent } from './opt-price-modal/opt-price-modal.component';
 
 const appRoutes: Routes = [
   { path: 'opt-booking-list', component: OptBookingListComponent },
@@ -250,6 +251,7 @@ const appRoutes: Routes = [
   { path: 'opt-booking-approval-reject-popup' , component: OptBookingApprovalRejectPopupComponent},
   { path: 'opt-booking-approval-success-popup' , component: OptBookingApprovalSuccessPopupComponent},
   { path: 'opt-booking-package-convert-popup' , component: OptBookingPackageConvertPopupComponent},
+  { path: 'opt-price-modal' , component: OptPriceModalComponent},
 
   { path: '', redirectTo: '/opt-booking-summary', pathMatch: 'full' },
   { path: '**', redirectTo: '/opt-booking-summary', pathMatch: 'full' }
@@ -399,6 +401,7 @@ export class DemoMaterialModule { }
     OptBookingApprovalRejectPopupComponent,
     OptBookingApprovalSuccessPopupComponent,
     OptBookingPackageConvertPopupComponent,
+    OptPriceModalComponent
   ],
   imports: [
     BrowserModule,

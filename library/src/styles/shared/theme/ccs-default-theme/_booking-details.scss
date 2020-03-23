@@ -122,7 +122,10 @@
                 left: 14px;
             }*/
         }
-
+        .commit-all-row{
+            background-color:#f5f5f5;
+            padding:10px;
+        }
         .mat-form-field-underline {
             bottom: 0px;
         }
@@ -291,7 +294,7 @@
 
             .attendee-count {
                 .mat-form-field {
-                    width: 30px;
+                    width: 100px;
                 }
 
                 span, .symbol_icon {
@@ -376,19 +379,37 @@
                 .opt_paginator {
                     margin: 0 10px;
                 }
+
             }
 
             .mat-expansion-panel {
                 //border-left: 4px solid red;
                 &.opt-expand--line.mat-expanded {
                     border-left: 4px solid $opt_color_primary;
-                    margin-bottom: 50px;
+                    //margin-bottom: 50px;
                     box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
                     transition: 0.3s;
                     padding-bottom: 10px;
                 }
 
-
+                .mat-expansion-panel-header{
+                    .booking-edit-right-col{
+                            >.opt_flex--container{
+                                >.opt_flex__item:nth-child(2){
+                                    position: relative;
+                                    left: 2px;
+                                }
+                                >.opt_flex__item:nth-child(3){
+                                    position: relative;
+                                    left: 4px;
+                                }
+                                >.opt_flex__item:nth-child(4){
+                                    position: relative;
+                                    left: 5px;
+                                }
+                            }
+                        }
+                }
                 .mat-expansion-panel-body {
                     padding: 0px;
 
@@ -396,7 +417,9 @@
                         display: flex;
                         align-items: center;
                         padding-left: 15px;
-
+                        .setup-icon{
+                            font-size:23px;
+                        }
                         .info-icons {
                             display: flex;
                             align-items: center;
@@ -461,14 +484,23 @@
                                 }
                             }
                         }
-
+                        .level-2{
+                            position:relative;
+                            .savechanges{
+                                top:-1px;
+                                right:20px;
+                            }
+                            .resetchanges{
+                                right: -5px;
+                            }
+                        }
                         .booking-edit-level-2 {
                             > .opt_flex__item {
                                 &:nth-child(1) {
                                     display: flex;
                                     line-height: 19px;
                                     justify-content: flex-end;
-                                    padding-right: 60px;
+                                    padding-right: 79px;
                                     mat-form-field {
                                         width: 125px !important;
                                         font-weight: 500 !important;
@@ -476,16 +508,24 @@
                                         input {
                                             text-align: right !important;
                                             //padding-right: 55px;
+                                            font-weight:600;
                                         }
                                     }
                                     .counter-wrapper{
-                                        width:120px;
+                                        width:95px;
+                                        .savechanges{
+                                            right: -90px !important;
+                                        }
+                                        .resetchanges{
+                                            right: -115px !important;
+                                        }
                                     }
                                 }
 
                                 &:nth-child(2) {
-                                    //position: relative;
-                                    //left: -5px;
+                                    position: relative;
+                                    left: 0px;
+                                    
                                 }
 
                                 &:nth-child(3) {
@@ -509,48 +549,99 @@
                                     }
                                 }
                                  &:nth-child(5){
+                                     .counter-wrapper{
+                                         width: 100%;
+                                         text-align: right;
+                                         .input-wrapper{
+                                             width:100%;
+                                         }
+                                     }
                                      .mat-form-field{
-                                         width: 110px !important;
-                                         right:22px;
+                                         width: 100% !important;
+                                         position: relative;
+                                         right: -10px;
+                                         //right:22px;
                                      }
                                      input{
                                          text-align: right !important;
+                                         font-weight:600;
                                      }
                                  }
                             }
-
+                            .unit-price-col{
+                                .savechanges {
+                                    right: -90px !important;
+                                }
+                                .resetchanges {
+                                    right: -115px !important;
+                                }
+                            }
                             .savechanges {
-                                right: -50px !important;
+                                right: -20px !important;
                             }
 
                             .resetchanges {
-                                right: -75px !important;
+                                right: -45px !important;
                             }
                             .price--values{
                                 //min-width:130px;
                             }
+                            .price--values{
+                                .savechanges{
+                                    right:-20px !important;
+                                }
+                                .resetchanges{
+                                    right:-45px !important;
+                                }
+                            }
                         }
 
-                        .booking-edit-level-3 {
+                        .booking-edit-level-3, .booking-edit-level-4 {
                                     background-color: #ffffff;
                                     border-bottom: 1px solid #909cac50;
 
                                     .price--values {
-                                       // padding-right: 40px;
-                                          // margin-left: 110px;
-                                          // position:relative;
-                                         //  right:-5px;
+                                       .__item--value{
+                                           .opt_flex__item:nth-child(1){
+                                               padding-right:0px;
+                                           }
+                                       }
                                     }
                                     .price--value__input{
                                        // width:unset !important;
                                        // margin-right:65px !important;
+                                       .counter-wrapper{
+                                              width: 120px;
+                                              text-align: right;
+                                          }
+                                          .input-wrapper{
+                                              width:100%;
+                                          }
+                                          input{
+                                                text-align: right !important;
+                                                font-weight: 500;
+                                          }
                                     }
                                     .__item--value{
                                         margin-right:40px;
                                         > .opt_flex__item {
+                                        &:nth-child(1) {
+                                            padding-right: 39px;
+                                          .counter-wrapper{
+                                              width: 100%;
+                                              text-align: right;
+                                          }
+                                          .input-wrapper{
+                                              width:100%;
+                                          }
+                                          input{
+                                                text-align: right !important;
+                                                font-weight: 600;
+                                          }
+                                        }
                                         &:nth-child(3) {
                                           position:relative;
-                                          left:5px;
+                                          left:3px;
                                         }
                                     }
                                     }
@@ -558,10 +649,12 @@
                                             text-align: right;
                                             padding-right: 53px !important;
                                             max-width:unset;
+                                            position: relative;
+                                            right: 7px;
                                     }
                                     .time-label{
                                             position: relative;
-                                            left: 2px;
+                                            left: 0px;
                                     }
                                     
                                 }
@@ -573,7 +666,7 @@
                             }
                             .time-label{
                                 position: relative;
-                                left: 5px;
+                                left: -5px;
                             }
                             > .opt_flex__item {
                                 &:nth-child(3) {
@@ -667,6 +760,17 @@
 
             .event-details {
                 min-height:20px;
+                @include respond-to('small') {
+                    max-width:unset;
+                }
+
+                @include respond-to('medium') {
+                    max-width:330px;
+                }
+
+                @include respond-to('large') {
+                    max-width:unset;
+                }
                 .opt_flex__item {
                     //margin-left: 5px;
                     margin-right: 5px;
@@ -676,23 +780,27 @@
                 }
                 .event-name {
                     font-weight: 600;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    max-width: 200px;
+                    text-overflow: ellipsis;
                 }
 
                 .booking-start-date {
-                    color: #000 !important;
+                    color: #251727 !important;
                 }
 
                 .booking-start-time {
-                    //font-weight:500;
+                    color: #AB47BC;
                 }
 
                 .booking-end-date {
-                    color: #000 !important;
+                    color: #251727 !important;
                     padding-left:3px;
                 }
 
                 .booking-end-time {
-                    //font-weight:500;
+                    color: #AB47BC;
                     padding-left:3px;
                 }
             }
@@ -748,12 +856,12 @@
 
                 @include respond-to('medium') {
                     min-height: 55px;
-                    height: 55px !important;
+                    height: auto !important;
                 }
 
                 @include respond-to('large') {
                     min-height: 55px;
-                    height: 55px !important;
+                    height: auto !important;
                 }
 
 
@@ -792,9 +900,20 @@
         }
 
         .editable-field {
-            input:hover {
-                color: #3f51b5;
+            &.mat-focused{
+                .mat-form-field-underline{
+                    display:block !important;
+                 }
+            }
+            input{
+                color: #1E88E5;
                 transition: 0.3s;
+                &:hover{
+                    border-bottom:1px solid #909cac;
+                    .mat-form-field-underline{
+                        display:block !important;
+                    }
+                }
             }
         }
 
@@ -837,11 +956,11 @@
             &.__min {
                 width: auto;
                 height: auto;
-                min-width: 25px;
+                //min-width: 25px;
             }
 
             .mat-checkbox-layout {
-                margin-left: 7px;
+                //margin-left: 7px;
             }
 
             .mat-radio-checked {
@@ -906,6 +1025,22 @@
                 align-items: center;
                 justify-content: flex-end;
                 padding-right: 50px;
+                .counter-wrapper{
+                    width:120px; 
+                    .mat-form-field{
+                        width: 120px !important;
+                        input{
+                            text-align: right !important;
+                            font-weight:600;
+                        }
+                    }
+                    .savechanges{
+                        right:-80px;
+                    }
+                    .resetchanges{
+                        right:-105px;
+                    }
+                }
             }
             /*.currency-input{
                 display:none !important;
@@ -948,19 +1083,38 @@
                 }
 
                 .total-price-col {
+                    padding-right: 5px;
+                    .counter-wrapper{
+                    width:120px; 
+                    .mat-form-field{
+                        width: 100px !important;
+                        position: relative;
+                        right: 25px;
+                        input{
+                            text-align: right !important;
+                            font-weight:600;
+                        }
+                    }
+                    .savechanges{
+                        right:-40px;
+                    }
+                    .resetchanges{
+                        right: -65px;
+                    }
+                }
                     display: flex;
                     flex-wrap: wrap;
 
                     @include respond-to('medium') {
-                        max-width: 110px;
+                        max-width: 270px;
                     }
 
                     @include respond-to('large') {
-                        max-width: 200px;
+                        max-width: 270px;
                     }
 
                     @include respond-to('x-large') {
-                        max-width: 200px;
+                        max-width: 270px;
                     }
                 }
             }
@@ -1236,7 +1390,45 @@
     margin-left:5px;
   }
 }
-
+.booking-details-price-popover{
+    &.filter-popover{
+        max-width: unset;
+        min-width: 350px !important;
+        padding: 10px;
+        padding-right:45px;
+        padding-top:0px;
+        position:fixed;
+        right:5%;
+        .savechanges{
+            right: -25px;
+            top: -5px;
+        }
+        .resetchanges{
+            right: -50px;
+            top: -5px;
+        }
+        .mat-form-field-infix{
+            max-width: 130px !important;
+        }
+    }
+    .mat-form-field-type-mat-select{
+        width:80% !important;
+    }
+    .mat-form-field-type-mat-select{
+        /*.mat-form-field-infix{
+            max-width:unset !important;
+        }*/
+        .mat-form-field-label{
+            color:#000;
+        }
+    }
+    .filter-popover-item{
+        height:40px;
+    }
+    .booking-edit-tax-percentage{
+        margin-left:0px;
+    }
+}
 
 .lbl {
 
@@ -1250,8 +1442,12 @@
 
   &.lbl__vat {
     background-color: $lbl-vat--color;
-
+    max-width: 350px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
   }
+ 
   &.lbl__price-details {
     background-color: $lbl__price-details;
     color: $opt_color_white;
@@ -1267,6 +1463,8 @@
     color: $opt_status_provisional_multiple;
   }
 }
+
+
 
 .loadding--cage {
   margin-left: 0;
@@ -1449,7 +1647,7 @@
     margin-left: 15px;
     margin-right: 15px;
     h2.opt__heading-2{
-      line-height: 40px;
+      //line-height: 40px;
     }
     &:last-child {
       border-bottom: none;
@@ -1490,6 +1688,11 @@
               padding-left:30px;
               flex-direction: column;
               display: flex;
+          }
+      }
+      .gross-container{
+          .sub-heading-val{
+              font-size:20px !important;
           }
       }
       .slash-divider{
