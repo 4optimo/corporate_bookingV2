@@ -67,6 +67,14 @@
                 border: 1px solid #f5766c;
             }
         }
+        &.alert-warning{
+            background-color: #f39c1224 !important;
+            color: #f39c12 !important;
+            border: 0;
+            .icon-circle{
+                border: 1px solid #f39c12;
+            }
+        }
         &.alert{
             margin-top: 20px;
         }
