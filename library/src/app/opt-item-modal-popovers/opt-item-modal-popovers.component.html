@@ -277,6 +277,21 @@
       </div>
     </div>
   </div>
+  <div class="add-new-date-container">
+    <div class="opt_flex--container">
+      <div class="opt_flex__item--inherit  opt_flex__item--vcenter">
+        <span class="opt-txt__body1 time-lbl">Add new date</span>
+        <mat-form-field>
+          <input matInput [matDatepicker]="pickeraddnewdate" placeholder="Start Date" value="11-Apr-2020">
+          <mat-datepicker-toggle matSuffix [for]="pickeraddnewdate"></mat-datepicker-toggle>
+          <mat-datepicker #pickeraddnewdate></mat-datepicker>
+        </mat-form-field>
+      </div>
+      <div class="opt_flex__item--inherit  opt_flex__item--vcenter">
+        <button mat-button class="mat-btn-primary--small">Add Date</button>
+      </div>
+    </div>
+  </div>
   <div class="opt_flex--container">
     <div class="opt_flex__item opt_flex__item--vcenter">
       <div class="edit-time">
