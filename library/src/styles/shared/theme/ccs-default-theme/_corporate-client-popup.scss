@@ -2247,7 +2247,16 @@
           }
         }
 }
-
+.change-address-popup{
+  background-color: #fff;
+  padding: 20px;
+  .mat-form-field{
+    margin-right: 20px;
+  }
+  button{
+    margin-left: 10px;
+  }
+}
 .opt_add_new_address {
   .main_wrapper {
     padding: 20px 5px;

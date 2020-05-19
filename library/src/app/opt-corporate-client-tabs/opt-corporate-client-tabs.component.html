@@ -456,3 +456,29 @@
 <!--</mat-expansion-panel>-->
 <!--</mat-accordion>-->
 <!--</section>-->
+<div class="change-address-popup">
+  <div class="opt_flex--container">
+    <div class="opt_flex__item--inherit">
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="Address" value="">
+      </mat-form-field>
+    </div>
+    <div class="opt_flex__item--inherit">
+      <mat-form-field class="example-full-width">
+        <mat-select placeholder="Select Address" name="select-address">
+          <mat-option value="">Address 1</mat-option>
+          <mat-option value="">Address 2</mat-option>
+          <mat-option value="">Address 3</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+  </div>
+  <div class="opt_flex--container just-content-end">
+    <div class="opt_flex__item--inherit">
+      <button class="mat-btn-primary--small" mat-button>Cancel</button>
+    </div>
+    <div class="opt_flex__item--inherit">
+      <button class="mat-btn-primary--small" mat-button>Change Address</button>
+    </div>
+  </div>
+</div>
