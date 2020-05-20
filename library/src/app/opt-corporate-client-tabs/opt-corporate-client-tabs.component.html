@@ -456,127 +456,73 @@
 <!--</mat-expansion-panel>-->
 <!--</mat-accordion>-->
 <!--</section>-->
+
+
+
 <div class="change-address-popup">
+  <div class="opt_flex--container inner-section-header">
+    <div class="opt_flex__item opt-txt__left">Client address:</div>
+    <div class="opt_flex__item--inherit">
+      <div class="opt_flex__item--inherit">
+        <mat-form-field class="example-full-width">
+          <mat-select placeholder="Select" name="select">
+            <mat-option value="">Default</mat-option>
+            <mat-option value="">Same as above</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+    </div>
+  </div> 
   <div class="address-popup-body">
     <div class="opt_flex--container">
-      <div class="opt_flex__item--inherit">
+      <div class="opt_flex__item">
         <mat-form-field class="example-full-width">
           <input matInput placeholder="Address 1" value="">
         </mat-form-field>
       </div>
-      <div class="opt_flex__item--inherit">
-        <mat-form-field class="example-full-width">
-          <mat-select placeholder="Select Address" name="select-address">
-            <mat-option value="">Address 1</mat-option>
-            <mat-option value="">Address 2</mat-option>
-            <mat-option value="">Address 3</mat-option>
-          </mat-select>
-        </mat-form-field>
-      </div>
-    </div>
-    <div class="opt_flex--container">
-      <div class="opt_flex__item--inherit">
+      <div class="opt_flex__item">
         <mat-form-field class="example-full-width">
           <input matInput placeholder="Address 2" value="">
         </mat-form-field>
       </div>
-      <div class="opt_flex__item--inherit">
-        <mat-form-field class="example-full-width">
-          <mat-select placeholder="Select Address" name="select-address">
-            <mat-option value="">Address 1</mat-option>
-            <mat-option value="">Address 2</mat-option>
-            <mat-option value="">Address 3</mat-option>
-          </mat-select>
-        </mat-form-field>
-      </div>
-    </div>
-    <div class="opt_flex--container">
-      <div class="opt_flex__item--inherit">
+      <div class="opt_flex__item">
         <mat-form-field class="example-full-width">
           <input matInput placeholder="Address 3" value="">
         </mat-form-field>
       </div>
-      <div class="opt_flex__item--inherit">
-        <mat-form-field class="example-full-width">
-          <mat-select placeholder="Select Address" name="select-address">
-            <mat-option value="">Address 1</mat-option>
-            <mat-option value="">Address 2</mat-option>
-            <mat-option value="">Address 3</mat-option>
-          </mat-select>
-        </mat-form-field>
-      </div>
     </div>
     <div class="opt_flex--container">
-      <div class="opt_flex__item--inherit">
+      <div class="opt_flex__item">
         <mat-form-field class="example-full-width">
           <input matInput placeholder="Country" value="">
         </mat-form-field>
       </div>
-      <div class="opt_flex__item--inherit">
-        <mat-form-field class="example-full-width">
-          <mat-select placeholder="Select Country" name="select-country">
-            <mat-option value="">Country 1</mat-option>
-            <mat-option value="">Country 2</mat-option>
-            <mat-option value="">Country 3</mat-option>
-          </mat-select>
-        </mat-form-field>
-      </div>
-    </div>
-    <div class="opt_flex--container">
-      <div class="opt_flex__item--inherit">
+      <div class="opt_flex__item">
         <mat-form-field class="example-full-width">
           <input matInput placeholder="Post Code" value="">
         </mat-form-field>
       </div>
-      <div class="opt_flex__item--inherit">
-        <mat-form-field class="example-full-width">
-          <mat-select placeholder="Select Post Code" name="select-postcode">
-            <mat-option value="">Post Code 1</mat-option>
-            <mat-option value="">Post Code 2</mat-option>
-            <mat-option value="">Post Code 3</mat-option>
-          </mat-select>
-        </mat-form-field>
-      </div>
-    </div>
-    <div class="opt_flex--container">
-      <div class="opt_flex__item--inherit">
+      <div class="opt_flex__item">
         <mat-form-field class="example-full-width">
           <input matInput placeholder="Region/County" value="">
         </mat-form-field>
       </div>
-      <div class="opt_flex__item--inherit">
-        <mat-form-field class="example-full-width">
-          <mat-select placeholder="Select Region/County" name="select-regioncounty">
-            <mat-option value="">Region/County 1</mat-option>
-            <mat-option value="">Region/County 2</mat-option>
-            <mat-option value="">Region/County 3</mat-option>
-          </mat-select>
-        </mat-form-field>
-      </div>
     </div>
     <div class="opt_flex--container">
-      <div class="opt_flex__item--inherit">
+      <div class="opt_flex__item">
         <mat-form-field class="example-full-width">
           <input matInput placeholder="City/Town" value="">
         </mat-form-field>
       </div>
+    </div>
+    </div>
+    <div class="opt_flex--container just-content-end">
       <div class="opt_flex__item--inherit">
-        <mat-form-field class="example-full-width">
-          <mat-select placeholder="Select City/Town" name="select-citytown">
-            <mat-option value="">City/Town 1</mat-option>
-            <mat-option value="">City/Town 2</mat-option>
-            <mat-option value="">City/Town 3</mat-option>
-          </mat-select>
-        </mat-form-field>
+        <button class="mat-btn-primary--small" mat-button>Cancel</button>
+      </div>
+      <div class="opt_flex__item--inherit">
+        <button class="mat-btn-primary--small" mat-button>Change Address</button>
       </div>
     </div>
   </div>
-  <div class="opt_flex--container just-content-end">
-    <div class="opt_flex__item--inherit">
-      <button class="mat-btn-primary--small" mat-button>Cancel</button>
-    </div>
-    <div class="opt_flex__item--inherit">
-      <button class="mat-btn-primary--small" mat-button>Change Address</button>
-    </div>
-  </div>
-</div>
+  

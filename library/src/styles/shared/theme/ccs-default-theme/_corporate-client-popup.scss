@@ -2250,11 +2250,25 @@
 .change-address-popup{
   background-color: #fff;
   padding: 20px;
+  max-width: 70vw;
   .mat-form-field{
     margin-right: 20px;
+    width: 90%;
+    max-width: 300px;
   }
   button{
     margin-left: 10px;
+  }
+  .inner-section-header{
+    font-weight: 600;
+    height: 55px;
+    -webkit-box-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: flex;
+    background-color: #eee;
+    margin: 0 -15px 15px;
+    padding: 0 15px;
   }
 }
 .opt_add_new_address {
