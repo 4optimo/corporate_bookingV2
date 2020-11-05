@@ -32,6 +32,7 @@ import { OptBookingApprovalRejectPopupComponent } from '../opt-booking-approval-
 import { OptBookingApprovalSuccessPopupComponent } from '../opt-booking-approval-success-popup/opt-booking-approval-success-popup.component';
 import { OptBookingPackageConvertPopupComponent } from '../opt-booking-package-convert-popup/opt-booking-package-convert-popup.component';
 import { OptPriceModalComponent } from '../opt-price-modal/opt-price-modal.component';
+import { OptRecurringPopupComponent } from '../opt-recurring-popup/opt-recurring-popup.component';
 
 
 @Component({
@@ -299,7 +300,7 @@ export class OptPopupWindowComponent implements OnInit {
 
   public openBookingApprovalStatus() {
     this.dialog.open(OptBookingApprovalStatusPopupComponent, {
-      data: { name: 'Booking Approval Status' },
+      data: { name: 'Recurring Items' },
       panelClass: ['custom-dialog-container', 'w80modal'],
       height: 'auto',
       width: '80%'
@@ -367,6 +368,19 @@ export class OptPopupWindowComponent implements OnInit {
     });
 
   }
+
+  public openRecurringPopup() {
+    this.dialog.open(OptRecurringPopupComponent, {
+      data: { name: 'Recurring items of Studio 1 Rootes from' },
+      panelClass: ['custom-dialog-container', 'w80modal'],
+      height: 'auto',
+      width: '80%'
+      // DialogPosition : top
+
+    });
+
+  }
+
   ngOnInit() {
   }
 

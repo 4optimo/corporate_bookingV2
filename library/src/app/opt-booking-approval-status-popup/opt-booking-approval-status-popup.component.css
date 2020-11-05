@@ -1,0 +1,53 @@
+.opt_address_cage {
+  border: 1px dashed #ababab;
+  padding: 15px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  background-color: #fafafa;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.batch-approval-list-row {
+  padding: 0 24px;
+  border-bottom: 1px solid #e0e0e0;
+  background-color: #f5f5f5;
+}
+
+.setmargin {
+  margin-right: 10px !important;
+}
+
+.message {
+  color: #2775db !important;
+  font-size: 14px !important;
+}
+
+.p10 {
+  width: 10% !important;
+}
+
+.p40 {
+  width: 40% !important;
+}
+
+.p25 {
+  width: 25% !important;
+}
+
+.p15 {
+  width: 15% !important;
+}
+
+.mat-content {
+  display: unset !important;
+}
+
+.mat-expansion-panel {
+  background: #e3f2fd !important;
+}
+
+.container {
+  width: 100% !important;
+}
+/*# sourceMappingURL=opt-booking-approval-status-popup.component.css.map */

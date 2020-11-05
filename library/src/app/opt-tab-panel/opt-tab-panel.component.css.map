@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "opt-tab-panel.component.scss"
+    ],
+    "names": [],
+    "file": "opt-tab-panel.component.css"
+}

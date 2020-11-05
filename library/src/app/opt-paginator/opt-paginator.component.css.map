@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "opt-paginator.component.scss"
+    ],
+    "names": [],
+    "file": "opt-paginator.component.css"
+}

@@ -1,0 +1,310 @@
+.admin-panel-import-wrapper .upload-step-wrapper {
+  background-color: #f5f5f5;
+  padding: 10px;
+}
+
+.admin-panel-import-wrapper .upload-step-wrapper .download-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+  min-height: 100px;
+  border-radius: 5px;
+}
+
+.admin-panel-import-wrapper .upload-step-wrapper .download-container button .mat-button-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.admin-panel-import-wrapper .upload-step-wrapper .download-container button .mat-button-wrapper i {
+  margin-right: 5px;
+}
+
+.admin-panel-import-wrapper .upload-step-wrapper .upload-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #fff;
+  padding: 10px;
+  min-height: 100px;
+  border: 1px dotted #909cac;
+  border-radius: 5px;
+}
+
+.admin-panel-import-wrapper .upload-step-wrapper .upload-container i {
+  color: #91a0ad;
+  margin-bottom: 5px;
+}
+
+.admin-panel-import-wrapper .upload-step-wrapper .upload-container a {
+  cursor: pointer;
+}
+
+.admin-panel-import-wrapper .upload-status-message {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.admin-panel-import-wrapper .upload-status-message.alert-success {
+  color: #155724 !important;
+  background-color: #d4edda !important;
+  border-color: #c3e6cb !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.admin-panel-import-wrapper .upload-status-message.alert-danger {
+  color: #f5766c !important;
+  background-color: #f8d7da !important;
+  border-color: #f5c6cb !important;
+}
+
+.admin-panel-import-wrapper .upload-status-message.alert-danger .icon-circle {
+  border: 1px solid #f5766c;
+}
+
+.admin-panel-import-wrapper .upload-status-message.alert-warning {
+  background-color: #f39c1224 !important;
+  color: #f39c12 !important;
+  border: 0;
+}
+
+.admin-panel-import-wrapper .upload-status-message.alert-warning .icon-circle {
+  border: 1px solid #f39c12;
+}
+
+.admin-panel-import-wrapper .upload-status-message.alert {
+  margin-top: 20px;
+}
+
+.admin-panel-import-wrapper .upload-status-message > .opt_flex--container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.admin-panel-import-wrapper .upload-status-message .icon-circle {
+  border: 1px solid green;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 5px;
+  height: 25px;
+  width: 25px;
+}
+
+.admin-panel-import-wrapper .upload-status-message .icon-circle i {
+  font-size: 17px;
+}
+
+.admin-panel-import-wrapper .upload-step-checkbox {
+  padding: 15px;
+  border: 1px dashed #909cac;
+  border-width: 1px;
+  margin-bottom: 20px;
+  background-color: #fff;
+}
+
+.admin-panel-import-wrapper .validation-section {
+  padding: 20px;
+  background-color: #f5f5f5;
+  margin-top: 20px;
+}
+
+.admin-panel-import-wrapper .validation-section .validate-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 20px;
+}
+
+.admin-panel-import-wrapper .validation-section .upload-step-progressbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px 0px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.admin-panel-import-wrapper .validation-section .upload-step-progressbar .mat-progress-bar {
+  width: 70%;
+  height: 10px;
+  border-radius: 5px;
+}
+
+.admin-panel-import-wrapper .validation-section .upload-step-progressbar .progress-status-txt {
+  margin-top: 10px;
+}
+
+.admin-panel-import-wrapper .validation-section .cancel-validation-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.admin-panel-import-wrapper .validation-section .info-label {
+  margin-bottom: 5px;
+}
+
+.admin-panel-import-wrapper .validation-section .validation-note {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #3F51B5;
+  margin-bottom: 10px;
+}
+
+.admin-panel-import-wrapper .validate-section-two, .admin-panel-import-wrapper .import-step-wrapper {
+  background-color: #f5f5f5;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.admin-panel-import-wrapper .validate-section-two .document-name, .admin-panel-import-wrapper .import-step-wrapper .document-name {
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.admin-panel-import-wrapper .validate-section-two .document-information-section, .admin-panel-import-wrapper .import-step-wrapper .document-information-section {
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.admin-panel-import-wrapper .validate-section-two .document-information-section .row, .admin-panel-import-wrapper .import-step-wrapper .document-information-section .row {
+  height: 25px;
+}
+
+.admin-panel-import-wrapper .validate-section-two .button-wrapper, .admin-panel-import-wrapper .import-step-wrapper .button-wrapper {
+  text-align: right;
+}
+
+.admin-panel-import-wrapper .import-step-wrapper .upload-step-progressbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px 0px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.admin-panel-import-wrapper .import-step-wrapper .upload-step-progressbar .mat-progress-bar {
+  width: 70%;
+  height: 10px;
+  border-radius: 5px;
+}
+
+.admin-panel-import-wrapper .import-step-wrapper .upload-step-progressbar .progress-status-txt {
+  margin-top: 10px;
+}
+
+.admin-panel-import-wrapper .import-step-wrapper .start-validation-btn {
+  margin: 10px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.admin-panel-import-wrapper .import-step-wrapper .validation-note {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #3F51B5;
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px dashed #909cac;
+  border-width: 1px;
+  margin-bottom: 20px;
+  background-color: #fff;
+}
+
+.admin-panel-import-wrapper .import-step-wrapper .cancel-validation-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.admin-panel-import-wrapper .error-text {
+  color: #f5766c;
+}
+/*# sourceMappingURL=opt-admin-panel-import.component.css.map */

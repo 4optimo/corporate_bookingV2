@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "opt-document-popover.component.scss"
+    ],
+    "names": [],
+    "file": "opt-document-popover.component.css"
+}

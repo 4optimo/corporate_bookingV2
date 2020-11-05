@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "opt-timerange-selector.component.scss"
+    ],
+    "names": [],
+    "file": "opt-timerange-selector.component.css"
+}

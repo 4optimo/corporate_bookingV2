@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "opt-loading--screen.component.scss"
+    ],
+    "names": [],
+    "file": "opt-loading--screen.component.css"
+}

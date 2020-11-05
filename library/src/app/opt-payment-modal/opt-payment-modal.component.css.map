@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "opt-payment-modal.component.scss"
+    ],
+    "names": [],
+    "file": "opt-payment-modal.component.css"
+}

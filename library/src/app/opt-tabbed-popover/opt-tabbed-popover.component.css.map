@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "opt-tabbed-popover.component.scss"
+    ],
+    "names": [],
+    "file": "opt-tabbed-popover.component.css"
+}

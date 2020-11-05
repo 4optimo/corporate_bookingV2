@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "opt-success-message.component.scss"
+    ],
+    "names": [],
+    "file": "opt-success-message.component.css"
+}

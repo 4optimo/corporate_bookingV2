@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "opt-double-toggle.component.scss"
+    ],
+    "names": [],
+    "file": "opt-double-toggle.component.css"
+}

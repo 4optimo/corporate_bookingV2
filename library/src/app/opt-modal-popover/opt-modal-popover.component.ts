@@ -3,6 +3,7 @@ import {OptTaskPopupComponent} from "../opt-task-popup/opt-task-popup.component"
 import {MatDialog} from "@angular/material";
 import {OptDocumentPopoverComponent} from "../opt-document-popover/opt-document-popover.component";
 import {OptTabbedPopoverComponent} from "../opt-tabbed-popover/opt-tabbed-popover.component";
+import {OptChangeQuantityPopupComponent} from "../opt-change-quantity-popup/opt-change-quantity-popup.component"
 
 @Component({
   selector: 'app-opt-modal-popover',
@@ -29,6 +30,15 @@ export class OptModalPopoverComponent implements OnInit {
       width: '40%'
     });
   }
+  public  changeQuantity() {
+    this.dialog.open(OptChangeQuantityPopupComponent, {
+      data: {name: 'Modal Popover'},
+      panelClass: 'custom-dialog-container',
+      height: 'auto',
+      width: '40%'
+    });
+  }
+  
   ngOnInit() {
   }
 

@@ -165,6 +165,8 @@ import { OptBookingApprovalRejectPopupComponent } from './opt-booking-approval-r
 import { OptBookingApprovalSuccessPopupComponent } from './opt-booking-approval-success-popup/opt-booking-approval-success-popup.component';
 import { OptBookingPackageConvertPopupComponent } from './opt-booking-package-convert-popup/opt-booking-package-convert-popup.component';
 import { OptPriceModalComponent } from './opt-price-modal/opt-price-modal.component';
+import { OptRecurringPopupComponent } from './opt-recurring-popup/opt-recurring-popup.component';
+import { OptChangeQuantityPopupComponent } from './opt-change-quantity-popup/opt-change-quantity-popup.component';
 
 const appRoutes: Routes = [
   { path: 'opt-booking-list', component: OptBookingListComponent },
@@ -295,7 +297,11 @@ const appRoutes: Routes = [
     ScrollDispatchModule,
 
   ],
+  declarations: [OptRecurringPopupComponent, OptChangeQuantityPopupComponent],
   
+  schemas: [
+    CUSTOM_ELEMENTS_SCHEMA
+  ]
   
   
 })
@@ -402,9 +408,11 @@ export class DemoMaterialModule { }
     OptBookingApprovalSuccessPopupComponent,
     OptBookingPackageConvertPopupComponent,
     OptPriceModalComponent
+    
   ],
   imports: [
     BrowserModule,
+    MatDatepickerModule,
     BrowserAnimationsModule,
     MatCheckboxModule,
     MatExpansionModule,
@@ -434,7 +442,8 @@ export class DemoMaterialModule { }
     Ng5SliderModule,
     NguCarouselModule,
     //Customer360Module,
-    AppRoutingModule
+    AppRoutingModule,
+    
   ],
 
   entryComponents: [
@@ -450,9 +459,11 @@ export class DemoMaterialModule { }
     OptCancelBookingComponent,
     OptDiscountSearchComponent,
     OptInvoiceGeneratorRoComponent,
-    ImportMessagesComponent
+    ImportMessagesComponent,
+    OptRecurringPopupComponent,
+    OptChangeQuantityPopupComponent
   ],
-  schemas: [ CUSTOM_ELEMENTS_SCHEMA],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
 
   providers: [{ provide: APP_BASE_HREF, useValue: '/' }],
 

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "opt-toast-message.component.scss"
+    ],
+    "names": [],
+    "file": "opt-toast-message.component.css"
+}

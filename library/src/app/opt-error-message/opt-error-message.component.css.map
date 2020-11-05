@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "opt-error-message.component.scss"
+    ],
+    "names": [],
+    "file": "opt-error-message.component.css"
+}

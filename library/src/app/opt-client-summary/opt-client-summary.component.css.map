@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "opt-client-summary.component.scss"
+    ],
+    "names": [],
+    "file": "opt-client-summary.component.css"
+}

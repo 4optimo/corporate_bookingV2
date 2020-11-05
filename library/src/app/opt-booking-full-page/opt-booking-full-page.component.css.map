@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,IAAI,CAAA;EACF,cAAc,EAAE,GAAG;CACpB",
+    "sources": [
+        "opt-booking-full-page.component.scss"
+    ],
+    "names": [],
+    "file": "opt-booking-full-page.component.css"
+}

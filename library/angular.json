@@ -142,7 +142,9 @@
       }
     }
   },
-  "cli": {},
+  "cli": {
+    "analytics": false
+  },
   "schematics": {
     "@schematics/angular:component": {
       "prefix": "app",

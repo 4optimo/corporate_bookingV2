@@ -1,0 +1,26 @@
+.btn_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.btn_wrapper button {
+  -ms-flex-preferred-size: calc((100% - 60px) / 6);
+      flex-basis: calc((100% - 60px) / 6);
+  margin: 5px;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+}
+
+.btn_wrapper button.mat-raised-button span.mat-button-wrapper {
+  overflow: hidden !important;
+  display: block !important;
+  text-overflow: ellipsis !important;
+}
+/*# sourceMappingURL=opt-popup-window.component.css.map */

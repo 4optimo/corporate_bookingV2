@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "opt-alert.component.scss"
+    ],
+    "names": [],
+    "file": "opt-alert.component.css"
+}

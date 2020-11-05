@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "opt-shipment-screen.component.scss"
+    ],
+    "names": [],
+    "file": "opt-shipment-screen.component.css"
+}

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "opt-price-modal.component.scss"
+    ],
+    "names": [],
+    "file": "opt-price-modal.component.css"
+}

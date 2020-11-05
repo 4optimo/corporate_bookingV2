@@ -24,8 +24,9 @@
       </div>
     </div>
 
+
     <div class="opt_modal-body">
-      <div class="approval-status-accordion-wrapper">
+      <!-- <div class="approval-status-accordion-wrapper">
         <div class="approval-status-accordion-row">
           <div class="row">
             <div class="col-md-12">
@@ -114,9 +115,9 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
 
-      <div class="row batch-approval-button-row">
+      <!-- <div class="row batch-approval-button-row">
           <div class="col-md-6">
           </div>
 
@@ -127,8 +128,633 @@
               </div>
             </div>
           </div>
+        </div> -->
+
+        <button mat-button [matMenuTriggerFor]="menu">Menu</button>
+        <mat-menu #menu="matMenu">
+          <div class="task-document-popup">
+            <div class="row">
+              <div class="col-md-6">
+                <p>Change Quantity </p>
+              </div>
+              <div class="col-md-1 pull-right">
+                <i class="material-icons pull-right close-popover" (click)="close()">close</i>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item opt_flex__item--vcenter">
+                    <mat-form-field class="example-full-width opt-txt__body1">
+                      Quantity <input matInput #postalCode maxlength="3" placeholder="Ex. 20" value="20"> The maximum Quantity available for this item is 25
+                    </mat-form-field>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-2 pull-right">
+                <div class="opt_flex--container pull-right">
+                  <div class="opt_flex__item opt_flex__item--vcenter">
+                    <button class="mat-btn-primary mat-button pull-right">Apply</button>
+                    <button class="mat-btn-primary mat-button pull-right">Cancel</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </mat-menu>
+
+        <!-- BOX and datepickers -->
+        
+<div class="container opt_address_cage">
+  <div class="container">
+  <mat-label class="opt-txt__body2-small">
+    <span class="title_icon"><i class="material-icons">
+     note
+   </i></span>
+     Filter criteria</mat-label>
+    </div>
+        <div class="opt_flex--container contact-details">
+          <div class="col-md-4">
+          <div class="opt_flex__item">
+            <span class="opt-txt__body2-small"> Start Date : </span>
+            <mat-form-field class="example-full-width">
+              <input matInput [matDatepicker]="picker10" placeholder="Start date">
+              <mat-datepicker-toggle matSuffix [for]="picker10"></mat-datepicker-toggle>
+              <mat-datepicker #picker10></mat-datepicker>
+            </mat-form-field>
+          </div>
+          </div>
+
+          <div class="col-md-4">
+          <div class="opt_flex__item">
+            <span class="opt-txt__body2-small"> End Date : </span>
+            <mat-form-field class="example-full-width">
+              <input matInput [matDatepicker]="picker11" placeholder="End date">
+              <mat-datepicker-toggle matSuffix [for]="picker11"></mat-datepicker-toggle>
+              <mat-datepicker #picker11></mat-datepicker>
+            </mat-form-field>
+          </div>
+          </div>
+
+          <div class="col-md-4">
+          <div class="opt_flex__item">
+           
+          </div>
+          </div>
+
+          </div> 
+
+          <!-- start 2nd row -->
+
+          <div class="opt_flex--container contact-details">
+          <div class="col-md-4">
+          <div class="opt_flex__item">
+            <span class="opt-txt__body2-small"> Price Type : </span>
+            <mat-form-field class="example-full-width">
+              <mat-select placeholder="All" name="currency">
+                <mat-option>Price Type 1</mat-option>
+                <mat-option>Price Type 2</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+          </div>
+
+          <div class="col-md-4">
+          <div class="opt_flex__item">
+            
+          </div>
+          </div>
+
+          <div class="col-md-4">
+          <div class="opt_flex__item">
+           
+          </div>
+          </div>
+
+          </div>
+
+          <!-- End 2nd row -->
+
+          <!-- Start 3rd row -->
+          <div class="opt_flex--container contact-details mbtm">
+            <div class="col-md-4">
+            <div class="opt_flex__item">
+              <span class="opt-txt__body2-small"> Days of the week </span>   
+            </div>
+            </div>
+
+            </div>
+
+            <!-- Button row -->
+            <div class="batch-approval-button-row">
+              <div class="col-md-6">
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item">
+                    <mat-checkbox checked class="opt-txt__body1-small">Wed </mat-checkbox>
+                    <mat-checkbox checked class="opt-txt__body1-small mleft2">Thu </mat-checkbox>
+                    <mat-checkbox checked class="opt-txt__body1-small mleft2">Fri </mat-checkbox>
+                    <mat-checkbox checked class="opt-txt__body1-small mleft2">Sat </mat-checkbox>
+                    <mat-checkbox checked class="opt-txt__body1-small mleft2">Sun </mat-checkbox>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-md-6">
+                <div class="opt_flex--container">
+                  <div class="opt_flex__item flex-item-align-right opt_flex__item--vcenter just-content-end">
+                    <button class="mat-btn-primary mat-button setmargin" (click)="close()">Apply Filters</button>  
+                    <button class="mat-btn-primary mat-button" (click)="close()">Reset Filters</button>          
+                  </div>
+                </div>
+              </div>
+            </div>
+
+        </div>
+        <!-- Show items area -->
+
+        <div class="opt_flex--container contact-details mleft">
+          <div class="col-md-4">
+          <div class="opt_flex__item">
+            <span class="opt-txt__body2-small"> Show Items </span>   
+          </div>
+          </div>
         </div>
 
+        <div class="opt_flex--container contact-details mleft11">
+          <div class="col-md-8">
+            <div class="opt_flex__item">
+            <mat-button-toggle-group [disabled]="disabled" [appearance]="appearance">
+              <mat-button-toggle value="1">By occurence</mat-button-toggle>
+              <mat-button-toggle value="2">In each occurence</mat-button-toggle>
+            </mat-button-toggle-group>
+          </div>
+          </div>
+          <!-- <div class="col-md-2">
+          <div class="opt_flex__item">
+            <span class="opt-txt__body2-small"> By occurence </span>   
+          </div>
+          </div>
+          <div class="col-md-1 ml2">
+            <div class="opt_flex__item">
+              <div class="form-data__individual tc-flex-item__center">
+                <mat-slide-toggle [labelPosition]="before"></mat-slide-toggle>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 mleft">
+            <div class="opt_flex__item">
+              <span class="opt-txt__body2-small"> In each occurence </span>   
+            </div>
+          </div> -->
+          </div>
+
+          <div class="opt_flex--container contact-details mleft">
+            <div class="col-md-4">
+            <div class="opt_flex__item">
+              <div class="message">
+                <i class="material-icons">info_outline</i>
+                <label>Showing 5 ocurences out of 10</label>
+              </div>  
+            </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="opt_flex__item">
+                <!-- <span class="opt-txt__body2-small"> Bulk Actions : </span> -->
+                <mat-form-field class="example-full-width">
+                  <mat-select placeholder="Bulk Actions" name="currency">
+                    <mat-option>Bulk Actions 1</mat-option>
+                    <mat-option>Bulk Actions 2</mat-option>
+                  </mat-select>
+                </mat-form-field>
+              </div>
+              </div>
+
+            <div class="col-md-4">
+              <div class="opt_flex--container">
+                <div class="opt_flex__item flex-item-align-right opt_flex__item--vcenter just-content-end">
+                  <button class="mat-btn-primary btn-error mat-button setmargin" (click)="close()">Delete</button>          
+                </div>
+              </div>
+            </div>
+            </div>
+
+
+        <div class="container">
+
+              
+
+                <div class="container">
+                <div class="opt_flex__item">
+                  <div class="col-md-12">
+                    <div class="col-xs-1 col-md-1">
+                      
+                     <div class="opt_flex--container">
+                       <div class="opt_flex__item opt_flex__item--vcenter mleft2">
+                        <mat-checkbox checked class="opt-txt__body1-small"></mat-checkbox>
+                       </div>
+                      
+                     </div>
+                   </div>
+                    <div class="col-xs-1 col-md-1">
+                      <div class="opt_flex--container">
+                        <div class="opt_flex__item opt_flex__item--vcenter mleft2">
+                          <p class="opt-txt__body2-small">Date</p>
+                        </div>
+                       
+                      </div>
+                    </div>
+                    <div class="col-xs-2 col-md-2">
+                      <div class="opt_flex--container flex-line-break">
+                        <div class="opt_flex__item opt_flex__item--vcenter mleft2">
+                          <p class="opt-txt__body2-small">Time</p>
+                        </div>
+                      
+                      </div>
+                    </div>
+                    <div class="col-xs-1 col-md-1">
+                      <div class="opt_flex--container flex-line-break">
+                        <div class="opt_flex__item opt_flex__item--vcenter mright">
+                          <p class="opt-txt__body2-small"></p>
+                        </div>                      
+                      </div>
+                    </div>
+
+                    <div class="col-xs-2 col-md-2">
+                        <div class="opt_flex--container flex-line-break">
+                          <div class="opt_flex__item opt_flex__item--vcenter mright">
+                            <p class="opt-txt__body2-small"></p>
+                          </div>                                
+                        </div>
+                      </div>
+
+                      <div class="col-xs-1 col-md-1">
+                          <div class="opt_flex--container flex-line-break">
+                            <div class="opt_flex__item opt_flex__item--vcenter mleft4">
+                              <p class="opt-txt__body2-small">Price</p>
+                            </div>                                
+                          </div>
+                        </div>
+
+                        <div class="col-xs-1 col-md-1">
+                            <div class="opt_flex--container flex-line-break">
+                              <div class="opt_flex__item opt_flex__item--vcenter mleft4">
+                                <p class="opt-txt__body2-small">Price Type</p>
+                              </div>                                
+                            </div>
+                          </div>
+
+                          <div class="col-xs-1 col-md-1">
+                            <div class="opt_flex--container flex-line-break">
+                              <div class="opt_flex__item opt_flex__item--vcenter mright">
+                                <p class="opt-txt__body2-small">Qty</p>
+                              </div>                                
+                            </div>
+                          </div>
+
+                          <div class="col-xs-2 col-md-2">
+                            <div class="opt_flex--container flex-line-break">
+                              <div class="opt_flex__item opt_flex__item--vcenter mright">
+                                <p class="opt-txt__body2-small">Total Price</p>
+                              </div>                                
+                            </div>
+                          </div>
+                  </div>
+                </div>
+              </div>
+                <!-- Expansion section 1-->
+                
+                  <div class="opt_flex__item">
+                    <mat-accordion>
+                      <mat-expansion-panel>
+                        <mat-expansion-panel-header>
+                          <div class="col-md-12">
+                            <div class="col-xs-1 col-md-1">
+                              
+                             <div class="opt_flex--container">
+                               <div class="opt_flex__item opt_flex__item--vcenter">
+                                <mat-checkbox checked class="opt-txt__body1-small"></mat-checkbox>
+                               </div>
+                              
+                             </div>
+                           </div>
+                            <div class="col-xs-1 col-md-1">
+                              <div class="opt_flex--container">
+                                <div class="opt_flex__item opt_flex__item--vcenter">
+                                  <p class="opt-txt__body2-small">10Feb2021</p>
+                                </div>
+                               
+                              </div>
+                            </div>
+                            <div class="col-xs-2 col-md-2">
+                              <div class="opt_flex--container flex-line-break">
+                                <div class="opt_flex__item opt_flex__item--vcenter">
+                                  <p class="opt-txt__body2-small">08:00-09:00</p>
+                                </div>
+                              
+                              </div>
+                            </div>
+                            <div class="col-xs-1 col-md-1">
+                              <div class="opt_flex--container flex-line-break">
+                                <div class="opt_flex__item opt_flex__item--vcenter">
+                                  <p class="opt-txt__body2-small">IC</p>
+                                </div>                      
+                              </div>
+                            </div>
+        
+                            <div class="col-xs-2 col-md-2">
+                                <div class="opt_flex--container flex-line-break">
+                                  <div class="opt_flex__item opt_flex__item--vcenter">
+                                    <p class="opt-txt__body2-small">Occurence1</p>
+                                  </div>                                
+                                </div>
+                              </div>
+        
+                              <div class="col-xs-1 col-md-1">
+                                  <div class="opt_flex--container flex-line-break">
+                                    <div class="opt_flex__item opt_flex__item--vcenter">
+                                      <p class="opt-txt__body2-small">$300</p>
+                                    </div>                                
+                                  </div>
+                                </div>
+        
+                                <div class="col-xs-1 col-md-1">
+                                    <div class="opt_flex--container flex-line-break">
+                                      <div class="opt_flex__item opt_flex__item--vcenter">
+                                        <p class="opt-txt__body2-small">Hoursx4</p>
+                                      </div>                                
+                                    </div>
+                                  </div>
+
+                                  <div class="col-xs-1 col-md-1">
+                                    <div class="opt_flex--container flex-line-break">
+                                      <div class="opt_flex__item opt_flex__item--vcenter mleft3">
+                                        <p class="opt-txt__body2-small">1</p>
+                                      </div>                                
+                                    </div>
+                                  </div>
+
+                                  <div class="col-xs-2 col-md-2">
+                                    <div class="opt_flex--container flex-line-break">
+                                      <div class="opt_flex__item opt_flex__item--vcenter mleft3">
+                                        <p class="opt-txt__body2-small">$1200</p>
+                                      </div>                                
+                                    </div>
+                                  </div>
+                          </div>
+
+                        </mat-expansion-panel-header>
+
+                        <div class="approval-status-expanded-content-row">
+                          <div class="col-md-12">
+                            <div class="col-xs-1 col-md-1">
+                              
+                             <div class="opt_flex--container">
+                               <div class="opt_flex__item opt_flex__item--vcenter">
+                                <mat-checkbox checked class="opt-txt__body1-small"></mat-checkbox>
+                               </div>
+                              
+                             </div>
+                           </div>
+                            <div class="col-xs-1 col-md-1">
+                              <div class="opt_flex--container">
+                                <div class="opt_flex__item opt_flex__item--vcenter">
+                                  <p class="opt-txt__body2-small">10Feb2021</p>
+                                </div>
+                               
+                              </div>
+                            </div>
+                            <div class="col-xs-2 col-md-2">
+                              <div class="opt_flex--container flex-line-break">
+                                <div class="opt_flex__item opt_flex__item--vcenter">
+                                  <p class="opt-txt__body2-small">08:00-09:00</p>
+                                </div>
+                              
+                              </div>
+                            </div>
+                            <div class="col-xs-1 col-md-1">
+                              <div class="opt_flex--container flex-line-break">
+                                <div class="opt_flex__item opt_flex__item--vcenter">
+                                  <p class="opt-txt__body2-small">IC</p>
+                                </div>                      
+                              </div>
+                            </div>
+        
+                            <div class="col-xs-2 col-md-2">
+                                <div class="opt_flex--container flex-line-break">
+                                  <div class="opt_flex__item opt_flex__item--vcenter">
+                                    <p class="opt-txt__body2-small">Occurence1</p>
+                                  </div>                                
+                                </div>
+                              </div>
+        
+                              <div class="col-xs-1 col-md-1">
+                                  <div class="opt_flex--container flex-line-break">
+                                    <div class="opt_flex__item opt_flex__item--vcenter">
+                                      <p class="opt-txt__body2-small">$300</p>
+                                    </div>                                
+                                  </div>
+                                </div>
+        
+                                <div class="col-xs-1 col-md-1">
+                                    <div class="opt_flex--container flex-line-break">
+                                      <div class="opt_flex__item opt_flex__item--vcenter">
+                                        <p class="opt-txt__body2-small">Hoursx4</p>
+                                      </div>                                
+                                    </div>
+                                  </div>
+
+                                  <div class="col-xs-1 col-md-1">
+                                    <div class="opt_flex--container flex-line-break">
+                                      <div class="opt_flex__item opt_flex__item--vcenter mleft3">
+                                        <p class="opt-txt__body2-small">1</p>
+                                      </div>                                
+                                    </div>
+                                  </div>
+
+                                  <div class="col-xs-2 col-md-2">
+                                    <div class="opt_flex--container flex-line-break">
+                                      <div class="opt_flex__item opt_flex__item--vcenter mleft3">
+                                        <p class="opt-txt__body2-small">$1200</p>
+                                      </div>                                
+                                    </div>
+                                  </div>
+                          </div>
+                        </div>
+                        
+                      </mat-expansion-panel>
+
+                    </mat-accordion>
+
+                    <!-- <mat-accordion>
+                      <mat-expansion-panel>
+                        <mat-expansion-panel-header>
+                          <div class="col-md-12">
+                            <div class="col-xs-1 col-md-1">
+                              
+                             <div class="opt_flex--container">
+                               <div class="opt_flex__item opt_flex__item--vcenter">
+                                <mat-checkbox checked class="opt-txt__body1-small"></mat-checkbox>
+                               </div>
+                              
+                             </div>
+                           </div>
+                            <div class="col-xs-1 col-md-1">
+                              <div class="opt_flex--container">
+                                <div class="opt_flex__item opt_flex__item--vcenter">
+                                  <p class="opt-txt__body2-small">10Feb2021</p>
+                                </div>
+                               
+                              </div>
+                            </div>
+                            <div class="col-xs-2 col-md-2">
+                              <div class="opt_flex--container flex-line-break">
+                                <div class="opt_flex__item opt_flex__item--vcenter">
+                                  <p class="opt-txt__body2-small">08:00-09:00</p>
+                                </div>
+                              
+                              </div>
+                            </div>
+                            <div class="col-xs-1 col-md-1">
+                              <div class="opt_flex--container flex-line-break">
+                                <div class="opt_flex__item opt_flex__item--vcenter">
+                                  <p class="opt-txt__body2-small">IC</p>
+                                </div>                      
+                              </div>
+                            </div>
+        
+                            <div class="col-xs-2 col-md-2">
+                                <div class="opt_flex--container flex-line-break">
+                                  <div class="opt_flex__item opt_flex__item--vcenter">
+                                    <p class="opt-txt__body2-small">Occurence1</p>
+                                  </div>                                
+                                </div>
+                              </div>
+        
+                              <div class="col-xs-1 col-md-1">
+                                  <div class="opt_flex--container flex-line-break">
+                                    <div class="opt_flex__item opt_flex__item--vcenter">
+                                      <p class="opt-txt__body2-small">$300</p>
+                                    </div>                                
+                                  </div>
+                                </div>
+        
+                                <div class="col-xs-1 col-md-1">
+                                    <div class="opt_flex--container flex-line-break">
+                                      <div class="opt_flex__item opt_flex__item--vcenter">
+                                        <p class="opt-txt__body2-small">Hoursx4</p>
+                                      </div>                                
+                                    </div>
+                                  </div>
+
+                                  <div class="col-xs-1 col-md-1">
+                                    <div class="opt_flex--container flex-line-break">
+                                      <div class="opt_flex__item opt_flex__item--vcenter mleft3">
+                                        <p class="opt-txt__body2-small">1</p>
+                                      </div>                                
+                                    </div>
+                                  </div>
+
+                                  <div class="col-xs-2 col-md-2">
+                                    <div class="opt_flex--container flex-line-break">
+                                      <div class="opt_flex__item opt_flex__item--vcenter mleft3">
+                                        <p class="opt-txt__body2-small">$1200</p>
+                                      </div>                                
+                                    </div>
+                                  </div>
+                          </div>
+
+                        </mat-expansion-panel-header>
+
+                        <div class="approval-status-expanded-content-row">
+                          <div class="col-md-12">
+                            <div class="col-xs-1 col-md-1">
+                              
+                             <div class="opt_flex--container">
+                               <div class="opt_flex__item opt_flex__item--vcenter">
+                                <mat-checkbox checked class="opt-txt__body1-small"></mat-checkbox>
+                               </div>
+                              
+                             </div>
+                           </div>
+                            <div class="col-xs-1 col-md-1">
+                              <div class="opt_flex--container">
+                                <div class="opt_flex__item opt_flex__item--vcenter">
+                                  <p class="opt-txt__body2-small">10Feb2021</p>
+                                </div>
+                               
+                              </div>
+                            </div>
+                            <div class="col-xs-2 col-md-2">
+                              <div class="opt_flex--container flex-line-break">
+                                <div class="opt_flex__item opt_flex__item--vcenter">
+                                  <p class="opt-txt__body2-small">08:00-09:00</p>
+                                </div>
+                              
+                              </div>
+                            </div>
+                            <div class="col-xs-1 col-md-1">
+                              <div class="opt_flex--container flex-line-break">
+                                <div class="opt_flex__item opt_flex__item--vcenter">
+                                  <p class="opt-txt__body2-small">IC</p>
+                                </div>                      
+                              </div>
+                            </div>
+        
+                            <div class="col-xs-2 col-md-2">
+                                <div class="opt_flex--container flex-line-break">
+                                  <div class="opt_flex__item opt_flex__item--vcenter">
+                                    <p class="opt-txt__body2-small">Occurence1</p>
+                                  </div>                                
+                                </div>
+                              </div>
+        
+                              <div class="col-xs-1 col-md-1">
+                                  <div class="opt_flex--container flex-line-break">
+                                    <div class="opt_flex__item opt_flex__item--vcenter">
+                                      <p class="opt-txt__body2-small">$300</p>
+                                    </div>                                
+                                  </div>
+                                </div>
+        
+                                <div class="col-xs-1 col-md-1">
+                                    <div class="opt_flex--container flex-line-break">
+                                      <div class="opt_flex__item opt_flex__item--vcenter">
+                                        <p class="opt-txt__body2-small">Hoursx4</p>
+                                      </div>                                
+                                    </div>
+                                  </div>
+
+                                  <div class="col-xs-1 col-md-1">
+                                    <div class="opt_flex--container flex-line-break">
+                                      <div class="opt_flex__item opt_flex__item--vcenter">
+                                        <p class="opt-txt__body2-small">1</p>
+                                      </div>                                
+                                    </div>
+                                  </div>
+
+                                  <div class="col-xs-2 col-md-2">
+                                    <div class="opt_flex--container flex-line-break">
+                                      <div class="opt_flex__item opt_flex__item--vcenter">
+                                        <p class="opt-txt__body2-small">$1200</p>
+                                      </div>                                
+                                    </div>
+                                  </div>
+                          </div>
+                        </div>
+                        
+                      </mat-expansion-panel>
+
+                    </mat-accordion> -->
+                  </div>
+                
+                  
+
+        </div>
+     
     </div>
   </div>
 </div>

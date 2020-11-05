@@ -129,7 +129,7 @@ button {
   .mat-expansion-panel-content,
   .mat-content {
     overflow: inherit !important;
-    visibility: visible;
+    visibility: auto;
   }
   .opt-search-panel-wrapper {
     background-color: $background-color;
